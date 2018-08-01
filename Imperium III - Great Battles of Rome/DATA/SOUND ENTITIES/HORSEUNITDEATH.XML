@@ -1,0 +1,20 @@
+<entity description="HorseUnitDeath" priority="UnitFight" type="UnitFight">
+   <files>
+      <sound file="Sounds/death/h_die_1.wav" frequency="6"/>
+      <sound file="Sounds/death/h_die_2.wav" frequency="6"/>
+      <sound file="Sounds/death/h_die_3.wav" frequency="6"/>
+      <sound file="Sounds/death/h_die_4.wav" frequency="7"/>
+      <sound file="Sounds/death/h_die_5.wav" frequency="6"/>
+      <sound file="Sounds/death/h_die_6.wav" frequency="6"/>
+      <sound file="Sounds/death/h_die_7.wav" frequency="7"/>
+      <sound file="Sounds/death/h_die_8.wav" frequency="6"/>
+      <sound file="Sounds/death/h_die_9.wav" frequency="6"/>
+      <sound file="Sounds/death/h_die_10.wav" frequency="7"/>
+      <sound file="Sounds/death/h_die_11.wav" frequency="6"/>
+      <sound file="Sounds/death/h_die_12.wav" frequency="7"/>
+      <sound file="Sounds/death/h_die_13.wav" frequency="6"/>
+      <sound file="Sounds/death/h_die_14.wav" frequency="6"/>
+      <sound file="Sounds/death/h_die_15.wav" frequency="6"/>
+      <sound file="Sounds/death/h_die_16.wav" frequency="6"/>
+   </files>
+</entity>

@@ -1,0 +1,9 @@
+<entity description="HHoplite Voice" priority="UnitOrder" type="UnitOrder">
+   <files>
+      <sound file="Voices/HHoplite/Fight until victory.wav" frequency="20"/>
+      <sound file="Voices/HHoplite/For the glory! For our homeland.wav" frequency="20"/>
+      <sound file="Voices/HHoplite/My spear will pierce them.wav" frequency="20"/>
+      <sound file="Voices/HHoplite/Nothing can scratch my helmet.wav" frequency="20"/>
+      <sound file="Voices/HHoplite/Freedom and honor.wav" frequency="20"/>
+   </files>
+</entity>

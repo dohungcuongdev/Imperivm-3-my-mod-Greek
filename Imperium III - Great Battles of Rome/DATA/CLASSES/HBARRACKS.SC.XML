@@ -1,0 +1,11 @@
+<class id="HBarracks" cpp_class="CVXBarrack" parent="BaseBarracks" entity="Buildings/HBARRACKS/HBARRACKS.ent.xml">
+
+	<properties race="ImperialRome"/>
+	<properties icon="gameres/icons/HBARRACKS.bmp"/>
+	<properties display_name="Barracks" display_name_plural="Barracks"/>
+	<properties radius="265" selection_radius="270"/>
+	<properties help="/contents/buildings/HBARRACKS"/>
+	<properties edittree_pos="Structures/Stronghold (Greece)/Barracks"/>
+	<properties auto_repair="no"/>
+	
+</class>

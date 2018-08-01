@@ -1,0 +1,3 @@
+<class id="GGuardPostWinter" cpp_class="CVXBuilding" entity="Buildings/GGuardPost/GGuardPost_W/GGuardPost_W.ent.xml" parent="GGuardPost">
+	<properties edittree_pos="Structures/Interactive/Winter/Guard Post"/>
+</class>

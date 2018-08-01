@@ -1,0 +1,11 @@
+<class id="GreekHero" cpp_class="CVXHero" parent="HeroMounted" entity="">
+
+	<properties maxhealth="1200"/>
+	<properties damage="40" armor_slash="12" armor_pierce="12"/>
+	<properties race="ImperialRome"/>
+	<properties help="/contents/units/HHero"/>
+	<properties HeroSkills="Team defense, Epic attack, Battle cry, Ceasefire, Euphoria"/>
+
+	<sounds command="data/sound entities/VoiceHHero.xml"/>
+
+</class>

@@ -1,0 +1,7 @@
+<entity description="Death" priority="UnitFight" type="UnitFight">
+   <files>
+      <sound file="Sounds/death/cameldie_1.wav" frequency="30"/>
+      <sound file="Sounds/death/cameldie_2.wav" frequency="30"/>
+      <sound file="Sounds/death/cameldie_3.wav" frequency="30"/>
+   </files>
+</entity>

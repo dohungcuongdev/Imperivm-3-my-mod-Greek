@@ -1,0 +1,9 @@
+<entity description="HMyrmidon Voice" priority="UnitOrder" type="UnitOrder">
+   <files>
+      <sound file="Voices/HMyrmidon/Hard training makes me unbeatable.wav" frequency="20"/>
+      <sound file="Voices/HMyrmidon/Gods of Olympus guide us.wav" frequency="20"/>
+      <sound file="Voices/HMyrmidon/Greeks don't die today.wav" frequency="20"/>
+      <sound file="Voices/HMyrmidon/Gods envy me.wav" frequency="20"/>
+      <sound file="Voices/HMyrmidon/I'll equal Achille's feats.wav" frequency="20"/>
+   </files>
+</entity>

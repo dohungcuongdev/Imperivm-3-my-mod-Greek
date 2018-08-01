@@ -1,0 +1,35 @@
+<commands>
+
+<cmd name="ChooseRepublicanRome" priority="1"
+	button="research/Republican.bmp"
+	key="R"
+	queueicon="gameres/icons/upgrades/Republican.bmp"
+	costgold = "0"
+	costfood = "0"
+	execdelay = "500"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Lead Republican Rome"
+	description="Take the lead of Republican Rome"
+	method="research"
+	researchcommand="yes"
+	param="NameSet, ChooseRepublicanRome, default">
+	<src obj="RTownhall"/>
+</cmd>
+
+<cmd name="ChooseImperialRome" priority="2"
+	button="research/Imperial.bmp"
+	key="I"
+	queueicon="gameres/icons/upgrades/Imperial.bmp"
+	costgold = "0"
+	costfood = "0"
+	execdelay = "50"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Lead Imperial Rome"
+	description="Take the lead of Imperial Rome"
+	method="research"
+	researchcommand="yes"
+	param="NameSet, ChooseImperialRome, default">
+	<src obj="RTownhall"/>
+</cmd>
+
+</commands>

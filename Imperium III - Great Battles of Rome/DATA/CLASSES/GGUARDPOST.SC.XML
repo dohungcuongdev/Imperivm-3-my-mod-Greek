@@ -1,0 +1,46 @@
+<class id="GGuardPost" cpp_class="CVXTownHall" parent="Building"
+  entity        = "Buildings/GGuardPost/GGuardPost_AS.ent.xml"
+  entity_winter = "Buildings/GGuardPost/GGuardPost_W.ent.xml"
+>
+	<properties race="Gaul"/>
+	<properties maxhealth="10000" sight="900"/>
+	<properties display_name="Guard Post"/>
+	<properties icon="gameres/icons/GGuardPost.bmp"/>
+	<properties range="1000" settlement_food="0" settlement_gold="0"/>
+	<properties radius="345" selection_radius="350"/>
+	<properties edittree_pos="Structures/Outposts/Guard Post"/>
+	<properties help="/contents/buildings/GGuardPost"/>
+	<properties capture_health_percent="50"/>
+	<properties interface="thumb,building"/>
+
+	<behavior script="data/subai/GGuardPost_Sentries.vs"/>
+
+	<properties
+		is_central_building="1"
+		can_be_captured="1"
+		can_be_attacked="1"
+		produces_gold="0"
+		produces_food="0"
+		settlement_food="0"
+		settlement_gold="0"
+		settlement_maxfood="10000"
+		settlement_maxgold="10000"
+		population="0"
+		efficiency="0"
+		max_population="0"
+		max_units="0"
+	/>
+	<properties minimap_icon_type="color"/>
+	<properties description="Outpost building"/>
+
+	<sounds select="Sounds/selection/outpost.wav"/>
+
+	<value0
+		icon="gameres/infobar/common/gold ico.bmp"
+		script="return .AsBuilding.settlement.gold;"
+		flags="5"
+		help="/contents/resources"
+		rollover="Gold"
+	/>
+
+</class>

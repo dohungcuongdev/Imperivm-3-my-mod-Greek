@@ -1,0 +1,9 @@
+<entity description="HHypaspista Voice" priority="UnitOrder" type="UnitOrder">
+   <files>
+      <sound file="Voices/HHypaspista/Athena, infuse to me courage!.wav" frequency="20"/>
+      <sound file="Voices/HHypaspista/I'll fight with honor!.wav" frequency="20"/>
+      <sound file="Voices/HHypaspista/In my veins flows the blood of a warrior!.wav" frequency="20"/>
+      <sound file="Voices/HHypaspista/It's an honor to die in battle!.wav" frequency="20"/>
+      <sound file="Voices/HHypaspista/My enemies will fear my sword!.wav" frequency="20"/>
+   </files>
+</entity>

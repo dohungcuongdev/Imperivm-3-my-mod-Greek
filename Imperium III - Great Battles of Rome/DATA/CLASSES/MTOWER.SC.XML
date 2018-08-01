@@ -1,0 +1,6 @@
+<class id="MTower" cpp_class="CVXBuilding" parent="Tower" entity="Buildings/MWalls/Tower/Tower.ent.xml">
+
+	<properties race="Imperial Rome"/>
+	<properties wall_set="Greek walls"/>
+	<properties icon="gameres/icons/HTower.bmp"/>
+</class>
