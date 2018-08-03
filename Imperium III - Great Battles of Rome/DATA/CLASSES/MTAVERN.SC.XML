@@ -6,6 +6,7 @@ entity_winter="Buildings/Rhouse01/Rhouse01_w.ent.xml">
 	<properties race="ImperialRome"/>
 	<properties display_name="Tavern" icon="gameres/icons/RTavern.bmp"/>
 	<properties radius="190" selection_radius="195"/>
+	<properties edittree_pos="Structures/Stronghold (Imperial Rome)/Tavern SW"/>
 	<properties help="/contents/buildings/RTavern"/>
 
 	<method sig="buyfoodforgold" vs="data/subai/tavern_buyfood.vs"/>

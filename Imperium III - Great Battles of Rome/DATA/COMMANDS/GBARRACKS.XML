@@ -1,23 +1,6 @@
 <commands>
 
 <!-- GAUL BARRACKS -->
-
-<cmd name="GBarrack Level 3" priority="2"
-	researchcommand="yes"
-	groupverifier="data/subai/verify_research.vs"
-	queueicon="gameres/icons/upgrades/Barrack3.bmp"
-	button="upgrades/barrack3.bmp"
-	key="f"
-	rollover="Fastest warrior equipment"
-	description="Equips warriors eight times as fast"
-	costgold = "2000"
-	costfood = "0"
-	execdelay = "20000"
-	method="research"
-	param="ReqSet, Barrack Level 2, , ReqSet, Fights, default, NameSet, Barrack Level 3, default, SetsSet, BarrackTrainTimeDecrease, 87">
-	<src obj="GBarracks"/>
-</cmd>
-
 <cmd name="trainGSwordsman" priority="3"
 	button="actions/train GSwordsman.bmp"
 	queueicon="gameres/icons/GSwordsman.bmp"
@@ -45,7 +28,7 @@
 	groupverifier="data/subai/verify_cmdcost_building.vs"
 	key="a"
 	help="/contents/units/GArcher"
-	costgold = "60"
+	costgold = "50"
 	costfood = "0"
 	costpop = "1"
 	execdelay = "10000"

@@ -1,21 +1,5 @@
 <commands>
 
-<cmd name="RBarrack Level 3" priority="2"
-	researchcommand="yes"
-	groupverifier="data/subai/verify_research.vs"
-	queueicon="gameres/icons/upgrades/Barrack3.bmp"
-	button="upgrades/barrack3.bmp"
-	key="f"
-	rollover="Fastest warrior equipment"
-	description="Equips warriors eight times as fast"
-	costgold = "2000"
-	costfood = "0"
-	execdelay = "20000"
-	method="research"
-	param="ReqSet, Barrack Level 2, , ReqSet, Gladiator Shows, default, NameSet, Barrack Level 3, default, SetsSet, BarrackTrainTimeDecrease, 87">
-	<src obj="RBarracks"/>
-</cmd>
-
 <cmd name="trainRHastatus" priority="3"
 	button="actions/train RHastatus.bmp"
 	queueicon="gameres/icons/RHastatus.bmp"
@@ -122,7 +106,7 @@
 	groupverifier="data/subai/barrack_train_verify.vs"
 	key="t"
 	help="/contents/units/RTribune"
-	costgold = "300"
+	costgold = "280"
 	costfood = "0"
 	costpop = "1"
 	execdelay = "20000"
@@ -151,7 +135,7 @@
 	<src obj="RBarracks"/>
 </cmd>
 
-<cmd name="trainMVelit" priority="5"
+<cmd name="trainIRVelit" priority="5"
 	button="actions/train RVelit.bmp"
 	queueicon="gameres/icons/RVelit.bmp"
 	groupverifier="data/subai/barrack_train_verify.vs"
@@ -170,7 +154,7 @@
 	<src obj="RBarracks"/>
 </cmd>
 
-<cmd name="trainMPraetorian" priority="8"
+<cmd name="trainIRPraetorian" priority="8"
 	button="actions/train RPraetorian.bmp"
 	queueicon="gameres/icons/RPraetorian.bmp"
 	transpicon="1"

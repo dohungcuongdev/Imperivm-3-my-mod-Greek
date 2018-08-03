@@ -6,6 +6,7 @@
 	<properties icon="gameres/icons/RBarracks.bmp"/>
 	<properties display_name="Barracks"/>
 	<properties radius="245" selection_radius="250"/>
+	<properties edittree_pos="Structures/Stronghold (Imperial Rome)/Barracks"/>
 	<properties auto_repair="no"/>
 	<properties help="/contents/buildings/MBarracks"/>
 

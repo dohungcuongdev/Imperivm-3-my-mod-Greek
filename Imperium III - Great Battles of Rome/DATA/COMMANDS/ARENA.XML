@@ -23,10 +23,10 @@
 	execdelay = "30000"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
-	description="New Swordsmen and Archers are level 4"
+	description="Allows Trident Warrior to be hired"
 	rollover="Fights"
 	method="research"
-	param="SetsSet, levels/GSwordsman, 4, SetsSet, levels/GArcher, 4, NameSet, Fights, default,">
+	param="NameSet, Fights, default,">
 	<src obj="GArena1"/>
 	<src obj="GArena2"/>
 </cmd>
@@ -43,7 +43,7 @@
 	description="All new warriors are level 4"
 	rollover="Fights"
 	method="research"
-	param="SetsSet, levels/BSwordsman, 4, SetsSet, levels/BBowman, 4, SetsSet, levels/BBronzeSpearman, 4, SetsSet,levels/BShieldBearer, 4, SetsSet,levels/BJavelineer, 4,SetsSet,levels/BHighlander, 4,NameSet, Fights, default,">
+	param="SetsPlr, standard_spawn_level, 4,NameSet, Fights, default,">
 	<src obj="BMorrigansMonument"/>
 </cmd>
 <cmd name="RGladiator Shows2" priority="2"
@@ -60,6 +60,7 @@
 	researchcommand="yes"
 	param="NameSet, Gladiator Shows, default">
 	<src obj="RArena"/>
+	<src obj="MArena"/>
 </cmd>
 
 <cmd name="RGladiator Shows" priority="2"
@@ -243,15 +244,15 @@
 	button="research/shared strength.bmp"
 	key="s"
 	queueicon="gameres/icons/upgrades/Shared Strength.bmp"
-	costgold = "2000"
+	costgold = "4000"
 	costfood = "0"
-	execdelay = "30000"
+	execdelay = "60000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Shared Strength"
-	description="If you have over 12 warriors of a type the new ones you hire are level 6"
+	description="All new warriors are level 6"
 	method="research"
 	researchcommand="yes"
-	param = "ReqSet, People's Assembly, default, NameSet, Shared Strength, "
+	param = "ReqSet, People's Assembly, default, SetsPlr, standard_spawn_level, 6, NameSet, Shared Strength, "
 	>
 	<src obj="CArena"/>
 </cmd>
@@ -260,15 +261,15 @@
 	button="research/shared triumph.bmp"
 	key="s"
 	queueicon="gameres/icons/upgrades/Shared Triumph.bmp"
-	costgold = "2000"
+	costgold = "6000"
 	costfood = "0"
-	execdelay = "30000"
+	execdelay = "80000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Shared Triumph"
-	description="If you have over 24 warriors of a type the new ones you hire are level 12"
+	description="All new warriors are level 12"
 	method="research"
 	researchcommand="yes"
-	param = "ReqSet, Shared Strength, , NameSet, Shared Triumph, default"
+	param = "ReqSet, Shared Strength, , SetsPlr, standard_spawn_level, 12, NameSet, Shared Triumph, default"
 	>
 	<src obj="CArena"/>
 </cmd>
@@ -356,6 +357,7 @@
 	help="/contents/units/MHero"
 	rollover="Hire hero">
 	<src obj="RArena"/>
+	<src obj="MArena"/>
 </cmd>
 
 <cmd name="hireheroG" priority="1"
@@ -603,6 +605,7 @@
 	method="trainex"
 	param="10, 20, RLiberatus, Liberati, Gladiator Shows">
 	<src obj="RArena"/>
+	<src obj="MArena"/>
 </cmd>
 
 <cmd name="Mountain Clan" priority="4"
@@ -694,6 +697,7 @@
 	researchcommand="yes"
 	param="ReqSet, Gladiator Shows, default, NameSet, Liberati guild, default, SetsSet, levels/RLiberatus, 3">
 	<src obj="RArena"/>
+	<src obj="MArena"/>
 </cmd>
 
 <cmd name="Military Academy" priority="6"
@@ -710,6 +714,7 @@
 	researchcommand="yes"
 	param="ReqSet, Gladiator Shows, default, SetsSet, levels/Hero, 12, NameSet, Military Academy, default">
 	<src obj="RArena"/>
+	<src obj="MArena"/>
 </cmd>
 
 <cmd name="Mountain Clan Legacy" priority="3"
@@ -745,19 +750,19 @@
 	<src obj="GArena2"/>
 </cmd>
 
-<cmd name="Nobility" priority="6"
-	button="upgrades/nobility.bmp"
-	key="n"
-	queueicon="gameres/icons/upgrades/nobility.bmp"
+<cmd name="Veteran's guild" priority="6"
+	button="upgrades/veterans guild.bmp"
+	key="v"
+	queueicon="gameres/icons/upgrades/veterans guild.bmp"
 	costgold = "3000"
 	costfood = "0"
 	execdelay = "60000"
 	groupverifier="data/subai/verify_research.vs"
-	rollover="Nobility"
-	description="All warriors who reach level 8 become level 12"
+	rollover="Veteran's guild"
+	description="All new warriors have Veteran's guild and become stronger after their first kill"
 	method="research"
 	researchcommand="yes"
-	param="ReqSet, Tournaments, default, NamePlr, Nobility, default">
+	param="ReqSet, Tournaments, default, NameSet, Veteran's guild, default, SetsSet, items/Veteran Guild, 1">
 	<src obj="IArena"/>
 </cmd>
 
@@ -821,6 +826,7 @@
 	researchcommand="yes"
 	param="ReqSet, Gladiator Shows, default, SetsPlr, max_battle_level, 4, SetsPlr, standard_spawn_level, 4, NamePlr, Standartization I">
 	<src obj="RArena"/>
+	<src obj="MArena"/>
 </cmd>
 
 <cmd name="Standartization II" priority="2"
@@ -837,6 +843,7 @@
 	researchcommand="yes"
 	param="ReqPlr, Standartization I, , SetsPlr, max_battle_level, 8, SetsPlr, standard_spawn_level, 8, NamePlr, Standartization II">
 	<src obj="RArena"/>
+	<src obj="MArena"/>
 </cmd>
 
 <cmd name="Flexibility" priority="2"
@@ -853,6 +860,7 @@
 	researchcommand="yes"
 	param="ReqPlr, Standartization II, , SetsPlr, max_battle_level, 0, NamePlr, Flexibility, default">
 	<src obj="RArena"/>
+	<src obj="MArena"/>
 </cmd>
 
 <!-- Egypt -->
@@ -982,7 +990,7 @@
 	description="All new warriors are level 2"
 	method="research"
 	researchcommand="yes"
-	param="ReqSet, Cult of Horus, default, SetsSet, levels/ESwordsman, 2, SetsSet, levels/EArcher, 2,SetsSet, levels/EAxetrower, 2,SetsSet, levels/EAnubisWarrior, 2,SetsSet, levels/EHorusWarrior, 2,SetsSet, levels/EGuardian, 2,SetsSet, levels/EChariot, 2, NameSet, Light of Horus I,">
+	param="ReqSet, Cult of Horus, default, SetsPlr, standard_spawn_level, 2, NameSet, Light of Horus I,">
 	<src obj="ETempleOfHorusAndAnubis"/>
 </cmd>
 <cmd name="Light of Horus II" priority="12"
@@ -997,7 +1005,7 @@
 	description="All new warriors are level 4"
 	method="research"
 	researchcommand="yes"
-	param="ReqSet, Light of Horus I, ,SetsSet, levels/ESwordsman, 4, SetsSet, levels/EArcher, 4,SetsSet, levels/EAxetrower, 4,SetsSet, levels/EAnubisWarrior, 4,SetsSet, levels/EHorusWarrior, 4,SetsSet,levels/EGuardian, 4,SetsSet, levels/EChariot, 4, NameSet, Light of Horus II,">
+	param="ReqSet, Light of Horus I, ,SetsPlr, standard_spawn_level, 4, NameSet, Light of Horus II,">
 	<src obj="ETempleOfHorusAndAnubis"/>
 </cmd>
 
@@ -1013,7 +1021,7 @@
 	description="All new warriors are level 6"
 	method="research"
 	researchcommand="yes"
-	param="ReqSet, Light of Horus II, ,SetsSet, levels/ESwordsman, 6, SetsSet, levels/EArcher, 6,SetsSet, levels/EAxetrower, 6,SetsSet, levels/EAnubisWarrior, 6,SetsSet, levels/EHorusWarrior, 6, SetsSet,levels/EGuardian, 6,SetsSet, levels/EChariot, 6, NameSet, Light of Horus III, default">
+	param="ReqSet, Light of Horus II, ,SetsPlr, standard_spawn_level, 6, NameSet, Light of Horus III, default">
 	<src obj="ETempleOfHorusAndAnubis"/>
 </cmd>
 

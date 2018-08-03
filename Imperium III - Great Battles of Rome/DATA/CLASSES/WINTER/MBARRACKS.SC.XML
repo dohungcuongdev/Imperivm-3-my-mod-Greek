@@ -4,4 +4,5 @@
 	id = "MBarracksWinter"
 	parent = "MBarracks"
 >
+	<properties edittree_pos = "Structures/Stronghold (Imperial Rome)/Winter/Barracks"/>
 </class>

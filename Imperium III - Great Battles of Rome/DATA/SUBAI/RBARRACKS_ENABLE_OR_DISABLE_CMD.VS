@@ -29,9 +29,9 @@ if( (EnvReadString(.settlement, "ChooseRepublicanRome") == "researched") || (Env
 		Sleep(50);
 		.CmdEnable("Equip Chariot");
 		Sleep(50);
-		.CmdDisable("trainMVelit");
+		.CmdDisable("trainIRVelit");
 		Sleep(50);
-		.CmdDisable("trainMPraetorian");
+		.CmdDisable("trainIRPraetorian");
 		Sleep(50);
 	}	//End if.
 	else
@@ -42,9 +42,9 @@ if( (EnvReadString(.settlement, "ChooseRepublicanRome") == "researched") || (Env
 		Sleep(50);
 		.CmdDisable("Equip Chariot");
 		Sleep(50);
-		.CmdEnable("trainMVelit");
+		.CmdEnable("trainIRVelit");
 		Sleep(50);
-		.CmdEnable("trainMPraetorian");
+		.CmdEnable("trainIRPraetorian");
 		Sleep(50);
 	}	//End else.
 }	//End if.
@@ -70,9 +70,9 @@ else
 	Sleep(50);
 	.CmdDisable("Equip Chariot");
 	Sleep(50);
-	.CmdDisable("trainMVelit");
+	.CmdDisable("trainIRVelit");
 	Sleep(50);
-	.CmdDisable("trainMPraetorian");
+	.CmdDisable("trainIRPraetorian");
 	Sleep(50);
 }	//End else.
 
