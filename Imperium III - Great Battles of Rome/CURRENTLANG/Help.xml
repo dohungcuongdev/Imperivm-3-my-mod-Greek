@@ -729,7 +729,7 @@ These are berserk attackers with an extremely powerful first attack but lack pro
         <entry image="UI/help/sattack ico.bmp">Damage 20 </entry>
         <entry image="UI/help/defense ico.bmp">Armor 8</entry>
         <entry image="UI/help/speed ico.bmp">Speed: medium</entry>
-        <entry image="UI/help/gold ico.bmp">Cost 130 gold (260 gold)</entry>
+        <entry image="UI/help/gold ico.bmp">Cost 120 gold (240 gold)</entry>
         <entry image="UI/help/train ico.bmp">Base equip time 14 sec</entry>
         <entry font="large">See Also</entry>
         <entry vcenter="1" image="UI/icons/CBarracks.bmp" link="/contents/buildings/CBarracks">Equipped in Barracks</entry>
@@ -1367,7 +1367,7 @@ A few men on horseback are attached to every legion to scout and support the inf
 These elite fighters are generally used to guard important structures like the Senate of Rome. They have excellent training and outstanding equipment.
 				</entry>
 		<entry image="gameres/infobar/unit specials/spike armor.bmp" link="/contents/specials">Spike Armor</entry>
-        <entry image="gameres/infobar/unit specials/combat skill.bmp" link="/contents/specials">Combat skill</entry>
+        <entry image="gameres/infobar/unit specials/determination.bmp" link="/contents/specials">Determination</entry>
         <entry></entry>
         <entry image="UI/help/health ico.bmp">Health 600</entry>
         <entry image="UI/help/sattack ico.bmp" vspacing="2">Damage 40</entry>
@@ -2235,7 +2235,7 @@ Cost: 100 gold; Time: 2 - 10 sec
 				</entry>
         <entry vcenter="1" image="UI/Help/CCmdBar/actions/hire CBerberAssassin.bmp" link="/contents/units/CBerberAssassin">
 Hire Berber Assasin
-Cost: 130 gold; Time: 2 - 14 sec
+Cost: 120 gold; Time: 2 - 14 sec
 </entry>
         <entry vcenter="1" image="UI/Help/CCmdBar/actions/hire CMaceman.bmp" link="/contents/units/CMaceman">
 Hire Maceman
