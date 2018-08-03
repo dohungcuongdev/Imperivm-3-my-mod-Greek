@@ -93,9 +93,9 @@
 	costfood = "0"
 	execdelay = "60000"
 	rollover="Mummification"
-	description = "All new heroes are level 15"
+	description = "All new heroes are level 18"
 	method="research"
-	param="ReqSet, Cult of Osiris, default, SetsSet, levels/Hero, 15, NameSet, Mumification, default">
+	param="ReqSet, Cult of Osiris, default, SetsSet, levels/Hero, 18, NameSet, Mumification, default">
 	<src obj="ETempleOfOsiris"/>
 </cmd>
 <cmd name="Chariot of Osiris" priority="6"

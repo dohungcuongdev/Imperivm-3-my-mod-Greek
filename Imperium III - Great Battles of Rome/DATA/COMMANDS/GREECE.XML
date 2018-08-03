@@ -266,7 +266,7 @@
 	groupverifier="data/subai/myrmidons_verify.vs"
 	onaddremovescript="data/subai/myrmidons_school_onaddremove.vs"
 	rollover="Forge Elite Equipment"
-	description="Increases the number of Myrmidons you can have by 10 (Up to a maximum of 50)"
+	description="Increases the number of Myrmidons you can have by 10"
 	method="myrmidon_school"
 	researchcommand="yes">
 	<src obj="HGymnasium"/>

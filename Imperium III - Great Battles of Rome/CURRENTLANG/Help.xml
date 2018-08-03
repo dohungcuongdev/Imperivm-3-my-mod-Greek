@@ -310,7 +310,7 @@ For example, if a gladiator with 10 Armor is attacked by a Tribune with 40 Damag
 	  Stamina cost: 1
 	  Avoids enemy attacks</entry>
       <entry image="gameres/infobar/unit specials/determination.bmp">Determination
-	  This ability is not used in the game
+	  Stamina cost: 0
 	  Increases the warrior's stamina by 1 each time an enemy hits him</entry>
       <entry image="gameres/infobar/unit specials/disease attack.bmp">Disease Attack
 	  Stamina cost: 1
@@ -2794,8 +2794,8 @@ Cost: 800 (1000, 1200) gold; Time 20 sec      </entry>
 When a warrior dies he gives 1 experience to a nearby ally (though not to a hero)
 Cost: 2000 gold; Time 30 sec      </entry>
         <entry vcenter="1" image="UI/Help/GCmdBar/research/Battle Library.bmp">Battle Tactics
-Doubles the experience your army receives in battle
-Cost: 3000 gold; Time 30 sec      </entry>
+Triples the experience from battles
+Cost: 4000 gold; Time 30 sec      </entry>
         <entry vcenter="1" image="UI/Help/GCmdBar/actions/Repair.bmp">
 Repair (visible when damaged)
 Cost: 500 gold; Time: 60 sec
@@ -3376,7 +3376,7 @@ Cost: 2000 gold; Time 20 sec      </entry>
 Allows priests to sacrifice themselves to create a cloud of plague which damages all warriors it covers
 Cost: 2000 gold; Time 20 sec      </entry>
         <entry vcenter="1" image="UI/Help/ECmdBar/research/Mumification.bmp">Mummification (requires Cult of Osiris)
-All new heroes are level 15
+All new heroes are level 18
 Cost: 6000 gold; Time 60 sec      </entry>
         <entry vcenter="1" image="UI/Help/ECmdBar/actions/chariot of osiris.bmp" link="/contents/units/EChariot">Equip Chariot of Osiris (requires Cult of Osiris)
 Cost: 400 gold; Time 30 sec      </entry>
