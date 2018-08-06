@@ -244,15 +244,15 @@
 	button="Upgrades/Olympic Games.bmp"
 	key="g"
 	queueicon="gameres/icons/upgrades/Olympic Games.bmp"
-	costgold = "3000"
+	costgold = "3500"
 	costfood = "0"
 	execdelay = "30000"
 	groupverifier="data/subai/verify_research.vs"
-	description="All new warriors are level 5"
+	description="All new warriors are level 5, Allow Teuton Wolves to be hired"
 	rollover="Olympic Games"
 	method="research"
 	researchcommand="yes"
-	param="NameSet, Olympic Games, default, SetsSet, levels/HMyrmidon_Javelin, 5">
+	param="NameSet, Olympic Games, default, SetsSet, levels/HMyrmidon_Javelin, 5, SetsSet, levels/TTeutonWolf, 5">
 	<src obj="HGymnasium"/>
 </cmd>
 
@@ -349,6 +349,25 @@
 	method="research"
 	researchcommand="yes"
 	param="ReqSet, Olympic Games, default, NamePlr, Charm of Aegle, default">
+	<src obj="HGymnasium"/>
+</cmd>
+
+<cmd name="Hire Teuton Wolves" priority="10"
+	button="actions/Train TTeutonWolf.bmp"
+	queueicon="gameres/icons/TTeutonWolf.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	traincommand="yes"
+	key="w"
+	help="/contents/units/TTeutonWolf"
+	costgold = "500"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "20000"
+	rollover="Hire Teuton Wolves"
+	description="Hire Teuton Wolves"
+	method="trainex"
+	param="1, 8, TTeutonWolf, TTeutonWolf, Olympic Games">
 	<src obj="HGymnasium"/>
 </cmd>
 
