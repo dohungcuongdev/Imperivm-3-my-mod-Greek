@@ -2819,7 +2819,7 @@ In every stronghold throughout the land there are arenas where fighters show the
 Cost: 1200 gold; Time 20 sec      </entry>
         <entry vcenter="1" image="UI/Help/RCmdBar/Upgrades/Gladiator Show.bmp">Gladiator Shows
 All new warriors are level 3
-Cost: 2300 gold; Time 25 sec      </entry>
+Cost: 2500 gold; Time 25 sec      </entry>
         <entry vcenter="1" image="UI/Help/RCmdBar/research/training.bmp">Training (Requires Gladiator Shows)
 Allows warriors to train to level 4
 Cost: 1000 gold; Time 25 sec      </entry>
@@ -2884,7 +2884,7 @@ Briton fighters gather at the Morrigan's monument to show their skill and compet
 Cost: 600 gold; Time 20 sec      </entry>
         <entry vcenter="1" image="UI/Help/BCmdBar/upgrades/Fights.bmp">Fights
 All new warriors are level 4, Allows Viking Lord to be hired
-Cost: 2500 gold; Time 30 sec      </entry>
+Cost: 3000 gold; Time 30 sec      </entry>
         <entry vcenter="1" image="UI/Help/BCmdBar/upgrades/nobility.bmp">Nobility (requires Fights)
 All warriors who reach level 8 become level 12
 Cost: 3000 gold; Time 60 sec      </entry>
