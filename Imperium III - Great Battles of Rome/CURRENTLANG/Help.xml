@@ -783,7 +783,7 @@ While most of the Carthaginian warriors are merely hired mercenaries there is th
         <entry image="UI/help/sattack ico.bmp">Damage 50</entry>
         <entry image="UI/help/defense ico.bmp">Armor 20</entry>
         <entry image="UI/help/speed ico.bmp">Speed: slow</entry>
-        <entry image="UI/help/gold ico.bmp">Cost 400 gold + 1 peasant</entry>
+        <entry image="UI/help/gold ico.bmp">Cost 410 gold + 1 peasant</entry>
         <entry image="UI/help/train ico.bmp">Hire time 20 sec</entry>
         <entry font="large">See Also</entry>
         <entry vcenter="1" image="UI/icons/CTemple.bmp" link="/contents/buildings/CTemple">Called in Temple</entry>
@@ -1177,7 +1177,7 @@ Gladiators are fierce warriors that have survived numerous fights at the arena. 
         <entry image="UI/help/train ico.bmp" vspacing="2">Base equip time 10 sec</entry>
         <entry font="large">See Also</entry>
         <entry vcenter="1" image="UI/icons/RBarracks.bmp" link="/contents/buildings/RBarracks">Equipped in Barracks</entry>
-        <entry vcenter="1" image="UI/icons/upgrades/gladiator show.bmp" link="/contents/buildings/RBlacksmith">Requires Gladiator Shows</entry>
+        <entry vcenter="1" image="gameres/icons/upgrades/Gladiator.bmp" link="/contents/buildings/RBlacksmith">Requires Tridents</entry>
       </topic>
       <topic id="RPrinciple">
         <entry hcenter="1" font="large">Principle</entry>
@@ -1227,7 +1227,7 @@ These elite fighters are generally high ranking officers with power and influenc
         <entry image="UI/help/sattack ico.bmp" vspacing="2">Damage 40</entry>
         <entry image="UI/help/defense ico.bmp" vspacing="2">Armor 14</entry>
         <entry image="UI/help/speed ico.bmp" vspacing="2">Speed: slow</entry>
-        <entry image="UI/help/gold ico.bmp" vspacing="2">Cost 280 gold + 1 peasant</entry>
+        <entry image="UI/help/gold ico.bmp" vspacing="2">Cost 290 gold + 1 peasant</entry>
         <entry image="UI/help/train ico.bmp" vspacing="2">Base equip time 20 sec</entry>
         <entry font="large">See Also</entry>
         <entry vcenter="1" image="UI/icons/RBarracks.bmp" link="/contents/buildings/RBarracks">Equipped in Barracks</entry>
@@ -1518,7 +1518,7 @@ Equipped with a large shield the Shield Bearer is an enemy not to be underestima
         <entry image="UI/help/sattack ico.bmp" vspacing="2">Damage 50</entry>
         <entry image="UI/help/defense ico.bmp" vspacing="2">Armor 6</entry>
         <entry image="UI/help/speed ico.bmp" vspacing="2">Speed : medium</entry>
-        <entry image="UI/help/gold ico.bmp" vspacing="2">Cost 400 gold + 1 peasant</entry>
+        <entry image="UI/help/gold ico.bmp" vspacing="2">Cost 390 gold + 1 peasant</entry>
         <entry image="UI/help/train ico.bmp" vspacing="2">Base equip time 20 sec</entry>
         <entry font="large">See Also</entry>
         <entry vcenter="1" image="UI/icons/BBarracks.bmp" link="/contents/buildings/BBarracks">Equipped in Barracks</entry>
@@ -1783,7 +1783,7 @@ Bloodthirsty and wild, Teuton riders fight in battle wearing wolf skins as cloak
         <entry font="large">See Also</entry>
         <entry vcenter="1" image="UI/icons/TBarracks.bmp" link="/contents/buildings/TBarracks">Equipped in Barracks</entry>
         <entry vcenter="1" image="UI/icons/upgrades/horseshoes.bmp" link="/contents/buildings/TBlacksmith">Affected by Increase Horseshoe production</entry>
-        <entry vcenter="1" image="UI/icons/upgrades/Teuton Master.bmp" link="/contents/buildings/TArena">Requires Teuton Master to transform into Teuton Archer</entry>
+        <entry vcenter="1" image="UI/icons/upgrades/Teuton Master.bmp" link="/contents/buildings/TBlacksmith">Requires Teuton Master to transform into Teuton Archer</entry>
       </topic>
       <topic id="TTeutonArcher">
         <entry hcenter="1" font="large">Teuton Archer</entry>
@@ -1799,7 +1799,7 @@ These are exceptionally strong and fast archers, perfect for disruption of the e
         <entry image="UI/help/food ico.bmp" vspacing="2">Be transformed by Teuton Rider</entry>
         <entry font="large">See Also</entry>
 		<entry vcenter="1" image="UI/icons/TTeutonRider.bmp" link="/contents/units/TTeutonRider">Teuton Rider</entry>
-        <entry vcenter="1" image="UI/icons/upgrades/Teuton Master.bmp" link="/contents/buildings/TArena">Requires Teuton Master</entry>
+        <entry vcenter="1" image="UI/icons/upgrades/Teuton Master.bmp" link="/contents/buildings/TBlacksmith">Requires Teuton Master</entry>
       </topic>
       <topic id="TMaceman">
         <entry hcenter="1" font="large">Maceman</entry>
@@ -2321,7 +2321,7 @@ Cost: 200 gold; 1 peasant; Time 3 - 20 sec      </entry>
         <entry vcenter="1" image="UI/Help/RCmdBar/actions/train rscout.bmp" link="/contents/units/RScout">Equip Scout
 Cost: 120 gold; 1 peasant; Time 2 - 10 sec      </entry>
         <entry vcenter="1" image="UI/Help/RCmdBar/actions/train rtribune.bmp" link="/contents/units/RTribune">Equip Tribune
-Cost: 280 gold; 1 peasant; Time 3 - 20 sec      </entry>
+Cost: 290 gold; 1 peasant; Time 3 - 20 sec      </entry>
         <entry vcenter="1" image="UI/Help/RCmdBar/actions/hire rchariot.bmp" link="/contents/units/RChariot">Equip Chariot
 Cost: 400 gold; Time 3 - 20 sec      </entry>
         <entry vcenter="1" image="UI/Help/RCmdBar/actions/Repair.bmp">Repair (visible when damaged)
@@ -2373,7 +2373,7 @@ Cost: 140 gold; 1 peasant; Time 2 - 10 sec      </entry>
         <entry vcenter="1" image="UI/Help/BCmdBar/actions/train BJavelineer.bmp" link="/contents/units/BJavelineer">Equip Javelineer
 Cost: 140 gold; 1 peasant; Time 3 - 12 sec      </entry>
         <entry vcenter="1" image="UI/Help/BCmdBar/actions/train BHighlander.bmp" link="/contents/units/BHighlander">Equip Highlander
-Cost: 400 gold; 1 peasant; Time 3 - 20 sec      </entry>
+Cost: 390 gold; 1 peasant; Time 3 - 20 sec      </entry>
         <entry vcenter="1" image="UI/Help/BCmdBar/actions/Repair.bmp">Repair (visible when damaged)
 Cost: 500 gold; Time: 60 sec
 				</entry>
@@ -2565,6 +2565,11 @@ Arrows
 Allows Archers to be equipped in the Barracks
 Cost: 400 gold; Time: 30 sec
 				</entry>
+        <entry vcenter="1" image="UI/Help/RCmdBar/upgrades/glad.bmp" link="/contents/units/RGladiator">
+Tridents
+Allows Gladiators to be equipped in the Barracks
+Cost: 1800 gold; Time: 30 sec
+				</entry>
         <entry vcenter="1" image="UI/Help/RCmdBar/upgrades/pikes.bmp" link="/contents/units/RPrinciple">Pikes
 Allows Principles to be equipped in the Barracks 
 Cost: 2000 gold; Time 30 sec      </entry>
@@ -2686,6 +2691,9 @@ Cost: 800 gold; Time 20 sec      </entry>
         <entry vcenter="1" image="UI/Help/TCmdBar/upgrades/Incr Mace Production.bmp" link="/contents/units/TMaceman">Increase Mace production
 Increases the number of Macemen you can have by 10
 Cost: 1000 gold; Time 20 sec      </entry>
+        <entry vcenter="1" image="UI/Help/TCmdBar/research/teuton master.bmp">Teuton Master
+Allows Teuton Riders to change to Teuton Archers and vise versa
+Cost: 500 gold; Time 15 sec       </entry>
         <entry vcenter="1" image="UI/Help/TCmdBar/research/Stronghold Defense.bmp">Strengthen Stronghold Defenses I and II
 Makes the defenders at the stronghold walls level 12 and level 24
 Cost: 1000 (2000) gold; Time 30 sec      </entry>
@@ -2756,7 +2764,7 @@ Cost: 1000 gold; Time: 40 sec
         <entry vcenter="1" image="UI/Help/ICmdBar/upgrades/Mountain Clan Legacy.bmp">Mountain Clan Legacy (requires Mountain Clan)
 New Mountaineers have the experience of the best Mountaineer you've had
 Cost: 1500 gold; Time 30 sec      </entry>
-        <entry vcenter="1" image="UI/Help/ICmdBar/upgrades/nobility.bmp">Veteran's guild (requires Tournaments) 
+        <entry vcenter="1" image="UI/Help/ICmdBar/upgrades/veterans guild.bmp">Veteran's guild (requires Tournaments) 
 All new warriors have Veteran's guild and become stronger after their first kill
 Cost: 3000 gold; Time 60 sec      </entry>
         <entry vcenter="1" image="UI/Help/ICmdBar/actions/Repair.bmp">
@@ -2810,14 +2818,14 @@ In every stronghold throughout the land there are arenas where fighters show the
         <entry vcenter="1" image="UI/Help/RCmdBar/actions/hire heror.bmp" link="/contents/units/RHero">Hire hero
 Cost: 1200 gold; Time 20 sec      </entry>
         <entry vcenter="1" image="UI/Help/RCmdBar/Upgrades/Gladiator Show.bmp">Gladiator Shows
-Allows Gladiators to be hired
-Cost: 2000 gold; Time 25 sec      </entry>
+All new warriors are level 3
+Cost: 2300 gold; Time 25 sec      </entry>
         <entry vcenter="1" image="UI/Help/RCmdBar/research/training.bmp">Training (Requires Gladiator Shows)
 Allows warriors to train to level 4
 Cost: 1000 gold; Time 25 sec      </entry>
         <entry vcenter="1" image="UI/Help/RCmdBar/research/advanced training.bmp">Advanced Training (requires Training)
 Allows warriors to train to level 8
-Cost: 2000 gold; Time 25 sec      </entry>
+Cost: 1500 gold; Time 25 sec      </entry>
         <entry vcenter="1" image="UI/Help/RCmdBar/research/veteran offence.bmp">Veteran Offense (Requires Gladiator Shows)
 Warriors receive a Veteran Offense medal (+20% damage) at their first kill
 Cost: 3000 gold; Time 30 sec      </entry>
@@ -2851,7 +2859,7 @@ All new warriors are level 8 but cannot gain more experience
 Cost: 2000 gold; Time 25 sec      </entry>
         <entry vcenter="1" image="UI/Help/MCmdBar/upgrades/flexibility.bmp">Flexibility (requires Standardization II)
 Allows warriors to gain experience past level 8
-Cost: 4000 gold; Time 30 sec      </entry>
+Cost: 3000 gold; Time 30 sec      </entry>
         <entry vcenter="1" image="UI/Help/MCmdBar/actions/hire rliberati.bmp" link="/contents/units/MLiberatus">Hire Liberati (Requires Gladiator Shows)
 Hires a group of 10 Liberati 
 Cost: 2000 gold; Time 30 sec      </entry>
@@ -2875,8 +2883,8 @@ Briton fighters gather at the Morrigan's monument to show their skill and compet
         <entry vcenter="1" image="UI/Help/BCmdBar/actions/hire heroB.bmp" link="/contents/units/BHero">Hire hero
 Cost: 600 gold; Time 20 sec      </entry>
         <entry vcenter="1" image="UI/Help/BCmdBar/upgrades/Fights.bmp">Fights
-All new warriors are level 4
-Cost: 3000 gold; Time 30 sec      </entry>
+All new warriors are level 4, Allows Viking Lord to be hired
+Cost: 2500 gold; Time 30 sec      </entry>
         <entry vcenter="1" image="UI/Help/BCmdBar/upgrades/nobility.bmp">Nobility (requires Fights)
 All warriors who reach level 8 become level 12
 Cost: 3000 gold; Time 60 sec      </entry>
@@ -2940,8 +2948,8 @@ Warriors gather at the Sanctuary of Votan to show their skill and compete agains
         <entry vcenter="1" image="UI/Help/TCmdBar/actions/hire heroT.bmp" link="/contents/units/THero">Hire hero
 Cost: 1000 gold; Time 20 sec      </entry>
         <entry vcenter="1" image="UI/Help/TCmdBar/upgrades/Fights.bmp">Fights
-Gathers 2000 food (works only once)
-Cost: 2000 gold; Time 30 sec      </entry>
+Gathers 2000 food,  Allows Valkyries to be hired
+Cost: 2500 gold; Time 30 sec      </entry>
         <entry vcenter="1" image="UI/Help/TCmdBar/actions/hire TValkyrie.bmp" link="/contents/units/TValkyrie">Call Valkyries (requires Fights)
 Calls 5 Valkyries
 Cost: 1000 gold; Time 20 sec      </entry>
@@ -2954,9 +2962,6 @@ Cost: 2000 gold; Time 30 sec      </entry>
         <entry vcenter="1" image="UI/Help/TCmdBar/research/attack focus.bmp">Attack focus (requires Fights)
 The warriors' damage is not reduced when fighting more experienced enemies
 Cost: 2000 gold; Time 30 sec      </entry>
-        <entry vcenter="1" image="UI/Help/TCmdBar/research/teuton master.bmp">Teuton Master (requires Fights)
-Allows Teuton Riders to change to Teuton Archers and vise versa
-Cost: 1000 gold; Time 30 sec       </entry>
         <entry vcenter="1" image="UI/Help/BCmdBar/actions/Repair.bmp">
 Repair (visible when damaged)
 Cost: 500 gold; Time: 60 sec
@@ -3218,7 +3223,7 @@ Cost: 2000 gold; Time 20 sec      </entry>
 Allows Nobles to be equipped in the Temple
 Cost: 4000 gold; Time 30 sec      </entry>
         <entry vcenter="1" image="UI/Help/CCmdBar/actions/train CNoble.bmp" link="/contents/units/CNoble">Equip Noble (requires Sacred Legion) 
-Cost: 400 gold; 1 peasant; Base hire time 20 sec      </entry>
+Cost: 410 gold; 1 peasant; Base hire time 20 sec      </entry>
         <entry vcenter="1" image="UI/Help/CCmdBar/research/ferocity.bmp">  Ferocity (requires Dark Rituals) 
 Allows a warrior to restores 3 stamina each time he kills an enemy
 Cost: 3000 gold; Time 30 sec      </entry>
@@ -3377,7 +3382,7 @@ Allows priests to sacrifice themselves to create a cloud of plague which damages
 Cost: 2000 gold; Time 20 sec      </entry>
         <entry vcenter="1" image="UI/Help/ECmdBar/research/Mumification.bmp">Mummification (requires Cult of Osiris)
 All new heroes are level 18
-Cost: 6000 gold; Time 60 sec      </entry>
+Cost: 5000 gold; Time 60 sec      </entry>
         <entry vcenter="1" image="UI/Help/ECmdBar/actions/chariot of osiris.bmp" link="/contents/units/EChariot">Equip Chariot of Osiris (requires Cult of Osiris)
 Cost: 400 gold; Time 30 sec      </entry>
         <entry vcenter="1" image="UI/Help/ECmdBar/actions/Repair.bmp">
