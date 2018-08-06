@@ -88,9 +88,8 @@
 <cmd name="trainHMyrmidon" priority="6"
 	button="actions/Train HMyrmidon.bmp"
 	queueicon="gameres/icons/HMyrmidon.bmp"
+	groupverifier="data/subai/barrack_train_verify.vs"
 	transpicon="1"
-	groupverifier="data/subai/verify_trainex.vs"
-	onaddremovescript="data/subai/trainex_onaddremove.vs"
 	traincommand="yes"
 	key="m"
 	help="/contents/units/HMyrmidon"
@@ -99,8 +98,9 @@
 	costpop = "1"
 	execdelay = "16000"
 	rollover="Equip Myrmidon"
-	method="trainex"
-	param="1, myrmidon, HMyrmidon_Javelin, HMyrmidon_Javelin, Forge Elite Equipment, Gymnasium">
+	method="train"
+	param="HMyrmidon_Javelin, Forge Elite Equipment"
+	sclass="HMyrmidon_Javelin">
 	<src obj="HBarracks"/>
 </cmd>
 
@@ -112,7 +112,7 @@
 	traincommand="yes"
 	key="h"
 	help="/contents/units/HHypaspista"
-	costgold = "300"
+	costgold = "280"
 	costfood = "0"
 	costpop = "1"
 	execdelay = "18000"
@@ -173,7 +173,7 @@
 	<src obj="HBlacksmith"/>
 </cmd>
 
-<cmd name="Greek Royal Armor" priority="3"
+<cmd name="Greek Royal Armor" priority="4"
 	queueicon="gameres/icons/upgrades/Greek Royal Armor.bmp"
 	button="Upgrades/Greek Royal Armor.bmp"
 	key="r"
@@ -205,6 +205,22 @@
 	<src obj="HBlacksmith"/>
 </cmd>
 
+<cmd name="Forge Elite Equipment" priority="3"
+	queueicon="gameres/icons/upgrades/Forge Elite Equipment.bmp"
+	button="Upgrades/Forge Elite Equipment.bmp"
+	key="f"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold="1500"
+	costfood="0"
+	execdelay="30000"
+	rollover="Forge Elite Equipment"
+	description="Allows Myrmidons to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Forge Elite Equipment,default, NameSet, HMyrmidon_Javelin,">
+	<src obj="HBlacksmith"/>
+</cmd>
+
 <!-- GREEK ARENA -->
 
 <cmd name="hireheroH" priority="1"
@@ -228,7 +244,7 @@
 	button="Upgrades/Olympic Games.bmp"
 	key="g"
 	queueicon="gameres/icons/upgrades/Olympic Games.bmp"
-	costgold = "2000"
+	costgold = "3000"
 	costfood = "0"
 	execdelay = "30000"
 	groupverifier="data/subai/verify_research.vs"
@@ -253,22 +269,6 @@
 	method="research"
 	researchcommand="yes"
 	param="ReqSet, Olympic Games, default, SetsPlr, maxtrainlevel, 10, NamePlr, Spartan Training, default">
-	<src obj="HGymnasium"/>
-</cmd>
-
-<cmd name="Forge Elite Equipment" priority="4"
-	queueicon="gameres/icons/upgrades/Forge Elite Equipment.bmp"
-	key="f"
-	button="Upgrades/Forge Elite Equipment.bmp"
-	costgold="1500"
-	costfood="0"
-	execdelay="20000"
-	groupverifier="data/subai/myrmidons_verify.vs"
-	onaddremovescript="data/subai/myrmidons_school_onaddremove.vs"
-	rollover="Forge Elite Equipment"
-	description="Increases the number of Myrmidons you can have by 10"
-	method="myrmidon_school"
-	researchcommand="yes">
 	<src obj="HGymnasium"/>
 </cmd>
 

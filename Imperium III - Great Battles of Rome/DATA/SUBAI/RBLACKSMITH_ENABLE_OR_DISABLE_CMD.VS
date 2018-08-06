@@ -23,6 +23,8 @@ if( (EnvReadString(.settlement, "ChooseRepublicanRome") == "researched") || (Env
 		Sleep(50);
 		.CmdEnable("Roman Chariot Wheels");
 		Sleep(50);
+		.CmdEnable("Roman Gladiator");
+		Sleep(50);
 		.CmdDisable("Roman Velit");
 		Sleep(50);
 		.CmdDisable("Roman Praetorian");
@@ -33,6 +35,8 @@ if( (EnvReadString(.settlement, "ChooseRepublicanRome") == "researched") || (Env
 		.CmdDisable("Roman Full Armor");
 		Sleep(50);
 		.CmdDisable("Roman Chariot Wheels");
+		Sleep(50);
+		.CmdDisable("Roman Gladiator");
 		Sleep(50);
 		.CmdEnable("Roman Velit");
 		Sleep(50);
@@ -47,6 +51,8 @@ else
 	.CmdDisable("Roman Principle");
 	Sleep(50);
 	.CmdDisable("Roman Scout");
+	Sleep(50);
+	.CmdDisable("Roman Gladiator");
 	Sleep(50);
 	.CmdDisable("Strenghten Stronghold Defences I");
 	Sleep(50);

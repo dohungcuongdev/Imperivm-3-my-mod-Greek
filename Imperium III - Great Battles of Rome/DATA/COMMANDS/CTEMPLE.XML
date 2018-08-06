@@ -93,7 +93,7 @@
 	traincommand="yes"
 	key="n"
 	help="/contents/units/CNoble"
-	costgold = "400"
+	costgold = "410"
 	costfood = "0"
 	costpop = "1"
 	execdelay = "20000"

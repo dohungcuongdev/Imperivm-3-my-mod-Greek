@@ -89,7 +89,7 @@
 	button="research/mumification.bmp"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
-	costgold = "6000"
+	costgold = "5000"
 	costfood = "0"
 	execdelay = "60000"
 	rollover="Mummification"

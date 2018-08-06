@@ -35,12 +35,12 @@
 	button="Upgrades/Fights.bmp"
 	key="f"
 	queueicon="gameres/icons/upgrades/Fights.bmp"
-	costgold = "3000"
+	costgold = "2500"
 	costfood = "0"
 	execdelay = "30000"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
-	description="All new warriors are level 4"
+	description="All new warriors are level 4, Allows Viking Lord to be hired"
 	rollover="Fights"
 	method="research"
 	param="SetsPlr, standard_spawn_level, 4,NameSet, Fights, default,">
@@ -67,15 +67,15 @@
 	button="Upgrades/Gladiator Show.bmp"
 	key="s"
 	queueicon="gameres/icons/upgrades/Gladiator Show.bmp"
-	costgold = "2000"
+	costgold = "2300"
 	costfood = "0"
 	execdelay = "25000"
 	groupverifier="data/subai/verify_research.vs"
-	description="Allows Gladiators to be hired"
+	description="All new warriors are level 3"
 	rollover="Gladiator shows"
 	method="research"
 	researchcommand="yes"
-	param="NameSet, Gladiator Shows, default, NameSet, RGladiator, default">
+	param="SetsPlr, standard_spawn_level, 3,NameSet, Gladiator Shows, default">
 	<src obj="RArena"/>
 </cmd>
 
@@ -165,7 +165,7 @@
 	button="research/Advanced training.bmp"
 	key="t"
 	queueicon="gameres/icons/upgrades/atrain.bmp"
-	costgold = "2000"
+	costgold = "1500"
 	costfood = "0"
 	execdelay = "25000"
 	groupverifier="data/subai/verify_research.vs"
@@ -850,7 +850,7 @@
 	button="Upgrades/flexibility.bmp"
 	key="i"
 	queueicon="gameres/icons/upgrades/Flexibility.bmp"
-	costgold = "4000"
+	costgold = "3000"
 	costfood = "0"
 	execdelay = "30000"
 	groupverifier="data/subai/verify_research.vs"
@@ -1045,12 +1045,12 @@
 	button="Upgrades/Fights.bmp"
 	key="f"
 	queueicon="gameres/icons/upgrades/Fights.bmp"
-	costgold = "2000"
+	costgold = "2500"
 	costfood = "0"
 	execdelay = "30000"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
-	description="Gathers 2000 food (works only once)"
+	description="Gathers 2000 food,  Allows Valkyries to be hired"
 	rollover="Fights"
 	method="research"
 	param="NameSet, Fights, default,">
@@ -1122,22 +1122,6 @@
 	method="research"
 	researchcommand="yes"
 	param="ReqSet, Fights, default, NamePlr, Attack focus, default">
-	<src obj="TSanctuaryOfVotan"/>
-</cmd>
-
-<cmd name="Teuton Master" priority="7"
-	button="research/Teuton Master.bmp"
-	key="t"
-	queueicon="gameres/icons/upgrades/Teuton Master.bmp"
-	costgold = "1000"
-	costfood = "0"
-	execdelay = "30000"
-	groupverifier="data/subai/verify_research.vs"
-	rollover="Teuton Master"
-	description="Allows Teuton Riders to change to Teuton Archers and vise versa"
-	method="research"
-	researchcommand="yes"
-	param="ReqSet, Fights, default, NamePlr, Teuton Master, default">
 	<src obj="TSanctuaryOfVotan"/>
 </cmd>
 </commands>
