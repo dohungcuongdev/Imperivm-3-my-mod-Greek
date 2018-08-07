@@ -13,7 +13,6 @@
 <image idx="9" file="Idle_shadow" drawmode="shadow" remaping="none" rows="4" columns="8"/>
 <image idx="10" file="Walk_shadow" drawmode="shadow" remaping="none" rows="14" columns="8"/>
 <image idx="11" file="Fight_shadow" drawmode="shadow" remaping="none" rows="7" columns="8"/>
-<image idx="12" file="Death_shadow" drawmode="shadow" remaping="none" rows="18" columns="8"/>
 <image idx="13" file="Transition_shadow" drawmode="shadow" remaping="none" rows="6" columns="8"/>
 <image idx="14" file="Transition_shadow" drawmode="shadow" remaping="reverse" rows="6" columns="8"/>
 <image idx="15" file="Taunt_shadow" drawmode="shadow" remaping="none" rows="6" columns="8"/>

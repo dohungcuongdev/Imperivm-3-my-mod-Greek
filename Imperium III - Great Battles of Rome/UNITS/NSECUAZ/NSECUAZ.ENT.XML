@@ -16,7 +16,6 @@
 <image idx="11" file="Walk.rle" drawmode="player_color" remaping="none" rows="14" columns="8"/>
 <image idx="12" file="Walk_shadow.rle" drawmode="shadow" remaping="none" rows="14" columns="8"/>
 <image idx="14" file="RESSURRECT.rle" drawmode="player_color" remaping="none" rows="25" columns="8"/>
-<image idx="15" file="GGHOST_RESSURRECT_SHADOW.RLE" drawmode="shadow" remaping="none" rows="14" columns="8"/>
 </images>
 <points>
 </points>
