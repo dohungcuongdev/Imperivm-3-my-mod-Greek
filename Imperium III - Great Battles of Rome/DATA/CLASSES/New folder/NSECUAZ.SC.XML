@@ -1,0 +1,19 @@
+<class id="NSECUAZ" cpp_class="CVXUnit" parent="Melee" entity="units/NSECUAZ/NSECUAZ.ent.xml">
+
+	<properties race="Carthage"/>
+	<properties maxhealth="250"/>
+	<properties damage="50" armor_slash="0" armor_pierce="0"/>
+	<properties speed="90"/>
+	<properties unit_specials="Disease attack, Penetration"/>
+
+	<properties icon="gameres/icons/NSECUAZ.bmp"/>
+	<properties display_name="Asesino oriental" display_name_plural="Asesinos orientales"/>
+	<properties help="contents/units/EAnubisWarrior"/>
+	<properties edittree_pos="Units/Gaul/Asesino oriental"/>
+	<sounds attack="UnitSwordFight" command="data/sound entities/VoiceCBerberAssassin.xml"/>
+
+	<behavior script="data/subai/Bonus contra heroes.vs"/>
+
+	<behavior script="data/subai/contraheroes.vs"/>
+
+</class>

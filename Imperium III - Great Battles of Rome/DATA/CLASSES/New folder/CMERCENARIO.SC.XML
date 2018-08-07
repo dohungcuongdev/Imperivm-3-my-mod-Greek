@@ -1,0 +1,15 @@
+<class id="CMERCENARIO" cpp_class="CVXUnit" parent="Melee" entity="units/CMERCENARIO/CMERCENARIO.ent.xml">
+
+	<properties race="Carthage"/>
+	<properties maxhealth="300"/>
+	<properties damage="30" armor_slash="2" armor_pierce="2"/>
+	<properties speed="80"/>
+	<properties unit_specials="Death blow, Triple strike"/>
+
+	<properties icon="gameres/icons/CMERCENARIO.bmp"/>
+	<properties display_name="Mercenario bereber" display_name_plural="Merecenarios bereberes"/>
+	<properties help="contents/units/CMERCENARIO"/>
+	<properties edittree_pos="Units/Carthage/Mercenario"/>
+	<sounds command="data/sound entities/VoiceIEliteGuard.xml"/>
+
+</class>

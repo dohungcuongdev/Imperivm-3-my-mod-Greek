@@ -1,0 +1,21 @@
+<class id="Hipatista" cpp_class="CVXUnit" parent="Melee" entity="units/Hipatista/Hipatista.ent.xml">
+
+	<properties race="Carthage"/>
+	<properties maxhealth="350"/>
+	<properties sight="400"/>
+	<properties damage="30" armor_slash="14" armor_pierce="14"/>
+	<properties speed="60"/>
+	<properties unit_specials="Deflection, Active"/>
+
+	<properties icon="gameres/icons/Hipatista.bmp"/>
+	<properties display_name="Hipatista" display_name_plural="Hipatistas"/>
+	<properties help="contents/units/Hipatista"/>
+	<properties edittree_pos="Units/Roman/Hipatista"/>
+	<properties description="-Inmune al miedo."/>
+	<sounds command="data/sound entities/VoiceHipatista.xml"/>
+
+	<behavior script="data/subai/valor.vs"/>
+
+
+
+</class>
