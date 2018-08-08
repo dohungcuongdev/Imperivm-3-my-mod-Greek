@@ -4,7 +4,7 @@
 	<properties maxhealth="400"/>
 	<properties damage="40" armor_slash="8" armor_pierce="4"/>
 	<properties speed="80"/>
-	<properties unit_specials="Triumph, Life steal, Determination"/>
+	<properties unit_specials="Triumph, Life steal, Ferocity"/>
 
 	<properties icon="gameres/icons/PInmortal.bmp"/>
 	<properties display_name="Inmortal persa" display_name_plural="Inmortales persas"/>

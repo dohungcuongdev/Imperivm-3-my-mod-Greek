@@ -119,4 +119,24 @@
 	<src obj="BBarracks"/>
 </cmd>
 
+<cmd name="trainBHorseman" priority="9"
+	button="actions/HEAVY HORSESHOES.bmp"
+	queueicon="gameres/icons/BHorseman.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="z"
+	help="/contents/units/BHorseman"
+	costgold = "4000"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "50000"
+	rollover="Hire Jinetes normandos"
+	method="trainex"
+	param="BHorseman"
+	sclass="BHorseman">
+	<src obj="BBarracks"/>
+</cmd>
+
 </commands>

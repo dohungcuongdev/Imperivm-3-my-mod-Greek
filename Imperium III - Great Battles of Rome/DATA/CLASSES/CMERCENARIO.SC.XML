@@ -4,10 +4,10 @@
 	<properties maxhealth="300"/>
 	<properties damage="30" armor_slash="2" armor_pierce="2"/>
 	<properties speed="80"/>
-	<properties unit_specials="Death blow, Triple strike"/>
+	<properties unit_specials="Death blow, Triple strike, Combat skill"/>
 
 	<properties icon="gameres/icons/CMERCENARIO.bmp"/>
-	<properties display_name="Mercenario bereber" display_name_plural="Merecenarios bereberes"/>
+	<properties display_name="Mercenario bereber" display_name_plural="Mercenario bereber"/>
 	<properties help="contents/units/CMERCENARIO"/>
 	<properties edittree_pos="Units/New Units/Mercenario"/>
 	<sounds command="data/sound entities/VoiceIEliteGuard.xml"/>

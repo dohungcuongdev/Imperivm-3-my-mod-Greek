@@ -198,6 +198,26 @@
 	<src obj="CBarracks"/>
 </cmd>
 
+<cmd name="trainCMercenario" priority="8"
+	button="actions/TRAIN CMERCENARIO.bmp"
+	queueicon="gameres/icons/CMERCENARIO.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="z"
+	help="/contents/units/CMercenario"
+	costgold = "2000"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "100000"
+	rollover="Hire Mercenario Bereber"
+	method="trainex"
+	param="CMERCENARIO"
+	sclass="CMERCENARIO">
+	<src obj="CBarracks"/>
+</cmd>
+
 </commands>
 
 <!--	groupverifier="data/subai/barrack_train_verify.vs" -->
