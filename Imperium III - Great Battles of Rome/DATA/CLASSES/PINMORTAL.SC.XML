@@ -1,6 +1,6 @@
 <class id="PINMORTAL" cpp_class="CVXUnit" parent="Melee" entity="units/PINMORTAL/PINMORTAL.ent.xml">
 
-	<properties race="Carthage"/>
+	<properties race="Egypt"/>
 	<properties maxhealth="400"/>
 	<properties damage="40" armor_slash="8" armor_pierce="4"/>
 	<properties speed="80"/>
@@ -9,7 +9,7 @@
 	<properties icon="gameres/icons/PInmortal.bmp"/>
 	<properties display_name="Inmortal persa" display_name_plural="Inmortales persas"/>
 	<properties help="contents/units/PINMORTAL"/>
-	<properties edittree_pos="Units/Egypt/Inmortal"/>
+	<properties edittree_pos="Units/New Units/Inmortal"/>
 	<sounds command="data/sound entities/VoiceEHorusWarrior.xml"/>
 
 </class>

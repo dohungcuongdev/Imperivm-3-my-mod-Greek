@@ -9,7 +9,7 @@
 	<properties icon="gameres/icons/CMERCENARIO.bmp"/>
 	<properties display_name="Mercenario bereber" display_name_plural="Merecenarios bereberes"/>
 	<properties help="contents/units/CMERCENARIO"/>
-	<properties edittree_pos="Units/Carthage/Mercenario"/>
+	<properties edittree_pos="Units/New Units/Mercenario"/>
 	<sounds command="data/sound entities/VoiceIEliteGuard.xml"/>
 
 </class>

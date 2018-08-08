@@ -1,6 +1,6 @@
 <class id="TTeutonWolf" cpp_class="CVXUnit" parent="Horse" entity="Units/TTeutonWolf/TTeutonWolf.ent.xml">
 
-	<properties race="ImperialRome"/>
+	<properties race="Germany"/>
 	<properties maxhealth="300"/>
 	<properties damage="30" armor_slash="10" armor_pierce="10"/>
 	<properties speed="160"/>
@@ -10,7 +10,7 @@
 	<properties icon="gameres/icons/TTeutonWolf.bmp"/>
 	<properties display_name="Teuton Wolf" display_name_plural="Teuton Wolves"/>
 	<properties help="contents/units/TWolf"/>
-	<properties edittree_pos="Units/Greece/Teuton Wolf"/>
+	<properties edittree_pos="Units/New Units/Teuton Wolf"/>
 	<sounds command="data/sound entities/VoiceTTeutonRider.xml"/>
 
 	<!--given ONLY by the behaviour script-->

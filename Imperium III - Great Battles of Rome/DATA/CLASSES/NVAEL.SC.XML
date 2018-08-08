@@ -9,7 +9,7 @@
 	<properties icon="gameres/icons/BERSERKER.bmp"/>
 	<properties display_name="Guerrero Berserker" display_name_plural="Berserkers"/>
 	<properties help="contents/units/Axeman"/>
-	<properties edittree_pos="Units/Germany/Guerrero Berserker"/>
+	<properties edittree_pos="Units/New Units/Guerrero Berserker"/>
 	<sounds command="data/sound entities/VoiceBSwordsman.xml"/>
 
 

@@ -10,7 +10,7 @@
 	<properties icon="gameres/icons/Hipatista.bmp"/>
 	<properties display_name="Hipatista" display_name_plural="Hipatistas"/>
 	<properties help="contents/units/Hipatista"/>
-	<properties edittree_pos="Units/Roman/Hipatista"/>
+	<properties edittree_pos="Units/New Units/Hipatista"/>
 	<sounds command="data/sound entities/VoiceHHypaspista.xml"/>
 
 
