@@ -173,7 +173,7 @@
 	<src obj="RBarracks"/>
 </cmd>
 
-<cmd name="Reclutar grupo de hipatistas" priority="9"
+<cmd name="TrainHipatistas" priority="9"
 	button="actions/TRAIN HIPATISTA.bmp"
 	queueicon="gameres/icons/HIPATISTA.bmp"
 	groupverifier="data/subai/verify_trainex.vs"
@@ -187,10 +187,10 @@
 	costpop = "0"
 	execdelay = "80000"
 	rollover="Contratar 10 hipatistas griegos"
-	method="trainex"
-	param="10, 40, Hipatista, Hipatista, Hijos de Grecia, blacksmith"
+	method="Equip Hipatistas"
+	param="Hipatista"
 	sclass="Hipatista">
-	<src obj="MBarracks"/>
+	<src obj="RBarracks"/>
 </cmd>
 
 

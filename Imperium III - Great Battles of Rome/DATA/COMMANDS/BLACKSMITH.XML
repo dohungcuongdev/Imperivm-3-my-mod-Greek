@@ -749,4 +749,86 @@
 	param="default, NamePlr, Teuton Master, default">
 	<src obj="TBlacksmith"/>
 </cmd>
+
+<!-- New Unit -->
+
+<cmd name="Heavy Horseshoes" priority="1"
+	queueicon="gameres/icons/upgrades/HEAVY HORSESHOES.bmp"
+	button="upgrades/HEAVY HORSESHOES.bmp"
+	key="h"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1500"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Heavy Horseshoe"
+	description="Allows Jinetes normandos to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Heavy Horseshoes, default, NameSet, BHorseman">
+	<src obj="BBlacksmith"/>
+</cmd>
+
+<cmd name="Hijos de Grecia" priority="6"
+	queueicon="gameres/icons/upgrades/Hijosdegrecia.bmp"
+	key="r"
+	button="upgrades/Hijosdegrecia.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "2500"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Hijos de Grecia"
+	description="Permite reclutar hipatistas griegos en el cuartel"
+	method="research"
+	param="NameSet,Hijos de Grecia, , default, NameSet, Hipatista,">
+	<src obj="MBlacksmith"/>
+</cmd>
+
+<cmd name="Escudos macedonios" priority="6"
+	queueicon="gameres/icons/upgrades/Wall of shields.bmp"
+	key="y"
+	button="upgrades/Wall of shields.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "2500"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Hijos de Macedonia"
+	description="Permite reclutar hoplitas macedonios en el cuartel"
+	method="research"
+	param="NameSet,Escudos macedonios, ,default, NameSet, EHOPLITA,">
+	<src obj="RBlacksmith"/>
+</cmd>
+
+<cmd name="Herederos de Alejandro" priority="6"
+	button="upgrades/herederosdealejandro.bmp"
+	key="e"
+	queueicon="gameres/icons/upgrades/herederosdealejandro.bmp"
+	costgold = "1500"
+	costfood = "0"
+	execdelay = "20000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Herederos de Alejandro"
+	description="Los nuevos hoplitas reclutados tendran nivel 12"
+	researchcommand="yes"
+	method="research"
+	param="ReqSet, Escudos macedonios, , SetsSet, levels/EHOPLITA, 12, NameSet, Herederos de Alejandro, default">
+	<src obj="RBlacksmith"/>
+</cmd>
+
+<cmd name="Caballeria pesada" priority="1"
+	queueicon="gameres/icons/upgrades/HEAVY HORSESHOES.bmp"
+	button="upgrades/HEAVY HORSESHOES.bmp"
+	key="h"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1500"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Caballeria pesada"
+	description="Los nuevos jinetes galos tendran nivel 6"
+	method="research"
+	param="ReqSet, GHorseman, , SetsSet, levels/GHorseman, 6, NameSet, Caballeria pesada, default">
+	<src obj="GBlacksmith"/>
+</cmd>
 </commands>

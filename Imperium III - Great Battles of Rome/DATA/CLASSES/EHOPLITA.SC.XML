@@ -4,7 +4,7 @@
 	<properties maxhealth="300"/>
 	<properties damage="10" armor_slash="10" armor_pierce="10"/>
 	<properties speed="60"/>
-	<properties unit_specials="Bleeding attack, Defense skill, Combat skill"/>
+	<properties unit_specials="Bleeding attack, Defense skill, Determination"/>
 
 	<properties icon="gameres/icons/GrHoplita.bmp"/>
 	<properties display_name="Hoplita" display_name_plural="Hoplitas"/>

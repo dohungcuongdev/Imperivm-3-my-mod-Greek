@@ -127,7 +127,7 @@
 	description="Hire Teuton Wolves"
 	method="trainex"
 	param="TTeutonWolf">
-	<src obj="HGymnasium"/>
+	<src obj="TBarracks"/>
 </cmd>
 
 </commands>

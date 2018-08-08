@@ -136,7 +136,7 @@
 	method="trainex"
 	param="NVAEL"
 	sclass="NVAEL">
-	<src obj="TBarracks"/>
+	<src obj="IBarracks"/>
 </cmd>
 
 </commands>
