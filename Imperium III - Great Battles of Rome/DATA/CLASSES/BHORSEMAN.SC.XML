@@ -1,0 +1,18 @@
+<class id="BHorseman" cpp_class="CVXUnit" parent="Horse" entity="Units/Keltill/Keltill.ent.xml">
+
+	<properties race="Britain"/>
+	<properties maxhealth="700"/>
+	<properties damage="50" armor_slash="8" armor_pierce="8"/>
+	<properties speed="120"/>
+	<properties unit_specials="Charge"/>
+	<properties healthbar_type="3"/>
+
+	<properties max_food="25"/>
+
+	<properties icon="gameres/icons/BHorseman.bmp"/>
+	<properties display_name="Jinete normando" display_name_plural="Jinetes normandos"/>
+	<properties help="contents/units/GHorseman"/>
+	<properties edittree_pos="Units/Britain/Jinete normando"/>
+	<sounds command="data/sound entities/VoiceGHorseman.xml"/>
+
+</class>

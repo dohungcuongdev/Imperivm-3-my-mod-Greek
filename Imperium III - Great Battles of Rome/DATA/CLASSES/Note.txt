@@ -1,7 +1,8 @@
 EHOPLITA - Greek
-NVAEL - Britain + Iberia
+NVAEL - Iberia
 PINMORTAL - Egypt
-HIPATISTA - Greek + Roman
+HIPATISTA - Roman
 CMERCENARIO - Carthage
 TTEUTONWOLF - Germany
 NSECUAZ - Gaul
+BHorseman - Britain 

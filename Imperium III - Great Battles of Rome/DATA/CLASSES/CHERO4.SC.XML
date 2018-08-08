@@ -1,0 +1,10 @@
+<class id="CHero4" cpp_class="CVXHero" parent="HeroMounted" entity="Units/CHero4/CHero4.ent.xml">
+
+	<properties race="Carthage"/>
+	<properties display_name="Paltibaal" display_name_plural="Heroes"/>
+	<properties icon="gameres/icons/CHERO42.bmp"/>
+	<properties edittree_pos="Units/Heroes/Paltibaal (Carthaginian)"/>
+	<properties HeroSkills="Administration, Leadership, Team attack, Team defense, Defensive cry"/>
+
+	<sounds command="data/sound entities/VoiceCHero.xml"/>
+</class>
