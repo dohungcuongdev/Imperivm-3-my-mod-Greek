@@ -2,9 +2,9 @@
 
 	<properties race="Iberia"/>
 	<properties maxhealth="450"/>
-	<properties damage="60" armor_slash="0" armor_pierce="0"/>
+	<properties damage="50" armor_slash="10" armor_pierce="10"/>
 	<properties speed="80"/>
-	<properties unit_specials="Triple strike, Life steal, Ferocity"/>
+	<properties unit_specials="Bleeding attack, Attack skill, Combat skill"/>
 
 	<properties icon="gameres/icons/BERSERKER.bmp"/>
 	<properties display_name="Master Berserker" display_name_plural="Master Berserkers"/>

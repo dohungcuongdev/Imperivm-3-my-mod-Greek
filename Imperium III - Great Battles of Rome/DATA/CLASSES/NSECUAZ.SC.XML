@@ -1,10 +1,10 @@
 <class id="NSECUAZ" cpp_class="CVXUnit" parent="Melee" entity="units/NSECUAZ/NSECUAZ.ent.xml">
 
 	<properties race="Gaul"/>
-	<properties maxhealth="250"/>
-	<properties damage="50" armor_slash="0" armor_pierce="0"/>
+	<properties maxhealth="300"/>
+	<properties damage="50" armor_slash="10" armor_pierce="10"/>
 	<properties speed="100"/>
-	<properties unit_specials="Charge, Sneak, Freedom"/>
+	<properties unit_specials="Penetration, Death blow, Active"/>
 
 	<properties icon="gameres/icons/NSECUAZ.bmp"/>
 	<properties display_name="Master Assassin" display_name_plural="Master Assassins"/>

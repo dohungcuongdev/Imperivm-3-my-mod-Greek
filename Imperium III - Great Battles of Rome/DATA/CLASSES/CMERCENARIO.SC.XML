@@ -1,10 +1,10 @@
 <class id="CMERCENARIO" cpp_class="CVXUnit" parent="Melee" entity="units/CMERCENARIO/CMERCENARIO.ent.xml">
 
 	<properties race="Carthage"/>
-	<properties maxhealth="300"/>
-	<properties damage="50" armor_slash="2" armor_pierce="2"/>
+	<properties maxhealth="380"/>
+	<properties damage="50" armor_slash="8" armor_pierce="8"/>
 	<properties speed="80"/>
-	<properties unit_specials="Death blow, Triple strike, Combat skill"/>
+	<properties unit_specials="Triumph, Bleeding attack, Active"/>
 
 	<properties icon="gameres/icons/CMERCENARIO.bmp"/>
 	<properties display_name="Master Axeman" display_name_plural="Master Axemen"/>
