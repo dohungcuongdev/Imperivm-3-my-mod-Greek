@@ -128,13 +128,13 @@
 	traincommand="yes"
 	key="z"
 	help="/contents/units/BHorseman"
-	costgold = "400"
+	costgold = "600"
 	costfood = "0"
-	costpop = "0"
-	execdelay = "50000"
-	rollover="Hire Jinetes normandos"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Equip Master Horseman"
 	method="trainex"
-	param="1, 10, BHorseman, BHorseman, Heavy Horseshoes, blacksmith"
+	param="1, 6, BHorseman, BHorseman, Heavy Horseshoes, blacksmith"
 	sclass="BHorseman">
 	<src obj="BBarracks"/>
 </cmd>

@@ -1,15 +1,15 @@
 <class id="NVAEL" cpp_class="CVXUnit" parent="Melee" entity="units/NVAEL/NVAEL.ent.xml">
 
-	<properties race="Germany"/>
+	<properties race="Iberia"/>
 	<properties maxhealth="450"/>
 	<properties damage="60" armor_slash="0" armor_pierce="0"/>
 	<properties speed="80"/>
-	<properties unit_specials="Triple strike, Triumph, Ferocity"/>
+	<properties unit_specials="Triple strike, Life steal, Ferocity"/>
 
 	<properties icon="gameres/icons/BERSERKER.bmp"/>
-	<properties display_name="Guerrero Berserker" display_name_plural="Berserkers"/>
+	<properties display_name="Master Berserker" display_name_plural="Master Berserkers"/>
 	<properties help="contents/units/Axeman"/>
-	<properties edittree_pos="Units/New Units/Guerrero Berserker"/>
+	<properties edittree_pos="Units/New Units/Master Berserker (Iberia)"/>
 	<sounds command="data/sound entities/VoiceBSwordsman.xml"/>
 
 

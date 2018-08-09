@@ -20,6 +20,8 @@ if( (EnvReadString(.settlement, "ChooseRepublicanRome") == "researched") || (Env
 	Sleep(50);
 	.CmdEnable("trainRScout");
 	Sleep(50);
+	.CmdEnable("trainIRHipatistas");
+	Sleep(50);
 		
 	if(EnvReadString(.settlement, "ChooseRepublicanRome") == "researched")
 	{
@@ -73,6 +75,8 @@ else
 	.CmdDisable("trainIRVelit");
 	Sleep(50);
 	.CmdDisable("trainIRPraetorian");
+	Sleep(50);
+	.CmdDisable("trainIRHipatistas");
 	Sleep(50);
 }	//End else.
 

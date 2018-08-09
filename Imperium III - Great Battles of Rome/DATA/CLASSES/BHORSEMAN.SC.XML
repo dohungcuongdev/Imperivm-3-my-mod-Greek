@@ -2,17 +2,18 @@
 
 	<properties race="Britain"/>
 	<properties maxhealth="700"/>
-	<properties damage="20" armor_slash="8" armor_pierce="8"/>
+	<properties damage="30" armor_slash="15" armor_pierce="15"/>
 	<properties speed="120"/>
-	<properties unit_specials="Charge, Triple strike, Ferocity"/>
+	<!-- <properties unit_specials="Charge, Triple strike, Ferocity"/> -->
+	<properties unit_specials="Charge, Death blow, Ferocity"/>
 	<properties healthbar_type="3"/>
 
 	<properties max_food="25"/>
 
 	<properties icon="gameres/icons/BHorseman.bmp"/>
-	<properties display_name="Jinete normando" display_name_plural="Jinetes normandos"/>
+	<properties display_name="Master Horseman" display_name_plural="Master Horsemen"/>
 	<properties help="contents/units/GHorseman"/>
-	<properties edittree_pos="Units/Britain/Jinete normando"/>
+	<properties edittree_pos="Units/New Units/Master Horseman (Britain)"/>
 	<sounds command="data/sound entities/VoiceGHorseman.xml"/>
 
 </class>

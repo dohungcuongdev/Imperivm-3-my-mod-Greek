@@ -127,13 +127,13 @@
 	traincommand="yes"
 	key="z"
 	help="/contents/units/PInmortal"
-	costgold = "4000"
+	costgold = "450"
 	costfood = "0"
-	costpop = "0"
-	execdelay = "100000"
-	rollover="Equip Inmortales persas"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Equip Master Swordman"
 	method="trainex"
-	param="PINMORTAL"
+	param="1, 8, PINMORTAL, PINMORTAL, Dual Swords, blacksmith"
 	sclass="PINMORTAL">
 	<src obj="EBarracks"/>
 </cmd>

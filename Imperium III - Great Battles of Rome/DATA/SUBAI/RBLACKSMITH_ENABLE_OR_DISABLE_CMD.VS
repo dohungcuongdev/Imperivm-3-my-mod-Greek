@@ -16,6 +16,8 @@ if( (EnvReadString(.settlement, "ChooseRepublicanRome") == "researched") || (Env
 	Sleep(50);
 	.CmdEnable("Strenghten Stronghold Defences II");
 	Sleep(50);
+	.CmdEnable("Heavy Swords and Shields");
+	Sleep(50);
 	
 	if(EnvReadString(.settlement, "ChooseRepublicanRome") == "researched")
 	{
@@ -65,6 +67,8 @@ else
 	.CmdDisable("Roman Velit");
 	Sleep(50);
 	.CmdDisable("Roman Praetorian");
+	Sleep(50);
+	.CmdDisable("Heavy Swords and Shields");
 	Sleep(50);
 }	//End else.
 

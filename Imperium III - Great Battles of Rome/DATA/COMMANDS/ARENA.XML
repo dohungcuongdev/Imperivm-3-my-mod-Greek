@@ -1124,4 +1124,39 @@
 	param="ReqSet, Fights, default, NamePlr, Attack focus, default">
 	<src obj="TSanctuaryOfVotan"/>
 </cmd>
+
+<cmd name="Teuton Wolves" priority="8"
+	queueicon="gameres/icons/upgrades/Teuton Master.bmp"
+	button="research/Teuton Master.bmp"
+	key="w"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "6000"
+	costfood = "0"
+	execdelay = "60000"
+	rollover="Teuton Wolves"
+	description="Allows Teuton Wolves to be hired"
+	method="research"
+	param="ReqSet, Fights, NameSet,Teuton Wolves, default">
+	<src obj="TSanctuaryOfVotan"/>
+</cmd>
+
+<cmd name="Hire Teuton Wolves" priority="10"
+	button="actions/Teuton Wolf.BMP"
+	queueicon="gameres/icons/TTeutonWolf.BMP"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	traincommand="yes"
+	key="w"
+	help="/contents/units/TTeutonWolf"
+	costgold = "300"
+	costfood = "500"
+	costpop = "0"
+	execdelay = "20000"
+	rollover="Hire Teuton Wolf"
+	description="Hire Teuton Wolf"
+	method="trainex"
+	param="1, 6, TTeutonWolf, TTeutonWolf, Teuton Wolves">
+	<src obj="TSanctuaryOfVotan"/>
+</cmd>
 </commands>

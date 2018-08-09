@@ -3,13 +3,13 @@
 	<properties race="Gaul"/>
 	<properties maxhealth="250"/>
 	<properties damage="50" armor_slash="0" armor_pierce="0"/>
-	<properties speed="90"/>
-	<properties unit_specials="Life steal, Triple strike, Ferocity"/>
+	<properties speed="100"/>
+	<properties unit_specials="Charge, Sneak, Freedom"/>
 
 	<properties icon="gameres/icons/NSECUAZ.bmp"/>
-	<properties display_name="Asesino oriental" display_name_plural="Asesinos orientales"/>
+	<properties display_name="Master Assassin" display_name_plural="Master Assassins"/>
 	<properties help="contents/units/EAnubisWarrior"/>
-	<properties edittree_pos="Units/New Units/Asesino oriental"/>
+	<properties edittree_pos="Units/New Units/Master Assassin (Gaul)"/>
 	<sounds attack="UnitSwordFight" command="data/sound entities/VoiceCBerberAssassin.xml"/>
 
 </class>

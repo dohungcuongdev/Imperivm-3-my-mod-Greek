@@ -735,9 +735,9 @@
 	<src obj="RBlacksmith"/>
 </cmd>
 <cmd name="Teuton Master" priority="5"
-	button="research/Teuton Master.bmp"
+	button="upgrades/ARCHER2.bmp"
 	key="t"
-	queueicon="gameres/icons/upgrades/Teuton Master.bmp"
+	queueicon="gameres/icons/upgrades/tentou-archer.bmp"
 	costgold = "500"
 	costfood = "0"
 	execdelay = "15000"
@@ -752,83 +752,116 @@
 
 <!-- New Unit -->
 
-<cmd name="Heavy Horseshoes" priority="1"
+<cmd name="Heavy Horseshoes" priority="6"
 	queueicon="gameres/icons/upgrades/HEAVY HORSESHOES.bmp"
 	button="upgrades/HEAVY HORSESHOES.bmp"
 	key="h"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
-	costgold = "1500"
+	costgold = "6000"
 	costfood = "0"
-	execdelay = "30000"
-	rollover="Heavy Horseshoe"
-	description="Allows Jinetes normandos to be equipped in the Barracks"
+	execdelay = "60000"
+	rollover="Heavy Horseshoes"
+	description="Allows Master Horsemen to be equipped in the Barracks"
 	method="research"
 	param="NameSet,Heavy Horseshoes, default, NameSet, BHorseman">
 	<src obj="BBlacksmith"/>
 </cmd>
 
-<cmd name="Hijos de Grecia" priority="6"
-	queueicon="gameres/icons/upgrades/Hijosdegrecia.bmp"
-	key="r"
-	button="upgrades/Hijosdegrecia.bmp"
+<cmd name="Heavy Swords and Shields" priority="6"
+	queueicon="gameres/icons/upgrades/veteranos.bmp"
+	key="e"
+	button="upgrades/veteranos.bmp"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
-	costgold = "2500"
+	costgold = "6000"
 	costfood = "0"
-	execdelay = "30000"
-	rollover="Hijos de Grecia"
-	description="Permite reclutar hipatistas griegos en el cuartel"
+	execdelay = "60000"
+	rollover="Heavy Swords and Shields"
+	description="Allows Roman Hipatistas to be equipped in the Barracks"
 	method="research"
-	param="NameSet,Hijos de Grecia, , default, NameSet, Hipatista,">
+	param="NameSet,Heavy Swords and Shields, default, NameSet, Hipatista">
+	<src obj="RBlacksmith"/>
 	<src obj="MBlacksmith"/>
 </cmd>
 
-<cmd name="Escudos macedonios" priority="6"
+<cmd name="Wall of Shields" priority="6"
 	queueicon="gameres/icons/upgrades/Wall of shields.bmp"
 	key="y"
 	button="upgrades/Wall of shields.bmp"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
-	costgold = "2500"
+	costgold = "6000"
 	costfood = "0"
-	execdelay = "30000"
-	rollover="Hijos de Macedonia"
-	description="Permite reclutar hoplitas macedonios en el cuartel"
+	execdelay = "60000"
+	rollover="Wall of Shields"
+	description="Allows Hoplitas to be equipped in the Barracks"
 	method="research"
-	param="NameSet,Escudos macedonios, ,default, NameSet, EHOPLITA,">
-	<src obj="RBlacksmith"/>
+	param="NameSet,Wall of Shields, default, NameSet, EHOPLITA">
+	<src obj="HBlacksmith"/>
 </cmd>
 
-<cmd name="Herederos de Alejandro" priority="6"
-	button="upgrades/herederosdealejandro.bmp"
-	key="e"
-	queueicon="gameres/icons/upgrades/herederosdealejandro.bmp"
-	costgold = "1500"
-	costfood = "0"
-	execdelay = "20000"
-	groupverifier="data/subai/verify_research.vs"
-	rollover="Herederos de Alejandro"
-	description="Los nuevos hoplitas reclutados tendran nivel 12"
+<cmd name="Master Axes" priority="9"
+	queueicon="gameres/icons/upgrades/verdugos.bmp"
+	key="y"
+	button="upgrades/verdugos.bmp"
 	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "6000"
+	costfood = "0"
+	execdelay = "60000"
+	rollover="Master Axes"
+	description="Allows Master Axemen to be equipped in the Barracks"
 	method="research"
-	param="ReqSet, Escudos macedonios, , SetsSet, levels/EHOPLITA, 12, NameSet, Herederos de Alejandro, default">
-	<src obj="RBlacksmith"/>
+	param="NameSet,Master Axes, default, NameSet, CMERCENARIO">
+	<src obj="CBlacksmith"/>
 </cmd>
 
-<cmd name="Caballeria pesada" priority="1"
-	queueicon="gameres/icons/upgrades/HEAVY HORSESHOES.bmp"
-	button="upgrades/HEAVY HORSESHOES.bmp"
-	key="h"
+<cmd name="Assassin Kungfu" priority="6"
+	queueicon="gameres/icons/upgrades/alianzas exoticas.bmp"
+	key="y"
+	button="upgrades/alianzas exoticas.bmp"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
-	costgold = "1500"
+	costgold = "6000"
 	costfood = "0"
-	execdelay = "30000"
-	rollover="Caballeria pesada"
-	description="Los nuevos jinetes galos tendran nivel 6"
+	execdelay = "60000"
+	rollover="Assassin Kungfu"
+	description="Allows Master Assassins to be equipped in the Barracks"
 	method="research"
-	param="ReqSet, GHorseman, , SetsSet, levels/GHorseman, 6, NameSet, Caballeria pesada, default">
+	param="NameSet,Assassin Kungfu, default, NameSet, NSECUAZ">
 	<src obj="GBlacksmith"/>
+</cmd>
+
+<cmd name="Dual Axes" priority="9"
+	queueicon="gameres/icons/upgrades/maestrosherreros.bmp"
+	key="a"
+	button="upgrades/maestrosherreros.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "6000"
+	costfood = "0"
+	execdelay = "60000"
+	rollover="Dual Axes"
+	description="Allows Master Berserkers to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Dual Axes, default, NameSet, NVAEL">
+	<src obj="IBlacksmith"/>
+</cmd>
+
+<cmd name="Dual Swords" priority="7"
+	queueicon="gameres/icons/upgrades/espadaspersas.bmp"
+	key="y"
+	button="upgrades/espadaspersas.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "6000"
+	costfood = "0"
+	execdelay = "60000"
+	rollover="Dual Swords"
+	description="Allows Master Swordmen to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Dual Swords, default, NameSet, PINMORTAL">
+	<src obj="EBlacksmith"/>
 </cmd>
 </commands>

@@ -2,14 +2,14 @@
 
 	<properties race="Egypt"/>
 	<properties maxhealth="400"/>
-	<properties damage="40" armor_slash="8" armor_pierce="4"/>
+	<properties damage="60" armor_slash="8" armor_pierce="4"/>
 	<properties speed="80"/>
-	<properties unit_specials="Triumph, Life steal, Ferocity"/>
+	<properties unit_specials="Triumph, Life steal, Active"/>
 
 	<properties icon="gameres/icons/PInmortal.bmp"/>
-	<properties display_name="Inmortal persa" display_name_plural="Inmortales persas"/>
+	<properties display_name="Master Swordman" display_name_plural="Master Swordmen"/>
 	<properties help="contents/units/PINMORTAL"/>
-	<properties edittree_pos="Units/New Units/Inmortal"/>
+	<properties edittree_pos="Units/New Units/Master Swordman (Egypt)"/>
 	<sounds command="data/sound entities/VoiceEHorusWarrior.xml"/>
 
 </class>

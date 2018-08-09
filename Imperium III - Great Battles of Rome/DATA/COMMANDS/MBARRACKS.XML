@@ -118,7 +118,7 @@
 	<src obj="MBarracks"/>
 </cmd>
 
-<cmd name="TrainHipatistas" priority="9"
+<cmd name="trainHipatistas" priority="9"
 	button="actions/TRAIN HIPATISTA.bmp"
 	queueicon="gameres/icons/HIPATISTA.bmp"
 	groupverifier="data/subai/verify_trainex.vs"
@@ -127,13 +127,13 @@
 	traincommand="yes"
 	key="y"
 	help="/contents/units/Hipatista"
-	costgold = "2000"
+	costgold = "450"
 	costfood = "0"
-	costpop = "0"
-	execdelay = "80000"
-	rollover="Contratar 10 hipatistas griegos"
-	method="Equip Hipatistas"
-	param="Hipatista"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Equip Roman Hipatista"
+	method="trainex"
+	param="1, 8, Hipatista, Hipatista, Heavy Swords and Shields, blacksmith"
 	sclass="Hipatista">
 	<src obj="MBarracks"/>
 </cmd>

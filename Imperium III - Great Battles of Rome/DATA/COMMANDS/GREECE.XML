@@ -28,6 +28,25 @@
 
 <!-- GREEK BARRACKS -->
 
+<cmd name="trainIMilitiaman" priority="3"
+	button="actions/train imilitiaman.bmp"
+	queueicon="gameres/icons/IMilitiaman.bmp"
+	groupverifier="data/subai/verify_cmdcost_building.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="m"
+	help="/contents/units/IMilitiaman"
+	costgold = "50"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "6000"
+	rollover="Equip Militiaman"
+	method="train"
+	param="IMilitiaman"
+	sclass="IMilitiaman">
+	<src obj="HBarracks"/>
+</cmd>
+
 <cmd name="trainHToxotes" priority="3"
 	button="actions/Train HToxotes.bmp"
 	queueicon="gameres/icons/HToxotes.bmp"
@@ -132,13 +151,13 @@
 	traincommand="yes"
 	key="y"
 	help="/contents/units/EHOPLITA"
-	costgold = "2000"
+	costgold = "450"
 	costfood = "0"
-	costpop = "0"
-	execdelay = "80000"
-	rollover="train Hoplita"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Equip Hoplita"
 	method="trainex"
-	param="EHOPLITA"
+	param="1, 8, EHOPLITA, EHOPLITA, Wall of Shields, blacksmith"
 	sclass="EHOPLITA">
 	<src obj="HBarracks"/>
 </cmd>
@@ -369,25 +388,6 @@
 	method="research"
 	researchcommand="yes"
 	param="ReqSet, Olympic Games, default, NamePlr, Charm of Aegle, default">
-	<src obj="HGymnasium"/>
-</cmd>
-
-<cmd name="Hire Teuton Wolves" priority="10"
-	button="actions/Train TTeutonWolf.bmp"
-	queueicon="gameres/icons/TTeutonWolf.bmp"
-	transpicon="1"
-	groupverifier="data/subai/verify_trainex.vs"
-	traincommand="yes"
-	key="w"
-	help="/contents/units/TTeutonWolf"
-	costgold = "500"
-	costfood = "0"
-	costpop = "0"
-	execdelay = "20000"
-	rollover="Hire Teuton Wolves"
-	description="Hire Teuton Wolves"
-	method="trainex"
-	param="1, 8, TTeutonWolf, TTeutonWolf, Olympic Games">
 	<src obj="HGymnasium"/>
 </cmd>
 

@@ -128,13 +128,13 @@
 	traincommand="yes"
 	key="z"
 	help="/contents/units/NVAEL"
-	costgold = "0"
-	costfood = "500"
+	costgold = "450"
+	costfood = "0"
 	costpop = "1"
 	execdelay = "20000"
-	rollover="Equip Berserkers"
+	rollover="Equip Master Berserker"
 	method="trainex"
-	param="NVAEL"
+	param="1, 8, NVAEL, NVAEL, Dual Axes, blacksmith"
 	sclass="NVAEL">
 	<src obj="IBarracks"/>
 </cmd>
