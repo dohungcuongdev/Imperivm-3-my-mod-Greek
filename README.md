@@ -11,5 +11,5 @@ VOICES<br />
 gbr.exe<br />
 rle.mmp<br />
 <br />
-Note: Please find gbr.exe and rle.mmp in Greek mod<br />
+Note: Please find gbr.exe and rle.mmp in the following link<br />
 link: https://drive.google.com/drive/folders/1swcyV1RemrFzYUniNjbH6HM7GEm5R3j7<br />
