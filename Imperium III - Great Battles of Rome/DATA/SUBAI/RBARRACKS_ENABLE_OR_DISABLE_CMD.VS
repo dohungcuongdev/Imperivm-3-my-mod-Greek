@@ -20,8 +20,6 @@ if( (EnvReadString(.settlement, "ChooseRepublicanRome") == "researched") || (Env
 	Sleep(50);
 	.CmdEnable("trainRScout");
 	Sleep(50);
-	.CmdEnable("trainIRHipatistas");
-	Sleep(50);
 		
 	if(EnvReadString(.settlement, "ChooseRepublicanRome") == "researched")
 	{
@@ -31,9 +29,13 @@ if( (EnvReadString(.settlement, "ChooseRepublicanRome") == "researched") || (Env
 		Sleep(50);
 		.CmdEnable("Equip Chariot");
 		Sleep(50);
+		.CmdEnable("trainRHipatistas");
+		Sleep(50);
 		.CmdDisable("trainIRVelit");
 		Sleep(50);
 		.CmdDisable("trainIRPraetorian");
+		Sleep(50);
+		.CmdDisable("trainIRHipatistas");
 		Sleep(50);
 	}	//End if.
 	else
@@ -44,9 +46,13 @@ if( (EnvReadString(.settlement, "ChooseRepublicanRome") == "researched") || (Env
 		Sleep(50);
 		.CmdDisable("Equip Chariot");
 		Sleep(50);
+		.CmdDisable("trainRHipatistas");
+		Sleep(50);
 		.CmdEnable("trainIRVelit");
 		Sleep(50);
 		.CmdEnable("trainIRPraetorian");
+		Sleep(50);
+		.CmdEnable("trainIRHipatistas");
 		Sleep(50);
 	}	//End else.
 }	//End if.
@@ -75,6 +81,8 @@ else
 	.CmdDisable("trainIRVelit");
 	Sleep(50);
 	.CmdDisable("trainIRPraetorian");
+	Sleep(50);
+	.CmdDisable("trainRHipatistas");
 	Sleep(50);
 	.CmdDisable("trainIRHipatistas");
 	Sleep(50);

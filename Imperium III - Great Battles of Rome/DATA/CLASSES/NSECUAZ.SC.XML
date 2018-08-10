@@ -2,9 +2,9 @@
 
 	<properties race="Gaul"/>
 	<properties maxhealth="300"/>
-	<properties damage="50" armor_slash="10" armor_pierce="10"/>
+	<properties damage="50" armor_slash="16" armor_pierce="16"/>
 	<properties speed="100"/>
-	<properties unit_specials="Penetration, Death blow, Active"/>
+	<properties unit_specials="Penetration, Death blow, Combat skill"/>
 
 	<properties icon="gameres/icons/NSECUAZ.bmp"/>
 	<properties display_name="Master Assassin" display_name_plural="Master Assassins"/>

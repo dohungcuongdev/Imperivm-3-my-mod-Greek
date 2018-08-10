@@ -118,7 +118,7 @@
 	<src obj="MBarracks"/>
 </cmd>
 
-<cmd name="trainHipatistas" priority="9"
+<cmd name="trainMHipatistas" priority="9"
 	button="actions/TRAIN HIPATISTA.bmp"
 	queueicon="gameres/icons/HIPATISTA.bmp"
 	groupverifier="data/subai/verify_trainex.vs"
@@ -131,9 +131,9 @@
 	costfood = "0"
 	costpop = "1"
 	execdelay = "20000"
-	rollover="Equip Roman Hipatista"
+	rollover="Equip Imperial Roman Hipatista"
 	method="trainex"
-	param="1, 8, Hipatista, Hipatista, Heavy Swords and Shields, blacksmith"
+	param="1, 8, IRHipatista, IRHipatista, Calling Hipatistas, blacksmith"
 	sclass="Hipatista">
 	<src obj="MBarracks"/>
 </cmd>

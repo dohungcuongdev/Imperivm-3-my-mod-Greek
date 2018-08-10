@@ -778,9 +778,25 @@
 	costfood = "0"
 	execdelay = "60000"
 	rollover="Heavy Swords and Shields"
-	description="Allows Roman Hipatistas to be equipped in the Barracks"
+	description="Allows Republican Roman Hipatistas to be equipped in the Barracks"
 	method="research"
 	param="NameSet,Heavy Swords and Shields, default, NameSet, Hipatista">
+	<src obj="RBlacksmith"/>
+</cmd>
+
+<cmd name="Calling Hipatistas" priority="6"
+	queueicon="gameres/icons/upgrades/Hijosdegrecia.bmp"
+	key="e"
+	button="upgrades/Hijosdegrecia.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "6000"
+	costfood = "0"
+	execdelay = "60000"
+	rollover="Calling Hipatistas"
+	description="Allows Imperial Roman Hipatistas to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Calling Hipatistas, default, NameSet, IRHipatista">
 	<src obj="RBlacksmith"/>
 	<src obj="MBlacksmith"/>
 </cmd>

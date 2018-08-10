@@ -3,7 +3,7 @@
 	<properties race="Greece"/>
 	<properties maxhealth="600"/>
 	<properties damage="40" armor_slash="30" armor_pierce="30"/>
-	<properties speed="60"/>
+	<properties speed="80"/>
 	<properties unit_specials="Attack skill, Defense skill, Active"/>
 
 	<properties icon="gameres/icons/GrHoplita.bmp"/>

@@ -2,9 +2,9 @@
 
 	<properties race="Carthage"/>
 	<properties maxhealth="380"/>
-	<properties damage="50" armor_slash="8" armor_pierce="8"/>
+	<properties damage="50" armor_slash="20" armor_pierce="20"/>
 	<properties speed="80"/>
-	<properties unit_specials="Triumph, Bleeding attack, Active"/>
+	<properties unit_specials="Triumph, Bleeding attack, Combat skill"/>
 
 	<properties icon="gameres/icons/CMERCENARIO.bmp"/>
 	<properties display_name="Master Axeman" display_name_plural="Master Axemen"/>
