@@ -28,6 +28,31 @@ Greece = ImperialRome;
 
 nRace = set.GetCentralBuilding.race;
 
+/** 
+if(nRace == RepublicanRome && EnvReadString(set,"ChooseRepublicanRome") == "researched")
+{
+	imperialTech[0] = "";
+	imperialTech[1] = "Roman Archers"; 
+	imperialTech[2] = "Roman Gladiator";
+	imperialTech[3] = "Roman Principle";
+	imperialTech[4] = "Roman Scout";
+	imperialTech[5] = "Roman Full Armor";
+	
+	imperialTrainCmd[0] = "trainRHastatus";
+	imperialTrainCmd[1] = "trainRArcher";
+	imperialTrainCmd[2] = "trainRGladiator";
+	imperialTrainCmd[3] = "trainRPrinciple"; 
+	imperialTrainCmd[4] = "trainRScout";
+	imperialTrainCmd[5] = "trainRTribune";
+
+	imperialBuildName[0] = "RHastatus";
+	imperialBuildName[1] = "RArcher";
+	imperialBuildName[2] = "RGladiator";
+	imperialBuildName[3] = "RPrinciple";
+	imperialBuildName[4] = "RScout"; 
+	imperialBuildName[5] = "RTribune";
+}	//Fine if.
+**/
 if(nRace == RepublicanRome && EnvReadString(set,"ChooseImperialRome") == "researched")
 {
 	/* SEZIONE DEDICATA ALLE TECNOLOGIE DI ROMA IMPERIALE: */
@@ -60,28 +85,31 @@ if(nRace == RepublicanRome && EnvReadString(set,"ChooseImperialRome") == "resear
 if(nRace == Greece)
 {
 	/* SEZIONE DEDICATA ALLE TECNOLOGIE DELLA GRECIA: */
-	greekTech[0] = "Greek Spears";          //Di prova: finché non ci saranno tutte le unità.
+	//greekTech[0] = "";          //Di prova: finché non ci saranno tutte le unità.
+	greekTech[0] = "Greek Spears";
 	greekTech[1] = "Greek Archers";
 	greekTech[2] = "Greek Spears";
-	greekTech[3] = "Greek Royal Armor";      //Di prova: finché non ci saranno tutte le unità.
+	greekTech[3] = "Forge Elite Equipment";      //Di prova: finché non ci saranno tutte le unità.
 	greekTech[4] = "Greek Chariot Wheels";
 	greekTech[5] = "Greek Royal Armor";
 	/* FINE SEZIONE DEDICATA ALLE TECNOLOGIE DELLA GRECIA. */
 
 	/* SEZIONE DEDICATA AI COMANDI DELLA GRECIA: */
-	greekTrainCmd[0] = "trainHHoplite";        //Di prova: finché non ci saranno tutte le unità.
+	//greekTrainCmd[0] = "trainIMilitiaman";        //Di prova: finché non ci saranno tutte le unità.
+	greekTrainCmd[0] = "trainHHoplite";
 	greekTrainCmd[1] = "trainHToxotes";
 	greekTrainCmd[2] = "trainHHoplite";
-	greekTrainCmd[3] = "trainHHypaspista";     //Di prova: finché non ci saranno tutte le unità.
+	greekTrainCmd[3] = "trainHMyrmidon";     //Di prova: finché non ci saranno tutte le unità.
 	greekTrainCmd[4] = "trainHChariot";
 	greekTrainCmd[5] = "trainHHypaspista";
 	/* FINE SEZIONE DEDICATA AI COMANDI DELLA GRECIA. */
 
 	/* SEZIONE DEDICATA ALLE CLASSI DELLA GRECIA: */
-	greekBuildName[0] = "HHoplite";       //Di prova: finché non ci saranno tutte le unità.
+	//greekBuildName[0] = "IMilitiaman";       //Di prova: finché non ci saranno tutte le unità.
+	greekBuildName[0] = "HHoplite";
 	greekBuildName[1] = "HToxotes";
 	greekBuildName[2] = "HHoplite";
-	greekBuildName[3] = "HHypaspista";     //Di prova: finché non ci saranno tutte le unità.
+	greekBuildName[3] = "HMyrmidon_Javelin";     //Di prova: finché non ci saranno tutte le unità.
 	greekBuildName[4] = "HChariot"; 
 	greekBuildName[5] = "HHypaspista";
 	/* FINE SEZIONE DEDICATA ALLE CLASSI DELLA GRECIA. */

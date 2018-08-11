@@ -172,15 +172,6 @@ else if (nRace == Germany)
 		max = nMaxAllowed;
 	nUpgradeType = 2; // settlement
 	strTech = "Legendary Valkyries";
-}
-else if(nRace == Greece)    // -> RECLUTAMENTO MIRMIDONI.
-{
-	strHire = "trainHMyrmidon";
-	class = "HMyrmidon";
-	max = EnvReadInt(AIPlayer, "MaxMyrmidons");
-	nMaxAllowed	= AIVar(AIPlayer, AIV_MaxHMyrmidon);
-	if (nMaxAllowed >= 0 && nMaxAllowed < max)
-		max = nMaxAllowed;
 }	//End else if.
 
 if (strHire == "")
@@ -300,10 +291,26 @@ if (nArenaComplete > 0)
 	}
 
 	/// Iberia: "Nobility"
+	/**
 	if (nRace == Iberia)
 	if (set.gold >= AIVar(AIPlayer, AIV_ExcessGold))
 	{
-		strTech = "Nobility";
+	strTech = "Nobility";
+	if (!IsResearched(set, strTech))
+	if (!IsResearching(set, strTech))
+	{
+		EnvWriteString(set, "strTech", strTech);
+			set.AIRun("ESH_NeedTech.vs");
+			return;
+		}
+	}
+	**/
+	
+	/// Iberia: "Veteran's guild"
+	if (nRace == Iberia)
+	if (set.gold >= AIVar(AIPlayer, AIV_ExcessGold))
+	{
+		strTech = "Veteran's guild";
 		if (!IsResearched(set, strTech))
 		if (!IsResearching(set, strTech))
 		{

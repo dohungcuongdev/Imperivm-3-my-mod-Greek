@@ -19,6 +19,8 @@
 	<src obj="TBlacksmith"/>
 	<src obj="EBlacksmith"/>
 	<src obj="HBlacksmith"/>
+	<src obj="RRBlacksmith"/>
+	<src obj="TTBlacksmith"/>
 </cmd>
 
 <cmd name="Strenghten Stronghold Defences I" priority="10"
@@ -43,6 +45,8 @@
 	<src obj="TBlacksmith"/>
 	<src obj="EBlacksmith"/>
 	<src obj="HBlacksmith"/>
+	<src obj="RRBlacksmith"/>
+	<src obj="TTBlacksmith"/>
 </cmd>
 
 <cmd name="Strenghten Stronghold Defences II" priority="10"
@@ -67,6 +71,8 @@
 	<src obj="TBlacksmith"/>
 	<src obj="EBlacksmith"/>
 	<src obj="HBlacksmith"/>
+	<src obj="RRBlacksmith"/>
+	<src obj="TTBlacksmith"/>
 </cmd>
 <!-- ROMAN BLACKSMITH COMMANDS -->
 
@@ -84,6 +90,7 @@
 	method="research"
 	param="NameSet, Arrows,default,NameSet, RArcher,,">
 	<src obj="RBlacksmith"/>
+	<src obj="RRBlacksmith"/>
 	<src obj="MBlacksmith"/>
 </cmd>
 
@@ -118,6 +125,7 @@
 	method="research"
 	param="NameSet,Pikes,default, NameSet, RPrinciple,">
 	<src obj="RBlacksmith"/>
+	<src obj="RRBlacksmith"/>
 	<src obj="MBlacksmith"/>
 </cmd>
 <cmd name="Roman Scout" priority="4"
@@ -134,6 +142,7 @@
 	method="research"
 	param="NameSet,Horseshoes,default, NameSet, RScout,">
 	<src obj="RBlacksmith"/>
+	<src obj="RRBlacksmith"/>
 	<src obj="MBlacksmith"/>
 </cmd>
 <cmd name="Roman Praetorian" priority="5"
@@ -166,6 +175,7 @@
 	method="research"
 	param="NameSet,Full Armor,default,NameSet, RTribune,">
 	<src obj="RBlacksmith"/>
+	<src obj="RRBlacksmith"/>
 </cmd>
 
 <cmd name="Roman Chariot Wheels" priority="5"
@@ -182,6 +192,7 @@
 	method="research"
 	param="NameSet,Chariot Wheels,default, NameSet, RChariot,">
 	<src obj="RBlacksmith"/>
+	<src obj="RRBlacksmith"/>
 </cmd>
 <!-- BLACKSMITH COMMANDS -->
 <!-- 'Horseman', 'Axeman', 'Spearman' and 'Woman warrior'-->
@@ -672,6 +683,7 @@
 	traincommand="yes"
 	>
 	<src obj="TBlacksmith"/>
+	<src obj="TTBlacksmith"/>
 </cmd>
 
 <cmd name="Javelin production" priority="2"
@@ -688,6 +700,7 @@
 	traincommand="yes"
 	>
 	<src obj="TBlacksmith"/>
+	<src obj="TTBlacksmith"/>
 </cmd>
 <cmd name="Horseshoes production" priority="3"
 	queueicon="gameres/icons/upgrades/Horseshoes.bmp"
@@ -703,6 +716,7 @@
 	traincommand="yes"
 	>
 	<src obj="TBlacksmith"/>
+	<src obj="TTBlacksmith"/>
 </cmd>
 <cmd name="Macemen production" priority="4"
 	queueicon="gameres/icons/upgrades/Incr Mace Production.bmp"
@@ -718,7 +732,11 @@
 	traincommand="yes"
 	>
 	<src obj="TBlacksmith"/>
+	<src obj="TTBlacksmith"/>
 </cmd>
+
+<!-- Other Stronghold in editor -->
+
 <cmd name="Roman Gladiator" priority="1"
 	queueicon="gameres/icons/upgrades/Gladiator.bmp"
 	button="upgrades/glad.bmp"
@@ -731,11 +749,12 @@
 	rollover="Tridents"
 	description="Allows Gladiators to be equipped in the Barracks"
 	method="research"
-	param="NameSet, RGladiator, Gladiator equipment ready">
-	<src obj="RBlacksmith"/>
+	param="NameSet, Roman Gladiator,default, NameSet, RGladiator">
+	<src obj="RRBlacksmith"/>
 </cmd>
-<cmd name="Teuton Master" priority="5"
-	button="upgrades/ARCHER2.bmp"
+
+<cmd name="Teuton Master" priority="7"
+	button="actions/TRAIN TTEUTONARCHER.bmp"
 	key="t"
 	queueicon="gameres/icons/upgrades/tentou-archer.bmp"
 	costgold = "500"
@@ -746,8 +765,8 @@
 	description="Allows Teuton Riders to change to Teuton Archers and vise versa"
 	method="research"
 	researchcommand="yes"
-	param="default, NamePlr, Teuton Master, default">
-	<src obj="TBlacksmith"/>
+	param="NamePlr, Teuton Master, default">
+	<src obj="TTBlacksmith"/>
 </cmd>
 
 <!-- New Unit -->
@@ -782,6 +801,7 @@
 	method="research"
 	param="NameSet,Heavy Swords and Shields, default, NameSet, Hipatista">
 	<src obj="RBlacksmith"/>
+	<src obj="RRBlacksmith"/>
 </cmd>
 
 <cmd name="Calling Hipatistas" priority="6"

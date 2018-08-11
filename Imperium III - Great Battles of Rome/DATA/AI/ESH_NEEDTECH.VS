@@ -71,7 +71,6 @@ else if (strTech == "Call Mountaineer")   bArenaHire = true; // Iberia
 else if (strTech == "Hire Viking Lord")   bArenaHire = true; // Britain
 else if (strTech == "Chariot of Osiris")  bArenaHire = true; // Egypt
 else if (strTech == "Call Valkyries")     bArenaHire = true; // Germany
-else if (strTech == "trainHMyrmidon")     bArenaHire = true; // Greece.
 
 
 if (!GetCmdCost(strTech, gold, food)) 
@@ -149,7 +148,8 @@ else if (nRace == Iberia)
 		if (!IsResearched(set, "Heroes' Wisdom"))   if (set.CanResearch("Heroes' Wisdom"))
 		//if (!IsResearched(set, "Warriors' Wisdom")) if (set.CanResearch("Warriors' Wisdom"))
 		if (!IsResearched(set, "Mountain Clan"))    if (set.CanResearch("Mountain Clan"))
-		if (!IsResearched(set, "Nobility"))         if (set.CanResearch("Nobility"))
+		//if (!IsResearched(set, "Nobility"))         if (set.CanResearch("Nobility"))
+		if (!IsResearched(set, "Veteran's guild"))         if (set.CanResearch("Veteran's guild"))
 			bRefuseTech = true;
 	if (strTech == "Tournaments") if (IsResearched(set, "Code of Valor"))
 		if (!IsResearched(set, "Ancestral Knowledge")) if (set.CanResearch("Ancestral Knowledge"))

@@ -21,6 +21,7 @@
 	<src obj="TBarracks"/>
 	<src obj="EBarracks"/>
 	<src obj="HBarracks"/>
+	<src obj="RRBarracks"/>
 </cmd>
 
 <cmd name="Barrack Level 1" priority="2"
@@ -45,6 +46,7 @@
 	<src obj="TBarracks"/>
 	<src obj="EBarracks"/>
 	<src obj="HBarracks"/>
+	<src obj="RRBarracks"/>
 </cmd>
 
 <cmd name="Barrack Level 2" priority="2"
@@ -69,6 +71,7 @@
 	<src obj="TBarracks"/>
 	<src obj="EBarracks"/>
 	<src obj="HBarracks"/>
+	<src obj="RRBarracks"/>
 </cmd>
 
 <cmd name="Barrack Level 3" priority="2"
@@ -93,6 +96,7 @@
 	<src obj="TBarracks"/>
 	<src obj="EBarracks"/>
 	<src obj="HBarracks"/>
+	<src obj="RRBarracks"/>
 </cmd>
 
 </commands>

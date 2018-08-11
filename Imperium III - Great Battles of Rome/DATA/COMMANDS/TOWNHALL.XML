@@ -36,6 +36,7 @@
 	<src obj="RTownhall"/>
 	<src obj="MTownhall"/>
 	<src obj="HTownhall"/>
+	<src obj="RRTownhall"/>
 </cmd>
 
 <cmd name="autotrain_stop_gr" priority="8"
@@ -50,6 +51,7 @@
 	<src obj="RTownhall"/>
 	<src obj="MTownhall"/>
 	<src obj="HTownhall"/>
+	<src obj="RRTownhall"/>
 </cmd>
 
 <cmd name="autotrain_start_cbet" priority="8"
@@ -164,5 +166,6 @@
 	<src obj="CTownhall"/>
 	<src obj="TTownhall"/>
 	<src obj="HTownhall"/>
+	<src obj="RRTownhall"/>
 </cmd>
 </commands>

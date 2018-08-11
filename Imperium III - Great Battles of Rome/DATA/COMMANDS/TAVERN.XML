@@ -31,6 +31,8 @@
 	rollover="Increase population">
 	<src obj="RTavern"/>
 	<src obj="RTavern2"/>
+	<src obj="RRTavern"/>
+	<src obj="RRTavern2"/>
 </cmd>
 
 <cmd name="MAddPop" priority="2"
@@ -127,6 +129,8 @@
 	<src obj="RTavern2"/>
 	<src obj="MTavern"/>
 	<src obj="MTavern2"/>
+	<src obj="RRTavern"/>
+	<src obj="RRTavern2"/>
 </cmd>
 
 <cmd name="Free Trade" priority="8"
@@ -238,6 +242,8 @@
 	<src obj="RTavern2"/>
 	<src obj="MTavern"/>
 	<src obj="MTavern2"/>
+	<src obj="RRTavern"/>
+	<src obj="RRTavern2"/>
 </cmd>
 
 <cmd name="repair tavern" priority="1"
@@ -279,6 +285,8 @@
 	<src obj="RTavern2"/>
 	<src obj="MTavern"/>
 	<src obj="MTavern2"/>
+	<src obj="RRTavern"/>
+	<src obj="RRTavern2"/>
 </cmd>
 
 <cmd name="Expedition" priority="12"
@@ -313,6 +321,8 @@
 	<src obj="RTavern2"/>
 	<src obj="MTavern"/>
 	<src obj="MTavern2"/>
+	<src obj="RRTavern"/>
+	<src obj="RRTavern2"/>
 </cmd>
 
 <cmd name="Food Tax" priority="16"
@@ -415,6 +425,8 @@
 	rollover="Tribute (once per game)">
 	<src obj="RTavern"/>
 	<src obj="RTavern2"/>
+	<src obj="RRTavern"/>
+	<src obj="RRTavern2"/>
 </cmd>
 
 <cmd name="MTribute" priority="22"

@@ -67,6 +67,22 @@
 	button="Upgrades/Gladiator Show.bmp"
 	key="s"
 	queueicon="gameres/icons/upgrades/Gladiator Show.bmp"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "25000"
+	groupverifier="data/subai/verify_research.vs"
+	description="Allows Gladiators to be hired"
+	rollover="Gladiator shows"
+	method="research"
+	researchcommand="yes"
+	param="NameSet, Gladiator Shows, default, NameSet, RGladiator, default">
+	<src obj="RArena"/>
+</cmd>
+
+<cmd name="RGladiator Shows" priority="2"
+	button="Upgrades/Gladiator Show.bmp"
+	key="s"
+	queueicon="gameres/icons/upgrades/Gladiator Show.bmp"
 	costgold = "2500"
 	costfood = "0"
 	execdelay = "25000"
@@ -76,7 +92,7 @@
 	method="research"
 	researchcommand="yes"
 	param="SetsPlr, standard_spawn_level, 3,NameSet, Gladiator Shows, default">
-	<src obj="RArena"/>
+	<src obj="RRArena"/>
 </cmd>
 
 <cmd name="People's Assembly" priority="2"
@@ -142,6 +158,7 @@
 	researchcommand="yes"
 	param="ReqSet, Gladiator Shows, default, SetsPlr, maxtrainlevel, 4, NamePlr, Training, ">
 	<src obj="RArena"/>
+	<src obj="RRArena"/>
 </cmd>
 
 <cmd name="Gaul Training 2" priority="3"
@@ -175,6 +192,7 @@
 	researchcommand="yes"
 	param="ReqSet, Gladiator Shows, , ReqPlr, Training, ,SetsPlr, maxtrainlevel, 8, NamePlr, Advanced Training, default">
 	<src obj="RArena"/>
+	<src obj="RRArena"/>
 </cmd>
 
 <cmd name="Veteran Offence" priority="4"
@@ -191,6 +209,7 @@
 	researchcommand="yes"
 	param="ReqSet, Gladiator Shows, default,NamePlr, Veteran Offence, default">
 	<src obj="RArena"/>
+	<src obj="RRArena"/>
 </cmd>
 <cmd name="Veteran Defence" priority="5"
 	button="research/veteran defence.bmp"
@@ -206,6 +225,7 @@
 	researchcommand="yes"
 	param="ReqSet, Gladiator Shows, default,NamePlr, Veteran Defence, default">
 	<src obj="RArena"/>
+	<src obj="RRArena"/>
 </cmd>
 <cmd name="Veteran Health" priority="6"
 	button="research/veteran health.bmp"
@@ -221,6 +241,7 @@
 	researchcommand="yes"
 	param="ReqSet, Gladiator Shows,default ,NamePlr, Veteran Health, default">
 	<src obj="RArena"/>
+	<src obj="RRArena"/>
 </cmd>
 
 <cmd name="Gaul Training 3" priority="3"
@@ -340,6 +361,7 @@
 	help="/contents/units/RHero"
 	rollover="Hire hero">
 	<src obj="RArena"/>
+	<src obj="RRArena"/>
 </cmd>
 
 <cmd name="hireheroRImperial" priority="1"
@@ -461,6 +483,7 @@
 	help="/contents/units/GHero"
 	rollover="Hire hero">
 	<src obj="TSanctuaryOfVotan"/>
+	<src obj="TTSanctuaryOfVotan"/>
 </cmd>
 
 <cmd name="Hire Trident warrior" priority="4"
@@ -1055,6 +1078,7 @@
 	method="research"
 	param="NameSet, Fights, default,">
 	<src obj="TSanctuaryOfVotan"/>
+	<src obj="TTSanctuaryOfVotan"/>
 </cmd>
 
 <cmd name="Call Valkyries" priority="3"
@@ -1075,6 +1099,7 @@
 	method="trainex"
 	param="5, 10, TValkyrie, TValkyrie,Fights">
 	<src obj="TSanctuaryOfVotan"/>
+	<src obj="TTSanctuaryOfVotan"/>
 </cmd>
 
 <cmd name="Legendary Valkyries" priority="4"
@@ -1091,6 +1116,7 @@
 	researchcommand="yes"
 	param="ReqSet, Fights, default, NameSet, Legendary Valkyries, default">
 	<src obj="TSanctuaryOfVotan"/>
+	<src obj="TTSanctuaryOfVotan"/>
 </cmd>
 
 <cmd name="Learning" priority="5"
@@ -1107,6 +1133,7 @@
 	researchcommand="yes"
 	param="ReqSet, Fights, default, NamePlr, Learning, default">
 	<src obj="TSanctuaryOfVotan"/>
+	<src obj="TTSanctuaryOfVotan"/>
 </cmd>
 
 <cmd name="Attack focus" priority="6"
@@ -1122,6 +1149,23 @@
 	method="research"
 	researchcommand="yes"
 	param="ReqSet, Fights, default, NamePlr, Attack focus, default">
+	<src obj="TSanctuaryOfVotan"/>
+	<src obj="TTSanctuaryOfVotan"/>
+</cmd>
+
+<cmd name="Teuton Master" priority="7"
+	button="actions/TRAIN TTEUTONARCHER.bmp"
+	key="t"
+	queueicon="gameres/icons/upgrades/tentou-archer.bmp"
+	costgold = "500"
+	costfood = "0"
+	execdelay = "15000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Teuton Master"
+	description="Allows Teuton Riders to change to Teuton Archers and vise versa"
+	method="research"
+	researchcommand="yes"
+	param="ReqSet, Fights, default, NamePlr, Teuton Master, default">
 	<src obj="TSanctuaryOfVotan"/>
 </cmd>
 
@@ -1139,9 +1183,10 @@
 	method="research"
 	param="ReqSet, Fights, default, NameSet,Teuton Wolves, default">
 	<src obj="TSanctuaryOfVotan"/>
+	<src obj="TTSanctuaryOfVotan"/>
 </cmd>
 
-<cmd name="Hire Teuton Wolves" priority="10"
+<cmd name="Hire Teuton Wolves" priority="9"
 	button="actions/Teuton Wolf.BMP"
 	queueicon="gameres/icons/TTeutonWolf.BMP"
 	transpicon="1"
@@ -1159,5 +1204,6 @@
 	method="trainex"
 	param="1, 4, TTeutonWolf, TTeutonWolf, Teuton Wolves">
 	<src obj="TSanctuaryOfVotan"/>
+	<src obj="TTSanctuaryOfVotan"/>
 </cmd>
 </commands>

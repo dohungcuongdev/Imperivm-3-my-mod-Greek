@@ -17,6 +17,7 @@
 	<src obj="RTemple"/>
 	<src obj="MTemple"/>
 	<src obj="HTemple"/>
+	<src obj="RRTemple"/>
 </cmd>
 
 <!-- ROMAN TEMPLE COMMANDS -->
@@ -39,6 +40,7 @@
 	sclass="RPriest">
 	<src obj="RTemple"/>
 	<src obj="MTemple"/>
+	<src obj="RRTemple"/>
 </cmd>
 
 <cmd name="Altar of Jupiter" priority="2"
@@ -56,6 +58,7 @@
 	param="NameSet, Altar of Jupiter, default, SetsSet, levels/RPriest, 4">
 	<src obj="RTemple"/>
 	<src obj="MTemple"/>
+	<src obj="RRTemple"/>
 </cmd>
 
 <cmd name="Cloud of Plague" priority="5"
@@ -73,6 +76,7 @@
 	param="ReqSet, Altar of Jupiter, default, NamePlr, Cloud of Plague, default">
 	<src obj="RTemple"/>
 	<src obj="MTemple"/>
+	<src obj="RRTemple"/>
 </cmd>
 
 <cmd name="Wrath of Jupiter" priority="6"
@@ -90,6 +94,7 @@
 	param="ReqSet, Altar of Jupiter, default, NamePlr, Wrath of Jupiter, default">
 	<src obj="RTemple"/>
 	<src obj="MTemple"/>
+	<src obj="RRTemple"/>
 </cmd>
 
 <cmd name="God's Gift" priority="7"
@@ -107,6 +112,7 @@
 	param="ReqSet, Altar of Jupiter, default, NameSet, God's Gift, default, SetsSet, items/God's Gift, 1">
 	<src obj="RTemple"/>
 	<src obj="MTemple"/>
+	<src obj="RRTemple"/>
 </cmd>
 
 </commands>

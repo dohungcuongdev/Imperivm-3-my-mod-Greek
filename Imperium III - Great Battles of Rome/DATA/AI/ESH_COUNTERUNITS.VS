@@ -24,6 +24,35 @@ nRace = set.GetCentralBuilding.race;
 
 bLogArmy = (AIVar(AIPlayer, AIV_LogArmy) != 0) && UEnabled(AIVar(AIPlayer, AIV_LogPlayer), AIPlayer);
 
+/** 
+if(nRace == RepublicanRome && EnvReadString(set,"ChooseRepublicanRome") == "researched")
+{
+	nEnabled = EnvReadInt(AIPlayer, "IRomeUnitsEnabled");
+	
+	imperialTrainCmd[0] = "trainRHastatus"; 
+	imperialTrainCmd[1] = "trainRArcher";
+	imperialTrainCmd[2] = "trainRGladiator"; 
+	imperialTrainCmd[3] = "trainRPrinciple";
+	imperialTrainCmd[4] = "trainRScout";
+	imperialTrainCmd[5] = "trainRTribune";
+	
+	imperialUType[0] = "RHastatus"; 
+	imperialUType[1] = "RArcher"; 
+	imperialUType[2] = "RGladiator"; 
+	imperialUType[3] = "RPrinciple"; 
+	imperialUType[4] = "RScout"; 
+	imperialUType[5] = "RTribune"; 
+
+	imperialTech[0] = "";
+	imperialTech[1] = "Roman Archers";
+	imperialTech[2] = "Roman Gladiator";
+	imperialTech[3] = "Roman Principle";
+	imperialTech[4] = "Roman Scout";
+	imperialTech[5] = "Roman Full Armor";
+}	//Fine if.
+else 
+**/
+	
 if(nRace == RepublicanRome && EnvReadString(set,"ChooseImperialRome") == "researched")
 {
 	nEnabled = EnvReadInt(AIPlayer, "IRomeUnitsEnabled");
@@ -53,24 +82,27 @@ else if(nRace == Greece)
 {
 	nEnabled = EnvReadInt(AIPlayer, "GreekUnitsEnabled");
 	
-	greekTrainCmd[0] = "";    
+	//greekTrainCmd[0] = "trainIMilitiaman";   
+	greekTrainCmd[0] = "trainHHoplite"; 	
 	greekTrainCmd[1] = "trainHToxotes";
 	greekTrainCmd[2] = "trainHHoplite";
-	greekTrainCmd[3] = "";   
+	greekTrainCmd[3] = "trainHMyrmidon";   
 	greekTrainCmd[4] = "trainHChariot";
 	greekTrainCmd[5] = "trainHHypaspista";
 	
-	greekUType[0] = ""; 
+	//greekUType[0] = "IMilitiaman"; 
+	greekUType[0] = "HHoplite";
 	greekUType[1] = "HToxotes"; 
 	greekUType[2] = "HHoplite"; 
-	greekUType[3] = ""; 
+	greekUType[3] = "HMyrmidon_Javelin"; 
 	greekUType[4] = "HChariot"; 
 	greekUType[5] = "HHypaspista"; 
 	
-	greekTech[0] = "";
+	//greekTech[0] = "";
+	greekTech[0] = "Greek Spears";
 	greekTech[1] = "Greek Archers";
 	greekTech[2] = "Greek Spears";
-	greekTech[3] = "";
+	greekTech[3] = "Forge Elite Equipment";
 	greekTech[4] = "Greek Chariot Wheels";
 	greekTech[5] = "Greek Royal Armor";
 }	//Fine else if.

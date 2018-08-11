@@ -23,6 +23,25 @@ EnvWriteInt(set, "gSellFood", 0);
 EnvWriteInt(set, "nArmyBuilds", 0);	/// the amount of times ESH_BuildArmy is called
 bLogPlayer = UEnabled(AIVar(AIPlayer, AIV_LogPlayer), AIPlayer);
 
+/** 
+if(nRace == RepublicanRome && EnvReadString(set, "ChooseRepublicanRome") == "researched")
+{
+	imperialTrainCmd[0] = "trainRHastatus"; 
+	imperialTrainCmd[1] = "trainRArcher";
+	imperialTrainCmd[2] = "trainRGladiator";
+	imperialTrainCmd[3] = "trainRPrinciple";
+	imperialTrainCmd[4] = "trainRScout";
+	imperialTrainCmd[5] = "trainRTribune";
+
+	imperialTech[0] = "";
+	imperialTech[1] = "Roman Archers";
+	imperialTech[2] = "Roman Gladiator";
+	imperialTech[3] = "Roman Principle";
+	imperialTech[4] = "Roman Scout";
+	imperialTech[5] = "Roman Full Armor";
+}	//Fine if.
+**/
+
 if(nRace == RepublicanRome && EnvReadString(set, "ChooseImperialRome") == "researched")
 {
 	imperialTrainCmd[0] = "trainRHastatus"; 
@@ -49,17 +68,19 @@ if(nRace == RepublicanRome && EnvReadString(set, "ChooseImperialRome") == "resea
 
 if(nRace == Greece)
 {
+	//greekTrainCmd[0] = "trainIMilitiaman"
 	greekTrainCmd[0] = "trainHHoplite";                 //Di prova: finché non ci saranno tutte le unità.
 	greekTrainCmd[1] = "trainHToxotes";
 	greekTrainCmd[2] = "trainHHoplite";
-	greekTrainCmd[3] = "trainHHypaspista";               //Di prova: finché non ci saranno tutte le unità.
+	greekTrainCmd[3] = "trainHMyrmidon";               //Di prova: finché non ci saranno tutte le unità.
 	greekTrainCmd[4] = "trainHChariot";
 	greekTrainCmd[5] = "trainHHypaspista";
 	
+	//greekTech[0] = "";
 	greekTech[0] = "Greek Spears";                       //Di prova: finché non ci saranno tutte le unità.
 	greekTech[1] = "Greek Archers";
 	greekTech[2] = "Greek Spears";
-	greekTech[3] = "Greek Royal Armor";                  //Di prova: finché non ci saranno tutte le unità.
+	greekTech[3] = "Forge Elite Equipment";                  //Di prova: finché non ci saranno tutte le unità.
 	greekTech[4] = "Greek Chariot Wheels";
 	greekTech[5] = "Greek Royal Armor";
 }	//Fine if.
