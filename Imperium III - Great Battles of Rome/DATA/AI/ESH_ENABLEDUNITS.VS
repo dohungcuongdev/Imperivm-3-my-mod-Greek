@@ -45,7 +45,7 @@ if(EnvReadString(set, "ChooseImperialRome") == "researched")
 
 /* GRECIA: */
 nEnabled = 0;
-CheckUEnabled(nEnabled, AIPlayer, AIVar(AIPlayer, AIV_MaxIMilitiaman),     0, Greece);
+//CheckUEnabled(nEnabled, AIPlayer, AIVar(AIPlayer, AIV_MaxIMilitiaman),     0, Greece);
 CheckUEnabled(nEnabled, AIPlayer, AIVar(AIPlayer, AIV_MaxHToxotes),        1, Greece);
 CheckUEnabled(nEnabled, AIPlayer, AIVar(AIPlayer, AIV_MaxHHoplite),        2, Greece);
 CheckUEnabled(nEnabled, AIPlayer, AIVar(AIPlayer, AIV_MaxHMyrmidon_Javelin),       3, Greece);

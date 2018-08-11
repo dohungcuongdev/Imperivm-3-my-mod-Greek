@@ -127,13 +127,13 @@
 	traincommand="yes"
 	key="z"
 	help="/contents/units/NSecuaz"
-	costgold = "450"
+	costgold = "420"
 	costfood = "0"
 	costpop = "1"
 	execdelay = "20000"
 	rollover="Equip Master Assassin"
 	method="trainex"
-	param="1, 6, NSECUAZ, NSECUAZ, Assassin Kungfu, blacksmith"
+	param="1, 7, NSECUAZ, NSECUAZ, Assassin Kungfu, blacksmith"
 	sclass="NSECUAZ">
 	<src obj="GBarracks"/>
 </cmd>
