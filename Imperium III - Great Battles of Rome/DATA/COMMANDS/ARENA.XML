@@ -1157,7 +1157,7 @@
 	rollover="Hire Teuton Wolf"
 	description="Hire Teuton Wolf"
 	method="trainex"
-	param="1, 6, TTeutonWolf, TTeutonWolf, Teuton Wolves">
+	param="1, 4, TTeutonWolf, TTeutonWolf, Teuton Wolves">
 	<src obj="TSanctuaryOfVotan"/>
 </cmd>
 </commands>

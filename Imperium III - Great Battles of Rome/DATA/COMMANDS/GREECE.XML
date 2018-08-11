@@ -157,7 +157,7 @@
 	execdelay = "20000"
 	rollover="Equip Hoplita"
 	method="trainex"
-	param="1, 8, EHOPLITA, EHOPLITA, Wall of Shields, blacksmith"
+	param="1, 6, EHOPLITA, EHOPLITA, Wall of Shields, blacksmith"
 	sclass="EHOPLITA">
 	<src obj="HBarracks"/>
 </cmd>

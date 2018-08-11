@@ -188,7 +188,7 @@
 	execdelay = "20000"
 	rollover="Equip Republican Roman Hipatista"
 	method="trainex"
-	param="1, 8, Hipatista, Hipatista, Heavy Swords and Shields, blacksmith"
+	param="1, 6, Hipatista, Hipatista, Heavy Swords and Shields, blacksmith"
 	sclass="Hipatista">
 	<src obj="RBarracks"/>
 </cmd>
@@ -202,13 +202,13 @@
 	traincommand="yes"
 	key="y"
 	help="/contents/units/Hipatista"
-	costgold = "450"
+	costgold = "600"
 	costfood = "0"
 	costpop = "1"
 	execdelay = "20000"
 	rollover="Equip Imperial Roman Hipatista"
 	method="trainex"
-	param="1, 8, IRHipatista, IRHipatista, Calling Hipatistas, blacksmith"
+	param="1, 3, IRHipatista, IRHipatista, Calling Hipatistas, blacksmith"
 	sclass="Hipatista">
 	<src obj="RBarracks"/>
 </cmd>
