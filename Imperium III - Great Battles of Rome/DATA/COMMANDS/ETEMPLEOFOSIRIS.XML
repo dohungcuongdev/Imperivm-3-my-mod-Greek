@@ -15,6 +15,7 @@
 	costfood="0"
 	execdelay = "60000">
 	<src obj="ETempleOfOsiris"/>
+	<src obj="EETempleOfOsiris"/>
 </cmd>
 
 <cmd name="trainEPriest" priority="1"
@@ -34,6 +35,7 @@
 	param="EPriest"
 	sclass="EPriest">
 	<src obj="ETempleOfOsiris"/>
+	<src obj="EETempleOfOsiris"/>
 </cmd>
 
 <cmd name="Cult of Osiris" priority="2"
@@ -50,6 +52,7 @@
 	method="research"
 	param="NameSet, Cult of Osiris, default">
 	<src obj="ETempleOfOsiris"/>
+	<src obj="EETempleOfOsiris"/>
 </cmd>
 
 <cmd name="EZombify" priority="3"
@@ -66,6 +69,7 @@
 	method="research"
 	param="ReqSet, Cult of Osiris, default, NamePlr, Zombify, default">
 	<src obj="ETempleOfOsiris"/>
+	<src obj="EETempleOfOsiris"/>
 </cmd>
 <cmd name="ECloud of Plague" priority="4"
 	queueicon="gameres/icons/upgrades/mist.bmp"
@@ -81,6 +85,7 @@
 	method="research"
 	param="ReqSet, Cult of Osiris, default, NamePlr, Cloud of Plague, default">
 	<src obj="ETempleOfOsiris"/>
+	<src obj="EETempleOfOsiris"/>
 </cmd>
 
 <cmd name="Mumification" priority="5"
@@ -89,15 +94,33 @@
 	button="research/mumification.bmp"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Mummification"
+	description = "New heroes are hired with 2/3 the level of the best hero you've had"
+	method="research"
+	param="ReqSet, Cult of Osiris, default, NameSet, Mumification, default">
+	<src obj="ETempleOfOsiris"/>
+</cmd>
+
+<!-- For Temple of Osiris (2) -->
+<cmd name="Eighteen" priority="5"
+	queueicon="gameres/icons/upgrades/mumification.bmp"
+	key="m"
+	button="research/mumification.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
 	costgold = "5000"
 	costfood = "0"
 	execdelay = "60000"
-	rollover="Mummification"
+	rollover="Eighteen"
 	description = "All new heroes are level 18"
 	method="research"
-	param="ReqSet, Cult of Osiris, default, SetsSet, levels/Hero, 18, NameSet, Mumification, default">
-	<src obj="ETempleOfOsiris"/>
+	param="ReqSet, Cult of Osiris, default, SetsSet, levels/Hero, 18, NameSet, Eighteen, default">
+	<src obj="EETempleOfOsiris"/>
 </cmd>
+
 <cmd name="Chariot of Osiris" priority="6"
 	button="actions/chariot of osiris.bmp"
 	key="r"
@@ -112,5 +135,6 @@
 	method="trainex"
 	param="1, 10, EChariot,  EChariot, Cult of Osiris">
 	<src obj="ETempleOfOsiris"/>
+	<src obj="EETempleOfOsiris"/>
 </cmd>
 </commands>
