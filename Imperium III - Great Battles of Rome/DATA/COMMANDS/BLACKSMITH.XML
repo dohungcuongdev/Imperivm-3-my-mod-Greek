@@ -804,6 +804,7 @@
 	<src obj="RRBlacksmith"/>
 </cmd>
 
+<!--
 <cmd name="Calling Hipatistas" priority="6"
 	queueicon="gameres/icons/upgrades/Hijosdegrecia.bmp"
 	key="e"
@@ -817,6 +818,24 @@
 	description="Allows Imperial Roman Hipatistas to be equipped in the Barracks"
 	method="research"
 	param="NameSet,Calling Hipatistas, default, NameSet, IRHipatista">
+	<src obj="RBlacksmith"/>
+	<src obj="MBlacksmith"/>
+</cmd>
+-->
+
+<cmd name="Heavy Shields and Spears" priority="6"
+	queueicon="gameres/icons/upgrades/IRPRETORIAN.BMP"
+	key="e"
+	button="upgrades/IRPRETORIAN.BMP"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "6000"
+	costfood = "0"
+	execdelay = "60000"
+	rollover="Heavy Shields and Spears"
+	description="Allows Imperial Roman Hipatistas to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Heavy Shields and Spears, default, NameSet, IRHipatista">
 	<src obj="RBlacksmith"/>
 	<src obj="MBlacksmith"/>
 </cmd>
@@ -853,6 +872,7 @@
 	<src obj="CBlacksmith"/>
 </cmd>
 
+<!--
 <cmd name="Assassin Kungfu" priority="6"
 	queueicon="gameres/icons/upgrades/alianzas exoticas.bmp"
 	key="y"
@@ -866,6 +886,23 @@
 	description="Allows Master Assassins to be equipped in the Barracks"
 	method="research"
 	param="NameSet,Assassin Kungfu, default, NameSet, NSECUAZ">
+	<src obj="GBlacksmith"/>
+</cmd>
+-->
+
+<cmd name="Steel Weapons" priority="6"
+	queueicon="gameres/icons/upgrades/STEEL WEAPONS.BMP"
+	key="y"
+	button="upgrades/STEEL WEAPONS.BMP"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "6000"
+	costfood = "0"
+	execdelay = "60000"
+	rollover="Steel Weapons"
+	description="Allows Master Assassins to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Steel Weapons, default, NameSet, NSECUAZ">
 	<src obj="GBlacksmith"/>
 </cmd>
 

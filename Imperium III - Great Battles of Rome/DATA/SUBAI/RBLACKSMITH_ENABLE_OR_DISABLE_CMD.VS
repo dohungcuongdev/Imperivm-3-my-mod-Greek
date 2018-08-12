@@ -25,9 +25,9 @@ if( (EnvReadString(.settlement, "ChooseRepublicanRome") == "researched") || (Env
 		Sleep(50);
 		.CmdEnable("Roman Gladiator");
 		Sleep(50);
-		.CmdEnable("Heavy Swords and Shields");
-		Sleep(50);
-		.CmdDisable("Calling Hipatistas");
+		//.CmdDisable("Calling Hipatistas");
+		//Sleep(50);
+		.CmdDisable("Heavy Swords and Shields");
 		Sleep(50);
 		.CmdDisable("Roman Velit");
 		Sleep(50);
@@ -46,7 +46,11 @@ if( (EnvReadString(.settlement, "ChooseRepublicanRome") == "researched") || (Env
 		Sleep(50);
 		.CmdDisable("Heavy Swords and Shields");
 		Sleep(50);
-		.CmdEnable("Calling Hipatistas");
+		.CmdDisable("Heavy Swords and Shields");
+		Sleep(50);
+		//.CmdEnable("Calling Hipatistas");
+		//Sleep(50);
+		.CmdEnable("Heavy Shields and Spears");
 		Sleep(50);
 		.CmdEnable("Roman Velit");
 		Sleep(50);
@@ -78,7 +82,9 @@ else
 	Sleep(50);
 	.CmdDisable("Heavy Swords and Shields");
 	Sleep(50);
-	.CmdDisable("Calling Hipatistas");
+	//.CmdDisable("Calling Hipatistas");
+	//Sleep(50);
+	.CmdDisable("Heavy Shields and Spears");
 	Sleep(50);
 }	//End else.
 

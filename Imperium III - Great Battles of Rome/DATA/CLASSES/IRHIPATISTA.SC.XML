@@ -1,3 +1,5 @@
+
+<!--
 <class id="IRHipatista" cpp_class="CVXUnit" parent="Melee" entity="units/Hipatista/Hipatista.ent.xml">
 
 	<properties race="ImperialRome"/>
@@ -14,4 +16,24 @@
 
 
 
+</class>
+-->
+
+
+<class id="IRHipatista" cpp_class="CVXUnit" parent="Melee" entity="Units/RPraetorian/RPraetorian.ent.xml">
+
+  <properties race="ImperialRome" />
+  <properties maxhealth="650"/>
+  <properties damage="55" armor_slash="15" armor_pierce="15"/>
+  <properties speed="60"/>
+  <properties unit_specials="Trample, Spike armor, Determination"/>
+
+  <properties formation_priority="1000"/>
+  <properties formation_radius="26"/>
+
+  <properties icon="gameres/icons/RPraetorian.bmp"/>
+  <properties display_name="Imperial Roman Hipatista" display_name_plural="Imperial Roman Hipatistas"/>
+  <properties help="contents/units/RPraetorian"/>
+  <properties edittree_pos="Units/New Units/Hipatista (Imperial Roman)"/>
+  <sounds attack="UnitPikeFight" command="data/sound entities/VoiceRPraetorian.xml"/>
 </class>

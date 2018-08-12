@@ -154,25 +154,6 @@
 	<src obj="RBarracks"/>
 </cmd>
 
-<cmd name="trainIRPraetorian" priority="8"
-	button="actions/train RPraetorian.bmp"
-	queueicon="gameres/icons/RPraetorian.bmp"
-	transpicon="1"
-	traincommand="yes"
-	groupverifier="data/subai/barrack_train_verify.vs"
-	key="r"
-	help="/contents/units/RPraetorian"
-	costgold = "400"
-	costfood = "0"
-	costpop = "1"
-	execdelay = "20000"
-	rollover="Equip Praetorian"
-	method="train"
-	param="RPraetorian, Spike Armor"
-	sclass="RPraetorian">
-	<src obj="RBarracks"/>
-</cmd>
-
 <cmd name="trainRHipatistas" priority="11"
 	button="actions/TRAIN HIPATISTA.bmp"
 	queueicon="gameres/icons/HIPATISTA.bmp"
@@ -193,6 +174,7 @@
 	<src obj="RBarracks"/>
 </cmd>
 
+<!--
 <cmd name="trainIRHipatistas" priority="9"
 	button="actions/TRAIN HIPATISTA.bmp"
 	queueicon="gameres/icons/HIPATISTA.bmp"
@@ -212,6 +194,44 @@
 	sclass="Hipatista">
 	<src obj="RBarracks"/>
 </cmd>
+-->
 
+<cmd name="trainIRHipatistas" priority="9"
+	button="actions/train RPraetorian.bmp"
+	queueicon="gameres/icons/RPraetorian.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="y"
+	help="/contents/units/Hipatista"
+	costgold = "600"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Equip Imperial Roman Hipatista"
+	method="trainex"
+	param="1, 3, IRHipatista, IRHipatista, Heavy Shields and Spears, blacksmith"
+	sclass="Hipatista">
+	<src obj="RBarracks"/>
+</cmd>
 
+<cmd name="trainIRPraetorian" priority="8"
+	button="actions/TRAIN IRPRAETORIAN.BMP"
+	queueicon="gameres/icons/IRPRAETORIAN.BMP"
+	transpicon="1"
+	traincommand="yes"
+	groupverifier="data/subai/barrack_train_verify.vs"
+	key="r"
+	help="/contents/units/RPraetorian"
+	costgold = "400"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Equip Praetorian"
+	method="train"
+	param="RPraetorian, Spike Armor"
+	sclass="RPraetorian">
+	<src obj="RBarracks"/>
+</cmd>
 </commands>
