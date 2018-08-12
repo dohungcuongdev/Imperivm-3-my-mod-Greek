@@ -660,7 +660,7 @@
 	costgold = "200"
 	costfood = "0"
 	costpop = "0"
-	execdelay = "20000"
+	execdelay = "5000"
 	rollover="Hire Mountaineer"
 	description="Hires a Mountaineer"
 	method="trainex"
