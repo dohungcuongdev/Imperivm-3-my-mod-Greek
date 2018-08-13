@@ -28,7 +28,6 @@ if( (EnvReadString(.settlement, "ChooseRepublicanRome") == "researched") || (Env
 			.CmdEnable("God's Strength");
 			Sleep(50);
 		}
-	}	//End if.
 		
 }	//End if.
 else
