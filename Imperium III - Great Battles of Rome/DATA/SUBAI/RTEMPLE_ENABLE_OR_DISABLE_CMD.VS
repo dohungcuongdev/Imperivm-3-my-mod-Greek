@@ -14,8 +14,21 @@ if( (EnvReadString(.settlement, "ChooseRepublicanRome") == "researched") || (Env
 	Sleep(50);
 	.CmdEnable("Wrath of Jupiter");
 	Sleep(50);
-	.CmdEnable("God's Gift");
-	Sleep(50);
+	if(EnvReadString(.settlement, "ChooseRepublicanRome") == "researched")
+		{
+			.CmdEnable("God's Gift");
+			Sleep(50);
+			.CmdDisable("God's Strength");
+			Sleep(50);
+		}	//End if.
+		else
+		{
+			.CmdDisable("God's Gift");
+			Sleep(50);
+			.CmdEnable("God's Strength");
+			Sleep(50);
+		}
+	}	//End if.
 		
 }	//End if.
 else
@@ -29,6 +42,8 @@ else
 	.CmdDisable("Wrath of Jupiter");
 	Sleep(50);
 	.CmdDisable("God's Gift");
+	Sleep(50);
+	.CmdDisable("God's Strength");
 	Sleep(50);
 }	//End else.
 

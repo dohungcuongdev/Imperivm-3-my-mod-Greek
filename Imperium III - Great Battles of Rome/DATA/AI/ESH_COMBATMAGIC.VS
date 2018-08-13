@@ -13,12 +13,22 @@ nRace = set.GetCentralBuilding.race;
 nAvail = -1;
 
 ///--- Roman upgrade that could be made without priests
-if (nRace == RepublicanRome)
+if( (nRace == RepublicanRome) && (EnvReadString(set, "ChooseRepublicanRome") == "researched") )
 if (IsResearched(set, "Altar of Jupiter"))
 if (!IsResearched(set, "God's Gift"))
 if (rand(20) == 0 || set.gold >= 6000)
 {
 	EnvWriteString(set, "strTech", "God's Gift"); 
+	set.AIRun("ESH_NeedTech.vs");
+	return;
+}
+
+if( (nRace == RepublicanRome) && (EnvReadString(set, "ChooseImperialRome") == "researched") )
+if (IsResearched(set, "Altar of Jupiter"))
+if (!IsResearched(set, "God's Strength"))
+if (rand(20) == 0 || set.gold >= 6000)
+{
+	EnvWriteString(set, "strTech", "God's Strength"); 
 	set.AIRun("ESH_NeedTech.vs");
 	return;
 }

@@ -111,8 +111,24 @@
 	method="research"
 	param="ReqSet, Altar of Jupiter, default, NameSet, God's Gift, default, SetsSet, items/God's Gift, 1">
 	<src obj="RTemple"/>
-	<src obj="MTemple"/>
 	<src obj="RRTemple"/>
+</cmd>
+
+<cmd name="God's Strength" priority="7"
+	button="research/Strength of God.bmp"
+	queueicon="gameres/icons/upgrades/Strength of God.bmp"
+	key="G"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="God's Strength"
+	description="All new warriors are equipped with a God's Strength artifact, which adds 100 max health"
+	method="research"
+	param="ReqSet, Altar of Jupiter, default, NameSet, God's Strength, default, SetsSet, items/God's Strength, 1">
+	<src obj="RTemple"/>
+	<src obj="MTemple"/>
 </cmd>
 
 </commands>

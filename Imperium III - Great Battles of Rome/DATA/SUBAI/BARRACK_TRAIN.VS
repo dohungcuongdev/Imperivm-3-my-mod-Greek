@@ -84,6 +84,8 @@ if (!newunit.IsHeirOf("BaseMage"))
 		newunit.AddItem("Belt of might");
 	if (EnvReadInt(.settlement, "items/God's Gift") == 1)
 		newunit.AddItem("God's Gift");
+	if (EnvReadInt(.settlement, "items/God's Strength") == 1)
+		newunit.AddItem("God's Strength");
 	if (EnvReadInt(.settlement, "items/Veteran Guild") == 1)
 		newunit.AddItem("Veteran Guild");
   }
