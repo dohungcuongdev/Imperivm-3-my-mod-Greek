@@ -34,13 +34,13 @@ if (nRace == Gaul)
 			if (IsResearched(AIPlayer, strTech))
 			{
 				strTech = "Nordic trade routes";
-				if (IsResearched(AIPlayer, strTech))
+				if (IsResearched(set, strTech))
 				{
 					strTech = "Belts of Might";
-					if (IsResearched(AIPlayer, strTech))
+					if (IsResearched(set, strTech))
 					{
 						strTech = "Food Tax";
-						if (IsResearched(AIPlayer, strTech))
+						if (IsResearched(set, strTech))
 							strTech = "";
 					}
 				}
