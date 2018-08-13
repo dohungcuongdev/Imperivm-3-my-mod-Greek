@@ -21,6 +21,7 @@
 	<src obj="HBlacksmith"/>
 	<src obj="RRBlacksmith"/>
 	<src obj="TTBlacksmith"/>
+	<src obj="EEBlacksmith"/>
 </cmd>
 
 <cmd name="Strenghten Stronghold Defences I" priority="10"
@@ -47,6 +48,7 @@
 	<src obj="HBlacksmith"/>
 	<src obj="RRBlacksmith"/>
 	<src obj="TTBlacksmith"/>
+	<src obj="EEBlacksmith"/>
 </cmd>
 
 <cmd name="Strenghten Stronghold Defences II" priority="10"
@@ -73,6 +75,7 @@
 	<src obj="HBlacksmith"/>
 	<src obj="RRBlacksmith"/>
 	<src obj="TTBlacksmith"/>
+	<src obj="EEBlacksmith"/>
 </cmd>
 <!-- ROMAN BLACKSMITH COMMANDS -->
 
@@ -619,6 +622,7 @@
 	method="getcharm"
 	param="Damage charm" >
 	<src obj="EBlacksmith"/>
+	<src obj="EEBlacksmith"/>
 </cmd>
 
 <cmd name="Charm of Thoth" priority="1"
@@ -635,6 +639,7 @@
 	method="getcharm"
 	param="Armor charm" >
 	<src obj="EBlacksmith"/>
+	<src obj="EEBlacksmith"/>
 </cmd>
 
 <cmd name="Charm of Ra" priority="1"
@@ -651,6 +656,7 @@
 	method="getcharm"
 	param="Health charm" >
 	<src obj="EBlacksmith"/>
+	<src obj="EEBlacksmith"/>
 </cmd>
 <cmd name="Charm of Isis" priority="1"
 	queueicon="gameres/icons/upgrades/charm of isis.bmp"
@@ -666,6 +672,7 @@
 	method="getcharm"
 	param="Knowledge charm" >
 	<src obj="EBlacksmith"/>
+	<src obj="EEBlacksmith"/>
 </cmd>
 
 <!--           Germany                 -->
@@ -768,6 +775,39 @@
 	param="NamePlr, Teuton Master, default">
 	<src obj="TTBlacksmith"/>
 </cmd>
+
+<cmd name="Cult of Anubis" priority="2"
+	button="upgrades/cult of anubis.bmp"
+	key="n"
+	queueicon="gameres/icons/upgrades/cult of anubis.bmp"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "25000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Cult of Anubis"
+	description="Allows training of Anubis warriors"
+	method="research"
+	researchcommand="yes"
+	param = "NameSet, Cult of Anubis, default, NameSet,EAnubisWarrior,">
+	<src obj="EEBlacksmith"/>
+</cmd>
+
+<cmd name="Cult of Horus" priority="3"
+	button="upgrades/cult of horus.bmp"
+	key="r"
+	queueicon="gameres/icons/upgrades/cult of horus.bmp"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "25000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Cult of Horus"
+	description="Allows training of Horus warriors"
+	method="research"
+	researchcommand="yes"
+	param = "NameSet, Cult of Horus,default,NameSet,EHorusWarrior">
+	<src obj="EEBlacksmith"/>
+</cmd>
+
 
 <!-- New Unit -->
 
@@ -936,5 +976,6 @@
 	method="research"
 	param="NameSet,Dual Swords, default, NameSet, PINMORTAL">
 	<src obj="EBlacksmith"/>
+	<src obj="EEBlacksmith"/>
 </cmd>
 </commands>
