@@ -75,6 +75,7 @@ if(nRace == Greece)
 	greekTrainCmd[3] = "trainHMyrmidon";               //Di prova: finché non ci saranno tutte le unità.
 	greekTrainCmd[4] = "trainHChariot";
 	greekTrainCmd[5] = "trainHHypaspista";
+	greekTrainCmd[6] = "trainEHOPLITA";
 	
 	//greekTech[0] = "";
 	greekTech[0] = "Greek Spears";                       //Di prova: finché non ci saranno tutte le unità.
@@ -83,6 +84,7 @@ if(nRace == Greece)
 	greekTech[3] = "Forge Elite Equipment";                  //Di prova: finché non ci saranno tutte le unità.
 	greekTech[4] = "Greek Chariot Wheels";
 	greekTech[5] = "Greek Royal Armor";
+	greekTech[6] = "Wall of Shields";
 }	//Fine if.
 
 /// training rush

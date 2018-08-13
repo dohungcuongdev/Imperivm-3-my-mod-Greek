@@ -92,6 +92,7 @@ if(nRace == Greece)
 	greekTech[3] = "Forge Elite Equipment";      //Di prova: finché non ci saranno tutte le unità.
 	greekTech[4] = "Greek Chariot Wheels";
 	greekTech[5] = "Greek Royal Armor";
+	greekTech[6] = "Wall of Shields";
 	/* FINE SEZIONE DEDICATA ALLE TECNOLOGIE DELLA GRECIA. */
 
 	/* SEZIONE DEDICATA AI COMANDI DELLA GRECIA: */
@@ -102,6 +103,7 @@ if(nRace == Greece)
 	greekTrainCmd[3] = "trainHMyrmidon";     //Di prova: finché non ci saranno tutte le unità.
 	greekTrainCmd[4] = "trainHChariot";
 	greekTrainCmd[5] = "trainHHypaspista";
+	greekTrainCmd[6] = "trainEHOPLITA";
 	/* FINE SEZIONE DEDICATA AI COMANDI DELLA GRECIA. */
 
 	/* SEZIONE DEDICATA ALLE CLASSI DELLA GRECIA: */
@@ -112,6 +114,7 @@ if(nRace == Greece)
 	greekBuildName[3] = "HMyrmidon_Javelin";     //Di prova: finché non ci saranno tutte le unità.
 	greekBuildName[4] = "HChariot"; 
 	greekBuildName[5] = "HHypaspista";
+	greekBuildName[6] = "EHOPLITA";
 	/* FINE SEZIONE DEDICATA ALLE CLASSI DELLA GRECIA. */
 }	//Fine if.
 

@@ -51,6 +51,7 @@ CheckUEnabled(nEnabled, AIPlayer, AIVar(AIPlayer, AIV_MaxHHoplite),        2, Gr
 CheckUEnabled(nEnabled, AIPlayer, AIVar(AIPlayer, AIV_MaxHMyrmidon_Javelin),       3, Greece);
 CheckUEnabled(nEnabled, AIPlayer, AIVar(AIPlayer, AIV_MaxHChariot),        4, Greece);
 CheckUEnabled(nEnabled, AIPlayer, AIVar(AIPlayer, AIV_MaxHHypaspista),     5, Greece);
+CheckUEnabled(nEnabled, AIPlayer, AIVar(AIPlayer, AIV_MaxEHOPLITA),     6, Greece);
 EnvWriteInt(AIPlayer, "GreekUnitsEnabled", nEnabled);
 
 nEnabled = 0;

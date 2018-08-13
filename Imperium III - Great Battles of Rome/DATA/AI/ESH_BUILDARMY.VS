@@ -66,16 +66,18 @@ if(nRace == Greece)
 	greekTech[0] = "Greek Spears";               //Di prova: finché non ci saranno tutte le unità.
 	greekTech[1] = "Greek Archers";
 	greekTech[2] = "Greek Spears";
-	greekTech[3] = "Greek Royal Armor";          //Di prova: finché non ci saranno tutte le unità.   
+	greekTech[3] = "Forge Elite Equipment";          //Di prova: finché non ci saranno tutte le unità.   
 	greekTech[4] = "Greek Chariot Wheels";
 	greekTech[5] = "Greek Royal Armor";
+	greekTech[6] = "Wall of Shields";
 	
 	greekUType[0] = "HHoplite";     //Di prova: finché non ci saranno tutte le unità.
 	greekUType[1] = "HToxotes"; 
 	greekUType[2] = "HHoplite";       
-	greekUType[3] = "HHypaspista";    //Di prova: finché non ci saranno tutte le unità.
+	greekUType[3] = "HMyrmidon_Javelin";    //Di prova: finché non ci saranno tutte le unità.
 	greekUType[4] = "HChariot"; 
 	greekUType[5] = "HHypaspista"; 
+	greekUType[6] = "EHOPLITA"; 
 }	//Fine if.
 /* FINE SEZIONE DEDICATA ALLE TECNOLOGIE DI GRECIA. */
 

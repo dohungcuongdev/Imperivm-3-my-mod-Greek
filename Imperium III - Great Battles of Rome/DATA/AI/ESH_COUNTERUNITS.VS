@@ -89,6 +89,7 @@ else if(nRace == Greece)
 	greekTrainCmd[3] = "trainHMyrmidon";   
 	greekTrainCmd[4] = "trainHChariot";
 	greekTrainCmd[5] = "trainHHypaspista";
+	greekTrainCmd[6] = "trainEHOPLITA";
 	
 	//greekUType[0] = "IMilitiaman"; 
 	greekUType[0] = "HHoplite";
@@ -97,6 +98,7 @@ else if(nRace == Greece)
 	greekUType[3] = "HMyrmidon_Javelin"; 
 	greekUType[4] = "HChariot"; 
 	greekUType[5] = "HHypaspista"; 
+	greekUType[6] = "EHOPLITA"; 
 	
 	//greekTech[0] = "";
 	greekTech[0] = "Greek Spears";
@@ -105,6 +107,7 @@ else if(nRace == Greece)
 	greekTech[3] = "Forge Elite Equipment";
 	greekTech[4] = "Greek Chariot Wheels";
 	greekTech[5] = "Greek Royal Armor";
+	greekTech[6] = "Wall of Shields";
 }	//Fine else if.
 else
 {
