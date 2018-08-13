@@ -1077,23 +1077,8 @@
 	rollover="Fights"
 	method="research"
 	param="NameSet, Fights, default,">
-	<src obj="TTSanctuaryOfVotan"/>
-</cmd>
-
-<cmd name="TFights" priority="2"
-	button="Upgrades/Fights.bmp"
-	key="f"
-	queueicon="gameres/icons/upgrades/Fights.bmp"
-	costgold = "2000"
-	costfood = "0"
-	execdelay = "30000"
-	researchcommand="yes"
-	groupverifier="data/subai/verify_research.vs"
-	description="Gathers 2000 food,  Allows Valkyries to be hired"
-	rollover="Fights"
-	method="research"
-	param="NameSet, Fights, default,">
 	<src obj="TSanctuaryOfVotan"/>
+	<src obj="TTSanctuaryOfVotan"/>
 </cmd>
 
 <cmd name="Call Valkyries" priority="3"
