@@ -108,7 +108,7 @@
 	traincommand="yes"
 	key="h"
 	help="/contents/units/BHighlander"
-	costgold = "390"
+	costgold = "400"
 	costfood = "0"
 	costpop = "1"
 	execdelay = "20000"

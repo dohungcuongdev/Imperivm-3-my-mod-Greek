@@ -79,12 +79,14 @@
 	button="actions/buy food.bmp"
 	traincommand="yes"
 	key="f"
-	costgold = "500"
+	costgold = "400"
 	execdelay = "10000"
 	param = "800"
 	rollover="Buy 800 food">
 	<src obj="RTavern"/>
 	<src obj="RTavern2"/>
+	<src obj="RRTavern"/>
+	<src obj="RRTavern2"/>
 	<src obj="CTavern"/>
 	<src obj="TTavern"/>
 </cmd>

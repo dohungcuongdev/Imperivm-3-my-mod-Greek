@@ -106,7 +106,7 @@
 	groupverifier="data/subai/barrack_train_verify.vs"
 	key="t"
 	help="/contents/units/RTribune"
-	costgold = "290"
+	costgold = "300"
 	costfood = "0"
 	costpop = "1"
 	execdelay = "20000"

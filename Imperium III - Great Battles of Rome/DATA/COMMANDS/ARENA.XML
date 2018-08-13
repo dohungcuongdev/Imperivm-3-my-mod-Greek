@@ -813,7 +813,7 @@
 	execdelay = "30000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Noble Offense"
-	description="All warriors above level 12 receive a Noble Offense artifact (+4 damage) at their first kill"
+	description="All warriors above level 12 receive a Noble Offense artifact (+5 damage) at their first kill"
 	method="research"
 	researchcommand="yes"
 	param="ReqSet, Fights, default, NamePlr, Noble Offence, default">
@@ -828,7 +828,7 @@
 	execdelay = "30000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Noble Defense"
-	description="All warriors above level 12 receive a Noble Defense artifact (+4 armor) at their first kill"
+	description="All warriors above level 12 receive a Noble Defense artifact (+5 armor) at their first kill"
 	method="research"
 	researchcommand="yes"
 	param="ReqSet, Fights, default, NamePlr, Noble Defence, default">
@@ -1077,8 +1077,23 @@
 	rollover="Fights"
 	method="research"
 	param="NameSet, Fights, default,">
-	<src obj="TSanctuaryOfVotan"/>
 	<src obj="TTSanctuaryOfVotan"/>
+</cmd>
+
+<cmd name="TFights" priority="2"
+	button="Upgrades/Fights.bmp"
+	key="f"
+	queueicon="gameres/icons/upgrades/Fights.bmp"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "30000"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	description="Gathers 2000 food,  Allows Valkyries to be hired"
+	rollover="Fights"
+	method="research"
+	param="NameSet, Fights, default,">
+	<src obj="TSanctuaryOfVotan"/>
 </cmd>
 
 <cmd name="Call Valkyries" priority="3"
