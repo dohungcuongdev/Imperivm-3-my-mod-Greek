@@ -48,6 +48,15 @@ if(nRace == Greece)
 			}	//Fine if.
 		}	//Fine if.
 		
+		if (IsResearched(set, "HRestoration") == false) 
+		{
+			if( (rand(20) == 10) || (set.gold >= 5000) )
+			{
+				EnvWriteString(set, "strTech", "HRestoration"); 
+				set.AIRun("ESH_NeedTech.vs");
+			}	//Fine if.
+		}
+		
 		///Protection of Apollo
 		/* ---------- PENSARE IN CHE OCCASIONE RENDERE INDISTRUTTIBILE LA PORTA ------------- */
 	}	//Fine if.
