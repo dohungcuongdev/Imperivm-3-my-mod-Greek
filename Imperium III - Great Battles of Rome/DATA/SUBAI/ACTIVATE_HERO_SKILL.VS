@@ -9,9 +9,6 @@ this = objs[0].AsHero;
 if (!.IsValid)
 	return;
 
-if(.player!=CurPlayer)
-	return;
-
 if (cmdcost_stamina > .stamina)
 	return;
 
