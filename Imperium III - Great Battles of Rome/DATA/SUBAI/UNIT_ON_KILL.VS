@@ -11,13 +11,10 @@ if (!.AsUnit.IsDead())
 	}
 
 // Egypt
-// I comment this code so that the charm is not removed after unit kill an enemy
-/**
 .AsUnit.RemoveItemsOfType("Damage charm");
 .AsUnit.RemoveItemsOfType("Armor charm");
 .AsUnit.RemoveItemsOfType("Health charm");
 .AsUnit.RemoveItemsOfType("Knowledge charm");
-**/ 
 
 if (EnvReadString(.player, "Path of the dead I") == "researched")
   {

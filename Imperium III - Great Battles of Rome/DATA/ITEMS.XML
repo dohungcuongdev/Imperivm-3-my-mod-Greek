@@ -385,7 +385,7 @@
 	      important="no"
 	      cursed="1"
 	      name="Damage charm"
-	      description="Adds 4 to damage">
+	      description="Adds 4 to damage\nThe charm disappears after the bearer kills an enemy">
 	  <bonus health="0" damage="4" armor_slash="0"  armor_pierce="0"  armor_slash_percent="0"  armor_pierce_percent="0" level="0" experience="0"/>
 	</item>
 
@@ -397,7 +397,7 @@
 	      important="no"
 	      cursed="1"
 	      name="Armor charm"
-	      description="Adds 4 to armor">
+	      description="Adds 4 to armor\nThe charm disappears after the bearer kills an enemy">
 	  <bonus health="0" damage="0" armor_slash="4"  armor_pierce="4"  armor_slash_percent="0"  armor_pierce_percent="0" level="0" experience="0"/>
 	</item>
 
@@ -409,7 +409,7 @@
 	      important="no"
 	      cursed="1"
 	      name="Health charm"
-	      description="Adds 40 health points">
+	      description="Adds 40 health points\nThe charm disappears after the bearer kills an enemy">
 	  <bonus health="40" damage="0" armor_slash="0"  armor_pierce="0"  armor_slash_percent="0"  armor_pierce_percent="0" level="0" experience="0"/>
 	</item>
 
@@ -421,7 +421,7 @@
 	      usecount="0"
 	      cursed="1"
 	      name="Knowledge charm"
-	      description="Adds 4 levels">
+	      description="Adds 4 levels\nThe charm disappears after the bearer kills an enemy">
 	  <bonus health="0" damage="0" armor_slash="0"  armor_pierce="0"  armor_slash_percent="0"  armor_pierce_percent="0" level="4" experience="0"/>
 	</item>
 	<item id="Amulet of Triumph"
