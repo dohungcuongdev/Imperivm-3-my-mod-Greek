@@ -5,7 +5,7 @@
 	<properties damage="12" armor_slash="6" armor_pierce="6"/>
 	<properties speed="70"/>
 	<properties sight="500" range="400"/>
-	<properties unit_specials="Offensive tactics"/>
+	<properties unit_specials="Bleeding attack"/>
 
 	<properties projectile_class="Javelin"/>
 	<properties building_projectile_class="Javelin"/>
