@@ -110,7 +110,7 @@
 	groupverifier="data/subai/barrack_train_verify.vs"
 	transpicon="1"
 	traincommand="yes"
-	key="m"
+	key="d"
 	help="/contents/units/HMyrmidon"
 	costgold = "200"
 	costfood = "0"
@@ -361,7 +361,7 @@
 
 <cmd name="Charm of Athena" priority="7"
 	button="Research/charm of athena.bmp"
-	key="o"
+	key="a"
 	queueicon="gameres/icons/upgrades/charm of athena.bmp"
 	costgold = "2000"
 	costfood = "0"

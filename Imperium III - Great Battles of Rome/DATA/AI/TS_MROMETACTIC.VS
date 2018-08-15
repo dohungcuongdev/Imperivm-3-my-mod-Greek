@@ -33,7 +33,7 @@ SetAIVar(AIPlayer, AIV_Research,   0);
 aSkills[0] = hsTeamAttack;    aSkillLevels[0] = 10;
 aSkills[1] = hsTeamDefense;   aSkillLevels[1] = 10;
 aSkills[2] = hsQuickMarch;    aSkillLevels[2] = 3;
-aSkills[3] = hsDiscipline;    aSkillLevels[3] = 3;
+aSkills[3] = hsEpicEndurance;    aSkillLevels[3] = 3;
 
 //barrack level 1 & hero
 {

@@ -56,58 +56,62 @@ while (1) {
 	
 	olAll1.ClearDead();
 	olAll2.ClearDead();
-	while (nTimeFromLastSpawn > nUnitSpawnRate * nGroupSpawn && bCanSpawn){
+	while (nTimeFromLastSpawn > nUnitSpawnRate * nGroupSpawn && bCanSpawn) 
+	{
 		int nSpawn;
 		nSpawn = 0;
 		nTimeFromLastSpawn -= nUnitSpawnRate * nGroupSpawn;
 		
-        	while (nSpawn<nGroupSpawn && bCanSpawn){
-			if (!bIsIndependent){
-				if (.settlement.food <= foodcost || olAll1.count>=nArmy){
-					bCanSpawn = false;
-					break;
-				}
-				else{
-					Unit u1;				
-					u1 = Place("TTeutonWolf", .pos, .player);
-					u1.SetFood(u1.maxfood);
-					u1.SetFeeding(false);
-					.settlement.ForceAddUnit(u1);
-					u1.SetExperience(old_exp_gain);
-					olAll1.Add(u1);
-					nSpawn=2;
-					.settlement.SetFood(.settlement.food - foodcost);
-				}
+        while (nSpawn<nGroupSpawn && bCanSpawn)
+        {
+			if (olAll1.count>=nArmy && olAll2.count>=nArmy)
+			{
+				bCanSpawn = false;
+				break;
 			}
-			else{
-				if (olAll1.count>=nArmy && olAll2.count>=nArmy){
-					bCanSpawn = false;
-					break;
-				}
 			
-				if (olAll1.count<nArmy){
-					Unit u1;				
-					u1 = Place("TTeutonArcher", .pos, .player);
-					u1.SetFood(u1.maxfood);
-					u1.SetFeeding(false);
-					.settlement.ForceAddUnit(u1);
-					u1.SetExperience(old_exp_gain);
-					olAll1.Add(u1);
-					nSpawn+=1;
-				}
-				if (olAll2.count<nArmy ){
-					Unit u2;
-					u2 = Place("TTeutonRider", .pos, .player);
-					u2.SetFood(u2.maxfood);
-					u2.SetFeeding(false);
-					.settlement.ForceAddUnit(u2);
-					u2.SetExperience(old_exp_gain);
-					olAll2.Add(u2);
-					nSpawn+=1;
-				}
+			if (olAll1.count<nArmy)
+			{
+				Unit u1;
+				if (!bIsIndependent)
+					if (.settlement.food <= foodcost)
+					{
+						bCanSpawn = false;
+						break;
+					}
+					else
+						.settlement.SetFood(.settlement.food - foodcost);
+				
+				u1 = Place("TTeutonArcher", .pos, .player);
+				u1.SetFood(u1.maxfood);
+				u1.SetFeeding(false);
+				.settlement.ForceAddUnit(u1);
+				u1.SetExperience(old_exp_gain);
+				olAll1.Add(u1);
+				nSpawn+=1;
+			}
+			if (olAll2.count<nArmy )
+			{
+				Unit u2;
+				if (!bIsIndependent)
+					if (.settlement.food <= foodcost)
+					{
+						bCanSpawn = false;
+						break;
+					}
+					else
+						.settlement.SetFood(.settlement.food - foodcost);
+
+				u2 = Place("TTeutonRider", .pos, .player);
+				u2.SetFood(u2.maxfood);
+				u2.SetFeeding(false);
+				.settlement.ForceAddUnit(u2);
+				u2.SetExperience(old_exp_gain);
+				olAll2.Add(u2);
+				nSpawn+=1;
 			}
 		}
-	 }
+	}
 
 	olTeutonsOut.ClearDead();
 	// clear the teutons that were commanded from our list
