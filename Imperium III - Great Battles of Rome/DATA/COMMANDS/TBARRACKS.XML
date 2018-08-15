@@ -91,6 +91,7 @@
 	method="trainex"
 	param="1, teutonrider, TTeutonRider, Teuton Rider, Increase Horseshoe production, blacksmith">
 	<src obj="TBarracks"/>
+	<src obj="TTent"/>
 </cmd>
 
 <cmd name="trainTMaceman" priority="8"

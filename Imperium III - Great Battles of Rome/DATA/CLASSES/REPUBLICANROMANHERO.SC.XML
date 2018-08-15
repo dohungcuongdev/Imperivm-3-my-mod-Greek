@@ -5,7 +5,7 @@
 	<properties race="RepublicanRome"/>
 	<properties help="/contents/units/RHero"/>
 	<!-- <properties HeroSkills="Administration, Team attack, Team defense, Quick March, Epic endurance"/> -->
-	<properties HeroSkills="Administration, Team attack, Team defense, Quick March, Rush"/>
+	<properties HeroSkills="Administration, Team attack, Team defense, Quick March, Battle cry"/>
 
 	<sounds command="data/sound entities/VoiceRRepublicanHero.xml"/>
 

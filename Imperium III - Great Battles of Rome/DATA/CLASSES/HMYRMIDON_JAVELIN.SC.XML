@@ -1,11 +1,11 @@
 <class id="HMyrmidon_Javelin" cpp_class="CVXUnit" parent="Ranged" entity="Units/HMyrmidon/Javelin/HMyrmidon.ent.xml">
 
 	<properties race="ImperialRome"/>
-	<properties maxhealth="280"/>
-	<properties damage="12" armor_slash="6" armor_pierce="6"/>
+	<properties maxhealth="240"/>
+	<properties damage="40" armor_slash="6" armor_pierce="6"/>
 	<properties speed="70"/>
 	<properties sight="500" range="400"/>
-	<properties unit_specials="Bleeding attack"/>
+	<properties unit_specials="Offensive tactics"/>
 
 	<properties projectile_class="Javelin"/>
 	<properties building_projectile_class="Javelin"/>

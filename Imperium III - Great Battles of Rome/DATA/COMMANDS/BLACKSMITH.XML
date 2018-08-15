@@ -614,7 +614,7 @@
 	button="research/charm of seth.bmp"
 	researchcommand="yes"
 	groupverifier="data/subai/eblacksmith_charms_verify.vs"
-	costgold = "600"
+	costgold = "400"
 	costfood = "0"
 	execdelay = "5000"
 	rollover="Charm of Seth"
@@ -631,7 +631,7 @@
 	button="research/charm of thoth.bmp"
 	researchcommand="yes"
 	groupverifier="data/subai/eblacksmith_charms_verify.vs"
-	costgold = "600"
+	costgold = "400"
 	costfood = "0"
 	execdelay = "5000"
 	rollover="Charm of Thoth"
@@ -648,7 +648,7 @@
 	button="research/charm of ra.bmp"
 	researchcommand="yes"
 	groupverifier="data/subai/eblacksmith_charms_verify.vs"
-	costgold = "600"
+	costgold = "400"
 	costfood = "0"
 	execdelay = "5000"
 	rollover="Charm of Ra"
@@ -664,7 +664,7 @@
 	button="research/charm of isis.bmp"
 	researchcommand="yes"
 	groupverifier="data/subai/eblacksmith_charms_verify.vs"
-	costgold = "600"
+	costgold = "400"
 	costfood = "0"
 	execdelay = "5000"
 	rollover="Charm of Isis"
@@ -724,6 +724,7 @@
 	>
 	<src obj="TBlacksmith"/>
 	<src obj="TTBlacksmith"/>
+	<src obj="TTent"/>
 </cmd>
 <cmd name="Macemen production" priority="4"
 	queueicon="gameres/icons/upgrades/Incr Mace Production.bmp"
@@ -774,6 +775,7 @@
 	researchcommand="yes"
 	param="NamePlr, Teuton Master, default">
 	<src obj="TTBlacksmith"/>
+	<src obj="TTent"/>
 </cmd>
 
 <cmd name="Cult of Anubis" priority="2"
