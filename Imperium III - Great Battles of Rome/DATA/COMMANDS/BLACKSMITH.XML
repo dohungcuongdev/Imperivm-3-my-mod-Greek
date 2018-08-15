@@ -808,6 +808,22 @@
 	<src obj="EEBlacksmith"/>
 </cmd>
 
+<cmd name="Veteran's guild" priority="6"
+	button="upgrades/veterans guild.bmp"
+	key="v"
+	queueicon="gameres/icons/upgrades/veterans guild.bmp"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "60000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Veteran's guild"
+	description="All new warriors have Veteran's guild and become stronger after their first kill"
+	method="research"
+	researchcommand="yes"
+	param="NameSet, Veteran's guild, default, SetsSet, items/Veteran Guild, 1">
+	<src obj="EEBlacksmith"/>
+</cmd>
+
 
 <!-- New Unit -->
 
