@@ -782,7 +782,7 @@
 	execdelay = "60000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Veteran's guild"
-	description="All new warriors have Veteran's guild and become stronger after their first kill"
+	description="All new warriors have Veteran's guild (+3 damage) and become stronger after their first kill (+5 damage)"
 	method="research"
 	researchcommand="yes"
 	param="ReqSet, Tournaments, default, NameSet, Veteran's guild, default, SetsSet, items/Veteran Guild, 1">

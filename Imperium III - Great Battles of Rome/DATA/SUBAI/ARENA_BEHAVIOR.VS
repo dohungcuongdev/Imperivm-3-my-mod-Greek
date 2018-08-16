@@ -138,6 +138,14 @@ while(1)
 				newunit.AddItem("God's Strength");
 			if (EnvReadInt(.settlement, "items/Veteran Guild") == 1)
 				newunit.AddItem("Veteran Guild");
+			if (EnvReadInt(.settlement, "items/Charm of Bastet") == 1)
+				newunit.AddItem("Charm of Bastet");
+			if (EnvReadInt(.settlement, "items/Charm of Sobek") == 1)
+				newunit.AddItem("Charm of Sobek");
+			if (EnvReadInt(.settlement, "items/Charm of Ptah") == 1)
+				newunit.AddItem("Charm of Ptah");
+			if (EnvReadInt(.settlement, "items/Charm of Neith") == 1)
+				newunit.AddItem("Charm of Neith");
 		  }
 		EnvWriteInt(this, "Build/" + class, number-1);
 		Sleep(1000);

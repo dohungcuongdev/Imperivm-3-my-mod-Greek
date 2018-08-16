@@ -22,6 +22,7 @@
 	<src obj="RRBlacksmith"/>
 	<src obj="TTBlacksmith"/>
 	<src obj="EEBlacksmith"/>
+	<src obj="GGBlacksmith"/>
 </cmd>
 
 <cmd name="Strenghten Stronghold Defences I" priority="10"
@@ -49,6 +50,7 @@
 	<src obj="RRBlacksmith"/>
 	<src obj="TTBlacksmith"/>
 	<src obj="EEBlacksmith"/>
+	<src obj="GGBlacksmith"/>
 </cmd>
 
 <cmd name="Strenghten Stronghold Defences II" priority="10"
@@ -76,6 +78,7 @@
 	<src obj="RRBlacksmith"/>
 	<src obj="TTBlacksmith"/>
 	<src obj="EEBlacksmith"/>
+	<src obj="GGBlacksmith"/>
 </cmd>
 <!-- ROMAN BLACKSMITH COMMANDS -->
 
@@ -214,6 +217,7 @@
 	method="research"
 	param="NameSet, GAxeman">
 	<src obj="GBlacksmith"/>
+	<src obj="GGBlacksmith"/>
 </cmd>
 <cmd name="Gaul Iron Axes" priority="0"
 	queueicon="gameres/icons/upgrades/axe iron.bmp"
@@ -244,6 +248,7 @@
 	method="research"
 	param="NameSet, GSpearman">
 	<src obj="GBlacksmith"/>
+	<src obj="GGBlacksmith"/>
 </cmd>
 <cmd name="Gaul Iron Spearheads" priority="1"
 	queueicon="gameres/icons/upgrades/spears iron.bmp"
@@ -275,6 +280,7 @@
 	method="research"
 	param="NameSet, Horseshoes, default,NameSet, GHorseman,">
 	<src obj="GBlacksmith"/>
+	<src obj="GGBlacksmith"/>
 </cmd>
 <cmd name="Gaul Woman Warrior" priority="3"
 	queueicon="gameres/icons/upgrades/woman armor.bmp"
@@ -290,6 +296,7 @@
 	method="research"
 	param="NameSet, GWomanWarrior">
 	<src obj="GBlacksmith"/>
+	<src obj="GGBlacksmith"/>
 </cmd>
 <cmd name="Gaul Fine Armor" priority="3"
 	queueicon="gameres/icons/upgrades/fine armor.bmp"
@@ -622,7 +629,6 @@
 	method="getcharm"
 	param="Damage charm" >
 	<src obj="EBlacksmith"/>
-	<src obj="EEBlacksmith"/>
 </cmd>
 
 <cmd name="Charm of Thoth" priority="1"
@@ -639,7 +645,6 @@
 	method="getcharm"
 	param="Armor charm" >
 	<src obj="EBlacksmith"/>
-	<src obj="EEBlacksmith"/>
 </cmd>
 
 <cmd name="Charm of Ra" priority="1"
@@ -656,7 +661,6 @@
 	method="getcharm"
 	param="Health charm" >
 	<src obj="EBlacksmith"/>
-	<src obj="EEBlacksmith"/>
 </cmd>
 <cmd name="Charm of Isis" priority="1"
 	queueicon="gameres/icons/upgrades/charm of isis.bmp"
@@ -672,7 +676,6 @@
 	method="getcharm"
 	param="Knowledge charm" >
 	<src obj="EBlacksmith"/>
-	<src obj="EEBlacksmith"/>
 </cmd>
 
 <!--           Germany                 -->
@@ -808,19 +811,67 @@
 	<src obj="EEBlacksmith"/>
 </cmd>
 
-<cmd name="Veteran's guild" priority="6"
-	button="upgrades/veterans guild.bmp"
+<cmd name="Charm of Bastet" priority="4"
+	button="research/Charm of Bastet.bmp"
 	key="v"
-	queueicon="gameres/icons/upgrades/veterans guild.bmp"
-	costgold = "3000"
+	queueicon="gameres/icons/upgrades/Charm of Bastet.bmp"
+	costgold = "5000"
 	costfood = "0"
 	execdelay = "60000"
 	groupverifier="data/subai/verify_research.vs"
-	rollover="Veteran's guild"
-	description="All new warriors have Veteran's guild and become stronger after their first kill"
+	rollover="Charm of Bastet"
+	description="All new warriors have Charm of Bastet (+80 max health)"
 	method="research"
 	researchcommand="yes"
-	param="NameSet, Veteran's guild, default, SetsSet, items/Veteran Guild, 1">
+	param="NameSet, Charm of Bastet, default, SetsSet, items/Charm of Bastet, 1">
+	<src obj="EEBlacksmith"/>
+</cmd>
+
+<cmd name="Charm of Sobek" priority="5"
+	button="research/Charm of Sobek.bmp"
+	key="x"
+	queueicon="gameres/icons/upgrades/Charm of Sobek.bmp"
+	costgold = "5000"
+	costfood = "0"
+	execdelay = "60000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Charm of Sobek"
+	description="All new warriors have Charm of Sobek (+8 damage)"
+	method="research"
+	researchcommand="yes"
+	param="NameSet, Charm of Sobek, default, SetsSet, items/Charm of Sobek, 1">
+	<src obj="EEBlacksmith"/>
+</cmd>
+
+<cmd name="Charm of Ptah" priority="6"
+	button="research/Charm of Ptah.bmp"
+	key="y"
+	queueicon="gameres/icons/upgrades/Charm of Ptah.bmp"
+	costgold = "5000"
+	costfood = "0"
+	execdelay = "60000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Charm of Ptah"
+	description="All new warriors have Charm of Ptah (+8 armor)"
+	method="research"
+	researchcommand="yes"
+	param="NameSet, Charm of Ptah, default, SetsSet, items/Charm of Ptah, 1">
+	<src obj="EEBlacksmith"/>
+</cmd>
+
+<cmd name="Charm of Neith" priority="7"
+	button="research/Charm of Neith.bmp"
+	key="z"
+	queueicon="gameres/icons/upgrades/Charm of Neith.bmp"
+	costgold = "5000"
+	costfood = "0"
+	execdelay = "60000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Charm of Neith"
+	description="All new warriors have Charm of Neith (+8 level)"
+	method="research"
+	researchcommand="yes"
+	param="NameSet, Charm of Neith, default, SetsSet, items/Charm of Neith, 1">
 	<src obj="EEBlacksmith"/>
 </cmd>
 
