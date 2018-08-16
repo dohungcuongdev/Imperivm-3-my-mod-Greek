@@ -1,4 +1,9 @@
-<class id="RTownhall" cpp_class="CVXTownHall" parent="BaseTownhall" entity="Buildings/RTownhall/RTownhall_as.ent.xml">
+<class id="RTownhall" cpp_class="CVXTownHall" parent="BaseTownhall" 
+	entity="Buildings/RTownhall/RTownhall_as.ent.xml"
+	entity_autumn="Buildings/RTownhall/RTownhall_as.ent.xml"
+	entity_spring="Buildings/RTownhall/RTownhall_as.ent.xml"
+	entity_winter="Buildings/RTownhall/RTownhall_w.ent.xml"
+>
 
 	<properties race="RepublicanRome"/>
 	<properties foodperpop="100"/>

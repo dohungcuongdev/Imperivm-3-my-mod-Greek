@@ -287,7 +287,7 @@
 	costfood = "0"
 	execdelay = "30000"
 	groupverifier="data/subai/verify_research.vs"
-	description="All new warriors are level 5, Allow Teuton Wolves to be hired"
+	description="All new warriors are level 5"
 	rollover="Olympic Games"
 	method="research"
 	researchcommand="yes"

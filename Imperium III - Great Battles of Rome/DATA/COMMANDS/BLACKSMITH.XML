@@ -217,8 +217,24 @@
 	method="research"
 	param="NameSet, GAxeman">
 	<src obj="GBlacksmith"/>
+</cmd>
+
+<cmd name="Gaul Axeman" priority="0"
+	queueicon="gameres/icons/upgrades/axe.bmp"
+	button="upgrades/axe.bmp"
+	key="x"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1500"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Axes"
+	description="Allows Axemen to be equipped in the Barracks"
+	method="research"
+	param="NameSet, Gaul Axeman, default,NameSet, GAxeman">
 	<src obj="GGBlacksmith"/>
 </cmd>
+
 <cmd name="Gaul Iron Axes" priority="0"
 	queueicon="gameres/icons/upgrades/axe iron.bmp"
 	button="upgrades/axe iron.bmp"
@@ -234,6 +250,7 @@
 	param="ReqSet, GAxeman, , SetsSet, levels/GAxeman, 6, NameSet, Gaul Iron Axes, default">
 	<src obj="GBlacksmith"/>
 </cmd>
+
 <cmd name="Gaul Spearman" priority="1"
 	queueicon="gameres/icons/upgrades/spears bronze.bmp"
 	button="upgrades/spears bronze.bmp"
@@ -248,8 +265,24 @@
 	method="research"
 	param="NameSet, GSpearman">
 	<src obj="GBlacksmith"/>
+</cmd>
+
+<cmd name="Gaul Spearman" priority="1"
+	queueicon="gameres/icons/upgrades/spears bronze.bmp"
+	button="upgrades/spears bronze.bmp"
+	key="s"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1200"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Spears"
+	description="Allows Spearmen to be equipped in the Barracks"
+	method="research"
+	param="NameSet, Gaul Spearman, default,NameSet, GSpearman">
 	<src obj="GGBlacksmith"/>
 </cmd>
+
 <cmd name="Gaul Iron Spearheads" priority="1"
 	queueicon="gameres/icons/upgrades/spears iron.bmp"
 	button="upgrades/spears iron.bmp"
@@ -282,6 +315,7 @@
 	<src obj="GBlacksmith"/>
 	<src obj="GGBlacksmith"/>
 </cmd>
+
 <cmd name="Gaul Woman Warrior" priority="3"
 	queueicon="gameres/icons/upgrades/woman armor.bmp"
 	button="upgrades/woman armor.bmp"
@@ -296,8 +330,24 @@
 	method="research"
 	param="NameSet, GWomanWarrior">
 	<src obj="GBlacksmith"/>
+</cmd>
+
+<cmd name="Gaul Woman Warrior" priority="3"
+	queueicon="gameres/icons/upgrades/woman armor.bmp"
+	button="upgrades/woman armor.bmp"
+	key="a"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Woman Armor"
+	description="Allows Woman Warriors to be equipped in the Barracks"
+	method="research"
+	param="NameSet, Gaul Woman Warrior, default,NameSet, GWomanWarrior">
 	<src obj="GGBlacksmith"/>
 </cmd>
+
 <cmd name="Gaul Fine Armor" priority="3"
 	queueicon="gameres/icons/upgrades/fine armor.bmp"
 	button="upgrades/fine armor.bmp"
@@ -994,6 +1044,7 @@
 	method="research"
 	param="NameSet,Assassin Kungfu, default, NameSet, NSECUAZ">
 	<src obj="GBlacksmith"/>
+	<src obj="GGBlacksmith"/>
 </cmd>
 -->
 
@@ -1011,6 +1062,7 @@
 	method="research"
 	param="NameSet,Steel Weapons, default, NameSet, NSECUAZ">
 	<src obj="GBlacksmith"/>
+	<src obj="GGBlacksmith"/>
 </cmd>
 
 <cmd name="Dual Axes" priority="9"
