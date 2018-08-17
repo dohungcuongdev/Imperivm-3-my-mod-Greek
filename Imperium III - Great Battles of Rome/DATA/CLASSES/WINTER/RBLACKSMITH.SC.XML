@@ -1,0 +1,8 @@
+<class
+	cpp_class = "CVXBuilding"
+	entity = "Buildings/RBlacksmith/RBlacksmith_w.ent.xml"
+	id = "RBlacksmithWinter"
+	parent = "RBlacksmith"
+>
+	<properties edittree_pos = "Structures/Stronghold (Rome)/Winter/Blacksmith"/>
+</class>

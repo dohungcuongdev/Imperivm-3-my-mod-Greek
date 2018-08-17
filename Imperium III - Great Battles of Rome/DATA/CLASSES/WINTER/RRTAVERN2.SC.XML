@@ -1,0 +1,8 @@
+<class
+	cpp_class = "CVXTavern"
+	entity = "Buildings/Rhouse02/Rhouse02_w.ent.xml"
+	id = "RRTavern2Winter"
+	parent = "RRTavern2"
+>
+	<properties edittree_pos = "Structures/Stronghold (Republican Rome)/Winter/Tavern SE"/>
+</class>

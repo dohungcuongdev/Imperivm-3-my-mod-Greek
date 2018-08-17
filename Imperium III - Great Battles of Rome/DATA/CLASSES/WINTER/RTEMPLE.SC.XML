@@ -1,0 +1,8 @@
+<class
+	cpp_class = "CVXBarrack"
+	entity = "Buildings/RTemple/RTemple_w.ent.xml"
+	id = "RTempleWinter"
+	parent = "RTemple"
+>
+	<properties edittree_pos = "Structures/Stronghold (Rome)/Winter/Temple"/>
+</class>
