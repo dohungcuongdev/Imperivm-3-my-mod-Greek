@@ -4,6 +4,7 @@
 	<properties display_name="Paltibaal" display_name_plural="Heroes"/>
 	<properties icon="gameres/icons/CHERO42.bmp"/>
 	<properties edittree_pos="Units/Heroes/Paltibaal (Carthaginian)"/>
+	<properties max_army="80"/>
 	<properties HeroSkills="Administration, Leadership, Team attack, Team defense, Defensive cry"/>
 
 	<sounds command="data/sound entities/VoiceCHero.xml"/>

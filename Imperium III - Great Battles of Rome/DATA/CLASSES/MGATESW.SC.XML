@@ -5,4 +5,6 @@
 	<properties radius="170" selection_radius="170"/>
 	<properties wall_set="Greek walls"/>
 	<properties sentry_class_name="HSentry1"/>
+	
+	<properties edittree_pos="Structures/Gates/Gate SW (Greece)"/>
 </class>
