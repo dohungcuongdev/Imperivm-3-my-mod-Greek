@@ -17,11 +17,13 @@
 	<src obj="MBlacksmith"/>
 	<src obj="BBlacksmith"/>
 	<src obj="TBlacksmith"/>
-	<src obj="EBlacksmith"/>
 	<src obj="HBlacksmith"/>
 	<src obj="RRBlacksmith"/>
 	<src obj="TTBlacksmith"/>
+	<src obj="EBlacksmith"/>
 	<src obj="EEBlacksmith"/>
+	<src obj="EEEBlacksmith"/>
+	<src obj="EEEBlacksmith"/>
 	<src obj="GGBlacksmith"/>
 </cmd>
 
@@ -46,10 +48,12 @@
 	<src obj="BBlacksmith"/>
 	<src obj="TBlacksmith"/>
 	<src obj="EBlacksmith"/>
+	<src obj="EEBlacksmith"/>
+	<src obj="EEEBlacksmith"/>
+	<src obj="EEEEBlacksmith"/>
 	<src obj="HBlacksmith"/>
 	<src obj="RRBlacksmith"/>
 	<src obj="TTBlacksmith"/>
-	<src obj="EEBlacksmith"/>
 	<src obj="GGBlacksmith"/>
 </cmd>
 
@@ -74,10 +78,12 @@
 	<src obj="BBlacksmith"/>
 	<src obj="TBlacksmith"/>
 	<src obj="EBlacksmith"/>
+	<src obj="EEBlacksmith"/>
+	<src obj="EEEBlacksmith"/>
+	<src obj="EEEEBlacksmith"/>
 	<src obj="HBlacksmith"/>
 	<src obj="RRBlacksmith"/>
 	<src obj="TTBlacksmith"/>
-	<src obj="EEBlacksmith"/>
 	<src obj="GGBlacksmith"/>
 </cmd>
 <!-- ROMAN BLACKSMITH COMMANDS -->
@@ -679,6 +685,7 @@
 	method="getcharm"
 	param="Damage charm" >
 	<src obj="EBlacksmith"/>
+	<src obj="EEBlacksmith"/>
 </cmd>
 
 <cmd name="Charm of Thoth" priority="1"
@@ -695,6 +702,7 @@
 	method="getcharm"
 	param="Armor charm" >
 	<src obj="EBlacksmith"/>
+	<src obj="EEBlacksmith"/>
 </cmd>
 
 <cmd name="Charm of Ra" priority="1"
@@ -711,6 +719,7 @@
 	method="getcharm"
 	param="Health charm" >
 	<src obj="EBlacksmith"/>
+	<src obj="EEBlacksmith"/>
 </cmd>
 <cmd name="Charm of Isis" priority="1"
 	queueicon="gameres/icons/upgrades/charm of isis.bmp"
@@ -726,6 +735,7 @@
 	method="getcharm"
 	param="Knowledge charm" >
 	<src obj="EBlacksmith"/>
+	<src obj="EEBlacksmith"/>
 </cmd>
 
 <!--           Germany                 -->
@@ -831,11 +841,11 @@
 
 <cmd name="Cult of Anubis" priority="2"
 	button="upgrades/cult of anubis.bmp"
-	key="n"
+	key="a"
 	queueicon="gameres/icons/upgrades/cult of anubis.bmp"
 	costgold = "2000"
 	costfood = "0"
-	execdelay = "25000"
+	execdelay = "20000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Cult of Anubis"
 	description="Allows training of Anubis warriors"
@@ -843,15 +853,16 @@
 	researchcommand="yes"
 	param = "NameSet, Cult of Anubis, default, NameSet,EAnubisWarrior,">
 	<src obj="EEBlacksmith"/>
+	<src obj="EEEBlacksmith"/>
 </cmd>
 
 <cmd name="Cult of Horus" priority="3"
 	button="upgrades/cult of horus.bmp"
-	key="r"
+	key="h"
 	queueicon="gameres/icons/upgrades/cult of horus.bmp"
 	costgold = "2000"
 	costfood = "0"
-	execdelay = "25000"
+	execdelay = "20000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Cult of Horus"
 	description="Allows training of Horus warriors"
@@ -859,11 +870,12 @@
 	researchcommand="yes"
 	param = "NameSet, Cult of Horus,default,NameSet,EHorusWarrior">
 	<src obj="EEBlacksmith"/>
+	<src obj="EEEBlacksmith"/>
 </cmd>
 
 <cmd name="Charm of Bastet" priority="4"
 	button="research/Charm of Bastet.bmp"
-	key="v"
+	key="b"
 	queueicon="gameres/icons/upgrades/Charm of Bastet.bmp"
 	costgold = "5000"
 	costfood = "0"
@@ -874,12 +886,13 @@
 	method="research"
 	researchcommand="yes"
 	param="NameSet, Charm of Bastet, default, SetsSet, items/Charm of Bastet, 1">
-	<src obj="EEBlacksmith"/>
+	<src obj="EEEBlacksmith"/>
+	<src obj="EEEEBlacksmith"/>
 </cmd>
 
 <cmd name="Charm of Sobek" priority="5"
 	button="research/Charm of Sobek.bmp"
-	key="x"
+	key="s"
 	queueicon="gameres/icons/upgrades/Charm of Sobek.bmp"
 	costgold = "5000"
 	costfood = "0"
@@ -890,12 +903,13 @@
 	method="research"
 	researchcommand="yes"
 	param="NameSet, Charm of Sobek, default, SetsSet, items/Charm of Sobek, 1">
-	<src obj="EEBlacksmith"/>
+	<src obj="EEEBlacksmith"/>
+	<src obj="EEEEBlacksmith"/>
 </cmd>
 
 <cmd name="Charm of Ptah" priority="6"
 	button="research/Charm of Ptah.bmp"
-	key="y"
+	key="p"
 	queueicon="gameres/icons/upgrades/Charm of Ptah.bmp"
 	costgold = "5000"
 	costfood = "0"
@@ -906,12 +920,13 @@
 	method="research"
 	researchcommand="yes"
 	param="NameSet, Charm of Ptah, default, SetsSet, items/Charm of Ptah, 1">
-	<src obj="EEBlacksmith"/>
+	<src obj="EEEBlacksmith"/>
+	<src obj="EEEEBlacksmith"/>
 </cmd>
 
 <cmd name="Charm of Neith" priority="7"
 	button="research/Charm of Neith.bmp"
-	key="z"
+	key="n"
 	queueicon="gameres/icons/upgrades/Charm of Neith.bmp"
 	costgold = "5000"
 	costfood = "0"
@@ -922,7 +937,8 @@
 	method="research"
 	researchcommand="yes"
 	param="NameSet, Charm of Neith, default, SetsSet, items/Charm of Neith, 1">
-	<src obj="EEBlacksmith"/>
+	<src obj="EEEBlacksmith"/>
+	<src obj="EEEEBlacksmith"/>
 </cmd>
 
 
@@ -1096,5 +1112,6 @@
 	param="NameSet,Dual Swords, default, NameSet, PINMORTAL">
 	<src obj="EBlacksmith"/>
 	<src obj="EEBlacksmith"/>
+	<src obj="EEEBlacksmith"/>
 </cmd>
 </commands>
