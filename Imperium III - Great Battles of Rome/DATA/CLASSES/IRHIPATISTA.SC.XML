@@ -22,7 +22,7 @@
 
 <class id="IRHipatista" cpp_class="CVXUnit" parent="Melee" entity="Units/RPraetorian/RPraetorian.ent.xml">
 
-  <properties race="ImperialRome" />
+  <properties race="RepublicanRome" />
   <properties maxhealth="650"/>
   <properties damage="55" armor_slash="15" armor_pierce="15"/>
   <properties speed="60"/>
