@@ -1135,7 +1135,7 @@
 	queueicon="gameres/icons/upgrades/Legendary Valkyries.bmp"
 	costgold = "1200"
 	costfood = "0"
-	execdelay = "1500"
+	execdelay = "15000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Legendary Valkyries"
 	description="All new Valkyries are one level better than the best Valkyries you've had"
