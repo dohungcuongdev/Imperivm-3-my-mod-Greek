@@ -2,6 +2,22 @@
 
 <!-- GERMAN BARRACKS -->
 
+<cmd name="TBarrack Level 3" priority="2"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	queueicon="gameres/icons/upgrades/Barrack3.bmp"
+	button="upgrades/barrack3.bmp"
+	key="f"
+	rollover="Fastest warrior equipment"
+	description="Equips warriors eight times as fast"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "20000"
+	method="research"
+	param="ReqSet, Barrack Level 2, , NameSet, Barrack Level 3, default, SetsSet, BarrackTrainTimeDecrease, 87">
+	<src obj="TBarracks"/>
+</cmd>
+
 <cmd name="trainTSwordsman" priority="3"
 	button="actions/train TSwordsman.bmp"
 	queueicon="gameres/icons/TSwordsman.bmp"

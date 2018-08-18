@@ -87,13 +87,10 @@
 	execdelay = "20000"
 	method="research"
 	param="ReqSet, Barrack Level 2, , NameSet, Barrack Level 3, default, SetsSet, BarrackTrainTimeDecrease, 87">
-	<src obj="GBarracks"/>
-	<src obj="RBarracks"/>
 	<src obj="CBarracks"/>
 	<src obj="IBarracks"/>
 	<src obj="MBarracks"/>
 	<src obj="BBarracks"/>
-	<src obj="TBarracks"/>
 	<src obj="EBarracks"/>
 	<src obj="HBarracks"/>
 	<src obj="RRBarracks"/>

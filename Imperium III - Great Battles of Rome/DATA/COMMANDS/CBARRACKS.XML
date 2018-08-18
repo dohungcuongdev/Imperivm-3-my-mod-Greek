@@ -207,7 +207,7 @@
 	traincommand="yes"
 	key="z"
 	help="/contents/units/CMercenario"
-	costgold = "500"
+	costgold = "520"
 	costfood = "0"
 	costpop = "0"
 	execdelay = "20000"

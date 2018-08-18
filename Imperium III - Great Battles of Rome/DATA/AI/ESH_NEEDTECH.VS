@@ -50,6 +50,8 @@ if (nRace == Gaul)
 		strTech = "Gaul Axeman";
 	if (strTech == "Gaul Iron Spearheads") if (!IsResearched(set, "Gaul Spearman"))
 		strTech = "Gaul Spearman";
+	//if (strTech == "Gaul Heavy Horseshoes") if (!IsResearched(set, "Gaul Horseman"))
+	//	strTech = "Gaul Horseman";
 	if (strTech == "Gaul Fine Armor") if (!IsResearched(set, "Gaul Woman Warrior"))
 		strTech = "Gaul Woman Warrior";
 }

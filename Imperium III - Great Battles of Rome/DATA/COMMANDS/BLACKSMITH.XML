@@ -305,6 +305,7 @@
 	<src obj="GBlacksmith"/>
 </cmd>
 
+<!--
 <cmd name="Gaul Horseman" priority="2"
 	queueicon="gameres/icons/upgrades/Horseshoes.bmp"
 	button="upgrades/Horseshoes.bmp"
@@ -317,10 +318,60 @@
 	rollover="Horseshoes"
 	description="Allows Horsemen to be equipped in the Barracks"
 	method="research"
-	param="NameSet, Horseshoes, default,NameSet, GHorseman,">
+	param="NameSet, GHorseman,">
 	<src obj="GBlacksmith"/>
+</cmd>
+-->
+
+<cmd name="Gaul Horseman" priority="2"
+	queueicon="gameres/icons/upgrades/HEAVY HORSESHOES.bmp"
+	button="upgrades/HEAVY HORSESHOES.bmp"
+	key="h"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1600"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Horseshoes"
+	description="Allows level 6 Horsemen to be equipped in the Barracks"
+	method="research"
+	param="NameSet, Horseshoes, default, SetsSet, levels/GHorseman, 6, NameSet, GHorseman,">
+	<src obj="GBlacksmith"/>
+</cmd>
+
+<cmd name="Gaul Horseman" priority="2"
+	queueicon="gameres/icons/upgrades/HEAVY HORSESHOES.bmp"
+	button="upgrades/HEAVY HORSESHOES.bmp"
+	key="h"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1200"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Horseshoes"
+	description="Allows Horsemen to be equipped in the Barracks"
+	method="research"
+	param="NameSet, Horseshoes, default, NameSet, GHorseman,">
 	<src obj="GGBlacksmith"/>
 </cmd>
+
+<!--
+<cmd name="Gaul Heavy Horseshoes" priority="1"
+	queueicon="gameres/icons/upgrades/HEAVY HORSESHOES.bmp"
+	button="upgrades/HEAVY HORSESHOES.bmp"
+	key="s"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "800"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Heavy Horseshoes"
+	description="All new Horsemen are level 6"
+	method="research"
+	param="ReqSet, GHorseman, , SetsSet, levels/GHorseman, 6, NameSet, Gaul Heavy Horseshoes, default">
+	<src obj="GBlacksmith"/>
+</cmd>
+-->
 
 <cmd name="Gaul Woman Warrior" priority="3"
 	queueicon="gameres/icons/upgrades/woman armor.bmp"
@@ -944,19 +995,19 @@
 
 <!-- New Unit -->
 
-<cmd name="Heavy Horseshoes" priority="6"
-	queueicon="gameres/icons/upgrades/HEAVY HORSESHOES.bmp"
-	button="upgrades/HEAVY HORSESHOES.bmp"
+<cmd name="Fairy Horse" priority="6"
+	queueicon="gameres/icons/upgrades/LIDERI.bmp"
+	button="upgrades/ILIDER.bmp"
 	key="h"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
 	costgold = "6000"
 	costfood = "0"
 	execdelay = "60000"
-	rollover="Heavy Horseshoes"
+	rollover="Fairy Horse"
 	description="Allows Master Horsemen to be equipped in the Barracks"
 	method="research"
-	param="NameSet,Heavy Horseshoes, default, NameSet, BHorseman">
+	param="NameSet,Fairy Horse, default, NameSet, BHorseman">
 	<src obj="BBlacksmith"/>
 </cmd>
 
