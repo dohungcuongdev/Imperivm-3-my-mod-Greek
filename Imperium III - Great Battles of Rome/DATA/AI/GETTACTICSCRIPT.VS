@@ -101,9 +101,19 @@ if (GetTime<2000)
 		/* ESECUZIONE DI UNA TATTICA ROMANA DA PARTE DELLA AI: */
 		if (EnvReadString(set, "ChooseRepublicanRome") == "researched")
 		{
+			/**
 			if (rnd < 50)
 			{
 				return TS_RRomeTactic;	
+			}	//End if.
+			*/
+			if (rnd<33) // add other script for AI
+			{	
+				return TS_RRomeTactic2;		
+			}	//End if.
+			if (rnd<66)	
+			{
+				return TS_RRomeTactic;
 			}	//End if.
 		}	//End if.
 		if (EnvReadString(set, "ChooseImperialRome") == "researched")

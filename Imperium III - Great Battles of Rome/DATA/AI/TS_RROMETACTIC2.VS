@@ -1,7 +1,7 @@
 // void, Settlement set
 int  AIPlayer;
 int  i,gold,food;
-ObjList olHastati,olArchers,olPriests, olPraetorian;
+ObjList olHastati,olArchers,olPriests, olTribunes,olSpies;
 
 int  nDonateFood, nDonateGold, nDonatePop, nBuildArmy, nResearch; // Variables for controlling AI
 Hero hero;
@@ -9,7 +9,7 @@ IntArray aSkills, aSkillLevels;
 int heroScId;
 bool bHeroSc = false;
 
-if (EnvReadInt(set, "MRomeTactic2") == 1) 
+if (EnvReadInt(set, "RRomeTactic2") == 1) 
 	return;
 
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -32,46 +32,32 @@ SetAIVar(AIPlayer, AIV_Research,   0);
 // Set skills
 aSkills[0] = hsTeamAttack;    aSkillLevels[0] = 10;
 aSkills[1] = hsTeamDefense;   aSkillLevels[1] = 10;
-aSkills[2] = hsQuickMarch;    aSkillLevels[2] = 3;
-aSkills[3] = hsEpicEndurance;    aSkillLevels[3] = 3;
+aSkills[2] = hsEpicEndurance; aSkillLevels[2] = 2;
+aSkills[3] = hsQuickMarch;    aSkillLevels[3] = 3;
 
-//barrack level 1 & hero
+// 5 hastati & barrack level 1 & hero
 {
 	ObjList ol;
+	int nSpies = 5;
 	bool bBarrack1 = false;
-	while (!bBarrack1 || !hero.IsValid() )
+	while (!bBarrack1 || !hero.IsValid() || olSpies.count<nSpies)
 	{
 		if (!bBarrack1)
 			bBarrack1 = set.TSResearch("Barrack Level 1");
 		if (!hero.IsValid())
 			hero = set.TSRecruitHero();
 
-		Sleep(10072 + rand(13)*100);
-	}
-}
-//5 hastati 
-{
-	int nSpies = 0;
-	str cmd = "trainRHastatus";
-	while (nSpies<5)
-	{
-		if (nSpies<5)
+		if (olSpies.count<nSpies)
 		{
-			point ptDummy; Obj objDummy;
-			Barrack barrack;
-			barrack = set.BestBarrack(5);
-			if (barrack.IsValid)
-			if (GetCmdCost(cmd, gold, food))
-			{
-				set.SpentGoldOnArmy((gold + (food / 2)));
-				barrack.ExecCmd(cmd, ptDummy, objDummy, false);
-			}	
-			nSpies+=1;
+			ol.Clear();
+			ol.AddList(set.TSRecruitArmy("RHastatus",nSpies));
+			ol.RemoveList(olSpies);		
+			olSpies.AddList(ol);		
+			olSpies.ClearDead();		
+			SetNoAIFlag(olSpies, false);		
 		}
-	
-		Sleep(3472 + rand(10)*100);
+		Sleep(10675 + rand(10)*100);
 	}
-	
 }
 
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -105,27 +91,18 @@ if(!bHeroSc)
 else
 	hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
 
-// barrack level 2 & 20 more hastati
+// 20 more hastati
 {
-	bool bBarrack2 = false;
 	int nHastati = 25;
-	while (!bBarrack2 || olHastati.count<nHastati)
+	while (olHastati.count<nHastati)
 		{
-			if (!bBarrack2)
-				bBarrack2 = set.TSResearch("Barrack Level 2");
-				
-			if (bBarrack2 && olHastati.count<nHastati)
-			{
-				int nCount;
-				nCount = nHastati - olHastati.count;
-				olHastati.AddList(set.TSRecruitArmy("RHastatus",nCount));
-				olHastati.ClearDead();
-				olHastati.SetCommand("enter", set.GetCentralBuilding());
-			}
-		Sleep(5472 + rand(10)*100);
+			int nCount;
+			nCount = nHastati - olHastati.count;
+			olHastati.AddList(set.TSRecruitArmy("RHastatus",nCount));
+
+			Sleep(7675 + rand(10)*100);	
 		}
 }
-
 if (EnvReadInt(set,"StopTacticScript") == 1)
 {
 	// Stop Script;
@@ -162,53 +139,19 @@ if (hero.IsAlive)
 	heroScId = AIRun("TS_AttackAtWill.vs", set, ol,oDummy, 0);
 }
 
-// gladiator shows & standartization 
-{
-	bool bStandartization = false;
-	bool bGladiatorShow = false;
-	while (!bStandartization || !bGladiatorShow)
-	{
-		if (!bGladiatorShow)	
-			bGladiatorShow = set.TSResearch("RGladiator Shows2");
-
-		if (bGladiatorShow &&!bStandartization)
-			bStandartization = set.TSResearch("Standartization I");
-
-		if (EnvReadInt(set,"StopTacticScript") == 1)
-		{
-			// Stop Script;
-			if (bHeroSc)
-				AIBreakScript(heroScId);
-			// Set AI flag 
-			if (hero.IsValid())
-				hero.SetNoAIFlag(false);
-			olHastati.ClearDead();
-			SetNoAIFlag(olHastati,false);
-			// set AI const	
-			SetAIVar(AIPlayer, AIV_DonateGold, nDonateGold); // Return variable to its value
-			SetAIVar(AIPlayer, AIV_DonatePop,  nDonatePop); // Return variable to its value
-			SetAIVar(AIPlayer, AIV_DonateFood, nDonateFood); // Return variable to its value
-			SetAIVar(AIPlayer, AIV_BuildArmy,  nBuildArmy); // Return variable to its value
-			SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
-			return;
-		}
-		Sleep(10771 + rand(10)*100);
-	}
-}
-
-if (hero.IsValid())
-if (hero.IsAlive)
-	hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
-
 // Arrows
 {
 	bool bArrows = false;
 	while (!bArrows)
 		{
 			bArrows = set.TSResearch("Roman Archers");
-			Sleep(5675 + rand(12)*100);
+			Sleep(3675 + rand(10)*100);
 		}
 }
+if (hero.IsValid())
+if (hero.IsAlive)
+	hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
+
 if (EnvReadInt(set,"StopTacticScript") == 1)
 {
 	// Stop Script;
@@ -227,22 +170,18 @@ if (EnvReadInt(set,"StopTacticScript") == 1)
 	SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
 	return;
 }
-
-if (hero.IsValid())
-if (hero.IsAlive)
-	hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
-
-// 20 archers
+// 25 archers
 {
-	int nArchers = 20;
+	int nArchers = 25;
 	while (olArchers.count<nArchers)
 		{
 			int nCount;
 			nCount = nArchers - olArchers.count;
 			olArchers.AddList(set.TSRecruitArmy("RArcher",nCount));
-			Sleep(6472 + rand(10)*100);
+			Sleep(7675 + rand(10)*100);
 		}
 }
+
 if (EnvReadInt(set,"StopTacticScript") == 1)
 {
 	// Stop Script;
@@ -268,55 +207,20 @@ if (hero.IsValid())
 if (hero.IsAlive)
 	hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
 
-// pikes
+// pikes & gladiator shows & training 
 {
 	bool bPikes = false;
-	while (!bPikes)
+	bool bGladiatorShow = false;
+	bool bTraining = false;
+	while (!bPikes || !bGladiatorShow || !bTraining)
 	{
 		if (!bPikes)
-			bPikes = set.TSResearch("Roman Praetorian");
-		Sleep(6472 + rand(10)*100);
-	}
-}
+			bPikes = set.TSResearch("Roman Full Armor");
+		if (!bGladiatorShow)	
+			bGladiatorShow = set.TSResearch("RGladiator Shows");
+		if (bGladiatorShow && !bTraining)
+			bTraining = set.TSResearch("Rome Training 1");
 
-if (EnvReadInt(set,"StopTacticScript") == 1)
-{
-	// Stop Script;
-	if (bHeroSc)
-		AIBreakScript(heroScId);
-	// Set AI flag 
-	if (hero.IsValid())
-		hero.SetNoAIFlag(false);
-	olHastati.ClearDead();
-	SetNoAIFlag(olHastati,false);
-	olArchers.ClearDead();
-	SetNoAIFlag(olArchers,false);
-	// set AI const	
-	SetAIVar(AIPlayer, AIV_DonateGold, nDonateGold); // Return variable to its value
-	SetAIVar(AIPlayer, AIV_DonatePop,  nDonatePop); // Return variable to its value
-	SetAIVar(AIPlayer, AIV_DonateFood, nDonateFood); // Return variable to its value
-	SetAIVar(AIPlayer, AIV_BuildArmy,  nBuildArmy); // Return variable to its value
-	SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
-	return;
-}
-
-if (hero.IsValid())
-if (hero.IsAlive)
-	hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
-
-set.Research("autotrain_start_gr");
-
-//30 Praetorian
-{
-	int nPraetorian = 30;
-	while (olPraetorian.count<nPraetorian)
-	{
-		if (olPraetorian.count<nPraetorian)	
-		{
-			int nCount;
-			nCount = nPraetorian - olPraetorian.count;
-			olPraetorian.AddList(set.TSRecruitArmy("RPraetorian",nCount));
-		}
 		if (EnvReadInt(set,"StopTacticScript") == 1)
 		{
 			// Stop Script;
@@ -329,9 +233,6 @@ set.Research("autotrain_start_gr");
 			SetNoAIFlag(olHastati,false);
 			olArchers.ClearDead();
 			SetNoAIFlag(olArchers,false);
-			olPraetorian.ClearDead();
-			SetNoAIFlag(olPraetorian,false);
-			
 			// set AI const	
 			SetAIVar(AIPlayer, AIV_DonateGold, nDonateGold); // Return variable to its value
 			SetAIVar(AIPlayer, AIV_DonatePop,  nDonatePop); // Return variable to its value
@@ -340,7 +241,62 @@ set.Research("autotrain_start_gr");
 			SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
 			return;
 		}
-		Sleep(5472 + rand(10)*100);
+
+		Sleep(7675 + rand(10)*100);
+	}
+}
+
+if (hero.IsValid())
+if (hero.IsAlive)
+	hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
+
+set.Research("autotrain_start_gr");
+
+//10 priests & 20 Tribunes
+{
+	int nPriests = 10;
+	int nTribunes = 20;
+	while (olPriests.count<nPriests || olTribunes.count<nTribunes)
+	{
+		if (olPriests.count<nPriests)	
+		{
+			int nCount;
+			nCount = nPriests - olPriests.count;
+			olPriests.AddList(set.TSTempleRecruit(nCount));
+		}
+		if (olTribunes.count<nTribunes)	
+		{
+			int nCount;
+			nCount = nTribunes - olTribunes.count;
+			olTribunes.AddList(set.TSRecruitArmy("RTribune",nCount));
+		}
+
+		if (EnvReadInt(set,"StopTacticScript") == 1)
+		{
+			// Stop Script;
+			if (bHeroSc)
+				AIBreakScript(heroScId);
+			// Set AI flag 
+			if (hero.IsValid())
+				hero.SetNoAIFlag(false);
+			olArchers.ClearDead();
+			olHastati.ClearDead();
+			olPriests.ClearDead();
+			olTribunes.ClearDead();
+			SetNoAIFlag(olArchers,false);
+			SetNoAIFlag(olHastati,false);
+			SetNoAIFlag(olPriests,false);
+			SetNoAIFlag(olTribunes,false);
+			// set AI const	
+			SetAIVar(AIPlayer, AIV_DonateGold, nDonateGold); // Return variable to its value
+			SetAIVar(AIPlayer, AIV_DonatePop,  nDonatePop); // Return variable to its value
+			SetAIVar(AIPlayer, AIV_DonateFood, nDonateFood); // Return variable to its value
+			SetAIVar(AIPlayer, AIV_BuildArmy,  nBuildArmy); // Return variable to its value
+			SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
+			return;
+		}
+
+		Sleep(8675 + rand(10)*100);
 	}
 }
 
@@ -358,37 +314,17 @@ if (hero.IsAlive)
 
 olArchers.ClearDead();
 olHastati.ClearDead();
-olPraetorian.ClearDead();
+olPriests.ClearDead();
+olTribunes.ClearDead();
 SetNoAIFlag(olArchers,false);
 SetNoAIFlag(olHastati,false);
-SetNoAIFlag(olPraetorian,false);
+SetNoAIFlag(olPriests,false);
+SetNoAIFlag(olTribunes,false);
 
 SetAIVar(AIPlayer, AIV_DonateGold, nDonateGold); // Return variable to its value
 SetAIVar(AIPlayer, AIV_DonatePop,  nDonatePop); // Return variable to its value
 SetAIVar(AIPlayer, AIV_DonateFood, nDonateFood); // Return variable to its value
 SetAIVar(AIPlayer, AIV_BuildArmy,  nBuildArmy); // Return variable to its value
-
-// standartization 2 & flexibility
-{
-	bool bStandartization2 = false;
-	bool bFlexibility = false;
-	while (!bStandartization2 || !bFlexibility)
-	{
-		if (!bStandartization2)
-			bStandartization2 = set.TSResearch("Standartization II");
-
-		if (bStandartization2 && !bFlexibility)
-			bFlexibility = set.TSResearch("Flexibility");
-		if (EnvReadInt(set,"StopTacticScript") == 1)
-		{
-			SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
-			return;
-		}			
-		Sleep(10872 + rand(12)*100);
-	}
-}
-
-
 SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
 
-EnvWriteInt(set, "MRomeTactic2",1);
+EnvWriteInt(set, "RRomeTactic2",1);

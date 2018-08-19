@@ -200,7 +200,10 @@ while(dest != "")
 			.settlement.SetPopulation(.settlement.population + 20);
 		}
 		else if (name == "Free Trade") {// Free trade implementation
-			.settlement.SetPopulation(100);
+			if(.settlement.population < 70) // if  population >= 70 then add 30 population
+				.settlement.SetPopulation(100);
+			else
+				.settlement.SetPopulation(.settlement.population + 30);
 		}
 		else if (name == "Free Wine"){	// Buy map implementation - in Free Wine now
 			ExploreCircle(.player, .pos, 6000);
