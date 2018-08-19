@@ -180,13 +180,13 @@
 	traincommand="yes"
 	key="y"
 	help="/contents/units/Hipatista"
-	costgold = "450"
+	costgold = "550"
 	costfood = "0"
 	costpop = "1"
 	execdelay = "20000"
 	rollover="Equip Republican Roman Hipatista"
 	method="trainex"
-	param="1, 6, Hipatista, Hipatista, Heavy Swords and Shields, blacksmith"
+	param="1, 4, Hipatista, Hipatista, Heavy Swords and Shields, blacksmith"
 	sclass="Hipatista">
 	<src obj="RBarracks"/>
 </cmd>

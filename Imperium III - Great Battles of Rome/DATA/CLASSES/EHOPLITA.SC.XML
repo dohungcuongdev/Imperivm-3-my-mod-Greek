@@ -1,7 +1,7 @@
 <class id="EHOPLITA" cpp_class="CVXUnit" parent="Melee" entity="Units/EHOPLITA/EHOPLITA.ent.xml">
 
 	<properties race="ImperialRome"/>
-	<properties maxhealth="600"/>
+	<properties maxhealth="700"/>
 	<properties damage="45" armor_slash="25" armor_pierce="25"/>
 	<properties speed="80"/>
 	<properties unit_specials="Ferocity, Defensive tactics, Active"/>
