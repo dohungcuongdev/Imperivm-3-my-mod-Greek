@@ -107,6 +107,8 @@ if (GetTime<2000)
 				return TS_RRomeTactic;	
 			}	//End if.
 			*/
+			
+			/**
 			if (rnd<33) // add other script for AI
 			{	
 				return TS_RRomeTactic2;		
@@ -115,9 +117,22 @@ if (GetTime<2000)
 			{
 				return TS_RRomeTactic;
 			}	//End if.
+			*/
+			
+			if(set.population > 100) // AI is stronger if population is high 
+			{
+				return TS_RRomeTactic2;
+				//End if.
+			}
+			else 
+			{
+				return TS_RRomeTactic;
+				//End if.
+			}
 		}	//End if.
 		if (EnvReadString(set, "ChooseImperialRome") == "researched")
 		{
+			/**
 			if (rnd<33)
 			{	
 				return TS_MRomeTactic;		
@@ -126,6 +141,18 @@ if (GetTime<2000)
 			{
 				return TS_MRomeTactic2;
 			}	//End if.
+			*/
+			
+			if(set.population > 100) // AI is stronger if population is high 
+			{
+				return TS_MRomeTactic2;
+				//End if.
+			}
+			else 
+			{
+				return TS_MRomeTactic;
+				//End if.
+			}
 		}	//End if.	
 		/* FINE ESECUZIONE DI UNA TATTICA ROMANA DA PARTE DELLA AI. */	
 	}	//End if.

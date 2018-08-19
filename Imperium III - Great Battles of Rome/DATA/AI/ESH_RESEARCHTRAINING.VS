@@ -333,7 +333,7 @@ if ((rand(30) == 0 && nMaxLevelTraining >= 8) || set.gold >= AIVar(AIPlayer, AIV
 
 if (nRace == Carthage)
 if (strTech == "") 
-if (rand(30) == 0)
+//if (rand(30) == 0)
 if (!IsResearched(set, "Ferocity"))
 	strTech = "Ferocity";
 
