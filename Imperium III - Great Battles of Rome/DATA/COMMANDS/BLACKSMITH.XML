@@ -200,10 +200,25 @@
 	costfood = "0"
 	execdelay = "30000"
 	rollover="Chariot Wheels"
-	description="Allows Chariots to be built in the Barracks"
+	description="Allows level 12 Chariots to be built in the Barracks"
 	method="research"
-	param="NameSet,Chariot Wheels,default, NameSet, RChariot,">
+	param="NameSet,Chariot Wheels,default,SetsSet, levels/RChariot, 12,  NameSet, RChariot,">
 	<src obj="RBlacksmith"/>
+</cmd>
+
+<cmd name="Roman Chariot Wheels" priority="5"
+	queueicon="gameres/icons/upgrades/chariot wheels.bmp"
+	key="c"
+	button="upgrades/chariot wheels.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "5000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Chariot Wheels"
+	description="Allows level 15 Chariots to be built in the Barracks"
+	method="research"
+	param="NameSet,Chariot Wheels,default,SetsSet, levels/RChariot, 15,  NameSet, RChariot,">
 	<src obj="RRBlacksmith"/>
 </cmd>
 <!-- BLACKSMITH COMMANDS -->
@@ -1125,9 +1140,9 @@
 	costfood = "0"
 	execdelay = "60000"
 	rollover="Steel Weapons"
-	description="Allows Master Assassins to be equipped in the Barracks"
+	description="Allows level 6 Master Assassins to be equipped in the Barracks"
 	method="research"
-	param="NameSet,Steel Weapons, default, NameSet, NSECUAZ">
+	param="NameSet,Steel Weapons, default, SetsSet, levels/NSECUAZ, 6, NameSet, NSECUAZ">
 	<src obj="GBlacksmith"/>
 	<src obj="GGBlacksmith"/>
 </cmd>

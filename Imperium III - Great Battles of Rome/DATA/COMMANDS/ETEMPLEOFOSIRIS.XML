@@ -129,8 +129,9 @@
 	groupverifier="data/subai/verify_trainex.vs"
 	onaddremovescript="data/subai/trainex_onaddremove.vs"
 	traincommand="yes"
-	costgold = "400"
-	execdelay = "30000"
+	costgold = "0"
+	costfood = "800"
+	execdelay = "20000"
  	rollover="Chariot of Osiris"
 	method="trainex"
 	param="1, 10, EChariot,  EChariot, Cult of Osiris">

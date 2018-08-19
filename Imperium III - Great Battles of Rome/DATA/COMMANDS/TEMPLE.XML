@@ -120,11 +120,11 @@
 	key="G"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
-	costgold = "1800"
+	costgold = "2000"
 	costfood = "0"
 	execdelay = "20000"
 	rollover="God's Strength"
-	description="All new warriors are equipped with a God's Strength artifact, which adds 40 max health"
+	description="All new warriors are equipped with a God's Strength artifact, which adds 50 max health"
 	method="research"
 	param="ReqSet, Altar of Jupiter, default, NameSet, God's Strength, default, SetsSet, items/God's Strength, 1">
 	<src obj="RTemple"/>

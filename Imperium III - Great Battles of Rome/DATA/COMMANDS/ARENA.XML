@@ -83,15 +83,15 @@
 	button="Upgrades/Gladiator Show.bmp"
 	key="s"
 	queueicon="gameres/icons/upgrades/Gladiator Show.bmp"
-	costgold = "2000"
+	costgold = "2500"
 	costfood = "0"
-	execdelay = "20000"
+	execdelay = "25000"
 	groupverifier="data/subai/verify_research.vs"
-	description="Allows Gladiators to be hired"
+	description="All new warriors are level 3, Allows Gladiators to be hired"
 	rollover="Gladiator shows"
 	method="research"
 	researchcommand="yes"
-	param="NameSet, Gladiator Shows, default, NameSet, RGladiator, default">
+	param="SetsPlr, standard_spawn_level, 3,NameSet, Gladiator Shows, default, NameSet, RGladiator, default">
 	<src obj="RArena"/>
 </cmd>
 
@@ -99,9 +99,9 @@
 	button="Upgrades/Gladiator Show.bmp"
 	key="s"
 	queueicon="gameres/icons/upgrades/Gladiator Show.bmp"
-	costgold = "2500"
+	costgold = "2000"
 	costfood = "0"
-	execdelay = "25000"
+	execdelay = "20000"
 	groupverifier="data/subai/verify_research.vs"
 	description="All new warriors are level 3"
 	rollover="Gladiator shows"
@@ -808,7 +808,7 @@
 	execdelay = "30000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Veteran's guild"
-	description="All new warriors have Veteran's guild (+3 damage) and become stronger after their first kill (+5 damage)"
+	description="All new warriors have Veteran's guild (+3 damage) and become stronger after their first kill (+6 damage)"
 	method="research"
 	researchcommand="yes"
 	param="ReqSet, Tournaments, default, NameSet, Veteran's guild, default, SetsSet, items/Veteran Guild, 1">
@@ -839,7 +839,7 @@
 	execdelay = "20000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Noble Offense"
-	description="All warriors above level 12 receive a Noble Offense artifact (+5 damage) at their first kill"
+	description="All warriors above level 12 receive a Noble Offense artifact (+4 damage) at their first kill"
 	method="research"
 	researchcommand="yes"
 	param="ReqSet, Fights, default, NamePlr, Noble Offence, default">
@@ -854,7 +854,7 @@
 	execdelay = "20000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Noble Defense"
-	description="All warriors above level 12 receive a Noble Defense artifact (+5 armor) at their first kill"
+	description="All warriors above level 12 receive a Noble Defense artifact (+4 armor) at their first kill"
 	method="research"
 	researchcommand="yes"
 	param="ReqSet, Fights, default, NamePlr, Noble Defence, default">

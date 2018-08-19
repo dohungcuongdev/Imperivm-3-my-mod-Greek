@@ -4,10 +4,10 @@
 	      sound="data/sound entities/ItemUse.xml"
 	      level="0"
 	      name="Bear teeth amulet"
-	      description="Adds 4 to damage"
+	      description="Adds 5 to damage"
 		  cursed="1"
 	      important="no">
-	  <bonus health="0" damage="4" armor_slash="0" armor_pierce="0" level="0" experience="0"/>
+	  <bonus health="0" damage="5" armor_slash="0" armor_pierce="0" level="0" experience="0"/>
 	</item>
 
 	<item id="Herb amulet of luck"
@@ -25,10 +25,10 @@
 	      sound="data/sound entities/ItemUse.xml"
 	      level="0"
 	      name="Belt of might"
-	      description="Adds 3 to armor"
+	      description="Adds 5 to armor"
 		  cursed="1"
 	      important="no">
-	  <bonus health="0" damage="0" armor_slash="3" armor_pierce="3" level="0" experience="0"/>
+	  <bonus health="0" damage="0" armor_slash="5" armor_pierce="5" level="0" experience="0"/>
 	</item>
 
 	<item id="Rye spikes"
@@ -275,10 +275,10 @@
 	      sound="data/sound entities/ItemUse.xml"
 	      level="0"
 	      name="God's Strength"
-	      description="Adds 40 max health"
+	      description="Adds 50 max health"
 		  cursed="1"
 	      important="no">
-	  <bonus health="40" damage="0" armor_slash="0" armor_pierce="0" level="0" experience="0"/>
+	  <bonus health="50" damage="0" armor_slash="0" armor_pierce="0" level="0" experience="0"/>
 	</item>
 
 	<item id="Spoils of War"
@@ -324,10 +324,10 @@
 	      level="0"
 	      usecount="0"
 	      name="Veteran Medal"
-	      description="Adds 5 to damage"
+	      description="Adds 6 to damage"
 	      cursed="1"
 	      important="no">
-	  <bonus health="0" damage="5" armor_slash="0" armor_pierce="0" level="0" experience="0"/>
+	  <bonus health="0" damage="6" armor_slash="0" armor_pierce="0" level="0" experience="0"/>
 	</item>
 
 	<item id="Veteran Offence"
@@ -370,8 +370,8 @@
 	      important="no"
 	      name="Noble Offense"
 		  cursed="1"
-	      description="Adds 5 to damage">
-	  <bonus health="0" damage="5" damage_percent="0" armor_slash="0" armor_pierce="0" level="0" experience="0"/>
+	      description="Adds 4 to damage">
+	  <bonus health="0" damage="4" damage_percent="0" armor_slash="0" armor_pierce="0" level="0" experience="0"/>
 	</item>
 	<item id="Noble Defence"
 	      image="gameres/icons/items/Noble Defence.bmp"
@@ -381,8 +381,8 @@
 	      important="no"
 	      name="Noble Defense"
 		  cursed="1"
-	      description="Adds 5 to armor">
-	  <bonus health="0" damage="0" armor_slash="5"  armor_pierce="5"  armor_slash_percent="0"  armor_pierce_percent="0" level="0" experience="0"/>
+	      description="Adds 4 to armor">
+	  <bonus health="0" damage="0" armor_slash="4"  armor_pierce="4"  armor_slash_percent="0"  armor_pierce_percent="0" level="0" experience="0"/>
 	</item>
 
 	<item id="Damage charm"

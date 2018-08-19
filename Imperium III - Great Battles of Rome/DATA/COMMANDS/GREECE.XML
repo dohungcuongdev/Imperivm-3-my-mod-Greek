@@ -377,7 +377,7 @@
 
 <cmd name="Charm of Aegle" priority="8"
 	button="Research/charm of aegle.bmp"
-	key="d"
+	key="e"
 	queueicon="gameres/icons/upgrades/charm of aegle.bmp"
 	costgold = "2000"
 	costfood = "0"
