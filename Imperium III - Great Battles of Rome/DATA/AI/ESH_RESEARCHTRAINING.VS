@@ -239,7 +239,7 @@ if(nRace == Greece)
 		/* FINE SCELTA DEL TIPO DI GOVERNO. */
 		else
 		{
-			if(rand(2) == 0)
+			//if(rand(2) == 0)
 			{
 				if(nMaxLevelTraining < 10)
 				{
@@ -258,6 +258,7 @@ if(nRace == Greece)
 					}	//Fine if.	
 				}	//Fine else.
 			}	//Fine if.
+			/**
 			else
 			{
 				if(set.gold > 2500 && EnvReadInt(AIPlayer, "MaxMyrmidons") < GetConst("MaxMyrmidonsValue"))
@@ -265,8 +266,27 @@ if(nRace == Greece)
 					strTech = "Forge Elite Equipment";
 				}	//Fine if.
 			}	//Fine else.
+			*/
 		}	//Fine else.
 	}	//Fine if.
+	else 
+	{
+		/* SCELTA DEL TIPO DI GOVERNO: */
+		if(EnvReadInt(set, "AI_ChooseGreekGovernment") == 0)
+		{
+			if(rand(2) == 0) 
+			{
+				strTech = "Democracy";
+			}	//Fine if.	
+			else
+			{
+				strTech = "Oligarchy";
+			}	//Fine else.	
+			
+			EnvWriteInt(set, "AI_ChooseGreekGovernment", 1);
+		}	//Fine if.
+		/* FINE SCELTA DEL TIPO DI GOVERNO. */
+	}
 }	//Fine if.
 
 if (nRace == Egypt)

@@ -122,6 +122,26 @@ if (AIVar(AIPlayer, AIV_LogRush) != 0)
 		pr("Player " + AIPlayer + " will start with GT rush!");
 }
 
+// barrack upgrade
+if(nRace == Greece) 
+{
+	if(IsResearched(set, "Barrack Level 1") == false)
+	{
+		set.Research("Barrack Level 1");
+	}	//Fine if.
+	else if(IsResearched(set, "Barrack Level 2") == false)
+	{
+		set.Research("Barrack Level 2");
+	}	//Fine else if.
+	else if(IsResearched(set, "Barrack Level 3") == false)
+	{
+		set.Research("Barrack Level 3");
+	}	//Fine else if.
+	EnvWriteString(set, "strTech", strTech);
+	set.AIRun("ESH_NeedTech.vs");
+}
+
+
 /// RestartEconomyScript is for debug purpose only -> it stops the current script and starts the new one.
 /// -> EnvWriteInt(sels, "RestartEconomyScript", 1)
 
@@ -304,7 +324,8 @@ while (set.player == AIPlayer && EnvReadInt(set, "RestartEconomyScript") == 0)
 				}	//Fine if.
 				
 				// Grecia -> Preparazione militare.
-				if(nRace == Greece && AIVar(AIPlayer, AIV_Research) > 0 && set.gold >= AIVar(AIPlayer, AIV_SquanderGoldAmount) )
+				// if(nRace == Greece && AIVar(AIPlayer, AIV_Research) > 0 && set.gold >= AIVar(AIPlayer, AIV_SquanderGoldAmount) )
+				if(nRace == Greece)
 				{
 					if (IsResearched(set, "Military Preparation") == false)
 					{
@@ -324,6 +345,24 @@ while (set.player == AIPlayer && EnvReadInt(set, "RestartEconomyScript") == 0)
 							bHireHero = false;
 						}	//Fine if.
 					}	//Fine if.
+					else {
+						/* SCELTA DEL TIPO DI GOVERNO: */
+						if(EnvReadInt(set, "AI_ChooseGreekGovernment") == 0)
+						{
+							if(rand(2) == 0) 
+							{
+								strTech = "Democracy";
+							}	//Fine if.	
+							else
+							{
+								strTech = "Oligarchy";
+							}	//Fine else.	
+							
+							EnvWriteInt(set, "AI_ChooseGreekGovernment", 1);
+							EnvWriteString(set, "strTech", strTech);
+							set.AIRun("ESH_NeedTech.vs");
+						}	//Fine if.
+					}
 				}	//Fine if.
 				
 				if (nRace == Egypt)
@@ -581,6 +620,21 @@ while (set.player == AIPlayer && EnvReadInt(set, "RestartEconomyScript") == 0)
 		set.RepairAll;
 
 	// barrack upgrade
+	if(nRace == Greece)
+	if(IsResearched(set, "Barrack Level 1") == false)
+	{
+		set.Research("Barrack Level 1");
+	}	//Fine if.
+	else if(IsResearched(set, "Barrack Level 2") == false)
+	{
+		set.Research("Barrack Level 2");
+	}	//Fine else if.
+	else if(IsResearched(set, "Barrack Level 3") == false)
+	{
+		set.Research("Barrack Level 3");
+	}	//Fine else if.
+	
+	
 	if (AIVar(AIPlayer, AIV_DonateGold) > 0)
 	if (AIVar(AIPlayer, AIV_UpgradeBarracks) != 0)
 	if (!bAssUnderFire)
