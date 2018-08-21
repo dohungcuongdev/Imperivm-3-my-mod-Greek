@@ -1,10 +1,10 @@
 <class id="EHOPLITA" cpp_class="CVXUnit" parent="Melee" entity="Units/EHOPLITA/EHOPLITA.ent.xml">
 
 	<properties race="ImperialRome"/>
-	<properties maxhealth="700"/>
-	<properties damage="45" armor_slash="25" armor_pierce="25"/>
-	<properties speed="80"/>
-	<properties unit_specials="Ferocity, Defensive tactics, Active"/>
+	<properties maxhealth="400"/>
+	<properties damage="45" armor_slash="16" armor_pierce="16"/>
+	<properties speed="60"/>
+	<properties unit_specials="Offensive tactics, Defensive tactics, Combat skill"/>
 
 	<properties icon="gameres/icons/GrHoplita.bmp"/>
 	<properties display_name="Hoplita" display_name_plural="Hoplitas"/>

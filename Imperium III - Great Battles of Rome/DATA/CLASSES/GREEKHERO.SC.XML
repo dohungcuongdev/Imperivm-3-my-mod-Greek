@@ -4,7 +4,7 @@
 	<properties damage="40" armor_slash="12" armor_pierce="12"/>
 	<properties race="ImperialRome"/>
 	<properties help="/contents/units/HHero"/>
-	<properties HeroSkills="Team defense, Epic attack, Battle cry, Epic endurance, Epic armor"/>
+	<properties HeroSkills="Leadership, Epic attack, Battle cry, Epic endurance, Epic armor"/>
 
 	<sounds command="data/sound entities/VoiceHHero.xml"/>
 
