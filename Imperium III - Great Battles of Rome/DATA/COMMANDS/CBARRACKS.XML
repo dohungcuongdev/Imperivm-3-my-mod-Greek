@@ -211,7 +211,7 @@
 	costfood = "0"
 	costpop = "0"
 	execdelay = "20000"
-	rollover="Equip Master Axeman"
+	rollover="Hire Master Axeman"
 	method="trainex"
 	param="1, 5, CMERCENARIO, CMERCENARIO, Master Axes, blacksmith"
 	sclass="CMERCENARIO">
