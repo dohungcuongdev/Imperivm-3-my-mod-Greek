@@ -1,0 +1,33 @@
+<class id="BearUnit" cpp_class="CVXUnit" parent="AttackAnimal" entity="units/Bear/Bear.ent.xml">
+	<properties maxhealth="400"/>
+	<properties damage="16" armor_slash="2" armor_pierce="2"/>
+
+	<properties damage_type="slash"/>
+	<properties radius="20" selection_radius="40"/>
+	<properties sight="400"/>
+	<properties speed="50"/>
+	<properties healthbaroffset="-30"/>
+
+	<properties icon="gameres/icons/Bear.bmp"/>
+	<properties display_name="Bear" display_name_plural="Bears"/>
+	<properties help="contents/units/Bear"/>
+	<properties edittree_pos="Units/Animals/Bear"/>
+	
+	<properties unit_specials="Trample, Regeneration"/>
+
+	<defaultcmd target="">
+		<cmd name="move"/>
+		<cmd name="advance" ctrl="1"/>
+	</defaultcmd>
+
+	<defaultcmd target="Unit">
+		<cmd name="attack"/>
+	</defaultcmd>
+
+	<sounds 
+		attack="Sounds/animals/Bear/Bear_attack.wav"
+		die ="Sounds/animals/Bear/Bear_die.wav"
+		idle="BearIdle"
+	/>
+
+</class>

@@ -1,0 +1,32 @@
+<class id="LionM" cpp_class="CVXUnit" parent="BaseAnimal" entity="units/LionM/LionM.ent.xml">
+
+	<properties maxhealth="320"/>
+	<properties damage="18" armor_slash="4" armor_pierce="4"/>
+
+	<properties damage_type="slash"/>
+	<properties radius="39" selection_radius="40"/>
+	<properties sight="600"/>
+	<properties speed="50"/>
+	<properties healthbaroffset="-30"/>
+
+	<properties icon="gameres/icons/lionM.bmp"/>
+	<properties display_name="Lion" display_name_plural="Lions"/>
+	<properties help="contents/units/Lion"/>
+	<properties edittree_pos="Units/Animals/Lion (aggressive)"/>
+	
+	<properties unit_specials="Triple strike"/>
+
+	<method sig="idle" vs="data/subai/lion_idle.vs"/>
+	<method sig="attack" vs="data/subai/unit_advance.vs"/>
+	<method sig="attack" vs="data/subai/lion_attack.vs"/>
+	<method sig="lead" vs="data/subai/lion_lead.vs"/>
+	<method sig="engage" vs="data/subai/lion_engage.vs"/>
+	<method sig="move" vs="data/subai/unit_move.vs"/>
+	<method sig="advance" vs="data/subai/unit_advance.vs"/>
+
+	<sounds 
+		die="Sounds/animals/Lion/Lion_die.wav"
+		attack="Sounds/animals/Lion/Lion_attack.wav"
+		command="Sounds/animals/Lion/Lion_idle.wav"
+	/>
+</class>

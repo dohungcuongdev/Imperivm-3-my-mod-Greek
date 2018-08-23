@@ -1,0 +1,33 @@
+<class id="WolfUnit" cpp_class="CVXUnit" parent="AttackAnimal" entity="Units/Wolf/Wolf.ent.xml">
+
+	<properties maxhealth="240"/>
+	<properties damage="16" armor_slash="2" armor_pierce="2"/>
+
+	<properties damage_type="slash"/>
+	<properties radius="19" selection_radius="20"/>
+	<properties sight="600"/>
+	<properties speed="150"/>
+	<properties healthbaroffset="-30"/>
+
+	<properties icon="gameres/icons/wolf.bmp"/>
+	<properties display_name="Wolf" display_name_plural="Wolves"/>
+	<properties help="contents/units/Wolf"/>
+	<properties edittree_pos="Units/Animals/Wolf"/>
+	
+	<properties unit_specials="Regeneration"/>
+
+	<defaultcmd target="">
+		<cmd name="move"/>
+		<cmd name="advance" ctrl="1"/>
+	</defaultcmd>
+
+	<defaultcmd target="Unit">
+		<cmd name="attack"/>
+	</defaultcmd>
+
+	<sounds 
+		die="Sounds/animals/wolf/wolf_die.wav"
+		attack="WolfAttack"
+		command="Sounds/animals/wolf/wolf_command.wav"
+	/>
+</class>
