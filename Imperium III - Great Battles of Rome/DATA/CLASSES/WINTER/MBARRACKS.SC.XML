@@ -2,7 +2,7 @@
 	cpp_class = "CVXBarrack"
 	entity = "Buildings/RBarracks/RBarracks_w.ent.xml"
 	id = "MBarracksWinter"
-	parent = "MBarracks"
+	parent = "IRBarracks"
 >
 	<properties edittree_pos = "Structures/Stronghold (Imperial Rome)/Winter/Barracks"/>
 </class>

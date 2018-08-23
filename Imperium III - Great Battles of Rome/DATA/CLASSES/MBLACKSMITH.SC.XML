@@ -1,16 +1,8 @@
-<class id="MBlacksmith" cpp_class="CVXBuilding" parent="BaseBlacksmith"
-entity="Buildings/RBlacksmith/RBlacksmith_as.ent.xml"
-entity_autumn="Buildings/RBlacksmith/RBlacksmith_as.ent.xml"
-entity_spring="Buildings/RBlacksmith/RBlacksmith_as.ent.xml"
-entity_winter="Buildings/RBlacksmith/RBlacksmith_w.ent.xml">
-
-	<properties race="ImperialRome"/>
-	<properties display_name="Blacksmith"/>
-	<properties icon="gameres/icons/RBlacksmith.bmp"/>
-	<properties radius="255" selection_radius="260"/>
-	<properties edittree_pos="Structures/Stronghold (Imperial Rome)/Blacksmith"/>
-	<properties help="/contents/buildings/RBlacksmith"/>
-
-	
-
+<class
+	cpp_class = "CVXBuilding"
+	entity="Buildings/RBlacksmith/RBlacksmith_as.ent.xml"
+	id = "MBlacksmith"
+	parent = "RBlacksmith"
+>
+	<properties edittree_pos = "Structures/Stronghold (Roman)/Blacksmith"/>
 </class>

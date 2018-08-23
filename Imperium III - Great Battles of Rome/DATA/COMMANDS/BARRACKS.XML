@@ -16,7 +16,7 @@
 	<src obj="RBarracks"/>
 	<src obj="CBarracks"/>
 	<src obj="IBarracks"/>
-	<src obj="MBarracks"/>
+	<src obj="IRBarracks"/>
 	<src obj="BBarracks"/>
 	<src obj="TBarracks"/>
 	<src obj="EBarracks"/>
@@ -41,7 +41,7 @@
 	<src obj="RBarracks"/>
 	<src obj="CBarracks"/>
 	<src obj="IBarracks"/>
-	<src obj="MBarracks"/>
+	<src obj="IRBarracks"/>
 	<src obj="BBarracks"/>
 	<src obj="TBarracks"/>
 	<src obj="EBarracks"/>
@@ -66,7 +66,7 @@
 	<src obj="RBarracks"/>
 	<src obj="CBarracks"/>
 	<src obj="IBarracks"/>
-	<src obj="MBarracks"/>
+	<src obj="IRBarracks"/>
 	<src obj="BBarracks"/>
 	<src obj="TBarracks"/>
 	<src obj="EBarracks"/>
@@ -89,7 +89,7 @@
 	param="ReqSet, Barrack Level 2, , NameSet, Barrack Level 3, default, SetsSet, BarrackTrainTimeDecrease, 87">
 	<src obj="CBarracks"/>
 	<src obj="IBarracks"/>
-	<src obj="MBarracks"/>
+	<src obj="IRBarracks"/>
 	<src obj="BBarracks"/>
 	<src obj="EBarracks"/>
 	<src obj="HBarracks"/>

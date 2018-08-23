@@ -14,7 +14,7 @@
 	<src obj="CBlacksmith"/>
 	<src obj="GBlacksmith"/>
 	<src obj="IBlacksmith"/>
-	<src obj="MBlacksmith"/>
+	<src obj="IRBlacksmith"/>
 	<src obj="BBlacksmith"/>
 	<src obj="TBlacksmith"/>
 	<src obj="HBlacksmith"/>
@@ -44,7 +44,7 @@
 	<src obj="CBlacksmith"/>
 	<src obj="GBlacksmith"/>
 	<src obj="IBlacksmith"/>
-	<src obj="MBlacksmith"/>
+	<src obj="IRBlacksmith"/>
 	<src obj="BBlacksmith"/>
 	<src obj="TBlacksmith"/>
 	<src obj="EBlacksmith"/>
@@ -74,7 +74,7 @@
 	<src obj="CBlacksmith"/>
 	<src obj="GBlacksmith"/>
 	<src obj="IBlacksmith"/>
-	<src obj="MBlacksmith"/>
+	<src obj="IRBlacksmith"/>
 	<src obj="BBlacksmith"/>
 	<src obj="TBlacksmith"/>
 	<src obj="EBlacksmith"/>
@@ -103,7 +103,7 @@
 	param="NameSet, Arrows,default,NameSet, RArcher,,">
 	<src obj="RBlacksmith"/>
 	<src obj="RRBlacksmith"/>
-	<src obj="MBlacksmith"/>
+	<src obj="IRBlacksmith"/>
 </cmd>
 
 <cmd name="Roman Velit" priority="2"
@@ -120,7 +120,7 @@
 	method="research"
 	param="NameSet,Throwing Spears,default, NameSet, RVelit,">
 	<src obj="RBlacksmith"/>
-	<src obj="MBlacksmith"/>
+	<src obj="IRBlacksmith"/>
 </cmd>
 
 <cmd name="Roman Principle" priority="3"
@@ -138,7 +138,7 @@
 	param="NameSet,Pikes,default, NameSet, RPrinciple,">
 	<src obj="RBlacksmith"/>
 	<src obj="RRBlacksmith"/>
-	<src obj="MBlacksmith"/>
+	<src obj="IRBlacksmith"/>
 </cmd>
 <cmd name="Roman Scout" priority="4"
 	queueicon="gameres/icons/upgrades/Horseshoes.bmp"
@@ -155,7 +155,7 @@
 	param="NameSet,Horseshoes,default, NameSet, RScout,">
 	<src obj="RBlacksmith"/>
 	<src obj="RRBlacksmith"/>
-	<src obj="MBlacksmith"/>
+	<src obj="IRBlacksmith"/>
 </cmd>
 <cmd name="Roman Praetorian" priority="5"
 	queueicon="gameres/icons/upgrades/spike armor.bmp"
@@ -171,7 +171,7 @@
 	method="research"
 	param="NameSet,Spike Armor,default,NameSet, RPraetorian,">
 	<src obj="RBlacksmith"/>
-	<src obj="MBlacksmith"/>
+	<src obj="IRBlacksmith"/>
 </cmd>
 <cmd name="Roman Full Armor" priority="4"
 	queueicon="gameres/icons/upgrades/full armor.bmp"
@@ -811,7 +811,7 @@
 	button="upgrades/axe iron.bmp"
 	costgold = "500"
 	costfood = "0"
-	execdelay = "20000"
+	execdelay = "5000"
 	groupverifier="data/subai/axemen_verify.vs"
 	rollover="Increase Axe production"
 	description="Increases the number of Axemen you can have by 10"
@@ -828,7 +828,7 @@
 	button="upgrades/CJavelins.bmp"
 	costgold = "800"
 	costfood = "0"
-	execdelay = "20000"
+	execdelay = "5000"
 	groupverifier="data/subai/huntress_verify.vs"
 	rollover="Increase Javelin production"
 	description="Increases the number of Huntresses you can have by 10"
@@ -844,7 +844,7 @@
 	button="upgrades/Horseshoes.bmp"
 	costgold = "800"
 	costfood = "0"
-	execdelay = "20000"
+	execdelay = "5000"
 	groupverifier="data/subai/teutonrider_verify.vs"
 	rollover="Increase Horseshoe production"
 	description="Increases the number of Teuton Riders you can have by 10"
@@ -860,7 +860,7 @@
 	button="upgrades/Incr Mace Production.bmp"
 	costgold = "1000"
 	costfood = "0"
-	execdelay = "20000"
+	execdelay = "5000"
 	groupverifier="data/subai/macemen_verify.vs"
 	rollover="Increase Mace production"
 	description="Increases the number of Macemen you can have by 10"
@@ -1058,7 +1058,7 @@
 	method="research"
 	param="NameSet,Calling Hipatistas, default, NameSet, IRHipatista">
 	<src obj="RBlacksmith"/>
-	<src obj="MBlacksmith"/>
+	<src obj="IRBlacksmith"/>
 </cmd>
 -->
 
@@ -1076,7 +1076,7 @@
 	method="research"
 	param="NameSet,Heavy Shields and Spears, default, NameSet, IRHipatista">
 	<src obj="RBlacksmith"/>
-	<src obj="MBlacksmith"/>
+	<src obj="IRBlacksmith"/>
 </cmd>
 
 <cmd name="Wall of Shields" priority="6"

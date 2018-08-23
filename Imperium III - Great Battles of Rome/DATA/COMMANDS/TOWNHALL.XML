@@ -34,7 +34,7 @@
 	rollover="Automatic training">
 	<src obj="GTownhall"/>
 	<src obj="RTownhall"/>
-	<src obj="MTownhall"/>
+	<src obj="IRTownhall"/>
 	<src obj="HTownhall"/>
 	<src obj="RRTownhall"/>
 </cmd>
@@ -49,7 +49,7 @@
 	rollover="Stop automatic training">
 	<src obj="GTownhall"/>
 	<src obj="RTownhall"/>
-	<src obj="MTownhall"/>
+	<src obj="IRTownhall"/>
 	<src obj="HTownhall"/>
 	<src obj="RRTownhall"/>
 </cmd>
@@ -162,7 +162,7 @@
 	researchcommand="yes"
 >
 	<src obj="RTownhall"/>
-	<src obj="MTownhall"/>
+	<src obj="IRTownhall"/>
 	<src obj="CTownhall"/>
 	<src obj="TTownhall"/>
 	<src obj="HTownhall"/>

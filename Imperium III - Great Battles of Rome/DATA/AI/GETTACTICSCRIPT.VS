@@ -36,10 +36,15 @@ if (GetTime<2000)
 
 	if (nRace == Germany)
 	{
-		if (rnd<33)	
+		if(set.population > 1000) {
 			return TS_GermanyTactic;
-		if (rnd<66)	
-			return TS_GermanyTactic2;
+		}
+		else {
+			if (rnd<33)	
+				return TS_GermanyTactic;
+			if (rnd<66)	
+				return TS_GermanyTactic2;
+		}
 	}
 
 	if (nRace == Egypt)

@@ -47,8 +47,8 @@
 	method="addpop"
 	description="Increases the stronghold population by 10"
 	rollover="Increase population">
-	<src obj="MTavern"/>
-	<src obj="MTavern2"/>
+	<src obj="IRTavern"/>
+	<src obj="IRTavern2"/>
 </cmd>
 
 <cmd name="IAddPop" priority="2"
@@ -127,8 +127,8 @@
 	>
 	<src obj="RTavern"/>
 	<src obj="RTavern2"/>
-	<src obj="MTavern"/>
-	<src obj="MTavern2"/>
+	<src obj="IRTavern"/>
+	<src obj="IRTavern2"/>
 	<src obj="RRTavern"/>
 	<src obj="RRTavern2"/>
 </cmd>
@@ -240,8 +240,8 @@
 	description="All new scouts are level 10">
 	<src obj="RTavern"/>
 	<src obj="RTavern2"/>
-	<src obj="MTavern"/>
-	<src obj="MTavern2"/>
+	<src obj="IRTavern"/>
+	<src obj="IRTavern2"/>
 	<src obj="RRTavern"/>
 	<src obj="RRTavern2"/>
 </cmd>
@@ -283,8 +283,8 @@
 	param="Free Wine">
 	<src obj="RTavern"/>
 	<src obj="RTavern2"/>
-	<src obj="MTavern"/>
-	<src obj="MTavern2"/>
+	<src obj="IRTavern"/>
+	<src obj="IRTavern2"/>
 	<src obj="RRTavern"/>
 	<src obj="RRTavern2"/>
 </cmd>
@@ -319,8 +319,8 @@
 	param="Free Wine">
 	<src obj="RTavern"/>
 	<src obj="RTavern2"/>
-	<src obj="MTavern"/>
-	<src obj="MTavern2"/>
+	<src obj="IRTavern"/>
+	<src obj="IRTavern2"/>
 	<src obj="RRTavern"/>
 	<src obj="RRTavern2"/>
 </cmd>
@@ -443,8 +443,8 @@
 	param="ReqSet, Free Wine, default, NamePlr, Tribute, default"
 	description="Gathers %s1 gold in each outpost you own. The amount of gold increases by 500 every 10 minutes (though not over 2000)"
 	rollover="Tribute (once per game)">
-	<src obj="MTavern"/>
-	<src obj="MTavern2"/>
+	<src obj="IRTavern"/>
+	<src obj="IRTavern2"/>
 </cmd>
 
 <cmd name="CTribute" priority="8"

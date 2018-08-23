@@ -2,7 +2,7 @@
 	cpp_class = "CVXBuilding"
 	entity = "Buildings/RBlacksmith/RBlacksmith_w.ent.xml"
 	id = "MBlacksmithWinter"
-	parent = "MBlacksmith"
+	parent = "IRBlacksmith"
 >
 	<properties edittree_pos = "Structures/Stronghold (Imperial Rome)/Winter/Blacksmith"/>
 </class>

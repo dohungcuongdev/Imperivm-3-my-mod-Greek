@@ -15,7 +15,7 @@
 	costfood="0"
 	execdelay = "60000">
 	<src obj="RTemple"/>
-	<src obj="MTemple"/>
+	<src obj="IRTemple"/>
 	<src obj="HTemple"/>
 	<src obj="RRTemple"/>
 </cmd>
@@ -39,7 +39,7 @@
 	param="RPriest"
 	sclass="RPriest">
 	<src obj="RTemple"/>
-	<src obj="MTemple"/>
+	<src obj="IRTemple"/>
 	<src obj="RRTemple"/>
 </cmd>
 
@@ -57,7 +57,7 @@
 	method="research"
 	param="NameSet, Altar of Jupiter, default, SetsSet, levels/RPriest, 4">
 	<src obj="RTemple"/>
-	<src obj="MTemple"/>
+	<src obj="IRTemple"/>
 	<src obj="RRTemple"/>
 </cmd>
 
@@ -75,7 +75,7 @@
 	method="research"
 	param="ReqSet, Altar of Jupiter, default, NamePlr, Cloud of Plague, default">
 	<src obj="RTemple"/>
-	<src obj="MTemple"/>
+	<src obj="IRTemple"/>
 	<src obj="RRTemple"/>
 </cmd>
 
@@ -93,7 +93,7 @@
 	method="research"
 	param="ReqSet, Altar of Jupiter, default, NamePlr, Wrath of Jupiter, default">
 	<src obj="RTemple"/>
-	<src obj="MTemple"/>
+	<src obj="IRTemple"/>
 	<src obj="RRTemple"/>
 </cmd>
 
@@ -128,7 +128,7 @@
 	method="research"
 	param="ReqSet, Altar of Jupiter, default, NameSet, God's Strength, default, SetsSet, items/God's Strength, 1">
 	<src obj="RTemple"/>
-	<src obj="MTemple"/>
+	<src obj="IRTemple"/>
 </cmd>
 
 </commands>

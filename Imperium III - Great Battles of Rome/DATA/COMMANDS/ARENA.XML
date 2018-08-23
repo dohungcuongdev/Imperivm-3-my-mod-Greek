@@ -76,7 +76,7 @@
 	researchcommand="yes"
 	param="NameSet, Gladiator Shows, default">
 	<src obj="RArena"/>
-	<src obj="MArena"/>
+	<src obj="IRArena"/>
 </cmd>
 
 <cmd name="RGladiator Shows" priority="2"
@@ -398,7 +398,7 @@
 	help="/contents/units/MHero"
 	rollover="Hire hero">
 	<src obj="RArena"/>
-	<src obj="MArena"/>
+	<src obj="IRArena"/>
 </cmd>
 
 <cmd name="hireheroG" priority="1"
@@ -653,7 +653,7 @@
 	method="trainex"
 	param="10, 20, RLiberatus, Liberati, Gladiator Shows">
 	<src obj="RArena"/>
-	<src obj="MArena"/>
+	<src obj="IRArena"/>
 </cmd>
 
 <cmd name="Mountain Clan" priority="4"
@@ -745,7 +745,7 @@
 	researchcommand="yes"
 	param="ReqSet, Gladiator Shows, default, NameSet, Liberati guild, default, SetsSet, levels/RLiberatus, 3">
 	<src obj="RArena"/>
-	<src obj="MArena"/>
+	<src obj="IRArena"/>
 </cmd>
 
 <cmd name="Military Academy" priority="6"
@@ -762,7 +762,7 @@
 	researchcommand="yes"
 	param="ReqSet, Gladiator Shows, default, SetsSet, levels/Hero, 12, NameSet, Military Academy, default">
 	<src obj="RArena"/>
-	<src obj="MArena"/>
+	<src obj="IRArena"/>
 </cmd>
 
 <cmd name="Mountain Clan Legacy" priority="3"
@@ -875,7 +875,7 @@
 	researchcommand="yes"
 	param="ReqSet, Gladiator Shows, default, SetsPlr, max_battle_level, 4, SetsPlr, standard_spawn_level, 4, NamePlr, Standartization I">
 	<src obj="RArena"/>
-	<src obj="MArena"/>
+	<src obj="IRArena"/>
 </cmd>
 
 <cmd name="Standartization II" priority="2"
@@ -892,7 +892,7 @@
 	researchcommand="yes"
 	param="ReqPlr, Standartization I, , SetsPlr, max_battle_level, 8, SetsPlr, standard_spawn_level, 8, NamePlr, Standartization II">
 	<src obj="RArena"/>
-	<src obj="MArena"/>
+	<src obj="IRArena"/>
 </cmd>
 
 <cmd name="Flexibility" priority="2"
@@ -909,7 +909,7 @@
 	researchcommand="yes"
 	param="ReqPlr, Standartization II, , SetsPlr, max_battle_level, 0, NamePlr, Flexibility, default">
 	<src obj="RArena"/>
-	<src obj="MArena"/>
+	<src obj="IRArena"/>
 </cmd>
 
 <!-- Egypt -->

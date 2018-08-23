@@ -1,0 +1,8 @@
+<class
+	cpp_class = "CVXBuilding"
+	entity="Buildings/RArena/RArena_w.ent.xml"
+	id = "MArenaWinter"
+	parent = "IRArena"
+>
+	<properties edittree_pos = "Structures/Stronghold (Imperial Rome)/Winter/Arena"/>
+</class>
