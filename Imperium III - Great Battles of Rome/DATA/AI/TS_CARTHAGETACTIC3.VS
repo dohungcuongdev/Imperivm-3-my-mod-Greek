@@ -49,7 +49,8 @@ aSkills[1] = hsFrenzy;    aSkillLevels[1] = 10;
 		if (!bBarrack1)
 			bBarrack1 = set.TSResearch("Barrack Level 1");
 			
-		Sleep(10456 + rand(10)*100);
+		//Sleep(10456 + rand(10)*100);
+		Sleep(500);
 	}
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -108,7 +109,8 @@ else
 			return;
 		}
 
-		Sleep(8456 + rand(10)*100);
+		//Sleep(8456 + rand(10)*100);
+		Sleep(500);
 	}
 }
 if (hero.IsValid())
@@ -154,7 +156,8 @@ if (hero.IsAlive)
 			return;
 		}
 
-		Sleep(7456 + rand(10)*100);
+		//Sleep(7456 + rand(10)*100);
+		Sleep(500);
 	}
 }
 
@@ -191,7 +194,8 @@ if (hero.IsAlive)
 			return;
 		}
 
-		Sleep(12456 + rand(10)*100);
+		//Sleep(12456 + rand(10)*100);
+		Sleep(500);
 	}	
 }
 
@@ -208,7 +212,8 @@ set.TSResearch("StopSpecialization");
 		if (!bFJavelins)
 			bFJavelins = set.TSResearch("Forge javelins");
 
-		Sleep(4456 + rand(1530));
+		//Sleep(4456 + rand(1530));
+		Sleep(500);
 	}	
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -265,7 +270,8 @@ if (hero.IsValid)
 			return;
 		}
 
-		Sleep(13456 + rand(10)*100);
+		//Sleep(13456 + rand(10)*100);
+		Sleep(500);
 	}
 }
 
@@ -304,15 +310,18 @@ if (hero.IsValid)
 			return;
 		}
 
-		Sleep(11456 + rand(10)*100);
+		//Sleep(11456 + rand(10)*100);
+		Sleep(500);
 	}	
 }
 if (hero.IsValid)
 		hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
 
-/*// 25 nobles
+// 2000 nobles
 {
-	int nNobles = 25;
+	if (!bSacredLegion)
+		bSacredLegion = set.TSResearch("Sacred Legion");
+	int nNobles = 2000;
 	while (olNobles.count<nNobles)
 	{
 		int nCount;
@@ -321,9 +330,10 @@ if (hero.IsValid)
 			nCount = nNobles - olNobles.count;
 			olNobles.AddList(set.TSArmyRecruit("CNoble",nCount));
 		}
-		Sleep(2456 + rand(30));
+		//Sleep(2456 + rand(30));
+		Sleep(500);
 	}
-}*/
+}
 
 // Give army to AI
 if (bHeroSc)

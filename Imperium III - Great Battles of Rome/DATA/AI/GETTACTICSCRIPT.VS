@@ -137,7 +137,7 @@ if (GetTime<2000)
 				return TS_RRomeTactic3;
 				//End if.
 			}
-			if(set.population > 100) // AI is stronger if population is high 
+			else if(set.population > 100) // AI is stronger if population is high 
 			{
 				return TS_RRomeTactic2;
 				//End if.
@@ -160,8 +160,10 @@ if (GetTime<2000)
 				return TS_MRomeTactic2;
 			}	//End if.
 			*/
-			
-			if(set.population > 100) // AI is stronger if population is high 
+			if(set.population > 1000) { // AI is stronger if population is high 
+				return TS_MRomeTactic3;
+			}
+			else if(set.population > 100) // AI is stronger if population is high 
 			{
 				return TS_MRomeTactic2;
 				//End if.

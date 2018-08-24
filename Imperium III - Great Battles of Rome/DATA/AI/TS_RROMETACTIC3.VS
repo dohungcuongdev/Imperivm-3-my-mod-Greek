@@ -9,7 +9,7 @@ IntArray aSkills, aSkillLevels;
 int heroScId;
 bool bHeroSc = false;
 
-if (EnvReadInt(set, "RRomeTactic2") == 1) 
+if (EnvReadInt(set, "RRomeTactic3") == 1) 
 	return;
 
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -56,7 +56,8 @@ aSkills[3] = hsQuickMarch;    aSkillLevels[3] = 3;
 			olSpies.ClearDead();		
 			SetNoAIFlag(olSpies, false);		
 		}
-		Sleep(10675 + rand(10)*100);
+		//Sleep(10675 + rand(10)*100);
+		Sleep(500);
 	}
 }
 
@@ -100,7 +101,8 @@ else
 			nCount = nHastati - olHastati.count;
 			olHastati.AddList(set.TSRecruitArmy("RHastatus",nCount));
 
-			Sleep(7675 + rand(10)*100);	
+			//Sleep(7675 + rand(10)*100);	
+			Sleep(500);
 		}
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -145,7 +147,8 @@ if (hero.IsAlive)
 	while (!bArrows)
 		{
 			bArrows = set.TSResearch("Roman Archers");
-			Sleep(3675 + rand(10)*100);
+			//Sleep(3675 + rand(10)*100);
+			Sleep(500);
 		}
 }
 if (hero.IsValid())
@@ -178,7 +181,8 @@ if (EnvReadInt(set,"StopTacticScript") == 1)
 			int nCount;
 			nCount = nArchers - olArchers.count;
 			olArchers.AddList(set.TSRecruitArmy("RArcher",nCount));
-			Sleep(7675 + rand(10)*100);
+			//Sleep(7675 + rand(10)*100);
+			Sleep(500);
 		}
 }
 
@@ -242,7 +246,8 @@ if (hero.IsAlive)
 			return;
 		}
 
-		Sleep(7675 + rand(10)*100);
+		//Sleep(7675 + rand(10)*100);
+		Sleep(500);
 	}
 }
 
@@ -252,10 +257,16 @@ if (hero.IsAlive)
 
 set.Research("autotrain_start_gr");
 
-//10 priests & 20 Tribunes
+//10 priests & 2000 Tribunes
 {
+	bool bBarrack2 = false;
+	if (!bBarrack2)
+		bBarrack2 = set.TSResearch("Barrack Level 2");
+	bool bBarrack3 = false;
+	if (!bBarrack3)
+		bBarrack2 = set.TSResearch("Barrack Level 3");
 	int nPriests = 10;
-	int nTribunes = 20;
+	int nTribunes = 300;
 	while (olPriests.count<nPriests || olTribunes.count<nTribunes)
 	{
 		if (olPriests.count<nPriests)	
@@ -296,7 +307,8 @@ set.Research("autotrain_start_gr");
 			return;
 		}
 
-		Sleep(8675 + rand(10)*100);
+		//Sleep(8675 + rand(10)*100);
+		Sleep(500);
 	}
 }
 
@@ -327,4 +339,4 @@ SetAIVar(AIPlayer, AIV_DonateFood, nDonateFood); // Return variable to its value
 SetAIVar(AIPlayer, AIV_BuildArmy,  nBuildArmy); // Return variable to its value
 SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
 
-EnvWriteInt(set, "RRomeTactic2",1);
+EnvWriteInt(set, "RRomeTactic3",1);

@@ -11,7 +11,7 @@ int heroScId;
 bool bHeroSc = false;
 bool bWinGambling = false;
 
-if (EnvReadInt(set, "BritishTactic") == 1) 
+if (EnvReadInt(set, "BritishTactic3") == 1) 
 	return;
 
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -60,7 +60,8 @@ SetAIVar(AIPlayer, AIV_Research,   0);
 				}	
 			i+=1;
 		}
-		Sleep(5543+rand(10)*100);
+		//Sleep(5543+rand(10)*100);
+		Sleep(500);
 	}
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -106,7 +107,8 @@ if(!bHeroSc)
 			if (bGambling)
 			  bWinGambling = (set.gold-gold)>4000;
 		}
-		Sleep(6543+rand(10)*100);
+		//Sleep(6543+rand(10)*100);
+		Sleep(500);
 	}
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -145,7 +147,8 @@ if (bWinGambling)
 			if (!bJavelins)
 				bJavelins = set.TSResearch("Britain Javelins");
 			
-		Sleep(7543+rand(10)*100);
+		//Sleep(7543+rand(10)*100);
+		Sleep(500);
 		}
 	}
 }
@@ -222,7 +225,8 @@ if (hero.IsAlive)
 			SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
 			return;
 		}
-		Sleep(9543+rand(10)*100);
+		//Sleep(9543+rand(10)*100);
+		Sleep(500);
 	}
 		
 }
@@ -261,7 +265,8 @@ if (bWinGambling) // Gambler's test Research Swords
 		if(!bGamblersTest)
 			bGamblersTest = set.TSResearch("Gambler's Test");
 
-		Sleep(10543+rand(10)*100);
+		//Sleep(10543+rand(10)*100);
+		Sleep(500);
 	}
 }
 else// Research Swords
@@ -270,11 +275,12 @@ else// Research Swords
 	while(!bSwords)
 	{
 		bSwords = set.TSResearch("Britain Swords");
-		Sleep(10543+rand(10)*100);
+		//Sleep(10543+rand(10)*100);
+		Sleep(500);
 	}
 }
 
 // Allow AI to spend gold and build army
 SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
 
-EnvWriteInt(set, "BritishTactic",1);
+EnvWriteInt(set, "BritishTactic3",1);

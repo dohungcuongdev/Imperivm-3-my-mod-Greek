@@ -9,7 +9,7 @@ IntArray aSkills, aSkillLevels;
 int heroScId;
 bool bHeroSc = false;
 
-if (EnvReadInt(set, "MRomeTactic2") == 1) 
+if (EnvReadInt(set, "RRomeTactic3") == 1) 
 	return;
 
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -46,7 +46,8 @@ aSkills[3] = hsEpicEndurance;    aSkillLevels[3] = 3;
 		if (!hero.IsValid())
 			hero = set.TSRecruitHero();
 
-		Sleep(10072 + rand(13)*100);
+		//Sleep(10072 + rand(13)*100);
+		Sleep(500);
 	}
 }
 //5 hastati 
@@ -69,7 +70,8 @@ aSkills[3] = hsEpicEndurance;    aSkillLevels[3] = 3;
 			nSpies+=1;
 		}
 	
-		Sleep(3472 + rand(10)*100);
+		//Sleep(3472 + rand(10)*100);
+		Sleep(500);
 	}
 	
 }
@@ -122,7 +124,8 @@ else
 				olHastati.ClearDead();
 				olHastati.SetCommand("enter", set.GetCentralBuilding());
 			}
-		Sleep(5472 + rand(10)*100);
+		//Sleep(5472 + rand(10)*100);
+		Sleep(500);
 		}
 }
 
@@ -192,7 +195,8 @@ if (hero.IsAlive)
 			SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
 			return;
 		}
-		Sleep(10771 + rand(10)*100);
+		//Sleep(10771 + rand(10)*100);
+		Sleep(500);
 	}
 }
 
@@ -206,7 +210,8 @@ if (hero.IsAlive)
 	while (!bArrows)
 		{
 			bArrows = set.TSResearch("Roman Archers");
-			Sleep(5675 + rand(12)*100);
+			//Sleep(5675 + rand(12)*100);
+			Sleep(500);
 		}
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -240,7 +245,8 @@ if (hero.IsAlive)
 			int nCount;
 			nCount = nArchers - olArchers.count;
 			olArchers.AddList(set.TSRecruitArmy("RArcher",nCount));
-			Sleep(6472 + rand(10)*100);
+			//Sleep(6472 + rand(10)*100);
+			Sleep(500);
 		}
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -275,7 +281,8 @@ if (hero.IsAlive)
 	{
 		if (!bPikes)
 			bPikes = set.TSResearch("Roman Praetorian");
-		Sleep(6472 + rand(10)*100);
+		//Sleep(6472 + rand(10)*100);
+		Sleep(500);
 	}
 }
 
@@ -306,9 +313,9 @@ if (hero.IsAlive)
 
 set.Research("autotrain_start_gr");
 
-//30 Praetorian
+//300 Praetorian
 {
-	int nPraetorian = 30;
+	int nPraetorian = 300;
 	while (olPraetorian.count<nPraetorian)
 	{
 		if (olPraetorian.count<nPraetorian)	
@@ -340,7 +347,8 @@ set.Research("autotrain_start_gr");
 			SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
 			return;
 		}
-		Sleep(5472 + rand(10)*100);
+		//Sleep(5472 + rand(10)*100);
+		Sleep(500);
 	}
 }
 
@@ -384,11 +392,12 @@ SetAIVar(AIPlayer, AIV_BuildArmy,  nBuildArmy); // Return variable to its value
 			SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
 			return;
 		}			
-		Sleep(10872 + rand(12)*100);
+		//Sleep(10872 + rand(12)*100);
+		Sleep(500);
 	}
 }
 
 
 SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
 
-EnvWriteInt(set, "MRomeTactic2",1);
+EnvWriteInt(set, "RRomeTactic3",1);

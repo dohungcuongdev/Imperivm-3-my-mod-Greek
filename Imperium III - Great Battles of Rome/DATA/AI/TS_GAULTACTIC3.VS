@@ -8,7 +8,7 @@ IntArray aSkills, aSkillLevels;
 int heroScId;
 bool bHeroSc = false;
 
-if (EnvReadInt(set, "GaulTactic2") == 1) 
+if (EnvReadInt(set, "GaulTactic3") == 1) 
 	return;
 
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -56,14 +56,15 @@ SetAIVar(AIPlayer, AIV_Research,   0);
 		if (!bBarrack1)
 			bBarrack1 = set.TSResearch("Barrack Level 1");
 		if (!bSpears1)
-			bSpears1 = set.TSResearch("Gaul Spearman");
+			bSpears1 = set.TSResearch("Gaul Woman Warrior");
 		if (nIncPop<2)
 		if (set.food>400)
 		{
 			set.TSResearch("GAddPop");
 			nIncPop+=1;
 		}
-		Sleep(7024 + rand(15)*100);		
+		//Sleep(7024 + rand(15)*100);	
+		Sleep(500);
 	}	
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -95,17 +96,18 @@ if (EnvReadInt(set,"StopTacticScript") == 1)
 	else
 		hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
 			
-// spears 2 & Fights
+// Women Upgrade level 6 & Fights
 {
 	bool bSpears2 = false;
 	bool bFights = false;
 	while (!bSpears2 || !bFights)
 	{
 		if (!bSpears2)
-			bSpears2 = set.TSResearch("Gaul Iron Spearheads");
+			bSpears2 = set.TSResearch("GWomanWarrior");
 		if (!bFights)
 			bFights = set.TSResearch("Fights");
-		Sleep(4024 + rand(15)*100);		
+		//Sleep(4024 + rand(15)*100);
+		Sleep(500);
 	}
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -126,18 +128,18 @@ if (EnvReadInt(set,"StopTacticScript") == 1)
 if (hero.IsValid)
 		hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
 
-// 30 spearmen & 20 archers & training 1
+// 2000 Women Warrior & 10 archers & training 1
 {
 	bool bTraining = false;
-	int nSpearmen  = 30;
-	int nArchers   = 20;
-	while (!bTraining || olArchers.count<nArchers || olSpearmen.count<nSpearmen)
+	int nSpearmenor  = 2000;
+	int nArchers   = 10;
+	while (!bTraining || olArchers.count<nArchers || olSpearmen.count<nSpearmenor)
 	{
 		int nCount;
-		if (olSpearmen.count<nSpearmen)
+		if (olSpearmen.count<nSpearmenor)
 		{
-			nCount = nSpearmen - olSpearmen.count;
-			olSpearmen.AddList(set.TSRecruitArmy("GSpearman",nCount));			
+			nCount = nSpearmenor - olSpearmen.count;
+			olSpearmen.AddList(set.TSRecruitArmy("GWomanWarrior",nCount));			
 		}
 		if (olArchers.count<nArchers)
 		{
@@ -166,7 +168,8 @@ if (hero.IsValid)
 			SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
 			return;
 		}
-		Sleep(15024 + rand(10)*100);		
+		//Sleep(15024 + rand(10)*100);
+		Sleep(500);		
 	}
 }
 set.Research("autotrain_start_gr");
@@ -195,4 +198,4 @@ SetAIVar(AIPlayer, AIV_DonateFood, nDonateFood); // Return variable to its value
 SetAIVar(AIPlayer, AIV_BuildArmy,  nBuildArmy); // Return variable to its value
 SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
 
-EnvWriteInt(set, "GaulTactic2",1);
+EnvWriteInt(set, "GaulTactic3",1);

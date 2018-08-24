@@ -9,7 +9,7 @@ IntArray aSkills, aSkillLevels;
 ObjList olAxemen,olArchers, olMacemen;
 int heroScId;
 
-if (EnvReadInt(set, "GermanyTactic") == 1) 
+if (EnvReadInt(set, "GermanyTactic3") == 1) 
 	return;
 
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -66,7 +66,8 @@ for (i = 0; i < 3; i += 1)
 			hero = set.TSRecruitHero();
 		if (!bBarrack1)
 			bBarrack1 = set.TSResearch("Barrack Level 1");
-		Sleep(5205 + rand(10)*100);
+		//Sleep(5205 + rand(10)*100);
+		Sleep(500);
 	}	
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -116,7 +117,8 @@ if(hero.IsValid)
 		else
 			if (set.food<1000)
 				set.TSResearch("buyfoodforgold"); // don't waste time, buy food			
-		Sleep(10205 + rand(10)*100);
+		//Sleep(10205 + rand(10)*100);
+		Sleep(500);
 	}
 	
 	if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -142,7 +144,8 @@ if(hero.IsValid)
 		olArchers.AddList(set.TSRecruitArmy("TArcher",nNeeded));
 		if (set.food<1000)
 			set.TSResearch("buyfoodforgold"); // don't waste time, buy food			
-		Sleep(3205 + rand(10)*100);
+		//Sleep(3205 + rand(10)*100);
+		Sleep(500);
 	}
 }
 
@@ -172,7 +175,8 @@ if (EnvReadInt(set,"StopTacticScript") == 1)
 		olAxemen.AddList(set.TSRecruitArmy("TAxeman",nNeeded));
 		if (!bLearning)
 			bLearning = set.TSResearch("Learning");
-		Sleep(10205 + rand(10)*100);
+		//Sleep(10205 + rand(10)*100);
+		Sleep(500);
 	}
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -206,24 +210,30 @@ olAxemen.ClearDead();
 SetNoAIFlag(olArchers,false);
 SetNoAIFlag(olAxemen,false);
 
-//2 Increase mace production & 20 macemen
+//30 Increase mace production & 300 macemen
 {
-	int nCount = 20; 	
+	bool bBarrack2 = false;
+	if (!bBarrack2)
+		bBarrack2 = set.TSResearch("Barrack Level 2");
+	bool bBarrack3 = false;
+	if (!bBarrack3)
+		bBarrack2 = set.TSResearch("Barrack Level 3");
+	int nCount = 300; 	
 	int nMaxMacemen = 0;
-	while(olMacemen.count<nCount  || nMaxMacemen!=20)
+	while(olMacemen.count<nCount  || nMaxMacemen!=300)
 	{
 		int nNeeded;
 		nNeeded = nCount - olMacemen.count;
 		olMacemen.AddList(set.TSRecruitArmy("TMaceman",nNeeded));
 		
 		nMaxMacemen = EnvReadInt(AIPlayer, "MaxMacemen");				
-		if (nMaxMacemen<20)
+		if (nMaxMacemen<300)
 		{
 			Building bld;
 			cmd = "Macemen production";
 			bld = set.FindResearchLab(cmd);
 			if (bld.IsValid)
-			if (bld.CmdCount(cmd) < 2 - (nMaxMacemen/10))
+			if (bld.CmdCount(cmd) < 30 - (nMaxMacemen/10))
 				set.TSResearch(cmd);			
 		}
 
@@ -238,7 +248,8 @@ SetNoAIFlag(olAxemen,false);
 			SetAIVar(AIPlayer, AIV_Research,  nResearch); // Return variable to its value
 			return;
 		}
-		Sleep(10205 + rand(10)*100);
+		//Sleep(10205 + rand(10)*100);
+		Sleep(500);
 	}
 }
 
@@ -251,4 +262,4 @@ SetAIVar(AIPlayer, AIV_DonatePop,  nDonatePop); // Return variable to its value
 SetAIVar(AIPlayer, AIV_BuildArmy,  nBuildArmy); // Return variable to its value
 SetAIVar(AIPlayer, AIV_Research,  nResearch); // Return variable to its value
 
-EnvWriteInt(set, "GermanyTactic",1);
+EnvWriteInt(set, "GermanyTactic3",1);
