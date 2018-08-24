@@ -20,10 +20,14 @@ if (GetTime<2000)
 
 	if (nRace == Gaul)
 	{
-		if (rnd<33)	
-			return TS_GaulTactic;
-		if (rnd<66)	
-			return TS_GaulTactic2;
+		if(set.population > 1000) {
+			return TS_GaulTactic3; // AI is stronger if population is high 
+		} else {
+			if (rnd<33)	
+				return TS_GaulTactic;
+			if (rnd<66)	
+				return TS_GaulTactic2;
+		}
 	}
 	
 	if (nRace == Iberia)
@@ -37,7 +41,7 @@ if (GetTime<2000)
 	if (nRace == Germany)
 	{
 		if(set.population > 1000) {
-			return TS_GermanyTactic;
+			return TS_GermanyTactic3; // AI is stronger if population is high 
 		}
 		else {
 			if (rnd<33)	
@@ -61,10 +65,15 @@ if (GetTime<2000)
 
 	if (nRace == Carthage)
 	{
-		if (rnd<33)	
-			return TS_CarthageTactic;		
-		if (rnd<66)	
-			return TS_CarthageTactic2;					
+		if(set.population > 1000) {
+			return TS_GaulTactic3; // AI is stronger if population is high 
+		} 
+		else {
+			if (rnd<33)	
+				return TS_CarthageTactic;		
+			if (rnd<66)	
+				return TS_CarthageTactic2;
+		}					
 	}
 	if (nRace == RepublicanRome) //Roma Repubblicana o Roma Imperiale.
 	{	
@@ -123,7 +132,11 @@ if (GetTime<2000)
 				return TS_RRomeTactic;
 			}	//End if.
 			*/
-			
+			if(set.population > 1000) // AI is stronger if population is high 
+			{
+				return TS_RRomeTactic3;
+				//End if.
+			}
 			if(set.population > 100) // AI is stronger if population is high 
 			{
 				return TS_RRomeTactic2;
