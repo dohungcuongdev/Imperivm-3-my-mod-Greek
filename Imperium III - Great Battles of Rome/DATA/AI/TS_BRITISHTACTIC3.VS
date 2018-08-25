@@ -3,7 +3,7 @@
 int  AIPlayer;
 str  cmd;
 int  i,gold,food;
-ObjList olBowmen,olSpearmen, olJavelineers;
+ObjList olBowmen, olHighlanders, olJavelineers;
 int  nDonateFood, nDonateGold, nDonatePop, nBuildArmy, nResearch; // Variables for controlling AI
 Hero hero;
 IntArray aSkills, aSkillLevels;
@@ -35,18 +35,18 @@ SetAIVar(AIPlayer, AIV_Research,   0);
 	aSkills[0] = hsCharge;      aSkillLevels[0] = 10;
 	aSkills[1] = hsAssault;     aSkillLevels[1] = 10;
 
-// hire hero & 3xswordsmen & bronze spears
+// hire hero & 3xswordsmen & Highlander's swords
 {
-	bool bSpears = false;
+	bool bSwords = false;
 	int i = 0;
-	cmd = "trainBSwordsman";
+	cmd = "trainbSwordsman";
 
-	while (!hero.IsValid || !bSpears || i<3)
+	while (!hero.IsValid || !bSwords || i<3)
 	{
 		if (!hero.IsValid)
 			hero = set.TSRecruitHero();
-		if (!bSpears)
-			bSpears = set.TSResearch("Britain Spears");
+		if (!bSwords)
+			bSwords = set.TSResearch("Britain Swords");
 		if (i<3)
 		{
 				point ptDummy; Obj objDummy;
@@ -90,16 +90,22 @@ if(!bHeroSc)
 		bHeroSc = true;					
 	}	
 
-// barrack level 1 & gambling
+// barrack level 1,2,3 & gambling
 {
 	bool bBarrack1 = false;
+	bool bBarrack2 = false;
+	bool bBarrack3 = false;
 	bool bGambling = false;
 	int gold;
 	gold = set.gold;
-	while(!bBarrack1 || !bGambling)
+	while(!bBarrack1 || !bBarrack2 || !bBarrack3 || !bGambling)
 	{
 		if (!bBarrack1)
 			bBarrack1 = set.TSResearch("Barrack Level 1");
+		if (bBarrack1 && !bBarrack2)
+			bBarrack2 = set.TSResearch("Barrack Level 2");
+		if (bBarrack1 && bBarrack2 && !bBarrack3)
+			bBarrack3 = set.TSResearch("Barrack Level 3");
 		if (!bGambling)
 		{
 			gold = set.gold;
@@ -133,17 +139,14 @@ if (hero.IsAlive)
 	hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
 if (bWinGambling)
 {
-	// Fights & barrack level 2 & javelins
+	// Fights & javelins
 	{
 		bool bFights = false;
-		bool bBarrack2 = false;
 		bool bJavelins = false;
-		while(!bFights || !bBarrack2 || !bJavelins)
+		while(!bFights || !bJavelins)
 		{
 			if (!bFights)
 				bFights = set.TSResearch("Britain Fights");
-			if (!bBarrack2)
-				bBarrack2 = set.TSResearch("BBarrack Level 2");
 			if (!bJavelins)
 				bJavelins = set.TSResearch("Britain Javelins");
 			
@@ -173,12 +176,12 @@ if (hero.IsAlive)
 	hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
 
 {
-	// 20 archers, 20 spearmen , javelins 10 javelineers
+	// 20 archers, 300 Highlanders , javelins 10 javelineers
 	int nBowmen = 20;
-	int nSpearmen = 20;
+	int nHighlanders = 300;
 	int nJavelineers = 10;
 	bool bJavelins = false;
-	while (olBowmen.count<nBowmen || olSpearmen.count<nSpearmen || olJavelineers.count<nJavelineers || !bJavelins)
+	while (olBowmen.count<nBowmen || olHighlanders.count<nHighlanders || olJavelineers.count<nJavelineers || !bJavelins)
 	{
 		int nCount;
 		if (!bJavelins)
@@ -189,10 +192,10 @@ if (hero.IsAlive)
 			olBowmen.AddList(set.TSRecruitArmy("BBowman",nCount));	
 		}
 
-		if (olSpearmen.count<nSpearmen)
+		if (olHighlanders.count<nHighlanders)
 		{
-			nCount = 	nSpearmen - olSpearmen.count;
-			olSpearmen.AddList(set.TSRecruitArmy("BBronzeSpearman",nCount));	
+			nCount = 	nHighlanders - olHighlanders.count;
+			olHighlanders.AddList(set.TSRecruitArmy("BHighlander",nCount));	
 		}
 
 		if (olJavelineers.count<nJavelineers)
@@ -211,10 +214,10 @@ if (hero.IsAlive)
 			if (hero.IsValid)
 				hero.SetNoAIFlag(false);
 			olBowmen.ClearDead();
-			olSpearmen.ClearDead();
+			olHighlanders.ClearDead();
 			olJavelineers.ClearDead();
 			SetNoAIFlag(olBowmen,false);
-			SetNoAIFlag(olSpearmen,false);
+			SetNoAIFlag(olHighlanders,false);
 			SetNoAIFlag(olJavelineers,false);
 
 			// Set Varibles
@@ -243,10 +246,10 @@ if (hero.IsAlive)
 }
 
 olBowmen.ClearDead();
-olSpearmen.ClearDead();
+olHighlanders.ClearDead();
 olJavelineers.ClearDead();
 SetNoAIFlag(olBowmen,false);
-SetNoAIFlag(olSpearmen,false);
+SetNoAIFlag(olHighlanders,false);
 SetNoAIFlag(olJavelineers,false);
 
 SetAIVar(AIPlayer, AIV_DonateGold, nDonateGold); // Return variable to its value
@@ -254,27 +257,14 @@ SetAIVar(AIPlayer, AIV_DonatePop,  nDonatePop); // Return variable to its value
 SetAIVar(AIPlayer, AIV_DonateFood, nDonateFood); // Return variable to its value
 SetAIVar(AIPlayer, AIV_BuildArmy,  nBuildArmy); // Return variable to its value
 
-if (bWinGambling) // Gambler's test Research Swords
+//if (bWinGambling) // Gambler's test Research Swords
 {
-	bool bSwords = false;
 	bool bGamblersTest = false;
-	while(!bSwords || !bGamblersTest)
+	while(!bGamblersTest)
 	{
-		if(!bSwords)
-			bSwords = set.TSResearch("Britain Swords");
 		if(!bGamblersTest)
 			bGamblersTest = set.TSResearch("Gambler's Test");
 
-		//Sleep(10543+rand(10)*100);
-		Sleep(500);
-	}
-}
-else// Research Swords
-{
-	bool bSwords = false;
-	while(!bSwords)
-	{
-		bSwords = set.TSResearch("Britain Swords");
 		//Sleep(10543+rand(10)*100);
 		Sleep(500);
 	}

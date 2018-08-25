@@ -32,10 +32,19 @@ if (GetTime<2000)
 	
 	if (nRace == Iberia)
 	{
-		if (rnd<33)	
-			return TS_IberianTactic;
-		if (rnd<66)	
-			return TS_IberianTactic2;
+		if(set.population > 1000) {
+			return TS_IberianTactic3; // AI is stronger if population is high 
+		} else {
+			/**if (rnd<33)	
+				return TS_IberianTactic;
+			if (rnd<66)	
+				return TS_IberianTactic2;
+			*/
+			if (set.population > 80)
+				return TS_IberianTactic;
+			else
+				return TS_IberianTactic2;
+		}
 	}
 
 	if (nRace == Germany)
@@ -53,14 +62,23 @@ if (GetTime<2000)
 
 	if (nRace == Egypt)
 	{
-		if (rnd<50)	
-			return TS_EgyptTactic;
+		if(set.population > 1000) {
+			return TS_EgyptTactic3; // AI is stronger if population is high 
+		}
+		else { 
+			if (rnd<50)	
+				return TS_EgyptTactic;
+		}
 	}
 
 	if (nRace == Britain)
 	{
-		if (rnd<50)	
-			return TS_BritishTactic;
+		if(set.population > 1000) {
+			return TS_BritishTactic3; // AI is stronger if population is high 
+		} else {
+			if (rnd<50)	
+				return TS_BritishTactic;
+		}
 	}
 
 	if (nRace == Carthage)

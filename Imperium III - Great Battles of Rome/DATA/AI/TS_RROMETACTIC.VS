@@ -32,7 +32,7 @@ SetAIVar(AIPlayer, AIV_Research,   0);
 // Set skills
 aSkills[0] = hsTeamAttack;    aSkillLevels[0] = 10;
 aSkills[1] = hsTeamDefense;   aSkillLevels[1] = 10;
-aSkills[2] = hsEpicEndurance; aSkillLevels[2] = 2;
+aSkills[2] = hsBattleCry; aSkillLevels[2] = 2;
 aSkills[3] = hsQuickMarch;    aSkillLevels[3] = 3;
 
 // 5 hastati & barrack level 1 & hero

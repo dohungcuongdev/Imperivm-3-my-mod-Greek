@@ -4,7 +4,7 @@ int  AIPlayer;
 str  cmd;
 int  i,gold,food;
 bool bFirstSellFood;
-ObjList olArchers,olDefenders, olEnchantress;
+ObjList olArchers,olDefenders, olEnchantress, olEliteGuards;
 int  nDonateFood, nDonateGold, nDonatePop, nBuildArmy, nResearch; // Variables for controlling AI
 Hero hero;
 Unit enchantress;
@@ -13,7 +13,7 @@ IntArray aSkills, aSkillLevels;
 int heroScId;
 bool bHeroSc = false;
 
-if (EnvReadInt(set, "InitialTactic2") == 1) 
+if (EnvReadInt(set, "InitialTactic3") == 1) 
 	return;
 if (EnvReadInt(set,"StopTacticScript") == 1)
 	return;
@@ -38,7 +38,7 @@ aSkills[1] = hsTeamDefense;   aSkillLevels[1] = 5;
 aSkills[2] = hsHealing;       aSkillLevels[2] = 10;
 aSkills[3] = hsEpicEndurance; aSkillLevels[3] = 3;
 
-Sleep(rand(2345));
+//Sleep(rand(2345));
 // Upgrade "Free Drinks".
 set.TSResearch("Free Drinks");
 
@@ -82,7 +82,8 @@ for (i = 0; i < 3; i += 1)
 			if (olEnchantress[0].IsValid())
 				enchantress = olEnchantress[0];
 		}
-		Sleep(5023 + rand(24)*100);			
+		//Sleep(5023 + rand(24)*100);
+		Sleep(500);
 }
 	
 	if (hero.IsValid)
@@ -90,7 +91,8 @@ for (i = 0; i < 3; i += 1)
 	{
 		if (hero.pos!=ptExit)
 			hero.SetCommand("move", ptExit);
-		Sleep(500 + rand(24)*100);
+		//Sleep(500 + rand(24)*100);
+		Sleep(500);
 		if (hero.IsValid)
 		if (hero.pos.x!=-1 && hero.pos.y!=-1)
 			enchantress.SetCommand("move", hero.pos); 
@@ -107,7 +109,8 @@ set.Research("autotrain_start_i");
 	while (!bFreeDrinks || set.food<1000 )
 		{
 			bFreeDrinks = set.TSResearch("Free Drinks");
-			Sleep(5023 + rand(24)*100);			
+			//Sleep(5023 + rand(24)*100);
+			Sleep(500);
 		}
 }	
 // If food supplies are more than 1000 then sell 1000 food again. 
@@ -132,18 +135,34 @@ if (EnvReadInt(set,"StopTacticScript") == 1)
 	return;
 }
 
-// Research "Fastest warrior equipment". At the same time research "Spears" upgrade
+// Research "Fastest warrior equipment". At the same time research Spears, Battle axes upgrade & Tournaments, Veteran's guild
 {
 	bool bBarrack1 = false;
+	bool bBarrack2 = false;
+	bool bBarrack3 = false;
 	bool bSpears = false;
-	while (!bBarrack1 || !bSpears)
+	bool bBattleaxes = false;
+	bool bTournaments = false;
+	bool bVeteransGuild = false;
+	while (!bBarrack1 || !bBarrack2 || !bBarrack3 || !bSpears || !bBattleaxes || !bTournaments || !bVeteransGuild)
 	{	
 		if (!bBarrack1)
-			bBarrack1 = set.TSResearch("Barrack Level 1");	
+			bBarrack1 = set.TSResearch("Barrack Level 1");
+		if (bBarrack1 && !bBarrack2)
+			bBarrack2 = set.TSResearch("Barrack Level 2");
+		if (bBarrack1 && bBarrack2 && !bBarrack3)
+			bBarrack3 = set.TSResearch("Barrack Level 3");
+		if (!bTournaments)
+			bTournaments = set.TSResearch("Tournaments");
+		if (bTournaments && !bVeteransGuild)
+			bVeteransGuild = set.TSResearch("Veteran's guild");
 		if (!bSpears)
 			bSpears = set.TSResearch("Spears");	
+		if (!bBattleaxes)
+			bBattleaxes = set.TSResearch("Battleaxes");	
 			
-		Sleep(1023 + rand(24)*100);			
+		//Sleep(1023 + rand(24)*100);
+		Sleep(500);
 	}
 }
 // Train 20 Archers && Train 20 Defenders
@@ -199,7 +218,8 @@ if (EnvReadInt(set,"StopTacticScript") == 1)
 			
 			return;
 		}
-		Sleep(5023 + rand(24)*100);			
+		//Sleep(5023 + rand(24)*100);	
+		Sleep(500);
 	}
 }
 if (hero.IsAlive)// new skill
@@ -209,7 +229,7 @@ if (hero.IsAlive)// new skill
 			aSkills[0] = hsTeamDefense;   aSkillLevels[0] = 10;
 			aSkills[1] = hsEuphoria;      aSkillLevels[1] = 10;
 			aSkills[2] = hsEpicEndurance; aSkillLevels[2] = 10;
-			aSkills[3] = hsCeasefire;     aSkillLevels[3] = 10;
+			aSkills[3] = hsHealing;     aSkillLevels[3] = 10;
 		}
 
 		hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
@@ -221,7 +241,42 @@ while (olEnchantress.count < 5)
 	int nCount;
 	nCount = 5 - olEnchantress.count;
 	olEnchantress.AddList(set.TSTempleRecruit(nCount));
-	Sleep(5023 + rand(24)*100);			
+	//Sleep(5023 + rand(24)*100);
+	Sleep(500);
+}
+
+/// 300 Elite Guards
+{
+	int nEliteGuards = 300;
+	while (olEliteGuards.count<nEliteGuards)
+	{
+		int nCount;
+		if (olEliteGuards.count<nEliteGuards)
+		{
+			nCount = nEliteGuards - olEliteGuards.count;
+			olEliteGuards.AddList(set.TSRecruitArmy("IEliteGuard",nCount));
+		}
+		if (EnvReadInt(set,"StopTacticScript") == 1)
+		{
+			// Stop cript
+			if (bHeroSc)
+				AIBreakScript(heroScId);
+			// give army to AI
+			if (hero.IsValid)
+				hero.SetNoAIFlag(false);
+			olEliteGuards.ClearDead();
+			SetNoAIFlag(olEliteGuards,false);
+			// set AI vars
+			SetAIVar(AIPlayer, AIV_DonateGold, nDonateGold); // Return variable to its value
+			SetAIVar(AIPlayer, AIV_DonatePop,  nDonatePop); // Return variable to its value
+			SetAIVar(AIPlayer, AIV_DonateFood, nDonateFood); // Return variable to its value
+			SetAIVar(AIPlayer, AIV_BuildArmy,  nBuildArmy); // Return variable to its value
+			SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
+			return;
+		}
+		//Sleep(2456 + rand(30));
+		Sleep(500);
+	}
 }
 
 // Attach army to hero
@@ -254,4 +309,4 @@ SetNoAIFlag(olArchers,false);
 SetNoAIFlag(olDefenders,false);
 SetNoAIFlag(olEnchantress,false);
 
-EnvWriteInt(set, "InitialTactic2",1);
+EnvWriteInt(set, "InitialTactic3",1);

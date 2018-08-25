@@ -32,7 +32,7 @@ SetAIVar(AIPlayer, AIV_Research,   0);
 // Set skills
 aSkills[0] = hsTeamAttack;    aSkillLevels[0] = 10;
 aSkills[1] = hsTeamDefense;   aSkillLevels[1] = 10;
-aSkills[2] = hsEpicEndurance; aSkillLevels[2] = 2;
+aSkills[2] = hsBattleCry; aSkillLevels[2] = 2;
 aSkills[3] = hsQuickMarch;    aSkillLevels[3] = 3;
 
 // barrack level 1,2,3 & hero & Altar of Jupiter, God's Gift
@@ -58,7 +58,7 @@ aSkills[3] = hsQuickMarch;    aSkillLevels[3] = 3;
 		if (!hero.IsValid())
 			hero = set.TSRecruitHero();
 		//Sleep(10675 + rand(10)*100);
-		//Sleep(500);
+		Sleep(500);
 	}
 }
 
@@ -83,7 +83,7 @@ aSkills[3] = hsQuickMarch;    aSkillLevels[3] = 3;
 		}
 	
 		//Sleep(3472 + rand(10)*100);
-		//Sleep(500);
+		Sleep(500);
 	}
 	
 }
@@ -162,7 +162,7 @@ if (hero.IsAlive)
 		{
 			bArrows = set.TSResearch("Roman Archers");
 			//Sleep(3675 + rand(10)*100);
-			//Sleep(500);
+			Sleep(500);
 		}
 }
 if (hero.IsValid())
@@ -196,7 +196,7 @@ if (EnvReadInt(set,"StopTacticScript") == 1)
 			nCount = nArchers - olArchers.count;
 			olArchers.AddList(set.TSRecruitArmy("RArcher",nCount));
 			//Sleep(7675 + rand(10)*100);
-			//Sleep(500);
+			Sleep(500);
 		}
 }
 
@@ -261,7 +261,7 @@ if (hero.IsAlive)
 		}
 
 		//Sleep(7675 + rand(10)*100);
-		//Sleep(500);
+		Sleep(500);
 	}
 }
 
@@ -325,7 +325,7 @@ set.Research("autotrain_start_gr");
 		}
 
 		//Sleep(8675 + rand(10)*100);
-		//Sleep(500);
+		Sleep(500);
 	}
 }
 

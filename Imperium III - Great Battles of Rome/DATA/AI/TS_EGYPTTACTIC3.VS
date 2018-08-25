@@ -3,7 +3,7 @@
 int  AIPlayer;
 str  cmd;
 int  i,gold,food;
-ObjList olArchers,olGuardians, olAxetrowers;
+ObjList olArchers,olGuardians, olAxetrowers, olHorusWarriors, olAnubisWarriors;
 int  nDonateFood, nDonateGold, nDonatePop, nBuildArmy, nResearch; // Variables for controlling AI
 Hero hero;
 bool bHero;
@@ -12,7 +12,7 @@ int heroScId;
 bool bHeroSc = false;
 
 
-if (EnvReadInt(set, "EgyptTactic") == 1) 
+if (EnvReadInt(set, "EgyptTactic3") == 1) 
 	return;
 
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -69,7 +69,8 @@ SetAIVar(AIPlayer, AIV_Research,   0);
 				}	
 				i+=1;
 			}			
-		Sleep(10503 + rand(10)*100);	
+		//Sleep(10503 + rand(10)*100);
+		Sleep(500);		
 	}	
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -124,22 +125,29 @@ if(!bHeroSc)
 			SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
 			return;
 		}
-		Sleep(7503 + rand(10)*100);	
+		//Sleep(7503 + rand(10)*100);	
+		Sleep(500);
 	}
 }
 if (hero.IsAlive)
 	hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
 
-// Research path of dead I && barrack level 1
+// Research path of dead I && barrack level 1,2,3
 {
 	bool bPathofDeadI = false;
-	bool bBarrackL1 = false;
-	while (!bPathofDeadI || !bBarrackL1)
+	bool bBarrack1 = false;
+	bool bBarrack2 = false;
+	bool bBarrack3 = false;
+	while (!bPathofDeadI ||!bBarrack1 || !bBarrack2 || !bBarrack3 )
 	{
 		if (!bPathofDeadI) 
 			bPathofDeadI = set.TSResearch("Path of the dead I");
-		if (!bBarrackL1)
-			bBarrackL1 = set.TSResearch("Barrack Level 1");
+		if (!bBarrack1)
+			bBarrack1 = set.TSResearch("Barrack Level 1");
+		if (bBarrack1 && !bBarrack2)
+			bBarrack2 = set.TSResearch("Barrack Level 2");
+		if (bBarrack1 && bBarrack2 && !bBarrack3)
+			bBarrack3 = set.TSResearch("Barrack Level 3");
 		if (EnvReadInt(set,"StopTacticScript") == 1)
 		{
 			// stop ai script
@@ -156,7 +164,8 @@ if (hero.IsAlive)
 			SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
 			return;
 		}
-		Sleep(10503 + rand(10)*100);	
+		//Sleep(10503 + rand(10)*100);	
+		Sleep(500);
 	}
 }
 if (hero.IsAlive)
@@ -192,7 +201,8 @@ if (hero.IsAlive)
 			SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
 			return;
 		}
-		Sleep(8503 + rand(10)*100);	
+		//Sleep(8503 + rand(10)*100);	
+		Sleep(500);
 	}
 
 if (hero.IsAlive)
@@ -242,7 +252,8 @@ if (hero.IsAlive)
 			return;
 		}
 	
-		Sleep(16500 + rand(10)*100);	
+		//Sleep(16500 + rand(10)*100);
+		Sleep(500);
 	}
 }
 //Give army to AI
@@ -281,7 +292,8 @@ SetAIVar(AIPlayer, AIV_BuildArmy,  nBuildArmy); // Return variable to its value
 		if (!bPathofDeadIII) 
 			bPathofDeadIII = set.TSResearch("Path of the dead III");
 
-		Sleep(10500 + rand(10)*100);	
+		//Sleep(10500 + rand(10)*100);	
+		Sleep(500);
 	}
 }
 
@@ -304,10 +316,79 @@ SetAIVar(AIPlayer, AIV_BuildArmy,  nBuildArmy); // Return variable to its value
 			SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
 			return;
 		}
-		Sleep(15500 + rand(10)*100);	
+		//Sleep(15500 + rand(10)*100);	
+		Sleep(500);
+	}
+}
+
+// 250 Horus Warriors
+{
+	int nHorusWarriors = 250;
+	while (olHorusWarriors.count<nHorusWarriors)
+	{
+		int nCount;
+		if (olHorusWarriors.count<nHorusWarriors)
+		{
+			nCount = nHorusWarriors - olHorusWarriors.count;
+			olHorusWarriors.AddList(set.TSRecruitArmy("EHorusWarrior",nCount));
+		}
+		if (EnvReadInt(set,"StopTacticScript") == 1)
+		{
+			// Stop cript
+			if (bHeroSc)
+				AIBreakScript(heroScId);
+			// give army to AI
+			if (hero.IsValid)
+				hero.SetNoAIFlag(false);
+			olHorusWarriors.ClearDead();
+			SetNoAIFlag(olHorusWarriors,false);
+			// set AI vars
+			SetAIVar(AIPlayer, AIV_DonateGold, nDonateGold); // Return variable to its value
+			SetAIVar(AIPlayer, AIV_DonatePop,  nDonatePop); // Return variable to its value
+			SetAIVar(AIPlayer, AIV_DonateFood, nDonateFood); // Return variable to its value
+			SetAIVar(AIPlayer, AIV_BuildArmy,  nBuildArmy); // Return variable to its value
+			SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
+			return;
+		}
+		//Sleep(2456 + rand(30));
+		Sleep(500);
+	}
+}
+
+/// 250 Anubis Warriors
+{
+	int nAnubisWarriors = 250;
+	while (olAnubisWarriors.count<nAnubisWarriors)
+	{
+		int nCount;
+		if (olAnubisWarriors.count<nAnubisWarriors)
+		{
+			nCount = nAnubisWarriors - olAnubisWarriors.count;
+			olAnubisWarriors.AddList(set.TSRecruitArmy("EAnubisWarrior",nCount));
+		}
+		if (EnvReadInt(set,"StopTacticScript") == 1)
+		{
+			// Stop cript
+			if (bHeroSc)
+				AIBreakScript(heroScId);
+			// give army to AI
+			if (hero.IsValid)
+				hero.SetNoAIFlag(false);
+			olAnubisWarriors.ClearDead();
+			SetNoAIFlag(olAnubisWarriors,false);
+			// set AI vars
+			SetAIVar(AIPlayer, AIV_DonateGold, nDonateGold); // Return variable to its value
+			SetAIVar(AIPlayer, AIV_DonatePop,  nDonatePop); // Return variable to its value
+			SetAIVar(AIPlayer, AIV_DonateFood, nDonateFood); // Return variable to its value
+			SetAIVar(AIPlayer, AIV_BuildArmy,  nBuildArmy); // Return variable to its value
+			SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
+			return;
+		}
+		//Sleep(2456 + rand(30));
+		Sleep(500);
 	}
 }
 
 SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
 
-EnvWriteInt(set, "EgyptTactic",1);
+EnvWriteInt(set, "EgyptTactic3",1);

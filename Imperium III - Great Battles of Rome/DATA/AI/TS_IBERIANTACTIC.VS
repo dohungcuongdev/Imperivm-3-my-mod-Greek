@@ -209,7 +209,7 @@ if (hero.IsAlive)// new skill
 			aSkills[0] = hsTeamDefense;   aSkillLevels[0] = 10;
 			aSkills[1] = hsEuphoria;      aSkillLevels[1] = 10;
 			aSkills[2] = hsEpicEndurance; aSkillLevels[2] = 10;
-			aSkills[3] = hsCeasefire;     aSkillLevels[3] = 10;
+			aSkills[3] = hsHealing;     aSkillLevels[3] = 10;
 		}
 
 		hero.TSAdvHeroSkills(aSkills, aSkillLevels);	

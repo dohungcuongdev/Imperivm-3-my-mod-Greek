@@ -59,7 +59,7 @@ aSkills[3] = hsEpicEndurance;    aSkillLevels[3] = 3;
 			hero = set.TSRecruitHero();
 
 		//Sleep(10072 + rand(13)*100);
-		//Sleep(500);
+		Sleep(500);
 	}
 }
 //30 hastati 
@@ -83,7 +83,7 @@ aSkills[3] = hsEpicEndurance;    aSkillLevels[3] = 3;
 		}
 	
 		//Sleep(3472 + rand(10)*100);
-		//Sleep(500);
+		Sleep(500);
 	}
 	
 }
@@ -194,7 +194,7 @@ if (hero.IsAlive)
 			return;
 		}
 		//Sleep(10771 + rand(10)*100);
-		//Sleep(500);
+		Sleep(500);
 	}
 }
 
@@ -209,7 +209,7 @@ if (hero.IsAlive)
 		{
 			bArrows = set.TSResearch("Roman Velit");
 			//Sleep(5675 + rand(12)*100);
-			//Sleep(500);
+			Sleep(500);
 		}
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -244,7 +244,7 @@ if (hero.IsAlive)
 			nCount = nVelits - olVelits.count;
 			olVelits.AddList(set.TSRecruitArmy("RVelit",nCount));
 			//Sleep(6472 + rand(10)*100);
-			//Sleep(500);
+			Sleep(500);
 		}
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -280,7 +280,7 @@ if (hero.IsAlive)
 		if (!bPraetorianUpgrade)
 			bPraetorianUpgrade = set.TSResearch("Roman Praetorian");
 		//Sleep(6472 + rand(10)*100);
-		//Sleep(500);
+		Sleep(500);
 	}
 }
 
@@ -346,7 +346,7 @@ set.Research("autotrain_start_gr");
 			return;
 		}
 		//Sleep(5472 + rand(10)*100);
-		//Sleep(500);
+		Sleep(500);
 	}
 }
 

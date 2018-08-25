@@ -81,7 +81,7 @@ SetAIVar(AIPlayer, AIV_Research,   0);
 			nIncPop+=1;
 		}
 		//Sleep(7024 + rand(15)*100);	
-		//Sleep(500);
+		Sleep(500);
 	}	
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -124,7 +124,7 @@ if (EnvReadInt(set,"StopTacticScript") == 1)
 		if (!bFights)
 			bFights = set.TSResearch("Fights");
 		//Sleep(4024 + rand(15)*100);
-		//Sleep(500);
+		Sleep(500);
 	}
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -186,7 +186,7 @@ if (hero.IsValid)
 			return;
 		}
 		//Sleep(15024 + rand(10)*100);
-		//Sleep(500);		
+		Sleep(500);		
 	}
 }
 set.Research("autotrain_start_gr");
