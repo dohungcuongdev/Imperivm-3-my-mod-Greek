@@ -389,6 +389,27 @@ SetAIVar(AIPlayer, AIV_BuildArmy,  nBuildArmy); // Return variable to its value
 	}
 }
 
+// Give army to AI
+if (bHeroSc)
+	AIBreakScript(heroScId);
+
+if (hero.IsValid)
+if (hero.IsAlive)
+{
+	hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
+	hero.SetCommand("enter", set.GetCentralBuilding() );
+	hero.SetNoAIFlag(false);
+}
+
+olHorusWarriors.ClearDead();
+olAnubisWarriors.ClearDead();
+SetNoAIFlag(olHorusWarriors,false);
+SetNoAIFlag(olAnubisWarriors,false);
+
+SetAIVar(AIPlayer, AIV_DonateGold, nDonateGold); // Return variable to its value
+SetAIVar(AIPlayer, AIV_DonatePop,  nDonatePop); // Return variable to its value
+SetAIVar(AIPlayer, AIV_DonateFood, nDonateFood); // Return variable to its value
+SetAIVar(AIPlayer, AIV_BuildArmy,  nBuildArmy); // Return variable to its value
 SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
 
 EnvWriteInt(set, "EgyptTactic3",1);

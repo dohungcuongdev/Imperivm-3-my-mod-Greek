@@ -289,12 +289,14 @@ if (hero.IsAlive)
 	olArchers.SetCommand("attach", hero);
 	olDefenders.SetCommand("attach", hero);
 	olEnchantress.SetCommand("attach", hero);
+	hero.SetNoAIFlag(false);
 }
 // Allow AI to spend gold and build army
 SetAIVar(AIPlayer, AIV_DonateGold, nDonateGold); // Return variable to its value
 SetAIVar(AIPlayer, AIV_DonatePop,  nDonatePop); // Return variable to its value
+SetAIVar(AIPlayer, AIV_DonateFood, nDonateFood); // Return variable to its value
 SetAIVar(AIPlayer, AIV_BuildArmy,  nBuildArmy); // Return variable to its value
-SetAIVar(AIPlayer, AIV_Research,  nResearch); // Return variable to its value
+SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
 
 
 if (!hero.IsDead)
@@ -305,8 +307,10 @@ if (!enchantress.IsDead)
 olArchers.ClearDead();
 olDefenders.ClearDead();
 olEnchantress.ClearDead();
+olEliteGuards.ClearDead();
 SetNoAIFlag(olArchers,false);
 SetNoAIFlag(olDefenders,false);
 SetNoAIFlag(olEnchantress,false);
+SetNoAIFlag(olEliteGuards,false);
 
 EnvWriteInt(set, "InitialTactic3",1);

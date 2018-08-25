@@ -20,8 +20,11 @@ if (GetTime<2000)
 
 	if (nRace == Gaul)
 	{
-		if(set.population > 1000) {
-			return TS_GaulTactic3; // AI is stronger if population is high 
+		if(set.population > 1500) {
+			return TS_GaulTactic3;  // AI is stronger than strongest AI if population is higher (maybe lag in game)
+		} else
+		if(set.population > 250) {
+			return TS_StrongestTactic;// AI is strongest AI
 		} else {
 			if (rnd<33)	
 				return TS_GaulTactic;
@@ -32,8 +35,11 @@ if (GetTime<2000)
 	
 	if (nRace == Iberia)
 	{
-		if(set.population > 1000) {
-			return TS_IberianTactic3; // AI is stronger if population is high 
+		if(set.population > 1500) {
+			return TS_IberianTactic3;  // AI is stronger than strongest AI if population is higher (maybe lag in game)
+		} else
+		if(set.population > 250) {
+			return TS_StrongestTactic;// AI is strongest AI
 		} else {
 			/**if (rnd<33)	
 				return TS_IberianTactic;
@@ -49,8 +55,11 @@ if (GetTime<2000)
 
 	if (nRace == Germany)
 	{
-		if(set.population > 1000) {
-			return TS_GermanyTactic3; // AI is stronger if population is high 
+		if(set.population > 1500) {
+			return TS_GermanyTactic3; // AI is stronger than strongest AI if population is higher (maybe lag in game)
+		} else
+		if(set.population > 250) {
+			 return TS_StrongestTactic;// AI is strongest AI
 		}
 		else {
 			if (rnd<33)	
@@ -62,8 +71,11 @@ if (GetTime<2000)
 
 	if (nRace == Egypt)
 	{
-		if(set.population > 1000) {
-			return TS_EgyptTactic3; // AI is stronger if population is high 
+		if(set.population > 1500) {
+			return TS_EgyptTactic3;  // AI is stronger than strongest AI if population is higher (maybe lag in game)
+		} else
+		if(set.population > 250) {
+			return TS_StrongestTactic;// AI is strongest AI
 		}
 		else { 
 			if (rnd<50)	
@@ -73,8 +85,11 @@ if (GetTime<2000)
 
 	if (nRace == Britain)
 	{
-		if(set.population > 1000) {
-			return TS_BritishTactic3; // AI is stronger if population is high 
+		if(set.population > 1500) {
+			return TS_BritishTactic3; // AI is stronger than strongest AI if population is higher (maybe lag in game)
+		} else
+		if(set.population > 250) {
+			return TS_StrongestTactic;// AI is strongest AI
 		} else {
 			if (rnd<50)	
 				return TS_BritishTactic;
@@ -83,8 +98,11 @@ if (GetTime<2000)
 
 	if (nRace == Carthage)
 	{
-		if(set.population > 1000) {
-			return TS_CarthageTactic3; // AI is stronger if population is high 
+		if(set.population > 1500) {
+			return TS_CarthageTactic3;  // AI is stronger than strongest AI if population is higher (maybe lag in game)
+		} else
+		if(set.population > 250) {
+			return TS_StrongestTactic;// AI is strongest AI
 		} 
 		else {
 			if (rnd<33)	
@@ -150,9 +168,12 @@ if (GetTime<2000)
 				return TS_RRomeTactic;
 			}	//End if.
 			*/
-			if(set.population > 1000) // AI is stronger if population is high 
-			{
+			if(set.population > 1500) { // AI is stronger than strongest AI if population is higher (maybe lag in game)
 				return TS_RRomeTactic3;
+			} else
+			if(set.population > 250)
+			{
+				return TS_StrongestTactic;// AI is strongest AI
 				//End if.
 			}
 			else if(set.population > 100) // AI is stronger if population is high 
@@ -178,8 +199,11 @@ if (GetTime<2000)
 				return TS_MRomeTactic2;
 			}	//End if.
 			*/
-			if(set.population > 1000) { // AI is stronger if population is high 
-				return TS_MRomeTactic3;
+			if(set.population > 1500) {
+				return TS_MRomeTactic3; // AI is stronger than strongest AI if population is higher (maybe lag in game)
+			} else
+			if(set.population > 250) { 
+				return TS_StrongestTactic;// AI is strongest AI
 			}
 			else if(set.population > 100) // AI is stronger if population is high 
 			{
