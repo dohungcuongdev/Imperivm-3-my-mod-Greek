@@ -1,7 +1,7 @@
 // void, Settlement set
 int  AIPlayer;
 int  i;
-ObjList olArchers, olSpearmen;
+ObjList olArchers, olWomenWarrior;
 int  nDonateFood, nDonateGold, nDonatePop, nBuildArmy, nResearch; // Variables for controlling AI
 Hero hero;
 IntArray aSkills, aSkillLevels;
@@ -32,12 +32,17 @@ SetAIVar(AIPlayer, AIV_Research,   0);
 	aSkills[0] = hsLeadership;    aSkillLevels[0] = 10;
 	aSkills[1] = hsBattleCry;     aSkillLevels[1] = 10;
 
-// hire hero & barrack level 1 & 2x inc pop
+// hire hero & barrack level 1,2,3 & FreeBeer & Item & 2x inc pop
 {
 	int nIncPop=0;
 	bool bBarrack1 = false;
-	bool bSpears1 = false;
-	while(!hero.IsValid() || !bBarrack1 || nIncPop<2 || !bSpears1)
+	bool bBarrack2 = false;
+	bool bBarrack3 = false;
+	bool bFreeBeer = false;
+	bool bItem1 = false;
+	bool bItem2 = false;
+	bool bWomanUpgrades1 = false;
+	while(!hero.IsValid() || !bBarrack1 || !bBarrack2 || !bBarrack3 || !bFreeBeer || !bItem1 || !bItem2 || nIncPop<2 || !bWomanUpgrades1)
 	{
 		if (!hero.IsValid())
 			hero = set.TSRecruitHero();
@@ -55,8 +60,20 @@ SetAIVar(AIPlayer, AIV_Research,   0);
 			
 		if (!bBarrack1)
 			bBarrack1 = set.TSResearch("Barrack Level 1");
-		if (!bSpears1)
-			bSpears1 = set.TSResearch("Gaul Woman Warrior");
+		if (bBarrack1 && !bBarrack2)
+			bBarrack2 = set.TSResearch("Barrack Level 2");
+		if (bBarrack1 && bBarrack2 && !bBarrack3)
+			bBarrack3 = set.TSResearch("GBarrack Level 3");
+		
+		if (!bFreeBeer)
+			bFreeBeer = set.TSResearch("Free Beer");
+		if (bFreeBeer && !bItem1)
+			bItem1 = set.TSResearch("Nordic trade routes");
+		if (bItem1 &&!bItem2)
+			bItem2 = set.TSResearch("Belts of Might");
+		
+		if (!bWomanUpgrades1)
+			bWomanUpgrades1 = set.TSResearch("Gaul Woman Warrior");
 		if (nIncPop<2)
 		if (set.food>400)
 		{
@@ -64,7 +81,7 @@ SetAIVar(AIPlayer, AIV_Research,   0);
 			nIncPop+=1;
 		}
 		//Sleep(7024 + rand(15)*100);	
-		Sleep(500);
+		//Sleep(500);
 	}	
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -98,16 +115,16 @@ if (EnvReadInt(set,"StopTacticScript") == 1)
 			
 // Women Upgrade level 6 & Fights
 {
-	bool bSpears2 = false;
+	bool bWomanUpgrades2 = false;
 	bool bFights = false;
-	while (!bSpears2 || !bFights)
+	while (!bWomanUpgrades2 || !bFights)
 	{
-		if (!bSpears2)
-			bSpears2 = set.TSResearch("GWomanWarrior");
+		if (!bWomanUpgrades2)
+			bWomanUpgrades2 = set.TSResearch("Gaul Fine Armor");
 		if (!bFights)
 			bFights = set.TSResearch("Fights");
 		//Sleep(4024 + rand(15)*100);
-		Sleep(500);
+		//Sleep(500);
 	}
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -128,18 +145,18 @@ if (EnvReadInt(set,"StopTacticScript") == 1)
 if (hero.IsValid)
 		hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
 
-// 2000 Women Warrior & 10 archers & training 1
+// 300 Women Warrior & 10 archers & training 1
 {
 	bool bTraining = false;
-	int nSpearmenor  = 2000;
+	int nWomenWarrior  = 300;
 	int nArchers   = 10;
-	while (!bTraining || olArchers.count<nArchers || olSpearmen.count<nSpearmenor)
+	while (!bTraining || olArchers.count<nArchers || olWomenWarrior.count<nWomenWarrior)
 	{
 		int nCount;
-		if (olSpearmen.count<nSpearmenor)
+		if (olWomenWarrior.count<nWomenWarrior)
 		{
-			nCount = nSpearmenor - olSpearmen.count;
-			olSpearmen.AddList(set.TSRecruitArmy("GWomanWarrior",nCount));			
+			nCount = nWomenWarrior - olWomenWarrior.count;
+			olWomenWarrior.AddList(set.TSRecruitArmy("GWomanWarrior",nCount));			
 		}
 		if (olArchers.count<nArchers)
 		{
@@ -157,9 +174,9 @@ if (hero.IsValid)
 				hero.SetNoAIFlag(false);
 
 			olArchers.ClearDead();
-			olSpearmen.ClearDead();
+			olWomenWarrior.ClearDead();
 			SetNoAIFlag(olArchers,false);
-			SetNoAIFlag(olSpearmen,false);
+			SetNoAIFlag(olWomenWarrior,false);
 
 			SetAIVar(AIPlayer, AIV_DonateGold, nDonateGold); // Return variable to its value
 			SetAIVar(AIPlayer, AIV_DonatePop,  nDonatePop); // Return variable to its value
@@ -169,7 +186,7 @@ if (hero.IsValid)
 			return;
 		}
 		//Sleep(15024 + rand(10)*100);
-		Sleep(500);		
+		//Sleep(500);		
 	}
 }
 set.Research("autotrain_start_gr");
@@ -187,9 +204,9 @@ if (hero.IsAlive)
 }
 
 olArchers.ClearDead();
-olSpearmen.ClearDead();
+olWomenWarrior.ClearDead();
 SetNoAIFlag(olArchers,false);
-SetNoAIFlag(olSpearmen,false);
+SetNoAIFlag(olWomenWarrior,false);
 
 
 SetAIVar(AIPlayer, AIV_DonateGold, nDonateGold); // Return variable to its value

@@ -66,7 +66,7 @@ if (GetTime<2000)
 	if (nRace == Carthage)
 	{
 		if(set.population > 1000) {
-			return TS_GaulTactic3; // AI is stronger if population is high 
+			return TS_CarthageTactic3; // AI is stronger if population is high 
 		} 
 		else {
 			if (rnd<33)	

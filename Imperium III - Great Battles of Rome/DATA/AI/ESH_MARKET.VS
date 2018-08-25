@@ -601,6 +601,7 @@ if (set.CanAfford("Sell food"))
 
 
 /// population -> gold. "Slavery" -> Carthage.
+/**
 if (set.CanResearch("Slavery"))
 if (set.CanAfford("Slavery"))
 {
@@ -640,6 +641,20 @@ if (set.CanAfford("Slavery"))
 				pr("Player " + AIPlayer + "research Slavery");
 			return;
 		}
+}
+*/
+
+/// population -> gold. "Slavery" -> Carthage. improve
+if (nRace == Carthage) {
+	if (IsResearched(set, "Free Trade"))
+	if (set.population >= set.max_population || set.population > set.max_population * 90 / 100) {
+		if(set.gold < 50000) {
+			set.Research("Slavery"); 
+			if (bLogResearch)
+				pr("Player " + AIPlayer + "research Slavery");
+			return;
+		}
+	}
 }
 
 /// population -> Military.	"Call to arms" -> Iberia
@@ -683,6 +698,7 @@ if (nMilUnits > 60)
 if (nAssUnderFire <= 0)
 if (nRace == Carthage)
 {
+	/*
 	bool bResearched = false;
 	str cmd = "Mercenary pact";
 	Building b; b = EnvReadObj(AIPlayer, "Mercenary pact obj").AsBuilding;
@@ -705,6 +721,18 @@ if (nRace == Carthage)
 			strTech = cmd;
 			bForceResearch = true;
 		}
+	*/
+		
+	str cmd = "Mercenary pact";
+	if (!IsResearched(AIPlayer, cmd))
+	if (set.CanResearch(cmd))
+		if (nMilUnits > 50) 
+		{
+			strTech = cmd;
+			bForceResearch = true;
+		} 
+		else if (set.CanAfford(cmd))
+			strTech = cmd;
 }
 
 /// kills -> gold. "Spoils of war" -> Carthage

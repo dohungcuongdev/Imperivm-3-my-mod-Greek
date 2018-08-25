@@ -10,7 +10,7 @@ bool bAssUnderFire;
 int heroScId;
 bool bHeroSc = false;
 
-if (EnvReadInt(set, "CarthageTactic") == 1) 
+if (EnvReadInt(set, "CarthageTactic3") == 1) 
 	return;
 
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -34,11 +34,13 @@ SetAIVar(AIPlayer, AIV_Research,   0);
 aSkills[0] = hsWisdom;    aSkillLevels[0] = 10;
 aSkills[1] = hsFrenzy;    aSkillLevels[1] = 10;
 
-// hire hero & forge pikes & barrack level 1
+// hire hero & forge pikes & barrack level 1,2,3
 {
 	bool bBarrack1 = false;
+	bool bBarrack2 = false;
+	bool bBarrack3 = false;
 	bool bFPikes = false;
-	while (!hero.IsValid || !bFPikes ||!bBarrack1 )
+	while (!hero.IsValid || !bFPikes ||!bBarrack1 || !bBarrack2 || !bBarrack3 )
 	{
 		if (!hero.IsValid())
 			hero = set.TSRecruitHero();
@@ -48,9 +50,13 @@ aSkills[1] = hsFrenzy;    aSkillLevels[1] = 10;
 		
 		if (!bBarrack1)
 			bBarrack1 = set.TSResearch("Barrack Level 1");
+		if (bBarrack1 && !bBarrack2)
+			bBarrack2 = set.TSResearch("Barrack Level 2");
+		if (bBarrack1 && bBarrack2 && !bBarrack3)
+			bBarrack3 = set.TSResearch("Barrack Level 3");
 			
 		//Sleep(10456 + rand(10)*100);
-		Sleep(500);
+		//Sleep(500);
 	}
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -110,7 +116,7 @@ else
 		}
 
 		//Sleep(8456 + rand(10)*100);
-		Sleep(500);
+		//Sleep(500);
 	}
 }
 if (hero.IsValid())
@@ -157,7 +163,7 @@ if (hero.IsAlive)
 		}
 
 		//Sleep(7456 + rand(10)*100);
-		Sleep(500);
+		//Sleep(500);
 	}
 }
 
@@ -195,7 +201,7 @@ if (hero.IsAlive)
 		}
 
 		//Sleep(12456 + rand(10)*100);
-		Sleep(500);
+		//Sleep(500);
 	}	
 }
 
@@ -213,7 +219,7 @@ set.TSResearch("StopSpecialization");
 			bFJavelins = set.TSResearch("Forge javelins");
 
 		//Sleep(4456 + rand(1530));
-		Sleep(500);
+		//Sleep(500);
 	}	
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -271,7 +277,7 @@ if (hero.IsValid)
 		}
 
 		//Sleep(13456 + rand(10)*100);
-		Sleep(500);
+		//Sleep(500);
 	}
 }
 
@@ -311,27 +317,48 @@ if (hero.IsValid)
 		}
 
 		//Sleep(11456 + rand(10)*100);
-		Sleep(500);
+		//Sleep(500);
 	}	
 }
 if (hero.IsValid)
 		hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
 
-// 2000 nobles
+// 100 nobles
 {
+	/*bool bSacredLegion = false;
 	if (!bSacredLegion)
 		bSacredLegion = set.TSResearch("Sacred Legion");
-	int nNobles = 2000;
+	*/
+	int nNobles = 100;
 	while (olNobles.count<nNobles)
 	{
 		int nCount;
 		if (olNobles.count<nNobles)
 		{
 			nCount = nNobles - olNobles.count;
-			olNobles.AddList(set.TSArmyRecruit("CNoble",nCount));
+			olNobles.AddList(set.TSRecruitArmy("CNoble",nCount));
+			//olNobles.AddList(set.TSTempleRecruit(nCount));
+		}
+		if (EnvReadInt(set,"StopTacticScript") == 1)
+		{
+			// Stop cript
+			if (bHeroSc)
+				AIBreakScript(heroScId);
+			// give army to AI
+			if (hero.IsValid)
+				hero.SetNoAIFlag(false);
+			olNobles.ClearDead();
+			SetNoAIFlag(olNobles,false);
+			// set AI vars
+			SetAIVar(AIPlayer, AIV_DonateGold, nDonateGold); // Return variable to its value
+			SetAIVar(AIPlayer, AIV_DonatePop,  nDonatePop); // Return variable to its value
+			SetAIVar(AIPlayer, AIV_DonateFood, nDonateFood); // Return variable to its value
+			SetAIVar(AIPlayer, AIV_BuildArmy,  nBuildArmy); // Return variable to its value
+			SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
+			return;
 		}
 		//Sleep(2456 + rand(30));
-		Sleep(500);
+		//Sleep(500);
 	}
 }
 
@@ -360,4 +387,4 @@ SetAIVar(AIPlayer, AIV_DonateFood, nDonateFood); // Return variable to its value
 SetAIVar(AIPlayer, AIV_BuildArmy,  nBuildArmy); // Return variable to its value
 SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
 
-EnvWriteInt(set, "CarthageTactic",1);
+EnvWriteInt(set, "CarthageTactic3",1);

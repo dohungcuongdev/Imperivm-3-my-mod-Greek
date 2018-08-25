@@ -1,7 +1,7 @@
 // void, Settlement set
 int  AIPlayer;
 int  i,gold,food;
-ObjList olHastati,olArchers,olPriests, olPraetorian;
+ObjList olHastati,olVelits,olPriests, olPraetorian;
 
 int  nDonateFood, nDonateGold, nDonatePop, nBuildArmy, nResearch; // Variables for controlling AI
 Hero hero;
@@ -35,32 +35,44 @@ aSkills[1] = hsTeamDefense;   aSkillLevels[1] = 10;
 aSkills[2] = hsQuickMarch;    aSkillLevels[2] = 3;
 aSkills[3] = hsEpicEndurance;    aSkillLevels[3] = 3;
 
-//barrack level 1 & hero
+//barrack level 1,2,3 & hero & Altar of Jupiter, God's Strength
 {
 	ObjList ol;
 	bool bBarrack1 = false;
-	while (!bBarrack1 || !hero.IsValid() )
+	bool bBarrack2 = false;
+	bool bBarrack3 = false;
+	bool bAltarJupiter = false;
+	bool bGodStrength = false;
+	while (!bBarrack1 || !hero.IsValid() || !bBarrack2 || !bBarrack3 || !bAltarJupiter || !bGodStrength)
 	{
 		if (!bBarrack1)
 			bBarrack1 = set.TSResearch("Barrack Level 1");
+		if (bBarrack1 && !bBarrack2)
+			bBarrack2 = set.TSResearch("Barrack Level 2");
+		if (bBarrack1 && bBarrack2 && !bBarrack3)
+			bBarrack3 = set.TSResearch("RBarrack Level 3");
+		if (!bAltarJupiter)
+			bAltarJupiter = set.TSResearch("Altar of Jupiter");
+		if (bAltarJupiter && !bGodStrength)
+			bGodStrength = set.TSResearch("God's Strength");
 		if (!hero.IsValid())
 			hero = set.TSRecruitHero();
 
 		//Sleep(10072 + rand(13)*100);
-		Sleep(500);
+		//Sleep(500);
 	}
 }
-//5 hastati 
+//30 hastati 
 {
 	int nSpies = 0;
 	str cmd = "trainRHastatus";
-	while (nSpies<5)
+	while (nSpies<30)
 	{
-		if (nSpies<5)
+		if (nSpies<30)
 		{
 			point ptDummy; Obj objDummy;
 			Barrack barrack;
-			barrack = set.BestBarrack(5);
+			barrack = set.BestBarrack(30);
 			if (barrack.IsValid)
 			if (GetCmdCost(cmd, gold, food))
 			{
@@ -71,7 +83,7 @@ aSkills[3] = hsEpicEndurance;    aSkillLevels[3] = 3;
 		}
 	
 		//Sleep(3472 + rand(10)*100);
-		Sleep(500);
+		//Sleep(500);
 	}
 	
 }
@@ -105,29 +117,7 @@ if(!bHeroSc)
 	bHeroSc = true;					
 }	
 else
-	hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
-
-// barrack level 2 & 20 more hastati
-{
-	bool bBarrack2 = false;
-	int nHastati = 25;
-	while (!bBarrack2 || olHastati.count<nHastati)
-		{
-			if (!bBarrack2)
-				bBarrack2 = set.TSResearch("Barrack Level 2");
-				
-			if (bBarrack2 && olHastati.count<nHastati)
-			{
-				int nCount;
-				nCount = nHastati - olHastati.count;
-				olHastati.AddList(set.TSRecruitArmy("RHastatus",nCount));
-				olHastati.ClearDead();
-				olHastati.SetCommand("enter", set.GetCentralBuilding());
-			}
-		//Sleep(5472 + rand(10)*100);
-		Sleep(500);
-		}
-}
+	hero.TSAdvHeroSkills(aSkills, aSkillLevels);
 
 if (EnvReadInt(set,"StopTacticScript") == 1)
 {
@@ -165,17 +155,25 @@ if (hero.IsAlive)
 	heroScId = AIRun("TS_AttackAtWill.vs", set, ol,oDummy, 0);
 }
 
-// gladiator shows & standartization 
+// gladiator shows & standartization 1,2 & flexibility
 {
-	bool bStandartization = false;
 	bool bGladiatorShow = false;
-	while (!bStandartization || !bGladiatorShow)
+	bool bStandartization = false;
+	bool bStandartization2 = false;
+	bool bFlexibility = false;
+	while (!bStandartization || !bGladiatorShow || !bStandartization2 || !bFlexibility)
 	{
 		if (!bGladiatorShow)	
 			bGladiatorShow = set.TSResearch("RGladiator Shows2");
 
 		if (bGladiatorShow &&!bStandartization)
 			bStandartization = set.TSResearch("Standartization I");
+
+		if (bStandartization && !bStandartization2)
+			bStandartization2 = set.TSResearch("Standartization II");
+
+		if (bStandartization2 && !bFlexibility)
+			bFlexibility = set.TSResearch("Flexibility");
 
 		if (EnvReadInt(set,"StopTacticScript") == 1)
 		{
@@ -196,7 +194,7 @@ if (hero.IsAlive)
 			return;
 		}
 		//Sleep(10771 + rand(10)*100);
-		Sleep(500);
+		//Sleep(500);
 	}
 }
 
@@ -209,9 +207,9 @@ if (hero.IsAlive)
 	bool bArrows = false;
 	while (!bArrows)
 		{
-			bArrows = set.TSResearch("Roman Archers");
+			bArrows = set.TSResearch("Roman Velit");
 			//Sleep(5675 + rand(12)*100);
-			Sleep(500);
+			//Sleep(500);
 		}
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -237,16 +235,16 @@ if (hero.IsValid())
 if (hero.IsAlive)
 	hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
 
-// 20 archers
+// 100 Velits
 {
-	int nArchers = 20;
-	while (olArchers.count<nArchers)
+	int nVelits = 100;
+	while (olVelits.count<nVelits)
 		{
 			int nCount;
-			nCount = nArchers - olArchers.count;
-			olArchers.AddList(set.TSRecruitArmy("RArcher",nCount));
+			nCount = nVelits - olVelits.count;
+			olVelits.AddList(set.TSRecruitArmy("RVelit",nCount));
 			//Sleep(6472 + rand(10)*100);
-			Sleep(500);
+			//Sleep(500);
 		}
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -259,8 +257,8 @@ if (EnvReadInt(set,"StopTacticScript") == 1)
 		hero.SetNoAIFlag(false);
 	olHastati.ClearDead();
 	SetNoAIFlag(olHastati,false);
-	olArchers.ClearDead();
-	SetNoAIFlag(olArchers,false);
+	olVelits.ClearDead();
+	SetNoAIFlag(olVelits,false);
 	// set AI const	
 	SetAIVar(AIPlayer, AIV_DonateGold, nDonateGold); // Return variable to its value
 	SetAIVar(AIPlayer, AIV_DonatePop,  nDonatePop); // Return variable to its value
@@ -274,15 +272,15 @@ if (hero.IsValid())
 if (hero.IsAlive)
 	hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
 
-// pikes
+// Praetorian upgrade
 {
-	bool bPikes = false;
-	while (!bPikes)
+	bool bPraetorianUpgrade = false;
+	while (!bPraetorianUpgrade)
 	{
-		if (!bPikes)
-			bPikes = set.TSResearch("Roman Praetorian");
+		if (!bPraetorianUpgrade)
+			bPraetorianUpgrade = set.TSResearch("Roman Praetorian");
 		//Sleep(6472 + rand(10)*100);
-		Sleep(500);
+		//Sleep(500);
 	}
 }
 
@@ -296,8 +294,8 @@ if (EnvReadInt(set,"StopTacticScript") == 1)
 		hero.SetNoAIFlag(false);
 	olHastati.ClearDead();
 	SetNoAIFlag(olHastati,false);
-	olArchers.ClearDead();
-	SetNoAIFlag(olArchers,false);
+	olVelits.ClearDead();
+	SetNoAIFlag(olVelits,false);
 	// set AI const	
 	SetAIVar(AIPlayer, AIV_DonateGold, nDonateGold); // Return variable to its value
 	SetAIVar(AIPlayer, AIV_DonatePop,  nDonatePop); // Return variable to its value
@@ -309,7 +307,7 @@ if (EnvReadInt(set,"StopTacticScript") == 1)
 
 if (hero.IsValid())
 if (hero.IsAlive)
-	hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
+	hero.TSAdvHeroSkills(aSkills, aSkillLevels);
 
 set.Research("autotrain_start_gr");
 
@@ -334,8 +332,8 @@ set.Research("autotrain_start_gr");
 				hero.SetNoAIFlag(false);
 			olHastati.ClearDead();
 			SetNoAIFlag(olHastati,false);
-			olArchers.ClearDead();
-			SetNoAIFlag(olArchers,false);
+			olVelits.ClearDead();
+			SetNoAIFlag(olVelits,false);
 			olPraetorian.ClearDead();
 			SetNoAIFlag(olPraetorian,false);
 			
@@ -348,7 +346,7 @@ set.Research("autotrain_start_gr");
 			return;
 		}
 		//Sleep(5472 + rand(10)*100);
-		Sleep(500);
+		//Sleep(500);
 	}
 }
 
@@ -364,10 +362,10 @@ if (hero.IsAlive)
 	hero.SetNoAIFlag(false);
 }
 
-olArchers.ClearDead();
+olVelits.ClearDead();
 olHastati.ClearDead();
 olPraetorian.ClearDead();
-SetNoAIFlag(olArchers,false);
+SetNoAIFlag(olVelits,false);
 SetNoAIFlag(olHastati,false);
 SetNoAIFlag(olPraetorian,false);
 
@@ -375,27 +373,6 @@ SetAIVar(AIPlayer, AIV_DonateGold, nDonateGold); // Return variable to its value
 SetAIVar(AIPlayer, AIV_DonatePop,  nDonatePop); // Return variable to its value
 SetAIVar(AIPlayer, AIV_DonateFood, nDonateFood); // Return variable to its value
 SetAIVar(AIPlayer, AIV_BuildArmy,  nBuildArmy); // Return variable to its value
-
-// standartization 2 & flexibility
-{
-	bool bStandartization2 = false;
-	bool bFlexibility = false;
-	while (!bStandartization2 || !bFlexibility)
-	{
-		if (!bStandartization2)
-			bStandartization2 = set.TSResearch("Standartization II");
-
-		if (bStandartization2 && !bFlexibility)
-			bFlexibility = set.TSResearch("Flexibility");
-		if (EnvReadInt(set,"StopTacticScript") == 1)
-		{
-			SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value
-			return;
-		}			
-		//Sleep(10872 + rand(12)*100);
-		Sleep(500);
-	}
-}
 
 
 SetAIVar(AIPlayer, AIV_Research,   nResearch); // Return variable to its value

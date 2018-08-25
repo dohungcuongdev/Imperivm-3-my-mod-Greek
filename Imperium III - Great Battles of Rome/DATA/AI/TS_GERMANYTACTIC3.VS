@@ -60,16 +60,25 @@ for (i = 0; i < 3; i += 1)
 	// Research Fast warrior equipment I	
 	// Hire a hero
 	bool bBarrack1 = false;
-	while (!hero.IsValid() ||! bBarrack1)
+	bool bBarrack2 = false;
+	bool bBarrack3 = false;
+		
+	while (!hero.IsValid() ||! bBarrack1 || !bBarrack2 || !bBarrack3 )
 	{
 		if (!hero.IsValid())
 			hero = set.TSRecruitHero();
 		if (!bBarrack1)
 			bBarrack1 = set.TSResearch("Barrack Level 1");
+		if (bBarrack1 && !bBarrack2)
+			bBarrack2 = set.TSResearch("Barrack Level 2");
+		if (bBarrack1 && bBarrack2 && !bBarrack3)
+			bBarrack3 = set.TSResearch("TBarrack Level 3");
+		
 		//Sleep(5205 + rand(10)*100);
 		Sleep(500);
 	}	
 }
+
 if (EnvReadInt(set,"StopTacticScript") == 1)
 {
 	if (hero.IsValid)
@@ -212,12 +221,6 @@ SetNoAIFlag(olAxemen,false);
 
 //30 Increase mace production & 300 macemen
 {
-	bool bBarrack2 = false;
-	if (!bBarrack2)
-		bBarrack2 = set.TSResearch("Barrack Level 2");
-	bool bBarrack3 = false;
-	if (!bBarrack3)
-		bBarrack2 = set.TSResearch("Barrack Level 3");
 	int nCount = 300; 	
 	int nMaxMacemen = 0;
 	while(olMacemen.count<nCount  || nMaxMacemen!=300)

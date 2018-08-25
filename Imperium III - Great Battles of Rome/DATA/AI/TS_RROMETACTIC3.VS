@@ -1,7 +1,7 @@
 // void, Settlement set
 int  AIPlayer;
 int  i,gold,food;
-ObjList olHastati,olArchers,olPriests, olTribunes,olSpies;
+ObjList olHastati,olArchers,olPriests, olTribunes,olSpies, olGladiators;
 
 int  nDonateFood, nDonateGold, nDonatePop, nBuildArmy, nResearch; // Variables for controlling AI
 Hero hero;
@@ -35,30 +35,57 @@ aSkills[1] = hsTeamDefense;   aSkillLevels[1] = 10;
 aSkills[2] = hsEpicEndurance; aSkillLevels[2] = 2;
 aSkills[3] = hsQuickMarch;    aSkillLevels[3] = 3;
 
-// 5 hastati & barrack level 1 & hero
+// barrack level 1,2,3 & hero & Altar of Jupiter, God's Gift
 {
 	ObjList ol;
-	int nSpies = 5;
 	bool bBarrack1 = false;
-	while (!bBarrack1 || !hero.IsValid() || olSpies.count<nSpies)
+	bool bBarrack2 = false;
+	bool bBarrack3 = false;
+	bool bAltarJupiter = false;
+	bool bGodGift = false;
+	while (!bBarrack1 || !hero.IsValid() || !bBarrack2 || !bBarrack3 || !bAltarJupiter || !bGodGift)
 	{
 		if (!bBarrack1)
 			bBarrack1 = set.TSResearch("Barrack Level 1");
+		if (bBarrack1 && !bBarrack2)
+			bBarrack2 = set.TSResearch("Barrack Level 2");
+		if (bBarrack1 && bBarrack2 && !bBarrack3)
+			bBarrack3 = set.TSResearch("RBarrack Level 3");
+		if (!bAltarJupiter)
+			bAltarJupiter = set.TSResearch("Altar of Jupiter");
+		if (bAltarJupiter && !bGodGift)
+			bGodGift = set.TSResearch("God's Gift");
 		if (!hero.IsValid())
 			hero = set.TSRecruitHero();
-
-		if (olSpies.count<nSpies)
-		{
-			ol.Clear();
-			ol.AddList(set.TSRecruitArmy("RHastatus",nSpies));
-			ol.RemoveList(olSpies);		
-			olSpies.AddList(ol);		
-			olSpies.ClearDead();		
-			SetNoAIFlag(olSpies, false);		
-		}
 		//Sleep(10675 + rand(10)*100);
-		Sleep(500);
+		//Sleep(500);
 	}
+}
+
+//30 hastati 
+{
+	int nSpies = 0;
+	str cmd = "trainRHastatus";
+	while (nSpies<30)
+	{
+		if (nSpies<30)
+		{
+			point ptDummy; Obj objDummy;
+			Barrack barrack;
+			barrack = set.BestBarrack(30);
+			if (barrack.IsValid)
+			if (GetCmdCost(cmd, gold, food))
+			{
+				set.SpentGoldOnArmy((gold + (food / 2)));
+				barrack.ExecCmd(cmd, ptDummy, objDummy, false);
+			}	
+			nSpies+=1;
+		}
+	
+		//Sleep(3472 + rand(10)*100);
+		//Sleep(500);
+	}
+	
 }
 
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -92,19 +119,6 @@ if(!bHeroSc)
 else
 	hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
 
-// 20 more hastati
-{
-	int nHastati = 25;
-	while (olHastati.count<nHastati)
-		{
-			int nCount;
-			nCount = nHastati - olHastati.count;
-			olHastati.AddList(set.TSRecruitArmy("RHastatus",nCount));
-
-			//Sleep(7675 + rand(10)*100);	
-			Sleep(500);
-		}
-}
 if (EnvReadInt(set,"StopTacticScript") == 1)
 {
 	// Stop Script;
@@ -148,7 +162,7 @@ if (hero.IsAlive)
 		{
 			bArrows = set.TSResearch("Roman Archers");
 			//Sleep(3675 + rand(10)*100);
-			Sleep(500);
+			//Sleep(500);
 		}
 }
 if (hero.IsValid())
@@ -182,7 +196,7 @@ if (EnvReadInt(set,"StopTacticScript") == 1)
 			nCount = nArchers - olArchers.count;
 			olArchers.AddList(set.TSRecruitArmy("RArcher",nCount));
 			//Sleep(7675 + rand(10)*100);
-			Sleep(500);
+			//Sleep(500);
 		}
 }
 
@@ -247,7 +261,7 @@ if (hero.IsAlive)
 		}
 
 		//Sleep(7675 + rand(10)*100);
-		Sleep(500);
+		//Sleep(500);
 	}
 }
 
@@ -257,17 +271,12 @@ if (hero.IsAlive)
 
 set.Research("autotrain_start_gr");
 
-//10 priests & 2000 Tribunes
+//10 priests & 300 Tribunes & 100 Gladiators
 {
-	bool bBarrack2 = false;
-	if (!bBarrack2)
-		bBarrack2 = set.TSResearch("Barrack Level 2");
-	bool bBarrack3 = false;
-	if (!bBarrack3)
-		bBarrack2 = set.TSResearch("Barrack Level 3");
 	int nPriests = 10;
 	int nTribunes = 300;
-	while (olPriests.count<nPriests || olTribunes.count<nTribunes)
+	int nGladiators = 100;
+	while (olPriests.count<nPriests || olTribunes.count<nTribunes || olGladiators.count<nGladiators)
 	{
 		if (olPriests.count<nPriests)	
 		{
@@ -280,6 +289,12 @@ set.Research("autotrain_start_gr");
 			int nCount;
 			nCount = nTribunes - olTribunes.count;
 			olTribunes.AddList(set.TSRecruitArmy("RTribune",nCount));
+		}
+		if (olGladiators.count<nGladiators)	
+		{
+			int nCount;
+			nCount = nGladiators - olGladiators.count;
+			olGladiators.AddList(set.TSRecruitArmy("RGladiator",nCount));
 		}
 
 		if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -294,10 +309,12 @@ set.Research("autotrain_start_gr");
 			olHastati.ClearDead();
 			olPriests.ClearDead();
 			olTribunes.ClearDead();
+			olGladiators.ClearDead();
 			SetNoAIFlag(olArchers,false);
 			SetNoAIFlag(olHastati,false);
 			SetNoAIFlag(olPriests,false);
 			SetNoAIFlag(olTribunes,false);
+			SetNoAIFlag(olGladiators,false);
 			// set AI const	
 			SetAIVar(AIPlayer, AIV_DonateGold, nDonateGold); // Return variable to its value
 			SetAIVar(AIPlayer, AIV_DonatePop,  nDonatePop); // Return variable to its value
@@ -308,7 +325,7 @@ set.Research("autotrain_start_gr");
 		}
 
 		//Sleep(8675 + rand(10)*100);
-		Sleep(500);
+		//Sleep(500);
 	}
 }
 
@@ -328,10 +345,12 @@ olArchers.ClearDead();
 olHastati.ClearDead();
 olPriests.ClearDead();
 olTribunes.ClearDead();
+olGladiators.ClearDead();
 SetNoAIFlag(olArchers,false);
 SetNoAIFlag(olHastati,false);
 SetNoAIFlag(olPriests,false);
 SetNoAIFlag(olTribunes,false);
+SetNoAIFlag(olGladiators,false);
 
 SetAIVar(AIPlayer, AIV_DonateGold, nDonateGold); // Return variable to its value
 SetAIVar(AIPlayer, AIV_DonatePop,  nDonatePop); // Return variable to its value
