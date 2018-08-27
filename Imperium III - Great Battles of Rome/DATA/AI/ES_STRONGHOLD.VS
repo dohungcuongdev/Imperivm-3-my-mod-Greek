@@ -410,7 +410,8 @@ while (set.player == AIPlayer && EnvReadInt(set, "RestartEconomyScript") == 0)
 					if(struttureInsediamento[bCounter].class == "HBarracks")
 					{
 						barrack = struttureInsediamento[bCounter];
-						break;
+						if(rand(2)==1) // allows AI to use more than 1 Barrack
+							break;
 					}	//Fine if.
 				}	//Fine del for.	
 			}	//Fine if.
