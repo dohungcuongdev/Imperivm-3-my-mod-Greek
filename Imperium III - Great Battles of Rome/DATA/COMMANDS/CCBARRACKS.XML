@@ -18,7 +18,7 @@
 	method="train"
 	param="CLibyanFootman,spec"
 	sclass="CLibyanFootman">
-	<src obj="CBarracks"/>
+	<src obj="CCBarracks"/>
 </cmd>
 
 <cmd name="trainCLibyanFootmanNonSpec" priority="3"
@@ -37,7 +37,7 @@
 	method="train"
 	param="CLibyanFootman,non-spec"
 	sclass="CLibyanFootman">
-	<src obj="CBarracks"/>
+	<src obj="CCBarracks"/>
 </cmd>
 
 <cmd name="trainCJavelinThrower" priority="4"
@@ -57,7 +57,7 @@
 	param="CJavelinThrower,spec"
 	sclass="CJavelinThrower">
 
-	<src obj="CBarracks"/>
+	<src obj="CCBarracks"/>
 </cmd>
 
 <cmd name="trainCJavelinThrowerNonSpec" priority="4"
@@ -77,7 +77,7 @@
 	param="CJavelinThrower,non-spec"
 	sclass="CJavelinThrower">
 
-	<src obj="CBarracks"/>
+	<src obj="CCBarracks"/>
 </cmd>
 
 <cmd name="trainCBerberAssassin" priority="5"
@@ -96,7 +96,7 @@
 	method="train"
 	param="CBerberAssassin,spec"
 	sclass="CBerberAssassin">
-	<src obj="CBarracks"/>
+	<src obj="CCBarracks"/>
 </cmd>
 
 <cmd name="trainCBerberAssassinNonSpec" priority="5"
@@ -115,7 +115,7 @@
 	method="train"
 	param="CBerberAssassin,non-spec"
 	sclass="CBerberAssassin">
-	<src obj="CBarracks"/>
+	<src obj="CCBarracks"/>
 </cmd>
 
 <cmd name="trainCMaceman" priority="6"
@@ -135,7 +135,7 @@
 	param="CMaceman,spec"
 	sclass="CMaceman">
 
-	<src obj="CBarracks"/>
+	<src obj="CCBarracks"/>
 </cmd>
 
 <cmd name="trainCMacemanNonSpec" priority="6"
@@ -155,7 +155,7 @@
 	param="CMaceman,non-spec"
 	sclass="CMaceman">
 
-	<src obj="CBarracks"/>
+	<src obj="CCBarracks"/>
 </cmd>
 
 <cmd name="trainCNumidianRider" priority="7"
@@ -175,7 +175,7 @@
 	param="CNumidianRider,spec"
 	sclass="CNumidianRider">
 
-	<src obj="CBarracks"/>
+	<src obj="CCBarracks"/>
 </cmd>
 
 <cmd name="trainCNumidianRiderNonSpec" priority="7"
@@ -195,26 +195,7 @@
 	param="CNumidianRider,non-spec"
 	sclass="CNumidianRider">
 
-	<src obj="CBarracks"/>
-</cmd>
-
-<cmd name="trainCCNoble" priority="7"
-	button="actions/train CNoble.bmp"
-	queueicon="gameres/icons/CNoble.bmp"
-	groupverifier="data/subai/barrack_train_verify.vs"
-	transpicon="1"
-	traincommand="yes"
-	key="n"
-	help="/contents/units/CNoble"
-	costgold = "450"
-	costfood = "0"
-	costpop = "0"
-	execdelay = "20000"
-	rollover="Equip Noble"
-	method="train"
-	param="CNoble"
-	sclass="CNoble">
-	<src obj="CBarracks"/>
+	<src obj="CCBarracks"/>
 </cmd>
 
 <cmd name="trainCMercenario" priority="8"
@@ -234,7 +215,7 @@
 	method="trainex"
 	param="1, 5, CMERCENARIO, CMERCENARIO, Master Axes, blacksmith"
 	sclass="CMERCENARIO">
-	<src obj="CBarracks"/>
+	<src obj="CCBarracks"/>
 </cmd>
 
 </commands>
