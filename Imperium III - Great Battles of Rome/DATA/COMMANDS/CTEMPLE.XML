@@ -85,7 +85,7 @@
 	<src obj="CTemple"/>
 </cmd>
 
-<cmd name="trainCNoble" priority="7"
+<cmd name="trainCCNoble" priority="7"
 	button="actions/train CNoble.bmp"
 	queueicon="gameres/icons/CNoble.bmp"
 	groupverifier="data/subai/barrack_train_verify.vs"

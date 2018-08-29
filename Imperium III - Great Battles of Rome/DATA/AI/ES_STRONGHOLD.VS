@@ -420,6 +420,7 @@ while (set.player == AIPlayer && EnvReadInt(set, "RestartEconomyScript") == 0)
 				barrack = set.BestBarrack(5);
 			}	//Fine else.
 			
+			/**
 			if (nRace == Carthage)
 			{
 				nCount = EnvReadInt(set, "nBuildCount");
@@ -430,6 +431,7 @@ while (set.player == AIPlayer && EnvReadInt(set, "RestartEconomyScript") == 0)
 						barrack = set.FindResearchLab(UTrainCmd(5, Carthage));
 				}
 			}
+			*/
 			
 			if (barrack.IsValid())
 			{
@@ -454,11 +456,13 @@ while (set.player == AIPlayer && EnvReadInt(set, "RestartEconomyScript") == 0)
 						{
 							EnvWriteInt(set, "nArmyBuilds", 1 + EnvReadInt(set, "nArmyBuilds"));
 							
+							/**
 							if (nRace == Carthage)
 							{
 								if (nBuildType == 5)
 									barrack = set.FindResearchLab(UTrainCmd(5, Carthage));
 							}
+							*/
 						}
 					}
 					
