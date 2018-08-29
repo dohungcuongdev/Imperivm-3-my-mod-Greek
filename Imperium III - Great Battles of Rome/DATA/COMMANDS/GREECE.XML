@@ -93,7 +93,7 @@
 	traincommand="yes"
 	key="c"
 	help="/contents/units/HChariot"
-	costgold = "200"
+	costgold = "240"
 	costfood = "0"
 	costpop = "2"
 	execdelay = "14000"

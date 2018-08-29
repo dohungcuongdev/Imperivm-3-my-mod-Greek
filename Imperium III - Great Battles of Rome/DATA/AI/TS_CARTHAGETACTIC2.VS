@@ -280,7 +280,7 @@ if (hero.IsValid)
 	{
 		if (!bDarkRitual)
 			bDarkRitual = set.TSResearch("Dark Rituals");
-		if (!bSacredLegion)
+		if (bDarkRitual && !bSacredLegion)
 			bSacredLegion = set.TSResearch("Sacred Legion");
 
 		if (EnvReadInt(set,"StopTacticScript") == 1)

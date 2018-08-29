@@ -85,16 +85,23 @@ if(!bHeroSc)
 	bHeroSc = true;					
 }	
 else
-	hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
-// train 10 Numidian rider
+	hero.TSAdvHeroSkills(aSkills, aSkillLevels);
+
+
+// train 60 Numidian rider & Shared Strength
 
 {
-	int nNumidians = 10;
-	while (olNumidians.count<nNumidians)
+	int nNumidians = 60;
+	bool bSharedStrength = false;
+	while (olNumidians.count<nNumidians || !bSharedStrength)
 	{
 		int nCount;
 		nCount = nNumidians- olNumidians.count;
 		olNumidians.AddList(set.TSRecruitArmy("CNumidianRider",nCount));
+		
+		if (!bSharedStrength) {
+			bSharedStrength = set.TSResearch("Shared Strength");
+		}
 
 		if (EnvReadInt(set,"StopTacticScript") == 1)
 		{
@@ -134,14 +141,19 @@ if (hero.IsAlive)
 	heroScId = AIRun("TS_AttackAtWill.vs", set, ol,oDummy, 0);
 }
 
-// train 20 more Numidian rider
+// train 80 more Numidian rider & Shared Triumph
 {
-	int nNumidians = 30;
-	while (olNumidians.count<nNumidians)
+	int nNumidians = 140;
+	bool bSharedTriumph = false;
+	while (olNumidians.count<nNumidians || !bSharedTriumph)
 	{
 		int nCount;
 		nCount = nNumidians- olNumidians.count;
 		olNumidians.AddList(set.TSRecruitArmy("CNumidianRider",nCount));
+		
+		if (!bSharedTriumph) {
+			bSharedTriumph = set.TSResearch("Shared Triumph");
+		}
 
 		if (EnvReadInt(set,"StopTacticScript") == 1)
 		{
@@ -171,12 +183,17 @@ if (hero.IsValid())
 if (hero.IsAlive)
 	hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
 
-// Spoils of war & peoples assembly
+// train 60 more Numidian rider & Spoils of war & peoples assembly
 {
 	bool bSpoilsOfWar = false;
 	bool bPeoplesAssembly = false;
-	while (!bSpoilsOfWar ||!bPeoplesAssembly)
+	int nNumidians = 200;
+	while (olNumidians.count<nNumidians || !bSpoilsOfWar ||!bPeoplesAssembly)
 	{
+		int nCount;
+		nCount = nNumidians- olNumidians.count;
+		olNumidians.AddList(set.TSRecruitArmy("CNumidianRider",nCount));
+		
 		if (!bPeoplesAssembly)
 			bPeoplesAssembly = set.TSResearch("People's Assembly");
 		if (!bSpoilsOfWar)
@@ -222,6 +239,7 @@ set.TSResearch("StopSpecialization");
 		Sleep(500);
 	}	
 }
+
 if (EnvReadInt(set,"StopTacticScript") == 1)
 {
 	// Stop cript
@@ -292,7 +310,7 @@ if (hero.IsValid)
 	{
 		if (!bDarkRitual)
 			bDarkRitual = set.TSResearch("Dark Rituals");
-		if (!bSacredLegion)
+		if (bDarkRitual && !bSacredLegion)
 			bSacredLegion = set.TSResearch("Sacred Legion");
 
 		if (EnvReadInt(set,"StopTacticScript") == 1)
