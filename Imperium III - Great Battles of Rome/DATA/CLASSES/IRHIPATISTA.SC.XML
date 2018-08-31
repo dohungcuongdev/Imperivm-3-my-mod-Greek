@@ -27,6 +27,10 @@
   <properties damage="55" armor_slash="15" armor_pierce="15"/>
   <properties speed="60"/>
   <properties unit_specials="Trample, Spike armor, Determination"/>
+  
+  <properties healthbar_type="3"/>
+
+  <properties selection_radius="30"/>
 
   <properties formation_priority="1000"/>
   <properties formation_radius="26"/>
