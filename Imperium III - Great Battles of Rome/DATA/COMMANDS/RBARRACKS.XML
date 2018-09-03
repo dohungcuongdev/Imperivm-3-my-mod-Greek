@@ -186,7 +186,7 @@
 	execdelay = "20000"
 	rollover="Equip Republican Roman Hipatista"
 	method="trainex"
-	param="1, 4, Hipatista, Hipatista, Heavy Swords and Shields, blacksmith"
+	param="1, 8, Hipatista, Hipatista, Heavy Swords and Shields, blacksmith"
 	sclass="Hipatista">
 	<src obj="RBarracks"/>
 </cmd>
@@ -207,7 +207,7 @@
 	execdelay = "20000"
 	rollover="Equip Imperial Roman Hipatista"
 	method="trainex"
-	param="1, 3, IRHipatista, IRHipatista, Calling Hipatistas, blacksmith"
+	param="1, 6, IRHipatista, IRHipatista, Calling Hipatistas, blacksmith"
 	sclass="Hipatista">
 	<src obj="RBarracks"/>
 </cmd>
@@ -228,7 +228,7 @@
 	execdelay = "20000"
 	rollover="Equip Imperial Roman Hipatista"
 	method="trainex"
-	param="1, 3, IRHipatista, IRHipatista, Heavy Shields and Spears, blacksmith"
+	param="1, 6, IRHipatista, IRHipatista, Heavy Shields and Spears, blacksmith"
 	sclass="Hipatista">
 	<src obj="RBarracks"/>
 </cmd>

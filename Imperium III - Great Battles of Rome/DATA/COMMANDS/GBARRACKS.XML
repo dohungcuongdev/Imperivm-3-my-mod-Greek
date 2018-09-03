@@ -152,7 +152,7 @@
 	execdelay = "20000"
 	rollover="Equip Master Assassin"
 	method="trainex"
-	param="1, 7, NSECUAZ, NSECUAZ, Assassin Kungfu, blacksmith"
+	param="1, 14, NSECUAZ, NSECUAZ, Assassin Kungfu, blacksmith"
 	sclass="NSECUAZ">
 	<src obj="GBarracks"/>
 </cmd>
@@ -173,7 +173,7 @@
 	execdelay = "20000"
 	rollover="Equip Master Assassin"
 	method="trainex"
-	param="1, 7, NSECUAZ, NSECUAZ, Steel Weapons, blacksmith"
+	param="1, 14, NSECUAZ, NSECUAZ, Steel Weapons, blacksmith"
 	sclass="NSECUAZ">
 	<src obj="GBarracks"/>
 </cmd>

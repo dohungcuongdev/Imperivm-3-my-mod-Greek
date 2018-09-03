@@ -133,7 +133,7 @@
 	execdelay = "20000"
 	rollover="Equip Master Swordman"
 	method="trainex"
-	param="1, 6, PINMORTAL, PINMORTAL, Dual Swords, blacksmith"
+	param="1, 12, PINMORTAL, PINMORTAL, Dual Swords, blacksmith"
 	sclass="PINMORTAL">
 	<src obj="EBarracks"/>
 </cmd>

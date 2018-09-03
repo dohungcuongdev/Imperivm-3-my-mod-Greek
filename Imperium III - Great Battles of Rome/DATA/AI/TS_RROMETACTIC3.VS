@@ -30,10 +30,10 @@ SetAIVar(AIPlayer, AIV_BuildArmy,  0);
 SetAIVar(AIPlayer, AIV_Research,   0);
 
 // Set skills
-aSkills[0] = hsTeamAttack;    aSkillLevels[0] = 10;
-aSkills[1] = hsTeamDefense;   aSkillLevels[1] = 10;
-aSkills[2] = hsBattleCry; aSkillLevels[2] = 2;
-aSkills[3] = hsQuickMarch;    aSkillLevels[3] = 3;
+//aSkills[0] = hsTeamAttack;    aSkillLevels[0] = 10;
+//aSkills[1] = hsTeamDefense;   aSkillLevels[1] = 10;
+//aSkills[2] = hsBattleCry; aSkillLevels[2] = 2;
+//aSkills[3] = hsQuickMarch;    aSkillLevels[3] = 3;
 
 // barrack level 1,2,3 & hero & Altar of Jupiter, God's Gift
 {

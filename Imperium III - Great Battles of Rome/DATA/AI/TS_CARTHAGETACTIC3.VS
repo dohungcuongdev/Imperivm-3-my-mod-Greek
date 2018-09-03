@@ -31,8 +31,8 @@ SetAIVar(AIPlayer, AIV_BuildArmy,  0);
 SetAIVar(AIPlayer, AIV_Research,   0);
 
 // Set skills
-aSkills[0] = hsWisdom;    aSkillLevels[0] = 10;
-aSkills[1] = hsFrenzy;    aSkillLevels[1] = 10;
+//aSkills[0] = hsWisdom;    aSkillLevels[0] = 10;
+//aSkills[1] = hsFrenzy;    aSkillLevels[1] = 10;
 
 // hire hero & forge pikes & barrack level 1,2,3
 {

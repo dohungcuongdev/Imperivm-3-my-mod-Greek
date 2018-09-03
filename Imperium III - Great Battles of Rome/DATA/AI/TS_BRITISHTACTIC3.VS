@@ -32,8 +32,8 @@ SetAIVar(AIPlayer, AIV_BuildArmy,  0);
 SetAIVar(AIPlayer, AIV_Research,   0);
 
 // Set skills
-	aSkills[0] = hsCharge;      aSkillLevels[0] = 10;
-	aSkills[1] = hsAssault;     aSkillLevels[1] = 10;
+	//aSkills[0] = hsCharge;      aSkillLevels[0] = 10;
+	//aSkills[1] = hsAssault;     aSkillLevels[1] = 10;
 
 // hire hero & 3xswordsmen & Highlander's swords
 {

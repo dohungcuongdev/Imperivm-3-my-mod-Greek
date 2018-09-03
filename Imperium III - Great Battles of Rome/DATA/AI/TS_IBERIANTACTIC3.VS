@@ -33,10 +33,10 @@ SetAIVar(AIPlayer, AIV_BuildArmy,  0);
 SetAIVar(AIPlayer, AIV_Research,   0);
 
 // Iberian initial tactic 
-aSkills[0] = hsEuphoria;      aSkillLevels[0] = 4;
-aSkills[1] = hsTeamDefense;   aSkillLevels[1] = 5;
-aSkills[2] = hsHealing;       aSkillLevels[2] = 10;
-aSkills[3] = hsEpicEndurance; aSkillLevels[3] = 3;
+//aSkills[0] = hsEuphoria;      aSkillLevels[0] = 4;
+//aSkills[1] = hsTeamDefense;   aSkillLevels[1] = 5;
+//aSkills[2] = hsHealing;       aSkillLevels[2] = 10;
+//aSkills[3] = hsEpicEndurance; aSkillLevels[3] = 3;
 
 //Sleep(rand(2345));
 // Upgrade "Free Drinks".
@@ -222,6 +222,8 @@ if (EnvReadInt(set,"StopTacticScript") == 1)
 		Sleep(500);
 	}
 }
+
+/**
 if (hero.IsAlive)// new skill
 	{
 		if (hero.inherentlevel>=29)// new skill
@@ -234,6 +236,7 @@ if (hero.IsAlive)// new skill
 
 		hero.TSAdvHeroSkills(aSkills, aSkillLevels);	
 	}
+*/
 
 // Train 3 Enchantress
 while (olEnchantress.count < 5)

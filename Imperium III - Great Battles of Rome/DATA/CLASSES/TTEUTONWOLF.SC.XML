@@ -1,10 +1,13 @@
 <class id="TTeutonWolf" cpp_class="CVXUnit" parent="Horse" entity="Units/TTeutonWolf/TTeutonWolf.ent.xml">
 
 	<properties race="Germany"/>
-	<properties maxhealth="700"/>
+	<properties maxhealth="750"/>
 	<properties damage="50" armor_slash="25" armor_pierce="25"/>
 	<properties speed="160"/>
-	<properties unit_specials="Expertise, Combat skill, Toughness"/>
+	<!-- <properties unit_specials="Expertise, Combat skill, Toughness"/> -->
+	<properties unit_specials="Expertise, Power strike, Toughness"/>
+	<!-- <properties unit_specials="Expertise, Combat skill, Penetration"/> -->
+	
 	<properties healthbar_type="3"/>
 	
 	<properties max_food="25"/>

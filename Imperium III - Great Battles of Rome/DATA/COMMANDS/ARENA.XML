@@ -1224,9 +1224,9 @@
 	costfood = "0"
 	execdelay = "60000"
 	rollover="Teuton Wolves"
-	description="Allows Teuton Wolves to be hired"
+	description="Allows level 10 Teuton Wolves to be hired"
 	method="research"
-	param="ReqSet, Fights, default, NameSet,Teuton Wolves, default">
+	param="ReqSet, Fights, SetsSet, levels/TTeutonWolf, 10, default, NameSet,Teuton Wolves, default">
 	<src obj="TSanctuaryOfVotan"/>
 	<src obj="TTSanctuaryOfVotan"/>
 </cmd>
@@ -1247,7 +1247,7 @@
 	rollover="Hire Teuton Wolf"
 	description="Hire Teuton Wolf"
 	method="trainex"
-	param="1, 4, TTeutonWolf, TTeutonWolf, Teuton Wolves">
+	param="1, 8, TTeutonWolf, TTeutonWolf, Teuton Wolves">
 	<src obj="TSanctuaryOfVotan"/>
 	<src obj="TTSanctuaryOfVotan"/>
 </cmd>

@@ -134,7 +134,7 @@
 	execdelay = "20000"
 	rollover="Equip Master Horseman"
 	method="trainex"
-	param="1, 5, BHorseman, BHorseman, Fairy Horse, blacksmith"
+	param="1, 10, BHorseman, BHorseman, Fairy Horse, blacksmith"
 	sclass="BHorseman">
 	<src obj="BBarracks"/>
 </cmd>

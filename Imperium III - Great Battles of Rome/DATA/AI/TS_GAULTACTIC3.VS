@@ -29,8 +29,8 @@ SetAIVar(AIPlayer, AIV_BuildArmy,  0);
 SetAIVar(AIPlayer, AIV_Research,   0);
 
 // Set skills
-	aSkills[0] = hsLeadership;    aSkillLevels[0] = 10;
-	aSkills[1] = hsBattleCry;     aSkillLevels[1] = 10;
+	//aSkills[0] = hsLeadership;    aSkillLevels[0] = 10;
+	//aSkills[1] = hsBattleCry;     aSkillLevels[1] = 10;
 
 // hire hero & barrack level 1,2,3 & FreeBeer & Item & 2x inc pop
 {
@@ -81,7 +81,7 @@ SetAIVar(AIPlayer, AIV_Research,   0);
 			nIncPop+=1;
 		}
 		//Sleep(7024 + rand(15)*100);	
-		Sleep(500);
+		Sleep(1000);
 	}	
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -124,7 +124,7 @@ if (EnvReadInt(set,"StopTacticScript") == 1)
 		if (!bFights)
 			bFights = set.TSResearch("Fights");
 		//Sleep(4024 + rand(15)*100);
-		Sleep(500);
+		Sleep(1000);
 	}
 }
 if (EnvReadInt(set,"StopTacticScript") == 1)
@@ -186,7 +186,7 @@ if (hero.IsValid)
 			return;
 		}
 		//Sleep(15024 + rand(10)*100);
-		Sleep(500);		
+		Sleep(1000);		
 	}
 }
 set.Research("autotrain_start_gr");

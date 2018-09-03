@@ -33,11 +33,11 @@ SetAIVar(AIPlayer, AIV_BuildArmy,  0);
 SetAIVar(AIPlayer, AIV_Research,   0);
 
 // SetSkills
-	aSkills[0] = hsSurvival;      aSkillLevels[0] = 10;
-	aSkills[1] = hsVigor;         aSkillLevels[1] = 10;
-	aSkills[2] = hsHealing;       aSkillLevels[2] = 10;
-	aSkills[3] = hsQuickMarch;    aSkillLevels[3] = 10;
-	aSkills[4] = hsRecovery;      aSkillLevels[4] = 10;
+	//aSkills[0] = hsSurvival;      aSkillLevels[0] = 10;
+	//aSkills[1] = hsVigor;         aSkillLevels[1] = 10;
+	//aSkills[2] = hsHealing;       aSkillLevels[2] = 10;
+	//aSkills[3] = hsQuickMarch;    aSkillLevels[3] = 10;
+	//aSkills[4] = hsRecovery;      aSkillLevels[4] = 10;
 
 // Buy slaves & hire a hero
 // Train 3 Militiamen and send them to spy around the stronghold

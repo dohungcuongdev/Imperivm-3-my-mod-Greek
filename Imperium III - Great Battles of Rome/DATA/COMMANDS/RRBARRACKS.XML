@@ -150,7 +150,7 @@
 	execdelay = "20000"
 	rollover="Equip Republican Roman Hipatista"
 	method="trainex"
-	param="1, 4, Hipatista, Hipatista, Heavy Swords and Shields, blacksmith"
+	param="1, 8, Hipatista, Hipatista, Heavy Swords and Shields, blacksmith"
 	sclass="Hipatista">
 	<src obj="RRBarracks"/>
 </cmd>

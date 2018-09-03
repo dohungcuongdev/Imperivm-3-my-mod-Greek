@@ -29,14 +29,16 @@ SetAIVar(AIPlayer, AIV_DonateGold, 0);
 SetAIVar(AIPlayer, AIV_BuildArmy,  0);
 SetAIVar(AIPlayer, AIV_Research,   0);
 
-aSkills[0] = hsEuphoria;      aSkillLevels[0] = 6;
-aSkills[1] = hsConcealment;   aSkillLevels[1] = 10;
+//aSkills[0] = hsEuphoria;      aSkillLevels[0] = 6;
+//aSkills[1] = hsConcealment;   aSkillLevels[1] = 10;
+/**
 if (rand(2)==0)
 	aSkills[2] = hsDefensiveCry;  
 else
 	aSkills[2] = hsAssault;  
 	
 aSkillLevels[2] = 10;
+*/
 
 
 // Hire hero

@@ -232,7 +232,7 @@
 	execdelay = "20000"
 	rollover="Hire Master Axeman"
 	method="trainex"
-	param="1, 5, CMERCENARIO, CMERCENARIO, Master Axes, blacksmith"
+	param="1, 10, CMERCENARIO, CMERCENARIO, Master Axes, blacksmith"
 	sclass="CMERCENARIO">
 	<src obj="CBarracks"/>
 </cmd>
