@@ -31,11 +31,11 @@ while(!.Goto(pt, 0, 2000, true, 0)&& .HasPath)
 		chance=rand(2);
 		if(chance==0)
 		{
-			PlaySound("Sounds/animals/Horse/Horse_Idle1.wav");
+			//PlaySound("Sounds/Animals/WHorse/Horse_Idle1.wav");
 		}
 		if(chance==1)
 		{
-			PlaySound("Sounds/animals/Horse/Horse_Idle2.wav");
+			//PlaySound("Sounds/Animals/WHorse/Horse_Idle2.wav");
 		}
 	}
 	ol = Intersect(EnemyObjs(this.player,"Object"),ObjsInSight(this, "Wolf,Building,Unit,LionF,LionM,Boar")).GetObjList;
@@ -82,11 +82,11 @@ while(!.Goto(pt, 0, 2000, true, 0) && .HasPath);
 		chance=rand(2);
 		if(chance==0)
 		{
-			PlaySound("Sounds/animals/Horse/Horse_Idle1.wav");
+			//PlaySound("Sounds/Animals/WHorse/Horse_Idle1.wav");
 		}
 		if(chance==1)
 		{
-			PlaySound("Sounds/animals/Horse/Horse_Idle2.wav");
+			//PlaySound("Sounds/Animals/WHorse/Horse_Idle2.wav");
 		}
 	}
 	ol =  Intersect(EnemyObjs(this.player,"Object"),ObjsInSight(this, "Wolf,Building,Unit,LionF,LionM,Boar")).GetObjList;

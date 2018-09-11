@@ -1,9 +1,9 @@
 <class id="CMERCENARIO" cpp_class="CVXUnit" parent="Melee" entity="units/CMERCENARIO/CMERCENARIO.ent.xml">
 
 	<properties race="Carthage"/>
-	<properties maxhealth="460"/>
+	<properties maxhealth="420"/>
 	<properties damage="50" armor_slash="20" armor_pierce="20"/>
-	<properties speed="80"/>
+	<properties speed="70"/>
 	<properties unit_specials="Triumph, Bleeding attack, Combat skill"/>
 
 	<properties icon="gameres/icons/CMERCENARIO.bmp"/>

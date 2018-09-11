@@ -55,7 +55,7 @@ aSkills[1] = hsFrenzy;    aSkillLevels[1] = 10;
 		if (!bFreeTrade && set.gold>3000)
 			bFreeTrade = set.TSResearch("Free Trade");
 	
-		if ((set.population>=set.max_population || set.max_population * 90 / 100) && set.gold < 50000 && bFreeTrade != false)
+		if (set.population>60 && set.gold < 2000 && bFreeTrade != false)
 		{
 			set.TSResearch("Slavery");
 			nSlavery+=1;

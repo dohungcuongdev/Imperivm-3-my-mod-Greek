@@ -20,7 +20,7 @@
 
 	<method sig="heal" 	      vs="data/subai/druid_heal.vs" verify="data/subai/druid_heal_verify.vs"/>
 	<method sig="heal" 	      vs="data/subai/druid_heal_ground.vs"/>
-	<method sig="centaur_summoning" vs="data/subai/centaur_summoning.vs"/>
+	<!--<method sig="centaur_summoning" vs="data/subai/centaur_summoning.vs"/> -->
 	<method sig="h_restoration"      vs="data/subai/druid_restoration.vs"/>
 
 	<defaultcmd target="Unit">
