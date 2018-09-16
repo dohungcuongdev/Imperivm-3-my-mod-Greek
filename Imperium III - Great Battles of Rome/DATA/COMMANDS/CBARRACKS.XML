@@ -226,13 +226,13 @@
 	traincommand="yes"
 	key="z"
 	help="/contents/units/CMercenario"
-	costgold = "520"
+	costgold = "650"
 	costfood = "0"
 	costpop = "0"
 	execdelay = "20000"
 	rollover="Hire Master Axeman"
 	method="trainex"
-	param="1, 10, CMERCENARIO, CMERCENARIO, Master Axes, blacksmith"
+	param="1, 11, CMERCENARIO, CMERCENARIO, Master Axes, blacksmith"
 	sclass="CMERCENARIO">
 	<src obj="CBarracks"/>
 </cmd>

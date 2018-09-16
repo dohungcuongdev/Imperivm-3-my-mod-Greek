@@ -1,11 +1,11 @@
 <class id="BHorseman" cpp_class="CVXUnit" parent="Horse" entity="Units/Keltill/Keltill.ent.xml">
 
 	<properties race="Britain"/>
-	<properties maxhealth="600"/>
-	<properties damage="55" armor_slash="8" armor_pierce="8"/>
+	<properties maxhealth="650"/>
+	<properties damage="65" armor_slash="20" armor_pierce="20"/>
 	<properties speed="120"/>
 	<!-- <properties unit_specials="Charge, Triple strike, Ferocity"/> -->
-	<properties unit_specials="Deflection, Death blow, Ferocity"/>
+	<properties unit_specials="Deflection, Toughness, Ferocity"/>
 	<properties healthbar_type="3"/>
 
 	<properties max_food="25"/>

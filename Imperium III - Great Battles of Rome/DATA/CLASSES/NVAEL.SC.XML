@@ -2,9 +2,9 @@
 
 	<properties race="Iberia"/>
 	<properties maxhealth="550"/>
-	<properties damage="60" armor_slash="14" armor_pierce="14"/>
+	<properties damage="40" armor_slash="8" armor_pierce="8"/>
 	<properties speed="75"/>
-	<properties unit_specials="Bleeding attack, Attack skill, Combat skill"/>
+	<properties unit_specials="Bleeding attack, Trample"/>
 
 	<properties icon="gameres/icons/BERSERKER.bmp"/>
 	<properties display_name="Master Berserker" display_name_plural="Master Berserkers"/>

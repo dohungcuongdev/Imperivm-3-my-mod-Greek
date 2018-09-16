@@ -1,30 +1,8 @@
-
-<!--
-<class id="IRHipatista" cpp_class="CVXUnit" parent="Melee" entity="units/Hipatista/Hipatista.ent.xml">
-
-	<properties race="ImperialRome"/>
-	<properties maxhealth="650"/>
-	<properties damage="40" armor_slash="20" armor_pierce="20"/>
-	<properties speed="60"/>
-	<properties unit_specials="Trample, Spike armor, Determination"/>
-
-	<properties icon="gameres/icons/Hipatista.bmp"/>
-	<properties display_name="Imperial Roman Hipatista" display_name_plural="Imperial Roman Hipatistas"/>
-	<properties help="contents/units/Hipatista"/>
-	<properties edittree_pos="Units/New Units/Hipatista (Imperial Roman)"/>
-	<sounds command="data/sound entities/VoiceHHypaspista.xml"/>
-
-
-
-</class>
--->
-
-
 <class id="IRHipatista" cpp_class="CVXUnit" parent="Melee" entity="Units/RPraetorian/RPraetorian.ent.xml">
 
   <properties race="RepublicanRome" />
-  <properties maxhealth="750"/>
-  <properties damage="55" armor_slash="16" armor_pierce="16"/>
+  <properties maxhealth="850"/>
+  <properties damage="60" armor_slash="15" armor_pierce="15"/>
   <properties speed="60"/>
   <properties unit_specials="Trample, Spike armor, Determination"/>
   

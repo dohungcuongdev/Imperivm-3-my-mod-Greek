@@ -1240,14 +1240,14 @@
 	traincommand="yes"
 	key="y"
 	help="/contents/units/TTeutonWolf"
-	costgold = "300"
+	costgold = "150"
 	costfood = "500"
 	costpop = "0"
 	execdelay = "20000"
 	rollover="Hire Teuton Wolf"
 	description="Hire Teuton Wolf"
 	method="trainex"
-	param="1, 8, TTeutonWolf, TTeutonWolf, Teuton Wolves">
+	param="1, 18, TTeutonWolf, TTeutonWolf, Teuton Wolves">
 	<src obj="TSanctuaryOfVotan"/>
 	<src obj="TTSanctuaryOfVotan"/>
 </cmd>

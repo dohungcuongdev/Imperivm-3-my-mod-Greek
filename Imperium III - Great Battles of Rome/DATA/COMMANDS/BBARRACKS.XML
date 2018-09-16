@@ -128,13 +128,13 @@
 	traincommand="yes"
 	key="z"
 	help="/contents/units/BHorseman"
-	costgold = "500"
+	costgold = "600"
 	costfood = "0"
 	costpop = "1"
 	execdelay = "20000"
 	rollover="Equip Master Horseman"
 	method="trainex"
-	param="1, 10, BHorseman, BHorseman, Fairy Horse, blacksmith"
+	param="1, 12, BHorseman, BHorseman, Fairy Horse, blacksmith"
 	sclass="BHorseman">
 	<src obj="BBarracks"/>
 </cmd>

@@ -127,13 +127,13 @@
 	traincommand="yes"
 	key="z"
 	help="/contents/units/PInmortal"
-	costgold = "450"
+	costgold = "400"
 	costfood = "0"
 	costpop = "1"
 	execdelay = "20000"
 	rollover="Equip Master Swordman"
 	method="trainex"
-	param="1, 12, PINMORTAL, PINMORTAL, Dual Swords, blacksmith"
+	param="1, 18, PINMORTAL, PINMORTAL, Dual Swords, blacksmith"
 	sclass="PINMORTAL">
 	<src obj="EBarracks"/>
 </cmd>
