@@ -136,7 +136,7 @@
 	execdelay = "20000"
 	rollover="Equip Imperial Roman Hipatista"
 	method="trainex"
-	param="1, 12, IRHipatista, IRHipatista, Heavy Shields and Spears, blacksmith"
+	param="1, 6, IRHipatista, IRHipatista, Heavy Shields and Spears, blacksmith"
 	sclass="Hipatista">
 	<src obj="IRBarracks"/>
 </cmd>
