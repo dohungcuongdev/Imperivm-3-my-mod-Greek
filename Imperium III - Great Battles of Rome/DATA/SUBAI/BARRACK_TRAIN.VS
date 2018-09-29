@@ -86,6 +86,10 @@ if (!newunit.IsHeirOf("BaseMage"))
 		newunit.AddItem("God's Gift");
 	if (EnvReadInt(.settlement, "items/God's Strength") == 1)
 		newunit.AddItem("God's Strength");
+	if (EnvReadInt(.settlement, "items/Thor's Strength") == 1)
+		newunit.AddItem("Thor's Strength");
+	if (EnvReadInt(.settlement, "items/Kingdom Helmet") == 1)
+		newunit.AddItem("Kingdom Helmet");
 	if (EnvReadInt(.settlement, "items/Veteran Guild") == 1)
 		newunit.AddItem("Veteran Guild");
 	if (EnvReadInt(.settlement, "items/Charm of Bastet") == 1)

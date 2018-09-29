@@ -1,19 +1,19 @@
-<class id="BHorseman" cpp_class="CVXUnit" parent="Horse" entity="Units/Keltill/Keltill.ent.xml">
+<class id="BKHorseman" cpp_class="CVXUnit" parent="Horse" entity="Units/Keltill/Keltill.ent.xml">
 
 	<properties race="Britain"/>
 	<properties maxhealth="650"/>
 	<properties damage="65" armor_slash="22" armor_pierce="22"/>
 	<properties speed="120"/>
 	<!-- <properties unit_specials="Charge, Triple strike, Ferocity"/> -->
-	<properties unit_specials="Deflection, Toughness"/>
+	<properties unit_specials="Life steal"/>
 	<properties healthbar_type="3"/>
 
 	<properties max_food="25"/>
 
 	<properties icon="gameres/icons/BHorseman.bmp"/>
-	<properties display_name="Master Horseman" display_name_plural="Master Horsemen"/>
+	<properties display_name="King Horseman" display_name_plural="King Horsemen"/>
 	<properties help="contents/units/GHorseman"/>
-	<properties edittree_pos="Units/New Units/Master Horseman (Britain)"/>
+	<properties edittree_pos="Units/New Units/King Horseman (Britain Kingdom)"/>
 	<sounds command="data/sound entities/VoiceGHorseman.xml"/>
 
 </class>

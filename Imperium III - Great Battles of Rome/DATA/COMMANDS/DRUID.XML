@@ -88,6 +88,7 @@
 	<src obj="RPriest" sticky="yes"/>
 	<src obj="HPriest" sticky="yes"/>
 	<src obj="GDruid" sticky="yes"/>
+	<src obj="BKDruid" sticky="yes"/>
 </cmd>
 
 <cmd name="cloud_of_plague" priority="14"
@@ -143,6 +144,7 @@
 	param="Ghoul Summoning, Requires %s1 from Temple of Thor"
 	>
 	<src obj="BDruid" sticky="yes"/>
+	<src obj="BKDruid" sticky="yes"/>
 </cmd>
 
 <cmd name="eagle_summoning" priority="15"
@@ -176,6 +178,7 @@
 	param="Wolf Summoning, Requires %s1 from Temple of Thor"
 	>
 	<src obj="BDruid"/>
+	<src obj="BKDruid"/>
 </cmd>
 
 <cmd name="twolf_summoning" priority="15"
@@ -211,6 +214,7 @@
 	coststamina = "0"
 	>
 	<src obj="BDruid"/>
+	<src obj="BKDruid"/>
 </cmd>
 
 <cmd name="mass_heal" priority="16"

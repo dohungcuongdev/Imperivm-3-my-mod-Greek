@@ -89,6 +89,7 @@
 	<src obj="RRTavern2"/>
 	<src obj="CTavern"/>
 	<src obj="TTavern"/>
+	<src obj="BKTavern"/>
 </cmd>
 
 <cmd name="trainpeasantr" priority="4"

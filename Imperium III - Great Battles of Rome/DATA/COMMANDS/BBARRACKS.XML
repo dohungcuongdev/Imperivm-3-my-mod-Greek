@@ -19,6 +19,7 @@
 	param="BSwordsman"
 	sclass="BSwordsman">
 	<src obj="BBarracks"/>
+	<src obj="BKBarracks"/>
 </cmd>
 
 <cmd name="trainBBowman" priority="4"
@@ -37,8 +38,8 @@
 	method="train"
 	param="BBowman"
 	sclass="BBowman">
-
 	<src obj="BBarracks"/>
+	<src obj="BKBarracks"/>
 </cmd>
 
 <cmd name="trainBBronzeSpearman" priority="5"
@@ -58,6 +59,7 @@
 	param="BBronzeSpearman,Spears"
 	sclass="BBronzeSpearman">
 	<src obj="BBarracks"/>
+	<src obj="BKBarracks"/>
 </cmd>
 
 <cmd name="trainBShieldBearer" priority="6"
@@ -76,8 +78,8 @@
 	method="train"
 	param="BShieldBearer,Large Shields"
 	sclass="BShieldBearer">
-
 	<src obj="BBarracks"/>
+	<src obj="BKBarracks"/>
 </cmd>
 
 <cmd name="trainBJavelineer" priority="7"
@@ -96,8 +98,8 @@
 	method="train"
 	param="BJavelineer,Javelins"
 	sclass="BJavelineer">
-
 	<src obj="BBarracks"/>
+	<src obj="BKBarracks"/>
 </cmd>
 
 <cmd name="trainBHighlander" priority="8"
@@ -117,6 +119,7 @@
 	param="BHighlander,Swords"
 	sclass="BHighlander">
 	<src obj="BBarracks"/>
+	<src obj="BKBarracks"/>
 </cmd>
 
 <cmd name="trainBHorseman" priority="9"
@@ -137,6 +140,26 @@
 	param="1, 6, BHorseman, BHorseman, Fairy Horse, blacksmith"
 	sclass="BHorseman">
 	<src obj="BBarracks"/>
+</cmd>
+
+<cmd name="trainBKHorseman" priority="9"
+	button="actions/BHorseman.bmp"
+	queueicon="gameres/icons/BHorseman.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="z"
+	help="/contents/units/BHorseman"
+	costgold = "600"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Equip King Horseman"
+	method="trainex"
+	param="1, 6, BKHorseman, BKHorseman, King Horse, blacksmith"
+	sclass="BKHorseman">
+	<src obj="BKBarracks"/>
 </cmd>
 
 </commands>

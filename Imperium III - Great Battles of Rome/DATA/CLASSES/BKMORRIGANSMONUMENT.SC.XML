@@ -1,0 +1,13 @@
+<class id="BKMorrigansMonument" cpp_class="CVXBarrack" parent="BaseArena" entity="Buildings/BMorrigansMonument/BMorrigansMonument.ent.xml">
+
+	<properties race="Britain"/>
+	<properties display_name="Morrigan's monument"/>
+	<properties radius="165" selection_radius="165"/>
+	<properties help="/contents/buildings/BArena"/>
+
+	<properties edittree_pos="Structures/Stronghold (Britain Kingdom)/Morrigan's monument"/>
+	<properties auto_repair="no"/>
+	<properties icon="gameres/icons/BMorrigansMonument.bmp"/>
+	<sounds select="Sounds/selection/briton_morrigansmonument.wav"/>
+
+</class>

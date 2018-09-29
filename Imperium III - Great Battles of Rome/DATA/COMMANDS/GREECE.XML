@@ -593,7 +593,7 @@
 	cursor=""
 	researchcommand="yes"
 	costgold="1600"
-	execdelay="30000"
+	execdelay="20000"
 	method="research"
 	param = "ReqSet, Trade Routes,default, NameSet, Religious Feast,default"
 	description="Heals the warriors around the townhall"

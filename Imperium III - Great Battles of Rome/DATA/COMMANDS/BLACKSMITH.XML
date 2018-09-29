@@ -26,6 +26,7 @@
 	<src obj="EEEBlacksmith"/>
 	<src obj="GGBlacksmith"/>
 	<src obj="CCBlacksmith"/>
+	<src obj="BKBlacksmith"/>
 </cmd>
 
 <cmd name="Strenghten Stronghold Defences I" priority="10"
@@ -57,6 +58,7 @@
 	<src obj="TTBlacksmith"/>
 	<src obj="GGBlacksmith"/>
 	<src obj="CCBlacksmith"/>
+	<src obj="BKBlacksmith"/>
 </cmd>
 
 <cmd name="Strenghten Stronghold Defences II" priority="10"
@@ -88,6 +90,7 @@
 	<src obj="TTBlacksmith"/>
 	<src obj="GGBlacksmith"/>
 	<src obj="CCBlacksmith"/>
+	<src obj="BKBlacksmith"/>
 </cmd>
 <!-- ROMAN BLACKSMITH COMMANDS -->
 
@@ -701,6 +704,7 @@
 	method="research"
 	param="NameSet,Spears,default, NameSet, BBronzeSpearman,">
 	<src obj="BBlacksmith"/>
+	<src obj="BKBlacksmith"/>
 </cmd>
 
 <cmd name="Britain Large Shields" priority="2"
@@ -717,6 +721,7 @@
 	method="research"
 	param="NameSet,Large Shields,default, NameSet, BShieldBearer,">
 	<src obj="BBlacksmith"/>
+	<src obj="BKBlacksmith"/>
 </cmd>
 
 <cmd name="Britain Javelins" priority="3"
@@ -733,7 +738,9 @@
 	method="research"
 	param="NameSet,Javelins,default, NameSet, BJavelineer,">
 	<src obj="BBlacksmith"/>
+	<src obj="BKBlacksmith"/>
 </cmd>
+
 <cmd name="Britain Swords" priority="3"
 	queueicon="gameres/icons/upgrades/CSwords.bmp"
 	key="w"
@@ -748,6 +755,7 @@
 	method="research"
 	param="NameSet,Swords,default, NameSet, BHighlander,">
 	<src obj="BBlacksmith"/>
+	<src obj="BKBlacksmith"/>
 </cmd>
 
 <!--          Egypt blacksmith    -->
@@ -1055,6 +1063,22 @@
 	method="research"
 	param="NameSet,Fairy Horse, default, NameSet, BHorseman">
 	<src obj="BBlacksmith"/>
+</cmd>
+
+<cmd name="King Horse" priority="6"
+	queueicon="gameres/icons/upgrades/LIDERI.bmp"
+	button="upgrades/ILIDER.bmp"
+	key="h"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "6000"
+	costfood = "0"
+	execdelay = "60000"
+	rollover="King Horse"
+	description="Allows King Horsemen to be equipped in the Barracks"
+	method="research"
+	param="NameSet,King Horse, default, NameSet, BKHorseman">
+	<src obj="BKBlacksmith"/>
 </cmd>
 
 <cmd name="Heavy Swords and Shields" priority="6"

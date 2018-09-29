@@ -79,6 +79,7 @@
 	description="Increases the stronghold population by 10"
 	rollover="Increase population">
 	<src obj="BTavern"/>
+	<src obj="BKTavern"/>
 </cmd>
 
 <cmd name="HAddPop" priority="2"
@@ -179,6 +180,7 @@
 	rollover="Gambling"
 	>
 	<src obj="BTavern"/>
+	<src obj="BKTavern"/>
 </cmd>
 
 <cmd name="Gambler's Day" priority="23"
@@ -194,6 +196,7 @@
 	researchcommand="yes"
 	param="ReqSet, Gambling, default, SetsPlr, GamblersDayChance, 35, NamePlr, Gambler's Day, default">
 	<src obj="BTavern"/>
+	<src obj="BKTavern"/>
 </cmd>
 
 <cmd name="Gambler's Test" priority="24"
@@ -209,6 +212,7 @@
 	researchcommand="yes"
 	param="ReqSet, Gambling, default, SetsPlr, GamblersTestChance, 4, NamePlr, Gambler's Test, default">
 	<src obj="BTavern"/>
+	<src obj="BKTavern"/>
 </cmd>
 
 <cmd name="Gambler's Luck" priority="24"
@@ -224,6 +228,7 @@
 	researchcommand="yes"
 	param="ReqSet, Gambling, default, SetsPlr, GamblersLuckChance, 20, NamePlr, Gambler's Luck, default">
 	<src obj="BTavern"/>
+	<src obj="BKTavern"/>
 </cmd>
 
 <cmd name="Import horses" priority="9"
@@ -270,6 +275,21 @@
 	method="sellfoodforgold"
 	param="Free Drinks">
 	<src obj="ITavern"/>
+</cmd>
+
+<cmd name="Sell food" priority="9"
+	traincommand="yes"
+	groupverifier="data/subai/verify_isresearched.vs"
+	button="actions/sell food.bmp"
+	queueicon="gameres/icons/upgrades/Sell Food.bmp"
+	key="s"
+	costfood="1000"
+	rollover="Sell food"
+	execdelay="12000"
+	description="Sells 1000 food at the market for 500 gold"
+	method="sellfoodforgold"
+	param="Gambling">
+	<src obj="BKTavern"/>
 </cmd>
 
 <cmd name="Scout Area" priority="12"
@@ -496,6 +516,7 @@
 	description="Gathers %s1 gold in each outpost you own. The amount of gold increases by 500 every 10 minutes (though not over 2000)"
 	rollover="Tribute (once per game)">
 	<src obj="BTavern"/>
+	<src obj="BKTavern"/>
 </cmd>
 
 <cmd name="TTribute" priority="13"
@@ -753,4 +774,19 @@
 	<src obj="TTavern"/>
 </cmd>
 
+<cmd name="BKReligiousFeast" priority="28"
+	queueicon="gameres/icons/upgrades/religious feast.bmp"
+	key="f"
+	button="research/religious feast.bmp"
+	groupverifier="data/subai/verify_research.vs"
+	cursor=""
+	researchcommand="yes"
+	costgold="1600"
+	execdelay="20000"
+	method="research"
+	param = "ReqSet, Gambling,default, NameSet, Religious Feast,default"
+	description="Heals the warriors around the townhall"
+	rollover="Religious Feast">
+	<src obj="BKTavern"/>
+</cmd>
 </commands>

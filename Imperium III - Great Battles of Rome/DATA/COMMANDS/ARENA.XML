@@ -61,7 +61,9 @@
 	method="research"
 	param="SetsPlr, standard_spawn_level, 4,NameSet, Fights, default,">
 	<src obj="BMorrigansMonument"/>
+	<src obj="BKMorrigansMonument"/>
 </cmd>
+
 <cmd name="RGladiator Shows2" priority="2"
 	button="Upgrades/Gladiator Show.bmp"
 	key="s"
@@ -488,6 +490,23 @@
 	<src obj="BMorrigansMonument"/>
 </cmd>
 
+<cmd name="hireheroBK" priority="1"
+	button="actions/hire heroB.bmp"
+	queueicon="gameres/icons/hire heroB.bmp"
+	groupverifier="data/subai/verify_cmdcost_building.vs"
+	traincommand="yes"
+	key="h"
+	costgold = "1200"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "20000"
+	param = "BritonKHero"
+	method="hirehero"
+	help="/contents/units/BHero"
+	rollover="Hire hero">
+	<src obj="BKMorrigansMonument"/>
+</cmd>
+
 <cmd name="hireheroT" priority="1"
 	button="actions/hire heroT.bmp"
 	queueicon="gameres/icons/hire heroT.bmp"
@@ -599,8 +618,8 @@
 </cmd>
 
 <cmd name="Hire Viking Lord" priority="10"
-	button="actions/hire BVikingLord.bmp"
-	queueicon="gameres/icons/BVikingLord.bmp"
+	button="actions/HIRE THORIC.bmp"
+	queueicon="gameres/icons/VIKING LORD.bmp"
 	transpicon="1"
 	groupverifier="data/subai/verify_trainex.vs"
 	onaddremovescript="data/subai/trainex_onaddremove.vs"
@@ -616,6 +635,27 @@
 	method="trainex"
 	param="1, 4, BVikingLord, BVikingLord, Fights">
 	<src obj="BMorrigansMonument"/>
+	<src obj="BKMorrigansMonument"/>
+</cmd>
+
+<cmd name="Hire Viking Hero" priority="10"
+	button="actions/hire BVikingLord.bmp"
+	queueicon="gameres/icons/BVikingLord.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="k"
+	help="/contents/units/GVikingLord"
+	costgold = "2000"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "20000"
+	rollover="Hire Viking Hero"
+	description="Hires a Viking Hero"
+	method="trainex"
+	param="1, 1, BKVikingLord, BKVikingLord, Shrine of Thor">
+	<src obj="BKMorrigansMonument"/>
 </cmd>
 
 <cmd name="Shrine of Thor" priority="11"
@@ -633,6 +673,7 @@
 	method="research"
 	param="ReqSet, Fights, default, NameSet, Shrine of Thor, default, SetsSet, levels/BVikingLord, 4">
 	<src obj="BMorrigansMonument"/>
+	<src obj="BKMorrigansMonument"/>
 </cmd>
 
 <cmd name="Hire Liberati" priority="4"
@@ -815,6 +856,38 @@
 	<src obj="IArena"/>
 </cmd>
 
+<cmd name="Britain Training" priority="3"
+	button="research/Advanced training.bmp"
+	key="t"
+	queueicon="gameres/icons/upgrades/atrain.bmp"
+	costgold = "1500"
+	costfood = "0"
+	execdelay = "15000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Advanced training"
+	description="Allows warriors to train to level 8"
+	method="research"
+	researchcommand="yes"
+	param="ReqSet, Fights, default ,SetsPlr, maxtrainlevel, 8, NamePlr, Advanced Training, default">
+	<src obj="BKMorrigansMonument"/>
+</cmd>
+
+<cmd name="Kingdom Helmet" priority="12"
+	button="upgrades/veterans guild.bmp"
+	key="g"
+	queueicon="gameres/icons/upgrades/veterans guild.bmp"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "30000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Kingdom Helmet"
+	description="All new warriors have Kingdom Helmet (+6 armor)"
+	method="research"
+	researchcommand="yes"
+	param="ReqSet, Fights, default, NameSet, Kingdom Helmet, default, SetsSet, items/Kingdom Helmet, 1">
+	<src obj="BKMorrigansMonument"/>
+</cmd>
+
 <cmd name="BNobility" priority="6"
 	button="upgrades/nobility.bmp"
 	key="n"
@@ -829,7 +902,9 @@
 	researchcommand="yes"
 	param="ReqSet, Fights, default, NamePlr, Nobility, default">
 	<src obj="BMorrigansMonument"/>
+	<src obj="BKMorrigansMonument"/>
 </cmd>
+
 <cmd name="Noble Offence" priority="7"
 	button="research/noble offence.bmp"
 	key="o"
@@ -844,7 +919,9 @@
 	researchcommand="yes"
 	param="ReqSet, Fights, default, NamePlr, Noble Offence, default">
 	<src obj="BMorrigansMonument"/>
+	<src obj="BKMorrigansMonument"/>
 </cmd>
+
 <cmd name="Noble Defence" priority="8"
 	button="research/noble defence.bmp"
 	key="d"
@@ -859,6 +936,7 @@
 	researchcommand="yes"
 	param="ReqSet, Fights, default, NamePlr, Noble Defence, default">
 	<src obj="BMorrigansMonument"/>
+	<src obj="BKMorrigansMonument"/>
 </cmd>
 
 <cmd name="Standartization I" priority="2"

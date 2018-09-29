@@ -66,6 +66,7 @@
 	<src obj="BTownhall"/>
 	<src obj="ETownhall"/>
 	<src obj="TTownhall"/>
+	<src obj="BKTownhall"/>
 </cmd>
 
 <cmd name="autotrain_stop_cbet" priority="8"
@@ -80,6 +81,7 @@
 	<src obj="BTownhall"/>
 	<src obj="ETownhall"/>
 	<src obj="TTownhall"/>
+	<src obj="BKTownhall"/>
 </cmd>
 
 <cmd name="autotrain_start_i" priority="8"
@@ -118,6 +120,7 @@
 	>
 	<src obj="GTownhall"/>
 	<src obj="BTownhall"/>
+	<src obj="BKTownhall"/>
 </cmd>
 
 <cmd name="healing" priority="10"
@@ -133,6 +136,7 @@
 	description = "Restores 2000 health between the friendly warriors around the townhall"
 	>
 	<src obj="ITownhall"/>
+	<src obj="BKTownhall"/>
 </cmd>
 
 <!-- AI only -->
