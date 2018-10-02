@@ -2,9 +2,9 @@
 
 	<properties race="Britain"/>
 	<properties maxhealth="2000"/>
-	<properties damage="200" armor_slash="6" armor_pierce="6"/>
+	<properties damage="150" armor_slash="16" armor_pierce="16"/>
 	<properties speed="80"/>
-	<properties HeroSkills="Defensive cry, Assault, Team attack, Administration, Euphoria"/>
+	<properties HeroSkills="Defensive cry, Assault, Team attack, Administration, Euphoria, Epic endurance, Epic attack, Epic armor"/>
 
 	<properties icon="gameres/icons/BVikingLord.bmp"/>
 	<properties display_name="Viking Hero" display_name_plural="Viking Heroes"/>

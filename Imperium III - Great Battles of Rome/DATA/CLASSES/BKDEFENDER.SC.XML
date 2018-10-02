@@ -1,0 +1,15 @@
+<class id="BKDefender" cpp_class="CVXUnit" parent="Melee" entity="Units/IDefender/IDefender.ent.xml">
+
+	<properties race="Britain"/>
+	<properties maxhealth="200"/>
+	<properties damage="16" armor_slash="22" armor_pierce="22"/>
+	<properties speed="80"/>
+	<properties unit_specials="Deflection, Combat skill"/>
+
+	<properties icon="gameres/icons/IDefender.bmp"/>
+	<properties display_name="Defender" display_name_plural="Defenders"/>
+	<properties help="contents/units/IDefender"/>
+	<properties edittree_pos="Units/Britain Kingdom/Defender"/>
+	<sounds attack="UnitPikeFight" command="data/sound entities/VoiceIDefender.xml"/>
+
+</class>

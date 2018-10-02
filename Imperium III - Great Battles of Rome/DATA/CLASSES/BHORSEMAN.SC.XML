@@ -2,7 +2,7 @@
 
 	<properties race="Britain"/>
 	<properties maxhealth="650"/>
-	<properties damage="65" armor_slash="22" armor_pierce="22"/>
+	<properties damage="70" armor_slash="20" armor_pierce="20"/>
 	<properties speed="120"/>
 	<!-- <properties unit_specials="Charge, Triple strike, Ferocity"/> -->
 	<properties unit_specials="Deflection, Toughness"/>
