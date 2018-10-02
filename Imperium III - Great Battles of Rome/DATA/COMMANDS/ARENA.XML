@@ -864,11 +864,11 @@
 	costfood = "0"
 	execdelay = "15000"
 	groupverifier="data/subai/verify_research.vs"
-	rollover="Advanced training"
+	rollover="Britain training"
 	description="Allows warriors to train to level 8"
 	method="research"
 	researchcommand="yes"
-	param="ReqSet, Fights, default ,SetsPlr, maxtrainlevel, 8, NamePlr, Advanced Training, default">
+	param="ReqSet, Fights, default ,SetsPlr, maxtrainlevel, 8, NamePlr, Britain Training, default">
 	<src obj="BKMorrigansMonument"/>
 </cmd>
 

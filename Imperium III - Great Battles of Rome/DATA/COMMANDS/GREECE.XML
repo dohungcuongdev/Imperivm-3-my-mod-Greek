@@ -202,7 +202,7 @@
 	button="Upgrades/Greek chariot wheels.bmp"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
-	costgold = "1200"
+	costgold = "2000"
 	costfood = "0"
 	execdelay = "30000"
 	rollover="Chariot Wheels"

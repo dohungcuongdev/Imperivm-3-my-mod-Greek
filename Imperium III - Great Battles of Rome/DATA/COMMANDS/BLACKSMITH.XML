@@ -27,6 +27,7 @@
 	<src obj="GGBlacksmith"/>
 	<src obj="CCBlacksmith"/>
 	<src obj="BKBlacksmith"/>
+	<src obj="UnionBlacksmith"/>
 </cmd>
 
 <cmd name="Strenghten Stronghold Defences I" priority="10"
@@ -59,6 +60,7 @@
 	<src obj="GGBlacksmith"/>
 	<src obj="CCBlacksmith"/>
 	<src obj="BKBlacksmith"/>
+	<src obj="UnionBlacksmith"/>
 </cmd>
 
 <cmd name="Strenghten Stronghold Defences II" priority="10"
@@ -90,6 +92,23 @@
 	<src obj="TTBlacksmith"/>
 	<src obj="GGBlacksmith"/>
 	<src obj="CCBlacksmith"/>
+	<src obj="BKBlacksmith"/>
+	<src obj="UnionBlacksmith"/>
+</cmd>
+
+<cmd name="Strenghten Stronghold Defences III" priority="10"
+	queueicon="gameres/icons/upgrades/Stronghold Defense2.bmp"
+	key="d"
+	button="research/Stronghold Defense2.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Strengthen Stronghold Defenses III"
+	description="Makes the defenders at the stronghold walls level 36"
+	method="research"
+	param="ReqSet,Strenghten Stronghold Defences II,,NameSet,Strenghten Stronghold Defences III,default,SetsSet,SentriesLevel,36">
 	<src obj="BKBlacksmith"/>
 </cmd>
 <!-- ROMAN BLACKSMITH COMMANDS -->
@@ -1236,5 +1255,85 @@
 	<src obj="EBlacksmith"/>
 	<src obj="EEBlacksmith"/>
 	<src obj="EEEBlacksmith"/>
+</cmd>
+
+<cmd name="Union Spears" priority="2"
+	queueicon="gameres/icons/upgrades/ISpears.bmp"
+	button="upgrades/ispears.bmp"
+	key="s"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1200"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Union Spears"
+	description="Allows Union Defenders to be equipped in the Barracks"
+	method="research"
+	param="NameSet, UnionSpears, default, NameSet, UnionDefender,">
+	<src obj="UnionBlacksmith"/>
+</cmd>
+
+<cmd name="Union Pikes" priority="4"
+	queueicon="gameres/icons/upgrades/Principle.bmp"
+	button="upgrades/pikes.bmp"
+	key="p"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Union Pikes"
+	description="Allows Union Principles to be equipped in the Barracks"
+	method="research"
+	param="NameSet, Union Pikes, default, NameSet, UnionPrinciple,">
+	<src obj="UnionBlacksmith"/>
+</cmd>
+
+<cmd name="Union Woman Armor" priority="5"
+	queueicon="gameres/icons/upgrades/fine armor.bmp"
+	button="upgrades/fine armor.bmp"
+	key="w"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Union Woman Armor"
+	description="Allows Union Woman Warriors to be equipped in the Barracks"
+	method="research"
+	param="NameSet, Union Woman Armor, default, NameSet, UnionWomanWarrior">
+	<src obj="UnionBlacksmith"/>
+</cmd>
+
+<cmd name="Union Swords" priority="1"
+	queueicon="gameres/icons/upgrades/CSwords.bmp"
+	button="upgrades/CSwords.bmp"
+	key="b"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Union Swords"
+	description="Allows Union Berber Assassin to be hired in the Barracks"
+	method="research"
+	param="NameSet, Union Swords, default, NameSet, UnionBerberAssassin">
+	<src obj="UnionBlacksmith"/>
+</cmd>
+
+<cmd name="Union Chariot Wheels" priority="3"
+	queueicon="gameres/icons/upgrades/Greek chariot wheels.bmp"
+	key="c"
+	button="Upgrades/Greek chariot wheels.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Chariot Wheels"
+	description="Allows Chariots to be built in the Barracks"
+	method="research"
+	param="NameSet,Union Chariot Wheels,default, NameSet, HChariot,">
+	<src obj="UnionBlacksmith"/>
 </cmd>
 </commands>
