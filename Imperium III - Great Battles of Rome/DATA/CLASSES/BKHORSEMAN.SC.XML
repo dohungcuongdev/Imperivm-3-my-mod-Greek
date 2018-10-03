@@ -10,7 +10,7 @@
 
 	<properties max_food="25"/>
 
-	<properties icon="gameres/icons/BHorseman.bmp"/>
+	<properties icon="gameres/icons/BKHORSEMAN.bmp"/>
 	<properties display_name="King Horseman" display_name_plural="King Horsemen"/>
 	<properties help="contents/units/GHorseman"/>
 	<properties edittree_pos="Units/New Units/King Horseman (Britain Kingdom)"/>

@@ -143,7 +143,6 @@
 	researchcommand="yes"
 	param="NameSet, Tournaments, default">
 	<src obj="IArena"/>
-	<src obj="UnionArena"/>
 </cmd>
 
 <cmd name="Gaul Training 1" priority="3"
@@ -716,8 +715,8 @@
 </cmd>
 
 <cmd name="Call Mountaineer" priority="3"
-	button="actions/train IMountaineer.bmp"
-	queueicon="gameres/icons/IMountaineer.bmp"
+	button="actions/TRAIN UNIONMOUNTAINEER.bmp"
+	queueicon="gameres/icons/UNIONMOUNTAINEER.bmp"
 	transpicon="1"
 	groupverifier="data/subai/verify_trainex.vs"
 	onaddremovescript="data/subai/trainex_onaddremove.vs"
@@ -1306,7 +1305,7 @@
 	rollover="Teuton Wolves"
 	description="Allows level 10 Teuton Wolves to be hired"
 	method="research"
-	param="ReqSet, Fights, SetsSet, levels/TTeutonWolf, 10, default, NameSet,Teuton Wolves, default">
+	param="ReqSet, Fights, default, SetsSet, levels/TTeutonWolf, 10, default, NameSet,Teuton Wolves, default">
 	<src obj="TSanctuaryOfVotan"/>
 	<src obj="TTSanctuaryOfVotan"/>
 </cmd>
@@ -1332,35 +1331,51 @@
 	<src obj="TTSanctuaryOfVotan"/>
 </cmd>
 
+<cmd name="Union Tournaments" priority="2"
+	button="Upgrades/Tournaments.bmp"
+	key="t"
+	queueicon="gameres/icons/upgrades/Tournaments.bmp"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "20000"
+	groupverifier="data/subai/verify_research.vs"
+	description="Allows Union Mountaineers to be hired"
+	rollover="Tournaments"
+	method="research"
+	researchcommand="yes"
+	param="NameSet, Tournaments, default">
+	<src obj="UnionArena"/>
+</cmd>
+
 <cmd name="Union Mountain Clan" priority="4"
 	queueicon="gameres/icons/upgrades/mountain clan.bmp"
 	button="upgrades/mountain clan.bmp"
 	key="c"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
-	costgold = "3000"
+	costgold = "2000"
 	costfood = "0"
-	execdelay = "30000"
+	execdelay = "20000"
 	rollover="Union Mountain Clan"
-	description="Allows Union Mountaineers to be hired"
+	description="All new Union Mountaineers are level 14"
 	method="research"
-	param="ReqSet, Tournaments, NamePlr, Union Mountain Clan, default">
+	param = "ReqSet, Tournaments, default, SetsSet, levels/UnionMountaineer, 14, default, NameSet, Union Mountain Clan, default">
 	<src obj="UnionArena"/>
 </cmd>
 
-<cmd name="Union Mountain Clan Legacy" priority="3"
+<cmd name="Union Mountain Clan Legacy" priority="4"
 	button="upgrades/mountain clan legacy.bmp"
 	key="c"
 	queueicon="gameres/icons/upgrades/mountain clan legacy.bmp"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
-	costgold = "3000"
+	costgold = "2000"
 	costfood = "0"
-	execdelay = "30000"
+	execdelay = "20000"
 	rollover="Union Mountain Clan Legacy"
-	description="All new Union Mountaineers are level 24"
+	description="All new Union Mountaineers are level 28"
 	method="research"
-	param="ReqSet, Union Mountain Clan, SetsSet, levels/UnionMountaineer, 24, default, NameSet,Union Mountain Clan Legacy, default">
+	param="ReqSet, Union Mountain Clan, default, SetsSet, levels/UnionMountaineer, 28, default, NameSet,Union Mountain Clan Legacy, default">
 	<src obj="UnionArena"/>
 </cmd>
 
@@ -1380,7 +1395,7 @@
 	rollover="Hires a Union Mountaineer"
 	description="Hires a Union Mountaineer"
 	method="trainex"
-	param="1, 10, UnionMountaineer, UnionMountaineer, Union Mountain Clan">
+	param="1, 8, UnionMountaineer, UnionMountaineer, Tournaments">
 	<src obj="UnionArena"/>
 </cmd>
 </commands>

@@ -5,7 +5,6 @@
 	<properties damage="50" armor_slash="14" armor_pierce="14"/>
 	<properties speed="80"/>
 	<properties unit_specials="Trample, Triple strike"/>
-	<properties feeds="0"/>
 
 	<properties icon="gameres/icons/IMountaineer.bmp"/>
 	<properties display_name="Union Mountaineer" display_name_plural="Union Mountaineers"/>
