@@ -1,6 +1,6 @@
 <class id="UnionWomanWarrior" cpp_class="CVXUnit" parent="Melee" entity="Units/GWomanWarrior/GWomanWarrior.ent.xml">
 
-	<properties race="Iberia"/>
+	<properties race="Gaul"/>
 	<properties maxhealth="340"/>
 	<properties damage="30" armor_slash="16" armor_pierce="16"/>
 	<properties speed="80"/>

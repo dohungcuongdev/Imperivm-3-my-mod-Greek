@@ -143,6 +143,7 @@
 	researchcommand="yes"
 	param="NameSet, Tournaments, default">
 	<src obj="IArena"/>
+	<src obj="UnionArena"/>
 </cmd>
 
 <cmd name="Gaul Training 1" priority="3"
@@ -328,9 +329,9 @@
 	description="Increases heroes' experience with time"
 	method="research"
 	researchcommand="yes"
-	param = "ReqSet, Tournaments, default, NamePlr, Heroes' Wisdom, "
-	>
+	param = "ReqSet, Tournaments, default, NamePlr, Heroes' Wisdom, ">
 	<src obj="IArena"/>
+	<src obj="UnionArena"/>
 </cmd>
 
 <cmd name="Warriors' Wisdom" priority="3"
@@ -345,9 +346,9 @@
 	description="Increases warriors' experience with time until they reach level 12"
 	method="research"
 	researchcommand="yes"
-	param = "ReqSet, Tournaments, , ReqPlr, Heroes' Wisdom, , NamePlr, Warriors' Wisdom, default "
-	>
+	param = "ReqSet, Tournaments, , ReqPlr, Heroes' Wisdom, , NamePlr, Warriors' Wisdom, default ">
 	<src obj="IArena"/>
+	<src obj="UnionArena"/>
 </cmd>
 
 <cmd name="Mahout School" priority="3"
@@ -454,6 +455,7 @@
 	help="/contents/units/IHero"
 	rollover="Hire hero">
 	<src obj="IArena"/>
+	<src obj="UnionArena"/>
 </cmd>
 
 <cmd name="hireheroE" priority="1"
@@ -709,8 +711,7 @@
 	description="Increases the limit of Mountaineers you can have to 20"
 	method="research"
 	researchcommand="yes"
-	param = "ReqSet, Tournaments, default, NamePlr, Mountain Clan, , SetsPlr, MaxMountaineers, 20"
-	>
+	param = "ReqSet, Tournaments, default, NamePlr, Mountain Clan, , SetsPlr, MaxMountaineers, 20">
 	<src obj="IArena"/>
 </cmd>
 
@@ -854,6 +855,7 @@
 	researchcommand="yes"
 	param="ReqSet, Tournaments, default, NameSet, Veteran's guild, default, SetsSet, items/Veteran Guild, 1">
 	<src obj="IArena"/>
+	<src obj="UnionArena"/>
 </cmd>
 
 <cmd name="Britain Training" priority="3"
@@ -1195,14 +1197,14 @@
 	onaddremovescript="data/subai/trainex_onaddremove.vs"
 	traincommand="yes"
 	help="/contents/units/RLiberatus"
-	costgold = "2500"
+	costgold = "1000"
 	costfood = "0"
 	costpop = "0"
-	execdelay = "25000"
+	execdelay = "15000"
 	rollover="Call Valkyries"
-	description="Calls 12 Valkyries"
+	description="Calls 5 Valkyries"
 	method="trainex"
-	param="12, 24, TValkyrie, TValkyrie,Fights">
+	param="5, 15, TValkyrie, TValkyrie,Fights">
 	<src obj="TSanctuaryOfVotan"/>
 	<src obj="TTSanctuaryOfVotan"/>
 </cmd>
@@ -1328,5 +1330,57 @@
 	param="1, 10, TTeutonWolf, TTeutonWolf, Teuton Wolves">
 	<src obj="TSanctuaryOfVotan"/>
 	<src obj="TTSanctuaryOfVotan"/>
+</cmd>
+
+<cmd name="Union Mountain Clan" priority="4"
+	queueicon="gameres/icons/upgrades/mountain clan.bmp"
+	button="upgrades/mountain clan.bmp"
+	key="c"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Union Mountain Clan"
+	description="Allows Union Mountaineers to be hired"
+	method="research"
+	param="ReqSet, Tournaments, NamePlr, Union Mountain Clan, default">
+	<src obj="UnionArena"/>
+</cmd>
+
+<cmd name="Union Mountain Clan Legacy" priority="3"
+	button="upgrades/mountain clan legacy.bmp"
+	key="c"
+	queueicon="gameres/icons/upgrades/mountain clan legacy.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Union Mountain Clan Legacy"
+	description="All new Union Mountaineers are level 24"
+	method="research"
+	param="ReqSet, Union Mountain Clan, SetsSet, levels/UnionMountaineer, 24, default, NameSet,Union Mountain Clan Legacy, default">
+	<src obj="UnionArena"/>
+</cmd>
+
+<cmd name="Call Union Mountaineer" priority="3"
+	button="actions/train IMountaineer.bmp"
+	queueicon="gameres/icons/IMountaineer.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="m"
+	help="/contents/units/TTeutonWolf"
+	costgold = "500"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "20000"
+	rollover="Hires a Union Mountaineer"
+	description="Hires a Union Mountaineer"
+	method="trainex"
+	param="1, 10, UnionMountaineer, UnionMountaineer, Union Mountain Clan">
+	<src obj="UnionArena"/>
 </cmd>
 </commands>

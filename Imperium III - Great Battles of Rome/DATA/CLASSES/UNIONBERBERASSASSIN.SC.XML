@@ -1,6 +1,6 @@
 <class id="UnionBerberAssassin" cpp_class="CVXUnit" parent="Melee" entity="Units/CBerberAssassin/CBerberAssassin.ent.xml">
 
-	<properties race="Iberia"/>
+	<properties race="Carthage"/>
 	<properties maxhealth="270"/>
 	<properties damage="20" armor_slash="8" armor_pierce="8"/>
 	<properties speed="80"/>
