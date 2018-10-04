@@ -9,6 +9,7 @@
 	<properties icon="gameres/icons/HMyrmidon.bmp"/>
 	<properties display_name="Myrmidon" display_name_plural="Myrmidons"/>
 	<properties help="contents/units/HMyrmidon"/>
+	<properties edittree_pos="Units/Greece/Myrmidon Sword"/>
 	<method sig="change_weapon_javelin" vs="data/subai/myrmidon_javelin.vs"/>
 	<sounds command="data/sound entities/VoiceMyrmidon.xml"/>
 

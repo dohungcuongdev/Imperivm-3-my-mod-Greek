@@ -454,7 +454,6 @@
 	help="/contents/units/IHero"
 	rollover="Hire hero">
 	<src obj="IArena"/>
-	<src obj="UnionArena"/>
 </cmd>
 
 <cmd name="hireheroE" priority="1"
@@ -1387,7 +1386,7 @@
 	onaddremovescript="data/subai/trainex_onaddremove.vs"
 	traincommand="yes"
 	key="m"
-	help="/contents/units/TTeutonWolf"
+	help="/contents/units/IMountaineer"
 	costgold = "500"
 	costfood = "0"
 	costpop = "0"
@@ -1396,6 +1395,38 @@
 	description="Hires a Union Mountaineer"
 	method="trainex"
 	param="1, 8, UnionMountaineer, UnionMountaineer, Tournaments">
+	<src obj="UnionArena"/>
+</cmd>
+
+<cmd name="Herb Amulets of Luck" priority="20"
+	method="research"
+	queueicon="gameres/icons/upgrades/Herb Amulets Of Luck.bmp"
+	button="upgrades/Herb Amulets Of Luck.bmp"
+	key="h"
+	rollover="Herb amulets of Luck"
+	description="Starts equipping all units with Herb Amulet of Luck (+2 HP regen per second)"
+	costgold="2000"
+	execdelay="20000"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	param="ReqSet, Tournaments, default, NameSet, Herb Amulets of Luck, default, SetsSet, items/Herb amulet of luck, 1">
+	<src obj="UnionArena"/>
+</cmd>
+
+<cmd name="hireheroU" priority="1"
+	button="actions/hire heroI.bmp"
+	queueicon="gameres/icons/hire heroI.bmp"
+	groupverifier="data/subai/verify_cmdcost_building.vs"
+	traincommand="yes"
+	key="h"
+	costgold = "2000"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "20000"
+	param = "UnionHero"
+	method="hirehero"
+	help="/contents/units/IHero"
+	rollover="Hire hero">
 	<src obj="UnionArena"/>
 </cmd>
 </commands>

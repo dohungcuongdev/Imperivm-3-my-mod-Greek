@@ -1,0 +1,11 @@
+<class id="UnionHero" cpp_class="CVXHero" parent="HeroMounted" entity="">
+
+	<properties maxhealth="1200"/>
+	<properties damage="40" armor_slash="20" armor_pierce="20"/>
+	<properties race="Iberia"/>
+	<properties HeroSkills="Battle cry, Defensive cry, Team attack, Team defense, Survival, Quick March, Euphoria, Epic endurance"/>
+	<properties help="/contents/units/IHero"/>
+
+	<sounds command="data/sound entities/VoiceIHero.xml"/>
+
+</class>

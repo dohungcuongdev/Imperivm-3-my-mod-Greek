@@ -1,0 +1,7 @@
+<class id="UnionHero4b" cpp_class="CVXHero" parent="UnionHero" entity="Units/IHero4/IHero4.ent.xml">
+
+	<properties display_name="Biurpan" display_name_plural="Heroes"/>
+	<properties icon="gameres/icons/IHero4.bmp"/>
+	<properties edittree_pos="Units/Union Iberia/Hero 4"/>
+
+</class>
