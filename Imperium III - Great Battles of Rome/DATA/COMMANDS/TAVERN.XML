@@ -64,6 +64,7 @@
 	description="Increases the stronghold population by 10"
 	rollover="Increase population">
 	<src obj="ITavern"/>
+	<src obj="UnionTavern"/>
 </cmd>
 
 <cmd name="BAddPop" priority="2"
@@ -161,9 +162,9 @@
 	method="research"
 	param="NameSet, Free Drinks, default"
 	description="Attracts 10 population to the stronghold (works only once)"
-	rollover="Free Drinks"
-	>
+	rollover="Free Drinks">
 	<src obj="ITavern"/>
+	<src obj="UnionTavern"/>
 </cmd>
 
 <cmd name="Gambling" priority="8"
@@ -275,6 +276,7 @@
 	method="sellfoodforgold"
 	param="Free Drinks">
 	<src obj="ITavern"/>
+	<src obj="UnionTavern"/>
 </cmd>
 
 <cmd name="Sell food" priority="9"
@@ -388,6 +390,7 @@
 	groupverifier="data/subai/verify_research.vs"
 	param="ReqSet, Nordic trade routes, , NameSet, Belts of Might, default, SetsSet, items/Belt of might, 1">
 	<src obj="GTavern"/>
+	<src obj="UnionTavern"/>
 </cmd>
 
 <cmd name="getloan" priority="18"
@@ -499,6 +502,7 @@
 	description="Gathers %s1 gold in each outpost you own. The amount of gold increases by 500 every 10 minutes (though not over 2000)"
 	rollover="Tribute (once per game)">
 	<src obj="ITavern"/>
+	<src obj="UnionTavern"/>
 </cmd>
 
 <cmd name="BTribute" priority="22"
@@ -581,7 +585,8 @@
 	description="Increases the maximum population of the stronghold by 20"
 	method="research"
 	param="ReqSet, Free Drinks, default, NameSet, Housing, default">
-<src obj="ITavern"/>
+	<src obj="ITavern"/>
+	<src obj="UnionTavern"/>
 </cmd>
 
 <cmd name="Mercenary pact" priority="9"
@@ -632,6 +637,7 @@
 	description="Drafts 50 peasants, making them Militiamen"
 	rollover="Call to arms">
 	<src obj="ITavern"/>
+	<src obj="UnionTavern"/>
 </cmd>
 
 <!--             Egypt         -->
@@ -788,5 +794,20 @@
 	description="Heals the warriors around the townhall"
 	rollover="Religious Feast">
 	<src obj="BKTavern"/>
+</cmd>
+
+<cmd name="Nordic trade routes" priority="20"
+	method="research"
+	queueicon="gameres/icons/upgrades/Routes.bmp"
+	button="upgrades/Routes.bmp"
+	key="n"
+	rollover="Nordic trade routes"
+	description="Equips all new warriors with Bear teeth amulets (+5 attack)"
+	costgold="2500"
+	execdelay="25000"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	param="ReqSet, Free Drinks, default, NameSet, Nordic trade routes, , SetsSet, items/Bear teeth amulet, 1">
+	<src obj="UnionTavern"/>
 </cmd>
 </commands>

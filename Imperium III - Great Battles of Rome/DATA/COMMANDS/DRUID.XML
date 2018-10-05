@@ -71,6 +71,7 @@
 		default-text="Right-click to teach ally"/>
 
 	<src obj="IEnchantress" sticky="yes"/>
+	<src obj="UnionEnchantress" sticky="yes"/>
 </cmd>
 
 <cmd name="heal" priority="11"
@@ -89,6 +90,7 @@
 	<src obj="HPriest" sticky="yes"/>
 	<src obj="GDruid" sticky="yes"/>
 	<src obj="BKDruid" sticky="yes"/>
+	<src obj="UnionEnchantress" sticky="yes"/>
 </cmd>
 
 <cmd name="cloud_of_plague" priority="14"
@@ -122,6 +124,7 @@
 	description="Creates a cloud that reduces all combat damage allies receive by half (sacrificing the enchantress' life)"
 	param="Cover of Mercy, Requires %s1 from Sanctuary">
 	<src obj="IEnchantress" sticky="yes"/>
+	<src obj="UnionEnchantress" sticky="yes"/>
 </cmd>
 
 <cmd name="ghoul_summoning" priority="14"
@@ -226,6 +229,7 @@
 	param="Mass Heal, Requires %s1 from Sanctuary">
 
 	<src obj="IEnchantress"/>
+	<src obj="UnionEnchantress"/>
 </cmd>
 
 <cmd name="t_mass_heal" priority="16"
