@@ -14,7 +14,7 @@
 	<properties help="contents/units/Wolf"/>
 	<properties edittree_pos="Units/Animals/Wolf"/>
 	
-	<properties unit_specials="Regeneration"/>
+	<properties unit_specials="Keen sight, Freedom"/>
 
 	<defaultcmd target="">
 		<cmd name="move"/>

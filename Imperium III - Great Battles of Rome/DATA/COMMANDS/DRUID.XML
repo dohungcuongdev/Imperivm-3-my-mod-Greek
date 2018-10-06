@@ -316,4 +316,27 @@
 	<src obj="EPriest"/>
 </cmd>
 
+<cmd name="lion_summoning" priority="15"
+	button="actions/summon lion.bmp"
+	key="l"
+	groupverifier="data/subai/verify_isresearched.vs"
+	rollover="Lion Summoning"
+	description="Summon a Lion"
+	param="Lion Summoning, Requires %s1 from Temple of Osiris"
+	>
+	<src obj="BKDruid"/>
+	<src obj="UnionEnchantress"/>
+</cmd>
+
+<cmd name="bear_summoning" priority="15"
+	button="actions/summon bear.bmp"
+	key="b"
+	groupverifier="data/subai/verify_isresearched.vs"
+	rollover="bear summoning"
+	description="Summon a Bear"
+	param="Bear Summoning, Requires %s1 from Sanctuary"
+	>
+	<src obj="BKDruid"/>
+
+</cmd>
 </commands>

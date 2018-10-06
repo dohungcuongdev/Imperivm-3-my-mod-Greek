@@ -1,12 +1,12 @@
-<class id="LionF" cpp_class="CVXUnit" parent="BaseAnimal" entity="units/LionF/LionF.ent.xml">
+<class id="LionF" cpp_class="CVXUnit" parent="AttackAnimal" entity="units/LionF/LionF.ent.xml">
 
 	<properties maxhealth="300"/>
-	<properties damage="16" armor_slash="2" armor_pierce="2"/>
+	<properties damage="25" armor_slash="2" armor_pierce="2"/>
 
 	<properties damage_type="slash"/>
-	<properties radius="40" selection_radius="40"/>
-	<properties sight="600"/>
-	<properties speed="50"/>
+	<properties radius="20" selection_radius="40"/>
+	<properties sight="400"/>
+	<properties speed="120"/>
 	<properties healthbaroffset="-30"/>
 
 	<properties icon="gameres/icons/lionF.bmp"/>
@@ -14,7 +14,7 @@
 	<properties help="contents/units/Lioness"/>
 	<properties edittree_pos="Units/Animals/Lioness (aggressive)"/>
 	
-	<properties unit_specials="Triple strike"/>
+	<properties unit_specials="Toughness, Freedom"/>
 
 	<method sig="idle" vs="data/subai/lion_idle.vs"/>
 	<method sig="attack" vs="data/subai/unit_advance.vs"/>
@@ -29,4 +29,13 @@
 		attack="Sounds/animals/Lion/Lion_attack.wav"
 		command="Sounds/animals/Lion/Lion_idle.wav"
 	/>
+	
+	<defaultcmd target="">
+		<cmd name="move"/>
+		<cmd name="advance" ctrl="1"/>
+	</defaultcmd>
+
+	<defaultcmd target="Unit">
+		<cmd name="attack"/>
+	</defaultcmd>
 </class>

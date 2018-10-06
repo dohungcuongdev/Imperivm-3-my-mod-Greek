@@ -9,8 +9,8 @@ int i;
 bool bSuccess;
 int action;
 int learntimes;
-int teach_stamina_cost, learn_stamina_cost, heal_stamina_cost;
-bool bCanTeach, bCanLearn, bCanHeal;
+int teach_stamina_cost, heal_stamina_cost, amount;
+bool bCanTeach, bCanHeal;
 int chance, k;
 Obj hInvalid;
 
@@ -24,7 +24,6 @@ if (!.InShip && .InHolder)
 	bldEnter = .GetHolderSett.GetCentralBuilding;
 
 teach_stamina_cost = GetCmdStaminaCost("teach");
-learn_stamina_cost = GetCmdStaminaCost("learn");
 heal_stamina_cost = GetCmdStaminaCost("heal");
 
 chance = GetConst("EnchantressTeachPercent");
@@ -34,9 +33,8 @@ k = chance / 100;
 chance = chance % 100;
 
 bCanTeach = .HasSpecial(teaching);
-bCanLearn = true;
-
 bCanHeal = .HasSpecial(healing);
+bCanHeal = true;
 
 //TO WHAT LEVEL SHOULD WE TRAIN UNITS?
 level1 = GetConst("TeachingLevel1");
@@ -118,7 +116,7 @@ while (true)
 	{
 		//BAD POTENTIALITIES
 		if (action == 2) if (!bCanTeach) break;
-		if (action == 3) if (!bCanLearn) break;
+		if (action == 3) if (!bCanHeal) break;
 
 		//BAD TARGETS
 		if (!tgt.IsAlive)  break;
@@ -131,47 +129,14 @@ while (true)
 
 		//EARLY BREAK IF TEACH CAN NOT BE DONE, AND TEACH IS THE CURRENT ACTION
 		if (action == 2) {
-			if (tgt.inherentlevel >= level) {// if teach is done then heal
-				//EARLY BREAK IF HEALING CAN NOT BE DONE, AND HEAL IS THE CURRENT ACTION
-				if (tgt.health >= tgt.maxhealth) break;
-				if (.stamina < heal_stamina_cost) break;
-				//GOING NEAR TARGET
-				if (!.InRange(tgt) || .InHolder)
-				{
-					if (!.hero.IsValid) if (.DistTo(ptStart) > .sight)
-						break;
-					.GotoAttack(tgt, 2000, false, 2500);
-					continue;
-				}
-				
-				{	//HEAL
-					.StartAnim(17, tgt.pos);
-					Sleep(.TimeToActionMoment());
-					
-					if (tgt.IsAlive)
-					if (tgt.health < tgt.maxhealth)
-					if (!tgt.InHolder)
-					if (.CanSee(tgt))
-					if (.stamina >= heal_stamina_cost)
-					{
-						.SetVisible(true); .SetLastAttackTime();
-						.SetStamina(.stamina - heal_stamina_cost);
-						amount = GetConst("HealAmount") + .level;
-						tgt.Heal(amount);
-						CreateFeedback("Heal", tgt);
-					}
-					Sleep(.TimeToAnimFinish());
-					bSuccess = true;
-					continue;
-				}
-			}
+			if (tgt.inherentlevel >= level) break;
 			if (.stamina < teach_stamina_cost) break;
 		}
 
 		//EARLY BREAK IF LEARNING CAN NOT BE DONE AND LEARN IS THE CURRENT ACTION
 		if (action == 3) {
-			if (tgt.experience <= .experience) break;
-			if (.stamina < learn_stamina_cost) break;
+			if (tgt.health >= tgt.maxhealth) break;
+			if (.stamina < heal_stamina_cost) break;
 		}
 
 		//GOING NEAR TARGET
@@ -205,26 +170,23 @@ while (true)
 			continue;
 		}
 		if (action == 3)
-		{	//LEARN
-			.StartAnim(19, tgt.pos);
+		{	//HEAL
+			.StartAnim(17, tgt.pos);
 			Sleep(.TimeToActionMoment());
-		
+			
 			if (tgt.IsAlive)
-			if (tgt.experience > .experience)
+			if (tgt.health < tgt.maxhealth)
 			if (!tgt.InHolder)
 			if (.CanSee(tgt))
-			if (.stamina >= learn_stamina_cost)
-			if (!.IsEnemy(tgt))
+			if (.stamina >= heal_stamina_cost)
 			{
-				int exp; exp = .experience + (.inherentlevel + 3) / 4;
-				if (exp > tgt.experience) exp = tgt.experience;
 				.SetVisible(true); .SetLastAttackTime();
-				.SetStamina(.stamina - learn_stamina_cost);
-				.SetExperience(exp);
-				CreateFeedback("Experience", this);
+				.SetStamina(.stamina - heal_stamina_cost);
+				amount = GetConst("HealAmount") + .level;
+				tgt.Heal(amount);
+				CreateFeedback("Heal", tgt);
 			}
 			Sleep(.TimeToAnimFinish());
-			learntimes += 1;
 			bSuccess = true;
 			continue;
 		}
@@ -260,13 +222,13 @@ while (true)
 		}
 		for (i = 0; i < 2; i += 1) {
 			if (action == 2 && !bCanTeach) action = 5;
-			if (action == 5 && !bCanLearn) action = 2;
+			if (action == 5 && !bCanHeal) action = 2;
 			if (action == 2)
 				tgt = .FindUnitBelowILevel(level).AsUnit;
 			else
-				tgt = .FindUnitToLearn.AsUnit;
+				tgt = .FindUnitToHeal;
 			if (tgt.IsValid) break;
-			if (!bCanTeach || !bCanLearn) break;
+			if (!bCanTeach || !bCanHeal) break;
 			action = 5 - action;
 		}
 

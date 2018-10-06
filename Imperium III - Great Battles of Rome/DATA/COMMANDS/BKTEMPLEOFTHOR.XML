@@ -44,7 +44,7 @@
 	traincommand="yes"
 	key="d"
 	help="/contents/units/BDruid"
-	costgold = "160"
+	costgold = "200"
 	costfood = "0"
 	costpop = "0"
 	execdelay = "20000"
@@ -133,6 +133,38 @@
 	description="All new warriors are equipped with a Thor's Strength artifact, which adds 12% max attack"
 	method="research"
 	param="ReqSet, Ritual Chamber, default, NameSet, Thor's Strength, default, SetsSet, items/Thor's Strength, 1">
+	<src obj="BKTempleOfThor"/>
+</cmd>
+
+<cmd name="Lion Summoning" priority="7"
+	queueicon="gameres/icons/upgrades/summon lion.bmp"
+	button="actions/summon lion.bmp"
+	key="l"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Lion Summoning"
+    description="Allows druids to sacrifices themselves to summon a Lion."
+	method="research"
+	param="ReqSet, Ritual Chamber, default, NamePlr, Lion Summoning, default">
+	<src obj="BKTempleOfThor"/>
+</cmd>
+
+<cmd name="Bear Summoning" priority="6"
+	queueicon="gameres/icons/upgrades/summon bear.bmp"
+	button="actions/summon bear.bmp"
+	key="b"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1600"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Bear Summoning"
+    description="Allows druids to sacrifices themselves to summon a Bear."
+	method="research"
+	param="ReqPlr, Ritual Chamber, default, NamePlr, Bear Summoning, default">
 	<src obj="BKTempleOfThor"/>
 </cmd>
 </commands>

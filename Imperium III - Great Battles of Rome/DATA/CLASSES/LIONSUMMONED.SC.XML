@@ -1,0 +1,11 @@
+<class id="LionSummoned" cpp_class="CVXUnit" parent="LionMUnit" entity="units/LionM/LionM.ent.xml">
+	<properties edittree_pos=""/>
+
+	<properties does_not_regenerate="1"/>
+	<properties stamina_dec_time = "5000"/>
+	<properties speed="120"/>
+	<properties inventory_size="1"/>
+	<behavior script = "data/subai/summoning_behavior.vs"/>
+	<properties description="-Causa miedo."/>
+	
+</class>

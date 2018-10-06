@@ -40,6 +40,16 @@ while(dest != "")
 		
 		// Code of Valor implementation
 		if (name == "Code of Valor") {
+			ol = GetPlayerUnits(.player,"UnionEnchantress");
+			for (i=0; i<ol.count; i+=1)
+				{
+					if (ol[i].IsValid())
+						if (ol[i].IsAlive())
+							{
+								if (ol[i].AsUnit().inherentlevel < 8)
+									ol[i].AsUnit().SetLevel(8);
+							}
+				}
 			ol = GetPlayerUnits(.player,"IEnchantress");
 			for (i=0; i<ol.count; i+=1)
 				{

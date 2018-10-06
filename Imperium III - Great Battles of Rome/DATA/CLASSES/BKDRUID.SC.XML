@@ -1,7 +1,7 @@
 <class id="BKDruid" cpp_class="CVXDruid" parent="BaseMage" entity="Units/DLleldoryn/DLleldoryn.ent.xml">
 
 	<properties race="Britain"/>
-	<properties maxhealth="140"/>
+	<properties maxhealth="200"/>
 	<properties armor_slash="0" armor_pierce="0"/>
 	<properties speed="50"/>
 	<properties unit_specials="Healing"/>
@@ -24,6 +24,9 @@
 	<method sig="ghost"            vs="data/subai/druid_ghoul_summoning.vs"/>
 	<method sig="wolf_summoning"    vs="data/subai/druid_wolf_summoning.vs"/>
 	<method sig="b_mass_heal"       vs="data/subai/druid_massheal.vs"/>
+	
+	<method sig="lion_summoning" vs="data/subai/druid_lion_summoning.vs"/>
+	<method sig="bear_summoning" vs="data/subai/druid_bear_summoning.vs"/>
 
 	<defaultcmd target="Unit">
 		<cmd name="hide"/>

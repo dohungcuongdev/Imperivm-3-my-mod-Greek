@@ -35,7 +35,7 @@
 	<src obj="ITemple"/>
 </cmd>
 
-<cmd name="trainIEnchantress" priority="1"
+<cmd name="trainUnionEnchantress" priority="1"
 	button="actions/train ienchantress.bmp"
 	queueicon="gameres/icons/IEnchantress.bmp"
 	groupverifier="data/subai/verify_cmdcost_building.vs"
@@ -120,6 +120,38 @@
 	method="research"
 	param="ReqPlr, Code of Valor, default, NamePlr, Mass Heal, default">
 	<src obj="ITemple"/>
+	<src obj="UnionTemple"/>
+</cmd>
+
+<cmd name="Level Up" priority="6"
+	queueicon="gameres/icons/upgrades/levelup.bmp"
+	button="research/levelup.bmp"
+	key="h"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Level Up"
+	description="Allows new union enchantresses are level 30"
+	method="research"
+	param="ReqPlr, Code of Valor, default, SetsSet, levels/UnionEnchantress, 30, NameSet, Level Up, default">
+	<src obj="UnionTemple"/>
+</cmd>
+
+<cmd name="Lion Summoning" priority="5"
+	queueicon="gameres/icons/upgrades/summon lion.bmp"
+	button="actions/summon lion.bmp"
+	key="l"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Lion Summoning"
+    description="Allows union enchantresses to to summon a Lionesses."
+	method="research"
+	param="ReqPlr, Code of Valor, default, NamePlr, Lion Summoning, default">
 	<src obj="UnionTemple"/>
 </cmd>
 

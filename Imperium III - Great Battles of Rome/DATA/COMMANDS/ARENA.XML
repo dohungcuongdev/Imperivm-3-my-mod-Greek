@@ -873,9 +873,9 @@
 </cmd>
 
 <cmd name="Kingdom Helmet" priority="12"
-	button="upgrades/veterans guild.bmp"
+	button="upgrades/Kingdom Helmet.bmp"
 	key="g"
-	queueicon="gameres/icons/upgrades/veterans guild.bmp"
+	queueicon="gameres/icons/upgrades/Kingdom Helmet.bmp"
 	costgold = "3000"
 	costfood = "0"
 	execdelay = "30000"

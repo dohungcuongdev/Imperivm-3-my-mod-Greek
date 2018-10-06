@@ -1,5 +1,5 @@
 <class id="BearUnit" cpp_class="CVXUnit" parent="AttackAnimal" entity="units/Bear/Bear.ent.xml">
-	<properties maxhealth="400"/>
+	<properties maxhealth="420"/>
 	<properties damage="16" armor_slash="2" armor_pierce="2"/>
 
 	<properties damage_type="slash"/>
@@ -13,7 +13,7 @@
 	<properties help="contents/units/Bear"/>
 	<properties edittree_pos="Units/Animals/Bear"/>
 	
-	<properties unit_specials="Trample, Regeneration"/>
+	<properties unit_specials="Trample, Freedom"/>
 
 	<defaultcmd target="">
 		<cmd name="move"/>
