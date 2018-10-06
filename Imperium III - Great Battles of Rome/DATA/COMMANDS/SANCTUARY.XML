@@ -36,14 +36,14 @@
 </cmd>
 
 <cmd name="trainUnionEnchantress" priority="1"
-	button="actions/train ienchantress.bmp"
-	queueicon="gameres/icons/IEnchantress.bmp"
+	button="actions/train UNIONenchantress.bmp"
+	queueicon="gameres/icons/UNIONEnchantress.bmp"
 	groupverifier="data/subai/verify_cmdcost_building.vs"
 	transpicon="1"
 	traincommand="yes"
 	key="e"
 	help="/contents/units/IEnchantress"
-	costgold = "250"
+	costgold = "220"
 	costfood = "0"
 	costpop = "0"
 	execdelay = "20000"
@@ -126,7 +126,7 @@
 <cmd name="Level Up" priority="6"
 	queueicon="gameres/icons/upgrades/levelup.bmp"
 	button="research/levelup.bmp"
-	key="h"
+	key="u"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
 	costgold = "3000"
@@ -149,7 +149,7 @@
 	costfood = "0"
 	execdelay = "30000"
 	rollover="Lion Summoning"
-    description="Allows union enchantresses to to summon a Lionesses."
+    description="Allows union enchantresses to to summon Lionesses"
 	method="research"
 	param="ReqPlr, Code of Valor, default, NamePlr, Lion Summoning, default">
 	<src obj="UnionTemple"/>

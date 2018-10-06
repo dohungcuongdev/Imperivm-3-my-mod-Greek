@@ -17,6 +17,7 @@
 	<src obj="BKTempleOfThor"/>
 </cmd>
 
+
 <cmd name="trainBDruid" priority="1"
 	button="actions/train BDruid.bmp"
 	queueicon="gameres/icons/BDruid.bmp"
@@ -36,15 +37,34 @@
 	<src obj="BKTempleOfThor"/>
 </cmd>
 
+<cmd name="trainTEnchantress" priority="1"
+	button="actions/train TEnchantress.bmp"
+	queueicon="gameres/icons/TEnchantress.bmp"
+	groupverifier="data/subai/verify_cmdcost_building.vs"
+	traincommand="yes"
+	transpicon="1"
+	key="s"
+	help="/contents/units/TEnchantress"
+	costgold = "200"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "20000"
+	rollover="Call Enchantress"
+	method="train"
+	param="TEnchantress"
+	sclass="TEnchantress">
+	<src obj="BKTempleOfThor"/>
+</cmd>
+
 <cmd name="trainBKDruid" priority="1"
 	button="actions/train GDruid.bmp"
 	queueicon="gameres/icons/GDruid.bmp"
 	groupverifier="data/subai/verify_cmdcost_building.vs"
 	transpicon="1"
 	traincommand="yes"
-	key="d"
+	key="k"
 	help="/contents/units/BDruid"
-	costgold = "200"
+	costgold = "250"
 	costfood = "0"
 	costpop = "0"
 	execdelay = "20000"
@@ -82,9 +102,25 @@
 	costfood = "0"
 	execdelay = "30000"
 	rollover="Ghoul summoning"
-	description="Allows druids to sacrifice themselves and summon a Ghoul, which drains the life of all enemies nearby for about 10 seconds"
+	description="Allows druids and king druids to sacrifice themselves and summon a Ghoul, which drains the life of all enemies nearby for about 10 seconds"
 	method="research"
 	param="ReqSet, Ritual Chamber, default, NamePlr, Ghoul Summoning, default">
+	<src obj="BKTempleOfThor"/>
+</cmd>
+
+<cmd name="Britain Eagle Summoning" priority="5"
+	queueicon="gameres/icons/upgrades/summon eagle.bmp"
+	button="actions/summon eagle.bmp"
+	key="e"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1200"
+	costfood = "0"
+	execdelay = "20000"
+	rollover="Eagle summoning"
+    description="Allows enchantresses and king druids to sacrifice themselves and summon an eagle, which is under your control for about 2 minutes"
+	method="research"
+	param="ReqSet, Ritual Chamber, default, NamePlr, Eagle Summoning, default">
 	<src obj="BKTempleOfThor"/>
 </cmd>
 
@@ -98,7 +134,7 @@
 	costfood = "0"
 	execdelay = "30000"
 	rollover="Wolf summoning"
-	description="Allows druids to sacrifice themselves and summon a wolf, which remains under your control for about 3 minutes"
+	description="Allows druids and king druids to sacrifice themselves and summon a wolf, which remains under your control for about 3 minutes"
 	method="research"
 	param="ReqSet, Ritual Chamber, default, NamePlr, Wolf Summoning, default">
 	<src obj="BKTempleOfThor"/>
@@ -114,7 +150,7 @@
 	costfood = "0"
 	execdelay = "30000"
 	rollover="Mass heal"
-	description="Allows druids to sacrifices themselves to heal nearby allies"
+	description="Allows enchantresses, druids and king druids to sacrifices themselves to heal nearby allies"
 	method="research"
 	param="ReqSet, Ritual Chamber, default, NamePlr, Mass Heal, default">
 	<src obj="BKTempleOfThor"/>
@@ -123,7 +159,7 @@
 <cmd name="Thor's Strength" priority="10"
 	button="research/Strength of Thor.bmp"
 	queueicon="gameres/icons/upgrades/Strength of Thor.bmp"
-	key="G"
+	key="t"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
 	costgold = "1800"
@@ -146,7 +182,7 @@
 	costfood = "0"
 	execdelay = "30000"
 	rollover="Lion Summoning"
-    description="Allows druids to sacrifices themselves to summon a Lion."
+    description="Allows king druids to sacrifices themselves to summon Lions"
 	method="research"
 	param="ReqSet, Ritual Chamber, default, NamePlr, Lion Summoning, default">
 	<src obj="BKTempleOfThor"/>
@@ -162,7 +198,7 @@
 	costfood = "0"
 	execdelay = "30000"
 	rollover="Bear Summoning"
-    description="Allows druids to sacrifices themselves to summon a Bear."
+    description="Allows king druids to sacrifices themselves to summon Bears"
 	method="research"
 	param="ReqPlr, Ritual Chamber, default, NamePlr, Bear Summoning, default">
 	<src obj="BKTempleOfThor"/>

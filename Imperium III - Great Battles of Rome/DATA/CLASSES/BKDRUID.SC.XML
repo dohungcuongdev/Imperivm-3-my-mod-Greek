@@ -1,10 +1,10 @@
 <class id="BKDruid" cpp_class="CVXDruid" parent="BaseMage" entity="Units/DLleldoryn/DLleldoryn.ent.xml">
 
 	<properties race="Britain"/>
-	<properties maxhealth="200"/>
+	<properties maxhealth="400"/>
 	<properties armor_slash="0" armor_pierce="0"/>
 	<properties speed="50"/>
-	<properties unit_specials="Healing"/>
+	<properties unit_specials="Healing, Active"/>
 
 	<properties icon="gameres/icons/Lleo.bmp"/>
 	<properties display_name="King Druid" display_name_plural="King Druids"/>
@@ -27,9 +27,10 @@
 	
 	<method sig="lion_summoning" vs="data/subai/druid_lion_summoning.vs"/>
 	<method sig="bear_summoning" vs="data/subai/druid_bear_summoning.vs"/>
+	<method sig="eagle_summoning" vs="data/subai/druid_eagle_summoning.vs"/>
 
 	<defaultcmd target="Unit">
-		<cmd name="hide"/>
+		<cmd name="heal"/>
 	</defaultcmd>
 
 	<defaultcmd target="Hero">

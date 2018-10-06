@@ -90,7 +90,8 @@
 	<src obj="HPriest" sticky="yes"/>
 	<src obj="GDruid" sticky="yes"/>
 	<src obj="BKDruid" sticky="yes"/>
-	<src obj="UnionEnchantress" sticky="yes"/>
+	<!-- Not Ready-->
+	<!--<src obj="UnionEnchantress" sticky="yes"/>-->
 </cmd>
 
 <cmd name="cloud_of_plague" priority="14"
@@ -159,6 +160,7 @@
 	param="Eagle Summoning, Requires %s1 from Druid House"
 	>
 	<src obj="GDruid"/>
+	<src obj="BKDruid"/>
 </cmd>
 
 <cmd name="teagle_summoning" priority="15"
@@ -322,7 +324,7 @@
 	groupverifier="data/subai/verify_isresearched.vs"
 	rollover="Lion Summoning"
 	description="Summon a Lion"
-	param="Lion Summoning, Requires %s1 from Temple of Osiris"
+	param="Lion Summoning, Requires %s1"
 	>
 	<src obj="BKDruid"/>
 	<src obj="UnionEnchantress"/>
@@ -334,7 +336,7 @@
 	groupverifier="data/subai/verify_isresearched.vs"
 	rollover="bear summoning"
 	description="Summon a Bear"
-	param="Bear Summoning, Requires %s1 from Sanctuary"
+	param="Bear Summoning, Requires %s1"
 	>
 	<src obj="BKDruid"/>
 

@@ -4,10 +4,15 @@
 	<properties maxhealth="200"/>
 	<properties armor_slash="4" armor_pierce="4"/>
 	<properties speed="50"/>
-	<properties unit_specials="Teaching, Healing, Active"/>
+	
+	<!--Not ready-->
+	<!--
+	properties unit_specials="Teaching, Healing, Active"/> 
+	-->
+	<properties unit_specials="Teaching, Regeneration, Active"/>
 
-	<properties icon="gameres/icons/IEnchantress.bmp"/>
-	<properties display_name="Enchantress" display_name_plural="Enchantresses"/>
+	<properties icon="gameres/icons/UNIONEnchantress.bmp"/>
+	<properties display_name="Union Enchantress" display_name_plural="Union Enchantresses"/>
 	<properties help="contents/units/IEnchantress"/>
 	<properties edittree_pos="Units/Union Iberia/Enchantress"/>
 	<sounds command="Sounds/entities/VoiceIEnchantress.xml"/>
@@ -15,10 +20,20 @@
 	<method sig="stand_position" vs="data/subai/enchantress_stand_position.vs"/>
 	<method sig="ondie"          vs="data/subai/enchantress_ondie.vs"/>
 	<method sig="advance"        vs="data/subai/enchantress_advance.vs"/>
+	
+	<!--Not ready-->
+	<!--
 	<method sig="idle"           vs="data/subai/unionenchantress_idle.vs"/>
+	-->
+	<method sig="idle"           vs="data/subai/enchantress_idle.vs"/>
+	
 	<method sig="learn"          vs="data/subai/druid_learn.vs"/>
+	
+	<!--Not ready-->
+	<!--
 	<method sig="heal"           vs="data/subai/druid_heal.vs" verify="data/subai/druid_heal_verify.vs"/>
 	<method sig="heal"           vs="data/subai/druid_heal_ground.vs"/>
+	-->
 
 	<method sig="teach"          vs="data/subai/enchantress_teach.vs" verify="data/subai/enchantress_teach_verify.vs"/>
 	<method sig="coverofmercy"   vs="data/subai/enchantress_coverofmercy.vs"/>
