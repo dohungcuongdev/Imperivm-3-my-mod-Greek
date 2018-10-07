@@ -67,6 +67,7 @@
 	<src obj="ETownhall"/>
 	<src obj="TTownhall"/>
 	<src obj="BKTownhall"/>
+	<src obj="GTTownhall"/>
 </cmd>
 
 <cmd name="autotrain_stop_cbet" priority="8"
@@ -82,6 +83,7 @@
 	<src obj="ETownhall"/>
 	<src obj="TTownhall"/>
 	<src obj="BKTownhall"/>
+	<src obj="GTTownhall"/>
 </cmd>
 
 <cmd name="autotrain_start_i" priority="8"
@@ -93,6 +95,7 @@
 	description="Start automatic teaching of warriors in the stronghold"
 	rollover="Automatic teaching">
 	<src obj="ITownhall"/>
+	<src obj="UnionTownhall"/>
 </cmd>
 
 <cmd name="autotrain_stop_i" priority="8"
@@ -104,6 +107,7 @@
 	description="Stop automatic teaching of warriors in the stronghold"
 	rollover="Stop automatic teaching">
 	<src obj="ITownhall"/>
+	<src obj="UnionTownhall"/>
 </cmd>
 
 <cmd name="refreshment" priority="10"
@@ -121,6 +125,8 @@
 	<src obj="GTownhall"/>
 	<src obj="BTownhall"/>
 	<src obj="BKTownhall"/>
+	<src obj="UnionTownhall"/>
+	<src obj="GTTownhall"/>
 </cmd>
 
 <cmd name="healing" priority="10"
@@ -137,6 +143,8 @@
 	>
 	<src obj="ITownhall"/>
 	<src obj="BKTownhall"/>
+	<src obj="UnionTownhall"/>
+	<src obj="GTTownhall"/>
 </cmd>
 
 <!-- AI only -->

@@ -294,6 +294,21 @@
 	<src obj="BKTavern"/>
 </cmd>
 
+<cmd name="Sell food" priority="14"
+	traincommand="yes"
+	groupverifier="data/subai/verify_isresearched.vs"
+	button="actions/sell food.bmp"
+	queueicon="gameres/icons/upgrades/Sell Food.bmp"
+	key="s"
+	costfood="1000"
+	rollover="Sell food"
+	execdelay="12000"
+	description="Sells 1000 food at the market for 500 gold"
+	method="sellfoodforgold"
+	param="Grain Trade">
+	<src obj="GTTavern"/>
+</cmd>
+
 <cmd name="Scout Area" priority="12"
 	groupverifier="data/subai/verify_isresearched.vs"
 	button="actions/scouts.bmp"
@@ -391,6 +406,7 @@
 	param="ReqSet, Nordic trade routes, , NameSet, Belts of Might, default, SetsSet, items/Belt of might, 1">
 	<src obj="GTavern"/>
 	<src obj="UnionTavern"/>
+	<src obj="GTTavern"/>
 </cmd>
 
 <cmd name="getloan" priority="18"
@@ -538,6 +554,7 @@
 	description="Gathers %s1 gold in each outpost you own. The amount of gold increases by 500 every 10 minutes (though not over 2000)"
 	rollover="Tribute (once per game)">
 	<src obj="TTavern"/>
+	<src obj="GTTavern"/>
 </cmd>
 
 <cmd name="ETribute" priority="8"
@@ -730,6 +747,7 @@
 	description="Increases the stronghold population by 10"
 	rollover="Increase population">
 	<src obj="TTavern"/>
+	<src obj="GTTavern"/>
 </cmd>
 
 <cmd name="TGrainTrade" priority="10"
@@ -746,6 +764,7 @@
 	rollover="Grain Trade"
 	>
 	<src obj="TTavern"/>
+	<src obj="GTTavern"/>
 </cmd>
 
 <cmd name="TFoodTax" priority="15"
@@ -762,6 +781,7 @@
 	rollover="Food Tax"
 	>
 	<src obj="TTavern"/>
+	<src obj="GTTavern"/>
 </cmd>
 
 <cmd name="TReligiousFeast" priority="18"
@@ -778,6 +798,7 @@
 	description="Heals the warriors around the townhall"
 	rollover="Religious Feast">
 	<src obj="TTavern"/>
+	<src obj="GTTavern"/>
 </cmd>
 
 <cmd name="BKReligiousFeast" priority="28"
@@ -809,5 +830,20 @@
 	groupverifier="data/subai/verify_research.vs"
 	param="ReqSet, Free Drinks, default, NameSet, Nordic trade routes, , SetsSet, items/Bear teeth amulet, 1">
 	<src obj="UnionTavern"/>
+</cmd>
+
+<cmd name="Nordic trade routes" priority="20"
+	method="research"
+	queueicon="gameres/icons/upgrades/Routes.bmp"
+	button="upgrades/Routes.bmp"
+	key="n"
+	rollover="Nordic trade routes"
+	description="Equips all new warriors with Bear teeth amulets (+5 attack)"
+	costgold="2500"
+	execdelay="25000"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	param="ReqSet, Grain Trade, default, NameSet, Nordic trade routes, , SetsSet, items/Bear teeth amulet, 1">
+	<src obj="GTTavern"/>
 </cmd>
 </commands>

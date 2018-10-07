@@ -27,6 +27,7 @@
 	<src obj="GGBlacksmith"/>
 	<src obj="CCBlacksmith"/>
 	<src obj="BKBlacksmith"/>
+	<src obj="GTBlacksmith"/>
 	<src obj="UnionBlacksmith"/>
 </cmd>
 
@@ -60,6 +61,7 @@
 	<src obj="GGBlacksmith"/>
 	<src obj="CCBlacksmith"/>
 	<src obj="BKBlacksmith"/>
+	<src obj="GTBlacksmith"/>
 	<src obj="UnionBlacksmith"/>
 </cmd>
 
@@ -92,6 +94,7 @@
 	<src obj="TTBlacksmith"/>
 	<src obj="GGBlacksmith"/>
 	<src obj="CCBlacksmith"/>
+	<src obj="GTBlacksmith"/>
 	<src obj="UnionBlacksmith"/>
 </cmd>
 
@@ -959,6 +962,7 @@
 	researchcommand="yes"
 	param="NamePlr, Teuton Master, default">
 	<src obj="TTBlacksmith"/>
+	<src obj="GTBlacksmith"/>
 </cmd>
 
 <cmd name="Cult of Anubis" priority="2"
@@ -1350,5 +1354,86 @@
 	method="research"
 	param="NameSet,Union Chariot Wheels,default, NameSet, HChariot,">
 	<src obj="UnionBlacksmith"/>
+</cmd>
+
+
+<cmd name="Axe production" priority="1"
+	queueicon="gameres/icons/upgrades/axe iron.bmp"
+	key="x"
+	button="upgrades/axe iron.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1500"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Axe production"
+	description="Allows Axemen to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Axe production,default, NameSet, TAxeman,">
+	<src obj="GTBlacksmith"/>
+</cmd>
+
+<cmd name="Horseshoe production" priority="3"
+	queueicon="gameres/icons/upgrades/Horseshoes.bmp"
+	button="upgrades/Horseshoes.bmp"
+	key="h"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Horseshoe production"
+	description="Allows Teuton Riders to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Horseshoe production ,default,NameSet, TTeutonRider,">
+	<src obj="GTBlacksmith"/>
+</cmd>
+
+<cmd name="Javelin production" priority="2"
+	queueicon="gameres/icons/upgrades/CJavelins.bmp"
+	key="j"
+	button="upgrades/CJavelins.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Javelin production"
+	description="Allows Huntresses to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Javelin production,default,NameSet, THuntress, ">
+	<src obj="GTBlacksmith"/>
+</cmd>
+
+<cmd name="Mace production" priority="4"
+	queueicon="gameres/icons/upgrades/Incr Mace Production.bmp"
+	key="m"
+	button="upgrades/Incr Mace Production.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "2500"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Mace production"
+	description="Allows Macemen to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Mace production,default,NameSet, TMaceman,">
+	<src obj="GTBlacksmith"/>
+</cmd>
+
+<cmd name="Teuton Wolves" priority="8"
+	queueicon="gameres/icons/upgrades/Teuton Master.bmp"
+	button="research/Teuton Master.bmp"
+	key="w"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "6000"
+	costfood = "0"
+	execdelay = "60000"
+	rollover="Teuton Wolves"
+	description="Allows level 10 Teuton Wolves to equipped in the Barracks"
+	method="research"
+	param="SetsSet, levels/TTeutonWolf, 10, default, NameSet,Teuton Wolves, default">
+	<src obj="GTBlacksmith"/>
 </cmd>
 </commands>

@@ -24,6 +24,7 @@
 	<src obj="RRBarracks"/>
 	<src obj="CCBarracks"/>
 	<src obj="BKBarracks"/>
+	<src obj="GTBarracks"/>
 	<src obj="UnionBarracks"/>
 </cmd>
 
@@ -52,6 +53,7 @@
 	<src obj="RRBarracks"/>
 	<src obj="CCBarracks"/>
 	<src obj="BKBarracks"/>
+	<src obj="GTBarracks"/>
 	<src obj="UnionBarracks"/>
 </cmd>
 
@@ -80,6 +82,7 @@
 	<src obj="RRBarracks"/>
 	<src obj="CCBarracks"/>
 	<src obj="BKBarracks"/>
+	<src obj="GTBarracks"/>
 	<src obj="UnionBarracks"/>
 </cmd>
 

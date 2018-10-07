@@ -1,0 +1,20 @@
+<class id="GTTownhall" cpp_class="CVXTownHall" parent="BaseTownhall" entity="Buildings/TTownhall/TTownhall.ent.xml">
+
+	<properties race="Germany"/>
+	<properties foodperpop="45"/>
+	<properties icon="gameres/icons/TTownhall.bmp"/>
+	<properties display_name="German Townhall"/>
+	<properties radius="160" selection_radius="190"/>
+	<properties auto_repair="no"/>
+	<properties help="/contents/buildings/ITownhall"/>
+
+	<properties edittree_pos="Structures/Stronghold (Golden Germany)/Townhall"/>
+	<properties
+		produces_gold="1"
+		produces_food="1"
+	/>
+
+	<behavior script="data/subai/townhall_buildingsbehavior_t.vs"/>
+
+	
+</class>

@@ -1,7 +1,7 @@
 <class id="BKVikingLord" cpp_class="CVXHero" parent="Hero" entity="Units/BVikingLord/BVikingLord.ent.xml">
 
 	<properties race="Britain"/>
-	<properties maxhealth="2000"/>
+	<properties maxhealth="2500"/>
 	<properties damage="150" armor_slash="16" armor_pierce="16"/>
 	<properties speed="80"/>
 	<properties HeroSkills="Defensive cry, Assault, Team attack, Team defense, Administration, Survival, Quick March, Epic endurance, Epic attack, Epic armor"/>

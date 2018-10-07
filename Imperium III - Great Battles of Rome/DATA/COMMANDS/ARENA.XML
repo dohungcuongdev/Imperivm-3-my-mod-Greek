@@ -39,7 +39,7 @@
 	execdelay = "25000"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
-	description="New Swordsmen and Archers are level 6, Allows Trident Warrior to be hired"
+	description="New Swordsmen and Archers are level 6"
 	rollover="Fights"
 	method="research"
 	param="SetsSet, levels/GSwordsman, 6, SetsSet, levels/GArcher, 6, NameSet, Fights, default,">
@@ -56,12 +56,13 @@
 	execdelay = "30000"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
-	description="All new warriors are level 4, Allows Viking Lord to be hired"
+	description="All new warriors are level 4"
 	rollover="Fights"
 	method="research"
 	param="SetsPlr, standard_spawn_level, 4,NameSet, Fights, default,">
 	<src obj="BMorrigansMonument"/>
 	<src obj="BKMorrigansMonument"/>
+	<src obj="GTSanctuaryOfVotan"/>
 </cmd>
 
 <cmd name="RGladiator Shows2" priority="2"
@@ -525,6 +526,23 @@
 	<src obj="TTSanctuaryOfVotan"/>
 </cmd>
 
+<cmd name="hireheroGT" priority="1"
+	button="actions/hire heroT.bmp"
+	queueicon="gameres/icons/hire heroT.bmp"
+	groupverifier="data/subai/verify_cmdcost_building.vs"
+	traincommand="yes"
+	key="h"
+	costgold = "2500"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "20000"
+	param = "GoldenGermanHero"
+	method="hirehero"
+	help="/contents/units/GHero"
+	rollover="Hire hero">
+	<src obj="GTSanctuaryOfVotan"/>
+</cmd>
+
 <cmd name="Hire Trident warrior" priority="4"
 	button="actions/hire TridentWarrior.bmp"
 	queueicon="gameres/icons/GTridentWarrior.bmp"
@@ -615,6 +633,7 @@
 	<src obj="GArena1"/>
 	<src obj="GArena2"/>
 	<src obj="GArena3"/>
+	<src obj="GTSanctuaryOfVotan"/>
 </cmd>
 
 <cmd name="Hire Viking Lord" priority="10"
@@ -837,6 +856,7 @@
 	<src obj="GArena1"/>
 	<src obj="GArena2"/>
 	<src obj="GArena3"/>
+	<src obj="GTSanctuaryOfVotan"/>
 </cmd>
 
 <cmd name="Veteran's guild" priority="6"
@@ -1178,7 +1198,7 @@
 	execdelay = "25000"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
-	description="Gathers 2000 food,  Allows Valkyries to be hired"
+	description="Gathers 2000 food"
 	rollover="Fights"
 	method="research"
 	param="NameSet, Fights, default,">
@@ -1205,6 +1225,7 @@
 	param="5, 15, TValkyrie, TValkyrie,Fights">
 	<src obj="TSanctuaryOfVotan"/>
 	<src obj="TTSanctuaryOfVotan"/>
+	<src obj="GTSanctuaryOfVotan"/>
 </cmd>
 
 <cmd name="Legendary Valkyries" priority="4"
@@ -1222,6 +1243,7 @@
 	param="ReqSet, Fights, default, NameSet, Legendary Valkyries, default">
 	<src obj="TSanctuaryOfVotan"/>
 	<src obj="TTSanctuaryOfVotan"/>
+	<src obj="GTSanctuaryOfVotan"/>
 </cmd>
 
 <cmd name="Learning" priority="5"
@@ -1239,6 +1261,7 @@
 	param="ReqSet, Fights, default, NamePlr, Learning, default">
 	<src obj="TSanctuaryOfVotan"/>
 	<src obj="TTSanctuaryOfVotan"/>
+	<src obj="GTSanctuaryOfVotan"/>
 </cmd>
 
 <cmd name="Attack focus" priority="6"
@@ -1256,6 +1279,7 @@
 	param="ReqSet, Fights, default, NamePlr, Attack focus, default">
 	<src obj="TSanctuaryOfVotan"/>
 	<src obj="TTSanctuaryOfVotan"/>
+	<src obj="GTSanctuaryOfVotan"/>
 </cmd>
 
 <!--
