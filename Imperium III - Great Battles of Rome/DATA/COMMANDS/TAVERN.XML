@@ -406,7 +406,6 @@
 	param="ReqSet, Nordic trade routes, , NameSet, Belts of Might, default, SetsSet, items/Belt of might, 1">
 	<src obj="GTavern"/>
 	<src obj="UnionTavern"/>
-	<src obj="GTTavern"/>
 </cmd>
 
 <cmd name="getloan" priority="18"
@@ -781,7 +780,6 @@
 	rollover="Food Tax"
 	>
 	<src obj="TTavern"/>
-	<src obj="GTTavern"/>
 </cmd>
 
 <cmd name="TReligiousFeast" priority="18"
@@ -832,18 +830,35 @@
 	<src obj="UnionTavern"/>
 </cmd>
 
-<cmd name="Nordic trade routes" priority="20"
-	method="research"
-	queueicon="gameres/icons/upgrades/Routes.bmp"
-	button="upgrades/Routes.bmp"
-	key="n"
-	rollover="Nordic trade routes"
-	description="Equips all new warriors with Bear teeth amulets (+5 attack)"
-	costgold="2500"
-	execdelay="25000"
-	researchcommand="yes"
+<cmd name="Germany Charm of Athena" priority="20"
+	button="Research/charm of athena.bmp"
+	key="a"
+	queueicon="gameres/icons/upgrades/charm of athena.bmp"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "20000"
 	groupverifier="data/subai/verify_research.vs"
-	param="ReqSet, Grain Trade, default, NameSet, Nordic trade routes, , SetsSet, items/Bear teeth amulet, 1">
+	rollover="Charm of Athena"
+	description="All warriors above level 10 receive a Speed charm (+40% base speed) at their first kill"
+	method="research"
+	researchcommand="yes"
+	param="ReqSet, Grain Trade, default, NamePlr, Charm of Athena, default">
+	<src obj="GTTavern"/>
+</cmd>
+
+<cmd name="Germany Veteran Health" priority="20"
+	button="research/veteran health.bmp"
+	key="e"
+	queueicon="gameres/icons/upgrades/veteran health.bmp"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "30000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Veteran Health"
+	description="Warriors receive a Veteran Health medal (+20% health) at their first kill"
+	method="research"
+	researchcommand="yes"
+	param="ReqSet, Grain Trade,default ,NamePlr, Veteran Health, default">
 	<src obj="GTTavern"/>
 </cmd>
 </commands>

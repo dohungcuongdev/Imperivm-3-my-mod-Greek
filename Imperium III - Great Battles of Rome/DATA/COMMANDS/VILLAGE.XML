@@ -91,6 +91,7 @@
 	<src obj="TTavern"/>
 	<src obj="BKTavern"/>
 	<src obj="UnionTavern"/>
+	<src obj="GTTavern"/>
 </cmd>
 
 <cmd name="trainpeasantr" priority="4"
