@@ -125,6 +125,16 @@
 	description="Creates a cloud that reduces all combat damage allies receive by half (sacrificing the enchantress' life)"
 	param="Cover of Mercy, Requires %s1 from Sanctuary">
 	<src obj="IEnchantress" sticky="yes"/>
+</cmd>
+
+<cmd name="cover_of_mercy" priority="14"
+	method="coverofmercy"
+	button="actions/CoverOfMercy.bmp"
+	key="c"
+	groupverifier="data/subai/verify_isresearched.vs"
+	rollover="Create Cover of Mercy"
+	description="Creates a cloud that reduces all combat damage allies receive by half (-90% hp)"
+	param="Cover of Mercy, Requires %s1 from Sanctuary">
 	<src obj="UnionEnchantress" sticky="yes"/>
 </cmd>
 
@@ -318,16 +328,26 @@
 	<src obj="EPriest"/>
 </cmd>
 
+<cmd name="lion_f_summoning" priority="15"
+	button="actions/summon lion.bmp"
+	key="l"
+	groupverifier="data/subai/verify_isresearched.vs"
+	rollover="Lion Summoning"
+	description="Summon a Lionese (-90% hp)"
+	param="Lion Summoning, Requires %s1"
+	>
+	<src obj="UnionEnchantress"/>
+</cmd>
+
 <cmd name="lion_summoning" priority="15"
 	button="actions/summon lion.bmp"
 	key="l"
 	groupverifier="data/subai/verify_isresearched.vs"
 	rollover="Lion Summoning"
-	description="Summon a Lion"
+	description="Transform to a Lion"
 	param="Lion Summoning, Requires %s1"
 	>
 	<src obj="BKDruid"/>
-	<src obj="UnionEnchantress"/>
 </cmd>
 
 <cmd name="bear_summoning" priority="15"
@@ -335,7 +355,7 @@
 	key="b"
 	groupverifier="data/subai/verify_isresearched.vs"
 	rollover="bear summoning"
-	description="Summon a Bear"
+	description="Transform to a Bear"
 	param="Bear Summoning, Requires %s1"
 	>
 	<src obj="BKDruid"/>

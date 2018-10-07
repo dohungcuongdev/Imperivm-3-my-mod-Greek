@@ -57,8 +57,8 @@
 </cmd>
 
 <cmd name="trainBKDruid" priority="1"
-	button="actions/train GDruid.bmp"
-	queueicon="gameres/icons/GDruid.bmp"
+	button="actions/train BKDruid.bmp"
+	queueicon="gameres/icons/Lleo.bmp"
 	groupverifier="data/subai/verify_cmdcost_building.vs"
 	transpicon="1"
 	traincommand="yes"

@@ -103,6 +103,21 @@
 	method="research"
 	param="ReqPlr, Code of Valor, default, NamePlr, Cover of Mercy, default">
 	<src obj="ITemple"/>
+</cmd>
+
+<cmd name="Union Cover of Mercy" priority="4"
+	queueicon="gameres/icons/upgrades/cover of mercy.bmp"
+	button="research/cover of mercy.bmp"
+	key="m"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "20000"
+	rollover="Cover of Mercy"
+	description="Allows union enchantresses to create a cloud to protect allies from damage"
+	method="research"
+	param="ReqPlr, Code of Valor, default, NamePlr, Cover of Mercy, default">
 	<src obj="UnionTemple"/>
 </cmd>
 

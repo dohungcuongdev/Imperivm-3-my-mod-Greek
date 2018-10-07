@@ -1,7 +1,7 @@
 <class id="LionMUnit" cpp_class="CVXUnit" parent="AttackAnimal" entity="units/LionM/LionM.ent.xml">
 
 	<properties maxhealth="320"/>
-	<properties damage="30" armor_slash="4" armor_pierce="4"/>
+	<properties damage="38" armor_slash="4" armor_pierce="4"/>
 
 	<properties damage_type="slash"/>
 	<properties radius="20" selection_radius="40"/>

@@ -4,5 +4,5 @@
 	id = "GGBlacksmithWinter"
 	parent = "GGBlacksmith"
 >
-	<properties edittree_pos = "Structures/Stronghold (Gaul)/Winter/Blacksmith (2)"/>
+	<properties edittree_pos = "Structures/Stronghold (Gaul)/Winter/Blacksmith + Arena 2/Blacksmith"/>
 </class>

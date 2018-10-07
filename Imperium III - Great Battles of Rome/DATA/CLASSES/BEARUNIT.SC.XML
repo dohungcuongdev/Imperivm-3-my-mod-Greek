@@ -1,6 +1,6 @@
 <class id="BearUnit" cpp_class="CVXUnit" parent="AttackAnimal" entity="units/Bear/Bear.ent.xml">
-	<properties maxhealth="420"/>
-	<properties damage="16" armor_slash="2" armor_pierce="2"/>
+	<properties maxhealth="520"/>
+	<properties damage="16" armor_slash="12" armor_pierce="12"/>
 
 	<properties damage_type="slash"/>
 	<properties radius="20" selection_radius="40"/>

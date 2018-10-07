@@ -1,4 +1,4 @@
-<class id="GGBlacksmith" altid="Blacksmith" cpp_class="CVXBuilding" parent="BaseBlacksmith"
+<class id="GBlacksmith" altid="Blacksmith" cpp_class="CVXBuilding" parent="BaseBlacksmith"
 	entity="Buildings/GBlacksmith/GBlacksmith as.ent.xml"
 	entity_autumn="Buildings/GBlacksmith/GBlacksmith as.ent.xml"
 	entity_spring="Buildings/GBlacksmith/GBlacksmith as.ent.xml"
@@ -8,7 +8,7 @@
 	<properties icon="gameres/icons/GBlacksmith.bmp"/>
 	<properties display_name="Blacksmith"/>
 	<properties radius="220" selection_radius="230"/>
-	<properties edittree_pos="Structures/Stronghold (Gaul)/Blacksmith + Arena 2/Blacksmith"/>
+	<properties edittree_pos="Structures/Stronghold (Gaul)/Blacksmith + Arena 1/Blacksmith (Level Upgrade)"/>
 	<properties help="/contents/buildings/GBlacksmith"/>
 	<properties auto_repair="no"/>
 

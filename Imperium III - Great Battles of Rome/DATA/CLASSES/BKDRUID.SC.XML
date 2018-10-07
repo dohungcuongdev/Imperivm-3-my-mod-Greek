@@ -1,8 +1,8 @@
 <class id="BKDruid" cpp_class="CVXDruid" parent="BaseMage" entity="Units/DLleldoryn/DLleldoryn.ent.xml">
 
 	<properties race="Britain"/>
-	<properties maxhealth="400"/>
-	<properties armor_slash="0" armor_pierce="0"/>
+	<properties maxhealth="200"/>
+	<properties armor_slash="2" armor_pierce="2"/>
 	<properties speed="50"/>
 	<properties unit_specials="Healing, Active"/>
 

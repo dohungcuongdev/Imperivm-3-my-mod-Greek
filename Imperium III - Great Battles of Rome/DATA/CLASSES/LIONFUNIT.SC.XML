@@ -1,12 +1,12 @@
 <class id="LionFUnit" cpp_class="CVXUnit" parent="AttackAnimal" entity="units/LionF/LionF.ent.xml">
 
 	<properties maxhealth="300"/>
-	<properties damage="25" armor_slash="2" armor_pierce="2"/>
+	<properties damage="20" armor_slash="2" armor_pierce="2"/>
 
 	<properties damage_type="slash"/>
 	<properties radius="20" selection_radius="40"/>
 	<properties sight="400"/>
-	<properties speed="120"/>
+	<properties speed="110"/>
 	<properties healthbaroffset="-30"/>
 
 	<properties icon="gameres/icons/lionF.bmp"/>

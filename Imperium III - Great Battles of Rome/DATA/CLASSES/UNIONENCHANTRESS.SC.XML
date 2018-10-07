@@ -36,10 +36,10 @@
 	-->
 
 	<method sig="teach"          vs="data/subai/enchantress_teach.vs" verify="data/subai/enchantress_teach_verify.vs"/>
-	<method sig="coverofmercy"   vs="data/subai/enchantress_coverofmercy.vs"/>
+	<method sig="coverofmercy"   vs="data/subai/unionenchantress_coverofmercy.vs"/>
 	<method sig="mass_heal"      vs="data/subai/druid_massheal.vs"/>
 	
-	<method sig="lion_summoning" vs="data/subai/druid_lionf_summoning.vs"/>
+	<method sig="lion_f_summoning" vs="data/subai/druid_lionf_summoning.vs"/>
 
 	<defaultcmd target="Unit">
 		<cmd name="teach"/>

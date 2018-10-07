@@ -4,7 +4,7 @@
 	<properties display_name="Blacksmith"/>
 	<properties icon="gameres/icons/CBlacksmith.bmp"/>
 	<properties radius="255" selection_radius="260"/>
-	<properties edittree_pos="Structures/Stronghold (Carthage)/Blacksmith 2"/>
+	<properties edittree_pos="Structures/Stronghold (Carthage)/Blacksmith (Noble)"/>
 	<properties help="/contents/buildings/CBlacksmith"/>
 
 	
