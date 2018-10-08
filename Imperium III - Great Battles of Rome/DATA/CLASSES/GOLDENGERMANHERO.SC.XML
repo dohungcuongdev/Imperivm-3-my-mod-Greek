@@ -1,9 +1,12 @@
 <class id="GoldenGermanHero" cpp_class="CVXHero" parent="HeroMounted" entity="">
 
-	<properties maxhealth="1500"/>
+	<properties maxhealth="2000"/>
 	<properties damage="70" armor_slash="12" armor_pierce="12"/>
 	<properties race="Germany"/>
+	<!--
 	<properties HeroSkills="Battle cry, Defensive cry, Concealment, Quick March, Team defense, Survival, Euphoria, Administration, Epic armor, Epic endurance"/>
+	-->
+	<properties HeroSkills="Charge, Defensive cry, Concealment, Quick March, Team defense, Survival, Administration, Epic attack, Epic armor, Epic endurance"/>
 	<properties help="/contents/units/THero"/>
 
 	<sounds command="data/sound entities/VoiceTHero.xml"/>

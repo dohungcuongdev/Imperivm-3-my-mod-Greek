@@ -14,7 +14,7 @@ while(dest != "")
 		name = ParseStr(dest, dest);
 		value = ParseStr(dest, dest);
 		// Statue of anom-ra implementation - requires 2 researces
-        if (name == "Statue of Amon-Ra" && EnvReadString(.settlement, "Cult of Anubis") != "researched" && EnvReadString(.settlement, "Cult of Horus") != "researched")
+        if (.race==Egypt && name == "Statue of Amon-Ra" && EnvReadString(.settlement, "Cult of Anubis") != "researched" && EnvReadString(.settlement, "Cult of Horus") != "researched")
 		{
 			reasonText = rollover(this,false) + "\n<color 255 0 0>" + Translate("Requires Cult of Anubis and Cult of Horus");
 			return false;
@@ -40,7 +40,7 @@ while(dest != "")
 		name = ParseStr(dest, dest);
 		value = ParseStr(dest, dest);
 
-        if (name == "Statue of Amon-Ra" && EnvReadString(.settlement, "Cult of Anubis") != "researched" && EnvReadString(.settlement, "Cult of Horus") != "researched")
+        if (.race==Egypt && name == "Statue of Amon-Ra" && EnvReadString(.settlement, "Cult of Anubis") != "researched" && EnvReadString(.settlement, "Cult of Horus") != "researched")
 		{
 			reasonText = rollover(this,false) + "\n<color 255 0 0>" + Translate("Requires Cult of Anubis and Cult of Horus");
 			return false;

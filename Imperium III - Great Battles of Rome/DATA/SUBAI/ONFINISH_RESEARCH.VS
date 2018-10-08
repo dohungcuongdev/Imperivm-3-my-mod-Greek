@@ -146,7 +146,7 @@ while(dest != "")
 			InvalidateDamageFormulaParams();
 			continue;
 		}
-		if (name == "Statue of Amon-Ra" || "Germany Statue of Amon-Ra") {
+		if (name == "Statue of Amon-Ra") {
 			ObjList units;
 			int k;
 			units = GetPlayerUnits(.player, "Military");

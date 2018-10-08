@@ -1462,11 +1462,11 @@
 	costfood = "0"
 	execdelay = "20000"
 	groupverifier="data/subai/verify_research.vs"
-	rollover="Germany Statue of Amon-Ra"
+	rollover="Statue of Amon-Ra"
 	description="Warriors get 5 additional health points with every level"
 	method="research"
 	researchcommand="yes"
-	param="ReqSet,Fights, default, NamePlr, Germany Statue of Amon-Ra, default">
+	param="ReqSet,Fights, default, NamePlr, Statue of Amon-Ra, default">
 	<src obj="GTSanctuaryOfVotan"/>
 </cmd>
 </commands>
