@@ -1453,4 +1453,20 @@
 	rollover="Hire hero">
 	<src obj="UnionArena"/>
 </cmd>
+
+<cmd name="Germany Statue of Amon-Ra" priority="13"
+	button="research/statue of amon-ra.bmp"
+	key="a"
+	queueicon="gameres/icons/upgrades/statue of amon-ra.bmp"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "20000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Germany Statue of Amon-Ra"
+	description="Warriors get 5 additional health points with every level"
+	method="research"
+	researchcommand="yes"
+	param="ReqSet,Fights, default, NamePlr, Germany Statue of Amon-Ra, default">
+	<src obj="GTSanctuaryOfVotan"/>
+</cmd>
 </commands>
