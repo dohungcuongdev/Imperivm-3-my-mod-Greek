@@ -28,6 +28,7 @@
 	<src obj="CCBlacksmith"/>
 	<src obj="BKBlacksmith"/>
 	<src obj="GTBlacksmith"/>
+	<src obj="ECBlacksmith"/>
 	<src obj="UnionBlacksmith"/>
 </cmd>
 
@@ -62,6 +63,7 @@
 	<src obj="CCBlacksmith"/>
 	<src obj="BKBlacksmith"/>
 	<src obj="GTBlacksmith"/>
+	<src obj="ECBlacksmith"/>
 	<src obj="UnionBlacksmith"/>
 </cmd>
 
@@ -95,6 +97,7 @@
 	<src obj="GGBlacksmith"/>
 	<src obj="CCBlacksmith"/>
 	<src obj="GTBlacksmith"/>
+	<src obj="ECBlacksmith"/>
 	<src obj="UnionBlacksmith"/>
 </cmd>
 
@@ -1081,6 +1084,7 @@
 	method="research"
 	param="NameSet,Sacred Legion,default,NameSet, CNoble, ">
 	<src obj="CCBlacksmith"/>
+	<src obj="ECBlacksmith"/>
 	
 </cmd>
 
@@ -1203,6 +1207,7 @@
 	param="NameSet,Master Axes, default, NameSet, CMERCENARIO">
 	<src obj="CBlacksmith"/>
 	<src obj="CCBlacksmith"/>
+	<src obj="ECBlacksmith"/>
 	
 </cmd>
 
@@ -1435,5 +1440,102 @@
 	method="research"
 	param="SetsSet, levels/TTeutonWolf, 10, default, NameSet,Teuton Wolves, default">
 	<src obj="GTBlacksmith"/>
+</cmd>
+
+<cmd name="Extended Forge Spears" priority="3"
+	queueicon="gameres/icons/upgrades/CSpears.bmp"
+	button="upgrades/CSpears.bmp"
+	key="s"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "900"
+	costfood = "0"
+	execdelay = "10000"
+	rollover="Extended Forge Spears"
+	description="Allows Libyan Footmen to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Extended Forge Spears,default,NameSet, CLibyanFootman,">
+	<src obj="ECBlacksmith"/>
+</cmd>
+
+<cmd name="Extended Forge Javelins" priority="4"
+	queueicon="gameres/icons/upgrades/CJavelins.bmp"
+	button="upgrades/CJavelins.bmp"
+	key="j"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1000"
+	costfood = "0"
+	execdelay = "10000"
+	rollover="Extended Forge Javelins"
+	description="Allows Javelin Throwers to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Extended Forge Javelins,default,NameSet, CJavelinThrower,">
+	<src obj="ECBlacksmith"/>
+</cmd>
+
+<cmd name="Extended Forge Swords" priority="5"
+	queueicon="gameres/icons/upgrades/CSwords.bmp"
+	button="upgrades/CSwords.bmp"
+	key="w"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1200"
+	costfood = "0"
+	execdelay = "12000"
+	rollover="Extended Forge Swords"
+	description="Allows Berber Assassins to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Extended Forge Swords,default,NameSet, CBerberAssassin,">
+	<src obj="ECBlacksmith"/>
+</cmd>
+
+<cmd name="Extended Forge Maces" priority="6"
+	queueicon="gameres/icons/upgrades/CMaces.bmp"
+	button="upgrades/CMaces.bmp"
+	key="m"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1300"
+	costfood = "0"
+	execdelay = "13000"
+	rollover="Extended Forge Maces"
+	description="Allows Macemen to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Extended Forge Maces,default,NameSet, CMaceman,">
+	<src obj="ECBlacksmith"/>
+</cmd>
+
+<cmd name="Extended Forge Pikes" priority="7"
+	queueicon="gameres/icons/upgrades/CPikes.bmp"
+	button="upgrades/CPikes.bmp"
+	key="p"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "2200"
+	costfood = "0"
+	execdelay = "22000"
+	rollover="Extended Forge Pikes"
+	description="Allows Numidian Riders to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Extended Forge Pikes,default,NameSet, CNumidianRider,">
+	<src obj="ECBlacksmith"/>
+</cmd>
+
+<cmd name="Calling Liberati" priority="8"
+	queueicon="gameres/icons/upgrades/Calling Liberati.bmp"
+	button="upgrades/Calling Liberati.bmp"
+	key="c"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "20000"
+	rollover="Calling Liberati"
+	description="Allows Liberati to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Calling Liberati, default, NameSet, RLiberatus">
+	<src obj="ECBlacksmith"/>
+	
 </cmd>
 </commands>

@@ -1,0 +1,164 @@
+<commands>
+
+<!-- CLibyanFootman, CJavelinThrower, CNumidianRider, CMaceman, CBerberAssassin, CNoble -->
+
+<cmd name="trainECLibyanFootman" priority="3"
+	button="actions/hire CLibyanFootman.bmp"
+	queueicon="gameres/icons/CLibyanFootman.bmp"
+	groupverifier="data/subai/barrack_train_verify.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="l"
+	help="/contents/units/CLibyanFootman"
+	costgold = "90"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "6000"
+	rollover="Hire Libyan Footman"
+	method="train"
+	param="CLibyanFootman,Extended Forge Spears"
+	sclass="CLibyanFootman">
+	<src obj="ECBarracks"/>
+</cmd>
+
+<cmd name="trainECJavelinThrower" priority="4"
+	button="actions/hire CJavelinThrower.bmp"
+	queueicon="gameres/icons/CJavelinThrower.bmp"
+	groupverifier="data/subai/barrack_train_verify.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="j"
+	help="/contents/units/CJavelinThrower"
+	costgold = "100"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "10000"
+	rollover="Hire Javelin Thrower"
+	method="train"
+	param="CJavelinThrower,Extended Forge Javelins"
+	sclass="CJavelinThrower">
+
+	<src obj="ECBarracks"/>
+</cmd>
+
+<cmd name="trainECBerberAssassin" priority="5"
+	button="actions/hire CBerberAssassin.bmp"
+	queueicon="gameres/icons/CBerberAssassin.bmp"
+	groupverifier="data/subai/barrack_train_verify.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="a"
+	help="/contents/units/CBerberAssassin"
+	costgold = "120"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "14000"
+	rollover="Hire Berber Assassin"
+	method="train"
+	param="CBerberAssassin,Extended Forge Swords"
+	sclass="CBerberAssassin">
+	<src obj="ECBarracks"/>
+</cmd>
+
+<cmd name="trainECMaceman" priority="6"
+	button="actions/hire CMaceman.bmp"
+	queueicon="gameres/icons/CMaceman.bmp"
+	groupverifier="data/subai/barrack_train_verify.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="m"
+	help="/contents/units/CMaceman"
+	costgold = "130"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "16000"
+	rollover="Hire Maceman"
+	method="train"
+	param="CMaceman,Extended Forge Maces"
+	sclass="CMaceman">
+
+	<src obj="ECBarracks"/>
+</cmd>
+
+<cmd name="trainECNumidianRider" priority="7"
+	button="actions/hire CNumidianRider.bmp"
+	queueicon="gameres/icons/CNumidianRider.bmp"
+	groupverifier="data/subai/barrack_train_verify.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="r"
+	help="/contents/units/CNumidianRider"
+	costgold = "220"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "20000"
+	rollover="Hire Numidian Rider"
+	method="train"
+	param="CNumidianRider,Extended Forge Pikes"
+	sclass="CNumidianRider">
+
+	<src obj="ECBarracks"/>
+</cmd>
+
+<cmd name="trainECLiberati" priority="8"
+	button="actions/TRAIN ECLIB.bmp"
+	queueicon="gameres/icons/RLIBERATUS.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="h"
+	help="/contents/units/RLiberatus"
+	costgold = "200"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "20000"
+	rollover="Hire Liberatus"
+	method="trainex"
+	param="1, 30, RLiberatus, RLiberatus, Calling Liberati, blacksmith"
+	sclass="RLiberatus">
+	<src obj="ECBarracks"/>
+</cmd>
+
+<cmd name="trainECNoble" priority="7"
+	button="actions/train ECNoble.bmp"
+	queueicon="gameres/icons/ECNoble.bmp"
+	groupverifier="data/subai/barrack_train_verify.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="n"
+	help="/contents/units/CNoble"
+	costgold = "450"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "20000"
+	rollover="Equip Noble"
+	method="train"
+	param="CNoble"
+	sclass="CNoble">
+	<src obj="ECBarracks"/>
+</cmd>
+
+<cmd name="trainECMercenario" priority="8"
+	button="actions/TRAIN CMERCENARIO.bmp"
+	queueicon="gameres/icons/CMERCENARIO.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="z"
+	help="/contents/units/CMercenario"
+	costgold = "650"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "20000"
+	rollover="Hire Master Axeman"
+	method="trainex"
+	param="1, 6, CMERCENARIO, CMERCENARIO, Master Axes, blacksmith"
+	sclass="CMERCENARIO">
+	<src obj="ECBarracks"/>
+</cmd>
+
+</commands>
+
+<!--	groupverifier="data/subai/barrack_train_verify.vs" -->

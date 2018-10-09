@@ -128,6 +128,7 @@
 	researchcommand="yes"
 	param="NameSet, People's Assembly, default">
 	<src obj="CArena"/>
+	<src obj="ECArena"/>
 </cmd>
 
 <cmd name="Tournaments" priority="2"
@@ -298,11 +299,12 @@
 	param = "ReqSet, People's Assembly, default, SetsPlr, standard_spawn_level, 6, NameSet, Shared Strength, "
 	>
 	<src obj="CArena"/>
+	<src obj="ECArena"/>
 </cmd>
 
 <cmd name="Shared Triumph" priority="3"
 	button="research/shared triumph.bmp"
-	key="s"
+	key="p"
 	queueicon="gameres/icons/upgrades/Shared Triumph.bmp"
 	costgold = "6000"
 	costfood = "0"
@@ -315,7 +317,45 @@
 	param = "ReqSet, Shared Strength, , SetsPlr, standard_spawn_level, 12, NameSet, Shared Triumph, default"
 	>
 	<src obj="CArena"/>
+	<src obj="ECArena"/>
 </cmd>
+
+
+<!--
+<cmd name="Shared Strength" priority="3"
+	button="research/shared strength.bmp"
+	key="s"
+	queueicon="gameres/icons/upgrades/Shared Strength.bmp"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "30000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Shared Strength"
+	description="If you have over 12 warriors of a type the new ones you hire are level 6"
+	method="research"
+	researchcommand="yes"
+	param = "ReqSet, People's Assembly, default, NameSet, Shared Strength, "
+	>
+	<src obj="CArena"/>
+</cmd>
+
+<cmd name="Shared Triumph" priority="3"
+	button="research/shared triumph.bmp"
+	key="s"
+	queueicon="gameres/icons/upgrades/Shared Triumph.bmp"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "30000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Shared Triumph"
+	description="If you have over 24 warriors of a type the new ones you hire are level 12"
+	method="research"
+	researchcommand="yes"
+	param = "ReqSet, Shared Strength, , NameSet, Shared Triumph, default"
+	>
+	<src obj="CArena"/>
+</cmd>
+-->
 
 <cmd name="Heroes' Wisdom" priority="3"
 	button="upgrades/heroes wisdom.bmp"
@@ -366,6 +406,7 @@
 	param = "People's Assembly"
 	>
 	<src obj="CArena"/>
+	<src obj="ECArena"/>
 </cmd>
 
 <cmd name="hireheroR" priority="1"
@@ -438,6 +479,23 @@
 	help="/contents/units/CHero"
 	rollover="Hire hero">
 	<src obj="CArena"/>
+</cmd>
+
+<cmd name="hireheroEC" priority="1"
+	button="actions/hire heroC.bmp"
+	queueicon="gameres/icons/hire heroC.bmp"
+	groupverifier="data/subai/verify_cmdcost_building.vs"
+	traincommand="yes"
+	key="h"
+	costgold = "2000"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "20000"
+	param = "ExtendedCarthaginianHero"
+	method="hirehero"
+	help="/contents/units/CHero"
+	rollover="Hire hero">
+	<src obj="ECArena"/>
 </cmd>
 
 <cmd name="hireheroI" priority="1"
@@ -696,8 +754,8 @@
 </cmd>
 
 <cmd name="Hire Liberati" priority="4"
-	button="actions/hire RLiberati.bmp"
-	queueicon="gameres/icons/RLiberatus.bmp"
+	queueicon="gameres/icons/upgrades/Calling Liberati.bmp"
+	button="upgrades/Calling Liberati.bmp"
 	transpicon="1"
 	groupverifier="data/subai/verify_trainex.vs"
 	onaddremovescript="data/subai/trainex_onaddremove.vs"
@@ -771,6 +829,7 @@
 	method="trainex"
 	param="1, elephant, CWarElephant, War Elephant, People's Assembly">
 	<src obj="CArena"/>
+	<src obj="ECArena"/>
 </cmd>
 
 <cmd name="Spoils of war" priority="5"
@@ -1468,5 +1527,67 @@
 	researchcommand="yes"
 	param="ReqSet,Fights, default, NamePlr, Statue of Amon-Ra, default">
 	<src obj="GTSanctuaryOfVotan"/>
+</cmd>
+
+<cmd name="Carthaginian Statue of Amon-Ra" priority="13"
+	button="research/statue of amon-ra.bmp"
+	key="g"
+	queueicon="gameres/icons/upgrades/statue of amon-ra.bmp"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "20000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Statue of Amon-Ra"
+	description="Warriors get 5 additional health points with every level"
+	method="research"
+	researchcommand="yes"
+	param="ReqSet,People's Assembly, default, NamePlr, Statue of Amon-Ra, default">
+	<src obj="ECArena"/>
+</cmd>
+
+<cmd name="Carthaginian Veteran Offence" priority="4"
+	button="research/veteran offence.bmp"
+	key="o"
+	queueicon="gameres/icons/upgrades/veteran offence.bmp"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "30000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Veteran Offense"
+	description="Warriors receive a Veteran Offense medal (+20% damage) at their first kill"
+	method="research"
+	researchcommand="yes"
+	param="ReqSet, People's Assembly, default,NamePlr, Veteran Offence, default">
+	<src obj="ECArena"/>
+</cmd>
+<cmd name="Carthaginian Veteran Defence" priority="5"
+	button="research/veteran defence.bmp"
+	key="d"
+	queueicon="gameres/icons/upgrades/veteran defence.bmp"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "30000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Veteran Defense"
+	description="Warriors receive a Veteran Defense medal (+20% armor) at their first kill"
+	method="research"
+	researchcommand="yes"
+	param="ReqSet, People's Assembly, default,NamePlr, Veteran Defence, default">
+	<src obj="ECArena"/>
+</cmd>
+<cmd name="Carthaginian Veteran Health" priority="6"
+	button="research/veteran health.bmp"
+	key="r"
+	queueicon="gameres/icons/upgrades/veteran health.bmp"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "30000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Veteran Health"
+	description="Warriors receive a Veteran Health medal (+20% health) at their first kill"
+	method="research"
+	researchcommand="yes"
+	param="ReqSet, People's Assembly,default ,NamePlr, Veteran Health, default">
+	<src obj="ECArena"/>
 </cmd>
 </commands>
