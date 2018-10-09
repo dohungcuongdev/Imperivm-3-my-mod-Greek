@@ -1,10 +1,13 @@
 <class id="ExtendedCarthaginianHero" cpp_class="CVXHero" parent="HeroMounted" entity="">
 
-	<properties maxhealth="1000"/>
+	<properties maxhealth="2000"/>
 	<properties damage="50" armor_slash="12" armor_pierce="12"/>
 	<properties race="Carthage"/>
 	<properties help="/contents/units/CHero"/>
-	<properties HeroSkills="Vigor, Frenzy, Healing, Egoism, Wisdom"/>
+	<properties HeroSkills="Rush, Healing, Recovery, Vigor, Survival, Team attack, Team defense"/>
+	<!--
+	<properties HeroSkills="Frenzy, Healing, Recovery, Vigor, Survival, Team attack, Team defense"/>
+	-->
 
 	<sounds command="data/sound entities/VoiceCHero.xml"/>
 

@@ -88,6 +88,7 @@
 	<src obj="RRTavern"/>
 	<src obj="RRTavern2"/>
 	<src obj="CTavern"/>
+	<src obj="ECTavern"/>
 	<src obj="TTavern"/>
 	<src obj="BKTavern"/>
 	<src obj="UnionTavern"/>

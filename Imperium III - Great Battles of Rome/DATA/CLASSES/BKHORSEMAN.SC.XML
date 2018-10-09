@@ -5,7 +5,7 @@
 	<properties damage="65" armor_slash="22" armor_pierce="22"/>
 	<properties speed="120"/>
 	<!-- <properties unit_specials="Charge, Triple strike, Ferocity"/> -->
-	<properties unit_specials="Life steal"/>
+	<properties unit_specials="Deflection, Ferocity"/>
 	<properties healthbar_type="3"/>
 
 	<properties max_food="25"/>

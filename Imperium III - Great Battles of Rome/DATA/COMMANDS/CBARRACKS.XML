@@ -210,7 +210,7 @@
 	costfood = "0"
 	costpop = "0"
 	execdelay = "20000"
-	rollover="Equip Noble"
+	rollover="Hire Noble"
 	method="train"
 	param="CNoble"
 	sclass="CNoble">

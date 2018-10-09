@@ -10,11 +10,11 @@
 	traincommand="yes"
 	key="l"
 	help="/contents/units/CLibyanFootman"
-	costgold = "90"
+	costgold = "70"
 	costfood = "0"
-	costpop = "0"
+	costpop = "1"
 	execdelay = "6000"
-	rollover="Hire Libyan Footman"
+	rollover="Equip Libyan Footman"
 	method="train"
 	param="CLibyanFootman,Extended Forge Spears"
 	sclass="CLibyanFootman">
@@ -29,15 +29,14 @@
 	traincommand="yes"
 	key="j"
 	help="/contents/units/CJavelinThrower"
-	costgold = "100"
+	costgold = "80"
 	costfood = "0"
-	costpop = "0"
+	costpop = "1"
 	execdelay = "10000"
-	rollover="Hire Javelin Thrower"
+	rollover="Equip Javelin Thrower"
 	method="train"
 	param="CJavelinThrower,Extended Forge Javelins"
 	sclass="CJavelinThrower">
-
 	<src obj="ECBarracks"/>
 </cmd>
 
@@ -49,11 +48,11 @@
 	traincommand="yes"
 	key="a"
 	help="/contents/units/CBerberAssassin"
-	costgold = "120"
+	costgold = "100"
 	costfood = "0"
-	costpop = "0"
+	costpop = "1"
 	execdelay = "14000"
-	rollover="Hire Berber Assassin"
+	rollover="Equip Berber Assassin"
 	method="train"
 	param="CBerberAssassin,Extended Forge Swords"
 	sclass="CBerberAssassin">
@@ -68,15 +67,14 @@
 	traincommand="yes"
 	key="m"
 	help="/contents/units/CMaceman"
-	costgold = "130"
+	costgold = "110"
 	costfood = "0"
-	costpop = "0"
+	costpop = "1"
 	execdelay = "16000"
-	rollover="Hire Maceman"
+	rollover="Equip Maceman"
 	method="train"
 	param="CMaceman,Extended Forge Maces"
 	sclass="CMaceman">
-
 	<src obj="ECBarracks"/>
 </cmd>
 
@@ -88,19 +86,18 @@
 	traincommand="yes"
 	key="r"
 	help="/contents/units/CNumidianRider"
-	costgold = "220"
+	costgold = "200"
 	costfood = "0"
-	costpop = "0"
+	costpop = "1"
 	execdelay = "20000"
-	rollover="Hire Numidian Rider"
+	rollover="Equip Numidian Rider"
 	method="train"
 	param="CNumidianRider,Extended Forge Pikes"
 	sclass="CNumidianRider">
-
 	<src obj="ECBarracks"/>
 </cmd>
 
-<cmd name="trainECLiberati" priority="8"
+<cmd name="trainECLiberati" priority="7"
 	button="actions/TRAIN ECLIB.bmp"
 	queueicon="gameres/icons/RLIBERATUS.bmp"
 	groupverifier="data/subai/verify_trainex.vs"
@@ -115,15 +112,16 @@
 	execdelay = "20000"
 	rollover="Hire Liberatus"
 	method="trainex"
-	param="1, 30, RLiberatus, RLiberatus, Calling Liberati, blacksmith"
+	param="1, 24, RLiberatus, RLiberatus, Calling Liberati, blacksmith"
 	sclass="RLiberatus">
 	<src obj="ECBarracks"/>
 </cmd>
 
-<cmd name="trainECNoble" priority="7"
+<cmd name="trainLegionCommander" priority="7"
 	button="actions/train ECNoble.bmp"
 	queueicon="gameres/icons/ECNoble.bmp"
-	groupverifier="data/subai/barrack_train_verify.vs"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
 	transpicon="1"
 	traincommand="yes"
 	key="n"
@@ -132,10 +130,10 @@
 	costfood = "0"
 	costpop = "0"
 	execdelay = "20000"
-	rollover="Equip Noble"
-	method="train"
-	param="CNoble"
-	sclass="CNoble">
+	rollover="Hire Legion Commander"
+	method="trainex"
+	param="1, 20, LegionCommander, LegionCommander, Calling Legion Commander, blacksmith"
+	sclass="LegionCommander">
 	<src obj="ECBarracks"/>
 </cmd>
 

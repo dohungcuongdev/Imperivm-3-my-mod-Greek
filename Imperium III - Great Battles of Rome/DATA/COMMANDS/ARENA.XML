@@ -1439,9 +1439,9 @@
 	costfood = "0"
 	execdelay = "20000"
 	rollover="Union Mountain Clan"
-	description="All new Union Mountaineers are level 14"
+	description="All new Union Mountaineers are level 15"
 	method="research"
-	param = "ReqSet, Tournaments, default, SetsSet, levels/UnionMountaineer, 14, default, NameSet, Union Mountain Clan, default">
+	param = "ReqSet, Tournaments, default, SetsSet, levels/UnionMountaineer, 15, default, NameSet, Union Mountain Clan, default">
 	<src obj="UnionArena"/>
 </cmd>
 
@@ -1455,9 +1455,9 @@
 	costfood = "0"
 	execdelay = "20000"
 	rollover="Union Mountain Clan Legacy"
-	description="All new Union Mountaineers are level 28"
+	description="All new Union Mountaineers are level 30"
 	method="research"
-	param="ReqSet, Union Mountain Clan, default, SetsSet, levels/UnionMountaineer, 28, default, NameSet,Union Mountain Clan Legacy, default">
+	param="ReqSet, Union Mountain Clan, default, SetsSet, levels/UnionMountaineer, 30, default, NameSet,Union Mountain Clan Legacy, default">
 	<src obj="UnionArena"/>
 </cmd>
 
@@ -1588,6 +1588,22 @@
 	method="research"
 	researchcommand="yes"
 	param="ReqSet, People's Assembly,default ,NamePlr, Veteran Health, default">
+	<src obj="ECArena"/>
+</cmd>
+
+<cmd name="Elephant Training" priority="3"
+	button="RESEARCH/crianzaelefantes.bmp"
+	key="p"
+	queueicon="gameres/icons/upgrades/crianzaelefantes.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "20000"
+	rollover="Elephant Training"
+	description="All new War Elephant are level 28"
+	method="research"
+	param="ReqSet, Shared Triumph, default, SetsSet, levels/CWarElephant, 28, default, NameSet,Elephant Training, default">
 	<src obj="ECArena"/>
 </cmd>
 </commands>

@@ -36,6 +36,7 @@
 	sclass="EPriest">
 	<src obj="ETempleOfOsiris"/>
 	<src obj="EETempleOfOsiris"/>
+	<src obj="ECTemple"/>
 </cmd>
 
 <cmd name="Cult of Osiris" priority="2"
@@ -53,6 +54,24 @@
 	param="NameSet, Cult of Osiris, default">
 	<src obj="ETempleOfOsiris"/>
 	<src obj="EETempleOfOsiris"/>
+	<src obj="ECTemple"/>
+</cmd>
+
+<cmd name="Foraging" priority="2"
+	button="research/Foraging.bmp"
+	queueicon="gameres/icons/upgrades/Foraging.bmp"
+	key="f"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "2000"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "20000"
+	rollover="Foraging"
+	description="Allows a shaman to feed 2 nearby allies"
+	method="research"
+	param="ReqSet, Cult of Osiris, default, NamePlr, Foraging, default">
+	<src obj="ECTemple"/>
 </cmd>
 
 <cmd name="EZombify" priority="3"
@@ -70,6 +89,7 @@
 	param="ReqSet, Cult of Osiris, default, NamePlr, Zombify, default">
 	<src obj="ETempleOfOsiris"/>
 	<src obj="EETempleOfOsiris"/>
+	<src obj="ECTemple"/>
 </cmd>
 <cmd name="ECloud of Plague" priority="4"
 	queueicon="gameres/icons/upgrades/mist.bmp"
@@ -86,6 +106,7 @@
 	param="ReqSet, Cult of Osiris, default, NamePlr, Cloud of Plague, default">
 	<src obj="ETempleOfOsiris"/>
 	<src obj="EETempleOfOsiris"/>
+	<src obj="ECTemple"/>
 </cmd>
 
 <cmd name="Mumification" priority="5"
@@ -119,6 +140,7 @@
 	method="research"
 	param="ReqSet, Cult of Osiris, default, SetsSet, levels/Hero, 18, NameSet, Eighteen, default">
 	<src obj="EETempleOfOsiris"/>
+	<src obj="ECTemple"/>
 </cmd>
 
 <cmd name="Chariot of Osiris" priority="6"
@@ -137,5 +159,6 @@
 	param="1, 10, EChariot,  EChariot, Cult of Osiris">
 	<src obj="ETempleOfOsiris"/>
 	<src obj="EETempleOfOsiris"/>
+	<src obj="ECTemple"/>
 </cmd>
 </commands>

@@ -98,6 +98,21 @@
 	<src obj="HAgora"/>
 </cmd>
 
+<cmd name="ECAddPop" priority="2"
+	queueicon="gameres/icons/upgrades/Add population.bmp"
+	button="actions/Add population.bmp"
+	groupverifier="data/subai/verify_cmdcost_building.vs"
+	cursor=""
+	key="p"
+	traincommand="yes"
+	costfood="500"
+	execdelay="10000"
+	method="addpop"
+	description="Increases the stronghold population by 10"
+	rollover="Increase population">
+	<src obj="ECTavern"/>
+</cmd>
+
 <cmd name="Free Beer" priority="8"
 	key="b"
 	queueicon="gameres/icons/upgrades/free beer.bmp"
@@ -149,6 +164,7 @@
 	rollover="Free trade"
 	>
 	<src obj="CTavern"/>
+	<src obj="ECTavern"/>
 </cmd>
 
 <cmd name="Free Drinks" priority="8"
@@ -499,7 +515,8 @@
 	param="ReqSet, Free Trade, default, NamePlr, Tribute, default"
 	description="Gathers %s1 gold in each outpost you own. The amount of gold increases by 500 every 10 minutes (though not over 2000)"
 	rollover="Tribute (once per game)">
-<src obj="CTavern"/>
+	<src obj="CTavern"/>
+	<src obj="ECTavern"/>
 </cmd>
 
 <cmd name="ITribute" priority="10"
@@ -636,6 +653,7 @@
 	description="Sell 50 population for 2000 gold"
 	rollover="Slavery">
 	<src obj="CTavern"/>
+	<src obj="ECTavern"/>
 </cmd>
 
 <cmd name="Call to arms" priority="16"
@@ -860,5 +878,20 @@
 	researchcommand="yes"
 	param="ReqSet, Grain Trade,default ,NamePlr, Veteran Health, default">
 	<src obj="GTTavern"/>
+</cmd>
+
+<cmd name="Carthaginian Belts of Might" priority="21"
+	method="research"
+	queueicon="gameres/icons/upgrades/Belt Of Might.bmp"
+	button="upgrades/Belt Of Might.bmp"
+	key="m"
+	rollover="Carthaginian Belts of Might"
+	description="Equips all new warriors with Belt of might amulets (+5 armor)"
+	costgold="2500"
+	execdelay="25000"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	param="ReqSet, Free Trade, default, NameSet, Belts of Might, default, SetsSet, items/Belt of might, 1">
+	<src obj="ECTavern"/>
 </cmd>
 </commands>

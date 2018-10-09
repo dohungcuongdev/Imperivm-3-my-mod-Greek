@@ -1084,8 +1084,6 @@
 	method="research"
 	param="NameSet,Sacred Legion,default,NameSet, CNoble, ">
 	<src obj="CCBlacksmith"/>
-	<src obj="ECBlacksmith"/>
-	
 </cmd>
 
 
@@ -1190,25 +1188,6 @@
 	method="research"
 	param="NameSet,Wall of Shields, default, NameSet, EHOPLITA">
 	<src obj="HBlacksmith"/>
-</cmd>
-
-<cmd name="Master Axes" priority="9"
-	queueicon="gameres/icons/upgrades/verdugos.bmp"
-	key="y"
-	button="upgrades/verdugos.bmp"
-	researchcommand="yes"
-	groupverifier="data/subai/verify_research.vs"
-	costgold = "6000"
-	costfood = "0"
-	execdelay = "60000"
-	rollover="Master Axes"
-	description="Allows Master Axemen to be equipped in the Barracks"
-	method="research"
-	param="NameSet,Master Axes, default, NameSet, CMERCENARIO">
-	<src obj="CBlacksmith"/>
-	<src obj="CCBlacksmith"/>
-	<src obj="ECBlacksmith"/>
-	
 </cmd>
 
 <!--
@@ -1536,6 +1515,39 @@
 	method="research"
 	param="NameSet,Calling Liberati, default, NameSet, RLiberatus">
 	<src obj="ECBlacksmith"/>
-	
+</cmd>
+
+<cmd name="Calling Legion Commander" priority="9"
+	button="Upgrades/Sacred Legion.bmp"
+	queueicon="gameres/icons/upgrades/Sacred Legion.bmp"
+	key="l"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "4000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Calling Legion Commander"
+	description="Allows Legion Commanders to be hired in the Barracks"
+	method="research"
+	param="NameSet,Calling Legion Commander,default,NameSet, LegionCommander, ">
+	<src obj="ECBlacksmith"/>
+</cmd>
+
+<cmd name="Master Axes" priority="9"
+	queueicon="gameres/icons/upgrades/verdugos.bmp"
+	key="y"
+	button="upgrades/verdugos.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "6000"
+	costfood = "0"
+	execdelay = "60000"
+	rollover="Master Axes"
+	description="Allows Master Axemen to be hired in the Barracks"
+	method="research"
+	param="NameSet,Master Axes, default, NameSet, CMERCENARIO">
+	<src obj="CBlacksmith"/>
+	<src obj="CCBlacksmith"/>
+	<src obj="ECBlacksmith"/>
 </cmd>
 </commands>

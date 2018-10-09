@@ -63,6 +63,7 @@
 	description="Start automatic training of warriors in the stronghold"
 	rollover="Automatic training">
 	<src obj="CTownhall"/>
+	<src obj="ECTownhall"/>
 	<src obj="BTownhall"/>
 	<src obj="ETownhall"/>
 	<src obj="TTownhall"/>
@@ -79,6 +80,7 @@
 	description="Stop automatic training of warriors in the stronghold"
 	rollover="Stop automatic training">
 	<src obj="CTownhall"/>
+	<src obj="ECTownhall"/>
 	<src obj="BTownhall"/>
 	<src obj="ETownhall"/>
 	<src obj="TTownhall"/>
@@ -127,6 +129,7 @@
 	<src obj="BKTownhall"/>
 	<src obj="UnionTownhall"/>
 	<src obj="GTTownhall"/>
+	<src obj="ECTownhall"/>
 </cmd>
 
 <cmd name="healing" priority="10"
@@ -145,6 +148,7 @@
 	<src obj="BKTownhall"/>
 	<src obj="UnionTownhall"/>
 	<src obj="GTTownhall"/>
+	<src obj="ECTownhall"/>
 </cmd>
 
 <!-- AI only -->
