@@ -4,7 +4,12 @@
 	<properties damage="50" armor_slash="12" armor_pierce="12"/>
 	<properties race="Carthage"/>
 	<properties help="/contents/units/CHero"/>
+	
+	<properties HeroSkills="Charge, Frenzy, Recovery, Vigor, Survival, Team attack, Team defense"/>
+	
+	<!--
 	<properties HeroSkills="Rush, Healing, Recovery, Vigor, Survival, Team attack, Team defense"/>
+	-->
 	<!--
 	<properties HeroSkills="Frenzy, Healing, Recovery, Vigor, Survival, Team attack, Team defense"/>
 	-->
