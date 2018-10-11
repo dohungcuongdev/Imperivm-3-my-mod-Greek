@@ -10,7 +10,7 @@
 	<properties HeroSkills=" Team attack, Team defense"/>
 	<properties unit_specials="Penetration, Parry"/>
 	<properties max_army="20"/>
-	<properties interface="thumb,unit,hero,items"/>
+	<properties interface="thumb,unit,hero,items,holder"/>
 	<!--
 	<properties interface="thumb,unit,hero,items,holder"/>
 	-->

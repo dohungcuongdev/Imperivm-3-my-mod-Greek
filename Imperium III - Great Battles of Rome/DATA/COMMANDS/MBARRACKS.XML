@@ -159,4 +159,23 @@
 	sclass="RPraetorian">
 	<src obj="IRBarracks"/>
 </cmd>
+
+<cmd name="trainRTCaptain" priority="3"
+	button="actions/TRAIN RTCaptain.BMP"
+	queueicon="gameres/icons/RTCaptain.BMP"
+	groupverifier="data/subai/verify_cmdcost_building.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="r"
+	help="/contents/units/RTCaptain"
+	costgold = "100"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "6000"
+	rollover="Equip Hastatus"
+	method="train"
+	param="RTCaptain"
+	sclass="RTCaptain">
+	<src obj="IRBarracks"/>
+</cmd>
 </commands>
