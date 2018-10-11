@@ -1,0 +1,25 @@
+<class id="RCaptain" cpp_class="CVXHero" parent="Hero" entity="Units/RTribune/RTribune.ent.xml">
+
+	<properties race="RepublicanRome"/>
+	<properties display_name="Captain" display_name_plural="Captains"/>
+	<properties icon="gameres/icons/ILIDER.bmp"/>
+	<properties edittree_pos="Units/Rome/Captain"/>
+	<properties maxhealth="1800"/>
+	<properties damage="40" armor_slash="16" armor_pierce="16"/>
+	<properties help="contents/units/RTribune"/>
+	<properties HeroSkills=" Team attack, Team defense"/>
+	<properties unit_specials="Penetration, Parry"/>
+	<properties max_army="20"/>
+	<properties interface="thumb,unit,hero,items"/>
+	<!--
+	<properties interface="thumb,unit,hero,items,holder"/>
+	-->
+
+	<sounds command="data/sound entities/VoiceRRepublicanHero.xml"/>
+	
+	
+	<method sig="enter_parry_mode" vs="data/subai/unit_enter_parry_mode.vs"/>
+	<method sig="leave_parry_mode" vs="data/subai/unit_leave_parry_mode.vs"/>
+	
+
+</class>

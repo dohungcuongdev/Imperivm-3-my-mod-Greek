@@ -1601,9 +1601,9 @@
 	costfood = "0"
 	execdelay = "20000"
 	rollover="Elephant Training"
-	description="All new War Elephant are level 28"
+	description="All new War Elephant are level 32"
 	method="research"
-	param="ReqSet, Shared Triumph, default, SetsSet, levels/CWarElephant, 28, default, NameSet,Elephant Training, default">
+	param="ReqSet, Shared Triumph, default, SetsSet, levels/CWarElephant, 32, default, NameSet,Elephant Training, default">
 	<src obj="ECArena"/>
 </cmd>
 </commands>

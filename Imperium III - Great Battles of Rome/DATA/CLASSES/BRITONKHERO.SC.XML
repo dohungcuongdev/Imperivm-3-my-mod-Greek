@@ -5,7 +5,7 @@
 	<properties range="600"/>
 	<properties damage="80" armor_slash="14" armor_pierce="14"/>
 	<properties damage_type="pierce"/>
-	<properties HeroSkills="Defensive cry, Assault, Team attack, Team defense, Epic attack"/>
+	<properties HeroSkills="Defensive cry, Assault, Team attack, Team defense, Quick March, Epic attack"/>
 
 	<properties projectile_class="Fire_Arrow"/>
 	<properties building_projectile_class="Fire_Arrow"/>

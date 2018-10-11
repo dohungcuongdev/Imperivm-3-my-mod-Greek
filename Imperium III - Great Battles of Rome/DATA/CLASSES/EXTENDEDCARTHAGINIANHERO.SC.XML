@@ -5,7 +5,7 @@
 	<properties race="Carthage"/>
 	<properties help="/contents/units/CHero"/>
 	
-	<properties HeroSkills="Charge, Frenzy, Recovery, Vigor, Survival, Team attack, Team defense"/>
+	<properties HeroSkills="Battle cry, Defensive cry, Recovery, Vigor, Survival, Team attack, Team defense"/>
 	
 	<!--
 	<properties HeroSkills="Rush, Healing, Recovery, Vigor, Survival, Team attack, Team defense"/>

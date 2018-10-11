@@ -126,13 +126,13 @@
 	traincommand="yes"
 	key="n"
 	help="/contents/units/CNoble"
-	costgold = "450"
+	costgold = "500"
 	costfood = "0"
 	costpop = "0"
 	execdelay = "20000"
 	rollover="Hire Legion Commander"
 	method="trainex"
-	param="1, 20, LegionCommander, LegionCommander, Calling Legion Commander, blacksmith"
+	param="1, 15, LegionCommander, LegionCommander, Calling Legion Commander, blacksmith"
 	sclass="LegionCommander">
 	<src obj="ECBarracks"/>
 </cmd>
