@@ -232,6 +232,7 @@
 	param="ReqSet, Gladiator Shows, default,NamePlr, Veteran Offence, default">
 	<src obj="RArena"/>
 	<src obj="RRArena"/>
+	<src obj="URArena"/>
 </cmd>
 <cmd name="Veteran Defence" priority="5"
 	button="research/veteran defence.bmp"
@@ -248,6 +249,7 @@
 	param="ReqSet, Gladiator Shows, default,NamePlr, Veteran Defence, default">
 	<src obj="RArena"/>
 	<src obj="RRArena"/>
+	<src obj="URArena"/>
 </cmd>
 <cmd name="Veteran Health" priority="6"
 	button="research/veteran health.bmp"
@@ -264,6 +266,7 @@
 	param="ReqSet, Gladiator Shows,default ,NamePlr, Veteran Health, default">
 	<src obj="RArena"/>
 	<src obj="RRArena"/>
+	<src obj="URArena"/>
 </cmd>
 
 <cmd name="Gaul Training 3" priority="3"
@@ -1026,13 +1029,14 @@
 	costfood = "0"
 	execdelay = "10000"
 	groupverifier="data/subai/verify_research.vs"
-	description="All new warriors are level 4 but cannot gain more experience"
+	description="All new warriors are level 4 but cannot gain more experience from battle "
 	rollover="Standardization I"
 	method="research"
 	researchcommand="yes"
 	param="ReqSet, Gladiator Shows, default, SetsPlr, max_battle_level, 4, SetsPlr, standard_spawn_level, 4, NamePlr, Standartization I">
 	<src obj="RArena"/>
 	<src obj="IRArena"/>
+	<src obj="URArena"/>
 </cmd>
 
 <cmd name="Standartization II" priority="2"
@@ -1043,13 +1047,14 @@
 	costfood = "0"
 	execdelay = "20000"
 	groupverifier="data/subai/verify_research.vs"
-	description="All new warriors are level 8 but cannot gain more experience"
+	description="All new warriors are level 8 but cannot gain more experience from battle "
 	rollover="Standardization II"
 	method="research"
 	researchcommand="yes"
 	param="ReqPlr, Standartization I, , SetsPlr, max_battle_level, 8, SetsPlr, standard_spawn_level, 8, NamePlr, Standartization II">
 	<src obj="RArena"/>
 	<src obj="IRArena"/>
+	<src obj="URArena"/>
 </cmd>
 
 <cmd name="Flexibility" priority="2"
@@ -1060,13 +1065,14 @@
 	costfood = "0"
 	execdelay = "30000"
 	groupverifier="data/subai/verify_research.vs"
-	description="Allows warriors to gain experience past level 8"
+	description="Allows warriors to gain experience from battle past level 8"
 	rollover="Flexibility"
 	method="research"
 	researchcommand="yes"
 	param="ReqPlr, Standartization II, , SetsPlr, max_battle_level, 0, NamePlr, Flexibility, default">
 	<src obj="RArena"/>
 	<src obj="IRArena"/>
+	<src obj="URArena"/>
 </cmd>
 
 <!-- Egypt -->
@@ -1605,5 +1611,109 @@
 	method="research"
 	param="ReqSet, Shared Triumph, default, SetsSet, levels/CWarElephant, 32, default, NameSet,Elephant Training, default">
 	<src obj="ECArena"/>
+</cmd>
+
+<cmd name="URGladiator Shows" priority="1"
+	button="Upgrades/Gladiator Show.bmp"
+	key="s"
+	queueicon="gameres/icons/upgrades/Gladiator Show.bmp"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "20000"
+	groupverifier="data/subai/verify_research.vs"
+	description="Allows Captains to be hired"
+	rollover="Gladiator Shows"
+	method="research"
+	researchcommand="yes"
+	param="NameSet, Gladiator Shows, default">
+	<src obj="URArena"/>
+</cmd>
+
+<cmd name="trainRTCaptain" priority="1"
+	button="actions/ILIDER.BMP"
+	queueicon="gameres/icons/ILIDER.BMP"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="r"
+	help="/contents/units/RTCaptain"
+	costgold = "800"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Train Republican Captain"
+	description="Hires a Republican Captain"
+	method="trainex"
+	param="1, 4, RTCaptain, RTCaptain, Gladiator Shows">
+	<src obj="URArena"/>
+</cmd>
+
+<cmd name="trainRPCaptain" priority="1"
+	button="actions/TRAIN RPCaptain.BMP"
+	queueicon="gameres/icons/RPCaptain.BMP"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="p"
+	help="/contents/units/RPCaptain"
+	costgold = "1000"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Train Imperial Captain"
+	description="Hires a Republican Captain"
+	method="trainex"
+	param="1, 2, RPCaptain, RPCaptain, Gladiator Shows">
+	<src obj="URArena"/>
+</cmd>
+
+<cmd name="United Training 1" priority="3"
+	button="research/training.bmp"
+	key="t"
+	queueicon="gameres/icons/upgrades/btrain.bmp"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "20000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="United Training 1"
+	description="Allows warriors to train to level 10"
+	method="research"
+	researchcommand="yes"
+	param="ReqSet, Gladiator Shows, default, SetsPlr, maxtrainlevel, 10, NamePlr, United Training 1, ">
+	<src obj="URArena"/>
+</cmd>
+
+<cmd name="United Training 2" priority="3"
+	button="research/Advanced training.bmp"
+	key="t"
+	queueicon="gameres/icons/upgrades/atrain.bmp"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "20000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="United Training 2"
+	description="Allows warriors to train to level 15"
+	method="research"
+	researchcommand="yes"
+	param="ReqSet, Gladiator Shows, , ReqPlr, United Training 1, , SetsPlr, maxtrainlevel, 15, NamePlr, United Training 2, ">
+	<src obj="URArena"/>
+</cmd>
+
+<cmd name="United Training 3" priority="3"
+	button="research/maser training.bmp"
+	queueicon="gameres/icons/upgrades/mtrain.bmp"
+	key="t"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "20000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="United Training 3"
+	description="Allows warriors to train to level 20"
+	method="research"
+	researchcommand="yes"
+	param="ReqSet, Gladiator Shows, , ReqPlr, United Training 2, ,SetsPlr, maxtrainlevel, 20, NamePlr, United Training 3, default">
+	<src obj="URArena"/>
 </cmd>
 </commands>

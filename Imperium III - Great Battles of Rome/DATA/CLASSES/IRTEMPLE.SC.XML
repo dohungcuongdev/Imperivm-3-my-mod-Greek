@@ -1,7 +1,7 @@
 <class id="IRTemple" cpp_class="CVXBarrack" parent="BaseBarracks"
 entity="Buildings/MTemple/MTemple.ent.xml">
 
-	<properties race="ImperialRome"/>
+	<properties race="RepublicanRome"/>
 	<properties display_name="Temple"/>
 
 	<properties radius="165" selection_radius="170"/>

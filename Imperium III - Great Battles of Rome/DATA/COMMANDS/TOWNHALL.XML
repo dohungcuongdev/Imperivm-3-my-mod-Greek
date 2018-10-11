@@ -37,6 +37,7 @@
 	<src obj="IRTownhall"/>
 	<src obj="HTownhall"/>
 	<src obj="RRTownhall"/>
+	<src obj="URTownhall"/>
 </cmd>
 
 <cmd name="autotrain_stop_gr" priority="8"
@@ -52,6 +53,7 @@
 	<src obj="IRTownhall"/>
 	<src obj="HTownhall"/>
 	<src obj="RRTownhall"/>
+	<src obj="URTownhall"/>
 </cmd>
 
 <cmd name="autotrain_start_cbet" priority="8"
@@ -130,6 +132,7 @@
 	<src obj="UnionTownhall"/>
 	<src obj="GTTownhall"/>
 	<src obj="ECTownhall"/>
+	<src obj="URTownhall"/>
 </cmd>
 
 <cmd name="healing" priority="10"
@@ -149,6 +152,7 @@
 	<src obj="UnionTownhall"/>
 	<src obj="GTTownhall"/>
 	<src obj="ECTownhall"/>
+	<src obj="URTownhall"/>
 </cmd>
 
 <!-- AI only -->
@@ -173,7 +177,7 @@
 	costfood="0"
 	button="actions/Military training.bmp"
 	rollover="Military training"
-	description="Adds 1 level to all allies around the townhall (up to level 10)"
+	description="Adds 1 level to all allies around the townhall (up to level 30)"
 	immediate="yes"
 	researchcommand="yes"
 >
@@ -183,5 +187,9 @@
 	<src obj="TTownhall"/>
 	<src obj="HTownhall"/>
 	<src obj="RRTownhall"/>
+	<src obj="UnionTownhall"/>
+	<src obj="GTTownhall"/>
+	<src obj="ECTownhall"/>
+	<src obj="URTownhall"/>
 </cmd>
 </commands>

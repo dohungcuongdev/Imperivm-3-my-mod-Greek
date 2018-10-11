@@ -11,6 +11,7 @@
 	<properties help="contents/units/Axeman"/>
 	<properties edittree_pos="Units/New Units/Master Berserker (Iberia)"/>
 	<sounds command="data/sound entities/VoiceBSwordsman.xml"/>
+	<sounds attack="AxeAttack" />
 
 
 </class>

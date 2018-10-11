@@ -1,0 +1,18 @@
+<class id="URTemple" cpp_class="CVXBarrack" parent="BaseBarracks"
+entity="Buildings/MTemple/MTemple.ent.xml"
+entity_autumn="Buildings/RTemple/RTemple_as.ent.xml"
+entity_spring="Buildings/MTemple/MTemple.ent.xml"
+entity_winter="Buildings/RTemple/RTemple_w.ent.xml">
+
+	<properties race="RepublicanRome"/>
+	<properties display_name="Temple"/>
+
+	<properties radius="165" selection_radius="170"/>
+	<properties edittree_pos="Structures/Stronghold (United Roman)/Temple"/>
+
+	<properties auto_repair="no"/>
+	<properties icon="gameres/icons/RTemple.bmp"/>
+	<properties help="/contents/buildings/RTemple"/>
+
+	<sounds select="TempleSelect"/>
+</class>

@@ -18,6 +18,7 @@
 	param="RHastatus"
 	sclass="RHastatus">
 	<src obj="IRBarracks"/>
+	<src obj="URBarracks"/>
 </cmd>
 
 <cmd name="trainMArcher" priority="4"
@@ -36,7 +37,7 @@
 	method="train"
 	param="RArcher, Arrows"
 	sclass="RArcher">
-
+	<src obj="URBarracks"/>
 	<src obj="IRBarracks"/>
 </cmd>
 
@@ -57,6 +58,7 @@
 	param="RVelit, Throwing Spears"
 	sclass="RVelit">
 	<src obj="IRBarracks"/>
+	<src obj="URBarracks"/>
 </cmd>
 
 <cmd name="trainMPrinciple" priority="6"
@@ -75,7 +77,7 @@
 	method="train"
 	param="RPrinciple, Pikes"
 	sclass="RPrinciple">
-
+	<src obj="URBarracks"/>
 	<src obj="IRBarracks"/>
 </cmd>
 
@@ -95,7 +97,7 @@
 	method="train"
 	param="RScout, Horseshoes"
 	sclass="RScout">
-
+	<src obj="URBarracks"/>
 	<src obj="IRBarracks"/>
 </cmd>
 
@@ -160,22 +162,41 @@
 	<src obj="IRBarracks"/>
 </cmd>
 
-<cmd name="trainRTCaptain" priority="3"
-	button="actions/TRAIN RTCaptain.BMP"
-	queueicon="gameres/icons/RTCaptain.BMP"
-	groupverifier="data/subai/verify_cmdcost_building.vs"
+<cmd name="trainURGladiator" priority="5"
+	button="actions/train RGladiator.bmp"
+	queueicon="gameres/icons/RGladiator.bmp"
 	transpicon="1"
+	groupverifier="data/subai/barrack_train_verify.vs"
 	traincommand="yes"
-	key="r"
-	help="/contents/units/RTCaptain"
-	costgold = "100"
+	key="g"
+	help="/contents/units/RGladiator"
+	costgold = "200"
 	costfood = "0"
 	costpop = "1"
-	execdelay = "6000"
-	rollover="Equip Hastatus"
+	execdelay = "10000"
+	rollover="Equip Gladiator"
 	method="train"
-	param="RTCaptain"
-	sclass="RTCaptain">
-	<src obj="IRBarracks"/>
+	param="RGladiator, Roman Gladiator"
+	sclass="RGladiator">
+	<src obj="URBarracks"/>
+</cmd>
+
+<cmd name="Equip United Chariot" priority="10"
+	button="actions/hire RChariot.bmp"
+	queueicon="gameres/icons/RChariot.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="c"
+	help="/contents/units/RChariot"
+	costgold = "400"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "20000"
+ 	rollover="Equip Chariot"
+	method="trainex"
+	param="1, 10, RChariot, RChariot, Chariot Wheels, blacksmith">
+	<src obj="URBarracks"/>
 </cmd>
 </commands>

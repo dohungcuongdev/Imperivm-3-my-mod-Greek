@@ -1,4 +1,4 @@
-<class id="IRTownhall" cpp_class="CVXTownHall" parent="BaseTownhall" 
+<class id="URTownhall" cpp_class="CVXTownHall" parent="BaseTownhall" 
 	entity="Buildings/MTownhall/MTownhall.ent.xml"
 	entity_autumn="Buildings/MTownhall/MTownhall.ent.xml"
 	entity_spring="Buildings/MTownhall/MTownhall.ent.xml"
@@ -10,8 +10,8 @@
 	<properties display_name="Imperial Roman Townhall"/>
 	<properties icon="gameres/icons/MTownhall.bmp"/>
 	<properties radius="170" selection_radius="175"/>
-	<properties edittree_pos="Structures/Stronghold (Imperial Rome)/Townhall"/>
+	<properties edittree_pos="Structures/Stronghold (United Roman)/Townhall"/>
 	<properties help="/contents/buildings/RTownhall"/>
 
-	
+	<behavior script="data/subai/townhall_buildingsbehavior_r.vs"/>
 </class>

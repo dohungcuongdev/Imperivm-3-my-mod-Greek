@@ -18,6 +18,7 @@
 	<src obj="IRTemple"/>
 	<src obj="HTemple"/>
 	<src obj="RRTemple"/>
+	<src obj="URTemple"/>
 </cmd>
 
 <!-- ROMAN TEMPLE COMMANDS -->
@@ -41,6 +42,7 @@
 	<src obj="RTemple"/>
 	<src obj="IRTemple"/>
 	<src obj="RRTemple"/>
+	<src obj="URTemple"/>
 </cmd>
 
 <cmd name="Altar of Jupiter" priority="2"
@@ -59,6 +61,7 @@
 	<src obj="RTemple"/>
 	<src obj="IRTemple"/>
 	<src obj="RRTemple"/>
+	<src obj="URTemple"/>
 </cmd>
 
 <cmd name="Cloud of Plague" priority="5"
@@ -77,6 +80,7 @@
 	<src obj="RTemple"/>
 	<src obj="IRTemple"/>
 	<src obj="RRTemple"/>
+	<src obj="URTemple"/>
 </cmd>
 
 <cmd name="Wrath of Jupiter" priority="6"
@@ -95,6 +99,7 @@
 	<src obj="RTemple"/>
 	<src obj="IRTemple"/>
 	<src obj="RRTemple"/>
+	<src obj="URTemple"/>
 </cmd>
 
 <cmd name="God's Gift" priority="7"
@@ -112,12 +117,13 @@
 	param="ReqSet, Altar of Jupiter, default, NameSet, God's Gift, default, SetsSet, items/God's Gift, 1">
 	<src obj="RTemple"/>
 	<src obj="RRTemple"/>
+	<src obj="URTemple"/>
 </cmd>
 
 <cmd name="God's Strength" priority="7"
 	button="research/Strength of God.bmp"
 	queueicon="gameres/icons/upgrades/Strength of God.bmp"
-	key="G"
+	key="s"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
 	costgold = "2000"
@@ -129,6 +135,7 @@
 	param="ReqSet, Altar of Jupiter, default, NameSet, God's Strength, default, SetsSet, items/God's Strength, 1">
 	<src obj="RTemple"/>
 	<src obj="IRTemple"/>
+	<src obj="URTemple"/>
 </cmd>
 
 </commands>

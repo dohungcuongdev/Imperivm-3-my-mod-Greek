@@ -33,6 +33,7 @@
 	<src obj="RTavern2"/>
 	<src obj="RRTavern"/>
 	<src obj="RRTavern2"/>
+	<src obj="URTavern"/>
 </cmd>
 
 <cmd name="MAddPop" priority="2"
@@ -148,6 +149,7 @@
 	<src obj="IRTavern2"/>
 	<src obj="RRTavern"/>
 	<src obj="RRTavern2"/>
+	<src obj="URTavern"/>
 </cmd>
 
 <cmd name="Free Trade" priority="8"
@@ -325,10 +327,25 @@
 	<src obj="GTTavern"/>
 </cmd>
 
+<cmd name="Sell food" priority="14"
+	traincommand="yes"
+	groupverifier="data/subai/verify_isresearched.vs"
+	button="actions/sell food.bmp"
+	queueicon="gameres/icons/upgrades/Sell Food.bmp"
+	key="s"
+	costfood="1000"
+	rollover="Sell food"
+	execdelay="12000"
+	description="Sells 1000 food at the market for 500 gold"
+	method="sellfoodforgold"
+	param="Free Wine">
+	<src obj="URTavern"/>
+</cmd>
+
 <cmd name="Scout Area" priority="12"
 	groupverifier="data/subai/verify_isresearched.vs"
 	button="actions/scouts.bmp"
-	key="s"
+	key="g"
 	costgold="200"
 	rollover="Scout area"
 	description="Temporarily removes the fog of war around a chosen point and reveals any hidden warriors there"
@@ -340,6 +357,7 @@
 	<src obj="IRTavern2"/>
 	<src obj="RRTavern"/>
 	<src obj="RRTavern2"/>
+	<src obj="URTavern"/>
 </cmd>
 
 <cmd name="Expedition" priority="12"
@@ -376,6 +394,22 @@
 	<src obj="IRTavern2"/>
 	<src obj="RRTavern"/>
 	<src obj="RRTavern2"/>
+	<src obj="URTavern"/>
+</cmd>
+
+<cmd name="Roman Food Tax" priority="16"
+	method="research"
+	queueicon="gameres/icons/upgrades/Food Tax.bmp"
+	button="upgrades/Food Tax.bmp"
+	key = "t"
+	rollover="Food Tax"
+	description="Collects a food tax from the population of the stronghold"
+	costgold="2000"
+	execdelay="20000"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	param="ReqSet, Free Wine, default, NameSet, Food Tax, default">
+	<src obj="URTavern"/>
 </cmd>
 
 <cmd name="Food Tax" priority="16"
@@ -481,6 +515,7 @@
 	<src obj="RTavern2"/>
 	<src obj="RRTavern"/>
 	<src obj="RRTavern2"/>
+	<src obj="URTavern"/>
 </cmd>
 
 <cmd name="MTribute" priority="22"
@@ -831,6 +866,22 @@
 	description="Heals the warriors around the townhall"
 	rollover="Religious Feast">
 	<src obj="BKTavern"/>
+</cmd>
+
+<cmd name="URReligiousFeast" priority="28"
+	queueicon="gameres/icons/upgrades/religious feast.bmp"
+	key="f"
+	button="research/religious feast.bmp"
+	groupverifier="data/subai/verify_research.vs"
+	cursor=""
+	researchcommand="yes"
+	costgold="1600"
+	execdelay="20000"
+	method="research"
+	param = "ReqSet, Free Wine,default, NameSet, Religious Feast,default"
+	description="Heals the warriors around the townhall"
+	rollover="Religious Feast">
+	<src obj="URTavern"/>
 </cmd>
 
 <cmd name="Nordic trade routes" priority="20"

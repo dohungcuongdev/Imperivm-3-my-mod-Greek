@@ -1,4 +1,4 @@
-<class id="IRBarracks" cpp_class="CVXBarrack" parent="BaseBarracks"
+<class id="URBarracks" cpp_class="CVXBarrack" parent="BaseBarracks"
 	entity="Buildings/RBarracks/RBarracks_as.ent.xml"
 	entity_winter="Buildings/RBarracks/RBarracks_w.ent.xml">
 
@@ -6,8 +6,7 @@
 	<properties icon="gameres/icons/RBarracks.bmp"/>
 	<properties display_name="Barracks"/>
 	<properties radius="245" selection_radius="250"/>
-	<properties edittree_pos="Structures/Stronghold (Imperial Rome)/Barracks"/>
+	<properties edittree_pos="Structures/Stronghold (United Roman)/Barracks"/>
 	<properties auto_repair="no"/>
-	<properties help="/contents/buildings/MBarracks"/>
-
+	<properties help="/contents/buildings/RBarracks"/>
 </class>

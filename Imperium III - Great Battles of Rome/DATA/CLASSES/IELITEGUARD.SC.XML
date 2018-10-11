@@ -1,0 +1,19 @@
+<class id="IEliteGuard" cpp_class="CVXUnit" parent="Melee" entity="Units/IEliteGuard/IEliteGuard.ent.xml">
+
+	<properties race="Iberia"/>
+	<properties maxhealth="420"/>
+	<properties damage="30" armor_slash="12" armor_pierce="12"/>
+	<properties speed="80"/>
+	<properties unit_specials="Bleeding attack"/>
+
+	<properties formation_priority="1000"/>
+	<properties formation_radius="26"/>
+
+	<properties icon="gameres/icons/IEliteguard.bmp"/>
+	<properties display_name="Elite Guard" display_name_plural="Elite Guards"/>
+	<properties help="contents/units/IEliteGuard"/>
+	<properties edittree_pos="Units/Iberia/Elite Guard"/>
+	<sounds command="data/sound entities/VoiceIEliteGuard.xml"/>
+	<sounds attack="AxeAttack" />
+
+</class>

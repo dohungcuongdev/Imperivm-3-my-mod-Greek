@@ -29,6 +29,7 @@
 	<src obj="BKBlacksmith"/>
 	<src obj="GTBlacksmith"/>
 	<src obj="ECBlacksmith"/>
+	<src obj="URBlacksmith"/>
 	<src obj="UnionBlacksmith"/>
 </cmd>
 
@@ -64,6 +65,7 @@
 	<src obj="BKBlacksmith"/>
 	<src obj="GTBlacksmith"/>
 	<src obj="ECBlacksmith"/>
+	<src obj="URBlacksmith"/>
 	<src obj="UnionBlacksmith"/>
 </cmd>
 
@@ -98,6 +100,7 @@
 	<src obj="CCBlacksmith"/>
 	<src obj="GTBlacksmith"/>
 	<src obj="ECBlacksmith"/>
+	<src obj="URBlacksmith"/>
 	<src obj="UnionBlacksmith"/>
 </cmd>
 
@@ -150,6 +153,7 @@
 	<src obj="RBlacksmith"/>
 	<src obj="RRBlacksmith"/>
 	<src obj="IRBlacksmith"/>
+	<src obj="URBlacksmith"/>
 </cmd>
 
 <cmd name="Roman Velit" priority="2"
@@ -167,6 +171,7 @@
 	param="NameSet,Throwing Spears,default, NameSet, RVelit,">
 	<src obj="RBlacksmith"/>
 	<src obj="IRBlacksmith"/>
+	<src obj="URBlacksmith"/>
 </cmd>
 
 <cmd name="Roman Principle" priority="3"
@@ -185,6 +190,7 @@
 	<src obj="RBlacksmith"/>
 	<src obj="RRBlacksmith"/>
 	<src obj="IRBlacksmith"/>
+	<src obj="URBlacksmith"/>
 </cmd>
 <cmd name="Roman Scout" priority="4"
 	queueicon="gameres/icons/upgrades/Horseshoes.bmp"
@@ -202,6 +208,7 @@
 	<src obj="RBlacksmith"/>
 	<src obj="RRBlacksmith"/>
 	<src obj="IRBlacksmith"/>
+	<src obj="URBlacksmith"/>
 </cmd>
 <cmd name="Roman Praetorian" priority="5"
 	queueicon="gameres/icons/upgrades/spike armor.bmp"
@@ -252,7 +259,7 @@
 	<src obj="RBlacksmith"/>
 </cmd>
 
-<cmd name="Roman Chariot Wheels" priority="5"
+<cmd name="Roman Chariot Wheels 15" priority="5"
 	queueicon="gameres/icons/upgrades/chariot wheels.bmp"
 	key="c"
 	button="upgrades/chariot wheels.bmp"
@@ -266,6 +273,22 @@
 	method="research"
 	param="NameSet,Chariot Wheels,default,SetsSet, levels/RChariot, 15,  NameSet, RChariot,">
 	<src obj="RRBlacksmith"/>
+</cmd>
+
+<cmd name="Roman Chariot Wheels 1" priority="5"
+	queueicon="gameres/icons/upgrades/chariot wheels.bmp"
+	key="c"
+	button="upgrades/chariot wheels.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Chariot Wheels"
+	description="Allows Chariots to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Chariot Wheels,default, NameSet, RChariot,">
+	<src obj="URBlacksmith"/>
 </cmd>
 <!-- BLACKSMITH COMMANDS -->
 <!-- 'Horseman', 'Axeman', 'Spearman' and 'Woman warrior'-->
@@ -938,7 +961,7 @@
 <cmd name="Roman Gladiator" priority="1"
 	queueicon="gameres/icons/upgrades/Gladiator.bmp"
 	button="upgrades/glad.bmp"
-	key="t"
+	key="g"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
 	costgold = "1800"
@@ -949,6 +972,7 @@
 	method="research"
 	param="NameSet, Roman Gladiator,default, NameSet, RGladiator">
 	<src obj="RRBlacksmith"/>
+	<src obj="URBlacksmith"/>
 </cmd>
 
 <cmd name="Teuton Master" priority="7"

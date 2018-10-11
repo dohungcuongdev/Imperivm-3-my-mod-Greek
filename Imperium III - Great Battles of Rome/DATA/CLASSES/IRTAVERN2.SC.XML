@@ -4,7 +4,7 @@ entity_autumn="Buildings/Rhouse02/Rhouse02_as.ent.xml"
 entity_spring="Buildings/Rhouse02/Rhouse02_as.ent.xml"
 entity_winter="Buildings/Rhouse02/Rhouse02_w.ent.xml">
 
-	<properties race="ImperialRome"/>
+	<properties race="RepublicanRome"/>
 	<properties display_name="Tavern" icon="gameres/icons/RTavern.bmp"/>
 	<properties radius="190" selection_radius="195"/>
 	<properties edittree_pos="Structures/Stronghold (Imperial Rome)/Tavern SE"/>

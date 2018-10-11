@@ -1,0 +1,32 @@
+<class id="RPCaptain" cpp_class="CVXHero" parent="Hero" entity="Units/RPraetorian/RPraetorian.ent.xml">
+
+	<properties race="RepublicanRome"/>
+	<properties display_name="Captain" display_name_plural="Captains"/>
+	<properties icon="gameres/icons/RPCaptain.bmp"/>
+	<properties edittree_pos="Units/United Roman/Imperial Captain"/>
+	<properties maxhealth="1800"/>
+	<properties damage="40" armor_slash="16" armor_pierce="16"/>
+	<properties help="contents/units/RPraetorian"/>
+	<properties inventory_size="6"/>
+	
+	<properties speed="80"/>
+	
+	<properties HeroSkills="Assault, Team attack, Team defense"/>
+	
+	<!--
+	<properties unit_specials="Penetration, Parry, Toughness"/>
+	-->
+	
+	<properties max_army="30"/>
+	
+	<!--
+	<properties interface="thumb,unit,items"/>
+	-->
+	
+	<properties interface="thumb,hero,items,holder"/>
+	
+
+	<sounds command="data/sound entities/VoiceRTribune.xml"/>
+	
+
+</class>
