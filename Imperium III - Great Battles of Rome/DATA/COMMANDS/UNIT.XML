@@ -13,6 +13,7 @@
 	>
 	<src obj="Unit"/>
 	<nsrc obj="Hero"/>
+	<nsrc obj="Captain"/>
 	<nsrc obj="BaseAnimal"/>
 	<nsrc obj="GGhost"/>
 	<nsrc obj="Sentry"/>
@@ -51,6 +52,9 @@
 	<cmdtext target="Hero"
 		text="Click to attack this hero"
 		default-text="Right-click to attack this hero"/>
+	<cmdtext target="Captain"
+		text="Click to attack this captain"
+		default-text="Right-click to attack this captain"/>
 	<cmdtext target="Unit"
 		text="Click to attack this enemy"
 		default-text="Right-click to attack this enemy"/>
@@ -151,6 +155,10 @@
 	<cmdtext target="Hero"
 		text="Click to attach to hero"
 		default-text="Right-click to attach to hero"/>
+		
+	<cmdtext target="Captain"
+		text="Click to attach to captain"
+		default-text="Right-click to attach to captain"/>	
 
 <!-- Default command only
 	<src obj="Unit" sticky="yes"/>
@@ -222,6 +230,7 @@
 	<nsrc obj="SummoningUnit"/>
 
 	<nsrc obj="Hero"/>
+	<nsrc obj="Captain"/>
 	
 	<nsrc obj="Sentry"/>
 	<nsrc obj="RamUnit"/>
@@ -275,6 +284,7 @@
 
 	<src obj="Military"/>
 	<nsrc obj="Hero"/>
+	<nsrc obj="Captain"/>
 	<nsrc obj="ShipBattle"/>
 	<nsrc obj="Sentry"/>
 	<nsrc obj="RamUnit"/>

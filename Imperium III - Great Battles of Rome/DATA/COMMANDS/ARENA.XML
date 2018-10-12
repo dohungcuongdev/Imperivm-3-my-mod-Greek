@@ -1638,14 +1638,14 @@
 	traincommand="yes"
 	key="r"
 	help="/contents/units/RTCaptain"
-	costgold = "800"
+	costgold = "1000"
 	costfood = "0"
 	costpop = "1"
 	execdelay = "20000"
 	rollover="Train Republican Captain"
 	description="Hires a Republican Captain"
 	method="trainex"
-	param="1, 4, RTCaptain, RTCaptain, Gladiator Shows">
+	param="1, 3, RTCaptain, RTCaptain, Gladiator Shows">
 	<src obj="URArena"/>
 </cmd>
 
@@ -1665,7 +1665,7 @@
 	rollover="Train Imperial Captain"
 	description="Hires a Republican Captain"
 	method="trainex"
-	param="1, 2, RPCaptain, RPCaptain, Gladiator Shows">
+	param="1, 3, RPCaptain, RPCaptain, Gladiator Shows">
 	<src obj="URArena"/>
 </cmd>
 
