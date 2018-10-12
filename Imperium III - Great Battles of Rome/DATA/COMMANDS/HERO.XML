@@ -192,7 +192,8 @@
 	coststamina = "4"
 	immediate="yes"
 	groupverifier="data/subai/verify_cmdcost_unit.vs">
-	<src obj="Hero"/>	
+	<src obj="Hero"/>
+	<nsrc obj="Captain"/>
 </cmd>
 <!-- Skills -->
 <!--
@@ -206,6 +207,7 @@
 	voidgroupdispatch="1"
 	param="Divine grace">
 	<src obj="Hero"/>
+	<nsrc obj="Captain"/>
 </cmd>
 -->
 <cmd name="skill_battle_cry" priority="51"
