@@ -1,0 +1,9 @@
+<class id="CGHero4" cpp_class="CVXHero" parent="CelticGaulHero" entity="Units/GHeroWoman/GHeroWoman.ent.xml">
+
+	<properties display_name="Lila" display_name_plural="Heroes"/>
+	<properties icon="gameres/icons/CGHero4.bmp"/>
+	<properties edittree_pos="Units/Celtic Gaul/Hero 4"/>
+	
+	<sounds command="data/sound entities/VoiceGFemaleHero.xml"/>
+
+</class>

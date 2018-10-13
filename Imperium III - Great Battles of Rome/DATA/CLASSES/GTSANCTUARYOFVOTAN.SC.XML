@@ -1,6 +1,6 @@
 <class id="GTSanctuaryOfVotan" cpp_class="CVXBuilding" parent="BaseArena" entity="Buildings/TSanctuaryOfVotan/TSanctuaryOfVotan.ent.xml">
 
-	<properties race="Germany"/>
+	<properties race="Britain"/> <!-- to use Britain Fights -->
 
 	<properties display_name="Sanctuary of Votan"/>
 

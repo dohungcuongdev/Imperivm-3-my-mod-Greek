@@ -45,6 +45,7 @@
 	param="SetsSet, levels/GSwordsman, 6, SetsSet, levels/GArcher, 6, NameSet, Fights, default,">
 	<src obj="GArena1"/>
 	<src obj="GArena2"/>
+	<src obj="CGArena"/>
 </cmd>
 
 <cmd name="Britain Fights" priority="2"
@@ -467,6 +468,23 @@
 	<src obj="GArena3"/>
 </cmd>
 
+<cmd name="hireheroCG" priority="1"
+	button="actions/hire heroG.bmp"
+	queueicon="gameres/icons/hire heroG.bmp"
+	groupverifier="data/subai/verify_cmdcost_building.vs"
+	traincommand="yes"
+	key="h"
+	costgold = "2200"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "20000"
+	param = "CelticGaulHero"
+	method="hirehero"
+	help="/contents/units/GHero"
+	rollover="Hire hero with 8 skills, pick up maximum 6 items but can only lead 40 units">
+	<src obj="CGArena"/>
+</cmd>
+
 <cmd name="hireheroC" priority="1"
 	button="actions/hire heroC.bmp"
 	queueicon="gameres/icons/hire heroC.bmp"
@@ -497,7 +515,7 @@
 	param = "ExtendedCarthaginianHero"
 	method="hirehero"
 	help="/contents/units/CHero"
-	rollover="Hire hero">
+	rollover="Hire hero with 7 skills">
 	<src obj="ECArena"/>
 </cmd>
 
@@ -548,7 +566,7 @@
 	param = "BritonHero"
 	method="hirehero"
 	help="/contents/units/BHero"
-	rollover="Hire hero">
+	rollover="Hire archer hero">
 	<src obj="BMorrigansMonument"/>
 </cmd>
 
@@ -558,14 +576,14 @@
 	groupverifier="data/subai/verify_cmdcost_building.vs"
 	traincommand="yes"
 	key="h"
-	costgold = "1200"
+	costgold = "1500"
 	costfood = "0"
 	costpop = "0"
 	execdelay = "20000"
 	param = "BritonKHero"
 	method="hirehero"
 	help="/contents/units/BHero"
-	rollover="Hire hero">
+	rollover="Hire archer hero with 6 skills">
 	<src obj="BKMorrigansMonument"/>
 </cmd>
 
@@ -600,7 +618,7 @@
 	param = "GoldenGermanHero"
 	method="hirehero"
 	help="/contents/units/GHero"
-	rollover="Hire hero">
+	rollover="Hire hero with 10 skills">
 	<src obj="GTSanctuaryOfVotan"/>
 </cmd>
 
@@ -624,6 +642,7 @@
 	<src obj="GArena1"/>
 	<src obj="GArena2"/>
 	<src obj="GArena3"/>
+	<src obj="CGArena"/>
 </cmd>
 
 <cmd name="Trident Warrior Exp1" priority="5"
@@ -642,6 +661,7 @@
 	<src obj="GArena1"/>
 	<src obj="GArena2"/>
 	<src obj="GArena3"/>
+	<src obj="CGArena"/>
 </cmd>
 <cmd name="Trident Warrior Exp2" priority="5"
 	button="research/trident warrior exp 2.bmp"
@@ -659,6 +679,7 @@
 	<src obj="GArena1"/>
 	<src obj="GArena2"/>
 	<src obj="GArena3"/>
+	<src obj="CGArena"/>
 </cmd>
 <cmd name="Trident Warrior Exp3" priority="5"
 	button="research/trident warrior exp 3.bmp"
@@ -676,6 +697,7 @@
 	<src obj="GArena1"/>
 	<src obj="GArena2"/>
 	<src obj="GArena3"/>
+	<src obj="CGArena"/>
 </cmd>
 
 <cmd name="Warrior Tales" priority="6"
@@ -695,6 +717,39 @@
 	<src obj="GArena2"/>
 	<src obj="GArena3"/>
 	<src obj="GTSanctuaryOfVotan"/>
+	<src obj="CGArena"/>
+</cmd>
+
+<cmd name="Tales of Hero I" priority="20"
+	button="research/TALES OF HEROES1.bmp"
+	key="u"
+	queueicon="gameres/icons/upgrades/TALES OF HEROES1.bmp"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "3000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Tales of Hero I"
+	description="Allow heroes to receive 'Belt of snakes' on their fisrt kill"
+	researchcommand="yes"
+	method="research"
+	param="ReqSet, Fights, default, NamePlr, Tales of Hero I, default">
+	<src obj="CGArena"/>
+</cmd>
+
+<cmd name="Tales of Hero II" priority="20"
+	button="research/TALES OF HEROES2.bmp"
+	key="j"
+	queueicon="gameres/icons/upgrades/TALES OF HEROES2.bmp"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "3000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Tales of Hero II"
+	description="Allow heroes to receive 'King's Belt' on their fisrt kill"
+	researchcommand="yes"
+	method="research"
+	param="ReqSet, Fights, default, NamePlr, Tales of Hero II, default">
+	<src obj="CGArena"/>
 </cmd>
 
 <cmd name="Hire Viking Lord" priority="10"
@@ -716,6 +771,7 @@
 	param="1, 4, BVikingLord, BVikingLord, Fights">
 	<src obj="BMorrigansMonument"/>
 	<src obj="BKMorrigansMonument"/>
+	<src obj="CGArena"/>
 </cmd>
 
 <cmd name="Hire Viking Hero" priority="10"
@@ -732,7 +788,7 @@
 	costpop = "0"
 	execdelay = "30000"
 	rollover="Hire Viking Hero"
-	description="Hires a Viking Hero"
+	description="Hires a Viking Hero with 10 skills"
 	method="trainex"
 	param="1, 1, BKVikingLord, BKVikingLord, Shrine of Thor">
 	<src obj="BKMorrigansMonument"/>
@@ -754,6 +810,7 @@
 	param="ReqSet, Fights, default, NameSet, Shrine of Thor, default, SetsSet, levels/BVikingLord, 4">
 	<src obj="BMorrigansMonument"/>
 	<src obj="BKMorrigansMonument"/>
+	<src obj="CGArena"/>
 </cmd>
 
 <cmd name="Hire Liberati" priority="4"
@@ -919,6 +976,7 @@
 	<src obj="GArena2"/>
 	<src obj="GArena3"/>
 	<src obj="GTSanctuaryOfVotan"/>
+	<src obj="CGArena"/>
 </cmd>
 
 <cmd name="Veteran's guild" priority="6"
@@ -985,6 +1043,7 @@
 	param="ReqSet, Fights, default, NamePlr, Nobility, default">
 	<src obj="BMorrigansMonument"/>
 	<src obj="BKMorrigansMonument"/>
+	<src obj="CGArena"/>
 </cmd>
 
 <cmd name="Noble Offence" priority="7"
@@ -1002,9 +1061,10 @@
 	param="ReqSet, Fights, default, NamePlr, Noble Offence, default">
 	<src obj="BMorrigansMonument"/>
 	<src obj="BKMorrigansMonument"/>
+	<src obj="CGArena"/>
 </cmd>
 
-<cmd name="Noble Defence" priority="8"
+<cmd name="Noble Defence" priority="7"
 	button="research/noble defence.bmp"
 	key="d"
 	queueicon="gameres/icons/upgrades/noble defence.bmp"
@@ -1019,6 +1079,7 @@
 	param="ReqSet, Fights, default, NamePlr, Noble Defence, default">
 	<src obj="BMorrigansMonument"/>
 	<src obj="BKMorrigansMonument"/>
+	<src obj="CGArena"/>
 </cmd>
 
 <cmd name="Standartization I" priority="2"
@@ -1515,7 +1576,7 @@
 	param = "UnionHero"
 	method="hirehero"
 	help="/contents/units/IHero"
-	rollover="Hire hero">
+	rollover="Hire hero with 8 skills">
 	<src obj="UnionArena"/>
 </cmd>
 
@@ -1643,7 +1704,7 @@
 	costpop = "1"
 	execdelay = "20000"
 	rollover="Train Republican Captain"
-	description="Hires a Republican Captain"
+	description="Train Republican Captain with 3 kills, can lead 30 units but army gain double experience than from hero (captain: 80, hero: 40)"
 	method="trainex"
 	param="1, 3, RTCaptain, RTCaptain, Gladiator Shows">
 	<src obj="URArena"/>
@@ -1663,7 +1724,7 @@
 	costpop = "1"
 	execdelay = "20000"
 	rollover="Train Imperial Captain"
-	description="Hires a Republican Captain"
+	description="Train Imperial Captain with 3 kills, can lead 30 units but army gain double experience than from hero (captain: 80, hero: 40)"
 	method="trainex"
 	param="1, 3, RPCaptain, RPCaptain, Gladiator Shows">
 	<src obj="URArena"/>

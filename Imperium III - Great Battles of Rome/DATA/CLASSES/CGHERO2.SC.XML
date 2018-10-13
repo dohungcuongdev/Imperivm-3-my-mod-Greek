@@ -1,0 +1,7 @@
+<class id="CGHero2" cpp_class="CVXHero" parent="CelticGaulHero" entity="Units/GHero1/GHero1.ent.xml">
+
+	<properties display_name="Vutaha" display_name_plural="Heroes"/>
+	<properties icon="gameres/icons/CGHero2.bmp"/>
+	<properties edittree_pos="Units/Celtic Gaul/Hero 2"/>
+
+</class>

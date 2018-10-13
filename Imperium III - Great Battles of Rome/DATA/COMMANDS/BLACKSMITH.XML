@@ -13,6 +13,7 @@
 	<src obj="RBlacksmith"/>
 	<src obj="CBlacksmith"/>
 	<src obj="GBlacksmith"/>
+	<src obj="CGBlacksmith"/>
 	<src obj="IBlacksmith"/>
 	<src obj="IRBlacksmith"/>
 	<src obj="BBlacksmith"/>
@@ -61,6 +62,7 @@
 	<src obj="RRBlacksmith"/>
 	<src obj="TTBlacksmith"/>
 	<src obj="GGBlacksmith"/>
+	<src obj="CGBlacksmith"/>
 	<src obj="CCBlacksmith"/>
 	<src obj="BKBlacksmith"/>
 	<src obj="GTBlacksmith"/>
@@ -97,6 +99,7 @@
 	<src obj="RRBlacksmith"/>
 	<src obj="TTBlacksmith"/>
 	<src obj="GGBlacksmith"/>
+	<src obj="CGBlacksmith"/>
 	<src obj="CCBlacksmith"/>
 	<src obj="GTBlacksmith"/>
 	<src obj="ECBlacksmith"/>
@@ -307,6 +310,7 @@
 	method="research"
 	param="NameSet, GAxeman">
 	<src obj="GBlacksmith"/>
+	<src obj="CGBlacksmith"/>
 </cmd>
 
 <cmd name="Gaul Axeman" priority="0"
@@ -339,6 +343,7 @@
 	method="research"
 	param="ReqSet, GAxeman, , SetsSet, levels/GAxeman, 6, NameSet, Gaul Iron Axes, default">
 	<src obj="GBlacksmith"/>
+	<src obj="CGBlacksmith"/>
 </cmd>
 
 <cmd name="Gaul Spearman" priority="1"
@@ -355,6 +360,7 @@
 	method="research"
 	param="NameSet, GSpearman">
 	<src obj="GBlacksmith"/>
+	<src obj="CGBlacksmith"/>
 </cmd>
 
 <cmd name="Gaul Spearman" priority="1"
@@ -387,10 +393,10 @@
 	method="research"
 	param="ReqSet, GSpearman, , SetsSet, levels/GSpearman, 6, NameSet, Gaul Iron Spearheads, default">
 	<src obj="GBlacksmith"/>
+	<src obj="CGBlacksmith"/>
 </cmd>
 
-<!--
-<cmd name="Gaul Horseman" priority="2"
+<cmd name="Celtic Gaul Horseman" priority="2"
 	queueicon="gameres/icons/upgrades/Horseshoes.bmp"
 	button="upgrades/Horseshoes.bmp"
 	key="h"
@@ -403,9 +409,24 @@
 	description="Allows Horsemen to be equipped in the Barracks"
 	method="research"
 	param="NameSet, GHorseman,">
-	<src obj="GBlacksmith"/>
+	<src obj="CGBlacksmith"/>
 </cmd>
--->
+
+<cmd name="Celtic Heavy Horseshoes" priority="2"
+	queueicon="gameres/icons/upgrades/HEAVY HORSESHOES.bmp"
+	button="upgrades/HEAVY HORSESHOES.bmp"
+	key="h"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "800"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Heavy Horseshoes"
+	description="Allows level 6 Horsemen to be equipped in the Barracks"
+	method="research"
+	param="ReqSet, GHorseman, , SetsSet, levels/GHorseman, 6, NameSet, Heavy Horseshoes, default">
+	<src obj="CGBlacksmith"/>
+</cmd>
 
 <cmd name="Gaul Horseman" priority="2"
 	queueicon="gameres/icons/upgrades/HEAVY HORSESHOES.bmp"
@@ -471,6 +492,7 @@
 	method="research"
 	param="NameSet, GWomanWarrior">
 	<src obj="GBlacksmith"/>
+	<src obj="CGBlacksmith"/>
 </cmd>
 
 <cmd name="Gaul Woman Warrior" priority="3"
@@ -503,6 +525,7 @@
 	method="research"
 	param="ReqSet, GWomanWarrior, , SetsSet, levels/GWomanWarrior, 6, NameSet, Fine Armor, default">
 	<src obj="GBlacksmith"/>
+	<src obj="CGBlacksmith"/>
 </cmd>
 
 <!-- IBERIAN BLACKSMITH COMMANDS -->
@@ -1248,6 +1271,7 @@
 	param="NameSet,Steel Weapons, default, SetsSet, levels/NSECUAZ, 6, NameSet, NSECUAZ">
 	<src obj="GBlacksmith"/>
 	<src obj="GGBlacksmith"/>
+	<src obj="CGBlacksmith"/>
 </cmd>
 
 <cmd name="Dual Axes" priority="9"

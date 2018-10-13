@@ -1,0 +1,140 @@
+<commands>
+
+<!-- DRUIDS HOUSE COMMANDS -->
+
+<cmd name="repair druid house" priority="1"
+	method="repair"
+	button="actions/repair.bmp"
+	key="r"
+	queueicon="gameres/icons/upgrades/repair.bmp"
+	groupverifier="data/subai/verify_cmdcost_building.vs"
+	rollover="Repair"
+	costgold="500"
+	costfood="0"
+	execdelay = "60000">
+	<src obj="DruidHouse"/>
+	<src obj="CGDruidHouse"/>
+</cmd>
+
+<cmd name="trainGDruid" priority="1"
+	button="actions/train GDruid.bmp"
+	queueicon="gameres/icons/GDruid.bmp"
+	groupverifier="data/subai/verify_cmdcost_building.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="d"
+	help="/contents/units/GDruid"
+	costgold = "200"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "20000"
+	rollover="Call Druid"
+	method="train"
+	param="GDruid"
+	sclass="GDruid">
+	<src obj="DruidHouse"/>
+	<src obj="CGDruidHouse"/>
+</cmd>
+
+<cmd name="Celtic Ritual Chamber" priority="2"
+	button="research/DRUID RELATIONS.bmp"
+	queueicon="gameres/icons/upgrades/DRUID RELATIONS.bmp"
+	key="r"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1000"
+	costfood = "0"
+	execdelay = "40000"
+	rollover="Ritual Chamber"
+	description="Allows druids to gain experience by learning from more experienced warriors"
+	method="research"
+	param="NamePlr, Ritual Chamber, default,NameSet, Ritual Chamber, default">
+	<src obj="CGDruidHouse"/>
+</cmd>
+
+<cmd name="Ritual Chamber" priority="2"
+	button="research/ritual chamber.bmp"
+	queueicon="gameres/icons/upgrades/ritual chamber.bmp"
+	key="r"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1000"
+	costfood = "0"
+	execdelay = "40000"
+	rollover="Ritual Chamber"
+	description="Allows druids to gain experience by learning from more experienced warriors"
+	method="research"
+	param="NamePlr, Ritual Chamber, default,NameSet, Ritual Chamber, default">
+	<src obj="DruidHouse"/>
+</cmd>
+
+
+<cmd name="Ghoul Summoning" priority="6"
+	queueicon="gameres/icons/upgrades/Ghost.bmp"
+	button="research/Ghost.bmp"
+	key="g"
+	help="/contents/units/Ghost"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1600"
+	costfood = "0"
+	execdelay = "20000"
+	rollover="Ghoul summoning"
+	description="Allows druids to sacrifice themselves and summon a Ghoul, which drains the life from all enemies nearby for about 10 seconds"
+	method="research"
+	param="ReqSet, Ritual Chamber, default, NamePlr, Ghoul Summoning, default">
+	<src obj="DruidHouse"/>
+	<src obj="CGDruidHouse"/>
+</cmd>
+
+<cmd name="Restoration" priority="9"
+	queueicon="gameres/icons/upgrades/restoration.bmp"
+	button="research/restoration.bmp"
+	key="m"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1500"
+	costfood = "0"
+	execdelay = "20000"
+	rollover="Restoration"
+	description="Allows druids to sacrifice themselves to restore the stamina of 5 nearby allies"
+	method="research"
+	param="ReqSet, Ritual Chamber, default, NamePlr, Restoration, default">
+	<src obj="DruidHouse"/>
+	<src obj="CGDruidHouse"/>
+</cmd>
+
+<cmd name="Eagle Summoning" priority="8"
+	queueicon="gameres/icons/upgrades/summon eagle.bmp"
+	button="actions/summon eagle.bmp"
+	key="e"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1200"
+	costfood = "0"
+	execdelay = "20000"
+	rollover="Eagle summoning"
+	description="Allows druids to sacrifice themselves and summon an eagle, which is under your control for about 2 minutes"
+	method="research"
+	param="ReqSet, Ritual Chamber, default, NamePlr, Eagle Summoning, default">
+	<src obj="DruidHouse"/>
+	<src obj="CGDruidHouse"/>
+</cmd>
+
+<cmd name="Gaul God's Gift" priority="10"
+	button="research/Gift of God.bmp"
+	queueicon="gameres/icons/upgrades/Gift of God.bmp"
+	key="G"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1800"
+	costfood = "0"
+	execdelay = "20000"
+	rollover="God's Gift"
+	description="All new warriors are equipped with a God's Gift artifact, which heals a warrior at his first kill and then disappears"
+	method="research"
+	param="ReqSet, Ritual Chamber, default, NameSet, God's Gift, default, SetsSet, items/God's Gift, 1">
+	<src obj="CGDruidHouse"/>
+</cmd>
+
+</commands>

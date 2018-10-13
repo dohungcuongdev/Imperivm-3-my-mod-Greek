@@ -1,7 +1,7 @@
 <class id="ECHero4" cpp_class="CVXHero" parent="ExtendedCarthaginianHero" entity="Units/CHero4/CHero4.ent.xml">
 
 	<properties display_name="Haltibaal" display_name_plural="Heroes"/>
-	<properties icon="gameres/icons/CHERO42.bmp"/>
+	<properties icon="gameres/icons/ECHero4.bmp"/>
 	<properties edittree_pos="Units/Extended Carthage/Hero 4"/>
 
 </class>

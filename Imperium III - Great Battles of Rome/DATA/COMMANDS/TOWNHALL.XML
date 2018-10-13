@@ -33,6 +33,7 @@
 	description="Start automatic training of warriors in the stronghold"
 	rollover="Automatic training">
 	<src obj="GTownhall"/>
+	<src obj="CGTownhall"/>
 	<src obj="RTownhall"/>
 	<src obj="IRTownhall"/>
 	<src obj="HTownhall"/>
@@ -49,6 +50,7 @@
 	description="Stop automatic training of warriors in the stronghold"
 	rollover="Stop automatic training">
 	<src obj="GTownhall"/>
+	<src obj="CGTownhall"/>
 	<src obj="RTownhall"/>
 	<src obj="IRTownhall"/>
 	<src obj="HTownhall"/>
@@ -127,6 +129,7 @@
 	description = "Restores the stamina of all friendly warriors around the townhall"
 	>
 	<src obj="GTownhall"/>
+	<src obj="CGTownhall"/>
 	<src obj="BTownhall"/>
 	<src obj="BKTownhall"/>
 	<src obj="UnionTownhall"/>
@@ -153,6 +156,7 @@
 	<src obj="GTTownhall"/>
 	<src obj="ECTownhall"/>
 	<src obj="URTownhall"/>
+	<src obj="CGTownhall"/>
 </cmd>
 
 <!-- AI only -->
@@ -191,5 +195,6 @@
 	<src obj="GTTownhall"/>
 	<src obj="ECTownhall"/>
 	<src obj="URTownhall"/>
+	<src obj="CGTownhall"/>
 </cmd>
 </commands>

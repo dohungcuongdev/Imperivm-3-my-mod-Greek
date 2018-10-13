@@ -456,6 +456,7 @@
 	param="ReqSet, Nordic trade routes, , NameSet, Belts of Might, default, SetsSet, items/Belt of might, 1">
 	<src obj="GTavern"/>
 	<src obj="UnionTavern"/>
+	<src obj="CGTavern"/>
 </cmd>
 
 <cmd name="getloan" priority="18"
@@ -606,6 +607,7 @@
 	rollover="Tribute (once per game)">
 	<src obj="TTavern"/>
 	<src obj="GTTavern"/>
+	<src obj="CGTavern"/>
 </cmd>
 
 <cmd name="ETribute" priority="8"
@@ -817,6 +819,7 @@
 	>
 	<src obj="TTavern"/>
 	<src obj="GTTavern"/>
+	<src obj="CGTavern"/>
 </cmd>
 
 <cmd name="TFoodTax" priority="15"
@@ -833,6 +836,7 @@
 	rollover="Food Tax"
 	>
 	<src obj="TTavern"/>
+	<src obj="CGTavern"/>
 </cmd>
 
 <cmd name="TReligiousFeast" priority="18"
@@ -899,6 +903,21 @@
 	<src obj="UnionTavern"/>
 </cmd>
 
+<cmd name="Nordic trade routes" priority="20"
+	method="research"
+	queueicon="gameres/icons/upgrades/Routes.bmp"
+	button="upgrades/Routes.bmp"
+	key="n"
+	rollover="Nordic trade routes"
+	description="Equips all new warriors with Bear teeth amulets (+5 attack)"
+	costgold="2500"
+	execdelay="25000"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	param="ReqSet, Grain Trade, default, NameSet, Nordic trade routes, , SetsSet, items/Bear teeth amulet, 1">
+	<src obj="CGTavern"/>
+</cmd>
+
 <cmd name="Germany Charm of Athena" priority="20"
 	button="Research/charm of athena.bmp"
 	key="a"
@@ -944,5 +963,38 @@
 	groupverifier="data/subai/verify_research.vs"
 	param="ReqSet, Free Trade, default, NameSet, Belts of Might, default, SetsSet, items/Belt of might, 1">
 	<src obj="ECTavern"/>
+</cmd>
+
+<cmd name="Gaul Supplies" priority="19"
+	queueicon="gameres/icons/upgrades/Supplies.bmp"
+	groupverifier="data/subai/verify_research.vs"
+	button="Research/Supplies.bmp"
+	key="r"
+	researchcommand="yes"
+	costgold="2000"
+	costfood="0"
+	execdelay="60000"
+	description="Warriors consume half of food"
+	rollover="Supplies"
+	method="research"
+	param="ReqSet, Grain Trade, default, NamePlr, Supplies, default">
+	<src obj="CGTavern"/>
+</cmd>
+
+<cmd name="Trade Peasant For Food" priority="11"
+	queueicon="gameres/icons/upgrades/Trade Peasant For Food.bmp"
+	button="actions/Trade Peasant For Food.bmp"
+	key="t"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	method="research"
+	costgold="0"
+	costfood="0"
+	costpop="50"
+	execdelay="10000"
+	param="ReqSet, Grain Trade, default, NameSet, Trade Peasant For Food, default"
+	description="Trade 50 population for 4000 food"
+	rollover="Trade Peasant For Food">
+	<src obj="CGTavern"/>
 </cmd>
 </commands>

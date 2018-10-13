@@ -1,7 +1,7 @@
 <class id="GTHero2" cpp_class="CVXHero" parent="GoldenGermanHero" entity="Units/THero2/THero2.ent.xml">
 
 	<properties display_name="Eidhart" display_name_plural="Heroes"/>
-	<properties icon="gameres/icons/THero2.bmp"/>
+	<properties icon="gameres/icons/thor.bmp"/>
 	<properties edittree_pos="Units/Golden Germany/Hero 2"/>
 
 </class>

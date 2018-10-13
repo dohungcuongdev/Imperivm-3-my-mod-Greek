@@ -106,3 +106,13 @@ if (EnvReadString(.player, "Statue of Zeus") == "researched")
 				.AsUnit.SetHealth(.AsUnit.maxhealth);
 			}
 		}
+		
+if (EnvReadString(.player, "Tales of Hero I") == "researched") {
+	if (.AsHero().IsValid && !.HasItem("Belt of snakes"))
+  		.AddItem("Belt of snakes");
+}
+
+if (EnvReadString(.player, "Tales of Hero II") == "researched") {
+	if (.AsHero().IsValid && !.HasItem("King's Belt"))
+      	.AddItem("King's Belt");
+}
