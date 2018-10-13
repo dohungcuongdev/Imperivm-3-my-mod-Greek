@@ -2,7 +2,7 @@
 
 <!-- GAUL BARRACKS -->
 
-<cmd name="trainGSwordsman" priority="3"
+<cmd name="trainCGSwordsman" priority="3"
 	button="actions/train GSwordsman.bmp"
 	queueicon="gameres/icons/GSwordsman.bmp"
 	transpicon="1"
@@ -21,7 +21,7 @@
 	<src obj="CGBarracks"/>
 </cmd>
 
-<cmd name="trainGArcher" priority="4"
+<cmd name="trainCGArcher" priority="4"
 	button="actions/train GArcher.bmp"
 	queueicon="gameres/icons/GArcher.bmp"
 	transpicon="1"
@@ -41,7 +41,7 @@
 	<src obj="CGBarracks"/>
 </cmd>
 
-<cmd name="trainGAxeman" priority="5"
+<cmd name="trainCGAxeman" priority="5"
 	button="actions/train GAxeman.bmp"
 	queueicon="gameres/icons/GAxeman.bmp"
 	transpicon="1"
@@ -60,7 +60,7 @@
 	<src obj="CGBarracks"/>
 </cmd>
 
-<cmd name="trainGSpearman" priority="6"
+<cmd name="trainCGSpearman" priority="6"
 	button="actions/train GSpearman.bmp"
 	queueicon="gameres/icons/GSpearman.bmp"
 	transpicon="1"
@@ -80,7 +80,7 @@
 	<src obj="CGBarracks"/>
 </cmd>
 
-<cmd name="trainGHorseman" priority="7"
+<cmd name="trainCGHorseman" priority="7"
 	button="actions/train GHorseman.bmp"
 	queueicon="gameres/icons/GHorseman.bmp"
 	transpicon="1"
@@ -100,7 +100,7 @@
 	<src obj="CGBarracks"/>
 </cmd>
 
-<cmd name="trainGWomanWarrior" priority="8"
+<cmd name="trainCGWomanWarrior" priority="8"
 	button="actions/train GWomanWarrior.bmp"
 	queueicon="gameres/icons/GWomanWarrior.bmp"
 	transpicon="1"

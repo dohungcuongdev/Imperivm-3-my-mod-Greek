@@ -15,6 +15,7 @@
 	description="Increases the stronghold population by 10"
 	rollover="Increase population">
 	<src obj="GTavern"/>
+	<src obj="AHAgora"/>
 </cmd>
 
 <cmd name="RAddPop" priority="2"
@@ -340,6 +341,21 @@
 	method="sellfoodforgold"
 	param="Free Wine">
 	<src obj="URTavern"/>
+</cmd>
+
+<cmd name="Sell food" priority="14"
+	traincommand="yes"
+	groupverifier="data/subai/verify_isresearched.vs"
+	button="actions/sell food.bmp"
+	queueicon="gameres/icons/upgrades/Sell Food.bmp"
+	key="s"
+	costfood="1000"
+	rollover="Sell food"
+	execdelay="12000"
+	description="Sells 1000 food at the market for 500 gold"
+	method="sellfoodforgold"
+	param="Trade Routes">
+	<src obj="AHAgora"/>
 </cmd>
 
 <cmd name="Scout Area" priority="12"

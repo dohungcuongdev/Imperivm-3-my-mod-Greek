@@ -1,0 +1,13 @@
+<class id="AHGymnasium" cpp_class="CVXBuilding" parent="BaseArena" entity="Buildings/HGymnasium/HGymnasium.ent.xml">
+
+	<properties race="ImperialRome"/>
+	<properties display_name="Gymnasium" icon="gameres/icons/HGymnasium.bmp"/>
+	<properties radius="350" selection_radius="355"/>
+	<properties edittree_pos="Structures/Stronghold (Ancient Greece)/Gymnasium"/>
+	<properties help="/contents/buildings/HGymnasium"/>
+	<method sig="democracy" vs="data/subai/democracy.vs"/>
+	<method sig="oligarchy" vs="data/subai/oligarchy.vs"/>
+	<method sig="myrmidon_school" vs="data/subai/myrmidons_school.vs"/>
+	<behavior script="data/subai/government_form.vs"/>
+
+</class>

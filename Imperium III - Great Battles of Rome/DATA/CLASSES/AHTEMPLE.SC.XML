@@ -1,0 +1,16 @@
+<class id="AHTemple" cpp_class="CVXBarrack" parent="BaseBarracks" entity="Buildings/HTemple/HTemple.ent.xml">
+
+	<properties race="ImperialRome"/>
+	<properties display_name="Acropolis"/>
+
+	<properties radius="300" selection_radius="300"/>
+	<properties edittree_pos="Structures/Stronghold (Ancient Greece)/Acropolis"/>
+
+	<properties auto_repair="no"/>
+	<properties icon="gameres/icons/HTemple.bmp"/>
+	<properties help="/contents/buildings/HTemple"/>
+	<method sig="apolloProtection"  vs="data/subai/invoke_apollo_protection.vs"/>
+	<behavior script="data/subai/apollo_protection.vs"/>
+
+	<sounds select="TempleSelect"/>
+</class>

@@ -28,7 +28,7 @@
 
 <!-- GREEK BARRACKS -->
 
-<cmd name="trainIMilitiaman" priority="3"
+<cmd name="trainHMilitiaman" priority="3"
 	button="actions/train imilitiaman.bmp"
 	queueicon="gameres/icons/IMilitiaman.bmp"
 	groupverifier="data/subai/verify_cmdcost_building.vs"
@@ -178,6 +178,23 @@
 	method="research"
 	param="NameSet, Greek Arrows,default,NameSet, HToxotes,,">
 	<src obj="HBlacksmith"/>
+	<src obj="AHBlacksmith"/>
+</cmd>
+
+<cmd name="Greece Tridents" priority="1"
+	queueicon="gameres/icons/upgrades/Gladiator.bmp"
+	button="upgrades/glad.bmp"
+	key="g"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Greece Tridents"
+	description="Allows Gladiators to be equipped in the Barracks"
+	method="research"
+	param="NameSet, Greece Tridents,default, NameSet, AHGladiator">
+	<src obj="AHBlacksmith"/>
 </cmd>
 
 <cmd name="Greek Spears" priority="1"
@@ -194,6 +211,7 @@
 	method="research"
 	param="NameSet,Greek Spears,default, NameSet, HHoplite,">
 	<src obj="HBlacksmith"/>
+	<src obj="AHBlacksmith"/>
 </cmd>
 
 <cmd name="Greek Chariot Wheels" priority="2"
@@ -210,6 +228,7 @@
 	method="research"
 	param="NameSet,Greek Chariot Wheels,default, NameSet, HChariot,">
 	<src obj="HBlacksmith"/>
+	<src obj="AHBlacksmith"/>
 </cmd>
 
 <cmd name="Greek Royal Armor" priority="4"
@@ -226,6 +245,7 @@
 	method="research"
 	param="NameSet,Greek Royal Armor,default, NameSet, HHypaspista,">
 	<src obj="HBlacksmith"/>
+	<src obj="AHBlacksmith"/>
 </cmd>
 
 <cmd name="Strengthen Stronghold Gates" priority="11"
@@ -242,6 +262,7 @@
 	method="research"
 	param="NameSet,Strengthen Stronghold Gates,default">
 	<src obj="HBlacksmith"/>
+	<src obj="AHBlacksmith"/>
 </cmd>
 
 <cmd name="Forge Elite Equipment" priority="3"
@@ -258,6 +279,7 @@
 	method="research"
 	param="NameSet,Forge Elite Equipment,default, NameSet, HMyrmidon_Javelin,">
 	<src obj="HBlacksmith"/>
+	<src obj="AHBlacksmith"/>
 </cmd>
 
 <!-- GREEK ARENA -->
@@ -291,8 +313,9 @@
 	rollover="Olympic Games"
 	method="research"
 	researchcommand="yes"
-	param="NameSet, Olympic Games, default, SetsSet, levels/HMyrmidon_Javelin, 5, SetsSet, levels/TTeutonWolf, 5">
+	param="NameSet, Olympic Games, default, SetsPlr, standard_spawn_level, 5">
 	<src obj="HGymnasium"/>
+	<src obj="AHGymnasium"/>
 </cmd>
 
 <cmd name="Spartan Training" priority="3"
@@ -309,6 +332,7 @@
 	researchcommand="yes"
 	param="ReqSet, Olympic Games, default, SetsPlr, maxtrainlevel, 10, NamePlr, Spartan Training, default">
 	<src obj="HGymnasium"/>
+	<src obj="AHGymnasium"/>
 </cmd>
 
 <cmd name="Democracy" priority="5"
@@ -325,6 +349,7 @@
 	method="democracy"
 	researchcommand="yes">
 	<src obj="HGymnasium"/>
+	<src obj="AHGymnasium"/>
 </cmd>
 
 <cmd name="Oligarchy" priority="5"
@@ -341,6 +366,7 @@
 	method="oligarchy"
 	researchcommand="yes">
 	<src obj="HGymnasium"/>
+	<src obj="AHGymnasium"/>
 </cmd>
 
 <cmd name="Military Preparation" priority="6"
@@ -373,6 +399,7 @@
 	researchcommand="yes"
 	param="ReqSet, Olympic Games, default, NamePlr, Charm of Athena, default">
 	<src obj="HGymnasium"/>
+	<src obj="AHGymnasium"/>
 </cmd>
 
 <cmd name="Charm of Aegle" priority="8"
@@ -389,6 +416,7 @@
 	researchcommand="yes"
 	param="ReqSet, Olympic Games, default, NamePlr, Charm of Aegle, default">
 	<src obj="HGymnasium"/>
+	<src obj="AHGymnasium"/>
 </cmd>
 
 <!-- GREEK PRIEST COMMANDS -->
@@ -434,6 +462,7 @@
 	param="HPriest"
 	sclass="HPriest">
 	<src obj="HTemple"/>
+	<src obj="AHTemple"/>
 </cmd>
 
 <cmd name="Offer to Gods" priority="3"
@@ -450,6 +479,7 @@
 	researchcommand="yes"
 	param="NameSet, Offer to Gods, default, SetsSet, levels/HPriest, 5">
 	<src obj="HTemple"/>
+	<src obj="AHTemple"/>
 </cmd>
 
 <cmd name="Protection of Apollo" priority="4"
@@ -464,6 +494,7 @@
 	rollover="Invoke the protection of Apollo"
 	method="apolloProtection">
 	<src obj="HTemple"/>
+	<src obj="AHTemple"/>
 </cmd>
 
 <!-- <cmd name="Centaur Summoning" priority="5"
@@ -480,6 +511,7 @@
 	method="research"
 	param="ReqSet, Offer to Gods, default, NamePlr, Centaur Summoning, default">
 	<src obj="HTemple"/>
+	<src obj="AHTemple"/>
 </cmd> -->
 
 <cmd name="HRestoration" priority="6"
@@ -496,6 +528,7 @@
 	method="research"
 	param="ReqSet, Offer to Gods, default, NamePlr, Restoration, default">
 	<src obj="HTemple"/>
+	<src obj="AHTemple"/>
 </cmd>
 
 <cmd name="Statue of Zeus" priority="7"
@@ -512,9 +545,23 @@
 	method="research"
 	param="ReqSet, Offer to Gods, default, NamePlr, Statue of Zeus, default">
 	<src obj="HTemple"/>
+	<src obj="AHTemple"/>
 </cmd>
 
 <!-- GREEK AGORA COMMANDS -->
+
+<cmd name="buyfoodforgold" priority="3"
+	queueicon="gameres/icons/upgrades/buy food.bmp"
+	groupverifier="data/subai/verify_cmdcost_building.vs"
+	button="actions/buy food.bmp"
+	traincommand="yes"
+	key="f"
+	costgold = "400"
+	execdelay = "10000"
+	param = "800"
+	rollover="Buy 800 food">
+	<src obj="AHAgora"/>
+</cmd>
 
 <cmd name="Trade Routes" priority="3"
 	button="Research/Trade Routes.bmp"
@@ -530,6 +577,7 @@
 	researchcommand="yes"
 	param="NameSet, Trade Routes, default">
 	<src obj="HAgora"/>
+	<src obj="AHAgora"/>
 </cmd>
 
 <cmd name="buyWarSlaves" priority="4"
@@ -546,6 +594,7 @@
 	rollover="Buy war slaves"
 	param="ReqSet, Trade Routes, default">
 	<src obj="HAgora"/>
+	<src obj="AHAgora"/>
 </cmd>
 
 <cmd name="Supplies" priority="5"
@@ -562,32 +611,35 @@
 	method="research"
 	param="ReqSet, Trade Routes, default, NamePlr, Supplies, default">
 	<src obj="HAgora"/>
+	<src obj="AHAgora"/>
 </cmd>
 
 <cmd name="startStoringFood" priority="6"
 	button="Actions/Start Storing Food.bmp"
-	key="s"
+	key="k"
 	immediate="yes"
 	costgold="800"
 	groupverifier="data/subai/start_storing_food_verify.vs"
 	description="Allows to deposit reusable food stocks in a separate storage"
 	rollover="Start to store Food">
 	<src obj="HAgora"/>
+	<src obj="AHAgora"/>
 </cmd>
 
 <cmd name="stopStoringFood" priority="6"
 	button="Actions/Stop Storing Food.bmp"
-	key="s"
+	key="k"
 	immediate="yes"
 	groupverifier="data/subai/stop_storing_food_verify.vs"
 	description="Blocks the storing and gives you back all food supplies"
 	rollover="Stop to store Food">
 	<src obj="HAgora"/>
+	<src obj="AHAgora"/>
 </cmd>
 
 <cmd name="HReligiousFeast" priority="18"
 	queueicon="gameres/icons/upgrades/religious feast.bmp"
-	key="f"
+	key="r"
 	button="research/religious feast.bmp"
 	groupverifier="data/subai/verify_research.vs"
 	cursor=""
@@ -599,6 +651,7 @@
 	description="Heals the warriors around the townhall"
 	rollover="Religious Feast">
 	<src obj="HAgora"/>
+	<src obj="AHAgora"/>
 </cmd>
 
 </commands>

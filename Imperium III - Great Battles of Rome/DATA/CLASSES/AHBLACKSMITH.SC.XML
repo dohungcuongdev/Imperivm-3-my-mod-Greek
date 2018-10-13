@@ -1,0 +1,12 @@
+<class id="AHBlacksmith" cpp_class="CVXBuilding" parent="BaseBlacksmith" entity="Buildings/HBlacksmith/HBlacksmith.ent.xml">
+
+	<properties race="ImperialRome"/>
+	<properties display_name="Blacksmith"/>
+	<properties icon="gameres/icons/HBlacksmith.bmp"/>
+	<properties radius="255" selection_radius="260"/>
+	<properties edittree_pos="Structures/Stronghold (Ancient Greece)/Blacksmith"/>
+	<properties help="/contents/buildings/HBlacksmith"/>
+	<properties auto_repair="no"/>
+	<behavior script="data/subai/HBlacksmith_anim.vs"/>
+
+</class>

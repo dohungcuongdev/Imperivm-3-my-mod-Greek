@@ -1348,7 +1348,7 @@
 	rollover="Call Valkyries"
 	description="Calls 5 Valkyries"
 	method="trainex"
-	param="5, 15, TValkyrie, TValkyrie,Fights">
+	param="5, 20, TValkyrie, TValkyrie,Fights">
 	<src obj="TSanctuaryOfVotan"/>
 	<src obj="TTSanctuaryOfVotan"/>
 	<src obj="GTSanctuaryOfVotan"/>
@@ -1704,7 +1704,7 @@
 	costpop = "1"
 	execdelay = "20000"
 	rollover="Train Republican Captain"
-	description="Train Republican Captain with 3 kills, can lead 30 units but army gain double experience than from hero (captain: 80, hero: 40)"
+	description="Train Republican Captain with 3 kills, 3 unit specials; attached army gain double experience than from hero (captain: 80%, hero: 40%) but can lead only 30 units"
 	method="trainex"
 	param="1, 3, RTCaptain, RTCaptain, Gladiator Shows">
 	<src obj="URArena"/>
@@ -1724,7 +1724,7 @@
 	costpop = "1"
 	execdelay = "20000"
 	rollover="Train Imperial Captain"
-	description="Train Imperial Captain with 3 kills, can lead 30 units but army gain double experience than from hero (captain: 80, hero: 40)"
+	description="Train Imperial Captain with 3 kills, 3 unit specials, attached army gain double experience than from hero (captain: 80%, hero: 40%) but can lead only 30 units"
 	method="trainex"
 	param="1, 3, RPCaptain, RPCaptain, Gladiator Shows">
 	<src obj="URArena"/>

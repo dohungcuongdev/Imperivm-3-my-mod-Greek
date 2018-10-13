@@ -37,6 +37,7 @@
 	<src obj="RTownhall"/>
 	<src obj="IRTownhall"/>
 	<src obj="HTownhall"/>
+	<src obj="AHTownhall"/>
 	<src obj="RRTownhall"/>
 	<src obj="URTownhall"/>
 </cmd>
@@ -54,6 +55,7 @@
 	<src obj="RTownhall"/>
 	<src obj="IRTownhall"/>
 	<src obj="HTownhall"/>
+	<src obj="AHTownhall"/>
 	<src obj="RRTownhall"/>
 	<src obj="URTownhall"/>
 </cmd>
@@ -136,6 +138,7 @@
 	<src obj="GTTownhall"/>
 	<src obj="ECTownhall"/>
 	<src obj="URTownhall"/>
+	<src obj="AHTownhall"/>
 </cmd>
 
 <cmd name="healing" priority="10"
@@ -157,6 +160,7 @@
 	<src obj="ECTownhall"/>
 	<src obj="URTownhall"/>
 	<src obj="CGTownhall"/>
+	<src obj="AHTownhall"/>
 </cmd>
 
 <!-- AI only -->
@@ -190,6 +194,7 @@
 	<src obj="CTownhall"/>
 	<src obj="TTownhall"/>
 	<src obj="HTownhall"/>
+	<src obj="AHTownhall"/>
 	<src obj="RRTownhall"/>
 	<src obj="UnionTownhall"/>
 	<src obj="GTTownhall"/>

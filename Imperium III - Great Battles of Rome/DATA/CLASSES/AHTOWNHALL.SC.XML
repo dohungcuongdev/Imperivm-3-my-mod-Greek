@@ -1,0 +1,12 @@
+<class id="AHTownhall" cpp_class="CVXTownHall" parent="BaseTownhall" entity="Buildings/HTownhall/HTownhall.ent.xml">
+
+	<properties race="ImperialRome"/>
+	<properties foodperpop="100"/>
+	<properties display_name="Greek Townhall"/>
+	<properties icon="gameres/icons/HTownhall.bmp"/>
+	<properties radius="173" selection_radius="178"/>
+	<properties edittree_pos="Structures/Stronghold (Ancient Greece)/Townhall"/>
+	<properties help="/contents/buildings/HTownhall"/>
+	<behavior script="data/subai/townhall_buildingsbehavior_h.vs"/>
+
+</class>

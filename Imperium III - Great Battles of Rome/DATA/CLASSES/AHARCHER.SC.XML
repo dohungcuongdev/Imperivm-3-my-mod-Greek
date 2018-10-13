@@ -1,0 +1,20 @@
+<class id="AHArcher" cpp_class="CVXUnit" parent="Ranged" entity="Units/RArcher/RArcher.ent.xml">
+
+	<properties race="ImperialRome"/>
+	<properties maxhealth="280"/>
+	<properties damage="30" armor_slash="8" armor_pierce="8"/>
+	<properties speed="60"/>
+	<properties unit_specials="Bleeding attack, Ferocity, Freedom"/>
+
+	<properties projectile_class="Fire_Arrow"/>
+	<properties building_projectile_class="Fire_Arrow"/>
+	
+	<properties sight="1200" range="800" min_range="100"/>
+
+	<properties icon="gameres/icons/GREEKARCHERLONGBOW.bmp"/>
+	<properties display_name="LongBow Archer" display_name_plural="LongBow Archers"/>
+	<properties help="contents/units/RArcher"/>
+	<properties edittree_pos="Units/Ancient Greece/LongBow Archer"/>
+	<sounds command="data/sound entities/VoiceRArcher.xml"/>
+
+</class>

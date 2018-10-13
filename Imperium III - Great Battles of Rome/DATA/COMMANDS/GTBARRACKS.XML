@@ -2,7 +2,7 @@
 
 <!-- GERMAN BARRACKS -->
 
-<cmd name="trainTTSwordsman" priority="3"
+<cmd name="trainGTSwordsman" priority="3"
 	button="actions/train TSwordsman.bmp"
 	queueicon="gameres/icons/TSwordsman.bmp"
 	groupverifier="data/subai/verify_cmdcost_building.vs"
@@ -21,7 +21,7 @@
 	<src obj="GTBarracks"/>
 </cmd>
 
-<cmd name="trainTTArcher" priority="4"
+<cmd name="trainGTArcher" priority="4"
 	button="actions/train TArcher.bmp"
 	queueicon="gameres/icons/TArcher.bmp"
 	groupverifier="data/subai/verify_cmdcost_building.vs"
@@ -41,7 +41,7 @@
 	<src obj="GTBarracks"/>
 </cmd>
 
-<cmd name="trainTTAxeman" priority="5"
+<cmd name="trainGTAxeman" priority="5"
 	button="actions/train TAxeman.bmp"
 	queueicon="gameres/icons/TAxeman.bmp"
 	groupverifier="data/subai/barrack_train_verify.vs"
@@ -60,7 +60,7 @@
 	<src obj="GTBarracks"/>
 </cmd>
 
-<cmd name="trainTTHuntress" priority="6"
+<cmd name="trainGTHuntress" priority="6"
 	button="actions/train THuntress.bmp"
 	queueicon="gameres/icons/THuntress.bmp"
 	groupverifier="data/subai/barrack_train_verify.vs"
@@ -79,7 +79,7 @@
 	<src obj="GTBarracks"/>
 </cmd>
 
-<cmd name="trainTTTeutonRider" priority="7"
+<cmd name="trainGTTeutonRider" priority="7"
 	button="actions/train TTeutonRider.bmp"
 	queueicon="gameres/icons/TTeutonRider.bmp"
 	groupverifier="data/subai/barrack_train_verify.vs"
@@ -98,7 +98,7 @@
 	<src obj="GTBarracks"/>
 </cmd>
 
-<cmd name="trainTTMaceman" priority="8"
+<cmd name="trainGTMaceman" priority="8"
 	button="actions/train TMaceman.bmp"
 	queueicon="gameres/icons/TMaceman.bmp"
 	groupverifier="data/subai/barrack_train_verify.vs"
