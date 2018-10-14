@@ -19,6 +19,7 @@
 	param="ESwordsman"
 	sclass="ESwordsman">
 	<src obj="EBarracks"/>
+	<src obj="MEBarracks"/>
 </cmd>
 
 <cmd name="trainEArcher" priority="4"
@@ -38,6 +39,7 @@
 	param="EArcher"
 	sclass="EArcher">
 	<src obj="EBarracks"/>
+	<src obj="MEBarracks"/>
 </cmd>
 
 <cmd name="trainEAxeTrower" priority="5"
@@ -57,6 +59,7 @@
 	param="EAxetrower"
 	sclass="EAxetrower">
 	<src obj="EBarracks"/>
+	<src obj="MEBarracks"/>
 </cmd>
 
 <cmd name="trainEAnubisWarrior" priority="6"
@@ -75,7 +78,7 @@
 	method="train"
 	param="EAnubisWarrior,Cult of Anubis"
 	sclass="EAnubisWarrior">
-
+	<src obj="MEBarracks"/>
 	<src obj="EBarracks"/>
 </cmd>
 
@@ -95,7 +98,7 @@
 	method="train"
 	param="EHorusWarrior,Cult of Horus"
 	sclass="EHorusWarrior">
-
+	<src obj="MEBarracks"/>
 	<src obj="EBarracks"/>
 </cmd>
 
@@ -116,6 +119,7 @@
 	param="EGuardian"
 	sclass="EGuardian">
 	<src obj="EBarracks"/>
+	<src obj="MEBarracks"/>
 </cmd>
 
 <cmd name="trainInmortales" priority="9"
@@ -133,7 +137,7 @@
 	execdelay = "20000"
 	rollover="Equip Master Swordman"
 	method="trainex"
-	param="1, 10, PINMORTAL, PINMORTAL, Dual Swords, blacksmith"
+	param="1, 10, PINMORTAL, PINMORTAL, Dual Swords"
 	sclass="PINMORTAL">
 	<src obj="EBarracks"/>
 </cmd>

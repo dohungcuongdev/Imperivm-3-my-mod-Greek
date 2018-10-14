@@ -57,7 +57,7 @@
 	execdelay = "30000"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
-	description="All new warriors are level 4"
+	description="All new captains, special heroes and normal warriors are level 4"
 	rollover="Fights"
 	method="research"
 	param="SetsPlr, standard_spawn_level, 4,NameSet, Fights, default,">
@@ -91,7 +91,7 @@
 	costfood = "0"
 	execdelay = "25000"
 	groupverifier="data/subai/verify_research.vs"
-	description="All new warriors are level 3, Allows Gladiators to be hired"
+	description="All new captains, special heroes and normal warriors are level 3, Allows Gladiators to be hired"
 	rollover="Gladiator shows"
 	method="research"
 	researchcommand="yes"
@@ -107,7 +107,7 @@
 	costfood = "0"
 	execdelay = "20000"
 	groupverifier="data/subai/verify_research.vs"
-	description="All new warriors are level 3"
+	description="All new captains, special heroes and normal warriors are level 3"
 	rollover="Gladiator shows"
 	method="research"
 	researchcommand="yes"
@@ -297,7 +297,7 @@
 	execdelay = "40000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Shared Strength"
-	description="All new warriors are level 6"
+	description="All new captains, special heroes and normal warriors are level 6"
 	method="research"
 	researchcommand="yes"
 	param = "ReqSet, People's Assembly, default, SetsPlr, standard_spawn_level, 6, NameSet, Shared Strength, "
@@ -315,7 +315,7 @@
 	execdelay = "60000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Shared Triumph"
-	description="All new warriors are level 12"
+	description="All new captains, special heroes and normal warriors are level 12"
 	method="research"
 	researchcommand="yes"
 	param = "ReqSet, Shared Strength, , SetsPlr, standard_spawn_level, 12, NameSet, Shared Triumph, default"
@@ -370,7 +370,7 @@
 	execdelay = "20000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Heroes' Wisdom"
-	description="Increases heroes' experience with time"
+	description="Increases captains, heroes' experience with time"
 	method="research"
 	researchcommand="yes"
 	param = "ReqSet, Tournaments, default, NamePlr, Heroes' Wisdom, ">
@@ -426,7 +426,7 @@
 	param = "RepublicanRomanHero"
 	method="hirehero"
 	help="/contents/units/RHero"
-	rollover="Hire hero">
+	rollover="Hire classic hero">
 	<src obj="RArena"/>
 	<src obj="RRArena"/>
 </cmd>
@@ -444,7 +444,7 @@
 	param = "ImperialRomanHero"
 	method="hirehero"
 	help="/contents/units/MHero"
-	rollover="Hire hero">
+	rollover="Hire classic hero">
 	<src obj="RArena"/>
 	<src obj="IRArena"/>
 </cmd>
@@ -462,7 +462,7 @@
 	param = "GaulHero"
 	method="hirehero"
 	help="/contents/units/GHero"
-	rollover="Hire hero">
+	rollover="Hire classic hero">
 	<src obj="GArena1"/>
 	<src obj="GArena2"/>
 	<src obj="GArena3"/>
@@ -481,7 +481,7 @@
 	param = "CelticGaulHero"
 	method="hirehero"
 	help="/contents/units/GHero"
-	rollover="Hire hero with 8 skills, pick up maximum 6 items but can only lead 40 units">
+	rollover="Hire classic hero with 8 skills, pick up maximum 6 items, can lead 60 units">
 	<src obj="CGArena"/>
 </cmd>
 
@@ -498,7 +498,7 @@
 	param = "CarthaginianHero"
 	method="hirehero"
 	help="/contents/units/CHero"
-	rollover="Hire hero">
+	rollover="Hire classic hero">
 	<src obj="CArena"/>
 </cmd>
 
@@ -515,7 +515,7 @@
 	param = "ExtendedCarthaginianHero"
 	method="hirehero"
 	help="/contents/units/CHero"
-	rollover="Hire hero with 7 skills">
+	rollover="Hire classic hero with 7 skills">
 	<src obj="ECArena"/>
 </cmd>
 
@@ -532,7 +532,7 @@
 	param = "IberianHero"
 	method="hirehero"
 	help="/contents/units/IHero"
-	rollover="Hire hero">
+	rollover="Hire classic hero">
 	<src obj="IArena"/>
 </cmd>
 
@@ -549,7 +549,7 @@
 	param = "EgyptianHero"
 	method="hirehero"
 	help="/contents/units/EHero"
-	rollover="Hire hero">
+	rollover="Hire classic hero">
 	<src obj="ETempleOfHorusAndAnubis"/>
 </cmd>
 
@@ -566,7 +566,7 @@
 	param = "BritonHero"
 	method="hirehero"
 	help="/contents/units/BHero"
-	rollover="Hire archer hero">
+	rollover="Hire classic archer hero">
 	<src obj="BMorrigansMonument"/>
 </cmd>
 
@@ -583,7 +583,7 @@
 	param = "BritonKHero"
 	method="hirehero"
 	help="/contents/units/BHero"
-	rollover="Hire archer hero with 6 skills">
+	rollover="Hire classic archer hero with 6 skills">
 	<src obj="BKMorrigansMonument"/>
 </cmd>
 
@@ -600,7 +600,7 @@
 	param = "GermanHero"
 	method="hirehero"
 	help="/contents/units/GHero"
-	rollover="Hire hero">
+	rollover="Hire classic hero">
 	<src obj="TSanctuaryOfVotan"/>
 	<src obj="TTSanctuaryOfVotan"/>
 </cmd>
@@ -618,7 +618,7 @@
 	param = "GoldenGermanHero"
 	method="hirehero"
 	help="/contents/units/GHero"
-	rollover="Hire hero with 10 skills">
+	rollover="Hire classic hero with 10 skills">
 	<src obj="GTSanctuaryOfVotan"/>
 </cmd>
 
@@ -726,10 +726,10 @@
 	queueicon="gameres/icons/upgrades/TALES OF HEROES1.bmp"
 	costgold = "3000"
 	costfood = "0"
-	execdelay = "3000"
+	execdelay = "30000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Tales of Hero I"
-	description="Allow heroes to receive 'Belt of snakes' on their fisrt kill"
+	description="Allow captains, heroes to receive 'Belt of snakes' on their fisrt kill"
 	researchcommand="yes"
 	method="research"
 	param="ReqSet, Fights, default, NamePlr, Tales of Hero I, default">
@@ -742,10 +742,10 @@
 	queueicon="gameres/icons/upgrades/TALES OF HEROES2.bmp"
 	costgold = "3000"
 	costfood = "0"
-	execdelay = "3000"
+	execdelay = "30000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Tales of Hero II"
-	description="Allow heroes to receive 'King's Belt' on their fisrt kill"
+	description="Allow captains, heroes to receive 'King's Belt' on their fisrt kill"
 	researchcommand="yes"
 	method="research"
 	param="ReqSet, Fights, default, NamePlr, Tales of Hero II, default">
@@ -787,8 +787,8 @@
 	costfood = "0"
 	costpop = "0"
 	execdelay = "30000"
-	rollover="Hire Viking Hero"
-	description="Hires a Viking Hero with 10 skills"
+	rollover="Hire special Viking Hero"
+	description="Hires a special Viking Hero with 10 skills"
 	method="trainex"
 	param="1, 1, BKVikingLord, BKVikingLord, Shrine of Thor">
 	<src obj="BKMorrigansMonument"/>
@@ -935,7 +935,7 @@
 	execdelay = "30000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Military academy"
-	description="All new heroes are level 12"
+	description="All new classic heroes are level 12"
 	method="research"
 	researchcommand="yes"
 	param="ReqSet, Gladiator Shows, default, SetsSet, levels/Hero, 12, NameSet, Military Academy, default">
@@ -1090,7 +1090,7 @@
 	costfood = "0"
 	execdelay = "10000"
 	groupverifier="data/subai/verify_research.vs"
-	description="All new warriors are level 4 but cannot gain more experience from battle "
+	description="All new captains, special heroes and normal warriors are level 4 but cannot gain more experience from battle "
 	rollover="Standardization I"
 	method="research"
 	researchcommand="yes"
@@ -1108,7 +1108,7 @@
 	costfood = "0"
 	execdelay = "20000"
 	groupverifier="data/subai/verify_research.vs"
-	description="All new warriors are level 8 but cannot gain more experience from battle "
+	description="All new captains, special heroes and normal warriors are level 8 but cannot gain more experience from battle "
 	rollover="Standardization II"
 	method="research"
 	researchcommand="yes"
@@ -1153,6 +1153,43 @@
 	param = "NameSet, Cult of Anubis, default, NameSet,EAnubisWarrior,"
 	>
 	<src obj="ETempleOfHorusAndAnubis"/>
+	<src obj="METempleOfHorusAndAnubis"/>
+</cmd>
+
+<cmd name="Strength of Anubis" priority="2"
+	button="upgrades/favoritosanubis.bmp"
+	key="g"
+	queueicon="gameres/icons/upgrades/favoritosanubis.bmp"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "30000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Strength of Anubis"
+	description="Allows captains, heroes to receive Anubis Helmet on their first kill since they reached to level 30"
+	method="research"
+	researchcommand="yes"
+	param="ReqSet, Cult of Anubis, default, NamePlr, Strength of Anubis, default">
+	<src obj="METempleOfHorusAndAnubis"/>
+</cmd>
+
+<cmd name="Hire Anubis Hero" priority="2"
+	button="actions/Keltil.bmp"
+	queueicon="gameres/icons/Keltil.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="h"
+	help="/contents/units/AnubisHero"
+	costgold = "3200"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "30000"
+	rollover="Hire special Anubis Hero"
+	description="Hire special Anubis Hero with 10 skills, 2 unit specials, pick up maximum 10 items, army gain 50% his experience, can lead up to 100 units"
+	method="trainex"
+	param="1, 1, AnubisHero, AnubisHero, Cult of Anubis">
+	<src obj="METempleOfHorusAndAnubis"/>
 </cmd>
 
 <cmd name="Statue of Isis, mother of Anubis" priority="3"
@@ -1169,6 +1206,7 @@
 	researchcommand="yes"
 	param="ReqSet, Cult of Anubis, default, NamePlr, Statue of Isis, default">
 	<src obj="ETempleOfHorusAndAnubis"/>
+	<src obj="METempleOfHorusAndAnubis"/>
 </cmd>
 
 <cmd name="Path of the dead I" priority="4"
@@ -1185,7 +1223,9 @@
 	researchcommand="yes"
 	param="ReqSet, Cult of Anubis, default, NamePlr, Path of the dead I, ,NameSet, Path of the dead I,">
 	<src obj="ETempleOfHorusAndAnubis"/>
+	<src obj="METempleOfHorusAndAnubis"/>
 </cmd>
+
 <cmd name="Path of the dead II" priority="4"
 	button="research/path of the dead 2.bmp"
 	key="p"
@@ -1200,6 +1240,7 @@
 	researchcommand="yes"
 	param="ReqSet, Path of the dead I, , NamePlr, Path of the dead II, ,NameSet, Path of the dead II,">
 	<src obj="ETempleOfHorusAndAnubis"/>
+	<src obj="METempleOfHorusAndAnubis"/>
 </cmd>
 
 <cmd name="Path of the dead III" priority="4"
@@ -1216,6 +1257,7 @@
 	researchcommand="yes"
 	param="ReqSet, Path of the dead II, , NamePlr, Path of the dead III, default">
 	<src obj="ETempleOfHorusAndAnubis"/>
+	<src obj="METempleOfHorusAndAnubis"/>
 </cmd>
 
 <cmd name="Cult of Horus" priority="10"
@@ -1233,6 +1275,43 @@
 	param = "NameSet, Cult of Horus,default,NameSet,EHorusWarrior"
 	>
 	<src obj="ETempleOfHorusAndAnubis"/>
+	<src obj="METempleOfHorusAndAnubis"/>
+</cmd>
+
+<cmd name="Strength of Horus" priority="10"
+	button="upgrades/favoritoshorus.bmp"
+	key="j"
+	queueicon="gameres/icons/upgrades/favoritoshorus.bmp"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "30000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Strength of Horus"
+	description="Allows captains, heroes to receive Horus Sword on their first kill since they reached to level 30"
+	method="research"
+	researchcommand="yes"
+	param="ReqSet, Cult of Horus, default, NamePlr, Strength of Horus, default">
+	<src obj="METempleOfHorusAndAnubis"/>
+</cmd>
+
+<cmd name="Hire Horus Hero" priority="10"
+	button="actions/Larax.bmp"
+	queueicon="gameres/icons/Larax.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="k"
+	help="/contents/units/HorusHero"
+	costgold = "3200"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "30000"
+	rollover="Hire special Horus Hero"
+	description="Hire special Horus Hero with 10 skills, 2 unit specials, pick up maximum 10 items, army gain 50% his experience, can lead up to 100 units"
+	method="trainex"
+	param="1, 1, HorusHero, HorusHero, Cult of Horus">
+	<src obj="METempleOfHorusAndAnubis"/>
 </cmd>
 
 <cmd name="Statue of Osiris, father of Horus" priority="11"
@@ -1249,6 +1328,7 @@
 	researchcommand="yes"
 	param="ReqSet, Cult of Horus, default, NamePlr, Statue of Osiris, default">
 	<src obj="ETempleOfHorusAndAnubis"/>
+	<src obj="METempleOfHorusAndAnubis"/>
 </cmd>
 
 <cmd name="Light of Horus I" priority="12"
@@ -1260,11 +1340,12 @@
 	execdelay = "10000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Light of Horus I"
-	description="All new warriors are level 2"
+	description="All new captains, special heroes and normal warriors are level 2"
 	method="research"
 	researchcommand="yes"
 	param="ReqSet, Cult of Horus, default, SetsPlr, standard_spawn_level, 2, NameSet, Light of Horus I,">
 	<src obj="ETempleOfHorusAndAnubis"/>
+	<src obj="METempleOfHorusAndAnubis"/>
 </cmd>
 
 <cmd name="Light of Horus II" priority="12"
@@ -1276,11 +1357,12 @@
 	execdelay = "10000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Light of Horus II"
-	description="All new warriors are level 4"
+	description="All new captains, special heroes and normal warriors are level 4"
 	method="research"
 	researchcommand="yes"
 	param="ReqSet, Light of Horus I, ,SetsPlr, standard_spawn_level, 4, NameSet, Light of Horus II,">
 	<src obj="ETempleOfHorusAndAnubis"/>
+	<src obj="METempleOfHorusAndAnubis"/>
 </cmd>
 
 <cmd name="Light of Horus III" priority="12"
@@ -1292,11 +1374,12 @@
 	execdelay = "15000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Light of Horus III"
-	description="All new warriors are level 6"
+	description="All new captains, special heroes and normal warriors are level 6"
 	method="research"
 	researchcommand="yes"
 	param="ReqSet, Light of Horus II, ,SetsPlr, standard_spawn_level, 6, NameSet, Light of Horus III, default">
 	<src obj="ETempleOfHorusAndAnubis"/>
+	<src obj="METempleOfHorusAndAnubis"/>
 </cmd>
 
 <cmd name="Statue of Amon-Ra" priority="13"
@@ -1313,6 +1396,7 @@
 	researchcommand="yes"
 	param=" NamePlr, Statue of Amon-Ra, default,ReqSet,Cult of Anubis, default, ReqSet,Cult of Horus, default,">
 	<src obj="ETempleOfHorusAndAnubis"/>
+	<src obj="METempleOfHorusAndAnubis"/>
 </cmd>
 <!--             Germany   -->
 <cmd name="TFights" priority="2"
@@ -1576,7 +1660,7 @@
 	param = "UnionHero"
 	method="hirehero"
 	help="/contents/units/IHero"
-	rollover="Hire hero with 8 skills">
+	rollover="Hire classic hero with 8 skills">
 	<src obj="UnionArena"/>
 </cmd>
 
@@ -1706,7 +1790,7 @@
 	rollover="Train Republican Captain"
 	description="Train Republican Captain with 3 kills, 3 unit specials; attached army gain double experience than from hero (captain: 80%, hero: 40%) but can lead only 30 units"
 	method="trainex"
-	param="1, 3, RTCaptain, RTCaptain, Gladiator Shows">
+	param="1, 2, RTCaptain, RTCaptain, Gladiator Shows">
 	<src obj="URArena"/>
 </cmd>
 
@@ -1726,7 +1810,7 @@
 	rollover="Train Imperial Captain"
 	description="Train Imperial Captain with 3 kills, 3 unit specials, attached army gain double experience than from hero (captain: 80%, hero: 40%) but can lead only 30 units"
 	method="trainex"
-	param="1, 3, RPCaptain, RPCaptain, Gladiator Shows">
+	param="1, 2, RPCaptain, RPCaptain, Gladiator Shows">
 	<src obj="URArena"/>
 </cmd>
 
@@ -1775,6 +1859,22 @@
 	method="research"
 	researchcommand="yes"
 	param="ReqSet, Gladiator Shows, , ReqPlr, United Training 2, ,SetsPlr, maxtrainlevel, 20, NamePlr, United Training 3, default">
+	<src obj="URArena"/>
+</cmd>
+
+<cmd name="United Ferocity" priority="10"
+	queueicon="gameres/icons/upgrades/ferocity.bmp"
+	key="f"
+	button="research/ferocity.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Ferocity"
+	description="Allows a warrior to restores 3 stamina each time he kills an enemy"
+	method="research"
+	param="ReqSet, Gladiator Shows, default, NamePlr, Ferocity, default">
 	<src obj="URArena"/>
 </cmd>
 </commands>

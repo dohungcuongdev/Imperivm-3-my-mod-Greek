@@ -12,7 +12,7 @@ if(EnvReadString(.player,"GovernmentForm")=="Democracy"){
 	
 		u=units[i];
 		if(u.IsValid()){
-			if(u.class!="Sentry" && !u.IsHeirOf("Hero") && !u.HasItem("Emblem of Democracy") && u.free_item_slots>0){
+			if(u.class!="Sentry" && !u.HasItem("Emblem of Democracy") && u.free_item_slots>0){
 				u.AddItem("Emblem of Democracy");
 			}
 		}
@@ -26,7 +26,7 @@ else{
 	
 			u=units[i];
 			if(u.IsValid()){
-				if(u.class!="Sentry" && !u.IsHeirOf("Hero") && u.inherentlevel>=10 && !u.HasItem("Emblem of Oligarchy") && u.free_item_slots>0){
+				if(u.class!="Sentry" && u.inherentlevel>=10 && !u.HasItem("Emblem of Oligarchy") && u.free_item_slots>0){
 					u.AddItem("Emblem of Oligarchy");
 				}
 			}

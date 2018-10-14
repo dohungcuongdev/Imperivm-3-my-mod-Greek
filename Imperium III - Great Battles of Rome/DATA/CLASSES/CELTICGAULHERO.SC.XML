@@ -6,7 +6,7 @@
 	<properties help="/contents/units/GHero"/>
 	<properties HeroSkills="Assault, Defensive cry, Team attack, Team defense, Quick March, Epic attack, Epic armor, Epic endurance"/>
 	
-	<properties max_army="40"/>
+	<properties max_army="60"/>
 	<properties inventory_size="6"/>
 
 	<sounds command="data/sound entities/VoiceGHero.xml"/>

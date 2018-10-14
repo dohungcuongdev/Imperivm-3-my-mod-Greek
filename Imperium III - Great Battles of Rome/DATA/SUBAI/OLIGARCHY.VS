@@ -14,7 +14,7 @@ if(EnvReadString(.player,"GovernmentForm")=="Democracy"){
 	
 		u=units[i];
 		if(u.IsValid()){
-			if(u.class!="Sentry" && !u.IsHeirOf("Hero") && u.HasItem("Emblem of Democracy")){
+			if(u.class!="Sentry" && u.HasItem("Emblem of Democracy")){
 				u.RemoveItem("Emblem of Democracy");
 			}
 		}

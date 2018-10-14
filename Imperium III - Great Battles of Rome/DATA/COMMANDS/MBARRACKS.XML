@@ -181,22 +181,22 @@
 	<src obj="URBarracks"/>
 </cmd>
 
-<cmd name="Equip United Chariot" priority="10"
-	button="actions/hire RChariot.bmp"
-	queueicon="gameres/icons/RChariot.bmp"
+<cmd name="Equip Roman Captain Chariot" priority="10"
+	button="actions/URCHARIOT.bmp"
+	queueicon="gameres/icons/URCHARIOT.bmp"
 	transpicon="1"
 	groupverifier="data/subai/verify_trainex.vs"
 	onaddremovescript="data/subai/trainex_onaddremove.vs"
 	traincommand="yes"
 	key="c"
 	help="/contents/units/RChariot"
-	costgold = "400"
+	costgold = "800"
 	costfood = "0"
 	costpop = "0"
 	execdelay = "20000"
- 	rollover="Equip Chariot"
+ 	rollover="Equip Roman Captain Chariot who can lead up to 16 units"
 	method="trainex"
-	param="1, 10, RChariot, RChariot, Chariot Wheels, blacksmith">
+	param="1, 5, URChariot, URChariot, United Roman Chariot Wheels, blacksmith">
 	<src obj="URBarracks"/>
 </cmd>
 </commands>

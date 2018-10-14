@@ -150,6 +150,14 @@ while(1)
 				newunit.AddItem("Charm of Ptah");
 			if (EnvReadInt(.settlement, "items/Charm of Neith") == 1)
 				newunit.AddItem("Charm of Neith");
+			if (EnvReadInt(.settlement, "items/Charm of Seth") == 1)
+				newunit.AddItem("Charm of Seth");
+			if (EnvReadInt(.settlement, "items/Charm of Thoth") == 1)
+				newunit.AddItem("Charm of Thoth");
+			if (EnvReadInt(.settlement, "items/Charm of Ra") == 1)
+				newunit.AddItem("Charm of Ra");
+			if (EnvReadInt(.settlement, "items/Charm of Isis") == 1)
+				newunit.AddItem("Charm of Isis");
 		  }
 		EnvWriteInt(this, "Build/" + class, number-1);
 		Sleep(1000);

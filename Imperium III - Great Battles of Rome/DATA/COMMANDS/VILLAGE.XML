@@ -94,6 +94,7 @@
 	<src obj="UnionTavern"/>
 	<src obj="GTTavern"/>
 	<src obj="CGTavern"/>
+	<src obj="MEMarket"/>
 </cmd>
 
 <cmd name="trainpeasantr" priority="4"

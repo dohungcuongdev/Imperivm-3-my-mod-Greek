@@ -41,17 +41,17 @@ if (EnvReadString(.player, "Spoils of war") == "researched") {
 
 // rArena items
 if (EnvReadString(.player, "Veteran Offence") == "researched") {
-	if (!.AsHero().IsValid && !.HasItem("Veteran Offence"))
+	if (!.HasItem("Veteran Offence"))
 	  .AddItem("Veteran Offence");
 }
 
 if (EnvReadString(.player, "Veteran Defence") == "researched") {
-	if (!.AsHero().IsValid && !.HasItem("Veteran Defence"))
+	if (!.HasItem("Veteran Defence"))
   		.AddItem("Veteran Defence");
 }
 
 if (EnvReadString(.player, "Veteran Health") == "researched") {
-	if (!.AsHero().IsValid && !.HasItem("Veteran Health"))
+	if (!.HasItem("Veteran Health"))
       	.AddItem("Veteran Health");
 }
 
@@ -59,12 +59,12 @@ if (EnvReadString(.player, "Veteran Health") == "researched") {
 if (.AsUnit().inherentlevel >= 12)
 {
 	if (EnvReadString(.player, "Noble Offence") == "researched") {
-		if (!.AsHero().IsValid && !.HasItem("Noble Offence"))
+		if (!.HasItem("Noble Offence"))
 			.AddItem("Noble Offence");
 	}
 
 	if (EnvReadString(.player, "Noble Defence") == "researched") {
-		if (!.AsHero().IsValid && !.HasItem("Noble Defence"))
+		if (!.HasItem("Noble Defence"))
   		.AddItem("Noble Defence");
 	}
 }
@@ -72,12 +72,12 @@ if (.AsUnit().inherentlevel >= 12)
 // Greece
 if (.AsUnit().inherentlevel >= 10 && .AsUnit().free_item_slots>0){
 	if (EnvReadString(.player, "Charm of Athena") == "researched") {
-		if (!.AsHero().IsValid && !.HasItem("Charm of Athena"))
+		if (!.HasItem("Charm of Athena"))
 			.AddItem("Charm of Athena");
 	}
 
 	if (EnvReadString(.player, "Charm of Aegle") == "researched") {
-		if (!.AsHero().IsValid && !.HasItem("Charm of Aegle"))
+		if (!.HasItem("Charm of Aegle"))
   		.AddItem("Charm of Aegle");
 	}
 }
@@ -115,4 +115,14 @@ if (EnvReadString(.player, "Tales of Hero I") == "researched") {
 if (EnvReadString(.player, "Tales of Hero II") == "researched") {
 	if (.AsHero().IsValid && !.HasItem("King's Belt"))
       	.AddItem("King's Belt");
+}
+
+if (EnvReadString(.player, "Strength of Anubis") == "researched") {
+	if (.AsHero().IsValid && .AsHero().inherentlevel >= 30 && !.HasItem("Anubis Helmet"))
+  		.AddItem("Anubis Helmet");
+}
+
+if (EnvReadString(.player, "Strength of Horus") == "researched") {
+	if (.AsHero().IsValid && .AsHero().inherentlevel >= 30 && !.HasItem("Horus Sword"))
+      	.AddItem("Horus Sword");
 }

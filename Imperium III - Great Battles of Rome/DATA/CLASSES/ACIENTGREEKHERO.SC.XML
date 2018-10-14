@@ -8,7 +8,7 @@
 	<properties HeroSkills="Battle cry, Defensive cry, Team attack, Team defense, Quick March, Administration, Recovery, Epic endurance, Epic attack, Epic armor"/>
 	<properties display_name="Rlider" display_name_plural="Rlider"/>
 	
-	<properties max_army="300"/>
+	<properties max_army="180"/>
 	<properties heroarmyexpgain="60"/>
 	<properties inventory_size="8"/>
 	

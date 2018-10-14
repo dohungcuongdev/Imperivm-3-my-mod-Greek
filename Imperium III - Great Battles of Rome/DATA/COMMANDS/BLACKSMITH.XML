@@ -26,6 +26,7 @@
 	<src obj="EEBlacksmith"/>
 	<src obj="EEEBlacksmith"/>
 	<src obj="EEEBlacksmith"/>
+	<src obj="MEBlacksmith"/>
 	<src obj="GGBlacksmith"/>
 	<src obj="CCBlacksmith"/>
 	<src obj="BKBlacksmith"/>
@@ -59,6 +60,7 @@
 	<src obj="EEBlacksmith"/>
 	<src obj="EEEBlacksmith"/>
 	<src obj="EEEEBlacksmith"/>
+	<src obj="MEBlacksmith"/>
 	<src obj="HBlacksmith"/>
 	<src obj="AHBlacksmith"/>
 	<src obj="RRBlacksmith"/>
@@ -97,6 +99,7 @@
 	<src obj="EEBlacksmith"/>
 	<src obj="EEEBlacksmith"/>
 	<src obj="EEEEBlacksmith"/>
+	<src obj="MEBlacksmith"/>
 	<src obj="HBlacksmith"/>
 	<src obj="AHBlacksmith"/>
 	<src obj="RRBlacksmith"/>
@@ -281,7 +284,7 @@
 	<src obj="RRBlacksmith"/>
 </cmd>
 
-<cmd name="Roman Chariot Wheels 1" priority="5"
+<cmd name="United Roman Chariot Wheels" priority="5"
 	queueicon="gameres/icons/upgrades/chariot wheels.bmp"
 	key="c"
 	button="upgrades/chariot wheels.bmp"
@@ -290,10 +293,10 @@
 	costgold = "3000"
 	costfood = "0"
 	execdelay = "30000"
-	rollover="Chariot Wheels"
+	rollover="United Roman Chariot Wheels"
 	description="Allows Chariots to be equipped in the Barracks"
 	method="research"
-	param="NameSet,Chariot Wheels,default, NameSet, RChariot,">
+	param="NameSet,United Roman Chariot Wheels,default, NameSet, URChariot,">
 	<src obj="URBlacksmith"/>
 </cmd>
 <!-- BLACKSMITH COMMANDS -->
@@ -858,7 +861,7 @@
 	costfood = "0"
 	execdelay = "5000"
 	rollover="Charm of Seth"
-	description="Gives a Damage charm (+4 damage) to up to 50 warriors around the townhall"
+	description="Gives a Damage charm (+4 damage) to up to 50 normal warriors around the townhall"
 	method="getcharm"
 	param="Damage charm" >
 	<src obj="EBlacksmith"/>
@@ -875,7 +878,7 @@
 	costfood = "0"
 	execdelay = "5000"
 	rollover="Charm of Thoth"
-	description="Gives an Armor charm (+4 armor) to up to 50 warriors around the townhall"
+	description="Gives an Armor charm (+4 armor) to up to 50 normal warriors around the townhall"
 	method="getcharm"
 	param="Armor charm" >
 	<src obj="EBlacksmith"/>
@@ -892,7 +895,7 @@
 	costfood = "0"
 	execdelay = "5000"
 	rollover="Charm of Ra"
-	description="Gives a Health charm (+40 health points) to up to 50 warriors around the townhall"
+	description="Gives a Health charm (+40 health points) to up to 50 normal warriors around the townhall"
 	method="getcharm"
 	param="Health charm" >
 	<src obj="EBlacksmith"/>
@@ -908,7 +911,7 @@
 	costfood = "0"
 	execdelay = "5000"
 	rollover="Charm of Isis"
-	description="Gives a Knowledge charm (+4 levels) to up to 50 warriors around the townhall"
+	description="Gives a Knowledge charm (+4 levels) to up to 50 normal warriors around the townhall"
 	method="getcharm"
 	param="Knowledge charm" >
 	<src obj="EBlacksmith"/>
@@ -1584,5 +1587,69 @@
 	<src obj="CBlacksmith"/>
 	<src obj="CCBlacksmith"/>
 	<src obj="ECBlacksmith"/>
+</cmd>
+
+<cmd name="Charms of Seth" priority="4"
+	button="research/Charm of Seth.bmp"
+	key="b"
+	queueicon="gameres/icons/upgrades/Charm of Seth.bmp"
+	costgold = "2500"
+	costfood = "0"
+	execdelay = "30000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Charms of Seth"
+	description="All new warriors have Charm of Seth (4+10% to damage)"
+	method="research"
+	researchcommand="yes"
+	param="NameSet, Charms of Seth, default, SetsSet, items/Charm of Seth, 1">
+	<src obj="MEBlacksmith"/>
+</cmd>
+
+<cmd name="Charms of Thoth" priority="5"
+	button="research/Charm of Thoth.bmp"
+	key="s"
+	queueicon="gameres/icons/upgrades/Charm of Thoth.bmp"
+	costgold = "2500"
+	costfood = "0"
+	execdelay = "30000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Charms of Thoth"
+	description="All new warriors have Charm of Thoth (4+10% to armor)"
+	method="research"
+	researchcommand="yes"
+	param="NameSet, Charms of Thoth, default, SetsSet, items/Charm of Thoth, 1">
+	<src obj="MEBlacksmith"/>
+</cmd>
+
+<cmd name="Charms of Ra" priority="6"
+	button="research/Charm of Ra.bmp"
+	key="p"
+	queueicon="gameres/icons/upgrades/Charm of Ra.bmp"
+	costgold = "2500"
+	costfood = "0"
+	execdelay = "30000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Charms of Ra"
+	description="All new warriors have Charm of Ra (40+10% to max health)"
+	method="research"
+	researchcommand="yes"
+	param="NameSet, Charms of Ra, default, SetsSet, items/Charm of Ra, 1">
+	<src obj="MEBlacksmith"/>
+</cmd>
+
+<cmd name="Charms of Isis" priority="7"
+	button="research/Charm of Isis.bmp"
+	key="n"
+	queueicon="gameres/icons/upgrades/Charm of Isis.bmp"
+	costgold = "2500"
+	costfood = "0"
+	execdelay = "30000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Charms of Isis"
+	description="All new warriors have Charm of Isis (4 levels + 10 experience)"
+	method="research"
+	researchcommand="yes"
+	param="NameSet, Charms of Isis, default, SetsSet, items/Charm of Isis, 1">
+	<src obj="MEBlacksmith"/>
 </cmd>
 </commands>

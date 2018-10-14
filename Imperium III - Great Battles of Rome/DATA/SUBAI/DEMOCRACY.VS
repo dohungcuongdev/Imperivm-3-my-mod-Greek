@@ -14,7 +14,7 @@ if(EnvReadString(.player,"GovernmentForm")=="Oligarchy"){
 	
 		u=units[i];
 		if(u.IsValid()){
-			if(u.class!="Sentry" && !u.IsHeirOf("Hero") && u.HasItem("Emblem of Oligarchy")){
+			if(u.class!="Sentry" && u.HasItem("Emblem of Oligarchy")){
 				u.RemoveItem("Emblem of Oligarchy");
 			}
 		}

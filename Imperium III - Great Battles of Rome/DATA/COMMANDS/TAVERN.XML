@@ -16,6 +16,7 @@
 	rollover="Increase population">
 	<src obj="GTavern"/>
 	<src obj="AHAgora"/>
+	<src obj="MEMarket"/>
 </cmd>
 
 <cmd name="RAddPop" priority="2"
@@ -326,6 +327,7 @@
 	method="sellfoodforgold"
 	param="Grain Trade">
 	<src obj="GTTavern"/>
+	<src obj="MEMarket"/>
 </cmd>
 
 <cmd name="Sell food" priority="14"
@@ -641,6 +643,7 @@
 	description="Gathers %s1 gold in each outpost you own. The amount of gold increases by 500 every 10 minutes (though not over 2000)"
 	rollover="Tribute (once per game)">
 	<src obj="EMarket"/>
+	<src obj="MEMarket"/>
 </cmd>
 
 <cmd name="HTribute" priority="22"
@@ -742,9 +745,10 @@
 	description="Increases the stronghold population to maximum"
 	rollover="Buy Slaves">
 	<src obj="EMarket"/>
+	<src obj="MEMarket"/>
 </cmd>
 
-<cmd name="GrainTrade" priority="3"
+<cmd name="GrainTrade" priority="7"
 	queueicon="gameres/icons/upgrades/grain trade.bmp"
 	key="g"
 	groupverifier="data/subai/verify_research.vs"
@@ -758,6 +762,7 @@
 	rollover="Grain Trade"
 	>
 	<src obj="EMarket"/>
+	<src obj="MEMarket"/>
 </cmd>
 
 <cmd name="ReligiousFeast" priority="18"
@@ -774,18 +779,20 @@
 	description="Heals the warriors around the townhall"
 	rollover="Religious Feast">
 	<src obj="EMarket"/>
+	<src obj="MEMarket"/>
 </cmd>
 
 <cmd name="Gossip" priority="12"
 	groupverifier="data/subai/verify_isresearched.vs"
 	button="actions/gossip.bmp"
-	key="s"
+	key="i"
 	costfood="1000"
 	rollover="Gossip"
 	description="Temporarily removes the fog of war around a chosen point and reveals any hidden warriors there"
 	immediate="yes"
 	param="Grain Trade">
 	<src obj="EMarket"/>
+	<src obj="MEMarket"/>
 </cmd>
 
 <cmd name="Hecatomb" priority="20"
@@ -853,6 +860,7 @@
 	>
 	<src obj="TTavern"/>
 	<src obj="CGTavern"/>
+	<src obj="MEMarket"/>
 </cmd>
 
 <cmd name="TReligiousFeast" priority="18"

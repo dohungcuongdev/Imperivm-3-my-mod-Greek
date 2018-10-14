@@ -149,8 +149,8 @@
 	costfood = "2000"
 	costpop = "0"
 	execdelay = "30000"
-	rollover="Hire Ancient Hero"
-	description="Hire hero with 10 skills, pick up maximum 8 items, army gain 60% his experience, can lead up to 320 units (if upgrade maximum skill Administration)"
+	rollover="Hire special Ancient Hero"
+	description="Hire special hero with 10 skills, pick up maximum 8 items, army gain 60% his experience, can lead up to 200 units (if upgrade maximum skill Administration)"
 	method="trainex"
 	param="1, 1, AncientGreeceHero, AncientGreeceHero, Olympic Games">
 	<src obj="AHGymnasium"/>

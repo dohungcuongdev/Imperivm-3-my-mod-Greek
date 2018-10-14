@@ -21,6 +21,7 @@
 	<src obj="BBarracks"/>
 	<src obj="TBarracks"/>
 	<src obj="EBarracks"/>
+	<src obj="MEBarracks"/>
 	<src obj="HBarracks"/>
 	<src obj="AHBarracks"/>
 	<src obj="RRBarracks"/>
@@ -54,6 +55,7 @@
 	<src obj="BBarracks"/>
 	<src obj="TBarracks"/>
 	<src obj="EBarracks"/>
+	<src obj="MEBarracks"/>
 	<src obj="HBarracks"/>
 	<src obj="AHBarracks"/>
 	<src obj="RRBarracks"/>
@@ -87,6 +89,7 @@
 	<src obj="BBarracks"/>
 	<src obj="TBarracks"/>
 	<src obj="EBarracks"/>
+	<src obj="MEBarracks"/>
 	<src obj="HBarracks"/>
 	<src obj="AHBarracks"/>
 	<src obj="RRBarracks"/>
@@ -118,6 +121,7 @@
 	<src obj="IRBarracks"/>
 	<src obj="BBarracks"/>
 	<src obj="EBarracks"/>
+	<src obj="MEBarracks"/>
 	<src obj="HBarracks"/>
 	<src obj="AHBarracks"/>
 	<src obj="RRBarracks"/>

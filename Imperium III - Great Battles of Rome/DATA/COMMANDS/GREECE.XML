@@ -297,7 +297,7 @@
 	param = "GreekHero"
 	method="hirehero"
 	help="/contents/units/GHero"
-	rollover="Hire hero">
+	rollover="Hire classic hero">
 	<src obj="HGymnasium"/>
 </cmd>
 
@@ -309,7 +309,7 @@
 	costfood = "0"
 	execdelay = "35000"
 	groupverifier="data/subai/verify_research.vs"
-	description="All new warriors are level 5"
+	description="All new captains, special heroes and normal warriors are level 5"
 	rollover="Olympic Games"
 	method="research"
 	researchcommand="yes"
@@ -378,7 +378,7 @@
 	execdelay = "40000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Military preparation"
-	description="All new heroes are level 15"
+	description="All new classic heroes are level 15"
 	method="research"
 	researchcommand="yes"
 	param="ReqSet, Olympic Games, default, SetsSet, levels/Hero, 15, NameSet, Military Preparation, default">

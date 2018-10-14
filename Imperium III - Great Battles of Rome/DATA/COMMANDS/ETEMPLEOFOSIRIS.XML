@@ -16,6 +16,7 @@
 	execdelay = "60000">
 	<src obj="ETempleOfOsiris"/>
 	<src obj="EETempleOfOsiris"/>
+	<src obj="METempleOfOsiris"/>
 </cmd>
 
 <cmd name="trainEPriest" priority="1"
@@ -37,6 +38,7 @@
 	<src obj="ETempleOfOsiris"/>
 	<src obj="EETempleOfOsiris"/>
 	<src obj="ECTemple"/>
+	<src obj="METempleOfOsiris"/>
 </cmd>
 
 <cmd name="Cult of Osiris" priority="2"
@@ -55,6 +57,7 @@
 	<src obj="ETempleOfOsiris"/>
 	<src obj="EETempleOfOsiris"/>
 	<src obj="ECTemple"/>
+	<src obj="METempleOfOsiris"/>
 </cmd>
 
 <cmd name="Foraging" priority="2"
@@ -90,7 +93,9 @@
 	<src obj="ETempleOfOsiris"/>
 	<src obj="EETempleOfOsiris"/>
 	<src obj="ECTemple"/>
+	<src obj="METempleOfOsiris"/>
 </cmd>
+
 <cmd name="ECloud of Plague" priority="4"
 	queueicon="gameres/icons/upgrades/mist.bmp"
 	button="research/mist.bmp"
@@ -107,6 +112,7 @@
 	<src obj="ETempleOfOsiris"/>
 	<src obj="EETempleOfOsiris"/>
 	<src obj="ECTemple"/>
+	<src obj="METempleOfOsiris"/>
 </cmd>
 
 <cmd name="Mumification" priority="5"
@@ -119,7 +125,7 @@
 	costfood = "0"
 	execdelay = "30000"
 	rollover="Mummification"
-	description = "New heroes are hired with 2/3 the level of the best hero you've had"
+	description = "New classic heroes are hired with 2/3 the level of the best hero you've had"
 	method="research"
 	param="ReqSet, Cult of Osiris, default, NameSet, Mumification, default">
 	<src obj="ETempleOfOsiris"/>
@@ -136,7 +142,7 @@
 	costfood = "0"
 	execdelay = "60000"
 	rollover="Eighteen"
-	description = "All new heroes are level 18"
+	description = "All new classic heroes are level 18"
 	method="research"
 	param="ReqSet, Cult of Osiris, default, SetsSet, levels/Hero, 18, NameSet, Eighteen, default">
 	<src obj="EETempleOfOsiris"/>
@@ -160,5 +166,42 @@
 	<src obj="ETempleOfOsiris"/>
 	<src obj="EETempleOfOsiris"/>
 	<src obj="ECTemple"/>
+	<src obj="METempleOfOsiris"/>
+</cmd>
+
+<cmd name="Temple Dual Swords" priority="7"
+	queueicon="gameres/icons/upgrades/espadaspersas.bmp"
+	key="y"
+	button="upgrades/espadaspersas.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Temple Dual Swords"
+	description="Allows Master Swordmen to be equipped in the Temple"
+	method="research"
+	param="ReqSet, Cult of Osiris, default, NameSet,Temple Dual Swords, default, NameSet, PINMORTAL">
+	<src obj="METempleOfOsiris"/>
+</cmd>
+
+<cmd name="trainMEInmortales" priority="7"
+	button="actions/TRAIN PINMORTAL.bmp"
+	queueicon="gameres/icons/PInmortal.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="z"
+	help="/contents/units/PInmortal"
+	costgold = "300"
+	costfood = "200"
+	costpop = "0"
+	execdelay = "20000"
+	rollover="Equip Master Swordman"
+	method="trainex"
+	param="1, 10, PINMORTAL, PINMORTAL, Temple Dual Swords"
+	sclass="PINMORTAL">
+	<src obj="METempleOfOsiris"/>
 </cmd>
 </commands>

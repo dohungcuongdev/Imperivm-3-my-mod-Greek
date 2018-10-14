@@ -2,78 +2,51 @@
 
 Unit newunit;
 Barrack this;
-point ptExit, ptEnter;
-int perc, level;
-Query qEnemies;
+point ptExit;
+int level,i;
+ObjList ol;
 
-str carCmdParam, cdrCmdParam; 
+this = This.AsBuilding();
 
-carCmdParam = ParseStr(cmdparam, cdrCmdParam); 
+// needed for the tutorial message to check this ever started
+EnvWriteInt(.player, "HeroBuilt", 1);
 
-this = This.AsBarrack();
-qEnemies = Intersect(ObjsInSight(.settlement.GetCentralBuilding(),"Object"),EnemyObjs(.player(),"Object"));
+while(.settlement.IsFull)
+	Sleep(500);
+.Progress();
+while(.settlement.IsFull)
+	Sleep(500);
 
-perc = 100 - EnvReadInt(.settlement, "BarrackTrainTimeDecrease");
-.Progress((.cmddelay * perc) / 100);
+level = EnvReadInt(.settlement, "levels/Hero");
 
-// Create unit
+// Mumificatiion
+// if (.race==Egypt && EnvReadString(.settlement, "Mumification")=="researched") // comment out to apply Mumificatiion for all race
+if (EnvReadString(.settlement, "Mumification")=="researched")
+  {
+	level = EnvReadInt(.player, "BestHeroLevel");
+	
+	ol = GetPlayerUnits(.player, "Hero");
+	for (i=0; i<ol.count;i+=1)
+		{
+		  if (ol[i].IsValid())
+			if (ol[i].AsHero().inherentlevel > level)
+			  level = ol[i].AsHero().inherentlevel;
+		}
+	level = (2*level)/3;
+	if (level<1)  level = 1;
+  }
+//
+
 ptExit = .GetExitPoint(.settlement.GetCentralBuilding.pos, false);
 if (ptExit.x==-1 && ptExit.y==-1) {
-	newunit = Place(carCmdParam, Point(0,0), this.player);
-	.settlement.AddUnit(newunit);
+	newunit = Place(GetRandomHeroClass(cmdparam, .player), Point(0,0), this.player);
+	newunit.SetLevel(level);
 } else {
-	newunit = Place(carCmdParam, ptExit, this.player);
-	if (qEnemies.IsEmpty())
-		newunit.SetCommand("enter", .settlement.GetCentralBuilding);
-	else
-		newunit.SetCommand("advanceenter", .settlement.GetCentralBuilding);
+	newunit = Place(GetRandomHeroClass(cmdparam, .player), ptExit, this.player);
+	newunit.SetCommand("advanceenter", .settlement.GetCentralBuilding);
 }
-
-// Set level
-level = 1;
-//if( GetClassRace(carCmdParam) == Carthage ) { //comment out it should work for all race
-	if (!newunit.IsHeirOf("BaseMage"))
-	  {	
-		if( EnvReadString(.settlement, "Shared Strength") == "researched" ) {
-			int nThisClass;
-			nThisClass = Count(.player, carCmdParam);
-			if( nThisClass > 12 )
-				level = 6;
-		}
-		if( EnvReadString(.settlement, "Shared Triumph") == "researched" ) {
-			int nThisClass;
-			nThisClass = Count(.player, carCmdParam);
-			if( nThisClass > 24 )
-				level = 12;
-		}
-	  }
-//}//comment out it should work for all race
-{
-    int l2;
-    l2 = EnvReadInt(.settlement, "levels/" + carCmdParam);
-    if (l2 > level) level = l2;
-}
-
-// standartization
-{
-	if (!newunit.IsHeirOf("BaseMage"))
-	  {	
-		int l2;
-		l2 = EnvReadInt(.player, "standard_spawn_level");
-		if (l2 > level) level = l2;
-      }
-}
-
-//Olympic Games
-{
-	if (!newunit.IsHeirOf("BaseMage") && EnvReadString(.settlement,"Olympic Games")=="researched"){
-		if(level<5){	
-			level=5;
-		}
-	}
-}
-
 newunit.SetLevel(level);
+
 if (!newunit.IsHeirOf("BaseMage"))
   {	
 	if (EnvReadInt(.settlement, "items/Bear teeth amulet") == 1)
