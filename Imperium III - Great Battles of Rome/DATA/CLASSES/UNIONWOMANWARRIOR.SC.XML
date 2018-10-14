@@ -5,7 +5,7 @@
 	<properties damage="30" armor_slash="16" armor_pierce="16"/>
 	<properties speed="80"/>
 	<!--<properties unit_specials="Death blow, Triple strike, Combat skill"/> -->
-	<properties unit_specials="Death blow, Penetration, Combat skill"/>
+	<properties unit_specials="Bleeding attack, Penetration, Combat skill"/>
 
 	<properties formation_priority="1000"/>
 	<properties formation_radius="26"/>

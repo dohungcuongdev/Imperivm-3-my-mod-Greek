@@ -831,6 +831,7 @@
 	param="NameSet,Javelins,default, NameSet, BJavelineer,">
 	<src obj="BBlacksmith"/>
 	<src obj="BKBlacksmith"/>
+	<src obj="UnionBlacksmith"/>
 </cmd>
 
 <cmd name="Britain Swords" priority="3"

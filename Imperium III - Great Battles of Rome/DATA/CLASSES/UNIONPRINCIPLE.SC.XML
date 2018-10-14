@@ -4,7 +4,7 @@
 	<properties maxhealth="600"/>
 	<properties damage="36" armor_slash="16" armor_pierce="16"/>
 	<properties speed="80"/>
-	<properties unit_specials="Offensive tactics, Active"/>
+	<properties unit_specials="Offensive tactics, Active, Toughness"/>
 
 	<properties icon="gameres/icons/UNIONSPEARMAN.bmp"/>
 	<properties display_name="Union Principle" display_name_plural="Union Principles"/>
