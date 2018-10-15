@@ -988,6 +988,23 @@
 
 <!-- Other Stronghold in editor -->
 
+<cmd name="Roman Gladiator" priority="1"
+	queueicon="gameres/icons/upgrades/Gladiator.bmp"
+	button="upgrades/glad.bmp"
+	key="g"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1800"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Tridents"
+	description="Allows Gladiators to be equipped in the Barracks"
+	method="research"
+	param="NameSet, Roman Gladiator,default, NameSet, RGladiator">
+	<src obj="RRBlacksmith"/>
+	<src obj="URBlacksmith"/>
+</cmd>
+
 <cmd name="Teuton Master" priority="7"
 	button="actions/TRAIN TTEUTONARCHER.bmp"
 	key="t"
