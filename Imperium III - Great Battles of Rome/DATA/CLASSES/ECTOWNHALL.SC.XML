@@ -8,6 +8,8 @@
 	<properties edittree_pos="Structures/Stronghold (Extended Carthage)/Townhall"/>
 	<properties help="/contents/buildings/CTownhall"/>
 
-	
-
+	<properties
+		produces_gold="1"
+		produces_food="1"
+	/>
 </class>

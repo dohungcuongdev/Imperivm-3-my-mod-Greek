@@ -7,6 +7,11 @@
 	<properties radius="170" selection_radius="175"/>
 	<properties edittree_pos="Structures/Stronghold (Middle-Kingdom Egypt)/Townhall"/>
 	<properties help="/contents/buildings/ETownhall"/>
+	
+	<properties
+		produces_gold="1"
+		produces_food="1"
+	/>
 
 	<behavior script="data/subai/townhall_buildingsbehavior.vs"/>
 

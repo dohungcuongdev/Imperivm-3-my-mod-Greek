@@ -8,5 +8,10 @@
 	<properties edittree_pos="Structures/Stronghold (Ancient Greece)/Townhall"/>
 	<properties help="/contents/buildings/HTownhall"/>
 	<behavior script="data/subai/townhall_buildingsbehavior_h.vs"/>
+	
+	<properties
+		produces_gold="1"
+		produces_food="1"
+	/>
 
 </class>

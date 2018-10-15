@@ -10,5 +10,9 @@
 
 	<properties edittree_pos="Structures/Stronghold (Celtic Gaul)/Townhall"/>
 
+	<properties
+		produces_gold="1"
+		produces_food="1"
+	/>
 	
 </class>

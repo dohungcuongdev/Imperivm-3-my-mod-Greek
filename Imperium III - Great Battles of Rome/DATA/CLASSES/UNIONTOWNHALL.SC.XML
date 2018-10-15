@@ -10,5 +10,8 @@
 
 	<properties edittree_pos="Structures/Stronghold (Union Iberia)/Townhall"/>
 
-	
+	<properties
+		produces_gold="1"
+		produces_food="1"
+	/>
 </class>

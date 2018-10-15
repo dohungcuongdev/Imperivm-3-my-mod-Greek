@@ -9,5 +9,8 @@
 	<properties help="/contents/buildings/BTownhall"/>
 	<behavior script="data/subai/townhall_buildingsbehavior_bk.vs"/>
 
-	
+	<properties
+		produces_gold="1"
+		produces_food="1"
+	/>
 </class>
