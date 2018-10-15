@@ -1586,7 +1586,7 @@
 	key="c"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
-	costgold = "2000"
+	costgold = "1200"
 	costfood = "0"
 	execdelay = "20000"
 	rollover="Union Mountain Clan"

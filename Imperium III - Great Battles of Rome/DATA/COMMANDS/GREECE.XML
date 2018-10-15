@@ -550,20 +550,7 @@
 
 <!-- GREEK AGORA COMMANDS -->
 
-<cmd name="buyfoodforgold" priority="3"
-	queueicon="gameres/icons/upgrades/buy food.bmp"
-	groupverifier="data/subai/verify_cmdcost_building.vs"
-	button="actions/buy food.bmp"
-	traincommand="yes"
-	key="f"
-	costgold = "400"
-	execdelay = "10000"
-	param = "800"
-	rollover="Buy 800 food">
-	<src obj="AHAgora"/>
-</cmd>
-
-<cmd name="Trade Routes" priority="3"
+<cmd name="Trade Routes" priority="7"
 	button="Research/Trade Routes.bmp"
 	key="t"
 	queueicon="gameres/icons/upgrades/Trade Routes.bmp"
@@ -580,7 +567,7 @@
 	<src obj="AHAgora"/>
 </cmd>
 
-<cmd name="buyWarSlaves" priority="4"
+<cmd name="buyWarSlaves" priority="7"
 	queueicon="gameres/icons/upgrades/Buy War Slaves.bmp"
 	groupverifier="data/subai/verify_research.vs"
 	button="actions/Buy War Slaves.bmp"
@@ -597,7 +584,7 @@
 	<src obj="AHAgora"/>
 </cmd>
 
-<cmd name="Supplies" priority="5"
+<cmd name="Supplies" priority="7"
 	queueicon="gameres/icons/upgrades/Supplies.bmp"
 	groupverifier="data/subai/verify_research.vs"
 	button="Research/Supplies.bmp"
@@ -614,7 +601,7 @@
 	<src obj="AHAgora"/>
 </cmd>
 
-<cmd name="startStoringFood" priority="6"
+<cmd name="startStoringFood" priority="7"
 	button="Actions/Start Storing Food.bmp"
 	key="k"
 	immediate="yes"
@@ -626,7 +613,7 @@
 	<src obj="AHAgora"/>
 </cmd>
 
-<cmd name="stopStoringFood" priority="6"
+<cmd name="stopStoringFood" priority="7"
 	button="Actions/Stop Storing Food.bmp"
 	key="k"
 	immediate="yes"
