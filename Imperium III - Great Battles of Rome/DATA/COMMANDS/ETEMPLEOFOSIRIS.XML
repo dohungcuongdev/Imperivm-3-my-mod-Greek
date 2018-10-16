@@ -66,10 +66,10 @@
 	key="f"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
-	costgold = "2000"
+	costgold = "1000"
 	costfood = "0"
 	costpop = "0"
-	execdelay = "20000"
+	execdelay = "10000"
 	rollover="Foraging"
 	description="Allows a shaman to feed 2 nearby allies"
 	method="research"
@@ -129,6 +129,7 @@
 	method="research"
 	param="ReqSet, Cult of Osiris, default, NameSet, Mumification, default">
 	<src obj="ETempleOfOsiris"/>
+	<src obj="ECTemple"/>
 </cmd>
 
 <!-- For Temple of Osiris (2) -->
@@ -146,7 +147,6 @@
 	method="research"
 	param="ReqSet, Cult of Osiris, default, SetsSet, levels/Hero, 18, NameSet, Eighteen, default">
 	<src obj="EETempleOfOsiris"/>
-	<src obj="ECTemple"/>
 </cmd>
 
 <cmd name="Chariot of Osiris" priority="6"
@@ -192,11 +192,11 @@
 	onaddremovescript="data/subai/trainex_onaddremove.vs"
 	transpicon="1"
 	traincommand="yes"
-	key="z"
+	key="i"
 	help="/contents/units/PInmortal"
 	costgold = "300"
 	costfood = "200"
-	costpop = "0"
+	costpop = "i"
 	execdelay = "20000"
 	rollover="Equip Master Swordman"
 	method="trainex"

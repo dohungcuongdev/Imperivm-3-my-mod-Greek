@@ -136,7 +136,7 @@
 
 <!-- GREEK ARENA -->
 
-<cmd name="Hire Ancient Hero" priority="3"
+<cmd name="Train Ancient Hero" priority="3"
 	button="actions/RLIDER.bmp"
 	queueicon="gameres/icons/RLIDER.bmp"
 	transpicon="1"
@@ -147,16 +147,16 @@
 	help="/contents/units/AncientGreeceHero"
 	costgold = "2000"
 	costfood = "2000"
-	costpop = "0"
+	costpop = "1"
 	execdelay = "30000"
-	rollover="Hire special Ancient Hero"
-	description="Hire special hero with 10 skills, pick up maximum 8 items, army gain 60% his experience, can lead up to 200 units (if upgrade maximum skill Administration)"
+	rollover="Train a special Ancient Hero"
+	description="Train a special hero with 10 skills, pick up maximum 10 items, can lead up to 200 units (if upgrade maximum skill Administration)"
 	method="trainex"
 	param="1, 1, AncientGreeceHero, AncientGreeceHero, Olympic Games">
 	<src obj="AHGymnasium"/>
 </cmd>
 
-<cmd name="Hire LongBow Archer" priority="6"
+<cmd name="Train LongBow Archers" priority="6"
 	button="actions/GREEKARCHERLONGBOW.bmp"
 	queueicon="gameres/icons/GREEKARCHERLONGBOW.bmp"
 	transpicon="1"
@@ -165,12 +165,12 @@
 	traincommand="yes"
 	key="l"
 	help="/contents/units/AHArcher"
-	costgold = "650"
-	costfood = "700"
-	costpop = "0"
+	costgold = "600"
+	costfood = "640"
+	costpop = "4"
 	execdelay = "20000"
-	rollover="Hire 4 LongBow Archers"
-	description="Hires 4 LongBow Archers"
+	rollover="Train 4 LongBow Archers"
+	description="Train 4 LongBow Archers"
 	method="trainex"
 	param="4, 16, AHArcher, AHArcher, Greece LongBow">
 	<src obj="AHGymnasium"/>
@@ -187,7 +187,7 @@
 	costpop = "0"
 	execdelay = "10000"
 	rollover="Greece LongBow"
-	description="Allows LongBow Archers to be hired"
+	description="Allows LongBow Archers to be trained"
 	method="research"
 	param="ReqSet, Olympic Games, default, NameSet, Greece LongBow, default">
 	<src obj="AHGymnasium"/>

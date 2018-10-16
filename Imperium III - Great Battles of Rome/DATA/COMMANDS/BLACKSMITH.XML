@@ -99,24 +99,17 @@
 	<src obj="EEBlacksmith"/>
 	<src obj="EEEBlacksmith"/>
 	<src obj="EEEEBlacksmith"/>
-	<src obj="MEBlacksmith"/>
 	<src obj="HBlacksmith"/>
-	<src obj="AHBlacksmith"/>
 	<src obj="RRBlacksmith"/>
 	<src obj="TTBlacksmith"/>
 	<src obj="GGBlacksmith"/>
-	<src obj="CGBlacksmith"/>
 	<src obj="CCBlacksmith"/>
-	<src obj="GTBlacksmith"/>
-	<src obj="ECBlacksmith"/>
-	<src obj="URBlacksmith"/>
-	<src obj="UnionBlacksmith"/>
 </cmd>
 
-<cmd name="Strenghten Kingdom Defences II" priority="10"
-	queueicon="gameres/icons/upgrades/STRONGHOLD DEFENSE3.bmp"
+<cmd name="Strenghten Defences Upgrade II" priority="10"
+	queueicon="gameres/icons/upgrades/Stronghold Defense2.bmp"
 	key="d"
-	button="research/STRONGHOLD DEFENSE3.bmp"
+	button="research/Stronghold Defense2.bmp"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
 	costgold = "2000"
@@ -125,14 +118,21 @@
 	rollover="Strengthen Kingdom Defenses II"
 	description="Makes the defenders at the stronghold walls level 24"
 	method="research"
-	param="ReqSet,Strenghten Stronghold Defences I,,NameSet,Strenghten Kingdom Defences II,,SetsSet,SentriesLevel,24">
+	param="ReqSet,Strenghten Stronghold Defences I,,NameSet,Strenghten Defences Upgrade II,,SetsSet,SentriesLevel,24">
 	<src obj="BKBlacksmith"/>
+	<src obj="GTBlacksmith"/>
+	<src obj="ECBlacksmith"/>
+	<src obj="URBlacksmith"/>
+	<src obj="CGBlacksmith"/>
+	<src obj="MEBlacksmith"/>
+	<src obj="AHBlacksmith"/>
+	<src obj="UnionBlacksmith"/>
 </cmd>
 
-<cmd name="Strenghten Kingdom Defences III" priority="10"
-	queueicon="gameres/icons/upgrades/Stronghold Defense2.bmp"
+<cmd name="Strenghten Defences Upgrade III" priority="10"
+	queueicon="gameres/icons/upgrades/STRONGHOLD DEFENSE3.bmp"
 	key="k"
-	button="research/Stronghold Defense2.bmp"
+	button="research/STRONGHOLD DEFENSE3.bmp"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
 	costgold = "3000"
@@ -141,8 +141,15 @@
 	rollover="Strengthen Kingdom Defenses III"
 	description="Makes the defenders at the stronghold walls level 36"
 	method="research"
-	param="ReqSet,Strenghten Kingdom Defences II,,NameSet,Strenghten Kingdom Defences III,default,SetsSet,SentriesLevel,36">
+	param="ReqSet,Strenghten Defences Upgrade II,,NameSet,Strenghten Defences Upgrade III,default,SetsSet,SentriesLevel,36">
 	<src obj="BKBlacksmith"/>
+	<src obj="GTBlacksmith"/>
+	<src obj="ECBlacksmith"/>
+	<src obj="URBlacksmith"/>
+	<src obj="CGBlacksmith"/>
+	<src obj="MEBlacksmith"/>
+	<src obj="AHBlacksmith"/>
+	<src obj="UnionBlacksmith"/>
 </cmd>
 <!-- ROMAN BLACKSMITH COMMANDS -->
 

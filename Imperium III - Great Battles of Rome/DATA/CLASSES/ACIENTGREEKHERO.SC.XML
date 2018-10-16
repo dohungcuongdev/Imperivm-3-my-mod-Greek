@@ -1,7 +1,7 @@
 <class id="AncientGreeceHero" cpp_class="CVXHero" parent="Hero" entity="Units/Caesar/Caesar.ent.xml">
 
 	<properties maxhealth="3000"/>
-	<properties damage="40" armor_slash="12" armor_pierce="12"/>
+	<properties damage="50" armor_slash="12" armor_pierce="12"/>
 	<properties race="ImperialRome"/>
 	<properties help="/contents/units/HHero"/>	
 	<properties icon="gameres/icons/RLIDER.bmp"/>
@@ -10,7 +10,7 @@
 	
 	<properties max_army="180"/>
 	<properties heroarmyexpgain="60"/>
-	<properties inventory_size="8"/>
+	<properties inventory_size="10"/>
 	
 	<properties edittree_pos="Units/Ancient Greece/Hero"/>
 

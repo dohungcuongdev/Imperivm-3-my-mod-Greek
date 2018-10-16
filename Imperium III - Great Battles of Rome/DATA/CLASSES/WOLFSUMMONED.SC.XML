@@ -5,5 +5,5 @@
 	<properties stamina_dec_time = "5000"/>
 	<properties inventory_size="1"/>
 	<behavior script = "data/subai/summoning_behavior.vs"/>
-	<properties description="-Causa miedo."/>
+	<properties description="Wolf Summoned"/>
 </class>

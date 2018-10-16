@@ -15,7 +15,7 @@
 	<properties heroarmyexpgain="50"/>
 
 	<properties HeroSkills="Team attack, Team defense, Quick March, Survival, Recovery, Vigor, Wisdom, Epic attack, Epic armor, Epic endurance"/>
-	<properties inventory_size="10"/>
+	<properties inventory_size="8"/>
 
 	<sounds command="data/sound entities/VoiceGHero.xml"/>
 </class>

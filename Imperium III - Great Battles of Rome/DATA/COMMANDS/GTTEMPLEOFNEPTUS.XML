@@ -108,10 +108,10 @@
 	costgold = "1800"
 	costfood = "0"
 	execdelay = "20000"
-	rollover="German God's Gift"
+	rollover="God's Gift"
 	description="All new warriors are equipped with a God's Gift artifact, which heals a warrior at his first kill and then disappears"
 	method="research"
-	param="ReqSet, Ritual Chamber, default, NameSet, German God's Gift, default, SetsSet, items/God's Gift, 1">
+	param="ReqSet, Ritual Chamber, default, NameSet, God's Gift, default, SetsSet, items/God's Gift, 1">
 	<src obj="GTTempleOfNeptus"/>
 </cmd>
 
@@ -124,10 +124,10 @@
 	costgold = "2000"
 	costfood = "0"
 	execdelay = "20000"
-	rollover="German God's Strength"
+	rollover="God's Strength"
 	description="All new warriors are equipped with a God's Strength artifact, which adds 50 max health"
 	method="research"
-	param="ReqSet, Ritual Chamber, default, NameSet, German God's Strength, default, SetsSet, items/God's Strength, 1">
+	param="ReqSet, Ritual Chamber, default, NameSet, God's Strength, default, SetsSet, items/God's Strength, 1">
 	<src obj="GTTempleOfNeptus"/>
 </cmd>
 

@@ -6,6 +6,7 @@
 	<properties speed="80"/>
 	<properties HeroSkills="Team attack, Team defense, Quick March, Administration, Survival, Vigor, Recovery, Epic endurance, Epic attack, Epic armor"/>
 	<properties unit_specials="Toughness, Life steal, Ferocity"/>
+	<properties inventory_size="10"/>
 
 	<properties icon="gameres/icons/BVikingLord.bmp"/>
 	<properties display_name="Viking Hero" display_name_plural="Viking Heroes"/>

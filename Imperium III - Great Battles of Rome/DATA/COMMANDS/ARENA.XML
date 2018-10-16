@@ -1186,7 +1186,7 @@
 	costpop = "0"
 	execdelay = "30000"
 	rollover="Hire special Anubis Hero"
-	description="Hire special Anubis Hero with 10 skills, 2 unit specials, pick up maximum 10 items, can lead up to 100 units"
+	description="Hire special Anubis Hero with 10 skills, 2 unit specials, pick up maximum 8 items, can lead up to 100 units"
 	method="trainex"
 	param="1, 1, AnubisHero, AnubisHero, Cult of Anubis">
 	<src obj="METempleOfHorusAndAnubis"/>
@@ -1308,7 +1308,7 @@
 	costpop = "0"
 	execdelay = "30000"
 	rollover="Hire special Horus Hero"
-	description="Hire special Horus Hero with 10 skills, 2 unit specials, pick up maximum 10 items, can lead up to 100 units"
+	description="Hire special Horus Hero with 10 skills, 2 unit specials, pick up maximum 8 items, can lead up to 100 units"
 	method="trainex"
 	param="1, 1, HorusHero, HorusHero, Cult of Horus">
 	<src obj="METempleOfHorusAndAnubis"/>
