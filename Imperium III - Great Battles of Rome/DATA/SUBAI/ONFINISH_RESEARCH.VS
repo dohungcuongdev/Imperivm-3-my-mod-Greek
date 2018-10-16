@@ -69,6 +69,13 @@ while(dest != "")
 			SetExperienceModifier(.player, c);
 			continue;
 		}
+		//  Battle Learning
+		if (name == "Battle Learning") {
+			int c;
+			c = GetConst("BattleLearningExpModifier");
+			SetExperienceModifier(.player, c);
+			continue;
+		}
 		// Heroes' Wisdom implementation
 		if (name == "Heroes' Wisdom") {
 			StartPlayerScript(.player, "data/subai/player_heroes_wisdom.vs");

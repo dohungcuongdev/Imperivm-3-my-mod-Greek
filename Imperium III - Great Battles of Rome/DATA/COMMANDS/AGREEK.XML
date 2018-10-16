@@ -177,8 +177,8 @@
 </cmd>
 
 <cmd name="Greece LongBow" priority="6"
-	queueicon="gameres/icons/upgrades/GREEKARCHERLONGBOW.bmp"
-	button="upgrades/GREEKARCHERLONGBOW.bmp"
+	queueicon="gameres/icons/upgrades/tradicionarquera.bmp"
+	button="upgrades/tradicionarquera.bmp"
 	groupverifier="data/subai/verify_research.vs"
 	researchcommand="yes"
 	key="b"

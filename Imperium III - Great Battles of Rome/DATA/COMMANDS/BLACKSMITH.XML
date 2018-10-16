@@ -114,9 +114,9 @@
 </cmd>
 
 <cmd name="Strenghten Kingdom Defences II" priority="10"
-	queueicon="gameres/icons/upgrades/Stronghold Defense2.bmp"
+	queueicon="gameres/icons/upgrades/STRONGHOLD DEFENSE3.bmp"
 	key="d"
-	button="research/Stronghold Defense2.bmp"
+	button="research/STRONGHOLD DEFENSE3.bmp"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
 	costgold = "2000"
