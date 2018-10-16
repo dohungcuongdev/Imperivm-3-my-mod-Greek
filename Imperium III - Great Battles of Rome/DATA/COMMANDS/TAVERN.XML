@@ -724,9 +724,25 @@
 	costpop="50"
 	execdelay="20000"
 	param="Free Drinks"
-	description="Drafts 50 peasants, making them Militiamen"
+	description="Drafts 50 peasants, making them Militiamen, level 4-12 based on game time"
 	rollover="Call to arms">
 	<src obj="ITavern"/>
+</cmd>
+
+<cmd name="Call Warriors" priority="16"
+	queueicon="gameres/icons/upgrades/call to arms.bmp"
+	button="actions/call to arms.bmp"
+	key="a"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_isresearched.vs"
+	method="callwarriors"
+	costgold="0"
+	costfood="1600"
+	costpop="50"
+	execdelay="20000"
+	param="Free Drinks"
+	description="Drafts 50 peasants, making them level 12 Swordsmen"
+	rollover="Call Warriors">
 	<src obj="UnionTavern"/>
 </cmd>
 

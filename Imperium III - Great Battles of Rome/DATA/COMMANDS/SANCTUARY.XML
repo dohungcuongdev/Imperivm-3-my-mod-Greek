@@ -144,13 +144,13 @@
 	key="u"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
-	costgold = "3000"
+	costgold = "2000"
 	costfood = "0"
-	execdelay = "30000"
+	execdelay = "20000"
 	rollover="Level Up"
-	description="Allows new union enchantresses are level 30"
+	description="Allows new union enchantresses are level 40"
 	method="research"
-	param="ReqPlr, Code of Valor, default, SetsSet, levels/UnionEnchantress, 30, NameSet, Level Up, default">
+	param="ReqPlr, Code of Valor, default, SetsSet, levels/UnionEnchantress, 40, NameSet, Level Up, default">
 	<src obj="UnionTemple"/>
 </cmd>
 

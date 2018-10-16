@@ -115,7 +115,7 @@
 	costgold = "2000"
 	costfood = "0"
 	execdelay = "30000"
-	rollover="Strengthen Kingdom Defenses II"
+	rollover="Strenghten Defences Upgrade II"
 	description="Makes the defenders at the stronghold walls level 24"
 	method="research"
 	param="ReqSet,Strenghten Stronghold Defences I,,NameSet,Strenghten Defences Upgrade II,,SetsSet,SentriesLevel,24">
@@ -138,7 +138,7 @@
 	costgold = "3000"
 	costfood = "0"
 	execdelay = "30000"
-	rollover="Strengthen Kingdom Defenses III"
+	rollover="Strenghten Defences Upgrade III"
 	description="Makes the defenders at the stronghold walls level 36"
 	method="research"
 	param="ReqSet,Strenghten Defences Upgrade II,,NameSet,Strenghten Defences Upgrade III,default,SetsSet,SentriesLevel,36">

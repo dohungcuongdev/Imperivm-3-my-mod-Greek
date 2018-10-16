@@ -9,8 +9,9 @@ entity="Buildings/ITavern/ITavern.ent.xml"
 	<properties icon="gameres/icons/ITavern.bmp"/>
 	<properties help="/contents/buildings/ITavern"/>
 
+	<method sig="buyfoodforgold" vs="data/subai/tavern_buyfood.vs"/>
 	<method sig="sellfoodforgold" vs="data/subai/itavern_sell_food.vs"/>
-	<method sig="calltoarms" vs="data/subai/itavern_calltoarms.vs"/>
+	<method sig="callwarriors" vs="data/subai/utavern_callwarriors.vs"/>
 
 	
 </class>
