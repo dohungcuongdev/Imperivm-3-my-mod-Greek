@@ -373,7 +373,7 @@
 	button="Research/Military Preparation.bmp"
 	key="m"
 	queueicon="gameres/icons/upgrades/Military Preparation.bmp"
-	costgold = "4000"
+	costgold = "3500"
 	costfood = "0"
 	execdelay = "40000"
 	groupverifier="data/subai/verify_research.vs"

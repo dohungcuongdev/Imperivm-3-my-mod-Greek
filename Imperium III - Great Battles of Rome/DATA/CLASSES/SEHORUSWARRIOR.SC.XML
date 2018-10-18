@@ -1,10 +1,11 @@
-<class id="SEHorusWarrior" cpp_class="CVXUnit" parent="Captain" entity="units/EHorusWarrior/EHorusWarrior.ent.xml">
+<class id="SEHorusWarrior" cpp_class="CVXHero" parent="Captain" entity="units/EHorusWarrior/EHorusWarrior.ent.xml">
 
 	<properties race="Egypt"/>
 	<properties maxhealth="320"/>
 	<properties damage="36" armor_slash="8" armor_pierce="8"/>
 	<properties speed="80"/>
 	<properties unit_specials="Rage, Life steal, Ferocity"/>
+	<properties interface="thumb,unit,items"/>
 	<properties HeroSkills="Team attack, Team defense, Quick March, Survival, Recovery, Vigor, Wisdom, Epic attack, Epic armor, Epic endurance"/>
 	<properties icon="gameres/icons/EGYPTIANCAPTAIN.bmp"/>
 	<properties display_name="Horus Warrior" display_name_plural="Horus Warriors"/>

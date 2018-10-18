@@ -1,9 +1,10 @@
-<class id="SGSpearman" cpp_class="CVXUnit" parent="Captain" entity="Units/GSpearman/GSpearman.ent.xml">
+<class id="SGSpearman" cpp_class="CVXHero" parent="Captain" entity="Units/GSpearman/GSpearman.ent.xml">
 
 	<properties race="Gaul"/>
 	<properties maxhealth="200"/>
 	<properties damage="20" armor_slash="12" armor_pierce="12"/>
 	<properties speed="80"/>
+	<properties interface="thumb,unit,items"/>
 	<properties unit_specials="Learning, Deflection, Ferocity"/>
 	<properties HeroSkills="Team attack, Team defense, Quick March, Survival, Recovery, Vigor, Wisdom, Epic attack, Epic armor, Epic endurance"/>
 	<properties icon="gameres/icons/GSPEARMANGUARD.bmp"/>

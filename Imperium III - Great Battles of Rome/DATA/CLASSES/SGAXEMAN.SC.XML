@@ -1,9 +1,10 @@
-<class id="SGAxeman" cpp_class="CVXUnit" parent="Captain" entity="Units/GAxeman/GAxeman.ent.xml">
+<class id="SGAxeman" cpp_class="CVXHero" parent="Captain" entity="Units/GAxeman/GAxeman.ent.xml">
 
 	<properties race="Gaul"/>
 	<properties maxhealth="220"/>
 	<properties damage="40" armor_slash="8" armor_pierce="8"/>
 	<properties speed="60"/>
+	<properties interface="thumb,unit,items"/>
 	<properties unit_specials="Offensive tactics, Penetration, Ferocity"/>
 	<properties HeroSkills="Team attack, Team defense, Quick March, Survival, Recovery, Vigor, Wisdom, Epic attack, Epic armor, Epic endurance"/>
 	<properties icon="gameres/icons/GAULCAPTAIN.bmp"/>

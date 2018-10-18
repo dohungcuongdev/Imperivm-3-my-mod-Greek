@@ -1,10 +1,11 @@
-<class id="SCLibyanFootman" cpp_class="CVXUnit" parent="Captain" entity="Units/CLibyanFootman/CLibyanFootman.ent.xml">
+<class id="SCLibyanFootman" cpp_class="CVXHero" parent="Captain" entity="Units/CLibyanFootman/CLibyanFootman.ent.xml">
 
 	<properties race="Carthage"/>
 	<properties maxhealth="180"/>
 	<properties damage="14" armor_slash="12" armor_pierce="12"/>
 	<properties speed="80"/>
 	<properties unit_specials="Drain, Deflection, Ferocity"/>
+	<properties interface="thumb,unit,items"/>
 	<properties HeroSkills="Team attack, Team defense, Quick March, Survival, Recovery, Vigor, Wisdom, Epic attack, Epic armor, Epic endurance"/>
 	<properties damage_type="slash"/>
 

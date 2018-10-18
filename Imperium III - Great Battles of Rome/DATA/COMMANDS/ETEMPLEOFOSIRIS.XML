@@ -129,7 +129,6 @@
 	method="research"
 	param="ReqSet, Cult of Osiris, default, NameSet, Mumification, default">
 	<src obj="ETempleOfOsiris"/>
-	<src obj="ECTemple"/>
 </cmd>
 
 <!-- For Temple of Osiris (2) -->
@@ -139,14 +138,15 @@
 	button="research/mumification.bmp"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
-	costgold = "5000"
+	costgold = "4000"
 	costfood = "0"
-	execdelay = "60000"
+	execdelay = "40000"
 	rollover="Eighteen"
 	description = "All new classic heroes are level 18"
 	method="research"
 	param="ReqSet, Cult of Osiris, default, SetsSet, levels/Hero, 18, NameSet, Eighteen, default">
 	<src obj="EETempleOfOsiris"/>
+	<src obj="ECTemple"/>
 </cmd>
 
 <cmd name="Chariot of Osiris" priority="6"

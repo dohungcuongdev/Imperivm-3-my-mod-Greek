@@ -153,6 +153,7 @@
 	param="1, 8, Hipatista, Hipatista, Heavy Swords and Shields, blacksmith"
 	sclass="Hipatista">
 	<src obj="RRBarracks"/>
+	<src obj="URBarracks2"/>
 </cmd>
 
 </commands>

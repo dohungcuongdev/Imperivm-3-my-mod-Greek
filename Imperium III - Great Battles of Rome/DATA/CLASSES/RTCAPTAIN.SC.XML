@@ -2,7 +2,7 @@
 
 	<properties race="RepublicanRome"/>
 	<properties display_name="Republican Captain" display_name_plural="Republican Captains"/>
-	<properties icon="gameres/icons/ILIDER.bmp"/>
+	<properties icon="gameres/icons/RTCaptain.bmp"/>
 	<properties edittree_pos="Units/United Roman/Republican Captain"/>
 	<properties maxhealth="2000"/>
 	<properties damage="40" armor_slash="14" armor_pierce="14"/>

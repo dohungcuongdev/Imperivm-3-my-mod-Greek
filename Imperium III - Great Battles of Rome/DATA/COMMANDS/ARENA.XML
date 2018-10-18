@@ -288,7 +288,7 @@
 	<src obj="GArena3"/>
 </cmd>
 
-<cmd name="Shared Strength" priority="3"
+<cmd name="Extended Shared Strength" priority="3"
 	button="research/shared strength.bmp"
 	key="s"
 	queueicon="gameres/icons/upgrades/Shared Strength.bmp"
@@ -296,17 +296,16 @@
 	costfood = "0"
 	execdelay = "40000"
 	groupverifier="data/subai/verify_research.vs"
-	rollover="Shared Strength"
+	rollover="Extended Shared Strength"
 	description="All new captains, special heroes and normal warriors are level 6"
 	method="research"
 	researchcommand="yes"
-	param = "ReqSet, People's Assembly, default, SetsPlr, standard_spawn_level, 6, NameSet, Shared Strength, "
+	param = "ReqSet, People's Assembly, default, SetsPlr, standard_spawn_level, 6, NameSet, Extended Shared Strength, "
 	>
-	<src obj="CArena"/>
 	<src obj="ECArena"/>
 </cmd>
 
-<cmd name="Shared Triumph" priority="3"
+<cmd name="Extended Shared Triumph" priority="3"
 	button="research/shared triumph.bmp"
 	key="p"
 	queueicon="gameres/icons/upgrades/Shared Triumph.bmp"
@@ -314,18 +313,17 @@
 	costfood = "0"
 	execdelay = "50000"
 	groupverifier="data/subai/verify_research.vs"
-	rollover="Shared Triumph"
+	rollover="Extended Shared Triumph"
 	description="All new captains, special heroes and normal warriors are level 12"
 	method="research"
 	researchcommand="yes"
-	param = "ReqSet, Shared Strength, , SetsPlr, standard_spawn_level, 12, NameSet, Shared Triumph, default"
+	param = "ReqSet, Extended Shared Strength, , SetsPlr, standard_spawn_level, 12, NameSet, Extended Shared Triumph, default"
 	>
-	<src obj="CArena"/>
 	<src obj="ECArena"/>
 </cmd>
 
 
-<!--
+
 <cmd name="Shared Strength" priority="3"
 	button="research/shared strength.bmp"
 	key="s"
@@ -335,7 +333,7 @@
 	execdelay = "30000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Shared Strength"
-	description="If you have over 12 warriors of a type the new ones you hire are level 6"
+	description="If you have over 12 normal warriors of a type the new ones you hire are level 6"
 	method="research"
 	researchcommand="yes"
 	param = "ReqSet, People's Assembly, default, NameSet, Shared Strength, "
@@ -352,14 +350,14 @@
 	execdelay = "30000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="Shared Triumph"
-	description="If you have over 24 warriors of a type the new ones you hire are level 12"
+	description="If you have over 24 normal warriors of a type the new ones you hire are level 12"
 	method="research"
 	researchcommand="yes"
 	param = "ReqSet, Shared Strength, , NameSet, Shared Triumph, default"
 	>
 	<src obj="CArena"/>
 </cmd>
--->
+
 
 <cmd name="Heroes' Wisdom" priority="3"
 	button="upgrades/heroes wisdom.bmp"
@@ -879,16 +877,36 @@
 	onaddremovescript="data/subai/trainex_onaddremove.vs"
 	traincommand="yes"
 	key="e"
-	help="/contents/units/RLiberatus"
+	help="/contents/units/CWarElephant"
 	costgold = "0"
 	costfood = "1000"
 	costpop = "0"
 	execdelay = "20000"
-	rollover="Train War Elephant"
+	rollover="Hire War Elephant"
 	description=""
 	method="trainex"
 	param="1, elephant, CWarElephant, War Elephant, People's Assembly">
 	<src obj="CArena"/>
+	<src obj="ECArena"/>
+</cmd>
+
+<cmd name="Hire War Elephant Hero" priority="4"
+	button="actions/ECELEPHANT.bmp"
+	queueicon="gameres/icons/ECELEPHANT.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="k"
+	help="/contents/units/CWarElephant"
+	costgold = "3000"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "30000"
+	rollover="Hire special War Elephant Hero"
+	description="Hires a special War Elephant Hero with 9 skills, 3 unit specials, pick up maximum 9 items, can lead up to 10 units"
+	method="trainex"
+	param="1, 1, ECWarElephant, ECWarElephant, Elephant Training">
 	<src obj="ECArena"/>
 </cmd>
 
@@ -1752,9 +1770,9 @@
 	costfood = "0"
 	execdelay = "20000"
 	rollover="Elephant Training"
-	description="All new War Elephant are level 32"
+	description="All new War Elephant are level 32. Allows to hire level 32 War Elephant Hero"
 	method="research"
-	param="ReqSet, Shared Triumph, default, SetsSet, levels/CWarElephant, 32, default, NameSet,Elephant Training, default">
+	param="ReqSet, Extended Shared Triumph, default, SetsSet, levels/CWarElephant, 32, SetsSet, levels/ECWarElephant, 32, default, NameSet,Elephant Training, default">
 	<src obj="ECArena"/>
 </cmd>
 
@@ -1775,8 +1793,8 @@
 </cmd>
 
 <cmd name="trainRTCaptain" priority="1"
-	button="actions/ILIDER.BMP"
-	queueicon="gameres/icons/ILIDER.BMP"
+	button="actions/RTCaptain.BMP"
+	queueicon="gameres/icons/RTCaptain.BMP"
 	transpicon="1"
 	groupverifier="data/subai/verify_trainex.vs"
 	onaddremovescript="data/subai/trainex_onaddremove.vs"
