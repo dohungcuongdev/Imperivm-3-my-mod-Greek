@@ -1,0 +1,18 @@
+<class id="SIEliteGuard" cpp_class="CVXUnit" parent="Captain" entity="Units/IEliteGuard/IEliteGuard.ent.xml">
+
+	<properties race="Iberia"/>
+	<properties maxhealth="420"/>
+	<properties damage="30" armor_slash="12" armor_pierce="12"/>
+	<properties speed="80"/>
+	<properties unit_specials="Power strike. Penetration, Toughness"/>
+
+	<properties formation_priority="1000"/>
+	<properties formation_radius="26"/>
+	<properties HeroSkills="Team attack, Team defense, Quick March, Survival, Recovery, Vigor, Wisdom, Epic attack, Epic armor, Epic endurance"/>
+	<properties icon="gameres/icons/IBERIANCAPTAIN.bmp"/>
+	<properties display_name="Elite Guard" display_name_plural="Elite Guards"/>
+	<properties help="contents/units/IEliteGuard"/>
+	<properties edittree_pos="Units/Special Heroes/Elite Guard"/>
+	<sounds command="data/sound entities/VoiceIEliteGuard.xml"/>
+
+</class>

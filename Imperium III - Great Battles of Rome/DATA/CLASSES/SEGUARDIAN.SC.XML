@@ -1,0 +1,15 @@
+<class id="SEGuardian" cpp_class="CVXUnit" parent="Captain" entity="Units/EGuardian/EGuardian.ent.xml">
+
+	<properties race="Egypt"/>
+	<properties maxhealth="320"/>
+	<properties damage="30" armor_slash="8" armor_pierce="8"/>
+	<properties speed="80"/>
+	<properties unit_specials="Deflection, Cripple, Ferocity"/>
+	<properties HeroSkills="Team attack, Team defense, Quick March, Survival, Recovery, Vigor, Wisdom, Epic attack, Epic armor, Epic endurance"/>
+	<properties icon="gameres/icons/EGUARDIANGUARD.bmp"/>
+	<properties display_name="Guardian" display_name_plural="Guardians"/>
+	<properties help="contents/units/EGuardian"/>
+	<properties edittree_pos="Units/Special Heroes/Guardian"/>
+	<sounds command="data/sound entities/VoiceEGuardian.xml"/>
+
+</class>

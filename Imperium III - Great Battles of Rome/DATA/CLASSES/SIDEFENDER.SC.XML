@@ -1,0 +1,15 @@
+<class id="SIDefender" cpp_class="CVXUnit" parent="Captain" entity="Units/IDefender/IDefender.ent.xml">
+
+	<properties race="Iberia"/>
+	<properties maxhealth="200"/>
+	<properties damage="16" armor_slash="22" armor_pierce="22"/>
+	<properties speed="80"/>
+	<properties unit_specials="Disease attack, Defense skill, Determination"/>
+	<properties HeroSkills="Team attack, Team defense, Quick March, Survival, Recovery, Vigor, Wisdom, Epic attack, Epic armor, Epic endurance"/>
+	<properties icon="gameres/icons/IDEFENDERGUARD.bmp"/>
+	<properties display_name="Defender" display_name_plural="Defenders"/>
+	<properties help="contents/units/IDefender"/>
+	<properties edittree_pos="Units/Special Heroes/Defender"/>
+	<sounds attack="UnitPikeFight" command="data/sound entities/VoiceIDefender.xml"/>
+
+</class>

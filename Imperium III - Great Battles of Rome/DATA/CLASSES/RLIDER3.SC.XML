@@ -1,0 +1,22 @@
+<class id="Rlider3" cpp_class="CVXHero" parent="Captain" entity="Units/THero1/THero1.ent.xml">
+
+	<properties race="Gaul"/>
+	<properties sight="500"/>
+	<properties display_name="Hunter" display_name_plural="Hunters"/>
+	<properties icon="gameres/icons/TLIDER4.bmp"/>
+	<properties edittree_pos="Units/Special Heroes/Hunter"/>
+	
+	<properties maxhealth="2000"/>
+	<properties damage="80" armor_slash="12" armor_pierce="12"/>
+	
+	<properties speed="120"/>
+	<properties unit_specials="Triple strike, Death blow, Ferocity"/>
+	
+	<properties max_army="100"/>
+	<properties heroarmyexpgain="50"/>
+
+	<properties HeroSkills="Team attack, Team defense, Quick March, Survival, Recovery, Vigor, Wisdom, Epic attack, Epic armor, Epic endurance"/>
+	<properties inventory_size="8"/>
+
+	<sounds command="data/sound entities/VoiceGHero.xml"/>
+</class>

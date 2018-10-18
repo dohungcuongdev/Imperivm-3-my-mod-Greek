@@ -1,0 +1,22 @@
+<class id="Rlider2" cpp_class="CVXHero" parent="Captain" entity="Units/RHero2/RHero2.ent.xml">
+
+	<properties race="Gaul"/>
+	<properties sight="500"/>
+	<properties display_name="Lider" display_name_plural="Liders"/>
+	<properties icon="gameres/icons/RLIDER2.bmp"/>
+	<properties edittree_pos="Units/Special Heroes/Lider"/>
+	
+	<properties maxhealth="2000"/>
+	<properties damage="80" armor_slash="12" armor_pierce="12"/>
+	
+	<properties speed="120"/>
+	<properties unit_specials="Defensive tactics, Offensive tactics, Ferocity"/>
+	
+	<properties max_army="100"/>
+	<properties heroarmyexpgain="50"/>
+
+	<properties HeroSkills="Team attack, Team defense, Quick March, Survival, Recovery, Vigor, Wisdom, Epic attack, Epic armor, Epic endurance"/>
+	<properties inventory_size="8"/>
+
+	<sounds command="data/sound entities/VoiceGHero.xml"/>
+</class>
