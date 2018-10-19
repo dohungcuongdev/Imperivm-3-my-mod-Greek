@@ -115,6 +115,7 @@
 	param="RTribune,Full Armor"
 	sclass="RTribune">
 	<src obj="RRBarracks"/>
+	<src obj="URBarracks2"/>
 </cmd>
 <cmd name="Equip Chariot" priority="10"
 	button="actions/hire RChariot.bmp"

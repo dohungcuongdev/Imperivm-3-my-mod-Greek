@@ -1,0 +1,41 @@
+<class id="URPriest" cpp_class="CVXDruid" parent="BaseMage" entity="Units/RPriest/RPriest.ent.xml">
+
+	<properties race="RepublicanRome"/>
+	<properties maxhealth="240"/>
+	<properties armor_slash="10" armor_pierce="10"/>
+	<properties speed="50"/>
+	<properties unit_specials="Healing, Active, Toughness"/>
+
+	<properties icon="gameres/icons/URP2.bmp"/>
+	<properties display_name="United Priest" display_name_plural="United Priests"/>
+	<properties help="contents/units/RPriest"/>
+	<properties edittree_pos="Units/United Roman/United Priest"/>
+	<sounds command="data/sound entities/VoiceRPriest.xml"/>
+
+	<method sig="stand_position"   vs="data/subai/rpriest_stand_position.vs"/>
+	<method sig="ondie"            vs="data/subai/priest_ondie.vs"/>
+	<method sig="advance"          vs="data/subai/rpriest_advance.vs"/>
+	<method sig="idle"             vs="data/subai/rpriest_idle.vs"/>
+	<method sig="learn"            vs="data/subai/druid_learn.vs"/>
+
+	<method sig="heal" vs="data/subai/druid_heal.vs" verify="data/subai/druid_heal_verify.vs"/>
+	<method sig="heal" vs="data/subai/druid_heal_ground.vs"/>
+	<method sig="mist" vs="data/subai/united_druid_mist.vs"/>
+	<method sig="wrath_of_jupiter" vs="data/subai/priest_jupiter_anger.vs"/>
+	
+	<method sig="coverofmercy"   vs="data/subai/unionenchantress_coverofmercy.vs"/>
+
+	<defaultcmd target="Unit">
+		<cmd name="heal"/>
+	</defaultcmd>
+
+	<defaultcmd target="Hero">
+		<cmd name="attach"/>
+	</defaultcmd>
+
+	<defaultcmd target="ShipBattle">
+		<cmd name="boardship"/>
+		<cmd name="approach"/>
+	</defaultcmd>
+
+</class>

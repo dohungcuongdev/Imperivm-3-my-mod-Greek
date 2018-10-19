@@ -113,6 +113,7 @@
 	researchcommand="yes"
 	param="SetsPlr, standard_spawn_level, 3,NameSet, Gladiator Shows, default">
 	<src obj="RRArena"/>
+	<src obj="URArena2"/>
 </cmd>
 
 <cmd name="People's Assembly" priority="2"
@@ -234,7 +235,9 @@
 	<src obj="RArena"/>
 	<src obj="RRArena"/>
 	<src obj="URArena"/>
+	<src obj="URArena2"/>
 </cmd>
+
 <cmd name="Veteran Defence" priority="5"
 	button="research/veteran defence.bmp"
 	key="d"
@@ -251,7 +254,9 @@
 	<src obj="RArena"/>
 	<src obj="RRArena"/>
 	<src obj="URArena"/>
+	<src obj="URArena2"/>
 </cmd>
+
 <cmd name="Veteran Health" priority="6"
 	button="research/veteran health.bmp"
 	key="e"
@@ -268,6 +273,7 @@
 	<src obj="RArena"/>
 	<src obj="RRArena"/>
 	<src obj="URArena"/>
+	<src obj="URArena2"/>
 </cmd>
 
 <cmd name="Gaul Training 3" priority="3"
@@ -1832,55 +1838,102 @@
 	<src obj="URArena"/>
 </cmd>
 
-<!--
 <cmd name="United Training 1" priority="3"
 	button="research/training.bmp"
 	key="t"
 	queueicon="gameres/icons/upgrades/btrain.bmp"
-	costgold = "2000"
+	costgold = "3000"
 	costfood = "0"
-	execdelay = "20000"
+	execdelay = "30000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="United Training 1"
-	description="Allows warriors to train to level 10"
+	description="Allows warriors to train to level 30"
 	method="research"
 	researchcommand="yes"
-	param="ReqSet, Gladiator Shows, default, SetsPlr, maxtrainlevel, 10, NamePlr, United Training 1, ">
-	<src obj="URArena"/>
+	param="ReqSet, Gladiator Shows, default, SetsPlr, maxtrainlevel, 30, NamePlr, United Training 1, ">
+	<src obj="URArena2"/>
 </cmd>
 
 <cmd name="United Training 2" priority="3"
 	button="research/Advanced training.bmp"
 	key="t"
 	queueicon="gameres/icons/upgrades/atrain.bmp"
-	costgold = "2000"
+	costgold = "4000"
 	costfood = "0"
-	execdelay = "20000"
+	execdelay = "40000"
 	groupverifier="data/subai/verify_research.vs"
 	rollover="United Training 2"
-	description="Allows warriors to train to level 15"
+	description="Allows warriors to train to level 60"
 	method="research"
 	researchcommand="yes"
-	param="ReqSet, Gladiator Shows, , ReqPlr, United Training 1, , SetsPlr, maxtrainlevel, 15, NamePlr, United Training 2, ">
-	<src obj="URArena"/>
+	param="ReqSet, Gladiator Shows, , ReqPlr, United Training 1, , SetsPlr, maxtrainlevel, 60, NamePlr, United Training 2, ">
+	<src obj="URArena2"/>
 </cmd>
 
 <cmd name="United Training 3" priority="3"
 	button="research/maser training.bmp"
 	queueicon="gameres/icons/upgrades/mtrain.bmp"
 	key="t"
+	costgold = "5000"
+	costfood = "0"
+	execdelay = "50000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="United Training 3"
+	description="Allows warriors to train to level 100"
+	method="research"
+	researchcommand="yes"
+	param="ReqSet, Gladiator Shows, , ReqPlr, United Training 2, ,SetsPlr, maxtrainlevel, 100, NamePlr, United Training 3, default">
+	<src obj="URArena2"/>
+</cmd>
+
+<cmd name="United Level" priority="3"
+	button="actions/TARANIS2.bmp"
+	key="s"
+	queueicon="gameres/icons/upgrades/taranis2.bmp"
+	costgold = "6000"
+	costfood = "0"
+	execdelay = "60000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="United Level"
+	description="All new captains, special heroes and normal warriors are level 18"
+	method="research"
+	researchcommand="yes"
+	param = "ReqSet, Gladiator Shows, default, SetsPlr, standard_spawn_level, 18, NameSet, United Level, default"
+	>
+	<src obj="URArena2"/>
+</cmd>
+
+<cmd name="United Warrior Tales" priority="6"
+	button="research/warriortales.bmp"
+	key="w"
+	queueicon="gameres/icons/upgrades/warriortales.bmp"
 	costgold = "2000"
 	costfood = "0"
 	execdelay = "20000"
 	groupverifier="data/subai/verify_research.vs"
-	rollover="United Training 3"
-	description="Allows warriors to train to level 20"
+	rollover="Warrior Tales"
+	description="When a warrior dies he gives 1 experience to a nearby ally (though not to a hero)"
+	researchcommand="yes"
+	method="research"
+	param="ReqSet, Gladiator Shows, default, NamePlr, Warrior Tales, default">
+	<src obj="URArena2"/>
+</cmd>
+
+<cmd name="United Statue of Amon-Ra" priority="13"
+	button="research/statue of amon-ra.bmp"
+	key="a"
+	queueicon="gameres/icons/upgrades/statue of amon-ra.bmp"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "20000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Statue of Amon-Ra"
+	description="Warriors get 5 additional health points with every level"
 	method="research"
 	researchcommand="yes"
-	param="ReqSet, Gladiator Shows, , ReqPlr, United Training 2, ,SetsPlr, maxtrainlevel, 20, NamePlr, United Training 3, default">
-	<src obj="URArena"/>
+	param="ReqSet, Gladiator Shows, default, NamePlr, Statue of Amon-Ra, default">
+	<src obj="URArena2"/>
 </cmd>
--->
 
 <cmd name="United Training III" priority="3"
 	button="research/maser training.bmp"
@@ -1928,5 +1981,6 @@
 	researchcommand="yes"
 	param="ReqSet, Gladiator Shows, default, NamePlr, Battle Learning, default">
 	<src obj="URArena"/>
+	<src obj="URArena2"/>
 </cmd>
 </commands>

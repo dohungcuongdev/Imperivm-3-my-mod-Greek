@@ -10,7 +10,7 @@
 	<properties display_name="Imperial Roman Townhall"/>
 	<properties icon="gameres/icons/MTownhall.bmp"/>
 	<properties radius="170" selection_radius="175"/>
-	<properties edittree_pos="Structures/Stronghold (United Roman)/Townhall"/>
+	<properties edittree_pos="Structures/Stronghold (United Roman)/Set 1/Townhall"/>
 	<properties help="/contents/buildings/RTownhall"/>
 
 	<behavior script="data/subai/townhall_buildingsbehavior_r.vs"/>

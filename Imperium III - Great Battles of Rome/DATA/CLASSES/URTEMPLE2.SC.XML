@@ -8,7 +8,7 @@ entity_winter="Buildings/RTemple/RTemple_w.ent.xml">
 	<properties display_name="Temple"/>
 
 	<properties radius="165" selection_radius="170"/>
-	<properties edittree_pos="Structures/Stronghold (United Roman)/Temple 2"/>
+	<properties edittree_pos="Structures/Stronghold (United Roman)/Set 2/Temple"/>
 
 	<properties auto_repair="no"/>
 	<properties icon="gameres/icons/RTemple.bmp"/>

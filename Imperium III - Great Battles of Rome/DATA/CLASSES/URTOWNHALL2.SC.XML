@@ -1,15 +1,15 @@
 <class id="URTownhall2" cpp_class="CVXTownHall" parent="BaseTownhall"
-	entity="Buildings/RTownhall/RTownhall_as.ent.xml"
-	entity_autumn="Buildings/RTownhall/RTownhall_as.ent.xml"
-	entity_spring="Buildings/RTownhall/RTownhall_as.ent.xml"
-	entity_winter="Buildings/RTownhall/RTownhall_w.ent.xml"
+entity="Buildings/RTownhall/RTownhall_as.ent.xml"
+entity_autumn="Buildings/RTownhall/RTownhall_as.ent.xml"
+entity_spring="Buildings/RTownhall/RTownhall_as.ent.xml"
+entity_winter="Buildings/RTownhall/RTownhall_w.ent.xml">
 
 	<properties race="RepublicanRome"/>
 	<properties foodperpop="100"/>
 	<properties display_name="Republican Roman Townhall"/>
 	<properties icon="gameres/icons/Rtownhall.bmp"/>
 	<properties radius="170" selection_radius="175"/>
-	<properties edittree_pos="Structures/Stronghold (United Roman)/Townhall 2"/>
+	<properties edittree_pos="Structures/Stronghold (United Roman)/Set 2/Townhall"/>
 	<properties help="/contents/buildings/RTownhall"/>
 
 	<method sig="military_training_2"   vs="data/subai/townhall_military_training_2.vs"/>

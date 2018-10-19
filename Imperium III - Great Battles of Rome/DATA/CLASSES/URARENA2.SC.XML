@@ -6,7 +6,7 @@ entity_winter="Buildings/RArena/RArena_w.ent.xml">
 	<properties icon="gameres/icons/rarena.bmp"/>
 	<properties display_name="Arena"/>
 	<properties radius="360" selection_radius="365"/>
-	<properties edittree_pos="Structures/Stronghold (United Roman)/Arena 2"/>
+	<properties edittree_pos="Structures/Stronghold (United Roman)/Set 2/Arena"/>
 	<properties help="/contents/buildings/RArena"/>
 
 	

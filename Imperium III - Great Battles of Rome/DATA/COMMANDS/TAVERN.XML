@@ -17,6 +17,7 @@
 	<src obj="GTavern"/>
 	<src obj="AHAgora"/>
 	<src obj="MEMarket"/>
+	<src obj="URTavern2"/>
 </cmd>
 
 <cmd name="RAddPop" priority="2"
@@ -152,6 +153,7 @@
 	<src obj="RRTavern"/>
 	<src obj="RRTavern2"/>
 	<src obj="URTavern"/>
+	<src obj="URTavern2"/>
 </cmd>
 
 <cmd name="Free Trade" priority="8"
@@ -343,6 +345,7 @@
 	method="sellfoodforgold"
 	param="Free Wine">
 	<src obj="URTavern"/>
+	<src obj="URTavern2"/>
 </cmd>
 
 <cmd name="Sell food" priority="14"
@@ -376,6 +379,7 @@
 	<src obj="RRTavern"/>
 	<src obj="RRTavern2"/>
 	<src obj="URTavern"/>
+	<src obj="URTavern2"/>
 </cmd>
 
 <cmd name="Expedition" priority="12"
@@ -413,6 +417,7 @@
 	<src obj="RRTavern"/>
 	<src obj="RRTavern2"/>
 	<src obj="URTavern"/>
+	<src obj="URTavern2"/>
 </cmd>
 
 <cmd name="Roman Food Tax" priority="16"
@@ -428,6 +433,7 @@
 	groupverifier="data/subai/verify_research.vs"
 	param="ReqSet, Free Wine, default, NameSet, Food Tax, default">
 	<src obj="URTavern"/>
+	<src obj="URTavern2"/>
 </cmd>
 
 <cmd name="Food Tax" priority="16"
@@ -535,6 +541,7 @@
 	<src obj="RRTavern"/>
 	<src obj="RRTavern2"/>
 	<src obj="URTavern"/>
+	<src obj="URTavern2"/>
 </cmd>
 
 <cmd name="MTribute" priority="22"
@@ -926,6 +933,7 @@
 	description="Heals the warriors around the townhall"
 	rollover="Religious Feast">
 	<src obj="URTavern"/>
+	<src obj="URTavern2"/>
 </cmd>
 
 <cmd name="Nordic trade routes" priority="20"

@@ -44,6 +44,40 @@
 	<src obj="IRTemple"/>
 	<src obj="RRTemple"/>
 	<src obj="URTemple"/>
+</cmd>
+
+<cmd name="trainURPriest" priority="1"
+	button="actions/URP2.bmp"
+	queueicon="gameres/icons/URP2.bmp"
+	groupverifier="data/subai/verify_cmdcost_building.vs"
+	traincommand="yes"
+	transpicon="1"
+	key="p"
+	help="/contents/units/RPriest"
+	costgold = "250"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "20000"
+	rollover="Call Priest"
+	method="train"
+	param="URPriest"
+	sclass="URPriest">
+	<src obj="URTemple2"/>
+</cmd>
+
+<cmd name="United Altar of Jupiter" priority="2"
+	button="research/priest enlightment.bmp"
+	key="a"
+	queueicon="gameres/icons/upgrades/Priest Enlighment.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1000"
+	costfood = "0"
+	execdelay = "15000"
+	rollover="Altar of Jupiter"
+	description="All new united priests are level 4"
+	method="research"
+	param="NameSet, Altar of Jupiter, default, SetsSet, levels/URPriest, 4">
 	<src obj="URTemple2"/>
 </cmd>
 
@@ -64,7 +98,6 @@
 	<src obj="IRTemple"/>
 	<src obj="RRTemple"/>
 	<src obj="URTemple"/>
-	<src obj="URTemple2"/>
 </cmd>
 
 <cmd name="Cloud of Plague" priority="5"
@@ -84,8 +117,40 @@
 	<src obj="IRTemple"/>
 	<src obj="RRTemple"/>
 	<src obj="URTemple"/>
+</cmd>
+
+<cmd name="United Cloud of Plague" priority="5"
+	queueicon="gameres/icons/upgrades/mist.bmp"
+	button="research/mist.bmp"
+	key="c"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "20000"
+	rollover="Cloud of Plague"
+	description="Allows united priests to create a cloud of plague which damages all warriors it covers"
+	method="research"
+	param="ReqSet, Altar of Jupiter, default, NamePlr, Cloud of Plague, default">
 	<src obj="URTemple2"/>
 </cmd>
+
+<cmd name="United Cover of Mercy" priority="5"
+	queueicon="gameres/icons/upgrades/cover of mercy.bmp"
+	button="research/cover of mercy.bmp"
+	key="m"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "20000"
+	rollover="Cover of Mercy"
+	description="Allows united priests to create a cloud to protect allies from damage"
+	method="research"
+	param="ReqSet, Altar of Jupiter, default, NamePlr, Cover of Mercy, default">
+	<src obj="URTemple2"/>
+</cmd>
+
 
 <cmd name="Wrath of Jupiter" priority="6"
 	button="research/Jupiter.bmp"
