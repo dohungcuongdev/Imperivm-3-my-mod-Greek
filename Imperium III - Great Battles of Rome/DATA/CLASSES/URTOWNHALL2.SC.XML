@@ -1,4 +1,4 @@
-<class id="RRTownhall" cpp_class="CVXTownHall" parent="BaseTownhall"
+<class id="URTownhall2" cpp_class="CVXTownHall" parent="BaseTownhall"
 	entity="Buildings/RTownhall/RTownhall_as.ent.xml"
 	entity_autumn="Buildings/RTownhall/RTownhall_as.ent.xml"
 	entity_spring="Buildings/RTownhall/RTownhall_as.ent.xml"
@@ -9,9 +9,17 @@
 	<properties display_name="Republican Roman Townhall"/>
 	<properties icon="gameres/icons/Rtownhall.bmp"/>
 	<properties radius="170" selection_radius="175"/>
-	<properties edittree_pos="Structures/Stronghold (Republican Rome)/Townhall"/>
+	<properties edittree_pos="Structures/Stronghold (United Roman)/Townhall 2"/>
 	<properties help="/contents/buildings/RTownhall"/>
 
+	<method sig="military_training_2"   vs="data/subai/townhall_military_training_2.vs"/>
+	
+	<behavior script="data/subai/townhall_buildingsbehavior_r.vs"/>
+	
+	<properties
+		produces_gold="1"
+		produces_food="1"
+	/>
 	
 
 </class>

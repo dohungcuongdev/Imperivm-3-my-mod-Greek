@@ -40,6 +40,7 @@
 	<src obj="AHTownhall"/>
 	<src obj="RRTownhall"/>
 	<src obj="URTownhall"/>
+	<src obj="URTownhall2"/>
 </cmd>
 
 <cmd name="autotrain_stop_gr" priority="8"
@@ -58,6 +59,7 @@
 	<src obj="AHTownhall"/>
 	<src obj="RRTownhall"/>
 	<src obj="URTownhall"/>
+	<src obj="URTownhall2"/>
 </cmd>
 
 <cmd name="autotrain_start_cbet" priority="8"
@@ -142,6 +144,7 @@
 	<src obj="URTownhall"/>
 	<src obj="AHTownhall"/>
 	<src obj="METownhall"/>
+	<src obj="URTownhall2"/>
 </cmd>
 
 <cmd name="healing" priority="10"
@@ -165,6 +168,7 @@
 	<src obj="CGTownhall"/>
 	<src obj="AHTownhall"/>
 	<src obj="METownhall"/>
+	<src obj="URTownhall2"/>
 </cmd>
 
 <!-- AI only -->
@@ -206,5 +210,20 @@
 	<src obj="URTownhall"/>
 	<src obj="CGTownhall"/>
 	<src obj="METownhall"/>
+</cmd>
+
+<cmd name="townhall_military_training_2" priority="10"
+	method="military_training_2"
+	key="m"
+	groupverifier="data/subai/verify_cmdcost_building.vs"
+	costgold="800"
+	costfood="0"
+	button="actions/Military training.bmp"
+	rollover="Military training no limit"
+	description="Adds 1 level to all allies around the townhall (no limit)"
+	immediate="yes"
+	researchcommand="yes"
+>
+	<src obj="URTownhall2"/>
 </cmd>
 </commands>

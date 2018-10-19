@@ -19,6 +19,7 @@
 	<src obj="HTemple"/>
 	<src obj="RRTemple"/>
 	<src obj="URTemple"/>
+	<src obj="URTemple2"/>
 </cmd>
 
 <!-- ROMAN TEMPLE COMMANDS -->
@@ -43,6 +44,7 @@
 	<src obj="IRTemple"/>
 	<src obj="RRTemple"/>
 	<src obj="URTemple"/>
+	<src obj="URTemple2"/>
 </cmd>
 
 <cmd name="Altar of Jupiter" priority="2"
@@ -62,6 +64,7 @@
 	<src obj="IRTemple"/>
 	<src obj="RRTemple"/>
 	<src obj="URTemple"/>
+	<src obj="URTemple2"/>
 </cmd>
 
 <cmd name="Cloud of Plague" priority="5"
@@ -81,6 +84,7 @@
 	<src obj="IRTemple"/>
 	<src obj="RRTemple"/>
 	<src obj="URTemple"/>
+	<src obj="URTemple2"/>
 </cmd>
 
 <cmd name="Wrath of Jupiter" priority="6"
@@ -100,6 +104,7 @@
 	<src obj="IRTemple"/>
 	<src obj="RRTemple"/>
 	<src obj="URTemple"/>
+	<src obj="URTemple2"/>
 </cmd>
 
 <cmd name="God's Gift" priority="7"
@@ -118,6 +123,7 @@
 	<src obj="RTemple"/>
 	<src obj="RRTemple"/>
 	<src obj="URTemple"/>
+	<src obj="URTemple2"/>
 </cmd>
 
 <cmd name="God's Strength" priority="7"
@@ -136,6 +142,7 @@
 	<src obj="RTemple"/>
 	<src obj="IRTemple"/>
 	<src obj="URTemple"/>
+	<src obj="URTemple2"/>
 </cmd>
 
 </commands>
