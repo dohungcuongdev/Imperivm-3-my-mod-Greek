@@ -1,8 +1,8 @@
 <class id="SGAxeman" cpp_class="CVXHero" parent="Captain" entity="Units/GAxeman/GAxeman.ent.xml">
 
 	<properties race="Gaul"/>
-	<properties maxhealth="220"/>
-	<properties damage="40" armor_slash="8" armor_pierce="8"/>
+	<properties maxhealth="1000"/>
+	<properties damage="60" armor_slash="8" armor_pierce="8"/>
 	<properties speed="60"/>
 	<properties interface="thumb,unit,items"/>
 	<properties unit_specials="Offensive tactics, Penetration, Ferocity"/>
@@ -13,4 +13,7 @@
 	<properties edittree_pos="Units/Special Heroes/Axeman"/>
 	<sounds command="data/sound entities/VoiceGAxeman.xml"/>
         <sounds attack="AxeAttack" />
+	<properties max_army="100"/>
+	<properties inventory_size="8"/>		
+		<method sig="toHero" vs="data/subai/hero_convert.vs"/>
 </class>

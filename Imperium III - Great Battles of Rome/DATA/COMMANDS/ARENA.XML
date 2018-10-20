@@ -1838,6 +1838,43 @@
 	<src obj="URArena"/>
 </cmd>
 
+<cmd name="trainSHero" priority="2"
+	button="actions/Rlider2.BMP"
+	queueicon="gameres/icons/Rlider2.BMP"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="p"
+	help="/contents/units/Rlider2"
+	costgold = "2000"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Train Special Hero Lider"
+	description="Train a special hero Lider with 3 unit specials; can lead 100 units; pick up maximun 8 items"
+	method="trainex"
+	param="1, shero, Rlider2, Rlider2, Gladiator Shows">
+	<src obj="URArena2"/>
+</cmd>
+
+<cmd name="Special Hero Transform" priority="2"
+	button="actions/ILIDER.bmp"
+	key="s"
+	queueicon="gameres/icons/ILIDER.bmp"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "20000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Special Hero Transform"
+	description="Allows Lider to transform into one kind of other Special Heroes and each of them can also transform in outpost or townhall"
+	method="research"
+	researchcommand="yes"
+	param = "ReqSet, Gladiator Shows, default, NamePlr, Special Hero Transform, default"
+	>
+	<src obj="URArena2"/>
+</cmd>
+
 <cmd name="United Training 1" priority="3"
 	button="research/training.bmp"
 	key="t"

@@ -36,6 +36,9 @@ else if (numparam == "mountaineer") {
 	if (maxnumber == 0)
 		maxnumber = 10;
 }
+else if( numparam == "shero" ) {
+	maxnumber = 1;
+}
 else {
 	maxnumber = Str2Int(numparam);
 }
@@ -45,7 +48,27 @@ if(bAdd)
 	//curnmb = GetGroupSize("Player"+.player+groupname) + number + build + queued;
 	curnmb =Count(.player, class) + number + queued;
 	if (numparam=="teutonrider")
-		curnmb = number + Count(.player, "TTeutonRider") + Count(.player, "TTeutonArcher")+ queued;
+		curnmb = number + Count(.player, "TTeutonRider") + Count(.player, "TTeutonArcher") + queued;
+	
+	if (numparam=="shero")
+		curnmb = number + queued
+			+ Count(.player, "SBShieldBearer")
+			+ Count(.player, "SCLibyanFootman")
+			+ Count(.player, "SCNoble")
+			+ Count(.player, "SEGuardian")
+			+ Count(.player, "SEHorusWarrior")
+			+ Count(.player, "SIEliteGuard")
+			+ Count(.player, "SIDefender")
+			+ Count(.player, "STSwordsman")
+			+ Count(.player, "STMaceman")
+			+ Count(.player, "SRTribune") 
+			+ Count(.player, "SRPrinciple")
+			+ Count(.player, "SGAxeman")
+			+ Count(.player, "SGSpearman")
+			+ Count(.player, "Rlider2")
+			+ Count(.player, "Rlider3")
+			+ Count(.player, "SBBronzeSpearman");
+
 	if(curnmb > maxnumber)
 	{
 		return false;

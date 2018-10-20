@@ -6,8 +6,8 @@
 	<properties icon="gameres/icons/RLIDER2.bmp"/>
 	<properties edittree_pos="Units/Special Heroes/Lider"/>
 	
-	<properties maxhealth="2000"/>
-	<properties damage="80" armor_slash="12" armor_pierce="12"/>
+	<properties maxhealth="1000"/>
+	<properties damage="30" armor_slash="20" armor_pierce="20"/>
 	
 	<properties speed="120"/>
 	
@@ -20,4 +20,6 @@
 	<properties inventory_size="8"/>
 
 	<sounds command="data/sound entities/VoiceGHero.xml"/>
+	
+	<method sig="toHero" vs="data/subai/hero_convert.vs"/>
 </class>

@@ -332,17 +332,6 @@
 	<nsrc obj="Sentry"/>
 </cmd>
 
-<cmd name="to_teuton_rider" priority="13"
-	button="actions/train TTeutonRider.bmp"
-	key="x"
-	voidgroupdispatch="1"
-	groupverifier="data/subai/teuton_archer_mutate_gv.vs"
-	groupdispatch="data/subai/teuton_mutate_gd.vs"
-	rollover="Convert to Teuton Rider"
-	param="Requires Teuton Master research from Sanctuary of Votan">
-	<src obj="TTeutonArcher"/>
-</cmd>
-
 <cmd name="to_teuton_archer" priority="13"
 	button="actions/train TTeutonArcher.bmp"
 	key="x"
@@ -350,8 +339,45 @@
 	groupverifier="data/subai/teuton_rider_mutate_gv.vs"
 	groupdispatch="data/subai/teuton_mutate_gd.vs"
 	rollover="Convert to Teuton Archer"
-	param="Requires Teuton Master research from Sanctuary of Votan">
+	param="Requires Teuton Master research from Germany">
 	<src obj="TTeutonRider"/>
+</cmd>
+
+<cmd name="to_teuton_rider" priority="13"
+	button="actions/train TTeutonRider.bmp"
+	key="x"
+	voidgroupdispatch="1"
+	groupverifier="data/subai/teuton_archer_mutate_gv.vs"
+	groupdispatch="data/subai/teuton_mutate_gd.vs"
+	rollover="Convert to Teuton Rider"
+	param="Requires Teuton Master research from Germany">
+	<src obj="TTeutonArcher"/>
+</cmd>
+
+<cmd name="to_hero" priority="13"
+	button="actions/ILIDER.bmp"
+	key="x"
+	voidgroupdispatch="1"
+	groupverifier="data/subai/hero_mutate_gv.vs"
+	groupdispatch="data/subai/hero_mutate_gd.vs"
+	rollover="Convert to other special heroes"
+	param="Requires Special Hero Transform">
+	<src obj="SBBronzeSpearman"/>
+	<src obj="SBShieldBearer"/>
+	<src obj="SCLibyanFootman"/>
+	<src obj="SCNoble"/>
+	<src obj="SEGuardian"/>
+	<src obj="SEHorusWarrior"/>
+	<src obj="SIEliteGuard"/>
+	<src obj="SIDefender"/>
+	<src obj="STSwordsman"/>
+	<src obj="STMaceman"/>
+	<src obj="SRTribune"/>
+	<src obj="SRPrinciple"/>
+	<src obj="SGAxeman"/>
+	<src obj="SGSpearman"/>
+	<src obj="Rlider2"/>
+	<src obj="Rlider3"/>
 </cmd>
 
 <!-- this command is a hack -->

@@ -1,10 +1,10 @@
 <class id="SIEliteGuard" cpp_class="CVXHero" parent="Captain" entity="Units/IEliteGuard/IEliteGuard.ent.xml">
 
 	<properties race="Iberia"/>
-	<properties maxhealth="420"/>
+	<properties maxhealth="1200"/>
 	<properties damage="30" armor_slash="12" armor_pierce="12"/>
 	<properties speed="80"/>
-	<properties unit_specials="Power strike, Penetration, Toughness"/>
+	<properties unit_specials="Power strike, Penetration, Ferocity"/>
 	<properties interface="thumb,unit,items"/>
 	<properties formation_priority="1000"/>
 	<properties formation_radius="26"/>
@@ -14,5 +14,8 @@
 	<properties help="contents/units/IEliteGuard"/>
 	<properties edittree_pos="Units/Special Heroes/Elite Guard"/>
 	<sounds command="data/sound entities/VoiceIEliteGuard.xml"/>
+	<properties max_army="100"/>
+	<properties inventory_size="8"/>	
+	<method sig="toHero" vs="data/subai/hero_convert.vs"/>
 
 </class>

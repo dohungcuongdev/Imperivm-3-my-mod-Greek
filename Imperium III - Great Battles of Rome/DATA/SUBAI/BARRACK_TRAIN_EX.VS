@@ -37,6 +37,9 @@ else if (numparam == "mountaineer") {
 	if (maxnumber == 0)
 		maxnumber = 10;
 }
+else if( numparam == "shero" ) {
+	maxnumber = 1;
+}
 else {
 	maxnumber = Str2Int(numparam);
 }

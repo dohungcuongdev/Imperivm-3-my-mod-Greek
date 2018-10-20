@@ -1,8 +1,8 @@
 <class id="SBBronzeSpearman" cpp_class="CVXHero" parent="Captain" entity="Units/BBronzeSpearman/BBronzeSpearman.ent.xml">
 
 	<properties race="Britain"/>
-	<properties maxhealth="200"/>
-	<properties damage="20" armor_slash="12" armor_pierce="12"/>
+	<properties maxhealth="1800"/>
+	<properties damage="40" armor_slash="30" armor_pierce="30"/>
 	<properties speed="80"/>
 	<properties unit_specials="Defensive tactics, Offensive tactics, Toughness"/>
 	<properties interface="thumb,unit,items"/>
@@ -12,5 +12,8 @@
 	<properties help="contents/units/BBronzeSpearman"/>
 	<properties edittree_pos="Units/Special Heroes/Bronze Spearman"/>
 	<sounds command="data/sound entities/VoiceBBronzeSpearman.xml"/>
+	<properties max_army="100"/>
+	<properties inventory_size="8"/>
+	<method sig="toHero" vs="data/subai/hero_convert.vs"/>
 
 </class>

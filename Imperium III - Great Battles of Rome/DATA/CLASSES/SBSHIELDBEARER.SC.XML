@@ -1,10 +1,10 @@
 <class id="SBShieldBearer" cpp_class="CVXHero" parent="Captain" entity="units/BShieldBearer/BShieldBearer.ent.xml">
 
 	<properties race="Britain"/>
-	<properties maxhealth="240"/>
-	<properties damage="20" armor_slash="10" armor_pierce="10"/>
+	<properties maxhealth="1000"/>
+	<properties damage="30" armor_slash="10" armor_pierce="10"/>
 	<properties speed="80"/>
-	<properties unit_specials="Parry, Spike armor, Ferocity"/>
+	<properties unit_specials="Life steal, Spike armor, Ferocity"/>
 	<properties interface="thumb,unit,items"/>
 	<properties HeroSkills="Team attack, Team defense, Quick March, Survival, Recovery, Vigor, Wisdom, Epic attack, Epic armor, Epic endurance"/>
 	<properties icon="gameres/icons/BRITONCAPTAIN.bmp"/>
@@ -12,5 +12,8 @@
 	<properties help="contents/units/BShieldBearer"/>
 	<properties edittree_pos="Units/Special Heroes/Shield Bearer"/>
 	<sounds command="data/sound entities/VoiceBShieldBearer.xml"/>
+	<properties max_army="100"/>
+	<properties inventory_size="8"/>	
+	<method sig="toHero" vs="data/subai/hero_convert.vs"/>
 
 </class>

@@ -6,8 +6,8 @@
 	<properties icon="gameres/icons/TLIDER4.bmp"/>
 	<properties edittree_pos="Units/Special Heroes/Hunter"/>
 	
-	<properties maxhealth="2000"/>
-	<properties damage="80" armor_slash="12" armor_pierce="12"/>
+	<properties maxhealth="800"/>
+	<properties damage="60" armor_slash="12" armor_pierce="12"/>
 	
 	<properties speed="120"/>
 	<properties unit_specials="Triple strike, Death blow, Ferocity"/>
@@ -19,4 +19,6 @@
 	<properties inventory_size="8"/>
 
 	<sounds command="data/sound entities/VoiceGHero.xml"/>
+	
+	<method sig="toHero" vs="data/subai/hero_convert.vs"/>
 </class>

@@ -1,8 +1,8 @@
 <class id="SEHorusWarrior" cpp_class="CVXHero" parent="Captain" entity="units/EHorusWarrior/EHorusWarrior.ent.xml">
 
 	<properties race="Egypt"/>
-	<properties maxhealth="320"/>
-	<properties damage="36" armor_slash="8" armor_pierce="8"/>
+	<properties maxhealth="1000"/>
+	<properties damage="40" armor_slash="8" armor_pierce="8"/>
 	<properties speed="80"/>
 	<properties unit_specials="Rage, Life steal, Ferocity"/>
 	<properties interface="thumb,unit,items"/>
@@ -12,5 +12,8 @@
 	<properties help="contents/units/EHorusWarrior"/>
 	<properties edittree_pos="Units/Special Heroes/Horus Warrior"/>
 	<sounds command="data/sound entities/VoiceEHorusWarrior.xml"/>
+	<properties max_army="100"/>
+	<properties inventory_size="8"/>	
+	<method sig="toHero" vs="data/subai/hero_convert.vs"/>
 
 </class>

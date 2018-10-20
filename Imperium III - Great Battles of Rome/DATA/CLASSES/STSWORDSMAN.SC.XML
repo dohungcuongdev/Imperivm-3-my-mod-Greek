@@ -1,8 +1,8 @@
 <class id="STSwordsman" cpp_class="CVXHero" parent="Captain" entity="Units/TSwordsman/TSwordsman.ent.xml">
 
 	<properties race="Germany"/>
-	<properties maxhealth="200"/>
-	<properties damage="10" armor_slash="4" armor_pierce="4"/>
+	<properties maxhealth="3000"/>
+	<properties damage="20" armor_slash="30" armor_pierce="30"/>
 	<properties speed="80"/>
 	<properties unit_specials="Defense skill, Active, Toughness"/>
 	<properties interface="thumb,unit,items"/>
@@ -12,5 +12,8 @@
 	<properties help="contents/units/TSwordsman"/>
 	<properties edittree_pos="Units/Special Heroes/Swordsman"/>
 	<sounds command="data/sound entities/VoiceTSwordsman.xml"/>
+	<properties max_army="100"/>
+	<properties inventory_size="8"/>
+	<method sig="toHero" vs="data/subai/hero_convert.vs"/>
 
 </class>
