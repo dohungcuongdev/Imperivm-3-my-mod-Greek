@@ -1,0 +1,18 @@
+<class id="SBVikingLord" cpp_class="CVXHero" parent="Captain" entity="Units/BVikingLord/BVikingLord.ent.xml">
+
+	<properties race="Britain"/>
+	<properties maxhealth="1000"/>
+	<properties damage="60" armor_slash="8" armor_pierce="8"/>
+	<properties speed="80"/>
+	<properties unit_specials="Penetration, Life steal, Ferocity"/>
+	<properties HeroSkills="Team attack, Team defense, Quick March, Survival, Recovery, Vigor, Wisdom, Epic attack, Epic armor, Epic endurance"/>
+	<properties interface="thumb,unit,items"/>
+	<properties icon="gameres/icons/BLIDER3.bmp"/>
+	<properties display_name="Viking Lord" display_name_plural="Viking Lords"/>
+	<properties help="contents/units/BVikingLord"/>
+	<properties edittree_pos="Units/Special Heroes/Viking Lord"/>
+	<sounds command="data/sound entities/VoiceBVikingLord.xml" attack="UnitHammerFight"/>
+	<properties max_army="80"/>
+	<properties inventory_size="8"/>		
+	<method sig="toHero" vs="data/subai/hero_convert.vs"/>
+</class>

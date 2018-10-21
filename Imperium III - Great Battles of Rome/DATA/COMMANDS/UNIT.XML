@@ -378,6 +378,7 @@
 	<src obj="SGSpearman"/>
 	<src obj="Rlider2"/>
 	<src obj="Rlider3"/>
+	<src obj="SBVikingLord"/>
 </cmd>
 
 <!-- this command is a hack -->

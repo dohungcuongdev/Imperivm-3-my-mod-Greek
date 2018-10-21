@@ -8,6 +8,8 @@ Sleep(rand(4000)+500);
 
 if(.IsValid){
 	if(.IsAlive){
+		if (.IsHeirOf("SBVikingLord")) 
+			tt = "SBBronzeSpearman";
 		if (.IsHeirOf("SBBronzeSpearman")) 
 			tt = "SBShieldBearer";
 		else if (.IsHeirOf("SBShieldBearer")) 
@@ -39,7 +41,7 @@ if(.IsValid){
 		else if (.IsHeirOf("Rlider2")) 
 			tt = "Rlider3";
 		else if (.IsHeirOf("Rlider3")) 
-			tt = "SBBronzeSpearman";
+			tt = "SBVikingLord";
 		
 
 		while(!.Stop(1000));

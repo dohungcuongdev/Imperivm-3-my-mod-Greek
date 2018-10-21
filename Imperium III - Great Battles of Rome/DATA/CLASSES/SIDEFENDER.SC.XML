@@ -1,7 +1,7 @@
 <class id="SIDefender" cpp_class="CVXHero" parent="Captain" entity="Units/IDefender/IDefender.ent.xml">
 
 	<properties race="Iberia"/>
-	<properties maxhealth="3000"/>
+	<properties maxhealth="2800"/>
 	<properties damage="30" armor_slash="22" armor_pierce="22"/>
 	<properties speed="80"/>
 	<properties interface="thumb,unit,items"/>
@@ -12,7 +12,7 @@
 	<properties help="contents/units/IDefender"/>
 	<properties edittree_pos="Units/Special Heroes/Defender"/>
 	<sounds attack="UnitPikeFight" command="data/sound entities/VoiceIDefender.xml"/>
-	<properties max_army="100"/>
+	<properties max_army="80"/>
 	<properties inventory_size="8"/>	
 	<method sig="toHero" vs="data/subai/hero_convert.vs"/>
 

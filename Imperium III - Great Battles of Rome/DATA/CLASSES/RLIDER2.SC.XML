@@ -7,13 +7,13 @@
 	<properties edittree_pos="Units/Special Heroes/Lider"/>
 	
 	<properties maxhealth="1000"/>
-	<properties damage="30" armor_slash="20" armor_pierce="20"/>
+	<properties damage="40" armor_slash="20" armor_pierce="20"/>
 	
 	<properties speed="120"/>
 	
-	<properties unit_specials="Defensive tactics, Offensive tactics, Ferocity"/>
+	<properties unit_specials="Triple strike, Death blow, Ferocity"/>
 	
-	<properties max_army="100"/>
+	<properties max_army="80"/>
 	<properties heroarmyexpgain="50"/>
 	<properties interface="thumb,unit,items"/>
 	<properties HeroSkills="Team attack, Team defense, Quick March, Survival, Recovery, Vigor, Wisdom, Epic attack, Epic armor, Epic endurance"/>
@@ -22,4 +22,5 @@
 	<sounds command="data/sound entities/VoiceGHero.xml"/>
 	
 	<method sig="toHero" vs="data/subai/hero_convert.vs"/>
+	<sounds attack="UnitSwordFight"/>
 </class>

@@ -2,9 +2,9 @@
 
 	<properties race="Britain"/>
 	<properties maxhealth="1000"/>
-	<properties damage="30" armor_slash="10" armor_pierce="10"/>
+	<properties damage="30" armor_slash="15" armor_pierce="15"/>
 	<properties speed="80"/>
-	<properties unit_specials="Life steal, Spike armor, Ferocity"/>
+	<properties unit_specials="Life steal, Spike armor, Determination"/>
 	<properties interface="thumb,unit,items"/>
 	<properties HeroSkills="Team attack, Team defense, Quick March, Survival, Recovery, Vigor, Wisdom, Epic attack, Epic armor, Epic endurance"/>
 	<properties icon="gameres/icons/BRITONCAPTAIN.bmp"/>
@@ -12,8 +12,8 @@
 	<properties help="contents/units/BShieldBearer"/>
 	<properties edittree_pos="Units/Special Heroes/Shield Bearer"/>
 	<sounds command="data/sound entities/VoiceBShieldBearer.xml"/>
-	<properties max_army="100"/>
+	<properties max_army="80"/>
 	<properties inventory_size="8"/>	
 	<method sig="toHero" vs="data/subai/hero_convert.vs"/>
-
+	<sounds attack="UnitSwordFight"/>
 </class>

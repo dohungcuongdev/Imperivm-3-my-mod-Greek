@@ -114,6 +114,7 @@
 	param="SetsPlr, standard_spawn_level, 3,NameSet, Gladiator Shows, default">
 	<src obj="RRArena"/>
 	<src obj="URArena2"/>
+	<src obj="URArena3"/>
 </cmd>
 
 <cmd name="People's Assembly" priority="2"
@@ -236,6 +237,7 @@
 	<src obj="RRArena"/>
 	<src obj="URArena"/>
 	<src obj="URArena2"/>
+	<src obj="URArena3"/>
 </cmd>
 
 <cmd name="Veteran Defence" priority="5"
@@ -255,6 +257,7 @@
 	<src obj="RRArena"/>
 	<src obj="URArena"/>
 	<src obj="URArena2"/>
+	<src obj="URArena3"/>
 </cmd>
 
 <cmd name="Veteran Health" priority="6"
@@ -274,6 +277,7 @@
 	<src obj="RRArena"/>
 	<src obj="URArena"/>
 	<src obj="URArena2"/>
+	<src obj="URArena3"/>
 </cmd>
 
 <cmd name="Gaul Training 3" priority="3"
@@ -1852,7 +1856,7 @@
 	costpop = "1"
 	execdelay = "20000"
 	rollover="Train Special Hero Lider"
-	description="Train a special hero Lider with 3 unit specials; can lead 100 units; pick up maximun 8 items"
+	description="Train a special hero Lider with 3 unit specials; can lead 80 units; pick up maximun 8 items"
 	method="trainex"
 	param="1, shero, Rlider2, Rlider2, Gladiator Shows">
 	<src obj="URArena2"/>
@@ -1888,7 +1892,7 @@
 	method="research"
 	researchcommand="yes"
 	param="ReqSet, Gladiator Shows, default, SetsPlr, maxtrainlevel, 30, NamePlr, United Training 1, ">
-	<src obj="URArena2"/>
+	<src obj="URArena3"/>
 </cmd>
 
 <cmd name="United Training 2" priority="3"
@@ -1904,7 +1908,7 @@
 	method="research"
 	researchcommand="yes"
 	param="ReqSet, Gladiator Shows, , ReqPlr, United Training 1, , SetsPlr, maxtrainlevel, 60, NamePlr, United Training 2, ">
-	<src obj="URArena2"/>
+	<src obj="URArena3"/>
 </cmd>
 
 <cmd name="United Training 3" priority="3"
@@ -1920,7 +1924,7 @@
 	method="research"
 	researchcommand="yes"
 	param="ReqSet, Gladiator Shows, , ReqPlr, United Training 2, ,SetsPlr, maxtrainlevel, 100, NamePlr, United Training 3, default">
-	<src obj="URArena2"/>
+	<src obj="URArena3"/>
 </cmd>
 
 <cmd name="United Level" priority="3"
@@ -1937,7 +1941,7 @@
 	researchcommand="yes"
 	param = "ReqSet, Gladiator Shows, default, SetsPlr, standard_spawn_level, 18, NameSet, United Level, default"
 	>
-	<src obj="URArena2"/>
+	<src obj="URArena3"/>
 </cmd>
 
 <cmd name="United Warrior Tales" priority="6"
@@ -1953,7 +1957,7 @@
 	researchcommand="yes"
 	method="research"
 	param="ReqSet, Gladiator Shows, default, NamePlr, Warrior Tales, default">
-	<src obj="URArena2"/>
+	<src obj="URArena3"/>
 </cmd>
 
 <cmd name="United Statue of Amon-Ra" priority="13"
@@ -1970,6 +1974,7 @@
 	researchcommand="yes"
 	param="ReqSet, Gladiator Shows, default, NamePlr, Statue of Amon-Ra, default">
 	<src obj="URArena2"/>
+	<src obj="URArena3"/>
 </cmd>
 
 <cmd name="United Training III" priority="3"
@@ -2002,6 +2007,7 @@
 	method="research"
 	param="ReqSet, Gladiator Shows, default, NamePlr, Ferocity, default">
 	<src obj="URArena"/>
+	<src obj="URArena3"/>
 </cmd>
 
 <cmd name="Battle Learning" priority="8"
@@ -2019,5 +2025,6 @@
 	param="ReqSet, Gladiator Shows, default, NamePlr, Battle Learning, default">
 	<src obj="URArena"/>
 	<src obj="URArena2"/>
+	<src obj="URArena3"/>
 </cmd>
 </commands>

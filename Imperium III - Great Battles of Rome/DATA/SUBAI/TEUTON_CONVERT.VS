@@ -8,11 +8,9 @@ Sleep(1000);
 
 if(.IsValid){
 	if(.IsAlive){
-		if (.IsHeirOf("TTeutonRider"))
-			tt = "TTeutonArcher";
-		else if (.IsHeirOf("TTeutonArcher"))
-			tt = "TTeutonRider";
-		else if (.IsHeirOf("SBBronzeSpearman")) 
+		if (.IsHeirOf("SBVikingLord")) 
+			tt = "SBBronzeSpearman";
+		if (.IsHeirOf("SBBronzeSpearman")) 
 			tt = "SBShieldBearer";
 		else if (.IsHeirOf("SBShieldBearer")) 
 			tt = "SCLibyanFootman";
@@ -43,7 +41,7 @@ if(.IsValid){
 		else if (.IsHeirOf("Rlider2")) 
 			tt = "Rlider3";
 		else if (.IsHeirOf("Rlider3")) 
-			tt = "SBBronzeSpearman";
+			tt = "SBVikingLord";
 		//while(!.Stop(1000));
 		.Mutate(tt);
 	}

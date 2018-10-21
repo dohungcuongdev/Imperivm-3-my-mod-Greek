@@ -12,8 +12,8 @@
 	<properties help="contents/units/EHorusWarrior"/>
 	<properties edittree_pos="Units/Special Heroes/Horus Warrior"/>
 	<sounds command="data/sound entities/VoiceEHorusWarrior.xml"/>
-	<properties max_army="100"/>
+	<properties max_army="80"/>
 	<properties inventory_size="8"/>	
 	<method sig="toHero" vs="data/subai/hero_convert.vs"/>
-
+	<sounds attack="UnitMaceFight"/>
 </class>

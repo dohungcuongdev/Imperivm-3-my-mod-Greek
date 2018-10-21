@@ -1,7 +1,7 @@
 <class id="SCNoble" cpp_class="CVXHero" parent="Captain" entity="Units/CNoble/CNoble.ent.xml">
 
 	<properties race="Carthage"/>
-	<properties maxhealth="2000"/>
+	<properties maxhealth="1000"/>
 	<properties damage="50" armor_slash="20" armor_pierce="20"/>
 	<properties speed="60"/>
 	<properties unit_specials="Triumph, Life steal, Ferocity"/>
@@ -15,7 +15,7 @@
 	<properties help="contents/units/CNoble"/>
 	<properties edittree_pos="Units/Special Heroes/Noble"/>
 	<sounds attack="UnitPikeFight" command="data/sound entities/VoiceCNoble.xml"/>
-	<properties max_army="100"/>
+	<properties max_army="80"/>
 	<properties inventory_size="8"/>	
 	<method sig="toHero" vs="data/subai/hero_convert.vs"/>
 

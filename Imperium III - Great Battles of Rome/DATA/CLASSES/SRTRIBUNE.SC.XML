@@ -15,11 +15,11 @@
 	<properties help="contents/units/RTribune"/>
 	<properties edittree_pos="Units/Special Heroes/Tribune"/>
 
-	<sounds attack="UnitPikeFight" command="data/sound entities/VoiceRTribune.xml"/>
+	<sounds command="data/sound entities/VoiceRTribune.xml"/>
 	
-	<properties max_army="100"/>
+	<properties max_army="80"/>
 	<properties inventory_size="8"/>
 	
 	<method sig="toHero" vs="data/subai/hero_convert.vs"/>
-
+	<sounds attack="UnitSwordFight"/>
 </class>

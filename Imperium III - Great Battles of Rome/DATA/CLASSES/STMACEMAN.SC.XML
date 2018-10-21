@@ -13,8 +13,8 @@
 	<properties help="contents/units/TMaceman"/>
 	<properties edittree_pos="Units/Special Heroes/Maceman"/>
 	<sounds command="data/sound entities/VoiceTMaceman.xml"/>
-        <sounds attack="UnitHammerFight" />
-	<properties max_army="100"/>
+    <sounds attack="UnitHammerFight" />
+	<properties max_army="80"/>
 	<properties inventory_size="8"/>		
-		<method sig="toHero" vs="data/subai/hero_convert.vs"/>
+	<method sig="toHero" vs="data/subai/hero_convert.vs"/>
 </class>

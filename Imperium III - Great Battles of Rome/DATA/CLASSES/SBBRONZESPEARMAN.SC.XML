@@ -2,9 +2,9 @@
 
 	<properties race="Britain"/>
 	<properties maxhealth="1800"/>
-	<properties damage="40" armor_slash="30" armor_pierce="30"/>
+	<properties damage="35" armor_slash="15" armor_pierce="15"/>
 	<properties speed="80"/>
-	<properties unit_specials="Defensive tactics, Offensive tactics, Toughness"/>
+	<properties unit_specials="Defensive tactics, Offensive tactics, Ferocity"/>
 	<properties interface="thumb,unit,items"/>
 	<properties HeroSkills="Team attack, Team defense, Quick March, Survival, Recovery, Vigor, Wisdom, Epic attack, Epic armor, Epic endurance"/>
 	<properties icon="gameres/icons/BBRONZESPEARMANGUARD.bmp"/>
@@ -12,8 +12,8 @@
 	<properties help="contents/units/BBronzeSpearman"/>
 	<properties edittree_pos="Units/Special Heroes/Bronze Spearman"/>
 	<sounds command="data/sound entities/VoiceBBronzeSpearman.xml"/>
-	<properties max_army="100"/>
+	<properties max_army="80"/>
 	<properties inventory_size="8"/>
 	<method sig="toHero" vs="data/subai/hero_convert.vs"/>
-
+	<sounds attack="UnitPikeFight"/>
 </class>

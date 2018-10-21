@@ -52,6 +52,7 @@ if(bAdd)
 	
 	if (numparam=="shero")
 		curnmb = number + queued
+			+ Count(.player, "SBVikingLord")
 			+ Count(.player, "SBShieldBearer")
 			+ Count(.player, "SCLibyanFootman")
 			+ Count(.player, "SCNoble")

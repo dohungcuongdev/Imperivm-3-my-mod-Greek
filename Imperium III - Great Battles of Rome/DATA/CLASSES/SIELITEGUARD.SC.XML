@@ -14,8 +14,9 @@
 	<properties help="contents/units/IEliteGuard"/>
 	<properties edittree_pos="Units/Special Heroes/Elite Guard"/>
 	<sounds command="data/sound entities/VoiceIEliteGuard.xml"/>
-	<properties max_army="100"/>
+	<properties max_army="80"/>
 	<properties inventory_size="8"/>	
 	<method sig="toHero" vs="data/subai/hero_convert.vs"/>
+	<sounds attack="AxeAttack" />
 
 </class>

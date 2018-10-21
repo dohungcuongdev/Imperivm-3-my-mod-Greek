@@ -2,9 +2,9 @@
 
 	<properties race="Germany"/>
 	<properties maxhealth="3000"/>
-	<properties damage="20" armor_slash="30" armor_pierce="30"/>
+	<properties damage="30" armor_slash="15" armor_pierce="15"/>
 	<properties speed="80"/>
-	<properties unit_specials="Defense skill, Active, Toughness"/>
+	<properties unit_specials="Defensive tactics, Determination, Toughness"/>
 	<properties interface="thumb,unit,items"/>
 	<properties HeroSkills="Team attack, Team defense, Quick March, Survival, Recovery, Vigor, Wisdom, Epic attack, Epic armor, Epic endurance"/>
 	<properties icon="gameres/icons/TSWORDSMANGUARD.bmp"/>
@@ -12,8 +12,9 @@
 	<properties help="contents/units/TSwordsman"/>
 	<properties edittree_pos="Units/Special Heroes/Swordsman"/>
 	<sounds command="data/sound entities/VoiceTSwordsman.xml"/>
-	<properties max_army="100"/>
+	<properties max_army="80"/>
 	<properties inventory_size="8"/>
 	<method sig="toHero" vs="data/subai/hero_convert.vs"/>
+	<sounds attack="UnitSwordFight"/>
 
 </class>
