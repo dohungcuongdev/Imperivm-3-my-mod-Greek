@@ -29,14 +29,14 @@ if(.IsValid){
 		else if (.IsHeirOf("STSwordsman")) 
 			tt = "STMaceman";
 		else if (.IsHeirOf("STMaceman")) 
-			tt = "SRTribune";
-		else if (.IsHeirOf("SRTribune")) 
-			tt = "SRPrinciple";
-		else if (.IsHeirOf("SRPrinciple")) 
 			tt = "SGAxeman";
 		else if (.IsHeirOf("SGAxeman")) 
 			tt = "SGSpearman";
-		else if (.IsHeirOf("SGSpearman")) 
+		else if (.IsHeirOf("SGSpearman"))
+			tt = "SRTribune";
+		else if (.IsHeirOf("SRTribune")) 
+			tt = "SRPrinciple";
+		else if (.IsHeirOf("SRPrinciple"))
 			tt = "Rlider2";
 		else if (.IsHeirOf("Rlider2")) 
 			tt = "Rlider3";
