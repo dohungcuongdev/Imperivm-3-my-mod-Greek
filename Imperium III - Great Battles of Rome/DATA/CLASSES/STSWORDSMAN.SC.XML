@@ -4,7 +4,12 @@
 	<properties maxhealth="1200"/>
 	<properties damage="50" armor_slash="20" armor_pierce="20"/>
 	<properties speed="80"/>
+	<properties unit_specials="Defensive tactics, Bleeding attack, Determination"/>
+	
+	<!--
 	<properties unit_specials="Defensive tactics, Determination, Toughness"/>
+	-->
+	
 	<properties interface="thumb,unit,items"/>
 	<properties HeroSkills="Team attack, Team defense, Quick March, Survival, Recovery, Vigor, Wisdom, Epic attack, Epic armor, Epic endurance"/>
 	<properties icon="gameres/icons/TSWORDSMANGUARD.bmp"/>
