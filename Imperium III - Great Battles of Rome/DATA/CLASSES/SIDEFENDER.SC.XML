@@ -1,8 +1,8 @@
 <class id="SIDefender" cpp_class="CVXHero" parent="Captain" entity="Units/IDefender/IDefender.ent.xml">
 
 	<properties race="Iberia"/>
-	<properties maxhealth="2800"/>
-	<properties damage="30" armor_slash="22" armor_pierce="22"/>
+	<properties maxhealth="1500"/>
+	<properties damage="50" armor_slash="22" armor_pierce="22"/>
 	<properties speed="80"/>
 	<properties interface="thumb,unit,items"/>
 	<properties unit_specials="Disease attack, Defense skill, Determination"/>

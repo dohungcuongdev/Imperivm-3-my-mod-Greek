@@ -1,8 +1,8 @@
 <class id="SBBronzeSpearman" cpp_class="CVXHero" parent="Captain" entity="Units/BBronzeSpearman/BBronzeSpearman.ent.xml">
 
 	<properties race="Britain"/>
-	<properties maxhealth="1800"/>
-	<properties damage="35" armor_slash="15" armor_pierce="15"/>
+	<properties maxhealth="1200"/>
+	<properties damage="50" armor_slash="20" armor_pierce="20"/>
 	<properties speed="80"/>
 	<properties unit_specials="Defensive tactics, Offensive tactics, Ferocity"/>
 	<properties interface="thumb,unit,items"/>

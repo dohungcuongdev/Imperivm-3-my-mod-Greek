@@ -1,0 +1,28 @@
+<class id="EOutpost" cpp_class="CVXOutpost" parent="Outpost" entity="Buildings/EOutpost/EOutpost.ent.xml">
+
+	<properties race="Egypt"/>
+	<properties maxhealth="10000"/>
+	<properties icon="gameres/icons/EOutpost.bmp"/>
+	<properties display_name="Fort"/>
+	<properties radius="345" selection_radius="350"/>
+	<properties edittree_pos="Structures/Outposts/Fort (Egypt)"/>
+	<properties help="/contents/buildings/EOutpost"/>
+	<properties description="Produces additional gold as long as there is 2000 gold stored in the outpost"/>
+	<properties
+		range = "1000"
+		settlement_food="1000"
+		settlement_gold="500"
+	    defender_cls_1  = "EAnubisWarrior"	
+	    defenders_max_1 = "10"
+	    defenders_out_1 = "4"
+	    start_level_1   = "4"
+	    end_level_1     = "12"   
+	    defender_cls_2  = "EHorusWarrior"	
+	    defenders_max_2 = "10"
+	    defenders_out_2 = "4"
+	    start_level_2   = "4"
+	    end_level_2     = "12"   
+	/>
+
+	<method sig="routpost_interest" vs="data/subai/routpost_interest.vs"/>
+</class>
