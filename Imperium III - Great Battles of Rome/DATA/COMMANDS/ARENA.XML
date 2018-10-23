@@ -1957,6 +1957,7 @@
 	researchcommand="yes"
 	method="research"
 	param="ReqSet, Gladiator Shows, default, NamePlr, Warrior Tales, default">
+	<src obj="URArena2"/>
 	<src obj="URArena3"/>
 </cmd>
 
@@ -2024,7 +2025,6 @@
 	researchcommand="yes"
 	param="ReqSet, Gladiator Shows, default, NamePlr, Battle Learning, default">
 	<src obj="URArena"/>
-	<src obj="URArena2"/>
 	<src obj="URArena3"/>
 </cmd>
 </commands>

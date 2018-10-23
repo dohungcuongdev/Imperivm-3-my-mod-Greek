@@ -9,7 +9,7 @@
 	<properties damage="80" armor_slash="2" armor_pierce="2"/>
 	
 	<properties speed="120"/>
-	<properties unit_specials="Triple strike, Penetration, Ferocity"/>
+	<properties unit_specials="Offensive tactics, Penetration, Ferocity"/>
 	
 	<properties max_army="80"/>
 	<properties heroarmyexpgain="50"/>

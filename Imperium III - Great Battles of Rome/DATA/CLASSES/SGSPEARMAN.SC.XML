@@ -2,7 +2,7 @@
 
 	<properties race="Gaul"/>
 	<properties maxhealth="1500"/>
-	<properties damage="50" armor_slash="20" armor_pierce="20"/>
+	<properties damage="55" armor_slash="20" armor_pierce="20"/>
 	<properties speed="80"/>
 	<properties interface="thumb,unit,items"/>
 	<!--<properties unit_specials="Learning, Deflection, Ferocity"/>-->
