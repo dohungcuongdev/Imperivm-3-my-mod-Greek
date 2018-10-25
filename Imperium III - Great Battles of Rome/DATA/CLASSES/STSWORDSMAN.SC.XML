@@ -1,7 +1,7 @@
 <class id="STSwordsman" cpp_class="CVXHero" parent="Captain" entity="Units/TSwordsman/TSwordsman.ent.xml">
 
 	<properties race="Germany"/>
-	<properties maxhealth="1200"/>
+	<properties maxhealth="1500"/>
 	<properties damage="50" armor_slash="20" armor_pierce="20"/>
 	<properties speed="80"/>
 	<properties unit_specials="Defensive tactics, Bleeding attack, Determination"/>

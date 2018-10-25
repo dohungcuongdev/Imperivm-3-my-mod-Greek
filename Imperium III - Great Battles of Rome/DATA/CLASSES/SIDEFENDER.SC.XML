@@ -1,11 +1,11 @@
 <class id="SIDefender" cpp_class="CVXHero" parent="Captain" entity="Units/IDefender/IDefender.ent.xml">
 
 	<properties race="Iberia"/>
-	<properties maxhealth="1600"/>
-	<properties damage="40" armor_slash="25" armor_pierce="25"/>
+	<properties maxhealth="1500"/>
+	<properties damage="35" armor_slash="20" armor_pierce="20"/>
 	<properties speed="80"/>
 	<properties interface="thumb,unit,items"/>
-	<properties unit_specials="Disease attack, Spike armor, Determination"/>
+	<properties unit_specials="Disease attack, Spike armor, Determination, Trample"/>
 	<properties HeroSkills="Team attack, Team defense, Quick March, Survival, Recovery, Vigor, Wisdom, Epic attack, Epic armor, Epic endurance"/>
 	<properties icon="gameres/icons/IDEFENDERGUARD.bmp"/>
 	<properties display_name="Defender" display_name_plural="Defenders"/>
