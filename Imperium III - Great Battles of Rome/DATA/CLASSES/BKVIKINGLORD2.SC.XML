@@ -11,7 +11,7 @@
 	<properties icon="gameres/icons/BVikingLord.bmp"/>
 	<properties display_name="Viking Hero" display_name_plural="Viking Heroes"/>
 	<properties help="contents/units/BVikingLord"/>
-	<properties edittree_pos="Units/Britain Kingdom/Viking Hero 2"/>
+	<properties edittree_pos="Units/Testing/Viking Hero 2"/>
 	<sounds command="data/sound entities/VoiceBVikingLord.xml" attack="UnitHammerFight"/>
 
 </class>

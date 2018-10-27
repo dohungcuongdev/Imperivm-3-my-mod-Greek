@@ -1,6 +1,6 @@
 <class id="UnionHero1c" cpp_class="CVXHero" parent="UnionHero" entity="Units/IHero1/IHero1.ent.xml">
 
 	<properties display_name="Atennes" display_name_plural="Heroes"/>
-	<properties icon="gameres/icons/IHero1.bmp"/>
+	<properties icon="gameres/icons/IHERO13.bmp"/>
 
 </class>

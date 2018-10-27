@@ -201,7 +201,7 @@
 	costfood = "0"
 	costpop = "0"
 	execdelay = "20000"
- 	rollover="Equip Roman Captain Chariot who can lead up to 16 units"
+ 	rollover="Equip Roman Captain Chariot with 3 kills, 3 unit specials who can lead up to 16 units"
 	method="trainex"
 	param="1, 5, URChariot, URChariot, United Roman Chariot Wheels, blacksmith">
 	<src obj="URBarracks"/>

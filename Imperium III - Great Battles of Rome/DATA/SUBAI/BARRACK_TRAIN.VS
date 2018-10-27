@@ -74,12 +74,12 @@ level = 1;
 }
 
 newunit.SetLevel(level);
+if (EnvReadInt(.settlement, "items/Herb amulet of luck") == 1)
+	newunit.AddItem("Herb amulet of luck");
 if (!newunit.IsHeirOf("BaseMage"))
   {	
 	if (EnvReadInt(.settlement, "items/Bear teeth amulet") == 1)
 		newunit.AddItem("Bear teeth amulet");
-	if (EnvReadInt(.settlement, "items/Herb amulet of luck") == 1)
-		newunit.AddItem("Herb amulet of luck");
 	if (EnvReadInt(.settlement, "items/Belt of might") == 1)
 		newunit.AddItem("Belt of might");
 	if (EnvReadInt(.settlement, "items/God's Gift") == 1)

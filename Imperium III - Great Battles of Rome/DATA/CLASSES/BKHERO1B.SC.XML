@@ -1,6 +1,6 @@
 <class id="BKHero1b" cpp_class="CVXHero" parent="BritonKHero" entity="Units/BHero1/BHero1.ent.xml">
 
 	<properties display_name="Reduald" display_name_plural="Heroes"/>
-	<properties icon="gameres/icons/BHero1.bmp"/>
+	<properties icon="gameres/icons/BHERO32.bmp"/>
 
 </class>

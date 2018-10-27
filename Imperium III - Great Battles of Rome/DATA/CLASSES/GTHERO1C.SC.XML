@@ -1,6 +1,6 @@
 <class id="GTHero1c" cpp_class="CVXHero" parent="GoldenGermanHero" entity="Units/THero1/THero1.ent.xml">
 
 	<properties display_name="Hrodric" display_name_plural="Heroes"/>
-	<properties icon="gameres/icons/THero1.bmp"/>
+	<properties icon="gameres/icons/THERO43.bmp"/>
 
 </class>

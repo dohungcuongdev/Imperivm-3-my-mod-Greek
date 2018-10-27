@@ -10,7 +10,7 @@
 	
 	<properties speed="80"/>
 	
-	<properties HeroSkills="Team attack, Team defense, Epic endurance"/>
+	<properties HeroSkills="Leadership, Team defense, Epic endurance, Epic armor"/>
 	
 	<!--
 	<properties unit_specials="Penetration, Parry, Toughness"/>

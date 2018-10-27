@@ -1816,7 +1816,7 @@
 	costpop = "1"
 	execdelay = "20000"
 	rollover="Train Republican Captain"
-	description="Train Republican Captain with 3 kills, 3 unit specials; but can lead only 30 units"
+	description="Train Republican Captain with 4 skills, 3 unit specials; but can lead only 30 units"
 	method="trainex"
 	param="1, 2, RTCaptain, RTCaptain, Gladiator Shows">
 	<src obj="URArena"/>
@@ -1836,7 +1836,7 @@
 	costpop = "1"
 	execdelay = "20000"
 	rollover="Train Imperial Captain"
-	description="Train Imperial Captain with 3 kills, 3 unit specials; but can lead only 30 units"
+	description="Train Imperial Captain with 4 kills, 2 unit specials; but can lead only 30 units"
 	method="trainex"
 	param="1, 2, RPCaptain, RPCaptain, Gladiator Shows">
 	<src obj="URArena"/>

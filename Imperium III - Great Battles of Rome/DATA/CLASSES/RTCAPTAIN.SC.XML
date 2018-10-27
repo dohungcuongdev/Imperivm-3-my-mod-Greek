@@ -10,7 +10,7 @@
 	
 	<properties speed="80"/>
 	
-	<properties HeroSkills="Team attack, Team defense, Quick March"/>
+	<properties HeroSkills="Leadership, Team attack, Team defense, Quick March"/>
 	
 	<!--
 	<properties HeroSkills=" Team attack, Team defense"/>
