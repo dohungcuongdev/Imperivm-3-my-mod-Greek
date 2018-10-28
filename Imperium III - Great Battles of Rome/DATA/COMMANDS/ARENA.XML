@@ -732,7 +732,7 @@
 	button="research/TALES OF HEROES1.bmp"
 	key="u"
 	queueicon="gameres/icons/upgrades/TALES OF HEROES1.bmp"
-	costgold = "3000"
+	costgold = "4000"
 	costfood = "0"
 	execdelay = "30000"
 	groupverifier="data/subai/verify_research.vs"
@@ -748,7 +748,7 @@
 	button="research/TALES OF HEROES2.bmp"
 	key="j"
 	queueicon="gameres/icons/upgrades/TALES OF HEROES2.bmp"
-	costgold = "3000"
+	costgold = "4000"
 	costfood = "0"
 	execdelay = "30000"
 	groupverifier="data/subai/verify_research.vs"
@@ -909,8 +909,8 @@
 	traincommand="yes"
 	key="k"
 	help="/contents/units/CWarElephant"
-	costgold = "3000"
-	costfood = "0"
+	costgold = "0"
+	costfood = "5000"
 	costpop = "0"
 	execdelay = "30000"
 	rollover="Hire special War Elephant Hero"
@@ -1089,7 +1089,7 @@
 	param="ReqSet, Fights, default, NamePlr, Noble Offence, default">
 	<src obj="BMorrigansMonument"/>
 	<src obj="BKMorrigansMonument"/>
-	<src obj="CGArena"/>
+	<!-- <src obj="CGArena"/> -->
 </cmd>
 
 <cmd name="Noble Defence" priority="7"
@@ -1107,7 +1107,7 @@
 	param="ReqSet, Fights, default, NamePlr, Noble Defence, default">
 	<src obj="BMorrigansMonument"/>
 	<src obj="BKMorrigansMonument"/>
-	<src obj="CGArena"/>
+	<!-- <src obj="CGArena"/> -->
 </cmd>
 
 <cmd name="Standartization I" priority="2"
@@ -2026,5 +2026,42 @@
 	param="ReqSet, Gladiator Shows, default, NamePlr, Battle Learning, default">
 	<src obj="URArena"/>
 	<src obj="URArena3"/>
+</cmd>
+
+<cmd name="Hire Trident Assassin" priority="15"
+	button="actions/baal.bmp"
+	queueicon="gameres/icons/baal.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="a"
+	help="/contents/units/CGTridentWarrior"
+	costgold = "2000"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "20000"
+	rollover="Hire Trident Assassin"
+	description="Hire Special Hero Trident Assassin with 4 skills, 3 unit specials and works alone"
+	method="trainex"
+	param="1, 1, CGTridentWarrior, CGTridentWarrior, Mystery Trident">
+	<src obj="CGArena"/>
+</cmd>
+
+<cmd name="Mystery Trident" priority="16"
+	queueicon="gameres/icons/upgrades/guia.bmp"
+	button="research/guia.bmp"
+	groupverifier="data/subai/verify_research.vs"
+	researchcommand="yes"
+	key="m"
+	costgold = "1000"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "10000"
+	rollover="Trident Assassin Training"
+	description="Allows Trident Assassin to be hired"
+	method="research"
+	param="ReqSet, Fights, default, NameSet, Mystery Trident, default">
+	<src obj="CGArena"/>
 </cmd>
 </commands>

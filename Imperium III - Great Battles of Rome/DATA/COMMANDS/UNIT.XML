@@ -241,7 +241,8 @@
 	<nsrc obj="GTridentWarrior"/>
 	<nsrc obj="IMountaineer"/>
 	<nsrc obj="RChariot"/>
-	<nsrc obj="RLiberatus"/>
+	<!--<nsrc obj="RLiberatus"/>-->
+	<nsrc obj="AHArcher"/>
 
 </cmd>
 

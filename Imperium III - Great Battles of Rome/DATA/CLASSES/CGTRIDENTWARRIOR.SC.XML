@@ -1,0 +1,20 @@
+<class id="CGTridentWarrior" cpp_class="CVXHero" parent="Hero" entity="Units/GTridentWarrior/GTridentWarrior.ent.xml">
+
+	<properties race="Gaul"/>
+	<properties maxhealth="2000"/>
+	<properties damage="100" armor_slash="15" armor_pierce="15"/>
+	<properties speed="90"/>
+	<properties unit_specials="Triumph, Toughness, Sneak"/>
+	<properties max_army="0"/>
+	<properties HeroSkills="Epic attack, Epic armor, Epic endurance, Scout"/>
+
+	<properties icon="gameres/icons/baal.bmp"/>
+	<properties display_name="Trident Assassin" display_name_plural="Trident Assassins"/>
+	<properties help="contents/units/GTridentWarrior"/>
+	<properties edittree_pos="Units/Celtic Gaul/Trident Assassin"/>
+	<sounds command="data/sound entities/VoiceGTridentWarrior.xml" attack="UnitHammerFight"/>
+	<properties feeds="0"/>
+	<method sig="ondie" vs="data/subai/imountaineer_ondie.vs"/>
+	<behavior script="data/subai/sneak_behavior.vs"/>
+
+</class>
