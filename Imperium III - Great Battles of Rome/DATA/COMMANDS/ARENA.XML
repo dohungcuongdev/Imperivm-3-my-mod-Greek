@@ -591,7 +591,7 @@
 	param = "BritonKHero"
 	method="hirehero"
 	help="/contents/units/BHero"
-	rollover="Hire classic archer hero with 6 skills">
+	rollover="Hire classic archer hero with 6 skills, pick up maximum 6 items">
 	<src obj="BKMorrigansMonument"/>
 </cmd>
 
@@ -2058,7 +2058,7 @@
 	costfood = "0"
 	costpop = "0"
 	execdelay = "10000"
-	rollover="Trident Assassin Training"
+	rollover="Mystery Trident"
 	description="Allows Trident Assassin to be hired"
 	method="research"
 	param="ReqSet, Fights, default, NameSet, Mystery Trident, default">

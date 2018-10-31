@@ -20,5 +20,7 @@
 		script="return .AsUnit.damage;"
 		help="/contents/stats/rangedattack"
 		rollover="Ranged damage"/>
+		
+	<properties inventory_size="6"/>
 
 </class>
