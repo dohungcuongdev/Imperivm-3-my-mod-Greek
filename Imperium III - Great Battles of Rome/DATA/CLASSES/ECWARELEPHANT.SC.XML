@@ -12,7 +12,7 @@
 	
 	<properties HeroSkills="Survival, Recovery, Vigor, Concealment, Team attack, Team defense, Epic attack, Epic armor, Epic endurance"/>
 	<properties max_army="10"/>
-	<properties inventory_size="9"/>
+	<properties inventory_size="10"/>
 	<properties interface="thumb,hero,items,holder"/>
 
 	<properties radius="40" selection_radius="40"/>

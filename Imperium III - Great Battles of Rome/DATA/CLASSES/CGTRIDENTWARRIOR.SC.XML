@@ -6,6 +6,7 @@
 	<properties speed="90"/>
 	<properties unit_specials="Triumph, Toughness, Sneak"/>
 	<properties max_army="0"/>
+	<properties inventory_size="7"/>
 	<properties HeroSkills="Epic attack, Epic armor, Epic endurance, Scout"/>
 
 	<properties icon="gameres/icons/baal.bmp"/>

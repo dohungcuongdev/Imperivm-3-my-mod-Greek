@@ -1038,10 +1038,10 @@
 	method="research"
 	costgold="0"
 	costfood="0"
-	costpop="50"
-	execdelay="10000"
+	costpop="5"
+	execdelay="8000"
 	param="ReqSet, Grain Trade, default, NameSet, Trade Peasant For Food, default"
-	description="Trade 50 population for 4000 food"
+	description="Trade 5 population for 400 food"
 	rollover="Trade Peasant For Food">
 	<src obj="CGTavern"/>
 </cmd>

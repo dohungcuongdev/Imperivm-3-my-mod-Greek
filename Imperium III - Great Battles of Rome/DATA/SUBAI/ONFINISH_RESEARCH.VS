@@ -266,7 +266,7 @@ while(dest != "")
 			EnvWriteString(.settlement, name, "");//reenable research
 		} 
 		else if (name == "Trade Peasant For Food") {// Trade Peasant For Food implementation
-             int tradeforFood = 2000;
+             int tradeforFood = 400;
 			.settlement.SetFood(.settlement.food + tradeforFood);
 			//.settlement.FoodConverted(tradeforFood);
 			EnvWriteString(.settlement, name, "");//reenable research

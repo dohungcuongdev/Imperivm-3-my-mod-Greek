@@ -489,7 +489,7 @@
 	param = "CelticGaulHero"
 	method="hirehero"
 	help="/contents/units/GHero"
-	rollover="Hire classic hero with 8 skills, pick up maximum 6 items, can lead 60 units">
+	rollover="Hire classic hero with 8 skills, pick up maximum 7 items, can lead 60 units">
 	<src obj="CGArena"/>
 </cmd>
 
@@ -914,7 +914,7 @@
 	costpop = "0"
 	execdelay = "30000"
 	rollover="Hire special War Elephant Hero"
-	description="Hires a special War Elephant Hero with 9 skills, 3 unit specials, pick up maximum 9 items, can lead up to 10 units"
+	description="Hires a special War Elephant Hero with 9 skills, 3 unit specials, pick up maximum 10 items, can lead up to 10 units"
 	method="trainex"
 	param="1, 1, ECWarElephant, ECWarElephant, Elephant Training">
 	<src obj="ECArena"/>
@@ -1089,7 +1089,7 @@
 	param="ReqSet, Fights, default, NamePlr, Noble Offence, default">
 	<src obj="BMorrigansMonument"/>
 	<src obj="BKMorrigansMonument"/>
-	<!-- <src obj="CGArena"/> -->
+	<src obj="CGArena"/>
 </cmd>
 
 <cmd name="Noble Defence" priority="7"
@@ -1107,7 +1107,7 @@
 	param="ReqSet, Fights, default, NamePlr, Noble Defence, default">
 	<src obj="BMorrigansMonument"/>
 	<src obj="BKMorrigansMonument"/>
-	<!-- <src obj="CGArena"/> -->
+	<src obj="CGArena"/>
 </cmd>
 
 <cmd name="Standartization I" priority="2"
@@ -2042,7 +2042,7 @@
 	costpop = "0"
 	execdelay = "20000"
 	rollover="Hire Trident Assassin"
-	description="Hire Special Hero Trident Assassin with 4 skills, 3 unit specials and works alone"
+	description="Hire Special Hero Trident Assassin with 4 skills, 3 unit specials, pick up maximum 7 items and works alone"
 	method="trainex"
 	param="1, 1, CGTridentWarrior, CGTridentWarrior, Mystery Trident">
 	<src obj="CGArena"/>

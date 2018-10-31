@@ -13,7 +13,7 @@
 	<properties icon="gameres/icons/BKHORSEMAN.bmp"/>
 	<properties display_name="King Horseman" display_name_plural="King Horsemen"/>
 	<properties help="contents/units/GHorseman"/>
-	<properties edittree_pos="Units/New Units/King Horseman (Britain Kingdom)"/>
+	<properties edittree_pos="Units/Britain Kingdom/King Horseman"/>
 	<sounds command="data/sound entities/VoiceGHorseman.xml"/>
 	<sounds attack="UnitSwordFight"/>
 </class>
