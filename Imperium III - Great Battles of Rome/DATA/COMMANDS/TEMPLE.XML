@@ -46,6 +46,25 @@
 	<src obj="URTemple"/>
 </cmd>
 
+<cmd name="trainIEnchantress" priority="1"
+	button="actions/train ienchantress.bmp"
+	queueicon="gameres/icons/IEnchantress.bmp"
+	groupverifier="data/subai/verify_cmdcost_building.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="e"
+	help="/contents/units/IEnchantress"
+	costgold = "200"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "20000"
+	rollover="Call Enchantress"
+	method="train"
+	param="IEnchantress"
+	sclass="IEnchantress">
+	<src obj="URTemple2"/>
+</cmd>
+
 <cmd name="trainURPriest" priority="1"
 	button="actions/URP2.bmp"
 	queueicon="gameres/icons/URP2.bmp"
@@ -145,7 +164,7 @@
 	costfood = "0"
 	execdelay = "20000"
 	rollover="Cover of Mercy"
-	description="Allows united priests to create a cloud to protect allies from damage"
+	description="Allows united priests and enchantresses to create a cloud to protect allies from damage (united priests: -90% hp, enchantresses: sacrifice themselves)"
 	method="research"
 	param="ReqSet, Altar of Jupiter, default, NamePlr, Cover of Mercy, default">
 	<src obj="URTemple2"/>
@@ -210,4 +229,36 @@
 	<src obj="URTemple2"/>
 </cmd>
 
+<cmd name="United Ancestral Knowledge" priority="3"
+	queueicon="gameres/icons/upgrades/ancestral knowledge.bmp"
+	button="research/Ancestral Knowledge.bmp"
+	key="k"
+	help="/contents/units/Ghost"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Ancestral Knowledge"
+	description="Increases the level to which enchantresses could teach friendly warriors from 4 to 8"
+	method="research"
+	param="ReqSet, Altar of Jupiter, default, NamePlr, Ancestral Knowledge, default">
+	<src obj="URTemple2"/>
+</cmd>
+
+<cmd name="United Mass Heal" priority="5"
+	queueicon="gameres/icons/upgrades/Mass Healing.bmp"
+	button="research/Mass Healing.bmp"
+	key="h"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1500"
+	costfood = "0"
+	execdelay = "20000"
+	rollover="Mass Heal"
+	description="Allows enchantresses to sacrifice themselves to heal nearby allies"
+	method="research"
+	param="ReqSet, Altar of Jupiter, default, NamePlr, Mass Heal, default">
+	<src obj="URTemple2"/>
+</cmd>
 </commands>
