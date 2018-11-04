@@ -41,6 +41,7 @@
 	<src obj="RRTownhall"/>
 	<src obj="URTownhall"/>
 	<src obj="URTownhall2"/>
+	<src obj="URTownhall3"/>
 </cmd>
 
 <cmd name="autotrain_stop_gr" priority="8"
@@ -60,6 +61,7 @@
 	<src obj="RRTownhall"/>
 	<src obj="URTownhall"/>
 	<src obj="URTownhall2"/>
+	<src obj="URTownhall3"/>
 </cmd>
 
 <cmd name="autotrain_start_cbet" priority="8"
@@ -145,6 +147,7 @@
 	<src obj="AHTownhall"/>
 	<src obj="METownhall"/>
 	<src obj="URTownhall2"/>
+	<src obj="URTownhall3"/>
 </cmd>
 
 <cmd name="healing" priority="10"
@@ -169,6 +172,7 @@
 	<src obj="AHTownhall"/>
 	<src obj="METownhall"/>
 	<src obj="URTownhall2"/>
+	<src obj="URTownhall3"/>
 </cmd>
 
 <!-- AI only -->
@@ -225,5 +229,6 @@
 	researchcommand="yes"
 >
 	<src obj="URTownhall2"/>
+	<src obj="URTownhall3"/>
 </cmd>
 </commands>

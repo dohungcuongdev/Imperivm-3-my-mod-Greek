@@ -1,0 +1,24 @@
+<class id="URTownhall3" cpp_class="CVXTownHall" parent="BaseTownhall" 
+	entity="Buildings/MTownhall/MTownhall.ent.xml"
+	entity_autumn="Buildings/MTownhall/MTownhall.ent.xml"
+	entity_spring="Buildings/MTownhall/MTownhall.ent.xml"
+	entity_winter="Buildings/RTownhall/RTownhall_w.ent.xml"
+>
+
+	<properties race="RepublicanRome"/>
+	<properties foodperpop="100"/>
+	<properties display_name="Imperial Roman Townhall"/>
+	<properties icon="gameres/icons/MTownhall.bmp"/>
+	<properties radius="170" selection_radius="175"/>
+	<properties edittree_pos="Structures/Stronghold (United Roman)/Set 3/Townhall"/>
+	<properties help="/contents/buildings/RTownhall"/>
+	
+	<method sig="military_training_2"   vs="data/subai/townhall_military_training_2.vs"/>
+
+	<behavior script="data/subai/townhall_buildingsbehavior_r.vs"/>
+	
+	<properties
+		produces_gold="1"
+		produces_food="1"
+	/>
+</class>

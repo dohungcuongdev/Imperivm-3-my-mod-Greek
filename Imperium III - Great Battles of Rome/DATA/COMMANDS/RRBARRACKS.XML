@@ -116,6 +116,7 @@
 	sclass="RTribune">
 	<src obj="RRBarracks"/>
 	<src obj="URBarracks2"/>
+	<src obj="URBarracks3"/>
 </cmd>
 <cmd name="Equip Chariot" priority="10"
 	button="actions/hire RChariot.bmp"

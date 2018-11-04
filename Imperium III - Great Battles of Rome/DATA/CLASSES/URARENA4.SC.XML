@@ -1,0 +1,11 @@
+<class id="URArena4" cpp_class="CVXBuilding" parent="BaseArena"
+entity="Buildings/MArena/MArena.ent.xml">
+
+	<properties race="RepublicanRome"/>
+	<properties icon="gameres/icons/MArena.bmp"/>
+	<properties display_name="Arena"/>
+	<properties radius="360" selection_radius="365"/>
+	<properties edittree_pos="Structures/Stronghold (United Roman)/Set 3/Arena"/>
+	<properties help="/contents/buildings/MArena"/>
+
+</class>

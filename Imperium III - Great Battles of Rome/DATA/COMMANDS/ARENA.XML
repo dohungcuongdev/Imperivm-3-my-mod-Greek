@@ -81,6 +81,7 @@
 	param="NameSet, Gladiator Shows, default">
 	<src obj="RArena"/>
 	<src obj="IRArena"/>
+	<src obj="URArena4"/>
 </cmd>
 
 <cmd name="RGladiator Shows" priority="2"
@@ -220,6 +221,46 @@
 	<src obj="RRArena"/>
 </cmd>
 
+<cmd name="Hire Liberati" priority="4"
+	queueicon="gameres/icons/upgrades/Calling Liberati.bmp"
+	button="upgrades/Calling Liberati.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="l"
+	help="/contents/units/RLiberatus"
+	costgold = "2000"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "20000"
+	rollover="Hire Liberati"
+	description="Hires a group of 10 Liberati"
+	method="trainex"
+	param="10, 20, RLiberatus, Liberati, Gladiator Shows">
+	<src obj="RArena"/>
+	<src obj="IRArena"/>
+	<src obj="URArena4"/>
+</cmd>
+
+<cmd name="Liberati guild" priority="4"
+	button="research/Super champions.bmp"
+	key="g"
+	queueicon="gameres/icons/upgrades/Super champions.bmp"
+	costgold = "1600"
+	costfood = "0"
+	execdelay = "20000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Liberati guild"
+	description="All new Liberati are one level better than the best Liberatus you've had"
+	method="research"
+	researchcommand="yes"
+	param="ReqSet, Gladiator Shows, default, NameSet, Liberati guild, default, SetsSet, levels/RLiberatus, 3">
+	<src obj="RArena"/>
+	<src obj="IRArena"/>
+	<src obj="URArena4"/>
+</cmd>
+
 <cmd name="Veteran Offence" priority="4"
 	button="research/veteran offence.bmp"
 	key="o"
@@ -238,6 +279,7 @@
 	<src obj="URArena"/>
 	<src obj="URArena2"/>
 	<src obj="URArena3"/>
+	<src obj="URArena4"/>
 </cmd>
 
 <cmd name="Veteran Defence" priority="5"
@@ -258,6 +300,7 @@
 	<src obj="URArena"/>
 	<src obj="URArena2"/>
 	<src obj="URArena3"/>
+	<src obj="URArena4"/>
 </cmd>
 
 <cmd name="Veteran Health" priority="6"
@@ -278,6 +321,7 @@
 	<src obj="URArena"/>
 	<src obj="URArena2"/>
 	<src obj="URArena3"/>
+	<src obj="URArena4"/>
 </cmd>
 
 <cmd name="Gaul Training 3" priority="3"
@@ -419,6 +463,23 @@
 	>
 	<src obj="CArena"/>
 	<src obj="ECArena"/>
+</cmd>
+
+<cmd name="hireheroUR" priority="1"
+	button="actions/hire heroR.bmp"
+	queueicon="gameres/icons/hire heroR.bmp"
+	groupverifier="data/subai/verify_cmdcost_building.vs"
+	traincommand="yes"
+	key="h"
+	costgold = "1200"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "20000"
+	param = "UnitedRomanHero"
+	method="hirehero"
+	help="/contents/units/RHero"
+	rollover="Hire classic hero with 4 unit specials, 7 skills, can lead 40 units to 60 units">
+	<src obj="URArena4"/>
 </cmd>
 
 <cmd name="hireheroR" priority="1"
@@ -821,27 +882,6 @@
 	<src obj="CGArena"/>
 </cmd>
 
-<cmd name="Hire Liberati" priority="4"
-	queueicon="gameres/icons/upgrades/Calling Liberati.bmp"
-	button="upgrades/Calling Liberati.bmp"
-	transpicon="1"
-	groupverifier="data/subai/verify_trainex.vs"
-	onaddremovescript="data/subai/trainex_onaddremove.vs"
-	traincommand="yes"
-	key="l"
-	help="/contents/units/RLiberatus"
-	costgold = "2000"
-	costfood = "0"
-	costpop = "0"
-	execdelay = "20000"
-	rollover="Hire Liberati"
-	description="Hires a group of 10 Liberati"
-	method="trainex"
-	param="10, 20, RLiberatus, Liberati, Gladiator Shows">
-	<src obj="RArena"/>
-	<src obj="IRArena"/>
-</cmd>
-
 <cmd name="Mountain Clan" priority="4"
 	button="upgrades/mountain clan.bmp"
 	key="c"
@@ -935,23 +975,6 @@
 	method="research"
 	param="ReqSet, People's Assembly, default, NamePlr, Spoils of war, default">
 	<src obj="CArena"/>
-</cmd>
-
-<cmd name="Liberati guild" priority="5"
-	button="research/Super champions.bmp"
-	key="g"
-	queueicon="gameres/icons/upgrades/Super champions.bmp"
-	costgold = "1600"
-	costfood = "0"
-	execdelay = "20000"
-	groupverifier="data/subai/verify_research.vs"
-	rollover="Liberati guild"
-	description="All new Liberati are one level better than the best Liberatus you've had"
-	method="research"
-	researchcommand="yes"
-	param="ReqSet, Gladiator Shows, default, NameSet, Liberati guild, default, SetsSet, levels/RLiberatus, 3">
-	<src obj="RArena"/>
-	<src obj="IRArena"/>
 </cmd>
 
 <cmd name="Military Academy" priority="6"
@@ -1976,6 +1999,7 @@
 	param="ReqSet, Gladiator Shows, default, NamePlr, Statue of Amon-Ra, default">
 	<src obj="URArena2"/>
 	<src obj="URArena3"/>
+	<src obj="URArena4"/>
 </cmd>
 
 <cmd name="United Training III" priority="3"
@@ -1992,6 +2016,7 @@
 	researchcommand="yes"
 	param="ReqSet, Gladiator Shows, default, SetsPlr, maxtrainlevel, 12, NamePlr, United Training III, default">
 	<src obj="URArena"/>
+	<src obj="URArena4"/>
 </cmd>
 
 <cmd name="United Ferocity" priority="10"

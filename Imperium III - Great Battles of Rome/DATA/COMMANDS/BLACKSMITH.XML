@@ -35,6 +35,7 @@
 	<src obj="URBlacksmith"/>
 	<src obj="UnionBlacksmith"/>
 	<src obj="URBlacksmith2"/>
+	<src obj="URBlacksmith3"/>
 </cmd>
 
 <cmd name="Strenghten Stronghold Defences I" priority="10"
@@ -75,6 +76,7 @@
 	<src obj="URBlacksmith"/>
 	<src obj="UnionBlacksmith"/>
 	<src obj="URBlacksmith2"/>
+	<src obj="URBlacksmith3"/>
 </cmd>
 
 <cmd name="Strenghten Stronghold Defences II" priority="10"
@@ -130,6 +132,7 @@
 	<src obj="AHBlacksmith"/>
 	<src obj="UnionBlacksmith"/>
 	<src obj="URBlacksmith2"/>
+	<src obj="URBlacksmith3"/>
 </cmd>
 
 <cmd name="Strenghten Defences Upgrade III" priority="10"
@@ -154,6 +157,7 @@
 	<src obj="AHBlacksmith"/>
 	<src obj="UnionBlacksmith"/>
 	<src obj="URBlacksmith2"/>
+	<src obj="URBlacksmith3"/>
 </cmd>
 <!-- ROMAN BLACKSMITH COMMANDS -->
 
@@ -175,6 +179,7 @@
 	<src obj="IRBlacksmith"/>
 	<src obj="URBlacksmith"/>
 	<src obj="URBlacksmith2"/>
+	<src obj="URBlacksmith3"/>
 </cmd>
 
 <cmd name="Roman Velit" priority="2"
@@ -194,6 +199,7 @@
 	<src obj="IRBlacksmith"/>
 	<src obj="URBlacksmith"/>
 	<src obj="URBlacksmith2"/>
+	<src obj="URBlacksmith3"/>
 </cmd>
 
 <cmd name="Roman Principle" priority="3"
@@ -214,6 +220,7 @@
 	<src obj="IRBlacksmith"/>
 	<src obj="URBlacksmith"/>
 	<src obj="URBlacksmith2"/>
+	<src obj="URBlacksmith3"/>
 </cmd>
 <cmd name="Roman Scout" priority="4"
 	queueicon="gameres/icons/upgrades/Horseshoes.bmp"
@@ -233,7 +240,9 @@
 	<src obj="IRBlacksmith"/>
 	<src obj="URBlacksmith"/>
 	<src obj="URBlacksmith2"/>
+	<src obj="URBlacksmith3"/>
 </cmd>
+
 <cmd name="Roman Praetorian" priority="5"
 	queueicon="gameres/icons/upgrades/spike armor.bmp"
 	button="upgrades/spike armor.bmp"
@@ -251,6 +260,7 @@
 	<src obj="IRBlacksmith"/>
 	<src obj="URBlacksmith2"/>
 </cmd>
+
 <cmd name="Roman Full Armor" priority="4"
 	queueicon="gameres/icons/upgrades/full armor.bmp"
 	key="f"
@@ -267,6 +277,7 @@
 	<src obj="RBlacksmith"/>
 	<src obj="RRBlacksmith"/>
 	<src obj="URBlacksmith2"/>
+	<src obj="URBlacksmith3"/>
 </cmd>
 
 <cmd name="Roman Chariot Wheels" priority="5"
@@ -1245,6 +1256,7 @@
 	param="NameSet,Heavy Shields and Spears, default, NameSet, IRHipatista">
 	<src obj="RBlacksmith"/>
 	<src obj="IRBlacksmith"/>
+	<src obj="URBlacksmith3"/>
 </cmd>
 
 <cmd name="Wall of Shields" priority="6"

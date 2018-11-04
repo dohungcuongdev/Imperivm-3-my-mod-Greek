@@ -20,6 +20,7 @@
 	<src obj="RRTemple"/>
 	<src obj="URTemple"/>
 	<src obj="URTemple2"/>
+	<src obj="URTemple3"/>
 </cmd>
 
 <!-- ROMAN TEMPLE COMMANDS -->
@@ -62,7 +63,7 @@
 	method="train"
 	param="IEnchantress"
 	sclass="IEnchantress">
-	<src obj="URTemple2"/>
+	<src obj="URTemple3"/>
 </cmd>
 
 <cmd name="trainURPriest" priority="1"
@@ -82,6 +83,7 @@
 	param="URPriest"
 	sclass="URPriest">
 	<src obj="URTemple2"/>
+	<src obj="URTemple3"/>
 </cmd>
 
 <cmd name="United Altar of Jupiter" priority="2"
@@ -98,6 +100,7 @@
 	method="research"
 	param="NameSet, Altar of Jupiter, default, SetsSet, levels/URPriest, 4">
 	<src obj="URTemple2"/>
+	<src obj="URTemple3"/>
 </cmd>
 
 <cmd name="Altar of Jupiter" priority="2"
@@ -152,6 +155,7 @@
 	method="research"
 	param="ReqSet, Altar of Jupiter, default, NamePlr, Cloud of Plague, default">
 	<src obj="URTemple2"/>
+	<src obj="URTemple3"/>
 </cmd>
 
 <cmd name="United Cover of Mercy" priority="5"
@@ -164,10 +168,26 @@
 	costfood = "0"
 	execdelay = "20000"
 	rollover="Cover of Mercy"
-	description="Allows united priests and enchantresses to create a cloud to protect allies from damage (united priests: -90% hp, enchantresses: sacrifice themselves)"
+	description="Allows united priests to create a cloud to protect allies from damage"
 	method="research"
 	param="ReqSet, Altar of Jupiter, default, NamePlr, Cover of Mercy, default">
 	<src obj="URTemple2"/>
+</cmd>
+
+<cmd name="United Cover of Mercy 2" priority="5"
+	queueicon="gameres/icons/upgrades/cover of mercy.bmp"
+	button="research/cover of mercy.bmp"
+	key="m"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "20000"
+	rollover="Cover of Mercy"
+	description="Allows united priests and enchantresses to create a cloud to protect allies from damage (united priests: -90% hp, enchantresses: sacrifice themselves)"
+	method="research"
+	param="ReqSet, Altar of Jupiter, default, NamePlr, Cover of Mercy, default">
+	<src obj="URTemple3"/>
 </cmd>
 
 
@@ -189,6 +209,7 @@
 	<src obj="RRTemple"/>
 	<src obj="URTemple"/>
 	<src obj="URTemple2"/>
+	<src obj="URTemple3"/>
 </cmd>
 
 <cmd name="God's Gift" priority="7"
@@ -208,6 +229,7 @@
 	<src obj="RRTemple"/>
 	<src obj="URTemple"/>
 	<src obj="URTemple2"/>
+	<src obj="URTemple3"/>
 </cmd>
 
 <cmd name="God's Strength" priority="7"
@@ -227,6 +249,7 @@
 	<src obj="IRTemple"/>
 	<src obj="URTemple"/>
 	<src obj="URTemple2"/>
+	<src obj="URTemple3"/>
 </cmd>
 
 <cmd name="United Ancestral Knowledge" priority="3"
@@ -243,7 +266,7 @@
 	description="Increases the level to which enchantresses could teach friendly warriors from 4 to 8"
 	method="research"
 	param="ReqSet, Altar of Jupiter, default, NamePlr, Ancestral Knowledge, default">
-	<src obj="URTemple2"/>
+	<src obj="URTemple3"/>
 </cmd>
 
 <cmd name="United Mass Heal" priority="5"
@@ -259,6 +282,6 @@
 	description="Allows enchantresses to sacrifice themselves to heal nearby allies"
 	method="research"
 	param="ReqSet, Altar of Jupiter, default, NamePlr, Mass Heal, default">
-	<src obj="URTemple2"/>
+	<src obj="URTemple3"/>
 </cmd>
 </commands>

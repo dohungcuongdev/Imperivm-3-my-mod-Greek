@@ -2,6 +2,21 @@
 
 <!-- TAVERN COMMANDS -->
 
+<cmd name="URAddPop" priority="8"
+	queueicon="gameres/icons/upgrades/Add population.bmp"
+	groupverifier="data/subai/verify_research.vs"
+	button="actions/Add population.bmp"
+	cursor=""
+	key="b"
+	traincommand="yes"
+	costfood="1600"
+	execdelay="10000"
+	method="food_for_slaves"
+	description="Increases the stronghold population by 30"
+	rollover="Increase population">
+	<src obj="URTavern3"/>
+</cmd>
+
 <cmd name="GAddPop" priority="2"
 	queueicon="gameres/icons/upgrades/Add population.bmp"
 	groupverifier="data/subai/verify_cmdcost_building.vs"
@@ -154,6 +169,7 @@
 	<src obj="RRTavern2"/>
 	<src obj="URTavern"/>
 	<src obj="URTavern2"/>
+	<src obj="URTavern3"/>
 </cmd>
 
 <cmd name="Free Trade" priority="8"
@@ -346,6 +362,7 @@
 	param="Free Wine">
 	<src obj="URTavern"/>
 	<src obj="URTavern2"/>
+	<src obj="URTavern3"/>
 </cmd>
 
 <cmd name="Sell food" priority="14"
@@ -380,6 +397,7 @@
 	<src obj="RRTavern2"/>
 	<src obj="URTavern"/>
 	<src obj="URTavern2"/>
+	<src obj="URTavern3"/>
 </cmd>
 
 <cmd name="Expedition" priority="12"
@@ -418,6 +436,7 @@
 	<src obj="RRTavern2"/>
 	<src obj="URTavern"/>
 	<src obj="URTavern2"/>
+	<src obj="URTavern3"/>
 </cmd>
 
 <cmd name="Roman Food Tax" priority="16"
@@ -542,6 +561,7 @@
 	<src obj="RRTavern2"/>
 	<src obj="URTavern"/>
 	<src obj="URTavern2"/>
+	<src obj="URTavern3"/>
 </cmd>
 
 <cmd name="MTribute" priority="22"
@@ -934,6 +954,7 @@
 	rollover="Religious Feast">
 	<src obj="URTavern"/>
 	<src obj="URTavern2"/>
+	<src obj="URTavern3"/>
 </cmd>
 
 <cmd name="Nordic trade routes" priority="20"

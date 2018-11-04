@@ -32,6 +32,7 @@
 	<src obj="URBarracks"/>
 	<src obj="UnionBarracks"/>
 	<src obj="URBarracks2"/>
+	<src obj="URBarracks3"/>
 </cmd>
 
 <cmd name="Barrack Level 1" priority="2"
@@ -67,6 +68,7 @@
 	<src obj="URBarracks"/>
 	<src obj="UnionBarracks"/>
 	<src obj="URBarracks2"/>
+	<src obj="URBarracks3"/>
 </cmd>
 
 <cmd name="Barrack Level 2" priority="2"
@@ -102,6 +104,7 @@
 	<src obj="URBarracks"/>
 	<src obj="UnionBarracks"/>
 	<src obj="URBarracks2"/>
+	<src obj="URBarracks3"/>
 </cmd>
 
 <cmd name="Barrack Level 3" priority="2"
@@ -134,6 +137,7 @@
 	<src obj="URBarracks"/>
 	<src obj="UnionBarracks"/>
 	<src obj="URBarracks2"/>
+	<src obj="URBarracks3"/>
 </cmd>
 
 </commands>
