@@ -1,7 +1,7 @@
 <class id="ECWarElephant" cpp_class="CVXHero" parent="Captain" entity="Units/CWarElephant/CWarElephant.ent.xml">
 
 	<properties race="Carthage"/>
-	<properties maxhealth="5000"/>
+	<properties maxhealth="3500"/>
 	<properties range="15" min_range="0"/>
 	<properties damage="75" armor_slash="20" armor_pierce="20"/>
 	<properties speed="60"/>
@@ -15,7 +15,6 @@
 	<properties inventory_size="10"/>
 	<properties interface="thumb,hero,items,holder"/>
 
-	<properties radius="40" selection_radius="40"/>
 	<properties icon="gameres/icons/ECELEPHANT.bmp"/>
 	<properties display_name="War Elephant Hero" display_name_plural="War Elephant Heroes"/>
 	<properties help="contents/units/CWarElephant"/>
