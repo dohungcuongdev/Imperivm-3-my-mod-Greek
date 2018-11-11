@@ -1,12 +1,12 @@
 <class id="AncientGreeceHero" cpp_class="CVXHero" parent="Hero" entity="Units/Caesar/Caesar.ent.xml">
 
 	<properties maxhealth="3000"/>
-	<properties damage="50" armor_slash="12" armor_pierce="12"/>
+	<properties damage="50" armor_slash="15" armor_pierce="15"/>
 	<properties race="ImperialRome"/>
 	<properties help="/contents/units/HHero"/>	
 	<properties icon="gameres/icons/RLIDER.bmp"/>
-	<properties HeroSkills="Battle cry, Defensive cry, Team attack, Team defense, Quick March, Administration, Recovery, Epic endurance, Epic attack, Epic armor"/>
-	<properties display_name="Rlider" display_name_plural="Rlider"/>
+	<properties HeroSkills="Battle cry, Defensive cry, Team attack, Team defense, Quick March, Administration, Leadership, Epic endurance, Epic attack, Epic armor"/>
+	<properties display_name="Ancient Greece Hero" display_name_plural="Ancient Greece Heroes"/>
 	
 	<properties max_army="180"/>
 	<properties heroarmyexpgain="60"/>
