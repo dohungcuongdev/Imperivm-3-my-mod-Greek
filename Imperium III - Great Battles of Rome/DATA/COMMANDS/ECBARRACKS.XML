@@ -19,6 +19,7 @@
 	param="CLibyanFootman,Extended Forge Spears"
 	sclass="CLibyanFootman">
 	<src obj="ECBarracks"/>
+	<src obj="ECBarracks2"/>
 </cmd>
 
 <cmd name="trainECJavelinThrower" priority="4"
@@ -38,6 +39,7 @@
 	param="CJavelinThrower,Extended Forge Javelins"
 	sclass="CJavelinThrower">
 	<src obj="ECBarracks"/>
+	<src obj="ECBarracks2"/>
 </cmd>
 
 <cmd name="trainECBerberAssassin" priority="5"
@@ -57,6 +59,7 @@
 	param="CBerberAssassin,Extended Forge Swords"
 	sclass="CBerberAssassin">
 	<src obj="ECBarracks"/>
+	<src obj="ECBarracks2"/>
 </cmd>
 
 <cmd name="trainECMaceman" priority="6"
@@ -117,6 +120,46 @@
 	<src obj="ECBarracks"/>
 </cmd>
 
+<cmd name="trainECAnubisWarrior" priority="7"
+	button="actions/train EAnubisWarrior.bmp"
+	queueicon="gameres/icons/EAnubisWarrior.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="n"
+	help="/contents/units/EAnubisWarrior"
+	costgold = "260"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Hire Anubis Warrior"
+	method="trainex"
+	param="1, 15, EAnubisWarrior, EAnubisWarrior, Calling Anubis and Horus, blacksmith"
+	sclass="EAnubisWarrior">
+	<src obj="ECBarracks2"/>
+</cmd>
+
+<cmd name="trainECHorusWarrior" priority="7"
+	button="actions/train EHorusWarrior.bmp"
+	queueicon="gameres/icons/EHorusWarrior.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="h"
+	help="/contents/units/EHorusWarrior"
+	costgold = "260"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Hire Horus Warrior"
+	method="trainex"
+	param="1, 15, EHorusWarrior, EHorusWarrior, Calling Anubis and Horus, blacksmith"
+	sclass="EHorusWarrior">
+	<src obj="ECBarracks2"/>
+</cmd>
+
 <cmd name="trainLegionCommander" priority="7"
 	button="actions/train ECNoble.bmp"
 	queueicon="gameres/icons/ECNoble.bmp"
@@ -124,7 +167,7 @@
 	onaddremovescript="data/subai/trainex_onaddremove.vs"
 	transpicon="1"
 	traincommand="yes"
-	key="n"
+	key="c"
 	help="/contents/units/CNoble"
 	costgold = "500"
 	costfood = "0"
@@ -135,6 +178,7 @@
 	param="1, 15, LegionCommander, LegionCommander, Calling Legion Commander, blacksmith"
 	sclass="LegionCommander">
 	<src obj="ECBarracks"/>
+	<src obj="ECBarracks2"/>
 </cmd>
 
 <cmd name="trainECMercenario" priority="8"
@@ -155,6 +199,7 @@
 	param="1, 6, CMERCENARIO, CMERCENARIO, Master Axes, blacksmith"
 	sclass="CMERCENARIO">
 	<src obj="ECBarracks"/>
+	<src obj="ECBarracks2"/>
 </cmd>
 
 </commands>

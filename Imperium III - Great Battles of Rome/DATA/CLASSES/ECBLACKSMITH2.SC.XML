@@ -1,10 +1,10 @@
-<class id="ECBlacksmith" cpp_class="CVXBuilding" parent="BaseBlacksmith" entity="Buildings/CBlacksmith/CBlacksmith.ent.xml">
+<class id="ECBlacksmith2" cpp_class="CVXBuilding" parent="BaseBlacksmith" entity="Buildings/CBlacksmith/CBlacksmith.ent.xml">
 
 	<properties race="Carthage"/>
 	<properties display_name="Blacksmith"/>
 	<properties icon="gameres/icons/CBlacksmith.bmp"/>
 	<properties radius="255" selection_radius="260"/>
-	<properties edittree_pos="Structures/Stronghold (Extended Carthage)/Set 1/Blacksmith"/>
+	<properties edittree_pos="Structures/Stronghold (Extended Carthage)/Set 2/Blacksmith"/>
 	<properties help="/contents/buildings/CBlacksmith"/>
 
 	

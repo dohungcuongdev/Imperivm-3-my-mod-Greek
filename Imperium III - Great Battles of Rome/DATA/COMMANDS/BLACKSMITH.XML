@@ -32,6 +32,7 @@
 	<src obj="BKBlacksmith"/>
 	<src obj="GTBlacksmith"/>
 	<src obj="ECBlacksmith"/>
+	<src obj="ECBlacksmith2"/>
 	<src obj="URBlacksmith"/>
 	<src obj="UnionBlacksmith"/>
 	<src obj="URBlacksmith2"/>
@@ -73,6 +74,7 @@
 	<src obj="BKBlacksmith"/>
 	<src obj="GTBlacksmith"/>
 	<src obj="ECBlacksmith"/>
+	<src obj="ECBlacksmith2"/>
 	<src obj="URBlacksmith"/>
 	<src obj="UnionBlacksmith"/>
 	<src obj="URBlacksmith2"/>
@@ -126,6 +128,7 @@
 	<src obj="BKBlacksmith"/>
 	<src obj="GTBlacksmith"/>
 	<src obj="ECBlacksmith"/>
+	<src obj="ECBlacksmith2"/>
 	<src obj="URBlacksmith"/>
 	<src obj="CGBlacksmith"/>
 	<src obj="MEBlacksmith"/>
@@ -151,6 +154,7 @@
 	<src obj="BKBlacksmith"/>
 	<src obj="GTBlacksmith"/>
 	<src obj="ECBlacksmith"/>
+	<src obj="ECBlacksmith2"/>
 	<src obj="URBlacksmith"/>
 	<src obj="CGBlacksmith"/>
 	<src obj="MEBlacksmith"/>
@@ -1522,6 +1526,7 @@
 	method="research"
 	param="NameSet,Extended Forge Spears,default,NameSet, CLibyanFootman,">
 	<src obj="ECBlacksmith"/>
+	<src obj="ECBlacksmith2"/>
 </cmd>
 
 <cmd name="Extended Forge Javelins" priority="4"
@@ -1538,6 +1543,7 @@
 	method="research"
 	param="NameSet,Extended Forge Javelins,default,NameSet, CJavelinThrower,">
 	<src obj="ECBlacksmith"/>
+	<src obj="ECBlacksmith2"/>
 </cmd>
 
 <cmd name="Extended Forge Swords" priority="5"
@@ -1554,6 +1560,7 @@
 	method="research"
 	param="NameSet,Extended Forge Swords,default,NameSet, CBerberAssassin,">
 	<src obj="ECBlacksmith"/>
+	<src obj="ECBlacksmith2"/>
 </cmd>
 
 <cmd name="Extended Forge Maces" priority="6"
@@ -1604,6 +1611,22 @@
 	<src obj="ECBlacksmith"/>
 </cmd>
 
+<cmd name="Calling Anubis and Horus" priority="8"
+	queueicon="gameres/icons/upgrades/POWER OF SETH QUEUE.BMP"
+	button="upgrades/POWER OF SETH.bmp"
+	key="c"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "20000"
+	rollover="Calling Anubis and Horus"
+	description="Allows Anubis and Horus to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Calling Anubis and Horus, default, NameSet, EAnubisWarrior, NameSet, EHorusWarrior">
+	<src obj="ECBlacksmith2"/>
+</cmd>
+
 <cmd name="Calling Legion Commander" priority="9"
 	button="Upgrades/Sacred Legion.bmp"
 	queueicon="gameres/icons/upgrades/Sacred Legion.bmp"
@@ -1618,6 +1641,7 @@
 	method="research"
 	param="NameSet,Calling Legion Commander,default,NameSet, LegionCommander, ">
 	<src obj="ECBlacksmith"/>
+	<src obj="ECBlacksmith2"/>
 </cmd>
 
 <cmd name="Master Axes" priority="9"
@@ -1636,6 +1660,7 @@
 	<src obj="CBlacksmith"/>
 	<src obj="CCBlacksmith"/>
 	<src obj="ECBlacksmith"/>
+	<src obj="ECBlacksmith2"/>
 </cmd>
 
 <cmd name="Charms of Seth" priority="4"

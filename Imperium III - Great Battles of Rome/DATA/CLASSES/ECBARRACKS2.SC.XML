@@ -1,4 +1,4 @@
-<class id="ECBarracks" cpp_class="CVXBarrack" parent="BaseBarracks"
+<class id="ECBarracks2" cpp_class="CVXBarrack" parent="BaseBarracks"
 	entity="Buildings/CBarracks/CBarracks.ent.xml"
 >
 
@@ -6,7 +6,7 @@
 	<properties icon="gameres/icons/CBarracks.bmp"/>
 	<properties display_name="Barracks"/>
 	<properties radius="245" selection_radius="250"/>
-	<properties edittree_pos="Structures/Stronghold (Extended Carthage)/Set 1/Barracks"/>
+	<properties edittree_pos="Structures/Stronghold (Extended Carthage)/Set 2/Barracks"/>
 	<properties auto_repair="no"/>
 	<properties help="/contents/buildings/CBarracks"/>
 
