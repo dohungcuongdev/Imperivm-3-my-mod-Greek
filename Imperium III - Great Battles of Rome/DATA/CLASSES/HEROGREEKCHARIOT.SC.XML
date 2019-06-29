@@ -1,0 +1,25 @@
+<class id="TwinBrothersChariot" cpp_class="CVXHero" parent="Captain" entity="units/HChariot/HChariot.ent.xml">
+
+	<properties race="ImperialRome"/>
+	<properties maxhealth="1200"/>
+	<properties damage="50" armor_slash="15" armor_pierce="15"/>
+	<properties speed="120"/>
+	<properties unit_specials="Deflection, Bleeding attack, Active, Toughness"/>
+	
+	<properties HeroSkills="Team attack, Team defense, Quick March, Administration, Survival, Vigor, Recovery, Epic endurance, Epic attack, Epic armor"/>
+	
+	<properties healthbar_type="3"/>
+	
+	<properties radius="40" selection_radius="60"/>
+	
+	<properties max_food="35"/>
+	
+	<properties max_army="20"/>
+
+	<properties icon="gameres/icons/GLADIATOR SHOW.bmp"/>
+	<properties display_name="Twin Brothers Chariot" display_name_plural="Twin Brothers Chariots"/>
+	<properties help="contents/units/HChariot"/>
+	<properties edittree_pos="Units/United Roman/Twin Brothers Chariot"/>
+	<sounds command="data/sound entities/VoiceHChariot.xml"/>
+	
+</class>

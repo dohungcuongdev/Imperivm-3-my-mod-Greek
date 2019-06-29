@@ -265,12 +265,12 @@ while(dest != "")
 			.settlement.GoldConverted(SlaveryGold);
 			EnvWriteString(.settlement, name, "");//reenable research
 		} 
-		else if (name == "Trade Peasant For Food") {// Trade Peasant For Food implementation
+		/*else if (name == "Trade Peasant For Food") {// Trade Peasant For Food implementation
              int tradeforFood = 400;
 			.settlement.SetFood(.settlement.food + tradeforFood);
 			//.settlement.FoodConverted(tradeforFood);
 			EnvWriteString(.settlement, name, "");//reenable research
-		}
+		}*/
 		else if (name == "Housing") {//Housing implementation
 			.settlement.AddToMaxPopulation(20);
 		}

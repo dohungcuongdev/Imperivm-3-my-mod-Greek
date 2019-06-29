@@ -12,5 +12,6 @@ entity_winter="Buildings/GTavern/Tavern_w.ent.xml">
 	<properties help="/contents/buildings/GTavern"/>
 
 	<method sig="buyfoodforgold" vs="data/subai/tavern_buyfood.vs"/>
+	<method sig="tradepeasantforfood" vs="data/subai/cgtavern_trade_peasant.vs"/>
 </class>
 

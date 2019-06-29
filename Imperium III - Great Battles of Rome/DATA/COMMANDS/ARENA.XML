@@ -1483,9 +1483,28 @@
 	rollover="Call Valkyries"
 	description="Calls 5 Valkyries"
 	method="trainex"
-	param="5, 20, TValkyrie, TValkyrie,Fights">
+	param="5, 10, TValkyrie, TValkyrie,Fights">
 	<src obj="TSanctuaryOfVotan"/>
 	<src obj="TTSanctuaryOfVotan"/>
+</cmd>
+
+<cmd name="Call Valkyries" priority="3"
+	button="actions/hire TValkyrie.bmp"
+	key="v"
+	queueicon="gameres/icons/TValkyrie.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	help="/contents/units/RLiberatus"
+	costgold = "1000"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "15000"
+	rollover="Call Valkyries"
+	description="Calls 5 Valkyries"
+	method="trainex"
+	param="5, 20, TValkyrie, TValkyrie,Fights">
 	<src obj="GTSanctuaryOfVotan"/>
 </cmd>
 

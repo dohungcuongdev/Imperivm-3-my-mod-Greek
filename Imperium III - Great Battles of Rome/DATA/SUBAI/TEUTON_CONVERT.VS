@@ -8,6 +8,10 @@ Sleep(1000);
 
 if(.IsValid){
 	if(.IsAlive){
+		if (.IsHeirOf("TTeutonRider"))
+			tt = "TTeutonArcher";
+		else if (.IsHeirOf("TTeutonArcher"))
+			tt = "TTeutonRider";
 		if (.IsHeirOf("SBVikingLord")) 
 			tt = "SBBronzeSpearman";
 		if (.IsHeirOf("SBBronzeSpearman")) 

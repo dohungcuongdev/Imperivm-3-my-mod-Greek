@@ -1,0 +1,37 @@
+<class id="HeroChariot" cpp_class="CVXHero" parent="Captain" entity="units/RChariot/RChariot.ent.xml">
+
+	<properties race="RepublicanRome"/>
+	<properties maxhealth="1000"/>
+	<properties range="700"/>
+	<properties damage="50" armor_slash="12" armor_pierce="12"/>
+	<properties speed="120"/>
+	<properties unit_specials="Rage, Life steal, Charge"/>
+	
+	<properties HeroSkills="Team attack, Team defense, Quick March, Administration, Survival, Vigor, Recovery, Epic endurance, Epic attack, Epic armor"/>
+	
+	<properties healthbar_type="3"/>
+
+	<properties radius="40" selection_radius="60"/>
+	
+	<properties max_food="25"/>
+
+	<properties icon="gameres/icons/PLINIUS.bmp"/>
+	<properties display_name="Roman Hero Chariot" display_name_plural="Roman Hero Chariots"/>
+	<properties help="contents/units/RChariot"/>
+	<properties edittree_pos="Units/United Roman/Hero Chariot"/>
+	
+	<properties max_army="20"/>
+
+	<sounds command="data/sound entities/VoiceRChariot.xml"/>
+	
+	<properties projectile_class="Fire_Arrow"/>
+	<properties building_projectile_class="Fire_Arrow"/>
+	<sounds attack="UnitArrowFight"/>
+	
+	<value1
+	icon="gameres/infobar/common/piercing ico.bmp"
+	script="return .AsUnit.damage;"
+	help="/contents/stats/rangedattack"
+	rollover="Ranged damage"/>
+
+</class>
