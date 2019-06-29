@@ -6,7 +6,7 @@
 	<!--
 	<properties HeroSkills="Battle cry, Defensive cry, Concealment, Quick March, Team defense, Survival, Euphoria, Administration, Epic armor, Epic endurance"/>
 	-->
-	<properties HeroSkills="Charge, Defensive cry, Concealment, Quick March, Team defense, Discipline, Administration, Epic attack, Epic armor, Epic endurance"/>
+	<properties HeroSkills="Charge, Survival, Concealment, Quick March, Team defense, Discipline, Administration, Epic attack, Epic armor, Epic endurance"/>
 	<properties help="/contents/units/THero"/>
 
 	<sounds command="data/sound entities/VoiceTHero.xml"/>

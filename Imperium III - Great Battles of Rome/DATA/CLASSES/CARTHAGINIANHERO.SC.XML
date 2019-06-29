@@ -4,7 +4,7 @@
 	<properties damage="50" armor_slash="12" armor_pierce="12"/>
 	<properties race="Carthage"/>
 	<properties help="/contents/units/CHero"/>
-	<properties HeroSkills="Vigor, Frenzy, Healing, Egoism, Wisdom"/>
+	<properties HeroSkills="Recovery, Frenzy, Healing, Egoism, Wisdom"/>
 
 	<sounds command="data/sound entities/VoiceCHero.xml"/>
 

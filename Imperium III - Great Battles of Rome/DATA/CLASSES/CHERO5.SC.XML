@@ -4,7 +4,10 @@
 	<properties display_name="Haltibaal" display_name_plural="Heroes"/>
 	<properties icon="gameres/icons/CHERO4.bmp"/>
 	<properties edittree_pos="Units/Heroes/Haltibaal (Carthaginian)"/>
-	<properties HeroSkills="Rush, Healing, Team attack, Team defense, Administration"/>
+	<properties HeroSkills="Rush, Team attack, Team defense, Administration, Epic endurance, Epic armor, Epic attack"/>
+	<properties max_army="60"/>
+	<properties damage="80" armor_slash="12" armor_pierce="12"/>
+	<properties maxhealth="1500"/>
 
 	<sounds command="data/sound entities/VoiceCHero.xml"/>
 </class>
