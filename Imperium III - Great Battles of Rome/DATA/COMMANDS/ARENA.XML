@@ -64,6 +64,7 @@
 	<src obj="BMorrigansMonument"/>
 	<src obj="BKMorrigansMonument"/>
 	<src obj="GTSanctuaryOfVotan"/>
+	<src obj="InviArena"/>
 </cmd>
 
 <cmd name="RGladiator Shows2" priority="2"
@@ -787,6 +788,7 @@
 	<src obj="GArena3"/>
 	<src obj="GTSanctuaryOfVotan"/>
 	<src obj="CGArena"/>
+	<src obj="InviArena"/>
 </cmd>
 
 <cmd name="Tales of Hero I" priority="20"
@@ -803,6 +805,7 @@
 	method="research"
 	param="ReqSet, Fights, default, NamePlr, Tales of Hero I, default">
 	<src obj="CGArena"/>
+	<src obj="InviArena"/>
 </cmd>
 
 <cmd name="Tales of Hero II" priority="20"
@@ -819,6 +822,7 @@
 	method="research"
 	param="ReqSet, Fights, default, NamePlr, Tales of Hero II, default">
 	<src obj="CGArena"/>
+	<src obj="InviArena"/>
 </cmd>
 
 <cmd name="Hire Viking Lord" priority="10"
@@ -1028,6 +1032,7 @@
 	<src obj="GArena3"/>
 	<src obj="GTSanctuaryOfVotan"/>
 	<src obj="CGArena"/>
+	<src obj="InviArena"/>
 </cmd>
 
 <cmd name="Veteran's guild" priority="6"
@@ -1061,6 +1066,7 @@
 	researchcommand="yes"
 	param="ReqSet, Fights, default ,SetsPlr, maxtrainlevel, 8, NamePlr, Britain Training, default">
 	<src obj="BKMorrigansMonument"/>
+	<src obj="InviArena"/>
 </cmd>
 
 <cmd name="Kingdom Helmet" priority="12"
@@ -1095,6 +1101,7 @@
 	<src obj="BMorrigansMonument"/>
 	<src obj="BKMorrigansMonument"/>
 	<src obj="CGArena"/>
+	<src obj="InviArena"/>
 </cmd>
 
 <cmd name="Noble Offence" priority="7"
@@ -1748,6 +1755,7 @@
 	researchcommand="yes"
 	param="ReqSet,Fights, default, NamePlr, Statue of Amon-Ra, default">
 	<src obj="GTSanctuaryOfVotan"/>
+	<src obj="InviArena"/>
 </cmd>
 
 <cmd name="Carthaginian Statue of Amon-Ra" priority="13"
@@ -2107,5 +2115,20 @@
 	method="research"
 	param="ReqSet, Fights, default, NameSet, Mystery Trident, default">
 	<src obj="CGArena"/>
+</cmd>
+
+<cmd name="Invisible Herb Amulets of Luck" priority="20"
+	method="research"
+	queueicon="gameres/icons/upgrades/Herb Amulets Of Luck.bmp"
+	button="upgrades/Herb Amulets Of Luck.bmp"
+	key="h"
+	rollover="Invisible Herb amulets of Luck"
+	description="Starts equipping all units with Herb Amulet of Luck (+2 HP regen per second)"
+	costgold="2000"
+	execdelay="20000"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	param="ReqSet, Fights, default, NameSet, Herb Amulets of Luck, default, SetsSet, items/Herb amulet of luck, 1">
+	<src obj="InviArena"/>
 </cmd>
 </commands>

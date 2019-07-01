@@ -1,0 +1,17 @@
+<class id="InviCavalry" cpp_class="CVXUnit" parent="Horse" entity="Units/ICavalry/ICavalry.ent.xml">
+
+	<properties race="Iberia"/>
+	<properties maxhealth="260"/>
+	<properties damage="34" armor_slash="4" armor_pierce="4"/>
+	<properties speed="160"/>
+	<properties unit_specials="Charge, Sneak"/>
+	<properties healthbar_type="3"/>
+
+	<properties icon="gameres/icons/INVICAVALRY.bmp"/>
+	<properties display_name="Invisible Cavalry" display_name_plural="Invisible Cavalry"/>
+	<properties help="contents/units/ICavalry"/>
+	<properties edittree_pos="Units/Invisible/Cavalry"/>
+	<sounds command="data/sound entities/VoiceICavalry.xml"/>
+	<behavior script="data/subai/sneak_behavior.vs"/>
+	<properties feeds="0"/>
+</class>

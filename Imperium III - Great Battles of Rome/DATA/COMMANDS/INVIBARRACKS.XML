@@ -1,0 +1,106 @@
+<commands>
+
+<!-- INVI BARRACKS -->
+
+<cmd name="trainGTHuntress" priority="6"
+	button="actions/train THuntress.bmp"
+	queueicon="gameres/icons/THuntress.bmp"
+	groupverifier="data/subai/barrack_train_verify.vs"
+	transpicon="1"
+	sclass="THuntress"
+	traincommand="yes"
+	key="h"
+	help="/contents/units/THuntress"
+	costgold = "200"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "14000"
+	rollover="Equip Huntress"
+	method="train"
+	param="THuntress, Javelin production">
+	<src obj="InviBarracks"/>
+</cmd>
+
+<cmd name="trainICavalry" priority="7"
+	button="actions/TRAIN INVICAVALRY.bmp"
+	queueicon="gameres/icons/INVICAVALRY.bmp"
+	transpicon="1"
+	groupverifier="data/subai/barrack_train_verify.vs"
+	traincommand="yes"
+	key="i"
+	help="/contents/units/ICavalry"
+	costgold = "150"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Equip Invisible Cavalry"
+	method="train"
+	param="InviCavalry,Horseshoes"
+	sclass="InviCavalry">
+	<src obj="InviBarracks"/>
+</cmd>
+
+<cmd name="trainIMountaineer" priority="8"
+	button="actions/TRAIN UNIONMOUNTAINEER.bmp"
+	queueicon="gameres/icons/UNIONMOUNTAINEER.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="m"
+	help="/contents/units/IMountaineer"
+	costgold = "200"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "20000"
+	rollover="Hire Mountaineer"
+	description="Hires a Mountaineer"
+	method="trainex"
+	param="1, 25, IMountaineer, IMountaineer, Mountainers Legacy, blacksmith"
+	sclass="IMountaineer">
+	<src obj="InviBarracks"/>
+</cmd>
+
+<cmd name="trainTridentAssassin" priority="8"
+	button="actions/baal.bmp"
+	queueicon="gameres/icons/baal.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="t"
+	help="/contents/units/CGTridentWarrior"
+	costgold = "2000"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "30000"
+	rollover="Hire Trident Assassin"
+	description="Hire Special Hero Trident Assassin with 4 skills, 3 unit specials, pick up maximum 7 items and works alone"
+	method="trainex"
+	param="1, 2, CGTridentWarrior, CGTridentWarrior, Mystery Assassin, blacksmith"
+	sclass="CGTridentWarrior">
+	<src obj="InviBarracks"/>
+</cmd>
+
+<cmd name="Train Invisble Hero" priority="9"
+	button="actions/MLIDER.bmp"
+	queueicon="gameres/icons/Caesar.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="c"
+	help="/contents/units/Caesar"
+	costgold = "3000"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "30000"
+	rollover="Train a special Invisble Hero"
+	description="Train a special invisble hero named Caesar with 8 skills, pick up maximum 10 items, can lead up to 150 units (if upgrade maximum skill Administration)"
+	method="trainex"
+	param="1, 1, Caesar, Caesar, Invisibly Leading, blacksmith"
+	sclass="Caesar">
+	<src obj="InviBarracks"/>
+</cmd>
+
+</commands>

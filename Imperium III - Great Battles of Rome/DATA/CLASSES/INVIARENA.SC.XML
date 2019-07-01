@@ -1,0 +1,11 @@
+<class id="InviArena" altid="Arena 1" cpp_class="CVXBuilding" parent="BaseArena" entity="Buildings/GGuardPost/GGuardPost_AS.ent.xml">
+	<properties race="Gaul"/>
+	<properties display_name="Invisible Arena"/>
+	<properties radius="345" selection_radius="350"/>
+	<properties edittree_pos="Structures/Stronghold (Invisible)/Arena"/>
+	<properties help="/contents/buildings/GArena"/>
+
+	<properties icon="gameres/icons/GGuardPost.bmp"/>
+	
+
+</class>

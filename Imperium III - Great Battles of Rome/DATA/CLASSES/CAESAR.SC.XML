@@ -1,0 +1,22 @@
+<class id="Caesar" cpp_class="CVXHero" parent="HeroMounted" entity="Units/Caesar/Caesar.ent.xml">
+
+	<properties race="ImperialRome"/>
+	<properties display_name="Caesar" display_name_plural="Heroes"/>
+	<properties icon="gameres/icons/Caesar.bmp"/>
+	<properties edittree_pos="Units/Heroes/Caesar (Roman)"/>
+
+	<properties HeroSkills="Ceasefire, Administration, Team attack, Team defense, Quick March, Discipline, Epic armor, Epic endurance"/>
+	<properties feeds="0"/>
+	
+	<properties max_army="130"/>
+	
+	<properties maxhealth="3000"/>
+	<properties damage="50" armor_slash="10" armor_pierce="10"/>
+	<properties inventory_size="10"/>
+
+	<sounds command="data/sound entities/VoiceRImperialHero.xml"/>
+	
+	<behavior script="data/subai/sneak_behavior.vs"/>
+	
+	<properties unit_specials="Sneak"/>
+</class>

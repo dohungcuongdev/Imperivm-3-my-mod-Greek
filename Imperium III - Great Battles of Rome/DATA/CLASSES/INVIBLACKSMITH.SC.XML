@@ -1,0 +1,10 @@
+<class id="InviBlacksmith" cpp_class="CVXBuilding" parent="BaseBlacksmith" entity="MapObjects/Thermae/Thermae_as.ent.xml">
+
+	<properties race="Germany"/>
+	<properties display_name="Blacksmith"/>
+	<properties icon="gameres/icons/RARCH.bmp"/>
+	<properties radius="255" selection_radius="260"/>
+	<properties edittree_pos="Structures/Stronghold (Invisible)/Blacksmith"/>
+	<properties help="/contents/buildings/CBlacksmith"/>
+
+</class>

@@ -1,0 +1,11 @@
+<class id="InviBarracks" cpp_class="CVXBarrack" parent="BaseBarracks" entity="Buildings/Inn/Inn_as.ent.xml">
+    <properties race="Germany"/>
+	<properties icon="gameres/icons/inn.bmp"/>
+	<properties display_name="Invisible Barrack" display_name_plural="Invisible Barracks"/>
+	<properties radius="270" selection_radius="280"/>
+	<properties help="/contents/buildings/Inn"/>
+
+	<properties edittree_pos="Structures/Stronghold (Invisible)/Barracks"/>
+	<properties auto_repair="no"/>
+	
+</class>

@@ -37,6 +37,7 @@
 	<src obj="UnionBlacksmith"/>
 	<src obj="URBlacksmith2"/>
 	<src obj="URBlacksmith3"/>
+	<src obj="InviBlacksmith"/>
 </cmd>
 
 <cmd name="Strenghten Stronghold Defences I" priority="10"
@@ -79,6 +80,7 @@
 	<src obj="UnionBlacksmith"/>
 	<src obj="URBlacksmith2"/>
 	<src obj="URBlacksmith3"/>
+	<src obj="InviBlacksmith"/>
 </cmd>
 
 <cmd name="Strenghten Stronghold Defences II" priority="10"
@@ -136,6 +138,7 @@
 	<src obj="UnionBlacksmith"/>
 	<src obj="URBlacksmith2"/>
 	<src obj="URBlacksmith3"/>
+	<src obj="InviBlacksmith"/>
 </cmd>
 
 <cmd name="Strenghten Defences Upgrade III" priority="10"
@@ -162,6 +165,7 @@
 	<src obj="UnionBlacksmith"/>
 	<src obj="URBlacksmith2"/>
 	<src obj="URBlacksmith3"/>
+	<src obj="InviBlacksmith"/>
 </cmd>
 <!-- ROMAN BLACKSMITH COMMANDS -->
 
@@ -1478,6 +1482,7 @@
 	method="research"
 	param="NameSet,Javelin production,default,NameSet, THuntress, ">
 	<src obj="GTBlacksmith"/>
+	<src obj="InviBlacksmith"/>
 </cmd>
 
 <cmd name="Mace production" priority="4"
@@ -1726,4 +1731,70 @@
 	param="NameSet, Charms of Isis, default, SetsSet, items/Charm of Isis, 1">
 	<src obj="MEBlacksmith"/>
 </cmd>
+
+<cmd name="Horseshoes" priority="2"
+	queueicon="gameres/icons/upgrades/Horseshoes.bmp"
+	button="upgrades/Horseshoes.bmp"
+	key="h"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1500"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Horseshoes"
+	description="Allows Invisible Cavalry to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Horseshoes ,default,NameSet, InviCavalry,">
+	<src obj="InviBlacksmith"/>
+</cmd>
+
+<cmd name="Mountainers Legacy" priority="3"
+	button="upgrades/mountain clan legacy.bmp"
+	key="m"
+	queueicon="gameres/icons/upgrades/mountain clan legacy.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "20000"
+	rollover="Mountainers Legacy"
+	description="Allows Mountaineers to be hired in the Barracks"
+	method="research"
+	param="NameSet,Mountainers Legacy, default, NameSet, IMountaineer">
+	<src obj="InviBlacksmith"/>
+</cmd>
+
+
+<cmd name="Mystery Assassin" priority="8"
+	queueicon="gameres/icons/upgrades/guia.bmp"
+	button="research/guia.bmp"
+	key="a"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "1000"
+	costfood = "0"
+	execdelay = "10000"
+	rollover="Mystery Assassin"
+	description="Allows Trident Assassin to be hired"
+	method="research"
+	param="NameSet,Mystery Assassin, default, NameSet, CGTridentWarrior">
+	<src obj="InviBlacksmith"/>
+</cmd>
+
+<cmd name="Invisibly Leading" priority="9"
+	button="actions/CAMOUFLAGE.bmp"
+	queueicon="gameres/icons/CAMOUFLAGE QUEUE.bmp"
+	key="l"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "3000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Invisibly Leading"
+	description="Allows special Invisble Hero to be hired"
+	method="research"
+	param="NameSet,Invisibly Leading, default, NameSet, Caesar">
+	<src obj="InviBlacksmith"/>
+</cmd>
+
 </commands>

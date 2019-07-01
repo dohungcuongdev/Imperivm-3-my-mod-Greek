@@ -4,10 +4,10 @@
 	<properties display_name="Biurtan" display_name_plural="Heroes"/>
 	<properties icon="gameres/icons/IHero4.bmp"/>
 	<properties edittree_pos="Units/Heroes/Biurtan (Iberian)"/>
-	<properties HeroSkills="Scout, Ceasefire, Epic endurance, Epic armor, Epic attack"/>
-	<properties inventory_size="8"/>
-	<properties max_army="120"/>
-	<properties maxhealth="2000"/>
+	<properties HeroSkills="Scout, Ceasefire, Epic endurance, Epic armor, Epic attack, Administration"/>
+	<properties inventory_size="10"/>
+	<properties max_army="140"/>
+	<properties maxhealth="3000"/>
 
 	<sounds command="data/sound entities/VoiceIHero.xml"/>
 </class>
