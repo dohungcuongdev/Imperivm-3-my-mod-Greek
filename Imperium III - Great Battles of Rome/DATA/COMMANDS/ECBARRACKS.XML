@@ -20,6 +20,7 @@
 	sclass="CLibyanFootman">
 	<src obj="ECBarracks"/>
 	<src obj="ECBarracks2"/>
+	<src obj="ECBarracks3"/>
 </cmd>
 
 <cmd name="trainECJavelinThrower" priority="4"
@@ -40,6 +41,7 @@
 	sclass="CJavelinThrower">
 	<src obj="ECBarracks"/>
 	<src obj="ECBarracks2"/>
+	<src obj="ECBarracks3"/>
 </cmd>
 
 <cmd name="trainECBerberAssassin" priority="5"
@@ -60,9 +62,10 @@
 	sclass="CBerberAssassin">
 	<src obj="ECBarracks"/>
 	<src obj="ECBarracks2"/>
+	<src obj="ECBarracks3"/>
 </cmd>
 
-<cmd name="trainECMaceman" priority="6"
+<cmd name="trainECMaceman" priority="5"
 	button="actions/hire CMaceman.bmp"
 	queueicon="gameres/icons/CMaceman.bmp"
 	groupverifier="data/subai/barrack_train_verify.vs"
@@ -81,13 +84,13 @@
 	<src obj="ECBarracks"/>
 </cmd>
 
-<cmd name="trainECNumidianRider" priority="7"
+<cmd name="trainECNumidianRider" priority="5"
 	button="actions/hire CNumidianRider.bmp"
 	queueicon="gameres/icons/CNumidianRider.bmp"
 	groupverifier="data/subai/barrack_train_verify.vs"
 	transpicon="1"
 	traincommand="yes"
-	key="r"
+	key="t"
 	help="/contents/units/CNumidianRider"
 	costgold = "200"
 	costfood = "0"
@@ -98,6 +101,7 @@
 	param="CNumidianRider,Extended Forge Pikes"
 	sclass="CNumidianRider">
 	<src obj="ECBarracks"/>
+	<src obj="ECBarracks3"/>
 </cmd>
 
 <cmd name="trainECLiberati" priority="7"

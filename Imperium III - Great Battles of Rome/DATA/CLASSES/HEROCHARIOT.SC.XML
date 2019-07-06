@@ -1,11 +1,11 @@
 <class id="HeroChariot" cpp_class="CVXHero" parent="Captain" entity="units/RChariot/RChariot.ent.xml">
 
 	<properties race="RepublicanRome"/>
-	<properties maxhealth="1000"/>
+	<properties maxhealth="1200"/>
 	<properties range="700"/>
 	<properties damage="50" armor_slash="12" armor_pierce="12"/>
 	<properties speed="120"/>
-	<properties unit_specials="Rage, Life steal, Charge"/>
+	<properties unit_specials="Rage, Life steal, Charge, Toughness"/>
 	
 	<properties HeroSkills="Team attack, Team defense, Quick March, Administration, Survival, Vigor, Recovery, Epic endurance, Epic attack, Epic armor"/>
 	
@@ -15,10 +15,12 @@
 	
 	<properties max_food="25"/>
 
+	<properties inventory_size="7"/>
+
 	<properties icon="gameres/icons/PLINIUS.bmp"/>
 	<properties display_name="Roman Hero Chariot" display_name_plural="Roman Hero Chariots"/>
 	<properties help="contents/units/RChariot"/>
-	<properties edittree_pos="Units/United Roman/Hero Chariot"/>
+	<properties edittree_pos="Units/Heroes/Hero Chariot"/>
 	
 	<properties max_army="20"/>
 

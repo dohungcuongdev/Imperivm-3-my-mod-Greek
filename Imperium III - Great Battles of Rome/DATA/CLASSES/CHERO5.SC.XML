@@ -6,8 +6,9 @@
 	<properties edittree_pos="Units/Heroes/Haltibaal (Carthaginian)"/>
 	<properties HeroSkills="Rush, Team attack, Team defense, Administration, Epic endurance, Epic armor, Epic attack"/>
 	<properties max_army="60"/>
+	<properties inventory_size="8"/>
 	<properties damage="80" armor_slash="12" armor_pierce="12"/>
-	<properties maxhealth="1500"/>
+	<properties maxhealth="2000"/>
 
 	<sounds command="data/sound entities/VoiceCHero.xml"/>
 </class>

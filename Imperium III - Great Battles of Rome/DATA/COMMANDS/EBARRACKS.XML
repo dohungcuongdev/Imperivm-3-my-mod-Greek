@@ -80,6 +80,7 @@
 	sclass="EAnubisWarrior">
 	<src obj="MEBarracks"/>
 	<src obj="EBarracks"/>
+	<src obj="ECBarracks3"/>
 </cmd>
 
 <cmd name="trainEHorusWarrior" priority="7"
@@ -100,6 +101,7 @@
 	sclass="EHorusWarrior">
 	<src obj="MEBarracks"/>
 	<src obj="EBarracks"/>
+	<src obj="ECBarracks3"/>
 </cmd>
 
 <cmd name="trainEGuardian" priority="8"

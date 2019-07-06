@@ -1,0 +1,14 @@
+<class id="NHero1" cpp_class="CVXHero" parent="Captain" entity="Units/NHero1/NHero1.ent.xml">
+
+	<properties race="Gaul"/>
+	<properties display_name="Heardred" display_name_plural="Heroes"/>
+	<properties icon="gameres/icons/NHero1.bmp"/>
+	<properties edittree_pos="Units/Heroes/Heardred"/>
+
+	<properties HeroSkills="Team attack, Team defense, Quick March, Epic endurance, Epic armor, Epic attack"/>
+	<properties max_army="50"/>
+	<properties inventory_size="8"/>
+	<properties maxhealth="2000"/>
+	<sounds command="data/sound entities/VoiceGHero.xml"/>
+	<properties unit_specials="Spike armor, Trample, Combat skill, Toughness"/>
+</class>

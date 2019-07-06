@@ -1,0 +1,39 @@
+<class id="EChariotHero" cpp_class="CVXHero" parent="Captain" entity="units/EChariot/EChariot.ent.xml">
+
+	<properties race="Egypt"/>
+	<properties maxhealth="1200"/>
+	<properties range="700"/>
+	<properties damage="40" armor_slash="10" armor_pierce="10"/>
+	<properties speed="120"/>	
+	
+	<properties HeroSkills="Team attack, Team defense, Quick March, Administration, Survival, Vigor, Recovery, Epic endurance, Epic attack, Epic armor"/>
+	
+	<properties unit_specials="Power strike, Active, Toughness"/>
+	<properties healthbar_type="3"/>
+
+	<properties radius="40" selection_radius="60"/>
+
+	<properties max_food="35"/>
+	
+	<properties max_army="20"/>
+
+	<properties inventory_size="7"/>
+
+	<properties icon="gameres/icons/ELIDER.bmp"/>
+	<properties display_name="Hero Chariot of Osiris" display_name_plural="Hero Chariots of Osiris"/>
+	<properties help="contents/units/EChariot"/>
+	<properties edittree_pos="Units/Heroes/Hero Chariot of Osiris"/>
+
+	<sounds command="data/sound entities/VoiceEChariot.xml"/>
+
+	<properties projectile_class="Fire_Arrow"/>
+	<properties building_projectile_class="Fire_Arrow"/>
+	<sounds attack="UnitArrowFight"/>
+
+	<value1
+	icon="gameres/infobar/common/piercing ico.bmp"
+	script="return .AsUnit.damage;"
+	help="/contents/stats/rangedattack"
+	rollover="Ranged damage"/>
+
+</class>

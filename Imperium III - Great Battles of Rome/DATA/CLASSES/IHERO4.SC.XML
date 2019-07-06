@@ -6,7 +6,7 @@
 	<properties edittree_pos="Units/Heroes/Biurtan (Iberian)"/>
 	<properties HeroSkills="Scout, Ceasefire, Epic endurance, Epic armor, Epic attack, Administration"/>
 	<properties inventory_size="10"/>
-	<properties max_army="140"/>
+	<properties max_army="150"/>
 	<properties maxhealth="3000"/>
 
 	<sounds command="data/sound entities/VoiceIHero.xml"/>
