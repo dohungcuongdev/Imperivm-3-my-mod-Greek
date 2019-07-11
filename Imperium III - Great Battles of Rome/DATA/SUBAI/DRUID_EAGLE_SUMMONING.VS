@@ -6,11 +6,11 @@ this = This.AsDruid();
 if (!.IsValid()) return;
 
 .PlayAnim(19, .pos);
-u=Place("LionFSummoned", .posRH, .player);
+u=Place("EagleSummoned", .posRH, .player);
 u.SetStamina(10);
-u.SetLevel(.level);
 if(this.HasItem("Herb amulet of luck")) {
 	u.AddItem("Herb amulet of luck");
 }
-
-.Damage(.maxhealth - 10);
+SwapSelectedObj(this, u);
+.SetSummoningDeath(true);
+.Damage(.health);

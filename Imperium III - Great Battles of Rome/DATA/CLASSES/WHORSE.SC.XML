@@ -21,5 +21,7 @@
  
 	<sounds command="Sounds/animals/WHorse/Horse_command.wav"/>
 	<sounds die="Sounds/animals/WHorse/Horse_die.wav"/>   
+	<properties unit_specials="Freedom"/>
+
 
 </class>

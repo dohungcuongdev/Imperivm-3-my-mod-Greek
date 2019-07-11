@@ -7,5 +7,6 @@
 	<properties inventory_size="1"/>
 	<behavior script = "data/subai/summoning_behavior.vs"/>
 	<properties description="-Causa miedo."/>
+	<properties unit_specials="Toughness, Determination, Freedom"/>
 	
 </class>

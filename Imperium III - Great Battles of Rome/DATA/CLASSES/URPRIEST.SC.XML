@@ -4,7 +4,7 @@
 	<properties maxhealth="240"/>
 	<properties armor_slash="10" armor_pierce="10"/>
 	<properties speed="50"/>
-	<properties unit_specials="Healing, Active, Toughness"/>
+	<properties unit_specials="Healing, Active, Revenge"/>
 
 	<properties icon="gameres/icons/URP2.bmp"/>
 	<properties display_name="United Priest" display_name_plural="United Priests"/>
@@ -20,11 +20,11 @@
 
 	<method sig="heal" vs="data/subai/druid_heal.vs" verify="data/subai/druid_heal_verify.vs"/>
 	<method sig="heal" vs="data/subai/druid_heal_ground.vs"/>
-	<method sig="mist" vs="data/subai/united_druid_mist.vs"/>
+	<method sig="mist" vs="data/subai/united_druid_mist.vs"/>	
+	<method sig="coverofmercy"   vs="data/subai/unionenchantress_coverofmercy.vs"/>
+	<method sig="boar_summoning" vs="data/subai/boar_summoning.vs"/>
 	<method sig="wrath_of_jupiter" vs="data/subai/priest_jupiter_anger.vs"/>
 	
-	<method sig="coverofmercy"   vs="data/subai/unionenchantress_coverofmercy.vs"/>
-
 	<defaultcmd target="Unit">
 		<cmd name="heal"/>
 	</defaultcmd>

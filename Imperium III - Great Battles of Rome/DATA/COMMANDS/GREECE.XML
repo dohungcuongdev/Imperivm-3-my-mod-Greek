@@ -160,6 +160,7 @@
 	param="1, 10, EHOPLITA, EHOPLITA, Wall of Shields, blacksmith"
 	sclass="EHOPLITA">
 	<src obj="HBarracks"/>
+	<src obj="UnionBarracks2"/>
 </cmd>
 
 <!-- GREEK BLACKSMITH COMMANDS -->

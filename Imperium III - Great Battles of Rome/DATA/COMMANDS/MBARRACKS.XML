@@ -152,6 +152,7 @@
 	sclass="Hipatista">
 	<src obj="IRBarracks"/>
 	<src obj="URBarracks3"/>
+	<src obj="UnionBarracks2"/>
 </cmd>
 
 <cmd name="trainMPraetorian" priority="8"

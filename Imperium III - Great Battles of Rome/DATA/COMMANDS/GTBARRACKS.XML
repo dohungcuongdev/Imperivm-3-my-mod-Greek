@@ -135,5 +135,6 @@
 	method="trainex"
 	param="1, 10, TTeutonWolf, TTeutonWolf, Teuton Wolves">
 	<src obj="GTBarracks"/>
+	<src obj="UnionBarracks2"/>
 </cmd>
 </commands>

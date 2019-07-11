@@ -1,4 +1,4 @@
-<class id="LionFSummoned" cpp_class="CVXUnit" parent="LionFUnit" entity="units/LionF/LionF.ent.xml">
+<class id="BoarSummoned" cpp_class="CVXUnit" parent="BoarUnit" entity="units/Boar/Boar.ent.xml">
 	<properties edittree_pos=""/>
 
 	<properties does_not_regenerate="1"/>
@@ -7,6 +7,6 @@
 	<properties inventory_size="1"/>
 	<behavior script = "data/subai/summoning_behavior.vs"/>
 	<properties description="-Causa miedo."/>
-	<properties unit_specials="Toughness, Determination, Freedom"/>
+	<properties unit_specials="Revenge, Determination, Freedom"/>
 	
 </class>

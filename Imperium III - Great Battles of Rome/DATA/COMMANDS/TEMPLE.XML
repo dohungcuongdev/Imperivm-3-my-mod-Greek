@@ -72,7 +72,7 @@
 	groupverifier="data/subai/verify_cmdcost_building.vs"
 	traincommand="yes"
 	transpicon="1"
-	key="p"
+	key="u"
 	help="/contents/units/RPriest"
 	costgold = "250"
 	costfood = "0"
@@ -190,6 +190,22 @@
 	<src obj="URTemple3"/>
 </cmd>
 
+<cmd name="Boar Summoning" priority="6"
+	button="actions/recaudador.bmp"
+	queueicon="gameres/icons/upgrades/recaudador.bmp"
+	key="b"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Boar Summoning"
+	description="Allows united priests to to summon Boars"
+	method="research"
+	param="ReqSet, Altar of Jupiter, default, NamePlr, Boar Summoning, default">
+	<src obj="URTemple2"/>
+	<src obj="URTemple3"/>
+</cmd>
 
 <cmd name="Wrath of Jupiter" priority="6"
 	button="research/Jupiter.bmp"

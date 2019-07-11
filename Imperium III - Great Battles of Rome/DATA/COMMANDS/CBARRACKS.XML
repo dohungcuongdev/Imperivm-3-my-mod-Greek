@@ -235,6 +235,7 @@
 	param="1, 6, CMERCENARIO, CMERCENARIO, Master Axes, blacksmith"
 	sclass="CMERCENARIO">
 	<src obj="CBarracks"/>
+	<src obj="UnionBarracks2"/>
 </cmd>
 
 </commands>

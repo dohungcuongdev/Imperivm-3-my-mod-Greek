@@ -142,6 +142,7 @@
 	param="1, 10, PINMORTAL, PINMORTAL, Dual Swords"
 	sclass="PINMORTAL">
 	<src obj="EBarracks"/>
+	<src obj="UnionBarracks2"/>
 </cmd>
 
 </commands>

@@ -6,4 +6,5 @@
 	<properties inventory_size="1"/>
 	<properties description="-Inmune al miedo"/>
 	<behavior script = "data/subai/summoning_behavior.vs"/>
+	<properties unit_specials="Trample, Determination, Freedom"/>
 </class>

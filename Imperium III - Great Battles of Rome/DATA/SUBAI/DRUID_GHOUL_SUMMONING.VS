@@ -2,22 +2,17 @@
 
 Druid this;
 Unit u;
+
 this = This.AsDruid();
 if (!.IsValid()) return;
 
 .PlayAnim(19, .pos);
-u=Place("BearSummoned", .posRH, .player);
+u=Place("GGhost", .posRH, .player);
+u.SetStamina(10);
 u.SetLevel(.level);
 if(this.HasItem("Herb amulet of luck")) {
 	u.AddItem("Herb amulet of luck");
 }
-u.SetStamina(10);
-
-if ((!.IsHeirOf("TEnchantress")) || (EnvReadString(.player, "Control") != "researched")){
 SwapSelectedObj(this, u);
 .SetSummoningDeath(true);
 .Damage(.health);
-}
-if ((.IsHeirOf("TEnchantress")) && (EnvReadString(.player, "Control") == "researched")){
-.Damage(.maxhealth - 10);
-}

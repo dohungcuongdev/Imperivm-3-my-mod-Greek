@@ -156,6 +156,7 @@
 	sclass="Hipatista">
 	<src obj="RRBarracks"/>
 	<src obj="URBarracks2"/>
+	<src obj="UnionBarracks2"/>
 </cmd>
 
 </commands>

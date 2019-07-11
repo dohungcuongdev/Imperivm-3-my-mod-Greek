@@ -429,6 +429,7 @@
 	param = "ReqSet, Tournaments, default, NamePlr, Heroes' Wisdom, ">
 	<src obj="IArena"/>
 	<src obj="UnionArena"/>
+	<src obj="UnionArena2"/>
 </cmd>
 
 <cmd name="Warriors' Wisdom" priority="3"
@@ -446,6 +447,7 @@
 	param = "ReqSet, Tournaments, , ReqPlr, Heroes' Wisdom, , NamePlr, Warriors' Wisdom, default ">
 	<src obj="IArena"/>
 	<src obj="UnionArena"/>
+	<src obj="UnionArena2"/>
 </cmd>
 
 <cmd name="Mahout School" priority="3"
@@ -1050,6 +1052,7 @@
 	param="ReqSet, Tournaments, default, NameSet, Veteran's guild, default, SetsSet, items/Veteran Guild, 1">
 	<src obj="IArena"/>
 	<src obj="UnionArena"/>
+	<src obj="UnionArena2"/>
 </cmd>
 
 <cmd name="Britain Training" priority="3"
@@ -1657,6 +1660,22 @@
 	<src obj="UnionArena"/>
 </cmd>
 
+<cmd name="Union Tournaments 2" priority="2"
+	button="Upgrades/Tournaments.bmp"
+	key="t"
+	queueicon="gameres/icons/upgrades/Tournaments.bmp"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "20000"
+	groupverifier="data/subai/verify_research.vs"
+	description="Allows Union Special Hero and Mountaineers to be hired"
+	rollover="Tournaments"
+	method="research"
+	researchcommand="yes"
+	param="NameSet, Tournaments, default">
+	<src obj="UnionArena2"/>
+</cmd>
+
 <cmd name="Union Mountain Clan" priority="4"
 	queueicon="gameres/icons/upgrades/mountain clan.bmp"
 	button="upgrades/mountain clan.bmp"
@@ -1671,6 +1690,7 @@
 	method="research"
 	param = "ReqSet, Tournaments, default, SetsSet, levels/UnionMountaineer, 15, default, NameSet, Union Mountain Clan, default">
 	<src obj="UnionArena"/>
+	<src obj="UnionArena2"/>
 </cmd>
 
 <cmd name="Union Mountain Clan Legacy" priority="4"
@@ -1687,6 +1707,7 @@
 	method="research"
 	param="ReqSet, Union Mountain Clan, default, SetsSet, levels/UnionMountaineer, 30, default, NameSet,Union Mountain Clan Legacy, default">
 	<src obj="UnionArena"/>
+	<src obj="UnionArena2"/>
 </cmd>
 
 <cmd name="Call Union Mountaineer" priority="3"
@@ -1707,6 +1728,7 @@
 	method="trainex"
 	param="1, 8, UnionMountaineer, UnionMountaineer, Tournaments">
 	<src obj="UnionArena"/>
+	<src obj="UnionArena2"/>
 </cmd>
 
 <cmd name="Herb Amulets of Luck" priority="20"
@@ -1715,13 +1737,14 @@
 	button="upgrades/Herb Amulets Of Luck.bmp"
 	key="h"
 	rollover="Herb amulets of Luck"
-	description="Starts equipping all units with Herb Amulet of Luck (+2 HP regen per second)"
+	description="Starts equipping all unit with Herb Amulet of Luck (+2 HP regen per second - if the item's owner can summon units, summoned units also have this item)"
 	costgold="2000"
 	execdelay="20000"
 	researchcommand="yes"
 	groupverifier="data/subai/verify_research.vs"
 	param="ReqSet, Tournaments, default, NameSet, Herb Amulets of Luck, default, SetsSet, items/Herb amulet of luck, 1">
 	<src obj="UnionArena"/>
+	<src obj="UnionArena2"/>
 </cmd>
 
 <cmd name="hireheroU" priority="1"
@@ -2130,5 +2153,25 @@
 	groupverifier="data/subai/verify_research.vs"
 	param="ReqSet, Fights, default, NameSet, Herb Amulets of Luck, default, SetsSet, items/Herb amulet of luck, 1">
 	<src obj="InviArena"/>
+</cmd>
+
+<cmd name="Train Special Union Hero" priority="2"
+	button="actions/TLIDER.bmp"
+	queueicon="gameres/icons/TLIDER.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="h"
+	help="/contents/units/UnionSpecialHero"
+	costgold = "2000"
+	costfood = "2000"
+	costpop = "0"
+	execdelay = "30000"
+	rollover="Train a special Union Hero"
+	description="Train a special hero with 8 skills, pick up maximum 10 items, can lead up to 120 units (if upgrade maximum skill Administration)"
+	method="trainex"
+	param="1, 1, UnionSpecialHero, UnionSpecialHero, Tournaments">
+	<src obj="UnionArena2"/>
 </cmd>
 </commands>

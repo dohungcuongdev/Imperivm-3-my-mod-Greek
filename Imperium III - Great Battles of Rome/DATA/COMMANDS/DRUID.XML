@@ -353,6 +353,17 @@
 	<src obj="UnionEnchantress"/>
 </cmd>
 
+<cmd name="boar_summoning" priority="15"
+	button="actions/recaudador.bmp"
+	key="l"
+	groupverifier="data/subai/verify_isresearched.vs"
+	rollover="Boar Summoning"
+	description="Summon a Boar (-90% hp)"
+	param="Boar Summoning, Requires %s1"
+	>
+	<src obj="URPriest"/>
+</cmd>
+
 <cmd name="lion_summoning" priority="15"
 	button="actions/summon lion.bmp"
 	key="l"

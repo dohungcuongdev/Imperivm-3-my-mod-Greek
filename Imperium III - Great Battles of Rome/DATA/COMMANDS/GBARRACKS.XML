@@ -176,6 +176,7 @@
 	param="1, 12, NSECUAZ, NSECUAZ, Steel Weapons, blacksmith"
 	sclass="NSECUAZ">
 	<src obj="GBarracks"/>
+	<src obj="UnionBarracks2"/>
 </cmd>
 
 </commands>

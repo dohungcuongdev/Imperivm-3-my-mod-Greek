@@ -1,10 +1,10 @@
-<class id="UnionBlacksmith" cpp_class="CVXBuilding" parent="BaseBlacksmith" entity="Buildings/IBlacksmith/IBlacksmith.ent.xml">
+<class id="UnionBlacksmith2" cpp_class="CVXBuilding" parent="BaseBlacksmith" entity="Buildings/IBlacksmith/IBlacksmith.ent.xml">
 
 	<properties race="Iberia"/>
 	<properties icon="gameres/icons/IBlacksmith.bmp"/>
 	<properties display_name="Blacksmith"/>
 	<properties radius="220" selection_radius="230"/>
-	<properties edittree_pos="Structures/Stronghold (Union Iberia)/Set 1/Blacksmith"/>
+	<properties edittree_pos="Structures/Stronghold (Union Iberia)/Set 2/Blacksmith"/>
 	<properties help="/contents/buildings/IBlacksmith"/>
 	<properties auto_repair="no"/>
 

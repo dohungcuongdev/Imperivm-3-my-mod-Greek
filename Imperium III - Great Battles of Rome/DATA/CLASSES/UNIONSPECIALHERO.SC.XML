@@ -1,0 +1,13 @@
+<class id="UnionSpecialHero" cpp_class="CVXHero" parent="HeroMounted" entity="Units/IHero4/IHero4.ent.xml">
+
+	<properties race="Iberia"/>
+	<properties display_name="Union Special Hero" display_name_plural="Heroes"/>
+	<properties icon="gameres/icons/TLIDER.bmp"/>
+	<properties edittree_pos="Units/Union Iberia/Special Hero"/>
+	<properties HeroSkills="Scout, Ceasefire, Epic endurance, Epic armor, Epic attack, Administration, Wisdom, Discipline"/>
+	<properties inventory_size="10"/>
+	<properties max_army="100"/>
+	<properties maxhealth="3000"/>
+
+	<sounds command="data/sound entities/VoiceIHero.xml"/>
+</class>

@@ -13,7 +13,7 @@
 
 	<properties radius="40" selection_radius="60"/>
 
-	<properties max_food="35"/>
+	<properties max_food="25"/>
 	
 	<properties max_army="20"/>
 

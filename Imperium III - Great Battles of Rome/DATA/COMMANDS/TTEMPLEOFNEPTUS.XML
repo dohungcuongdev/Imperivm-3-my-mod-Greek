@@ -14,7 +14,7 @@
 	costgold="500"
 	costfood="0"
 	execdelay = "60000">
-	<src obj="GTTempleOfNeptus"/>
+	<src obj="TTempleOfNeptus"/>
 </cmd>
 
 <cmd name="trainTEnchantress" priority="1"
@@ -33,7 +33,7 @@
 	method="train"
 	param="TEnchantress"
 	sclass="TEnchantress">
-	<src obj="GTTempleOfNeptus"/>
+	<src obj="TTempleOfNeptus"/>
 </cmd>
 
 <cmd name="German chamber" priority="2"
@@ -49,7 +49,7 @@
 	description="Allows enchantresses to gain experience by learning from more experienced warriors"
 	method="research"
 	param="NamePlr, Ritual Chamber, default, NameSet, Ritual Chamber, default">
-	<src obj="GTTempleOfNeptus"/>
+	<src obj="TTempleOfNeptus"/>
 </cmd>
 
 <cmd name="German Wolf Summoning" priority="4"
@@ -65,7 +65,7 @@
 	description="Allows enchantresses to sacrifice themselves and summon a wolf"
 	method="research"
 	param="ReqSet, Ritual Chamber, default, NamePlr, Wolf Summoning, default">
-	<src obj="GTTempleOfNeptus"/>
+	<src obj="TTempleOfNeptus"/>
 </cmd>
 <cmd name="German Eagle Summoning" priority="5"
 	queueicon="gameres/icons/upgrades/summon eagle.bmp"
@@ -80,7 +80,7 @@
         description="Allows enchantresses to sacrifice themselves and summon an eagle, which is under your control for about 2 minutes"
 	method="research"
 	param="ReqSet, Ritual Chamber, default, NamePlr, Eagle Summoning, default">
-	<src obj="GTTempleOfNeptus"/>
+	<src obj="TTempleOfNeptus"/>
 </cmd>
 
 <cmd name="German Mass Heal" priority="6"
@@ -96,39 +96,7 @@
 	description="Allows enchantresses to sacrifice themselves to heal nearby allies"
 	method="research"
 	param="ReqSet, Ritual Chamber, default, NamePlr, Mass Heal, default">
-	<src obj="GTTempleOfNeptus"/>
-</cmd>
-
-<cmd name="German God's Gift" priority="7"
-	button="research/Gift of God.bmp"
-	queueicon="gameres/icons/upgrades/Gift of God.bmp"
-	key="g"
-	researchcommand="yes"
-	groupverifier="data/subai/verify_research.vs"
-	costgold = "1800"
-	costfood = "0"
-	execdelay = "20000"
-	rollover="God's Gift"
-	description="All new warriors are equipped with a God's Gift artifact, which heals a warrior at his first kill and then disappears"
-	method="research"
-	param="ReqSet, Ritual Chamber, default, NameSet, God's Gift, default, SetsSet, items/God's Gift, 1">
-	<src obj="GTTempleOfNeptus"/>
-</cmd>
-
-<cmd name="German God's Strength" priority="7"
-	button="research/Strength of God.bmp"
-	queueicon="gameres/icons/upgrades/Strength of God.bmp"
-	key="s"
-	researchcommand="yes"
-	groupverifier="data/subai/verify_research.vs"
-	costgold = "2000"
-	costfood = "0"
-	execdelay = "20000"
-	rollover="God's Strength"
-	description="All new warriors are equipped with a God's Strength artifact, which adds 50 max health"
-	method="research"
-	param="ReqSet, Ritual Chamber, default, NameSet, God's Strength, default, SetsSet, items/God's Strength, 1">
-	<src obj="GTTempleOfNeptus"/>
+	<src obj="TTempleOfNeptus"/>
 </cmd>
 
 </commands>

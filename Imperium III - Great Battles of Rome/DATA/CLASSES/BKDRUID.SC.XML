@@ -4,7 +4,7 @@
 	<properties maxhealth="200"/>
 	<properties armor_slash="2" armor_pierce="2"/>
 	<properties speed="50"/>
-	<properties unit_specials="Healing, Active"/>
+	<properties unit_specials="Healing, Active, Toughness"/>
 
 	<properties icon="gameres/icons/Lleo.bmp"/>
 	<properties display_name="King Druid" display_name_plural="King Druids"/>

@@ -1,6 +1,6 @@
 <class id="BoarUnit" cpp_class="CVXUnit" parent="AttackAnimal" entity="units/Boar/Boar.ent.xml">
-	<properties maxhealth="400"/>
-	<properties damage="16" armor_slash="2" armor_pierce="2"/>
+	<properties maxhealth="380"/>
+	<properties damage="18" armor_slash="3" armor_pierce="3"/>
 
 	<properties damage_type="slash"/>
 	<properties radius="20" selection_radius="40"/>
@@ -13,7 +13,7 @@
 	<properties help="contents/units/Boar"/>
 	<properties edittree_pos="Units/Animals/Boar"/>
 	
-	<properties unit_specials="Penetration"/>
+	<properties unit_specials="Revenge, Freedom"/>
 
 	<defaultcmd target="">
 		<cmd name="move"/>

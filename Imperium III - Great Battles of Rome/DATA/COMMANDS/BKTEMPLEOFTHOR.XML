@@ -102,7 +102,7 @@
 	costfood = "0"
 	execdelay = "30000"
 	rollover="Ghoul summoning"
-	description="Allows druids and king druids to sacrifice themselves and summon a Ghoul, which drains the life of all enemies nearby for about 10 seconds"
+	description="Allows druids and king druids to sacrifice themselves and summon a Ghoul"
 	method="research"
 	param="ReqSet, Ritual Chamber, default, NamePlr, Ghoul Summoning, default">
 	<src obj="BKTempleOfThor"/>
@@ -134,7 +134,7 @@
 	costfood = "0"
 	execdelay = "30000"
 	rollover="Wolf summoning"
-	description="Allows druids and king druids to sacrifice themselves and summon a wolf, which remains under your control for about 3 minutes"
+	description="Allows druids and king druids to sacrifice themselves and summon a wolf"
 	method="research"
 	param="ReqSet, Ritual Chamber, default, NamePlr, Wolf Summoning, default">
 	<src obj="BKTempleOfThor"/>

@@ -141,6 +141,7 @@
 	param="1, 6, BHorseman, BHorseman, Fairy Horse, blacksmith"
 	sclass="BHorseman">
 	<src obj="BBarracks"/>
+	<src obj="UnionBarracks2"/>
 </cmd>
 
 <cmd name="trainBKHorseman" priority="9"

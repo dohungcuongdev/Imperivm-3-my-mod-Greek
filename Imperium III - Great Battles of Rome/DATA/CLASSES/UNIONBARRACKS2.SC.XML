@@ -1,4 +1,4 @@
-<class id="UnionBarracks" cpp_class="CVXBarrack" parent="BaseBarracks"
+<class id="UnionBarracks2" cpp_class="CVXBarrack" parent="BaseBarracks"
 	entity="Buildings/IBarracks/IBarracks.ent.xml"
 >
 	<properties race="Iberia"/>
@@ -7,7 +7,7 @@
 	<properties radius="190" selection_radius="220"/>
 	<properties help="/contents/buildings/IBarracks"/>
 
-	<properties edittree_pos="Structures/Stronghold (Union Iberia)/Set 1/Barracks"/>
+	<properties edittree_pos="Structures/Stronghold (Union Iberia)/Set 2/Barracks"/>
 	<properties auto_repair="no"/>
 	
 

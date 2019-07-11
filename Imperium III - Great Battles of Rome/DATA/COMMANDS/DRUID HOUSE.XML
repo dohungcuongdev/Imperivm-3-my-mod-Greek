@@ -80,7 +80,7 @@
 	costfood = "0"
 	execdelay = "20000"
 	rollover="Ghoul summoning"
-	description="Allows druids to sacrifice themselves and summon a Ghoul, which drains the life from all enemies nearby for about 10 seconds"
+	description="Allows druids to sacrifice themselves and summon a Ghoul, which drains the life from all enemies nearby"
 	method="research"
 	param="ReqSet, Ritual Chamber, default, NamePlr, Ghoul Summoning, default">
 	<src obj="DruidHouse"/>

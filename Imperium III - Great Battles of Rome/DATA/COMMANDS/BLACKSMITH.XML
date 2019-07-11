@@ -39,6 +39,7 @@
 	<src obj="URBlacksmith3"/>
 	<src obj="InviBlacksmith"/>
 	<src obj="ECBlacksmith3"/>
+	<src obj="UnionBlacksmith2"/>
 </cmd>
 
 <cmd name="Strenghten Stronghold Defences I" priority="10"
@@ -83,6 +84,7 @@
 	<src obj="URBlacksmith3"/>
 	<src obj="InviBlacksmith"/>
 	<src obj="ECBlacksmith3"/>
+	<src obj="UnionBlacksmith2"/>
 </cmd>
 
 <cmd name="Strenghten Stronghold Defences II" priority="10"
@@ -142,6 +144,7 @@
 	<src obj="URBlacksmith3"/>
 	<src obj="InviBlacksmith"/>
 	<src obj="ECBlacksmith3"/>
+	<src obj="UnionBlacksmith2"/>
 </cmd>
 
 <cmd name="Strenghten Defences Upgrade III" priority="10"
@@ -170,6 +173,7 @@
 	<src obj="URBlacksmith3"/>
 	<src obj="InviBlacksmith"/>
 	<src obj="ECBlacksmith3"/>
+	<src obj="UnionBlacksmith2"/>
 </cmd>
 <!-- ROMAN BLACKSMITH COMMANDS -->
 
@@ -1186,22 +1190,6 @@
 
 <!-- New Unit -->
 
-<cmd name="Fairy Horse" priority="6"
-	queueicon="gameres/icons/upgrades/LIDERI.bmp"
-	button="upgrades/ILIDER.bmp"
-	key="h"
-	researchcommand="yes"
-	groupverifier="data/subai/verify_research.vs"
-	costgold = "5000"
-	costfood = "0"
-	execdelay = "50000"
-	rollover="Fairy Horse"
-	description="Allows Master Horsemen to be equipped in the Barracks"
-	method="research"
-	param="NameSet,Fairy Horse, default, NameSet, BHorseman">
-	<src obj="BBlacksmith"/>
-</cmd>
-
 <cmd name="King Horse" priority="6"
 	queueicon="gameres/icons/upgrades/LIDERI.bmp"
 	button="upgrades/ILIDER.bmp"
@@ -1216,24 +1204,6 @@
 	method="research"
 	param="NameSet,King Horse, default, NameSet, BKHorseman">
 	<src obj="BKBlacksmith"/>
-</cmd>
-
-<cmd name="Heavy Swords and Shields" priority="6"
-	queueicon="gameres/icons/upgrades/veteranos.bmp"
-	key="e"
-	button="upgrades/veteranos.bmp"
-	researchcommand="yes"
-	groupverifier="data/subai/verify_research.vs"
-	costgold = "5000"
-	costfood = "0"
-	execdelay = "50000"
-	rollover="Heavy Swords and Shields"
-	description="Allows Republican Roman Hipatistas to be equipped in the Barracks"
-	method="research"
-	param="NameSet,Heavy Swords and Shields, default, NameSet, Hipatista">
-	<src obj="RBlacksmith"/>
-	<src obj="RRBlacksmith"/>
-	<src obj="URBlacksmith2"/>
 </cmd>
 
 <!--
@@ -1255,41 +1225,6 @@
 </cmd>
 -->
 
-<cmd name="Heavy Shields and Spears" priority="6"
-	queueicon="gameres/icons/upgrades/IRPRETORIAN.BMP"
-	key="e"
-	button="upgrades/IRPRETORIAN.BMP"
-	researchcommand="yes"
-	groupverifier="data/subai/verify_research.vs"
-	costgold = "5000"
-	costfood = "0"
-	execdelay = "50000"
-	rollover="Heavy Shields and Spears"
-	description="Allows Imperial Roman Hipatistas to be equipped in the Barracks"
-	method="research"
-	param="NameSet,Heavy Shields and Spears, default, NameSet, IRHipatista">
-	<src obj="RBlacksmith"/>
-	<src obj="IRBlacksmith"/>
-	<src obj="URBlacksmith3"/>
-</cmd>
-
-<cmd name="Wall of Shields" priority="6"
-	queueicon="gameres/icons/upgrades/Wall of shields.bmp"
-	key="y"
-	button="upgrades/Wall of shields.bmp"
-	researchcommand="yes"
-	groupverifier="data/subai/verify_research.vs"
-	costgold = "5000"
-	costfood = "0"
-	execdelay = "50000"
-	rollover="Wall of Shields"
-	description="Allows Hoplitas to be equipped in the Barracks"
-	method="research"
-	param="NameSet,Wall of Shields, default, NameSet, EHOPLITA">
-	<src obj="HBlacksmith"/>
-	<src obj="AHBlacksmith"/>
-</cmd>
-
 <!--
 <cmd name="Assassin Kungfu" priority="6"
 	queueicon="gameres/icons/upgrades/alianzas exoticas.bmp"
@@ -1308,58 +1243,6 @@
 	<src obj="GGBlacksmith"/>
 </cmd>
 -->
-
-<cmd name="Steel Weapons" priority="6"
-	queueicon="gameres/icons/upgrades/STEEL WEAPONS.BMP"
-	key="y"
-	button="upgrades/STEEL WEAPONS.BMP"
-	researchcommand="yes"
-	groupverifier="data/subai/verify_research.vs"
-	costgold = "5000"
-	costfood = "0"
-	execdelay = "50000"
-	rollover="Steel Weapons"
-	description="Allows level 6 Master Assassins to be equipped in the Barracks"
-	method="research"
-	param="NameSet,Steel Weapons, default, SetsSet, levels/NSECUAZ, 6, NameSet, NSECUAZ">
-	<src obj="GBlacksmith"/>
-	<src obj="GGBlacksmith"/>
-	<src obj="CGBlacksmith"/>
-</cmd>
-
-<cmd name="Dual Axes" priority="9"
-	queueicon="gameres/icons/upgrades/maestrosherreros.bmp"
-	key="a"
-	button="upgrades/maestrosherreros.bmp"
-	researchcommand="yes"
-	groupverifier="data/subai/verify_research.vs"
-	costgold = "5000"
-	costfood = "0"
-	execdelay = "50000"
-	rollover="Dual Axes"
-	description="Allows Master Berserkers to be equipped in the Barracks"
-	method="research"
-	param="NameSet,Dual Axes, default, NameSet, NVAEL">
-	<src obj="IBlacksmith"/>
-</cmd>
-
-<cmd name="Dual Swords" priority="7"
-	queueicon="gameres/icons/upgrades/espadaspersas.bmp"
-	key="y"
-	button="upgrades/espadaspersas.bmp"
-	researchcommand="yes"
-	groupverifier="data/subai/verify_research.vs"
-	costgold = "5000"
-	costfood = "0"
-	execdelay = "50000"
-	rollover="Dual Swords"
-	description="Allows Master Swordmen to be equipped in the Barracks"
-	method="research"
-	param="NameSet,Dual Swords, default, NameSet, PINMORTAL">
-	<src obj="EBlacksmith"/>
-	<src obj="EEBlacksmith"/>
-	<src obj="EEEBlacksmith"/>
-</cmd>
 
 <cmd name="Union Spears" priority="2"
 	queueicon="gameres/icons/upgrades/ISpears.bmp"
@@ -1507,22 +1390,6 @@
 	<src obj="GTBlacksmith"/>
 </cmd>
 
-<cmd name="Teuton Wolves" priority="8"
-	queueicon="gameres/icons/upgrades/Teuton Master.bmp"
-	button="research/Teuton Master.bmp"
-	key="w"
-	researchcommand="yes"
-	groupverifier="data/subai/verify_research.vs"
-	costgold = "5000"
-	costfood = "0"
-	execdelay = "50000"
-	rollover="Teuton Wolves"
-	description="Allows level 10 Teuton Wolves to equipped in the Barracks"
-	method="research"
-	param="SetsSet, levels/TTeutonWolf, 10, default, NameSet,Teuton Wolves, default">
-	<src obj="GTBlacksmith"/>
-</cmd>
-
 <cmd name="Extended Forge Spears" priority="3"
 	queueicon="gameres/icons/upgrades/CSpears.bmp"
 	button="upgrades/CSpears.bmp"
@@ -1659,25 +1526,6 @@
 	<src obj="ECBlacksmith2"/>
 </cmd>
 
-<cmd name="Master Axes" priority="9"
-	queueicon="gameres/icons/upgrades/verdugos.bmp"
-	key="y"
-	button="upgrades/verdugos.bmp"
-	researchcommand="yes"
-	groupverifier="data/subai/verify_research.vs"
-	costgold = "5000"
-	costfood = "0"
-	execdelay = "50000"
-	rollover="Master Axes"
-	description="Allows Master Axemen to be hired in the Barracks"
-	method="research"
-	param="NameSet,Master Axes, default, NameSet, CMERCENARIO">
-	<src obj="CBlacksmith"/>
-	<src obj="CCBlacksmith"/>
-	<src obj="ECBlacksmith"/>
-	<src obj="ECBlacksmith2"/>
-</cmd>
-
 <cmd name="Charms of Seth" priority="4"
 	button="research/Charm of Seth.bmp"
 	key="b"
@@ -1805,6 +1653,171 @@
 	method="research"
 	param="NameSet,Invisibly Leading, default, NameSet, Caesar">
 	<src obj="InviBlacksmith"/>
+</cmd>
+
+<cmd name="Master Axes" priority="9"
+	queueicon="gameres/icons/upgrades/verdugos.bmp"
+	key="y"
+	button="upgrades/verdugos.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "5000"
+	costfood = "0"
+	execdelay = "50000"
+	rollover="Master Axes"
+	description="Allows Master Axemen to be hired in the Barracks"
+	method="research"
+	param="NameSet,Master Axes, default, NameSet, CMERCENARIO">
+	<src obj="CBlacksmith"/>
+	<src obj="CCBlacksmith"/>
+	<src obj="ECBlacksmith"/>
+	<src obj="ECBlacksmith2"/>
+	<src obj="UnionBlacksmith2"/>
+</cmd>
+
+<cmd name="Fairy Horse" priority="9"
+	queueicon="gameres/icons/upgrades/LIDERI.bmp"
+	button="upgrades/ILIDER.bmp"
+	key="h"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "5000"
+	costfood = "0"
+	execdelay = "50000"
+	rollover="Fairy Horse"
+	description="Allows Master Horsemen to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Fairy Horse, default, NameSet, BHorseman">
+	<src obj="BBlacksmith"/>
+	<src obj="UnionBlacksmith2"/>
+</cmd>
+
+<cmd name="Dual Swords" priority="9"
+	queueicon="gameres/icons/upgrades/espadaspersas.bmp"
+	key="y"
+	button="upgrades/espadaspersas.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "5000"
+	costfood = "0"
+	execdelay = "50000"
+	rollover="Dual Swords"
+	description="Allows Master Swordmen to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Dual Swords, default, NameSet, PINMORTAL">
+	<src obj="EBlacksmith"/>
+	<src obj="EEBlacksmith"/>
+	<src obj="EEEBlacksmith"/>
+	<src obj="UnionBlacksmith2"/>
+</cmd>
+
+<cmd name="Steel Weapons" priority="9"
+	queueicon="gameres/icons/upgrades/STEEL WEAPONS.BMP"
+	key="y"
+	button="upgrades/STEEL WEAPONS.BMP"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "5000"
+	costfood = "0"
+	execdelay = "50000"
+	rollover="Steel Weapons"
+	description="Allows level 6 Master Assassins to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Steel Weapons, default, SetsSet, levels/NSECUAZ, 6, NameSet, NSECUAZ">
+	<src obj="GBlacksmith"/>
+	<src obj="GGBlacksmith"/>
+	<src obj="CGBlacksmith"/>
+	<src obj="UnionBlacksmith2"/>
+</cmd>
+
+<cmd name="Wall of Shields" priority="9"
+	queueicon="gameres/icons/upgrades/Wall of shields.bmp"
+	key="y"
+	button="upgrades/Wall of shields.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "5000"
+	costfood = "0"
+	execdelay = "50000"
+	rollover="Wall of Shields"
+	description="Allows Hoplitas to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Wall of Shields, default, NameSet, EHOPLITA">
+	<src obj="HBlacksmith"/>
+	<src obj="AHBlacksmith"/>
+	<src obj="UnionBlacksmith2"/>
+</cmd>
+
+<cmd name="Teuton Wolves" priority="9"
+	queueicon="gameres/icons/upgrades/Teuton Master.bmp"
+	button="research/Teuton Master.bmp"
+	key="w"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "5000"
+	costfood = "0"
+	execdelay = "50000"
+	rollover="Teuton Wolves"
+	description="Allows level 10 Teuton Wolves to equipped in the Barracks"
+	method="research"
+	param="SetsSet, levels/TTeutonWolf, 10, default, NameSet,Teuton Wolves, default">
+	<src obj="GTBlacksmith"/>
+	<src obj="UnionBlacksmith2"/>
+</cmd>
+
+<cmd name="Dual Axes" priority="9"
+	queueicon="gameres/icons/upgrades/maestrosherreros.bmp"
+	key="a"
+	button="upgrades/maestrosherreros.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "5000"
+	costfood = "0"
+	execdelay = "50000"
+	rollover="Dual Axes"
+	description="Allows Master Berserkers to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Dual Axes, default, NameSet, NVAEL">
+	<src obj="IBlacksmith"/>
+	<src obj="UnionBlacksmith2"/>
+</cmd>
+
+<cmd name="Heavy Shields and Spears" priority="9"
+	queueicon="gameres/icons/upgrades/IRPRETORIAN.BMP"
+	key="e"
+	button="upgrades/IRPRETORIAN.BMP"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "5000"
+	costfood = "0"
+	execdelay = "50000"
+	rollover="Heavy Shields and Spears"
+	description="Allows Imperial Roman Hipatistas to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Heavy Shields and Spears, default, NameSet, IRHipatista">
+	<src obj="RBlacksmith"/>
+	<src obj="IRBlacksmith"/>
+	<src obj="URBlacksmith3"/>
+	<src obj="UnionBlacksmith2"/>
+</cmd>
+
+<cmd name="Heavy Swords and Shields" priority="9"
+	queueicon="gameres/icons/upgrades/veteranos.bmp"
+	key="e"
+	button="upgrades/veteranos.bmp"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "5000"
+	costfood = "0"
+	execdelay = "50000"
+	rollover="Heavy Swords and Shields"
+	description="Allows Republican Roman Hipatistas to be equipped in the Barracks"
+	method="research"
+	param="NameSet,Heavy Swords and Shields, default, NameSet, Hipatista">
+	<src obj="RBlacksmith"/>
+	<src obj="RRBlacksmith"/>
+	<src obj="URBlacksmith2"/>
+	<src obj="UnionBlacksmith2"/>
 </cmd>
 
 </commands>

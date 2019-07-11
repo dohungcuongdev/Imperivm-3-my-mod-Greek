@@ -6,4 +6,5 @@
 	<properties inventory_size="1"/>
 	<behavior script = "data/subai/summoning_behavior.vs"/>
 	<properties description="Wolf Summoned"/>
+	<properties unit_specials="Determination, Freedom"/>
 </class>
