@@ -8,6 +8,8 @@
 	<properties inventory_size="10"/>
 	<properties max_army="100"/>
 	<properties maxhealth="3000"/>
+	
+	<properties unit_specials="Learning"/>
 
 	<sounds command="data/sound entities/VoiceIHero.xml"/>
 </class>

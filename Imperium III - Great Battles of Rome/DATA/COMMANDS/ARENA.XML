@@ -1668,12 +1668,13 @@
 	costfood = "0"
 	execdelay = "20000"
 	groupverifier="data/subai/verify_research.vs"
-	description="Allows Union Special Hero and Mountaineers to be hired"
+	description="Allows Union Special Units and Hero to be hired"
 	rollover="Tournaments"
 	method="research"
 	researchcommand="yes"
 	param="NameSet, Tournaments, default">
 	<src obj="UnionArena2"/>
+	<src obj="UnionArena3"/>
 </cmd>
 
 <cmd name="Union Mountain Clan" priority="4"
@@ -2169,9 +2170,167 @@
 	costpop = "0"
 	execdelay = "30000"
 	rollover="Train a special Union Hero"
-	description="Train a special hero with 8 skills, pick up maximum 10 items, can lead up to 120 units (if upgrade maximum skill Administration)"
+	description="Train a special hero with 8 skills, pick up maximum 10 items, ability to learn and lead up to 120 units (if upgrade maximum skill Administration)"
 	method="trainex"
 	param="1, 1, UnionSpecialHero, UnionSpecialHero, Tournaments">
 	<src obj="UnionArena2"/>
+	<src obj="UnionArena3"/>
+</cmd>
+
+<cmd name="Union LongBow" priority="6"
+	queueicon="gameres/icons/upgrades/GREEKARCHERLONGBOW.bmp"
+	button="upgrades/GREEKARCHERLONGBOW.bmp"
+	groupverifier="data/subai/verify_research.vs"
+	researchcommand="yes"
+	key="l"
+	costgold = "6000"
+	costfood = "0"
+	costpop = "0"
+	execdelay = "60000"
+	rollover="Union LongBow"
+	description="Allows Union Long Javelin Throwers and LongBow Archers to be trained"
+	method="research"
+	param="ReqSet, Tournaments, default, NameSet, Union LongBow, default">
+	<src obj="UnionArena3"/>
+</cmd>
+
+<cmd name="Train Union Long Javelin Thrower" priority="15"
+	button="actions/HIRE CJAVELINTHROWERLONGJAVELIN.bmp"
+	queueicon="gameres/icons/CJAVELINTHROWERLONGJAVELIN.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="j"
+	help="/contents/units/Union LongBow"
+	costgold = "0"
+	costfood = "400"
+	costpop = "1"
+	execdelay = "5000"
+	rollover="Train Union Long Javelin Thrower"
+	description="Train Union Long Javelin Thrower"
+	method="trainex"
+	param="1, 5, CJavelinThrowerLongJavelin, CJavelinThrowerLongJavelin, Union LongBow">
+	<src obj="UnionArena3"/>
+</cmd>
+
+<cmd name="Train Union B LongBow Archer" priority="15"
+	button="actions/TRAIN BBOWMANLONGBOW.bmp"
+	queueicon="gameres/icons/BBOWMANLONGBOW.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="b"
+	help="/contents/units/Union LongBow"
+	costgold = "0"
+	costfood = "400"
+	costpop = "1"
+	execdelay = "5000"
+	rollover="Train Union B LongBow Archer"
+	description="Train Union B LongBow Archer"
+	method="trainex"
+	param="1, 5, BBowmanLongBow, BBowmanLongBow, Union LongBow">
+	<src obj="UnionArena3"/>
+</cmd>
+
+<cmd name="Train Union E LongBow Archer" priority="15"
+	button="actions/TRAIN EARCHERLONGBOW.bmp"
+	queueicon="gameres/icons/EARCHERLONGBOW.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="e"
+	help="/contents/units/Union LongBow"
+	costgold = "0"
+	costfood = "400"
+	costpop = "1"
+	execdelay = "5000"
+	rollover="Train Union E LongBow Archer"
+	description="Train Union E LongBow Archer"
+	method="trainex"
+	param="1, 5, EArcherLongBow, EArcherLongBow, Union LongBow">
+	<src obj="UnionArena3"/>
+</cmd>
+
+<cmd name="Train Union R LongBow Archer" priority="15"
+	button="actions/TRAIN RARCHERLONGBOW.bmp"
+	queueicon="gameres/icons/RARCHERLONGBOW.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="r"
+	help="/contents/units/Union LongBow"
+	costgold = "0"
+	costfood = "400"
+	costpop = "1"
+	execdelay = "5000"
+	rollover="Train Union R LongBow Archer"
+	description="Train Union R LongBow Archer"
+	method="trainex"
+	param="1, 5, RArcherLongBow, RArcherLongBow, Union LongBow">
+	<src obj="UnionArena3"/>
+</cmd>
+
+<cmd name="Train Union G LongBow Archer" priority="15"
+	button="actions/TRAIN GARCHERLONGBOW.bmp"
+	queueicon="gameres/icons/GARCHERLONGBOW.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="g"
+	help="/contents/units/Union LongBow"
+	costgold = "0"
+	costfood = "400"
+	costpop = "1"
+	execdelay = "5000"
+	rollover="Train Union G LongBow Archer"
+	description="Train Union G LongBow Archer"
+	method="trainex"
+	param="1, 5, GArcherLongBow, GArcherLongBow, Union LongBow">
+	<src obj="UnionArena3"/>
+</cmd>
+
+<cmd name="Train Union I LongBow Archer" priority="15"
+	button="actions/TRAIN IARCHERLONGBOW.bmp"
+	queueicon="gameres/icons/IARCHERLONGBOW.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="i"
+	help="/contents/units/Union LongBow"
+	costgold = "0"
+	costfood = "400"
+	costpop = "1"
+	execdelay = "5000"
+	rollover="Train Union G LongBow Archer"
+	description="Train Union G LongBow Archer"
+	method="trainex"
+	param="1, 5, IArcherLongBow, IArcherLongBow, Union LongBow">
+	<src obj="UnionArena3"/>
+</cmd>
+
+<cmd name="Train Union T LongBow Archer" priority="15"
+	button="actions/TRAIN TARCHERLONGBOW.bmp"
+	queueicon="gameres/icons/TARCHERLONGBOW.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="t"
+	help="/contents/units/Union LongBow"
+	costgold = "0"
+	costfood = "400"
+	costpop = "1"
+	execdelay = "5000"
+	rollover="Train Union T LongBow Archer"
+	description="Train Union T LongBow Archer"
+	method="trainex"
+	param="1, 5, TArcherLongBow, TArcherLongBow, Union LongBow">
+	<src obj="UnionArena3"/>
 </cmd>
 </commands>

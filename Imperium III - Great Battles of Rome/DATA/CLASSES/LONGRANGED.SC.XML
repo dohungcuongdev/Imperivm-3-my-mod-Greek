@@ -1,0 +1,7 @@
+<class id="LongRanged" cpp_class="CVXUnit" parent="Ranged" entity="">
+    <properties formation_priority="500"/>
+    <properties sight="1200" range="1000" min_range="200"/>
+    <properties projectile_class="Fire_Arrow"/>
+    <properties speed="80"/>
+    <properties building_projectile_class="Big_Arrow"/>
+</class>

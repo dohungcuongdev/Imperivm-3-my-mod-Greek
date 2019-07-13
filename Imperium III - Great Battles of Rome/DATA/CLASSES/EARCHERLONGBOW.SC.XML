@@ -1,0 +1,12 @@
+<class id="EArcherLongBow" cpp_class="CVXUnit" parent="LongRanged" entity="units/EArcher/EArcher.ent.xml">
+    <properties race="Egypt"/>
+    <properties maxhealth="200"/>
+    <properties damage="32" armor_slash="0" armor_pierce="0"/>
+    <properties speed="80"/>
+    <properties unit_specials="Drain, Death blow, Active"/>
+    <properties icon="gameres/icons/EArcherLongBow.bmp"/>
+    <properties display_name="Union E LongBow Archer" display_name_plural="Union E LongBow Archers"/>
+    <properties help="contents/units/EArcher"/>
+    <properties edittree_pos="Units/Union Iberia/E LongBow Archer"/>
+    <sounds command="data/sound entities/VoiceEArcher.xml"/>
+</class>

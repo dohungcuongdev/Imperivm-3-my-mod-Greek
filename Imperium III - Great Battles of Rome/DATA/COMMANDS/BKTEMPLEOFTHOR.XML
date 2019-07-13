@@ -59,7 +59,8 @@
 <cmd name="trainBKDruid" priority="1"
 	button="actions/train BKDruid.bmp"
 	queueicon="gameres/icons/Lleo.bmp"
-	groupverifier="data/subai/verify_cmdcost_building.vs"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
 	transpicon="1"
 	traincommand="yes"
 	key="k"
@@ -69,8 +70,8 @@
 	costpop = "0"
 	execdelay = "20000"
 	rollover="Call King Druid"
-	method="train"
-	param="BKDruid"
+	method="trainex"
+	param="1, 25, BKDruid, BKDruid, Ritual Chamber"
 	sclass="BKDruid">
 	<src obj="BKTempleOfThor"/>
 </cmd>

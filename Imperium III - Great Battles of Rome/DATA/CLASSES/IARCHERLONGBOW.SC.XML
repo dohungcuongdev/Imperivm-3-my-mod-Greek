@@ -1,0 +1,13 @@
+<class id="IArcherLongBow" cpp_class="CVXUnit" parent="LongRanged" entity="Units/IArcher/IArcher.ent.xml">
+    <properties race="Iberia"/>
+    <properties maxhealth="200"/>
+    <properties sight="1300" range="1100" />
+    <properties damage="30" armor_slash="2" armor_pierce="2"/>
+    <properties speed="80"/>
+    <properties unit_specials="Drain, Bleeding attack, Active"/>
+    <properties icon="gameres/icons/IArcherLongBow.bmp"/>
+    <properties display_name="Union I LongBow Archer" display_name_plural="Union I LongBow Archers"/>
+    <properties help="contents/units/IArcher"/>
+    <properties edittree_pos="Units/Union Iberia/I LongBow Archer"/>
+    <sounds command="data/sound entities/VoiceIArcher.xml"/>
+</class>

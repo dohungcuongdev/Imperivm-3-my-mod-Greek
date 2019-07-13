@@ -1,0 +1,12 @@
+<class id="TArcherLongBow" cpp_class="CVXUnit" parent="LongRanged" entity="Units/TArcher/TArcher.ent.xml">
+    <properties race="Germany"/>
+    <properties maxhealth="180"/>
+    <properties damage="28" armor_slash="0" armor_pierce="0"/>
+    <properties speed="80"/>
+    <properties unit_specials="Triple strike, Penetration, Active"/>
+    <properties icon="gameres/icons/TArcherLongBow.bmp"/>
+    <properties display_name="Union T LongBow Archer" display_name_plural="Union T LongBow Archers"/>
+    <properties help="contents/units/TArcher"/>
+    <properties edittree_pos="Units/Union Iberia/T LongBow Archer"/>
+    <sounds command="data/sound entities/VoiceTArcher.xml"/>
+</class>

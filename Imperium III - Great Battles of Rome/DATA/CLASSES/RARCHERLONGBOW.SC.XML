@@ -1,0 +1,14 @@
+<class id="RArcherLongBow" cpp_class="CVXUnit" parent="LongRanged" entity="Units/RArcher/RArcher.ent.xml">
+    <properties race="RepublicanRome"/>
+    <properties maxhealth="220"/>
+    <properties sight="1100" range="900"/>
+    <properties damage="30" armor_slash="6" armor_pierce="6"/>
+    <properties speed="70"/>
+    <properties unit_specials="Disease attack, Defensive tactics, Toughness"/>
+    <properties icon="gameres/icons/RArcherLONGBOW.bmp"/>
+    <properties display_name="Union R LongBow Archer" display_name_plural="Union R LongBow Archers"/>
+    <properties help="contents/units/RArcher"/>
+    <properties edittree_pos="Units/Union Iberia/R LongBow Archer"/>
+    <sounds command="data/sound entities/VoiceRArcher.xml"/>
+    <method sig="engage" vs="data/subai/echariot_engage.vs"/>
+</class>

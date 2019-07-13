@@ -69,7 +69,8 @@
 <cmd name="trainURPriest" priority="1"
 	button="actions/URP2.bmp"
 	queueicon="gameres/icons/URP2.bmp"
-	groupverifier="data/subai/verify_cmdcost_building.vs"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
 	traincommand="yes"
 	transpicon="1"
 	key="u"
@@ -79,8 +80,8 @@
 	costpop = "0"
 	execdelay = "20000"
 	rollover="Call Priest"
-	method="train"
-	param="URPriest"
+	method="trainex"
+	param="1, 25, URPriest, URPriest, Altar of Jupiter"
 	sclass="URPriest">
 	<src obj="URTemple2"/>
 	<src obj="URTemple3"/>

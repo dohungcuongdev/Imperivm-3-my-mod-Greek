@@ -1,0 +1,13 @@
+<class id="BBowmanLongBow" cpp_class="CVXUnit" parent="LongRanged" entity="units/BBowman/BBowman.ent.xml">
+    <properties race="Britain"/>
+    <properties maxhealth="260"/>
+    <properties damage="36" armor_slash="4" armor_pierce="4"/>
+    <properties speed="80"/>
+    <properties unit_specials="Triumph, Rage, Combat skill"/>
+    <!-- <properties projectile_class="Arrow"/> -->
+    <properties icon="gameres/icons/BBowmanLONGBOW.bmp"/>
+    <properties display_name="Union B LongBow Archer" display_name_plural="Union B LongBow Archers"/>
+    <properties help="contents/units/BBowman"/>
+    <properties edittree_pos="Units/Union Iberia/B LongBow Archer"/>
+    <sounds command="data/sound entities/VoiceBBowman.xml"/>
+</class>

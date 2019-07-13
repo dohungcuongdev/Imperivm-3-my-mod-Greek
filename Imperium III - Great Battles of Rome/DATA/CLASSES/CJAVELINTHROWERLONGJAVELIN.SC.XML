@@ -1,0 +1,15 @@
+<class id="CJavelinThrowerLongJavelin" cpp_class="CVXUnit" parent="LongRanged" entity="Units/CJavelinThrower/CJavelinThrower.ent.xml">
+    <properties race="Carthage"/>
+    <properties maxhealth="240"/>
+    <properties damage="32" armor_slash="0" armor_pierce="0"/>
+    <properties speed="90"/>
+    <properties unit_specials="Rage, Penetration, Ferocity"/>
+    <properties projectile_class="Javelin"/>
+    <properties building_projectile_class="Javelin"/>
+    <properties icon="gameres/icons/CJavelinThrowerLongJavelin.bmp"/>
+    <properties display_name="Union Long Javelin Thrower" display_name_plural="Union Long Javelin Throwers"/>
+    <properties help="contents/units/CJavelinThrower"/>
+    <properties edittree_pos="Units/Union Iberia/Long Javelin Thrower"/>
+    <sounds command="data/sound entities/VoiceCJavelinThrower.xml"/>
+    <method sig="ondie" vs="data/subai/cmercenary_ondie.vs"/>
+</class>
