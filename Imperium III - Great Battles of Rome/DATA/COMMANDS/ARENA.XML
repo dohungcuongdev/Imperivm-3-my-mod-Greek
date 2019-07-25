@@ -1691,7 +1691,6 @@
 	method="research"
 	param = "ReqSet, Tournaments, default, SetsSet, levels/UnionMountaineer, 15, default, NameSet, Union Mountain Clan, default">
 	<src obj="UnionArena"/>
-	<src obj="UnionArena2"/>
 </cmd>
 
 <cmd name="Union Mountain Clan Legacy" priority="4"
@@ -1708,7 +1707,6 @@
 	method="research"
 	param="ReqSet, Union Mountain Clan, default, SetsSet, levels/UnionMountaineer, 30, default, NameSet,Union Mountain Clan Legacy, default">
 	<src obj="UnionArena"/>
-	<src obj="UnionArena2"/>
 </cmd>
 
 <cmd name="Call Union Mountaineer" priority="3"
@@ -1729,7 +1727,6 @@
 	method="trainex"
 	param="1, 8, UnionMountaineer, UnionMountaineer, Tournaments">
 	<src obj="UnionArena"/>
-	<src obj="UnionArena2"/>
 </cmd>
 
 <cmd name="Herb Amulets of Luck" priority="20"
@@ -2332,5 +2329,25 @@
 	method="trainex"
 	param="1, 5, TArcherLongBow, TArcherLongBow, Union LongBow">
 	<src obj="UnionArena3"/>
+</cmd>
+
+<cmd name="Call Union Javelin Thrower" priority="3"
+	button="actions/HIRE UNIONJAVELINTHROWER.BMP"
+	queueicon="gameres/icons/UNIONJAVELINTHROWER.BMP"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="j"
+	help="/contents/units/IMountaineer"
+	costgold = "500"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "10000"
+	rollover="Hires a Union Javelin Thrower"
+	description="Hires a Union Javelin Thrower having ability to change Penetration into Cripple"
+	method="trainex"
+	param="1, 8, UnionJavelinThrower, UnionJavelinThrower, Tournaments">
+	<src obj="UnionArena2"/>
 </cmd>
 </commands>

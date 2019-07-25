@@ -1,0 +1,25 @@
+<class id="UnionJavelinThrower" cpp_class="CVXUnit" parent="Ranged" entity="Units/CJavelinThrower/CJavelinThrower.ent.xml">
+
+	<properties race="Carthage"/>
+	<properties maxhealth="300"/>
+	<properties damage="50" armor_slash="0" armor_pierce="0"/>
+	<properties speed="80"/>
+	<properties unit_specials="Penetration, Disease attack, Active"/>
+
+	<properties projectile_class="Javelin"/>
+	<properties building_projectile_class="Javelin"/>
+
+	<properties icon="gameres/icons/UNIONJAVELINTHROWER.BMP"/>
+	<properties display_name="Union Javelin Thrower" display_name_plural="Union Javelin Throwers"/>
+	<properties help="contents/units/CJavelinThrower"/>
+	<properties edittree_pos="Units/Union Iberia/Union Javelin Thrower"/>
+	<sounds command="data/sound entities/VoiceCJavelinThrower.xml"/>
+
+	<properties sight="800" range="650"/>
+	<method sig="engage" vs="data/subai/echariot_engage.vs"/>
+	
+	
+	<method sig="changeSkillToPenetration" vs="data/subai/toxotes_change_to_penetration.vs"/>
+	<method sig="changeSkillToCripple" vs="data/subai/toxotes_change_to_cripple.vs"/>
+
+</class>

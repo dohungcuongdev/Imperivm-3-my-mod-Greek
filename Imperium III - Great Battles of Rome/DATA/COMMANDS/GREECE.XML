@@ -646,20 +646,20 @@
   button="actions/Cripple to Penetration.bmp"
   key="q"
   rollover="Penetration stance"
-  description="Toxotes can use Penetration skill instead of Cripple now"
+  description="Union Javelin Throwers can use Penetration skill instead of Cripple now"
   groupverifier="data/subai/toxotes_penetration_verify.vs"
   immediate="yes">
-  <src obj="HToxotes"/>
+  <src obj="UnionJavelinThrower"/>
 </cmd>
 
 <cmd name="changeSkillToCripple" priority="15"
   button="actions/Penetration to Cripple.bmp"
   key="q"
   rollover="Crippling stance"
-  description="Toxotes can use Cripple skill instead of Penetration now"
+  description="Union Javelin Throwers can use Cripple skill instead of Penetration now"
   groupverifier="data/subai/toxotes_cripple_verify.vs"
   immediate="yes">
-  <src obj="HToxotes"/>
+  <src obj="UnionJavelinThrower"/>
 </cmd>
 
 </commands>

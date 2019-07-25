@@ -1487,9 +1487,9 @@
 	costfood = "0"
 	execdelay = "20000"
 	rollover="Calling Liberati"
-	description="Allows Liberati to be equipped in the Barracks"
+	description="Allows level 12 Liberati to be equipped in the Barracks"
 	method="research"
-	param="NameSet,Calling Liberati, default, NameSet, RLiberatus">
+	param="NameSet,Calling Liberati,default,SetsSet, levels/RLiberatus, 12,  NameSet, RLiberatus,">
 	<src obj="ECBlacksmith"/>
 </cmd>
 
@@ -1519,9 +1519,9 @@
 	costfood = "0"
 	execdelay = "30000"
 	rollover="Calling Legion Commander"
-	description="Allows Legion Commanders to be hired in the Barracks"
+	description="Allows level 12 Legion Commanders to be hired in the Barracks"
 	method="research"
-	param="NameSet,Calling Legion Commander,default,NameSet, LegionCommander, ">
+	param="NameSet,Calling Legion Commander,default,SetsSet, levels/LegionCommander, 12,  NameSet, LegionCommander,">
 	<src obj="ECBlacksmith"/>
 	<src obj="ECBlacksmith2"/>
 </cmd>
@@ -1616,9 +1616,9 @@
 	costfood = "0"
 	execdelay = "20000"
 	rollover="Mountainers Legacy"
-	description="Allows Mountaineers to be hired in the Barracks"
+	description="Allows level 28 Mountaineers to be hired in the Barracks"
 	method="research"
-	param="NameSet,Mountainers Legacy, default, NameSet, IMountaineer">
+	param="NameSet,Mountainers Legacy,default,SetsSet, levels/IMountaineer, 28,  NameSet, IMountaineer,">
 	<src obj="InviBlacksmith"/>
 </cmd>
 
@@ -1665,9 +1665,9 @@
 	costfood = "0"
 	execdelay = "50000"
 	rollover="Master Axes"
-	description="Allows Master Axemen to be hired in the Barracks"
+	description="Allows Level 12 Master Axemen to be hired in the Barracks"
 	method="research"
-	param="NameSet,Master Axes, default, NameSet, CMERCENARIO">
+	param="NameSet,Master Axes,default,SetsSet, levels/CMERCENARIO, 12,  NameSet, CMERCENARIO,">
 	<src obj="CBlacksmith"/>
 	<src obj="CCBlacksmith"/>
 	<src obj="ECBlacksmith"/>
