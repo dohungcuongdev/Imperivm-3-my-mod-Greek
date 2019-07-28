@@ -25,7 +25,7 @@
 	<src obj="EBlacksmith"/>
 	<src obj="EEBlacksmith"/>
 	<src obj="EEEBlacksmith"/>
-	<src obj="EEEBlacksmith"/>
+	<src obj="EEEEBlacksmith"/>
 	<src obj="MEBlacksmith"/>
 	<src obj="GGBlacksmith"/>
 	<src obj="CCBlacksmith"/>
@@ -40,6 +40,7 @@
 	<src obj="InviBlacksmith"/>
 	<src obj="ECBlacksmith3"/>
 	<src obj="UnionBlacksmith2"/>
+	<src obj="LBlacksmith"/>
 </cmd>
 
 <cmd name="Strenghten Stronghold Defences I" priority="10"
@@ -85,6 +86,14 @@
 	<src obj="InviBlacksmith"/>
 	<src obj="ECBlacksmith3"/>
 	<src obj="UnionBlacksmith2"/>
+	<src obj="LBBlacksmith"/>
+	<src obj="LRBlacksmith"/>
+	<src obj="LGBlacksmith"/>
+	<src obj="LHBlacksmith"/>
+	<src obj="LCBlacksmith"/>
+	<src obj="LEBlacksmith"/>
+	<src obj="LIBlacksmith"/>
+	<src obj="LTBlacksmith"/>
 </cmd>
 
 <cmd name="Strenghten Stronghold Defences II" priority="10"
@@ -145,6 +154,14 @@
 	<src obj="InviBlacksmith"/>
 	<src obj="ECBlacksmith3"/>
 	<src obj="UnionBlacksmith2"/>
+	<src obj="LBBlacksmith"/>
+	<src obj="LRBlacksmith"/>
+	<src obj="LGBlacksmith"/>
+	<src obj="LHBlacksmith"/>
+	<src obj="LCBlacksmith"/>
+	<src obj="LEBlacksmith"/>
+	<src obj="LIBlacksmith"/>
+	<src obj="LTBlacksmith"/>
 </cmd>
 
 <cmd name="Strenghten Defences Upgrade III" priority="10"
@@ -174,6 +191,14 @@
 	<src obj="InviBlacksmith"/>
 	<src obj="ECBlacksmith3"/>
 	<src obj="UnionBlacksmith2"/>
+	<src obj="LBBlacksmith"/>
+	<src obj="LRBlacksmith"/>
+	<src obj="LGBlacksmith"/>
+	<src obj="LHBlacksmith"/>
+	<src obj="LCBlacksmith"/>
+	<src obj="LEBlacksmith"/>
+	<src obj="LIBlacksmith"/>
+	<src obj="LTBlacksmith"/>
 </cmd>
 <!-- ROMAN BLACKSMITH COMMANDS -->
 
@@ -196,6 +221,7 @@
 	<src obj="URBlacksmith"/>
 	<src obj="URBlacksmith2"/>
 	<src obj="URBlacksmith3"/>
+	<src obj="LRBlacksmith"/>
 </cmd>
 
 <cmd name="Roman Velit" priority="2"
@@ -216,6 +242,7 @@
 	<src obj="URBlacksmith"/>
 	<src obj="URBlacksmith2"/>
 	<src obj="URBlacksmith3"/>
+	<src obj="LRBlacksmith"/>
 </cmd>
 
 <cmd name="Roman Principle" priority="3"
@@ -237,6 +264,7 @@
 	<src obj="URBlacksmith"/>
 	<src obj="URBlacksmith2"/>
 	<src obj="URBlacksmith3"/>
+	<src obj="LRBlacksmith"/>
 </cmd>
 <cmd name="Roman Scout" priority="4"
 	queueicon="gameres/icons/upgrades/Horseshoes.bmp"
@@ -257,6 +285,7 @@
 	<src obj="URBlacksmith"/>
 	<src obj="URBlacksmith2"/>
 	<src obj="URBlacksmith3"/>
+	<src obj="LRBlacksmith"/>
 </cmd>
 
 <cmd name="Roman Praetorian" priority="5"
@@ -275,6 +304,7 @@
 	<src obj="RBlacksmith"/>
 	<src obj="IRBlacksmith"/>
 	<src obj="URBlacksmith2"/>
+	<src obj="LRBlacksmith"/>
 </cmd>
 
 <cmd name="Roman Full Armor" priority="4"
@@ -294,6 +324,7 @@
 	<src obj="RRBlacksmith"/>
 	<src obj="URBlacksmith2"/>
 	<src obj="URBlacksmith3"/>
+	<src obj="LRBlacksmith"/>
 </cmd>
 
 <cmd name="Roman Chariot Wheels" priority="5"
@@ -346,7 +377,7 @@
 <!-- BLACKSMITH COMMANDS -->
 <!-- 'Horseman', 'Axeman', 'Spearman' and 'Woman warrior'-->
 
-<cmd name="Gaul Axeman" priority="0"
+<cmd name="Gaul Axeman" priority="1"
 	queueicon="gameres/icons/upgrades/axe.bmp"
 	button="upgrades/axe.bmp"
 	key="x"
@@ -363,7 +394,7 @@
 	<src obj="CGBlacksmith"/>
 </cmd>
 
-<cmd name="Gaul Axeman" priority="0"
+<cmd name="Gaul Axeman" priority="1"
 	queueicon="gameres/icons/upgrades/axe.bmp"
 	button="upgrades/axe.bmp"
 	key="x"
@@ -377,9 +408,10 @@
 	method="research"
 	param="NameSet, Gaul Axeman, default,NameSet, GAxeman">
 	<src obj="GGBlacksmith"/>
+	<src obj="LGBlacksmith"/>
 </cmd>
 
-<cmd name="Gaul Iron Axes" priority="0"
+<cmd name="Gaul Iron Axes" priority="1"
 	queueicon="gameres/icons/upgrades/axe iron.bmp"
 	button="upgrades/axe iron.bmp"
 	key="x"
@@ -427,6 +459,7 @@
 	method="research"
 	param="NameSet, Gaul Spearman, default,NameSet, GSpearman">
 	<src obj="GGBlacksmith"/>
+	<src obj="LGBlacksmith"/>
 </cmd>
 
 <cmd name="Gaul Iron Spearheads" priority="1"
@@ -508,6 +541,7 @@
 	method="research"
 	param="NameSet, Horseshoes, default, NameSet, GHorseman,">
 	<src obj="GGBlacksmith"/>
+	<src obj="LGBlacksmith"/>
 </cmd>
 
 <!--
@@ -559,6 +593,7 @@
 	method="research"
 	param="NameSet, Gaul Woman Warrior, default,NameSet, GWomanWarrior">
 	<src obj="GGBlacksmith"/>
+	<src obj="LGBlacksmith"/>
 </cmd>
 
 <cmd name="Gaul Fine Armor" priority="3"
@@ -581,7 +616,7 @@
 <!-- IBERIAN BLACKSMITH COMMANDS -->
 <!-- 'IDefender', 'ICavalry', 'ISlinger' and 'IEliteGuard'-->
 
-<cmd name="Spears" priority="1"
+<cmd name="Spears" priority="2"
 	queueicon="gameres/icons/upgrades/ISpears.bmp"
 	button="upgrades/ispears.bmp"
 	key="p"
@@ -595,6 +630,7 @@
 	method="research"
 	param="NameSet,Spears,default, NameSet, IDefender,">
 	<src obj="IBlacksmith"/>
+	<src obj="LIBlacksmith"/>
 </cmd>
 
 <cmd name="Horseshoes" priority="2"
@@ -611,9 +647,10 @@
 	method="research"
 	param="NameSet,Horseshoes ,default,NameSet, ICavalry,">
 	<src obj="IBlacksmith"/>
+	<src obj="LIBlacksmith"/>
 </cmd>
 
-<cmd name="Slings" priority="0"
+<cmd name="Slings" priority="1"
 	queueicon="gameres/icons/upgrades/ISlingstones.bmp"
 	button="upgrades/ISlingstones.bmp"
 	key="s"
@@ -627,6 +664,7 @@
 	method="research"
 	param="NameSet,Slings,default,NameSet, ISlinger, ">
 	<src obj="IBlacksmith"/>
+	<src obj="LIBlacksmith"/>
 </cmd>
 
 <cmd name="Battleaxes" priority="3"
@@ -643,6 +681,7 @@
 	method="research"
 	param="NameSet,Battle Axe,default,NameSet, IEliteGuard,">
 	<src obj="IBlacksmith"/>
+	<src obj="LIBlacksmith"/>
 </cmd>
 
 <!-- Carthage Blacksmith -->
@@ -841,6 +880,7 @@
 	param="NameSet,Spears,default, NameSet, BBronzeSpearman,">
 	<src obj="BBlacksmith"/>
 	<src obj="BKBlacksmith"/>
+	<src obj="LBBlacksmith"/>
 </cmd>
 
 <cmd name="Britain Large Shields" priority="2"
@@ -858,6 +898,7 @@
 	param="NameSet,Large Shields,default, NameSet, BShieldBearer,">
 	<src obj="BBlacksmith"/>
 	<src obj="BKBlacksmith"/>
+	<src obj="LBBlacksmith"/>
 </cmd>
 
 <cmd name="Britain Javelins" priority="3"
@@ -876,6 +917,7 @@
 	<src obj="BBlacksmith"/>
 	<src obj="BKBlacksmith"/>
 	<src obj="UnionBlacksmith"/>
+	<src obj="LBBlacksmith"/>
 </cmd>
 
 <cmd name="Britain Swords" priority="3"
@@ -893,6 +935,7 @@
 	param="NameSet,Swords,default, NameSet, BHighlander,">
 	<src obj="BBlacksmith"/>
 	<src obj="BKBlacksmith"/>
+	<src obj="LBBlacksmith"/>
 </cmd>
 
 <!--          Egypt blacksmith    -->
@@ -910,7 +953,7 @@
 	method="getcharm"
 	param="Damage charm" >
 	<src obj="EBlacksmith"/>
-	<src obj="EEBlacksmith"/>
+	<src obj="EEEBlacksmith"/>
 </cmd>
 
 <cmd name="Charm of Thoth" priority="1"
@@ -927,7 +970,7 @@
 	method="getcharm"
 	param="Armor charm" >
 	<src obj="EBlacksmith"/>
-	<src obj="EEBlacksmith"/>
+	<src obj="EEEBlacksmith"/>
 </cmd>
 
 <cmd name="Charm of Ra" priority="1"
@@ -944,7 +987,7 @@
 	method="getcharm"
 	param="Health charm" >
 	<src obj="EBlacksmith"/>
-	<src obj="EEBlacksmith"/>
+	<src obj="EEEBlacksmith"/>
 </cmd>
 <cmd name="Charm of Isis" priority="1"
 	queueicon="gameres/icons/upgrades/charm of isis.bmp"
@@ -960,7 +1003,7 @@
 	method="getcharm"
 	param="Knowledge charm" >
 	<src obj="EBlacksmith"/>
-	<src obj="EEBlacksmith"/>
+	<src obj="EEEBlacksmith"/>
 </cmd>
 
 <!--           Germany                 -->
@@ -1032,7 +1075,7 @@
 
 <!-- Other Stronghold in editor -->
 
-<cmd name="Roman Gladiator" priority="2"
+<cmd name="Roman Tridents" priority="2"
 	queueicon="gameres/icons/upgrades/Gladiator.bmp"
 	button="upgrades/glad.bmp"
 	key="g"
@@ -1041,13 +1084,14 @@
 	costgold = "1800"
 	costfood = "0"
 	execdelay = "30000"
-	rollover="Tridents"
+	rollover="Roman Tridents"
 	description="Allows Gladiators to be equipped in the Barracks"
 	method="research"
-	param="NameSet, Roman Gladiator,default, NameSet, RGladiator">
+	param="NameSet, Roman Tridents,default, NameSet, RGladiator">
 	<src obj="RRBlacksmith"/>
 	<src obj="URBlacksmith"/>
 	<src obj="URBlacksmith2"/>
+	<src obj="LRBlacksmith"/>
 </cmd>
 
 <cmd name="Teuton Master" priority="7"
@@ -1081,8 +1125,8 @@
 	researchcommand="yes"
 	param = "NameSet, Cult of Anubis, default, NameSet,EAnubisWarrior,">
 	<src obj="EEBlacksmith"/>
-	<src obj="EEEBlacksmith"/>
 	<src obj="ECBlacksmith3"/>
+	<src obj="LEBlacksmith"/>
 </cmd>
 
 <cmd name="Cult of Horus" priority="7"
@@ -1099,8 +1143,8 @@
 	researchcommand="yes"
 	param = "NameSet, Cult of Horus,default,NameSet,EHorusWarrior">
 	<src obj="EEBlacksmith"/>
-	<src obj="EEEBlacksmith"/>
 	<src obj="ECBlacksmith3"/>
+	<src obj="LEBlacksmith"/>
 </cmd>
 
 <cmd name="Charm of Bastet" priority="4"
@@ -1116,7 +1160,6 @@
 	method="research"
 	researchcommand="yes"
 	param="NameSet, Charm of Bastet, default, SetsSet, items/Charm of Bastet, 1">
-	<src obj="EEEBlacksmith"/>
 	<src obj="EEEEBlacksmith"/>
 </cmd>
 
@@ -1133,7 +1176,6 @@
 	method="research"
 	researchcommand="yes"
 	param="NameSet, Charm of Sobek, default, SetsSet, items/Charm of Sobek, 1">
-	<src obj="EEEBlacksmith"/>
 	<src obj="EEEEBlacksmith"/>
 </cmd>
 
@@ -1150,7 +1192,6 @@
 	method="research"
 	researchcommand="yes"
 	param="NameSet, Charm of Ptah, default, SetsSet, items/Charm of Ptah, 1">
-	<src obj="EEEBlacksmith"/>
 	<src obj="EEEEBlacksmith"/>
 </cmd>
 
@@ -1167,7 +1208,6 @@
 	method="research"
 	researchcommand="yes"
 	param="NameSet, Charm of Neith, default, SetsSet, items/Charm of Neith, 1">
-	<src obj="EEEBlacksmith"/>
 	<src obj="EEEEBlacksmith"/>
 </cmd>
 
@@ -1339,6 +1379,7 @@
 	method="research"
 	param="NameSet,Axe production,default, NameSet, TAxeman,">
 	<src obj="GTBlacksmith"/>
+	<src obj="LTBlacksmith"/>
 </cmd>
 
 <cmd name="Horseshoe production" priority="3"
@@ -1355,6 +1396,7 @@
 	method="research"
 	param="NameSet,Horseshoe production ,default,NameSet, TTeutonRider,">
 	<src obj="GTBlacksmith"/>
+	<src obj="LTBlacksmith"/>
 </cmd>
 
 <cmd name="Javelin production" priority="2"
@@ -1372,6 +1414,7 @@
 	param="NameSet,Javelin production,default,NameSet, THuntress, ">
 	<src obj="GTBlacksmith"/>
 	<src obj="InviBlacksmith"/>
+	<src obj="LTBlacksmith"/>
 </cmd>
 
 <cmd name="Mace production" priority="4"
@@ -1388,9 +1431,10 @@
 	method="research"
 	param="NameSet,Mace production,default,NameSet, TMaceman,">
 	<src obj="GTBlacksmith"/>
+	<src obj="LTBlacksmith"/>
 </cmd>
 
-<cmd name="Extended Forge Spears" priority="3"
+<cmd name="Carthage Spears" priority="3"
 	queueicon="gameres/icons/upgrades/CSpears.bmp"
 	button="upgrades/CSpears.bmp"
 	key="s"
@@ -1399,16 +1443,17 @@
 	costgold = "900"
 	costfood = "0"
 	execdelay = "10000"
-	rollover="Extended Forge Spears"
+	rollover="Carthage Spears"
 	description="Allows Libyan Footmen to be equipped in the Barracks"
 	method="research"
-	param="NameSet,Extended Forge Spears,default,NameSet, CLibyanFootman,">
+	param="NameSet,Carthage Spears,default,NameSet, CLibyanFootman,">
 	<src obj="ECBlacksmith"/>
 	<src obj="ECBlacksmith2"/>
 	<src obj="ECBlacksmith3"/>
+	<src obj="LCBlacksmith"/>
 </cmd>
 
-<cmd name="Extended Forge Javelins" priority="4"
+<cmd name="Carthage Javelins" priority="4"
 	queueicon="gameres/icons/upgrades/CJavelins.bmp"
 	button="upgrades/CJavelins.bmp"
 	key="j"
@@ -1417,16 +1462,17 @@
 	costgold = "1000"
 	costfood = "0"
 	execdelay = "10000"
-	rollover="Extended Forge Javelins"
+	rollover="Carthage Javelins"
 	description="Allows Javelin Throwers to be equipped in the Barracks"
 	method="research"
-	param="NameSet,Extended Forge Javelins,default,NameSet, CJavelinThrower,">
+	param="NameSet,Carthage Javelins,default,NameSet, CJavelinThrower,">
 	<src obj="ECBlacksmith"/>
 	<src obj="ECBlacksmith2"/>
 	<src obj="ECBlacksmith3"/>
+	<src obj="LCBlacksmith"/>
 </cmd>
 
-<cmd name="Extended Forge Swords" priority="5"
+<cmd name="Carthage Swords" priority="5"
 	queueicon="gameres/icons/upgrades/CSwords.bmp"
 	button="upgrades/CSwords.bmp"
 	key="w"
@@ -1435,16 +1481,17 @@
 	costgold = "1200"
 	costfood = "0"
 	execdelay = "12000"
-	rollover="Extended Forge Swords"
+	rollover="Carthage Swords"
 	description="Allows Berber Assassins to be equipped in the Barracks"
 	method="research"
-	param="NameSet,Extended Forge Swords,default,NameSet, CBerberAssassin,">
+	param="NameSet,Carthage Swords,default,NameSet, CBerberAssassin,">
 	<src obj="ECBlacksmith"/>
 	<src obj="ECBlacksmith2"/>
 	<src obj="ECBlacksmith3"/>
+	<src obj="LCBlacksmith"/>
 </cmd>
 
-<cmd name="Extended Forge Maces" priority="6"
+<cmd name="Carthage Maces" priority="6"
 	queueicon="gameres/icons/upgrades/CMaces.bmp"
 	button="upgrades/CMaces.bmp"
 	key="m"
@@ -1453,14 +1500,15 @@
 	costgold = "1300"
 	costfood = "0"
 	execdelay = "13000"
-	rollover="Extended Forge Maces"
+	rollover="Carthage Maces"
 	description="Allows Macemen to be equipped in the Barracks"
 	method="research"
-	param="NameSet,Extended Forge Maces,default,NameSet, CMaceman,">
+	param="NameSet,Carthage Maces,default,NameSet, CMaceman,">
 	<src obj="ECBlacksmith"/>
+	<src obj="LCBlacksmith"/>
 </cmd>
 
-<cmd name="Extended Forge Pikes" priority="6"
+<cmd name="Carthage Pikes" priority="6"
 	queueicon="gameres/icons/upgrades/CPikes.bmp"
 	button="upgrades/CPikes.bmp"
 	key="p"
@@ -1469,13 +1517,31 @@
 	costgold = "2200"
 	costfood = "0"
 	execdelay = "22000"
-	rollover="Extended Forge Pikes"
+	rollover="Carthage Pikes"
 	description="Allows Numidian Riders to be equipped in the Barracks"
 	method="research"
-	param="NameSet,Extended Forge Pikes,default,NameSet, CNumidianRider,">
+	param="NameSet,Carthage Pikes,default,NameSet, CNumidianRider,">
 	<src obj="ECBlacksmith"/>
 	<src obj="ECBlacksmith3"/>
+	<src obj="LCBlacksmith"/>
 </cmd>
+
+<cmd name="Carthage Sacred Legion" priority="9"
+	button="Upgrades/Sacred Legion.bmp"
+	queueicon="gameres/icons/upgrades/Sacred Legion.bmp"
+	key="l"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "4000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Carthage Sacred Legion"
+	description="Allows Nobles to be hired in the Barracks"
+	method="research"
+	param="NameSet,Carthage Sacred Legion,default,NameSet, CNoble,">
+	<src obj="LCBlacksmith"/>
+</cmd>
+
 
 <cmd name="Calling Liberati" priority="8"
 	queueicon="gameres/icons/upgrades/Calling Liberati.bmp"
@@ -1487,9 +1553,9 @@
 	costfood = "0"
 	execdelay = "20000"
 	rollover="Calling Liberati"
-	description="Allows level 12 Liberati to be equipped in the Barracks"
+	description="Allows Liberati to be equipped in the Barracks"
 	method="research"
-	param="NameSet,Calling Liberati,default,SetsSet, levels/RLiberatus, 12,  NameSet, RLiberatus,">
+	param="NameSet,Calling Liberati, default, NameSet, RLiberatus">
 	<src obj="ECBlacksmith"/>
 </cmd>
 
@@ -1519,9 +1585,9 @@
 	costfood = "0"
 	execdelay = "30000"
 	rollover="Calling Legion Commander"
-	description="Allows level 12 Legion Commanders to be hired in the Barracks"
+	description="Allows Legion Commanders to be hired in the Barracks"
 	method="research"
-	param="NameSet,Calling Legion Commander,default,SetsSet, levels/LegionCommander, 12,  NameSet, LegionCommander,">
+	param="NameSet,Calling Legion Commander,default,NameSet, LegionCommander, ">
 	<src obj="ECBlacksmith"/>
 	<src obj="ECBlacksmith2"/>
 </cmd>
@@ -1665,14 +1731,15 @@
 	costfood = "0"
 	execdelay = "50000"
 	rollover="Master Axes"
-	description="Allows Level 12 Master Axemen to be hired in the Barracks"
+	description="Allows Master Axemen to be hired in the Barracks"
 	method="research"
-	param="NameSet,Master Axes,default,SetsSet, levels/CMERCENARIO, 12,  NameSet, CMERCENARIO,">
+	param="NameSet,Master Axes, default, NameSet, CMERCENARIO">
 	<src obj="CBlacksmith"/>
 	<src obj="CCBlacksmith"/>
 	<src obj="ECBlacksmith"/>
 	<src obj="ECBlacksmith2"/>
 	<src obj="UnionBlacksmith2"/>
+	<src obj="LCBlacksmith"/>
 </cmd>
 
 <cmd name="Fairy Horse" priority="9"
@@ -1690,6 +1757,7 @@
 	param="NameSet,Fairy Horse, default, NameSet, BHorseman">
 	<src obj="BBlacksmith"/>
 	<src obj="UnionBlacksmith2"/>
+	<src obj="LBBlacksmith"/>
 </cmd>
 
 <cmd name="Dual Swords" priority="9"
@@ -1707,8 +1775,8 @@
 	param="NameSet,Dual Swords, default, NameSet, PINMORTAL">
 	<src obj="EBlacksmith"/>
 	<src obj="EEBlacksmith"/>
-	<src obj="EEEBlacksmith"/>
 	<src obj="UnionBlacksmith2"/>
+	<src obj="LEBlacksmith"/>
 </cmd>
 
 <cmd name="Steel Weapons" priority="9"
@@ -1728,6 +1796,7 @@
 	<src obj="GGBlacksmith"/>
 	<src obj="CGBlacksmith"/>
 	<src obj="UnionBlacksmith2"/>
+	<src obj="LGBlacksmith"/>
 </cmd>
 
 <cmd name="Wall of Shields" priority="9"
@@ -1746,6 +1815,7 @@
 	<src obj="HBlacksmith"/>
 	<src obj="AHBlacksmith"/>
 	<src obj="UnionBlacksmith2"/>
+	<src obj="LHBlacksmith"/>
 </cmd>
 
 <cmd name="Teuton Wolves" priority="9"
@@ -1763,6 +1833,7 @@
 	param="SetsSet, levels/TTeutonWolf, 10, default, NameSet,Teuton Wolves, default">
 	<src obj="GTBlacksmith"/>
 	<src obj="UnionBlacksmith2"/>
+	<src obj="LTBlacksmith"/>
 </cmd>
 
 <cmd name="Dual Axes" priority="9"
@@ -1780,6 +1851,7 @@
 	param="NameSet,Dual Axes, default, NameSet, NVAEL">
 	<src obj="IBlacksmith"/>
 	<src obj="UnionBlacksmith2"/>
+	<src obj="LIBlacksmith"/>
 </cmd>
 
 <cmd name="Heavy Shields and Spears" priority="9"
@@ -1818,6 +1890,7 @@
 	<src obj="RRBlacksmith"/>
 	<src obj="URBlacksmith2"/>
 	<src obj="UnionBlacksmith2"/>
+	<src obj="LRBlacksmith"/>
 </cmd>
 
 </commands>

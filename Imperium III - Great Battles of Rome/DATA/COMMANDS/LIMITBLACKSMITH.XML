@@ -1,0 +1,131 @@
+<commands>
+
+<cmd name="Egypt Archers" priority="0"
+	queueicon="gameres/icons/upgrades/Greek Arches.bmp"
+	button="Upgrades/Greek Arches.bmp"
+	key="a"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "200"
+	costfood = "0"
+	execdelay = "10000"
+	rollover="Arrows"
+	description="Allows Egypt Archers to be equipped in the Barracks"
+	method="research"
+	param="NameSet, Egypt Arrows,default,NameSet, EArcher,,">
+	<src obj="LEBlacksmith"/>
+</cmd>
+
+<cmd name="Britain Archers" priority="0"
+	queueicon="gameres/icons/upgrades/Greek Arches.bmp"
+	button="Upgrades/Greek Arches.bmp"
+	key="a"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "200"
+	costfood = "0"
+	execdelay = "10000"
+	rollover="Arrows"
+	description="Allows Bowman to be equipped in the Barracks"
+	method="research"
+	param="NameSet, Britain Arrows,default,NameSet, BSwordsman,,">
+	<src obj="LBBlacksmith"/>
+</cmd>
+
+<cmd name="Germany Archers" priority="0"
+	queueicon="gameres/icons/upgrades/Greek Arches.bmp"
+	button="Upgrades/Greek Arches.bmp"
+	key="a"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "200"
+	costfood = "0"
+	execdelay = "10000"
+	rollover="Arrows"
+	description="Allows Germany Archers to be equipped in the Barracks"
+	method="research"
+	param="NameSet, Germany Arrows,default,NameSet, TArcher,,">
+	<src obj="LTBlacksmith"/>
+</cmd>
+
+<cmd name="Gaul Archers" priority="0"
+	queueicon="gameres/icons/upgrades/Greek Arches.bmp"
+	button="Upgrades/Greek Arches.bmp"
+	key="a"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "200"
+	costfood = "0"
+	execdelay = "10000"
+	rollover="Arrows"
+	description="Allows Gaul Archers to be equipped in the Barracks"
+	method="research"
+	param="NameSet, Gaul Arrows,default,NameSet, GArcher,,">
+	<src obj="LGBlacksmith"/>
+</cmd>
+
+<cmd name="Iberia Archers" priority="0"
+	queueicon="gameres/icons/upgrades/Greek Arches.bmp"
+	button="Upgrades/Greek Arches.bmp"
+	key="a"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "200"
+	costfood = "0"
+	execdelay = "10000"
+	rollover="Arrows"
+	description="Allows Iberia Archers to be equipped in the Barracks"
+	method="research"
+	param="NameSet, Iberia Arrows,default,NameSet, IArcher,,">
+	<src obj="LIBlacksmith"/>
+</cmd>
+
+<cmd name="Axe of Throwers" priority="5"
+	button="upgrades/AXES THOWER.bmp"
+	key="t"
+	queueicon="gameres/icons/upgrades/AXES THOWER.bmp"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "20000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Axe of Throwers"
+	description="Allows training of Axe thrower"
+	method="research"
+	researchcommand="yes"
+	param = "NameSet, Axe of Throwers,default,NameSet,EAxetrower">
+	<src obj="LEBlacksmith"/>
+</cmd>
+
+<cmd name="Shield of Guardians" priority="6"
+	button="upgrades/shields.bmp"
+	key="s"
+	queueicon="gameres/icons/upgrades/shields.bmp"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "20000"
+	groupverifier="data/subai/verify_research.vs"
+	rollover="Shield of Guardians"
+	description="Allows training of Guardian"
+	method="research"
+	researchcommand="yes"
+	param = "NameSet, Shield of Guardians,default,NameSet,EGuardian">
+	<src obj="LEBlacksmith"/>
+</cmd>
+
+<cmd name="Teuton production" priority="3"
+	queueicon="gameres/icons/upgrades/Horseshoes.bmp"
+	button="upgrades/Horseshoes.bmp"
+	key="h"
+	researchcommand="yes"
+	groupverifier="data/subai/verify_research.vs"
+	costgold = "2000"
+	costfood = "0"
+	execdelay = "30000"
+	rollover="Horseshoe production"
+	description="Allows Teuton Riders and Teuton Archers to be equipped in the Barracks"
+	method="research"
+    param="NameSet,Horseshoe production, default, NameSet, LTTeutonRider, NameSet, LTTeutonArcher">
+	<src obj="GTBlacksmith"/>
+</cmd>
+
+</commands>

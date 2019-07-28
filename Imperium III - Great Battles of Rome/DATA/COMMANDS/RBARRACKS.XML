@@ -70,7 +70,7 @@
 	execdelay = "10000"
 	rollover="Equip Gladiator"
 	method="train"
-	param="RGladiator, Roman Gladiator"
+	param="RGladiator, Roman Tridents"
 	sclass="RGladiator">
 	<src obj="RBarracks"/>
 </cmd>
@@ -189,6 +189,7 @@
 	param="1, 8, Hipatista, Hipatista, Heavy Swords and Shields, blacksmith"
 	sclass="Hipatista">
 	<src obj="RBarracks"/>
+	<src obj="LRBarracks"/>
 </cmd>
 
 <!--

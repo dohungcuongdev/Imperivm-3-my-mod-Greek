@@ -134,6 +134,7 @@
 	param="NameSet, People's Assembly, default">
 	<src obj="CArena"/>
 	<src obj="ECArena"/>
+	<src obj="CArena2"/>
 </cmd>
 
 <cmd name="Tournaments" priority="2"
@@ -343,7 +344,7 @@
 	<src obj="GArena3"/>
 </cmd>
 
-<cmd name="Extended Shared Strength" priority="3"
+<cmd name="Carthage Shared Strength" priority="3"
 	button="research/shared strength.bmp"
 	key="s"
 	queueicon="gameres/icons/upgrades/Shared Strength.bmp"
@@ -351,16 +352,17 @@
 	costfood = "0"
 	execdelay = "40000"
 	groupverifier="data/subai/verify_research.vs"
-	rollover="Extended Shared Strength"
+	rollover="Carthage Shared Strength"
 	description="All new captains, special heroes and normal warriors are level 6"
 	method="research"
 	researchcommand="yes"
-	param = "ReqSet, People's Assembly, default, SetsPlr, standard_spawn_level, 6, NameSet, Extended Shared Strength, "
+	param = "ReqSet, People's Assembly, default, SetsPlr, standard_spawn_level, 6, NameSet, Carthage Shared Strength, "
 	>
 	<src obj="ECArena"/>
+	<src obj="CArena2"/>
 </cmd>
 
-<cmd name="Extended Shared Triumph" priority="3"
+<cmd name="Carthage Shared Triumph" priority="3"
 	button="research/shared triumph.bmp"
 	key="p"
 	queueicon="gameres/icons/upgrades/Shared Triumph.bmp"
@@ -368,13 +370,14 @@
 	costfood = "0"
 	execdelay = "50000"
 	groupverifier="data/subai/verify_research.vs"
-	rollover="Extended Shared Triumph"
+	rollover="Carthage Shared Triumph"
 	description="All new captains, special heroes and normal warriors are level 12"
 	method="research"
 	researchcommand="yes"
-	param = "ReqSet, Extended Shared Strength, , SetsPlr, standard_spawn_level, 12, NameSet, Extended Shared Triumph, default"
+	param = "ReqSet, Carthage Shared Strength, , SetsPlr, standard_spawn_level, 12, NameSet, Carthage Shared Triumph, default"
 	>
 	<src obj="ECArena"/>
+	<src obj="CArena2"/>
 </cmd>
 
 
@@ -466,6 +469,7 @@
 	>
 	<src obj="CArena"/>
 	<src obj="ECArena"/>
+	<src obj="CArena2"/>
 </cmd>
 
 <cmd name="hireheroUR" priority="1"
@@ -572,6 +576,7 @@
 	help="/contents/units/CHero"
 	rollover="Hire classic hero">
 	<src obj="CArena"/>
+	<src obj="CArena2"/>
 </cmd>
 
 <cmd name="hireheroEC" priority="1"
@@ -944,6 +949,7 @@
 	param="1, elephant, CWarElephant, War Elephant, People's Assembly">
 	<src obj="CArena"/>
 	<src obj="ECArena"/>
+	<src obj="CArena2"/>
 </cmd>
 
 <cmd name="Hire War Elephant Hero" priority="4"
@@ -981,6 +987,7 @@
 	method="research"
 	param="ReqSet, People's Assembly, default, NamePlr, Spoils of war, default">
 	<src obj="CArena"/>
+	<src obj="CArena2"/>
 </cmd>
 
 <cmd name="Military Academy" priority="6"
@@ -1853,7 +1860,7 @@
 	rollover="Elephant Training"
 	description="All new War Elephant are level 32. Allows to hire level 32 War Elephant Hero"
 	method="research"
-	param="ReqSet, Extended Shared Triumph, default, SetsSet, levels/CWarElephant, 32, SetsSet, levels/ECWarElephant, 32, default, NameSet,Elephant Training, default">
+	param="ReqSet, Carthage Shared Triumph, default, SetsSet, levels/CWarElephant, 32, SetsSet, levels/ECWarElephant, 32, default, NameSet,Elephant Training, default">
 	<src obj="ECArena"/>
 </cmd>
 

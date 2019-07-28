@@ -1,7 +1,7 @@
 <class id="BBronzeSpearman" cpp_class="CVXUnit" parent="Melee" entity="Units/BBronzeSpearman/BBronzeSpearman.ent.xml">
 
 	<properties race="Britain"/>
-	<properties maxhealth="200"/>
+	<properties maxhealth="220"/>
 	<properties damage="20" armor_slash="12" armor_pierce="12"/>
 	<properties speed="80"/>
 	<properties unit_specials="Penetration, Deflection"/>

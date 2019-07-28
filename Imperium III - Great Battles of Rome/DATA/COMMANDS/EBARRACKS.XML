@@ -104,7 +104,7 @@
 	<src obj="ECBarracks3"/>
 </cmd>
 
-<cmd name="trainEGuardian" priority="8"
+<cmd name="trainEGuardian" priority="5"
 	button="actions/train EGuardian.bmp"
 	queueicon="gameres/icons/EGuardian.bmp"
 	groupverifier="data/subai/verify_cmdcost_building.vs"
@@ -143,6 +143,7 @@
 	sclass="PINMORTAL">
 	<src obj="EBarracks"/>
 	<src obj="UnionBarracks2"/>
+	<src obj="LEBarracks"/>
 </cmd>
 
 </commands>

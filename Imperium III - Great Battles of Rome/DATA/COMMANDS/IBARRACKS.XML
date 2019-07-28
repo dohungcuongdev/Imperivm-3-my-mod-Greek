@@ -138,6 +138,7 @@
 	sclass="NVAEL">
 	<src obj="IBarracks"/>
 	<src obj="UnionBarracks2"/>
+	<src obj="LIBarracks"/>
 </cmd>
 
 </commands>

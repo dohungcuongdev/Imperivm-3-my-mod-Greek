@@ -16,7 +16,7 @@
 	execdelay = "6000"
 	rollover="Equip Libyan Footman"
 	method="train"
-	param="CLibyanFootman,Extended Forge Spears"
+	param="CLibyanFootman,Carthage Spears"
 	sclass="CLibyanFootman">
 	<src obj="ECBarracks"/>
 	<src obj="ECBarracks2"/>
@@ -37,7 +37,7 @@
 	execdelay = "10000"
 	rollover="Equip Javelin Thrower"
 	method="train"
-	param="CJavelinThrower,Extended Forge Javelins"
+	param="CJavelinThrower,Carthage Javelins"
 	sclass="CJavelinThrower">
 	<src obj="ECBarracks"/>
 	<src obj="ECBarracks2"/>
@@ -58,7 +58,7 @@
 	execdelay = "14000"
 	rollover="Equip Berber Assassin"
 	method="train"
-	param="CBerberAssassin,Extended Forge Swords"
+	param="CBerberAssassin,Carthage Swords"
 	sclass="CBerberAssassin">
 	<src obj="ECBarracks"/>
 	<src obj="ECBarracks2"/>
@@ -79,7 +79,7 @@
 	execdelay = "16000"
 	rollover="Equip Maceman"
 	method="train"
-	param="CMaceman,Extended Forge Maces"
+	param="CMaceman,Carthage Maces"
 	sclass="CMaceman">
 	<src obj="ECBarracks"/>
 </cmd>
@@ -98,7 +98,7 @@
 	execdelay = "20000"
 	rollover="Equip Numidian Rider"
 	method="train"
-	param="CNumidianRider,Extended Forge Pikes"
+	param="CNumidianRider,Carthage Pikes"
 	sclass="CNumidianRider">
 	<src obj="ECBarracks"/>
 	<src obj="ECBarracks3"/>

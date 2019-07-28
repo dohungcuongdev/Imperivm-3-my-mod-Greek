@@ -236,6 +236,7 @@
 	sclass="CMERCENARIO">
 	<src obj="CBarracks"/>
 	<src obj="UnionBarracks2"/>
+	<src obj="LCBarracks"/>
 </cmd>
 
 </commands>

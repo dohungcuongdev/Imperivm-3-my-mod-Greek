@@ -37,6 +37,14 @@
 	<src obj="InviBarracks"/>
 	<src obj="ECBarracks3"/>
 	<src obj="UnionBarracks2"/>
+	<src obj="LBBarracks"/>
+	<src obj="LRBarracks"/>
+	<src obj="LGBarracks"/>
+	<src obj="LHBarracks"/>
+	<src obj="LCBarracks"/>
+	<src obj="LEBarracks"/>
+	<src obj="LIBarracks"/>
+	<src obj="LTBarracks"/>
 </cmd>
 
 <cmd name="Barrack Level 1" priority="2"
@@ -77,6 +85,14 @@
 	<src obj="InviBarracks"/>
 	<src obj="ECBarracks3"/>
 	<src obj="UnionBarracks2"/>
+	<src obj="LBBarracks"/>
+	<src obj="LRBarracks"/>
+	<src obj="LGBarracks"/>
+	<src obj="LHBarracks"/>
+	<src obj="LCBarracks"/>
+	<src obj="LEBarracks"/>
+	<src obj="LIBarracks"/>
+	<src obj="LTBarracks"/>
 </cmd>
 
 <cmd name="Barrack Level 2" priority="2"
@@ -117,6 +133,14 @@
 	<src obj="InviBarracks"/>
 	<src obj="ECBarracks3"/>
 	<src obj="UnionBarracks2"/>
+	<src obj="LBBarracks"/>
+	<src obj="LRBarracks"/>
+	<src obj="LGBarracks"/>
+	<src obj="LHBarracks"/>
+	<src obj="LCBarracks"/>
+	<src obj="LEBarracks"/>
+	<src obj="LIBarracks"/>
+	<src obj="LTBarracks"/>
 </cmd>
 
 <cmd name="Barrack Level 3" priority="2"
@@ -154,6 +178,14 @@
 	<src obj="InviBarracks"/>
 	<src obj="ECBarracks3"/>
 	<src obj="UnionBarracks2"/>
+	<src obj="LBBarracks"/>
+	<src obj="LRBarracks"/>
+	<src obj="LGBarracks"/>
+	<src obj="LHBarracks"/>
+	<src obj="LCBarracks"/>
+	<src obj="LEBarracks"/>
+	<src obj="LIBarracks"/>
+	<src obj="LTBarracks"/>
 </cmd>
 
 </commands>

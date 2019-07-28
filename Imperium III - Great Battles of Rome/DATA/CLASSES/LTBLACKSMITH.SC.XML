@@ -1,0 +1,11 @@
+<class id="LTBlacksmith" cpp_class="CVXBuilding" parent="BaseBlacksmith" entity="Buildings/TBlacksmith/TBlacksmith.ent.xml">
+	<properties race="Germany"/>
+	<properties icon="gameres/icons/TBlacksmith.bmp"/>
+	<properties display_name="Blacksmith"/>
+	<properties radius="220" selection_radius="230"/>
+	<properties edittree_pos="Structures/Stronghold (Limit)/Germany/Blacksmith"/>
+	<properties help="/contents/buildings/TBlacksmith"/>
+	<properties auto_repair="no"/>
+	
+	<behavior script="data/subai/TBlacksmith_anim.vs"/>
+</class>

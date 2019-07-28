@@ -177,6 +177,7 @@
 	sclass="NSECUAZ">
 	<src obj="GBarracks"/>
 	<src obj="UnionBarracks2"/>
+	<src obj="LGBarracks"/>
 </cmd>
 
 </commands>

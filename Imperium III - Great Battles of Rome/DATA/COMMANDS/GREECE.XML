@@ -161,6 +161,7 @@
 	sclass="EHOPLITA">
 	<src obj="HBarracks"/>
 	<src obj="UnionBarracks2"/>
+	<src obj="LHBarracks"/>
 </cmd>
 
 <!-- GREEK BLACKSMITH COMMANDS -->
@@ -180,6 +181,7 @@
 	param="NameSet, Greek Arrows,default,NameSet, HToxotes,,">
 	<src obj="HBlacksmith"/>
 	<src obj="AHBlacksmith"/>
+	<src obj="LHBlacksmith"/>
 </cmd>
 
 <cmd name="Greece Tridents" priority="1"
@@ -213,6 +215,7 @@
 	param="NameSet,Greek Spears,default, NameSet, HHoplite,">
 	<src obj="HBlacksmith"/>
 	<src obj="AHBlacksmith"/>
+	<src obj="LHBlacksmith"/>
 </cmd>
 
 <cmd name="Greek Chariot Wheels" priority="2"
@@ -230,6 +233,7 @@
 	param="NameSet,Greek Chariot Wheels,default, NameSet, HChariot,">
 	<src obj="HBlacksmith"/>
 	<src obj="AHBlacksmith"/>
+	<src obj="LHBlacksmith"/>
 </cmd>
 
 <cmd name="Greek Royal Armor" priority="4"
@@ -247,6 +251,7 @@
 	param="NameSet,Greek Royal Armor,default, NameSet, HHypaspista,">
 	<src obj="HBlacksmith"/>
 	<src obj="AHBlacksmith"/>
+	<src obj="LHBlacksmith"/>
 </cmd>
 
 <cmd name="Strengthen Stronghold Gates" priority="11"
@@ -281,6 +286,7 @@
 	param="NameSet,Forge Elite Equipment,default, NameSet, HMyrmidon_Javelin,">
 	<src obj="HBlacksmith"/>
 	<src obj="AHBlacksmith"/>
+	<src obj="LHBlacksmith"/>
 </cmd>
 
 <!-- GREEK ARENA -->

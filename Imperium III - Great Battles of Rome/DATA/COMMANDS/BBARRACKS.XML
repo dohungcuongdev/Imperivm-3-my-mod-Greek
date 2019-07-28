@@ -142,6 +142,7 @@
 	sclass="BHorseman">
 	<src obj="BBarracks"/>
 	<src obj="UnionBarracks2"/>
+	<src obj="LBBarracks"/>
 </cmd>
 
 <cmd name="trainBKHorseman" priority="9"

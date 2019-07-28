@@ -50,7 +50,7 @@
 	traincommand="yes"
 	key="x"
 	help="/contents/units/TAxeman"
-	costgold = "150"
+	costgold = "165"
 	costfood = "0"
 	costpop = "1"
 	execdelay = "14000"
@@ -69,10 +69,10 @@
 	traincommand="yes"
 	key="h"
 	help="/contents/units/THuntress"
-	costgold = "200"
+	costgold = "220"
 	costfood = "0"
 	costpop = "1"
-	execdelay = "14000"
+	execdelay = "18000"
 	rollover="Equip Huntress"
 	method="train"
 	param="THuntress, Javelin production">
@@ -88,10 +88,10 @@
 	traincommand="yes"
 	key="r"
 	help="/contents/units/TTeutonRider"
-	costgold = "200"
+	costgold = "220"
 	costfood = "0"
 	costpop = "1"
-	execdelay = "20000"
+	execdelay = "18000"
 	rollover="Equip Teuton Rider"
 	method="train"
 	param="TTeutonRider, Horseshoe production">
@@ -107,7 +107,7 @@
 	traincommand="yes"
 	key="m"
 	help="/contents/units/TMaceman"
-	costgold = "250"
+	costgold = "275"
 	costfood = "0"
 	costpop = "1"
 	execdelay = "20000"
@@ -130,11 +130,12 @@
 	costfood = "0"
 	costpop = "1"
 	execdelay = "20000"
-	rollover="Hire Teuton Wolf"
-	description="Hire Teuton Wolf"
+	rollover="Equip Teuton Wolf"
+	description="Equip Teuton Wolf"
 	method="trainex"
 	param="1, 10, TTeutonWolf, TTeutonWolf, Teuton Wolves">
 	<src obj="GTBarracks"/>
 	<src obj="UnionBarracks2"/>
+	<src obj="LTBarracks"/>
 </cmd>
 </commands>

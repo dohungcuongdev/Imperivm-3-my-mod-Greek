@@ -1,0 +1,1021 @@
+<commands>
+
+<!-- GERMAN BARRACKS -->
+
+<cmd name="ltrainGTSwordsman" priority="3"
+	button="actions/train TSwordsman.bmp"
+	queueicon="gameres/icons/TSwordsman.bmp"
+	groupverifier="data/subai/verify_cmdcost_building.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="s"
+	help="/contents/units/TSwordsman"
+	costgold = "60"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "10000"
+	rollover="Equip Swordsman"
+	method="train"
+	param="TSwordsman"
+	sclass="TSwordsman">
+	<src obj="LTBarracks"/>
+</cmd>
+
+<cmd name="ltrainGTArcher" priority="4"
+	button="actions/train TArcher.bmp"
+	queueicon="gameres/icons/TArcher.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="a"
+	help="/contents/units/TArcher"
+	costgold = "100"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "12000"
+	rollover="Equip Archer"
+	method="trainex"
+	param="1, 50, TArcher, TArcher, Germany Arrows, blacksmith"
+	sclass="TArcher">
+	<src obj="LTBarracks"/>
+</cmd>
+
+<cmd name="ltrainGTAxeman" priority="5"
+	button="actions/train TAxeman.bmp"
+	queueicon="gameres/icons/TAxeman.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="x"
+	help="/contents/units/TAxeman"
+	costgold = "165"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "14000"
+	rollover="Equip Axeman"
+	method="trainex"
+	param="1, 40, TAxeman, TAxeman, Axe production, blacksmith"
+	sclass="TAxeman">
+	<src obj="LTBarracks"/>
+</cmd>
+
+<cmd name="ltrainGTHuntress" priority="6"
+	button="actions/train THuntress.bmp"
+	queueicon="gameres/icons/THuntress.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="h"
+	help="/contents/units/THuntress"
+	costgold = "220"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "18000"
+	rollover="Equip Huntress"
+	method="trainex"
+	param="1, 30, THuntress, THuntress, Javelin production, blacksmith"
+	sclass="THuntress">
+	<src obj="LTBarracks"/>
+</cmd>
+
+<cmd name="ltrainGTTeutonRider" priority="7"
+	button="actions/train TTeutonRider.bmp"
+	queueicon="gameres/icons/TTeutonRider.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="r"
+	help="/contents/units/TTeutonRider"
+	costgold = "220"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "18000"
+	rollover="Equip Teuton Rider"
+	method="trainex"
+	param="1, 20, LTTeutonRider, LTTeutonRider, Horseshoe production, blacksmith"
+	sclass="TTeutonRider">
+	<src obj="LTBarracks"/>
+</cmd>
+
+<cmd name="ltrainGTTeutonArcher" priority="7"
+	button="actions/TRAIN TTEUTONARCHER.bmp"
+	key="t"
+	queueicon="gameres/icons/upgrades/tentou-archer.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	help="/contents/units/TTeutonArcher"
+	costgold = "220"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "18000"
+	rollover="Equip Teuton Archer"
+	method="trainex"
+	param="1, 20, LTTeutonArcher, LTTeutonArcher, Horseshoe production, blacksmith"
+	sclass="LTTeutonArcher">
+	<src obj="LTBarracks"/>
+</cmd>
+
+<cmd name="ltrainGTMaceman" priority="8"
+	button="actions/train TMaceman.bmp"
+	queueicon="gameres/icons/TMaceman.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	sclass="TMaceman"
+	traincommand="yes"
+	key="m"
+	help="/contents/units/TMaceman"
+	costgold = "275"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Equip Maceman"
+	method="trainex"
+	param="1, 25, TMaceman, TMaceman, Mace production, blacksmith">
+	<src obj="LTBarracks"/>
+</cmd>
+
+
+<!-- BRITAIN BARRACKS -->
+
+<cmd name="ltrainBSwordsman" priority="3"
+	button="actions/train BSwordsman.bmp"
+	queueicon="gameres/icons/BSwordsman.bmp"
+	groupverifier="data/subai/verify_cmdcost_building.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="s"
+	help="/contents/units/BSwordsman"
+	costgold = "50"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "8000"
+	rollover="Equip Swordsman"
+	method="train"
+	param="BSwordsman"
+	sclass="BSwordsman">
+	<src obj="LBBarracks"/>
+</cmd>
+
+<cmd name="ltrainBBowman" priority="4"
+	button="actions/train BBowman.bmp"
+	queueicon="gameres/icons/BBowman.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="a"
+	help="/contents/units/BBowman"
+	costgold = "60"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "4000"
+	rollover="Equip Bowman"
+	method="trainex"
+	param="1, 50, BBowman, BBowman, Britain Arrows, blacksmith"
+	sclass="BBowman">
+	<src obj="LBBarracks"/>
+</cmd>
+
+<cmd name="ltrainBBronzeSpearman" priority="5"
+	button="actions/train BBronzeSpearman.bmp"
+	queueicon="gameres/icons/BBronzeSpearman.bmp"
+	transpicon="1"
+	traincommand="yes"
+	key="x"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	costgold = "160"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "10000"
+	rollover="Equip Bronze Spearman"
+	method="trainex"
+	param="1, 40, BBronzeSpearman, BBronzeSpearman, Spears, blacksmith"
+	sclass="BBronzeSpearman">
+	<src obj="LBBarracks"/>
+</cmd>
+
+<cmd name="ltrainBShieldBearer" priority="6"
+	button="actions/train BShieldBearer.bmp"
+	queueicon="gameres/icons/BShieldBearer.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="b"
+	help="/contents/units/BShieldBearer"
+	costgold = "140"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "10000"
+	rollover="Equip Shield Bearer"
+	method="trainex"
+	param="1, 40, BShieldBearer, BShieldBearer, Large Shields, blacksmith"
+	sclass="BShieldBearer">
+	<src obj="LBBarracks"/>
+</cmd>
+
+<cmd name="ltrainBJavelineer" priority="7"
+	button="actions/train BJavelineer.bmp"
+	queueicon="gameres/icons/BJavelineer.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="j"
+	help="/contents/units/BJavelineer"
+	costgold = "140"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "12000"
+	rollover="Equip Javelineer"
+	method="trainex"
+	param="1, 40, BJavelineer, BJavelineer, Javelins, blacksmith"
+	sclass="BJavelineer">
+	<src obj="LBBarracks"/>
+</cmd>
+
+<cmd name="ltrainBHighlander" priority="8"
+	button="actions/train BHighlander.bmp"
+	queueicon="gameres/icons/BHighlander.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="h"
+	help="/contents/units/BHighlander"
+	costgold = "400"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Equip Highlander"
+	method="trainex"
+	param="1, 20, BHighlander, BHighlander, Swords, blacksmith"
+	sclass="BHighlander">
+	<src obj="LBBarracks"/>
+</cmd>
+
+
+<!-- CARTHAGE BARRACKS -->
+
+<cmd name="ltrainECLibyanFootman" priority="3"
+	button="actions/hire CLibyanFootman.bmp"
+	queueicon="gameres/icons/CLibyanFootman.bmp"
+	groupverifier="data/subai/barrack_train_verify.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="l"
+	help="/contents/units/CLibyanFootman"
+	costgold = "70"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "6000"
+	rollover="Equip Libyan Footman"
+	method="train"
+	param="CLibyanFootman,Carthage Spears"
+	sclass="CLibyanFootman">
+	<src obj="LCBarracks"/>
+</cmd>
+
+<cmd name="ltrainECJavelinThrower" priority="4"
+	button="actions/hire CJavelinThrower.bmp"
+	queueicon="gameres/icons/CJavelinThrower.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="j"
+	help="/contents/units/CJavelinThrower"
+	costgold = "80"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "10000"
+	rollover="Equip Javelin Thrower"
+	method="trainex"
+	param="1, 50, CJavelinThrower, CJavelinThrower, Carthage Javelins, blacksmith"
+	sclass="CJavelinThrower">
+	<src obj="LCBarracks"/>
+</cmd>
+
+<cmd name="ltrainECBerberAssassin" priority="5"
+	button="actions/hire CBerberAssassin.bmp"
+	queueicon="gameres/icons/CBerberAssassin.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="a"
+	help="/contents/units/CBerberAssassin"
+	costgold = "100"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "14000"
+	rollover="Equip Berber Assassin"
+	method="trainex"
+	param="1, 50, CBerberAssassin, CBerberAssassin, Carthage Swords, blacksmith"
+	sclass="CBerberAssassin">
+	<src obj="LCBarracks"/>
+</cmd>
+
+<cmd name="ltrainECMaceman" priority="5"
+	button="actions/hire CMaceman.bmp"
+	queueicon="gameres/icons/CMaceman.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="m"
+	help="/contents/units/CMaceman"
+	costgold = "110"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "16000"
+	rollover="Equip Maceman"
+	method="trainex"
+	param="1, 40, CMaceman, CMaceman, Carthage Maces, blacksmith"
+	sclass="CMaceman">
+	<src obj="LCBarracks"/>
+</cmd>
+
+<cmd name="ltrainECNumidianRider" priority="5"
+	button="actions/hire CNumidianRider.bmp"
+	queueicon="gameres/icons/CNumidianRider.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="t"
+	help="/contents/units/CNumidianRider"
+	costgold = "200"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Equip Numidian Rider"
+	method="trainex"
+	param="1, 30, CNumidianRider, CNumidianRider, Carthage Pikes, blacksmith"
+	sclass="CNumidianRider">
+	<src obj="LCBarracks"/>
+</cmd>
+
+<cmd name="ltrainCNoble" priority="7"
+	button="actions/train CNoble.bmp"
+	queueicon="gameres/icons/CNoble.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="n"
+	help="/contents/units/CNoble"
+	costgold = "420"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Equip Noble"
+	method="trainex"
+	param="1, 20, CNoble, CNoble, Carthage Sacred Legion, blacksmith"
+	sclass="CNoble">
+	<src obj="LCBarracks"/>
+</cmd>
+
+<!-- GAUL BARRACKS -->
+
+<cmd name="ltrainGSwordsman" priority="3"
+	button="actions/train GSwordsman.bmp"
+	queueicon="gameres/icons/GSwordsman.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_cmdcost_building.vs"
+	traincommand="yes"
+	key="s"
+	help="/contents/units/GSwordsman"
+	costgold = "60"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "6000"
+	rollover="Equip Swordsman"
+	method="train"
+	param="GSwordsman"
+	sclass="GSwordsman">
+	<src obj="LGBarracks"/>
+</cmd>
+
+<cmd name="ltrainGArcher" priority="4"
+	button="actions/train GArcher.bmp"
+	queueicon="gameres/icons/GArcher.bmp"
+	transpicon="1"
+	traincommand="yes"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	key="a"
+	help="/contents/units/GArcher"
+	costgold = "50"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "10000"
+	rollover="Equip Archer"
+	method="trainex"
+	param="1, 50, GArcher, GArcher, Gaul Arrows, blacksmith"
+	sclass="GArcher">
+
+	<src obj="LGBarracks"/>
+</cmd>
+
+<cmd name="ltrainGAxeman" priority="5"
+	button="actions/train GAxeman.bmp"
+	queueicon="gameres/icons/GAxeman.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="x"
+	help="/contents/units/GAxeman"
+	costgold = "150"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "16000"
+	rollover="Equip Axeman"
+	method="trainex"
+	param="1, 40, GAxeman, GAxeman, Gaul Axeman, blacksmith"
+	sclass="GAxeman">
+	<src obj="LGBarracks"/>
+</cmd>
+
+<cmd name="ltrainGSpearman" priority="6"
+	button="actions/train GSpearman.bmp"
+	queueicon="gameres/icons/GSpearman.bmp"
+	transpicon="1"
+	traincommand="yes"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	key="p"
+	help="/contents/units/GSpearman"
+	costgold = "120"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "16000"
+	rollover="Equip Spearman"
+	method="trainex"
+	param="1, 40, GSpearman, GSpearman, Spears, blacksmith"
+	sclass="GSpearman">
+
+	<src obj="LGBarracks"/>
+</cmd>
+
+<cmd name="ltrainGHorseman" priority="7"
+	button="actions/train GHorseman.bmp"
+	queueicon="gameres/icons/GHorseman.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="h"
+	help="/contents/units/GHorseman"
+	costgold = "160"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Equip Horseman"
+	method="trainex"
+	param="1, 40, GHorseman, GHorseman, Horseshoes, blacksmith"
+	sclass="GHorseman">
+
+	<src obj="LGBarracks"/>
+</cmd>
+
+<cmd name="ltrainGWomanWarrior" priority="8"
+	button="actions/train GWomanWarrior.bmp"
+	queueicon="gameres/icons/GWomanWarrior.bmp"
+	transpicon="1"
+	traincommand="yes"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	key="w"
+	help="/contents/units/GWWarrior"
+	costgold = "220"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Equip Woman Warrior"
+	method="trainex"
+	param="1, 30, GWomanWarrior, GWomanWarrior, Gaul Woman Warrior, blacksmith"
+	sclass="GWomanWarrior">
+	<src obj="LGBarracks"/>
+</cmd>
+
+<!-- IBERIA BARRACKS -->
+
+<cmd name="ltrainIMilitiaman" priority="3"
+	button="actions/train imilitiaman.bmp"
+	queueicon="gameres/icons/IMilitiaman.bmp"
+	groupverifier="data/subai/verify_cmdcost_building.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="m"
+	help="/contents/units/IMilitiaman"
+	costgold = "50"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "6000"
+	rollover="Equip Militiaman"
+	method="train"
+	param="IMilitiaman"
+	sclass="IMilitiaman">
+	<src obj="LIBarracks"/>
+	<src obj="LHBarracks"/>
+</cmd>
+
+<cmd name="ltrainIArcher" priority="4"
+	button="actions/train iarcher.bmp"
+	queueicon="gameres/icons/IArcher.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="a"
+	help="/contents/units/IArcher"
+	costgold = "60"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "10000"
+	rollover="Equip Archer"
+	method="trainex"
+	param="1, 50, IArcher, IArcher, Iberia Arrows, blacksmith"
+	sclass="IArcher">
+
+	<src obj="LIBarracks"/>
+</cmd>
+
+<cmd name="ltrainISlinger" priority="5"
+	button="actions/train islinger.bmp"
+	queueicon="gameres/icons/ISlinger.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="s"
+	help="/contents/units/ISlinger"
+	costgold = "200"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "16000"
+	rollover="Equip Slinger"
+	method="trainex"
+	param="1, 30, ISlinger, ISlinger, Slings, blacksmith"
+	sclass="ISlinger">
+	<src obj="LIBarracks"/>
+</cmd>
+
+<cmd name="ltrainIDefender" priority="6"
+	button="actions/train idefender.bmp"
+	queueicon="gameres/icons/IDefender.bmp"
+	transpicon="1"
+	traincommand="yes"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	key="d"
+	help="/contents/units/IDefender"
+	costgold = "140"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "16000"
+	rollover="Equip Defender"
+	method="trainex"
+	param="1, 40, IDefender, IDefender, Spears, blacksmith"
+	sclass="IDefender">
+
+	<src obj="LIBarracks"/>
+</cmd>
+
+<cmd name="ltrainICavalry" priority="7"
+	button="actions/train ICavalry.bmp"
+	queueicon="gameres/icons/ICavalry.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="c"
+	help="/contents/units/ICavalry"
+	costgold = "140"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Equip Cavalry"
+	method="trainex"
+	param="1, 40, ICavalry, ICavalry, Horseshoes, blacksmith"
+	sclass="ICavalry">
+
+	<src obj="LIBarracks"/>
+</cmd>
+
+<cmd name="ltrainIEliteGuard" priority="8"
+	button="actions/train IEliteGuard.bmp"
+	queueicon="gameres/icons/IEliteGuard.bmp"
+	transpicon="1"
+	traincommand="yes"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	key="g"
+	help="/contents/units/IEliteGuard"
+	costgold = "300"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Equip Elite Guard"
+	method="trainex"
+	param="1, 25, IEliteGuard, IEliteGuard, Battle Axe, blacksmith"
+	sclass="IEliteGuard">
+	<src obj="LIBarracks"/>
+</cmd>
+
+<!-- Rome BARRACKS -->
+
+<cmd name="ltrainRHastatus" priority="3"
+	button="actions/train RHastatus.bmp"
+	queueicon="gameres/icons/RHastatus.bmp"
+	groupverifier="data/subai/verify_cmdcost_building.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="h"
+	help="/contents/units/RHastatus"
+	costgold = "100"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "6000"
+	rollover="Equip Hastatus"
+	method="train"
+	param="RHastatus"
+	sclass="RHastatus">
+	<src obj="LRBarracks"/>
+</cmd>
+
+<cmd name="ltrainRArcher" priority="4"
+	button="actions/train RArcher.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	queueicon="gameres/icons/RArcher.bmp"
+	transpicon="1"
+	traincommand="yes"
+	key="a"
+	help="/contents/units/RArcher"
+	costgold = "80"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "10000"
+	rollover="Equip Archer"
+	method="trainex"
+	param="1, 50, RArcher, RArcher, Arrows, blacksmith"
+	sclass="RArcher">
+	<src obj="LRBarracks"/>
+</cmd>
+
+<cmd name="ltrainRGladiator" priority="5"
+	button="actions/train RGladiator.bmp"
+	queueicon="gameres/icons/RGladiator.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="g"
+	help="/contents/units/RGladiator"
+	costgold = "200"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "10000"
+	rollover="Equip Gladiator"
+	method="trainex"
+	param="1, 25, RGladiator, RGladiator, Roman Tridents, blacksmith"
+	sclass="RGladiator">
+	<src obj="LRBarracks"/>
+</cmd>
+
+<cmd name="ltrainRPrinciple" priority="6"
+	button="actions/train RPrinciple.bmp"
+	queueicon="gameres/icons/RPrinciple.bmp"
+	transpicon="1"
+	traincommand="yes"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	key="p"
+	help="/contents/units/RPrinciple"
+	costgold = "200"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Equip Principle"
+	method="trainex"
+	param="1, 25, RPrinciple, RPrinciple, Pikes, blacksmith"
+	sclass="RPrinciple">
+
+	<src obj="LRBarracks"/>
+</cmd>
+
+<cmd name="ltrainRScout" priority="7"
+	button="actions/train RScout.bmp"
+	queueicon="gameres/icons/RScout.bmp"
+	transpicon="1"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	traincommand="yes"
+	key="s"
+	help="/contents/units/RScout"
+	costgold = "140"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "10000"
+	rollover="Equip Scout"
+	method="trainex"
+	param="1, 30, RScout, RScout, Horseshoes, blacksmith"
+	sclass="RScout">
+
+	<src obj="LRBarracks"/>
+</cmd>
+
+<cmd name="ltrainRTribune" priority="8"
+	button="actions/train RTribune.bmp"
+	queueicon="gameres/icons/RTribune.bmp"
+	transpicon="1"
+	traincommand="yes"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	key="t"
+	help="/contents/units/RTribune"
+	costgold = "300"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Equip Tribune"
+	method="trainex"
+	param="1, 20, RTribune, RTribune, Full Armor, blacksmith"
+	sclass="RTribune">
+	<src obj="LRBarracks"/>
+</cmd>
+
+<cmd name="ltrainIRVelit" priority="5"
+	button="actions/train RVelit.bmp"
+	queueicon="gameres/icons/RVelit.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="v"
+	help="/contents/units/RVelit"
+	costgold = "120"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "14000"
+	rollover="Equip Velit"
+	method="trainex"
+	param="1, 30, RVelit, RVelit, Throwing Spears, blacksmith"
+	sclass="RVelit">
+	<src obj="LRBarracks"/>
+</cmd>
+
+<cmd name="ltrainIRPraetorian" priority="8"
+	button="actions/TRAIN IRPRAETORIAN.BMP"
+	queueicon="gameres/icons/IRPRAETORIAN.BMP"
+	transpicon="1"
+	traincommand="yes"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	key="r"
+	help="/contents/units/RPraetorian"
+	costgold = "400"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Equip Praetorian"
+	method="trainex"
+	param="1, 20, RPraetorian, RPraetorian, Spike Armor, blacksmith"
+	sclass="RPraetorian">
+	<src obj="LRBarracks"/>
+</cmd>
+
+<!-- EGYPT BARRACKS -->
+
+<cmd name="ltrainESwordsman" priority="3"
+	button="actions/train ESwordsman.bmp"
+	queueicon="gameres/icons/ESwordsman.bmp"
+	groupverifier="data/subai/verify_cmdcost_building.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="s"
+	help="/contents/units/ESwordsman"
+	costgold = "80"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "8000"
+	rollover="Equip Swordsman"
+	method="train"
+	param="ESwordsman"
+	sclass="ESwordsman">
+	<src obj="LEBarracks"/>
+</cmd>
+
+<cmd name="ltrainEArcher" priority="4"
+	button="actions/train EArcher.bmp"
+	queueicon="gameres/icons/EArcher.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="a"
+	help="/contents/units/EArcher"
+	costgold = "60"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "8000"
+	rollover="Equip Archer"
+	method="trainex"
+	param="1, 50, EArcher, EArcher, Egypt Arrows, blacksmith"
+	sclass="EArcher">
+	<src obj="LEBarracks"/>
+</cmd>
+
+<cmd name="ltrainEAxeTrower" priority="5"
+	button="actions/train EAxeTrower.bmp"
+	queueicon="gameres/icons/EAxeTrower.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="x"
+	help="/contents/units/EAxeTrower"
+	costgold = "180"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "12000"
+	rollover="Equip Axe thrower"
+	method="trainex"
+	param="1, 40, EAxetrower, EAxetrower, Axe of Throwers, blacksmith"
+	sclass="EAxetrower">
+	<src obj="LEBarracks"/>
+</cmd>
+
+<cmd name="ltrainEAnubisWarrior" priority="6"
+	button="actions/train EAnubisWarrior.bmp"
+	queueicon="gameres/icons/EAnubisWarrior.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="n"
+	help="/contents/units/EAnubisWarrior"
+	costgold = "260"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "16000"
+	rollover="Equip Anubis Warrior"
+	method="trainex"
+	param="1, 30, EAnubisWarrior, EAnubisWarrior, Cult of Anubis, blacksmith"
+	sclass="EAnubisWarrior">
+	<src obj="LEBarracks"/>
+</cmd>
+
+<cmd name="ltrainEHorusWarrior" priority="7"
+	button="actions/train EHorusWarrior.bmp"
+	queueicon="gameres/icons/EHorusWarrior.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="r"
+	help="/contents/units/EHorusWarrior"
+	costgold = "260"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "16000"
+	rollover="Equip Horus Warrior"
+	method="trainex"
+	param="1, 30, EHorusWarrior, EHorusWarrior, Cult of Horus, blacksmith"
+	sclass="EHorusWarrior">
+	<src obj="LEBarracks"/>
+</cmd>
+
+<cmd name="ltrainEGuardian" priority="5"
+	button="actions/train EGuardian.bmp"
+	queueicon="gameres/icons/EGuardian.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="g"
+	help="/contents/units/EGuardian"
+	costgold = "260"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "20000"
+	rollover="Equip Guardian"
+	method="trainex"
+	param="1, 30, EGuardian, EGuardian, Shield of Guardians, blacksmith"
+	sclass="EGuardian">
+	<src obj="LEBarracks"/>
+</cmd>
+
+<!-- GREEK BARRACKS -->
+
+<cmd name="ltrainHToxotes" priority="3"
+	button="actions/Train HToxotes.bmp"
+	queueicon="gameres/icons/HToxotes.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="t"
+	help="/contents/units/HToxotes"
+	costgold = "60"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "9000"
+	rollover="Equip Toxotes"
+	method="trainex"
+	param="1, 50, HToxotes, HToxotes, Greek Arrows, blacksmith"
+	sclass="HToxotes">
+	<src obj="LHBarracks"/>
+</cmd>
+
+<cmd name="ltrainHHoplite" priority="4"
+	button="actions/train HHoplite.bmp"
+	queueicon="gameres/icons/HHoplite.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="o"
+	help="/contents/units/HHoplite"
+	costgold = "180"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "11000"
+	rollover="Equip Hoplite"
+	method="trainex"
+	param="1, 40, HHoplite, HHoplite, Greek Spears, blacksmith"
+	sclass="HHoplite">
+	<src obj="LHBarracks"/>
+</cmd>
+
+<cmd name="ltrainHChariot" priority="5"
+	button="actions/Train HChariot.bmp"
+	queueicon="gameres/icons/HChariot.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="c"
+	help="/contents/units/HChariot"
+	costgold = "200"
+	costfood = "0"
+	costpop = "2"
+	execdelay = "14000"
+	rollover="Equip Chariot"
+	method="trainex"
+	param="1, 30, HChariot, HChariot, Greek Chariot Wheels, blacksmith"
+	sclass="HChariot">
+	<src obj="LHBarracks"/>
+</cmd>
+
+<cmd name="ltrainHMyrmidon" priority="6"
+	button="actions/Train HMyrmidon.bmp"
+	queueicon="gameres/icons/HMyrmidon.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="d"
+	help="/contents/units/HMyrmidon"
+	costgold = "200"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "16000"
+	rollover="Equip Myrmidon"
+	method="trainex"
+	param="1, 30, HMyrmidon_Javelin, HMyrmidon_Javelin, Forge Elite Equipment, blacksmith"
+	sclass="HMyrmidon_Javelin">
+	<src obj="LHBarracks"/>
+</cmd>
+
+<cmd name="ltrainHHypaspista" priority="7"
+	button="actions/Train HHypaspista.bmp"
+	queueicon="gameres/icons/HHypaspista.bmp"
+	groupverifier="data/subai/verify_trainex.vs"
+	onaddremovescript="data/subai/trainex_onaddremove.vs"
+	transpicon="1"
+	traincommand="yes"
+	key="h"
+	help="/contents/units/HHypaspista"
+	costgold = "280"
+	costfood = "0"
+	costpop = "1"
+	execdelay = "18000"
+	rollover="Equip Hypaspista"
+	method="trainex"
+	param="1, 30, HHypaspista, HHypaspista, Greek Royal Armor, blacksmith"
+	sclass="HHypaspista">
+	<src obj="LHBarracks"/>
+</cmd>
+</commands>
