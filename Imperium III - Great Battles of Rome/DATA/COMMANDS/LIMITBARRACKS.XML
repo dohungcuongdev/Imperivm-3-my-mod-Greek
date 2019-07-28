@@ -461,7 +461,7 @@
 	execdelay = "16000"
 	rollover="Equip Spearman"
 	method="trainex"
-	param="1, 40, GSpearman, GSpearman, Spears, blacksmith"
+	param="1, 40, GSpearman, GSpearman, Gaul Spearman, blacksmith"
 	sclass="GSpearman">
 
 	<src obj="LGBarracks"/>
