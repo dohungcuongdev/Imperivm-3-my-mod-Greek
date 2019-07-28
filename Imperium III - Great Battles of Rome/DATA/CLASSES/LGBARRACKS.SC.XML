@@ -1,4 +1,4 @@
-<class id="LGBarracks" altid="Barrack" cpp_class="CVXBarrack" parent="BaseBarracks"
+<class id="LGBarracks" cpp_class="CVXBarrack" parent="BaseBarracks"
 	entity="Buildings/GBarracks/GBarracks_as.ent.xml"
 	entity_autumn="Buildings/GBarracks/GBarracks_as.ent.xml"
 	entity_spring="Buildings/GBarracks/GBarracks_as.ent.xml"

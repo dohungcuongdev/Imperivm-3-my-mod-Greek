@@ -1,4 +1,4 @@
-<class id="LGBlacksmith" altid="Blacksmith" cpp_class="CVXBuilding" parent="BaseBlacksmith"
+<class id="LGBlacksmith" cpp_class="CVXBuilding" parent="BaseBlacksmith"
 	entity="Buildings/GBlacksmith/GBlacksmith as.ent.xml"
 	entity_autumn="Buildings/GBlacksmith/GBlacksmith as.ent.xml"
 	entity_spring="Buildings/GBlacksmith/GBlacksmith as.ent.xml"
