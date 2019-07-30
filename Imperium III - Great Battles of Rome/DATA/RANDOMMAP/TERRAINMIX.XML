@@ -1,0 +1,83 @@
+<terrain-mixes>
+
+	<!--
+		<terrain id="0" name="Ground with grass and pebbles" height="10"/>
+		<terrain id="1" name="Rough ground" height="10"/>
+		<terrain id="2" name="Sandy ground" height="10"/>
+
+		<terrain id="3" name="Grainy grass" height="10"/>
+		<terrain id="4" name="Shadowed grass" height="10"/>
+		<terrain id="18" name="Marshy grass" height="10"/>
+
+		<terrain id="5" name="Smooth sands" height="10"/>
+		<terrain id="9" name="Sand with waves" height="10"/>
+		<terrain id="16" name="Sand with grass" height="10"/>
+		<terrain id="17" name="Sand with ground" height="10"/>
+
+		<terrain id="6" name="Huge mountain rocks" height="10"/>
+		<terrain id="8" name="Small rough rocks" height="10"/>
+		<terrain id="11" name="Smooth rocks with sand" height="10"/>
+
+		<terrain id="7" name="Gaul roads" height="10"/>
+		<terrain id="14" name="Roman roads" height="10"/>
+		<terrain id="19" name="Sand with grass" height="10"/>
+
+
+	-->
+
+	<terrain-mix race="Gaul">
+		<terrain id="1" name="Rough ground" height="10"/>
+		<terrain id="2" name="Sandy ground" height="20"/>
+		<terrain id="0" name="Ground with grass and pebbles" height="20"/>
+		<terrain id="3" name="Grainy grass" height="40"/>
+		<terrain id="18" name="Marshy grass" height="10"/>
+	</terrain-mix>
+
+	<terrain-mix race="RepublicanRome">
+		<terrain id="4" name="Ground with grass and pebbles" height="20"/>
+		<terrain id="3" name="Grainy grass" height="20"/>
+		<terrain id="4" name="Shadowed grass" height="20"/>
+		<terrain id="18" name="Marshy grass" height="30"/>
+	</terrain-mix>
+
+	<terrain-mix race="Carthage">
+		<terrain id="2" name="Sandy ground" height="20"/>
+		<terrain id="11" name="Smooth rocks with sand" height="10"/>
+		<terrain id="9" name="Sand with waves" height="40"/>
+	</terrain-mix>
+
+	<terrain-mix race="Iberia">
+		<terrain id="2" name="Sandy ground" height="20"/>
+		<terrain id="0" name="Ground with grass and pebbles" height="20"/>
+		<terrain id="16" name="Sand with grass" height="30"/>
+	</terrain-mix>
+
+	<terrain-mix race="ImperialRome">
+		<terrain id="4" name="Ground with grass and pebbles" height="20"/>
+		<terrain id="3" name="Grainy grass" height="20"/>
+		<terrain id="4" name="Shadowed grass" height="20"/>
+		<terrain id="18" name="Marshy grass" height="30"/>
+	</terrain-mix>
+
+	<terrain-mix race="Britain">
+		<terrain id="4" name="Ground with grass and pebbles" height="20"/>
+		<terrain id="3" name="Grainy grass" height="20"/>
+		<terrain id="4" name="Shadowed grass" height="20"/>
+		<terrain id="18" name="Marshy grass" height="30"/>
+	</terrain-mix>
+
+	<terrain-mix race="Egypt">
+		<terrain id="4" name="Ground with grass and pebbles" height="20"/>
+		<terrain id="3" name="Grainy grass" height="20"/>
+		<terrain id="4" name="Shadowed grass" height="20"/>
+		<terrain id="18" name="Marshy grass" height="30"/>
+	</terrain-mix>
+
+	<terrain-mix race="Germany">
+		<terrain id="4" name="Ground with grass and pebbles" height="20"/>
+		<terrain id="3" name="Grainy grass" height="20"/>
+		<terrain id="4" name="Shadowed grass" height="20"/>
+		<terrain id="18" name="Marshy grass" height="30"/>
+	</terrain-mix>
+
+</terrain-mixes>
