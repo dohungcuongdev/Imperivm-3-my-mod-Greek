@@ -325,6 +325,7 @@
 
 <cmd name="leave_parry_mode" priority="12"
 	button="actions/Leave Parry Mode.bmp"
+	key="n"
 	groupverifier="data/subai/unit_leave_parry_mode_verify.vs"
 	immediate="yes"
 	rollover="Leave parry mode"
